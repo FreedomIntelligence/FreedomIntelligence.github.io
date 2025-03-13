@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Welcome to CUHKSZ NLP group! We are a group of researchers working on natural language processing in the <a href="https://sds.cuhk.edu.cn/">School of Data Science</a> at the <a href="https://cuhk.edu.cn/zh-hans">The Chinese University of HongKong, Shenzhen  </a> and <a href="https://www.sribd.cn/en"> SRIBD </a>.
+subtitle: "Welcome to CUHKSZ NLP group! We are a group of researchers working on natural language processing in the <a href='https://sds.cuhk.edu.cn/'>School of Data Science</a> at the <a href='https://cuhk.edu.cn/zh-hans'>The Chinese University of HongKong, Shenzhen</a> and <a href='https://www.sribd.cn/en'>SRIBD</a>."
 logo: group_name.png
 research: picture.png
 
