@@ -5,5 +5,5 @@ description: Visiting Student
 img: /assets/img/yaxinfan.jpg
 importance: 1
 category: Current Students
-redirect: https://github.com/superial1
+redirect: https://yxfan.top/
 ---
