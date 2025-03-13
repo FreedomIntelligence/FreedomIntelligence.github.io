@@ -139,6 +139,7 @@ highlight_theme_light: github  # https://github.com/jwarby/jekyll-pygments-theme
 highlight_theme_dark: native  # https://github.com/jwarby/jekyll-pygments-themes
 kramdown:
   input: GFM
+  parse_block_html: true  # 允许 HTML 块
   syntax_highlighter_opts:
     css_class: 'highlight'
     span:
