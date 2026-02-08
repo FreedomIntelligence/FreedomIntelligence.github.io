@@ -8,14 +8,14 @@ research: picture.png
 
 profile:
   align: left #right
-  image: group_photo_2023.JPG
+  image: group_photo.JPG
   image_cicular: false # crops the image to make it circular
-  image_caption: Lab members in Shen Zhen as of 2023
+  image_caption: Lab members in Shenzhen
   
 
 
 
-news: true  # includes a list of news items
+news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 
