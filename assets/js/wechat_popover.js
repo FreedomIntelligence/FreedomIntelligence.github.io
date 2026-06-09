@@ -1,9 +1,22 @@
 (function () {
   function closeAll(except) {
     document.querySelectorAll('.wechat-popover.is-open').forEach(function (popover) {
-      if (popover !== except) popover.classList.remove('is-open');
+      if (popover === except) return;
+      popover.classList.remove('is-open');
+      var qr = popover.querySelector('.wechat-qr');
+      if (qr) qr.hidden = true;
     });
   }
+
+  function setOpen(popover, isOpen) {
+    popover.classList.toggle('is-open', isOpen);
+    var qr = popover.querySelector('.wechat-qr');
+    if (qr) qr.hidden = !isOpen;
+  }
+
+  document.querySelectorAll('.wechat-popover').forEach(function (popover) {
+    setOpen(popover, false);
+  });
 
   document.addEventListener('click', function (event) {
     var trigger = event.target.closest('.wechat-trigger');
@@ -13,7 +26,7 @@
       event.preventDefault();
       var willOpen = !activePopover.classList.contains('is-open');
       closeAll(activePopover);
-      activePopover.classList.toggle('is-open', willOpen);
+      setOpen(activePopover, willOpen);
       return;
     }
 
