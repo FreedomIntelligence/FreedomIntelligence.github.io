@@ -58,12 +58,13 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 github_username: FreedomIntelligence # your GitHub user name
 hf_username: FreedomIntelligence # your hf user name
 rednote_username: 683e7dcc000000001d009399 # your rednote user name
-wechat: https://github.com/freedomai-lab/.github/blob/main/profile/freedomai.jpg
+wechat: https://raw.githubusercontent.com/freedomai-lab/.github/main/profile/freedomai.jpg
 lab_email: wangbenyou@cuhk.edu.cn
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
 linkedin_username: # your LinkedIn user name
-scholar_userid: _Cr-_0cAAAAJ # your Google Scholar ID
+scholar_userid: Jk4vJU8AAAAJ # your Google Scholar ID
+scholar_url: https://scholar.google.com/citations?user=Jk4vJU8AAAAJ&hl=en
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username

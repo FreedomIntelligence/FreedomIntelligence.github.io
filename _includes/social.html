@@ -5,7 +5,11 @@
             <a href="https://orcid.org/{{ site.orcid_id }}" title="ORCID"><i class="ai ai-orcid"></i></a>
             {% endif %}
             {%- if site.scholar_userid -%}
+            {%- if site.scholar_url -%}
+            <a href="{{ site.scholar_url }}" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+            {%- else -%}
             <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+            {%- endif -%}
             {% endif %}
             {%- if site.publons_id -%}
             <a href="https://publons.com/a/{{ site.publons_id }}/" title="Publons"><i class="ai ai-publons"></i></a>
@@ -42,11 +46,16 @@
             </a>
             {% endif %}
             {%- if site.wechat -%}
-            <a href="{{ site.wechat }}" title="Wechat" style="text-decoration: none; border: none;">
-               <img src="https://www.hsu.edu.hk/wp-content/uploads/2018/12/wechat.png" 
-                   alt="Wechat" 
-                   style="width:56px; height:56px; vertical-align:middle;">         
-            </a>
+            <span class="wechat-popover">
+              <button type="button" class="wechat-trigger" title="Wechat" aria-label="Wechat QR code">
+                 <img src="https://www.hsu.edu.hk/wp-content/uploads/2018/12/wechat.png" 
+                     alt="Wechat" 
+                     style="width:56px; height:56px; vertical-align:middle;">
+              </button>
+              <span class="wechat-qr" role="dialog" aria-label="Wechat QR code">
+                <img src="{{ site.wechat }}" alt="Wechat QR code">
+              </span>
+            </span>
             {% endif %}
             {%- if site.linkedin_username -%}
             <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn"><i class="fab fa-linkedin"></i></a>

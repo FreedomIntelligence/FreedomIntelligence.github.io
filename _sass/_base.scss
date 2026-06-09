@@ -235,6 +235,48 @@ blockquote {
         }
       }
     }
+
+    .wechat-popover {
+      display: inline-flex;
+      position: relative;
+      align-items: center;
+      vertical-align: middle;
+    }
+
+    .wechat-trigger {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    .wechat-qr {
+      position: absolute;
+      left: 50%;
+      bottom: calc(100% + 12px);
+      z-index: 20;
+      display: none;
+      width: 176px;
+      padding: 10px;
+      transform: translateX(-50%);
+      border: 1px solid var(--global-divider-color);
+      border-radius: 8px;
+      background: var(--global-bg-color);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+    }
+
+    .wechat-qr img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .wechat-popover.is-open .wechat-qr,
+    .wechat-popover:hover .wechat-qr {
+      display: block;
+    }
   }
 }
 
