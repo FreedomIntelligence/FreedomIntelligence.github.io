@@ -13,62 +13,122 @@ nav_order: 6
 
 ---
 
-<div class="table-responsive">
-  <table class="table table-sm">
-    <thead>
-      <tr>
-        <th class="text-center">Logo</th>
-        <th class="text-center">公司</th>
-        <th class="text-center">创始人</th>
-        <th>简介</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="text-center">🏥</td>
-        <td class="text-center"><strong>自由动脉 (Freedom AI)</strong></td>
-        <td class="text-center">李健铨</td>
-        <td>致力于医科AI和医疗人工智能</td>
-      </tr>
-      <tr>
-        <td class="text-center">🧠</td>
-        <td class="text-center"><strong>Cognita</strong></td>
-        <td class="text-center">陈志鸿</td>
-        <td>毕业博士生赴Stanford博后，创办Cognita公司拿到硅谷融资，八千万美刀被Mosaic Clinical Technologies收购</td>
-      </tr>
-      <tr>
-        <td class="text-center">💎</td>
-        <td class="text-center"><strong>METASTONE 是石科技</strong></td>
-        <td class="text-center">侯建业</td>
-        <td>提供HPC和AI解决方案，估值数十亿</td>
-      </tr>
-      <tr>
-        <td class="text-center">🥔</td>
-        <td class="text-center"><strong>薯塔AI</strong></td>
-        <td class="text-center">肖杨</td>
-        <td>日活超过千人，在港中文（深圳）覆盖率60%</td>
-      </tr>
-      <tr>
-        <td class="text-center">🎾</td>
-        <td class="text-center"><strong>网事 TennSync</strong></td>
-        <td class="text-center">朱宇轩</td>
-        <td>网事APP已服务上千用户，为网球爱好者节省超过5000个小时</td>
-      </tr>
-      <tr>
-        <td class="text-center">🏙️</td>
-        <td class="text-center"><strong>和瑛社</strong></td>
-        <td class="text-center">高治淇</td>
-        <td>和瑛元筑（深圳）面向城市空间智能的三维重建与数字孪生</td>
-      </tr>
-      <tr>
-        <td class="text-center">📚</td>
-        <td class="text-center"><strong>CiteAnything</strong></td>
-        <td class="text-center">王驰中</td>
-        <td>致力于为大模型输出构建可验证的证据</td>
-      </tr>
-    </tbody>
-  </table>
+<style>
+  .startup-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 14px;
+    margin: 1.35rem 0 1.75rem;
+  }
 
+  .startup-item {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    gap: 12px;
+    padding: 16px;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    background: var(--global-bg-color);
+  }
+
+  .startup-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.04);
+    font-size: 1.45rem;
+    line-height: 1;
+  }
+
+  .startup-name {
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  .startup-founder {
+    margin-top: 4px;
+    color: var(--global-text-color-light);
+    font-size: 0.92rem;
+  }
+
+  .startup-desc {
+    grid-column: 1 / -1;
+    margin: 2px 0 0;
+    line-height: 1.65;
+  }
+
+  html[data-theme='dark'] .startup-logo {
+    background: rgba(255, 255, 255, 0.08);
+  }
+</style>
+
+<div class="startup-grid">
+  <section class="startup-item">
+    <div class="startup-logo">🏥</div>
+    <div>
+      <h3 class="startup-name">自由动脉 (Freedom AI)</h3>
+      <div class="startup-founder">创始人：李健铨</div>
+    </div>
+    <p class="startup-desc">致力于医科AI和医疗人工智能</p>
+  </section>
+
+  <section class="startup-item">
+    <div class="startup-logo">🧠</div>
+    <div>
+      <h3 class="startup-name">Cognita</h3>
+      <div class="startup-founder">创始人：陈志鸿</div>
+    </div>
+    <p class="startup-desc">毕业博士生赴Stanford博后，创办Cognita公司拿到硅谷融资，八千万美刀被Mosaic Clinical Technologies收购</p>
+  </section>
+
+  <section class="startup-item">
+    <div class="startup-logo">💎</div>
+    <div>
+      <h3 class="startup-name">METASTONE 是石科技</h3>
+      <div class="startup-founder">创始人：侯建业</div>
+    </div>
+    <p class="startup-desc">提供HPC和AI解决方案，估值数十亿</p>
+  </section>
+
+  <section class="startup-item">
+    <div class="startup-logo">🥔</div>
+    <div>
+      <h3 class="startup-name">薯塔AI</h3>
+      <div class="startup-founder">创始人：肖杨</div>
+    </div>
+    <p class="startup-desc">日活超过千人，在港中文（深圳）覆盖率60%</p>
+  </section>
+
+  <section class="startup-item">
+    <div class="startup-logo">🎾</div>
+    <div>
+      <h3 class="startup-name">网事 TennSync</h3>
+      <div class="startup-founder">创始人：朱宇轩</div>
+    </div>
+    <p class="startup-desc">网事APP已服务上千用户，为网球爱好者节省超过5000个小时</p>
+  </section>
+
+  <section class="startup-item">
+    <div class="startup-logo">🏙️</div>
+    <div>
+      <h3 class="startup-name">和瑛社</h3>
+      <div class="startup-founder">创始人：高治淇</div>
+    </div>
+    <p class="startup-desc">和瑛元筑（深圳）面向城市空间智能的三维重建与数字孪生</p>
+  </section>
+
+  <section class="startup-item">
+    <div class="startup-logo">📚</div>
+    <div>
+      <h3 class="startup-name">CiteAnything</h3>
+      <div class="startup-founder">创始人：王驰中</div>
+    </div>
+    <p class="startup-desc">致力于为大模型输出构建可验证的证据</p>
+  </section>
 </div>
 
 ---

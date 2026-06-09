@@ -8,7 +8,7 @@ research: picture.png
 
 profile:
   align: left #right
-  image: group_photo.jpeg
+  image: group_photo_2023.JPG
   image_cicular: false # crops the image to make it circular
   image_caption: Lab members in Shenzhen
   
