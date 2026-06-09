@@ -14,16 +14,60 @@ nav_order: 6
 ---
 
 <div class="table-responsive">
-
-| Logo | 公司 | 创始人 | 简介 |
-|:---:|:---:|:---:|:---|
-| 🏥 | **自由动脉 (Freedom AI)** | 李健铨 | 致力于医科AI和医疗人工智能 |
-| 🧠 | **Cognita** | 陈志鸿 | 毕业博士生赴Stanford博后，创办Cognita公司拿到硅谷融资，八千万美刀被Mosaic Clinical Technologies收购 |
-| 💎 | **METASTONE 是石科技** | 侯建业 | 提供HPC和AI解决方案，估值数十亿 |
-| 🥔 | **薯塔AI** | 肖杨 | 日活超过千人，在港中文（深圳）覆盖率60% |
-| 🎾 | **网事 TennSync** | 朱宇轩 | 网事APP已服务上千用户，为网球爱好者节省超过5000个小时 |
-| 🏙️ | **和瑛社** | 高治淇 | 和瑛元筑（深圳）面向城市空间智能的三维重建与数字孪生 |
-| 📚 | **CiteAnything** | 王驰中 | 致力于为大模型输出构建可验证的证据 |
+  <table class="table table-sm">
+    <thead>
+      <tr>
+        <th class="text-center">Logo</th>
+        <th class="text-center">公司</th>
+        <th class="text-center">创始人</th>
+        <th>简介</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="text-center">🏥</td>
+        <td class="text-center"><strong>自由动脉 (Freedom AI)</strong></td>
+        <td class="text-center">李健铨</td>
+        <td>致力于医科AI和医疗人工智能</td>
+      </tr>
+      <tr>
+        <td class="text-center">🧠</td>
+        <td class="text-center"><strong>Cognita</strong></td>
+        <td class="text-center">陈志鸿</td>
+        <td>毕业博士生赴Stanford博后，创办Cognita公司拿到硅谷融资，八千万美刀被Mosaic Clinical Technologies收购</td>
+      </tr>
+      <tr>
+        <td class="text-center">💎</td>
+        <td class="text-center"><strong>METASTONE 是石科技</strong></td>
+        <td class="text-center">侯建业</td>
+        <td>提供HPC和AI解决方案，估值数十亿</td>
+      </tr>
+      <tr>
+        <td class="text-center">🥔</td>
+        <td class="text-center"><strong>薯塔AI</strong></td>
+        <td class="text-center">肖杨</td>
+        <td>日活超过千人，在港中文（深圳）覆盖率60%</td>
+      </tr>
+      <tr>
+        <td class="text-center">🎾</td>
+        <td class="text-center"><strong>网事 TennSync</strong></td>
+        <td class="text-center">朱宇轩</td>
+        <td>网事APP已服务上千用户，为网球爱好者节省超过5000个小时</td>
+      </tr>
+      <tr>
+        <td class="text-center">🏙️</td>
+        <td class="text-center"><strong>和瑛社</strong></td>
+        <td class="text-center">高治淇</td>
+        <td>和瑛元筑（深圳）面向城市空间智能的三维重建与数字孪生</td>
+      </tr>
+      <tr>
+        <td class="text-center">📚</td>
+        <td class="text-center"><strong>CiteAnything</strong></td>
+        <td class="text-center">王驰中</td>
+        <td>致力于为大模型输出构建可验证的证据</td>
+      </tr>
+    </tbody>
+  </table>
 
 </div>
 
