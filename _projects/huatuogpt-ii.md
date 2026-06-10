@@ -37,6 +37,24 @@ HuatuoGPT-II studies how to adapt large language models to medicine with a clean
 </p>
 
 <section class="impact-section">
+  <h2>Storyline</h2>
+  <div class="impact-storyline">
+    <div class="impact-step">
+      <span>Before</span>
+      <div><strong>Medical adaptation was often multi-stage</strong><p>Early medical LLM pipelines mixed domain corpora, instruction tuning, and dialogue alignment in separate steps, which made reproduction and ablation harder.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>Recipe</span>
+      <div><strong>Unify the training format</strong><p>HuatuoGPT-II asks whether medical ability can be learned through a cleaner one-stage format that combines medical instructions and general dialogue behavior.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>Reuse</span>
+      <div><strong>Release checkpoints and SFT data</strong><p>The 7B/34B checkpoints and HuatuoGPT2-SFT-GPT4-140K data turn the idea into a reusable baseline for later medical reasoning and vision work.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="impact-section">
   <h2>Core Idea</h2>
   <div class="impact-grid">
     <div class="impact-card">
@@ -51,6 +69,20 @@ HuatuoGPT-II studies how to adapt large language models to medicine with a clean
       <strong>Open checkpoints</strong>
       <p>HuatuoGPT2-7B and HuatuoGPT2-34B provide reusable model checkpoints for downstream research and comparison.</p>
     </div>
+  </div>
+</section>
+
+<section class="impact-section">
+  <h2>Display Figures</h2>
+  <div class="impact-gallery">
+    <figure>
+      <img src="/assets/img/media-roundup-2026/huatuogpt-auto-eval.jpeg" alt="HuatuoGPT-II evaluation flow">
+      <figcaption>Automatic evaluation and medical QA testing make the adaptation recipe measurable.</figcaption>
+    </figure>
+    <figure>
+      <img src="/assets/img/media-roundup-2026/huatuogpt-overview.png" alt="HuatuoGPT ecosystem context">
+      <figcaption>HuatuoGPT-II sits between the original HuatuoGPT dialogue model and later reasoning/vision extensions.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -71,6 +103,24 @@ HuatuoGPT-II studies how to adapt large language models to medicine with a clean
       <strong>HuatuoGPT2 models</strong>
       <p>Open Hugging Face checkpoints for Chinese medical language modeling and medical QA experiments.</p>
       <a href="https://huggingface.co/FreedomIntelligence/HuatuoGPT2-34B" target="_blank" rel="noopener">Model</a>
+    </div>
+  </div>
+</section>
+
+<section class="impact-section">
+  <h2>Paper Trail</h2>
+  <div class="impact-paper-trail">
+    <div class="impact-paper">
+      <span>Origin</span>
+      <div><strong>HuatuoGPT, towards Taming Language Model to Be a Doctor</strong><p>Defines the medical dialogue direction and shows why domain data matters for Chinese medical QA.</p><a href="https://github.com/FreedomIntelligence/HuatuoGPT" target="_blank" rel="noopener">HuatuoGPT</a></div>
+    </div>
+    <div class="impact-paper">
+      <span>Adapt</span>
+      <div><strong>HuatuoGPT-II, One-stage Training for Medical Adaption of LLMs</strong><p>The focused contribution: simpler one-stage medical adaptation with released checkpoints and SFT data.</p><a href="https://arxiv.org/abs/2311.09774" target="_blank" rel="noopener">Paper</a></div>
+    </div>
+    <div class="impact-paper">
+      <span>Next</span>
+      <div><strong>HuatuoGPT-o1 and HuatuoGPT-Vision</strong><p>Later projects reuse the medical model stack for complex reasoning and medical multimodal understanding.</p><a href="/projects/medical-ai-ecosystem/">Full ecosystem</a></div>
     </div>
   </div>
 </section>

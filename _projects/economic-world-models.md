@@ -367,4 +367,25 @@ The work brings together researchers across Shenzhen Loop Area Institute, CUHK-S
   </div>
 </section>
 
+<section class="ewm-section">
+  <h2>From Papers to Systems</h2>
+  <p>
+The Economic World Models page is the umbrella. Under it, TwinMarket provides a concrete financial market sandbox, MicroVerse explores scientific micro-world simulation, and the curated Awesome Econ World Models repository keeps the paper trail organized. Together they turn the idea of "agents in an environment" into a program about evolving worlds: social worlds, market worlds, biological worlds, and eventually policy-facing digital twins.
+  </p>
+  <div class="ewm-featured">
+    <a class="ewm-card ewm-resource" href="/projects/twinmarket-financial-simulation/">
+      <strong>TwinMarket</strong>
+      <p>Financial agent society where LLM investors create market-level behavior from individual beliefs, desires, intentions, and information flow.</p>
+    </a>
+    <a class="ewm-card ewm-resource" href="/projects/microverse-world-simulation/">
+      <strong>MicroVerse</strong>
+      <p>Scientific micro-world simulation for biological processes where hidden mechanisms and state transitions matter as much as visual appearance.</p>
+    </a>
+    <a class="ewm-card ewm-resource" href="https://github.com/FreedomIntelligence/Awesome-Econ-World-Models/" target="_blank" rel="noopener">
+      <strong>Awesome Econ World Models</strong>
+      <p>Living bibliography and implementation map for economic agents, agentic economies, institutional evolution, and sim-to-real alignment.</p>
+    </a>
+  </div>
+</section>
+
 </div>

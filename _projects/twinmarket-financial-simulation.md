@@ -41,6 +41,28 @@ The project received Best Paper recognition at the ICLR 2025 Financial AI Worksh
 </div>
 
 <section class="impact-section">
+  <h2>Research Storyline</h2>
+  <div class="impact-storyline">
+    <div class="impact-step">
+      <span>Agents</span>
+      <div><strong>Start from investor cognition</strong><p>Each virtual investor carries beliefs, desires, intentions, information access, and social influence rather than acting as a fixed equation.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>Market</span>
+      <div><strong>Let aggregate patterns emerge</strong><p>Prices, volatility, herding, and bubbles become outcomes of many interacting agents rather than manually scripted market curves.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>Policy</span>
+      <div><strong>Turn the market into a sandbox</strong><p>Researchers can perturb information flow, agent populations, or regulation and observe counterfactual market behavior.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>EconWM</span>
+      <div><strong>Connect to agentic economies</strong><p>TwinMarket is a concrete financial prototype for the broader Economic World Models agenda: agents, environments, co-evolution, and real-world alignment.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="impact-section">
   <h2>What The Simulator Studies</h2>
   <div class="impact-grid">
     <div class="impact-card">
@@ -61,6 +83,38 @@ The project received Best Paper recognition at the ICLR 2025 Financial AI Worksh
 <div class="impact-figure">
   <img src="/assets/img/media-roundup-2026/twinmarket-bubble.png" alt="TwinMarket market simulation output">
 </div>
+
+<section class="impact-section">
+  <h2>Display Figures</h2>
+  <div class="impact-gallery">
+    <figure>
+      <img src="/assets/img/media-roundup-2026/twinmarket-bdi.png" alt="TwinMarket BDI design">
+      <figcaption>The BDI architecture makes each trading decision traceable to agent beliefs, desires, intentions, and market signals.</figcaption>
+    </figure>
+    <figure>
+      <img src="/assets/img/media-roundup-2026/twinmarket-bubble.png" alt="TwinMarket bubble behavior">
+      <figcaption>Market-level phenomena emerge from interacting virtual investors rather than fixed aggregate equations.</figcaption>
+    </figure>
+    <figure>
+      <img src="/assets/img/economic-world-models/econwm-architecture.png" alt="Economic World Model architecture">
+      <figcaption>TwinMarket is one concrete sandbox inside the larger Economic World Models architecture.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="impact-section">
+  <h2>Paper Trail</h2>
+  <div class="impact-paper-trail">
+    <div class="impact-paper">
+      <span>System</span>
+      <div><strong>TwinMarket: A Scalable Behavioral and Social Simulation for Financial Markets</strong><p>Builds the market simulator, investor agents, and experimental setting for financial social simulation.</p><a href="https://github.com/FreedomIntelligence/TwinMarket" target="_blank" rel="noopener">Repository</a></div>
+    </div>
+    <div class="impact-paper">
+      <span>Blueprint</span>
+      <div><strong>From Economic Agents to Agentic Economies</strong><p>Generalizes the TwinMarket-style sandbox into a wider architecture for economic digital twins and agentic economies.</p><a href="/projects/economic-world-models/">Economic World Models</a></div>
+    </div>
+  </div>
+</section>
 
 <section class="impact-section">
   <h2>Why It Matters</h2>

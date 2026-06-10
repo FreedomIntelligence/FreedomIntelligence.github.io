@@ -38,6 +38,28 @@ The reasoning line studies how models solve problems when correctness can be che
 </p>
 
 <section class="impact-section">
+  <h2>Research Storyline</h2>
+  <div class="impact-storyline">
+    <div class="impact-step">
+      <span>Math</span>
+      <div><strong>Start with verifiable answers</strong><p>MathScale and outcome-supervised verifiers use problems where correctness can be checked, giving reasoning models sharper feedback than preference alone.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>Optimize</span>
+      <div><strong>Translate language into executable models</strong><p>ORLM asks models to formulate optimization problems with formal constraints, objectives, and solver-ready structure.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>Compute</span>
+      <div><strong>Let code enter the thinking loop</strong><p>CoRT treats computation as part of reasoning, making intermediate steps more inspectable and less dependent on hidden mental arithmetic.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>See</span>
+      <div><strong>Extend reasoning to video and medicine</strong><p>Video-R1 and HuatuoGPT-o1 show the same verifiable-reasoning idea in multimodal and medical settings.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="impact-section">
   <h2>Research Threads</h2>
   <div class="impact-grid">
     <div class="impact-card">
@@ -55,6 +77,42 @@ The reasoning line studies how models solve problems when correctness can be che
     <div class="impact-card">
       <strong>Video-R1 and multimodal reasoning</strong>
       <p>Reinforcement-style training for video reasoning in multimodal LLMs, extending verifiable reasoning beyond text-only math.</p>
+    </div>
+  </div>
+</section>
+
+<section class="impact-section">
+  <h2>Display Figures</h2>
+  <div class="impact-gallery">
+    <figure>
+      <img src="/assets/img/freedomai-2026/impact/iclr-financial-ai-award.jpg" alt="Reasoning and financial AI award">
+      <figcaption>The reasoning line connects mathematical rigor, optimization, and applied decision systems.</figcaption>
+    </figure>
+    <figure>
+      <img src="/assets/img/media-roundup-2026/twinmarket-bdi.png" alt="Agent reasoning in simulation">
+      <figcaption>Agentic simulations make reasoning visible in decisions, constraints, and downstream actions.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="impact-section">
+  <h2>Paper Trail</h2>
+  <div class="impact-paper-trail">
+    <div class="impact-paper">
+      <span>Math</span>
+      <div><strong>MathScale: Scaling Instruction Tuning for Mathematical Reasoning</strong><p>Studies scaling and verifier-style feedback for mathematical reasoning.</p><a href="https://arxiv.org/abs/2403.02884" target="_blank" rel="noopener">Paper</a></div>
+    </div>
+    <div class="impact-paper">
+      <span>OR</span>
+      <div><strong>ORLM: Training Large Models for Automated Optimization Modeling</strong><p>Turns natural language problem descriptions into formal optimization models and solver-ready structure.</p><a href="https://github.com/Cardinal-Operations/ORLM" target="_blank" rel="noopener">Repository</a></div>
+    </div>
+    <div class="impact-paper">
+      <span>Code</span>
+      <div><strong>CoRT: Code-integrated Reasoning within Thinking</strong><p>Uses executable computation inside the reasoning process to improve reliability and inspectability.</p><a href="https://github.com/ChengpengLi1003/CoRT" target="_blank" rel="noopener">Repository</a></div>
+    </div>
+    <div class="impact-paper">
+      <span>Video</span>
+      <div><strong>Video-R1: Reinforcing Video Reasoning in MLLMs</strong><p>Transfers reasoning-style training into video understanding and multimodal LLMs.</p><a href="https://github.com/tulerfeng/Video-R1" target="_blank" rel="noopener">Repository</a></div>
     </div>
   </div>
 </section>

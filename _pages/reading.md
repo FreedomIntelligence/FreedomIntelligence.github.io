@@ -11,8 +11,31 @@ nav_order: 2
 
 <div class="project-hub">
   <p class="project-hub-intro">
-    FreedomAI projects are organized as research programs rather than isolated releases. Each program below bundles together the papers, GitHub repositories, Hugging Face models or datasets, benchmarks, and deployment artifacts that make the direction reproducible.
+    FreedomAI projects are organized as research programs rather than isolated releases. Each program below bundles together the papers, GitHub repositories, Hugging Face models or datasets, benchmarks, and deployment artifacts that make the direction reproducible. The recurring story is simple: build open data, train domain models, evaluate them in realistic tasks, and then connect them to agents, simulators, and deployed workflows.
   </p>
+
+  <div class="project-program-map" aria-label="FreedomAI project story map">
+    <div class="project-program-node">
+      <span>01 data</span>
+      <strong>Reusable substrates</strong>
+      <p>Huatuo-26M, RAG-Instruct, ApolloCorpus, ShareGPT-4o-Image, TalkVid, and benchmark datasets make later model releases reproducible.</p>
+    </div>
+    <div class="project-program-node">
+      <span>02 models</span>
+      <strong>Domain foundation models</strong>
+      <p>HuatuoGPT, Apollo, AceGPT, LongLLaVA, Janus-4o, and Soundwave specialize open models for medicine, languages, images, and speech.</p>
+    </div>
+    <div class="project-program-node">
+      <span>03 evaluation</span>
+      <strong>Pressure tests</strong>
+      <p>CMB, MileBench, GMAI-MMBench, S2S-Arena, EchoMind, and reasoning benchmarks expose whether models actually solve domain tasks.</p>
+    </div>
+    <div class="project-program-node">
+      <span>04 worlds</span>
+      <strong>Agents and simulations</strong>
+      <p>TwinMarket, MicroVerse, and Economic World Models ask how models behave inside evolving social, financial, medical, and scientific worlds.</p>
+    </div>
+  </div>
 
   <div class="project-filter" aria-label="Project filters">
     <button type="button" class="is-active" data-project-filter="all">All</button>

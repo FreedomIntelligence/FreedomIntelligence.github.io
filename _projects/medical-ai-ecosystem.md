@@ -42,6 +42,32 @@ The project is not a single model release. It is a stack: medical data construct
 </div>
 
 <section class="impact-section">
+  <h2>Research Storyline</h2>
+  <div class="impact-storyline">
+    <div class="impact-step">
+      <span>Data</span>
+      <div><strong>Start with Chinese medical QA</strong><p>Huatuo-26M and the early HuatuoGPT work created a reusable Chinese medical question-answering substrate for medical instruction tuning.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>Adapt</span>
+      <div><strong>Turn general LLMs into medical assistants</strong><p>HuatuoGPT-II simplifies medical adaptation with a one-stage recipe and public checkpoints, making the training pipeline easier to reproduce.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>Reason</span>
+      <div><strong>Move from chat to complex diagnosis</strong><p>HuatuoGPT-o1 introduces medical complex reasoning data and models, pushing beyond fluent consultation toward step-by-step clinical reasoning.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>See</span>
+      <div><strong>Add visual medical knowledge</strong><p>HuatuoGPT-Vision and PubMedVision connect medical images, reports, and dialogue so the ecosystem can handle multimodal clinical questions.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>Deploy</span>
+      <div><strong>Close the loop with real workflows</strong><p>Longgang triage and pre-consultation deployment turns evaluation pressure back into product and research questions.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="impact-section">
   <h2>What It Builds</h2>
   <div class="impact-grid">
     <div class="impact-card">
@@ -64,6 +90,24 @@ The project is not a single model release. It is a stack: medical data construct
 </section>
 
 <section class="impact-section">
+  <h2>Project Gallery</h2>
+  <div class="impact-gallery">
+    <figure>
+      <img src="/assets/img/media-roundup-2026/huatuogpt-overview.png" alt="HuatuoGPT ecosystem overview">
+      <figcaption>The ecosystem view: data, medical LLMs, reasoning, multimodality, and deployment form one pipeline.</figcaption>
+    </figure>
+    <figure>
+      <img src="/assets/img/media-roundup-2026/huatuogpt-auto-eval.jpeg" alt="HuatuoGPT-II automatic evaluation">
+      <figcaption>HuatuoGPT-II focuses on a simpler medical adaptation recipe and reproducible evaluation.</figcaption>
+    </figure>
+    <figure>
+      <img src="/assets/img/freedomai-2026/impact/huatuogpt-longgang.jpg" alt="HuatuoGPT Longgang deployment">
+      <figcaption>Deployment in Longgang turns model research into triage and pre-consultation workflow feedback.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="impact-section">
   <h2>Representative Work</h2>
   <div class="impact-grid">
     <div class="impact-card impact-resource">
@@ -80,6 +124,32 @@ The project is not a single model release. It is a stack: medical data construct
       <strong>HuatuoGPT-Vision</strong>
       <p>A multimodal medical model line connected to PubMedVision, a large image-text medical visual instruction dataset.</p>
       <a href="https://huggingface.co/FreedomIntelligence/HuatuoGPT-Vision-7B" target="_blank" rel="noopener">Model</a>
+    </div>
+  </div>
+</section>
+
+<section class="impact-section">
+  <h2>Paper Trail</h2>
+  <div class="impact-paper-trail">
+    <div class="impact-paper">
+      <span>Dataset</span>
+      <div><strong>Huatuo-26M, a Large-scale Chinese Medical QA Dataset</strong><p>Builds the data foundation for Chinese medical instruction tuning and evaluation.</p><a href="https://github.com/FreedomIntelligence/Huatuo-26M" target="_blank" rel="noopener">Code and data</a></div>
+    </div>
+    <div class="impact-paper">
+      <span>Model</span>
+      <div><strong>HuatuoGPT, towards Taming Language Model to Be a Doctor</strong><p>Turns the data foundation into an open medical dialogue model and establishes the first HuatuoGPT model family.</p><a href="https://github.com/FreedomIntelligence/HuatuoGPT" target="_blank" rel="noopener">Repository</a></div>
+    </div>
+    <div class="impact-paper">
+      <span>Adapt</span>
+      <div><strong>HuatuoGPT-II, One-stage Training for Medical Adaption of LLMs</strong><p>Simplifies the adaptation pipeline and releases public checkpoints for downstream medical LLM research.</p><a href="https://github.com/FreedomIntelligence/HuatuoGPT-II" target="_blank" rel="noopener">Repository</a></div>
+    </div>
+    <div class="impact-paper">
+      <span>Reasoning</span>
+      <div><strong>HuatuoGPT-o1: Towards Medical Complex Reasoning with LLMs</strong><p>Adds verifier-style medical reasoning data and models to make medical outputs more structured and testable.</p><a href="https://github.com/FreedomIntelligence/HuatuoGPT-o1" target="_blank" rel="noopener">Repository</a></div>
+    </div>
+    <div class="impact-paper">
+      <span>Vision</span>
+      <div><strong>HuatuoGPT-Vision, Towards Injecting Medical Visual Knowledge into Multimodal LLMs at Scale</strong><p>Extends the ecosystem from text-only medical QA to image-grounded medical dialogue and multimodal knowledge.</p><a href="https://github.com/FreedomIntelligence/HuatuoGPT-Vision" target="_blank" rel="noopener">Repository</a></div>
     </div>
   </div>
 </section>

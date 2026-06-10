@@ -38,6 +38,28 @@ The speech and audio line extends the lab's model ecosystem from text and images
 </p>
 
 <section class="impact-section">
+  <h2>Research Storyline</h2>
+  <div class="impact-storyline">
+    <div class="impact-step">
+      <span>Align</span>
+      <div><strong>Soundwave connects speech and text</strong><p>The first question is how little speech supervision is needed to ground LLMs in spoken input and output.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>Evaluate</span>
+      <div><strong>S2S-Arena tests how things are spoken</strong><p>Speech-to-speech systems need to follow paralinguistic instructions, not just transcribe or answer textually.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>Empathy</span>
+      <div><strong>EchoMind measures affective speech behavior</strong><p>Empathetic speech requires multi-level evaluation of emotion, response style, and conversational alignment.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>Embody</span>
+      <div><strong>TalkVid turns speech into talking-head generation</strong><p>Audio-driven video generation connects speech understanding to visible, embodied communication.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="impact-section">
   <h2>Project Threads</h2>
   <div class="impact-grid">
     <div class="impact-card">
@@ -55,6 +77,38 @@ The speech and audio line extends the lab's model ecosystem from text and images
     <div class="impact-card">
       <strong>TalkVid</strong>
       <p>Provides a diversified dataset for audio-driven talking-head synthesis across multiple languages and video generation settings.</p>
+    </div>
+  </div>
+</section>
+
+<section class="impact-section">
+  <h2>Display Figures</h2>
+  <div class="impact-gallery">
+    <figure>
+      <img src="/assets/img/media-roundup-2026/socratic-pipeline.png" alt="Speech and interactive AI pipeline">
+      <figcaption>The speech line shares a common pipeline with interactive agents: perceive, reason, respond, and evaluate behavior.</figcaption>
+    </figure>
+    <figure>
+      <img src="/assets/img/freedomai-2026/impact/github-impact.jpg" alt="Open source impact">
+      <figcaption>Open datasets and benchmarks make speech and embodied interaction research easier to reproduce.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="impact-section">
+  <h2>Paper Trail</h2>
+  <div class="impact-paper-trail">
+    <div class="impact-paper">
+      <span>Speech</span>
+      <div><strong>Soundwave: Less is More for Speech-Text Alignment in LLMs</strong><p>Studies efficient speech-text alignment so LLMs can connect spoken signals and language behavior.</p><a href="https://github.com/FreedomIntelligence/Soundwave" target="_blank" rel="noopener">Repository</a></div>
+    </div>
+    <div class="impact-paper">
+      <span>Eval</span>
+      <div><strong>S2S-Arena and EchoMind</strong><p>Benchmarks paralinguistic instruction following and empathetic speech model behavior.</p><a href="https://github.com/FreedomIntelligence/S2S-Arena" target="_blank" rel="noopener">S2S-Arena</a></div>
+    </div>
+    <div class="impact-paper">
+      <span>Video</span>
+      <div><strong>TalkVid</strong><p>Provides diversified audio-driven talking-head data so voice can control visible speech behavior.</p><a href="https://huggingface.co/datasets/FreedomIntelligence/TalkVid" target="_blank" rel="noopener">Dataset</a></div>
     </div>
   </div>
 </section>

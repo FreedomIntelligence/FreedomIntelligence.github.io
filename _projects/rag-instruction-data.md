@@ -38,6 +38,28 @@ Many FreedomAI projects are useful because they release the substrate that other
 </p>
 
 <section class="impact-section">
+  <h2>Research Storyline</h2>
+  <div class="impact-storyline">
+    <div class="impact-step">
+      <span>Collect</span>
+      <div><strong>Build reusable domain corpora</strong><p>Huatuo-26M, ApolloCorpus, PubMedVision, and related releases give medical and multilingual projects a stronger data substrate.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>Ground</span>
+      <div><strong>Teach models to use retrieved evidence</strong><p>RAG-Instruct turns retrieval into an instruction-following skill rather than a post-hoc wrapper around memorized model answers.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>Package</span>
+      <div><strong>Release models with data and tasks</strong><p>LLMZoo, InstructionZoo, and Hugging Face checkpoints make the data useful to people who want to reproduce or extend the recipe.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>Feed back</span>
+      <div><strong>Connect infrastructure to benchmarks</strong><p>Datasets are most useful when paired with CMB, Apollo evaluation, multimodal medical benchmarks, and downstream project pages.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="impact-section">
   <h2>Infrastructure Pieces</h2>
   <div class="impact-grid">
     <div class="impact-card">
@@ -55,6 +77,24 @@ Many FreedomAI projects are useful because they release the substrate that other
     <div class="impact-card">
       <strong>Model releases</strong>
       <p>Small and mid-size checkpoints such as RAG-Instruct-Llama3-3B let researchers test data recipes without rebuilding the whole pipeline.</p>
+    </div>
+  </div>
+</section>
+
+<section class="impact-section">
+  <h2>Paper Trail</h2>
+  <div class="impact-paper-trail">
+    <div class="impact-paper">
+      <span>Medical data</span>
+      <div><strong>Huatuo-26M</strong><p>Large-scale Chinese medical QA data that feeds medical LLM instruction tuning and evaluation.</p><a href="https://github.com/FreedomIntelligence/Huatuo-26M" target="_blank" rel="noopener">Repository</a></div>
+    </div>
+    <div class="impact-paper">
+      <span>RAG</span>
+      <div><strong>RAG-Instruct: Boosting LLMs with Diverse Retrieval-Augmented Instructions</strong><p>Teaches models how to condition answers on retrieved evidence across diverse tasks.</p><a href="https://github.com/FreedomIntelligence/RAG-Instruct" target="_blank" rel="noopener">Repository</a></div>
+    </div>
+    <div class="impact-paper">
+      <span>Multilingual</span>
+      <div><strong>ApolloCorpus and PubMedVision</strong><p>Domain corpora for multilingual medical modeling and medical visual-language supervision.</p><a href="https://huggingface.co/datasets/FreedomIntelligence/ApolloCorpus" target="_blank" rel="noopener">ApolloCorpus</a></div>
     </div>
   </div>
 </section>

@@ -38,6 +38,28 @@ LongLLaVA asks how multimodal LLMs can reason over hundreds or thousands of imag
 </p>
 
 <section class="impact-section">
+  <h2>Research Storyline</h2>
+  <div class="impact-storyline">
+    <div class="impact-step">
+      <span>Benchmark</span>
+      <div><strong>MileBench defines the pressure</strong><p>Many-image and video tasks expose whether a multimodal model can retrieve, count, order, and reason across long visual contexts.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>Model</span>
+      <div><strong>LongLLaVA scales the context window</strong><p>The model combines hybrid architecture, data construction, and progressive training so a single model can handle many images efficiently.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>Efficiency</span>
+      <div><strong>TRIM attacks token waste</strong><p>Token reduction is the practical counterpart of long-context modeling: longer context only matters if inference remains affordable.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>Agents</span>
+      <div><strong>Phone and web agents need this capability</strong><p>Real agents inspect many screenshots, browser states, UI panels, and videos; long-context multimodal reasoning becomes infrastructure for agentic workflows.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="impact-section">
   <h2>Technical Shape</h2>
   <div class="impact-grid">
     <div class="impact-card">
@@ -60,12 +82,48 @@ LongLLaVA asks how multimodal LLMs can reason over hundreds or thousands of imag
 </div>
 
 <section class="impact-section">
+  <h2>Display Figures</h2>
+  <div class="impact-gallery">
+    <figure>
+      <img src="/assets/img/media-roundup-2026/longllava-architecture.webp" alt="LongLLaVA hybrid architecture">
+      <figcaption>The architecture story: scale multimodal context without letting attention cost dominate the whole model.</figcaption>
+    </figure>
+    <figure>
+      <img src="/assets/img/media-roundup-2026/longllava-training.png" alt="LongLLaVA progressive training">
+      <figcaption>The training story: retain single-image ability while teaching the model to reason over many images and video frames.</figcaption>
+    </figure>
+    <figure>
+      <img src="/assets/img/media-roundup-2026/phoneharness-architecture.png" alt="PhoneHarness mobile agent architecture">
+      <figcaption>Downstream agent settings, such as phone control, turn long visual context into an operational requirement.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="impact-section">
   <h2>Why It Matters</h2>
   <ul class="impact-list">
     <li>Real multimodal agents need to inspect many screenshots, frames, pages, or documents, not just answer about a single image.</li>
     <li>Long visual context is a systems problem: architecture, data mixture, token reduction, and evaluation all have to co-evolve.</li>
     <li>The LongLLaVA/MileBench pairing creates both a model direction and a public yardstick for future long-context MLLMs.</li>
   </ul>
+</section>
+
+<section class="impact-section">
+  <h2>Paper Trail</h2>
+  <div class="impact-paper-trail">
+    <div class="impact-paper">
+      <span>Benchmark</span>
+      <div><strong>MileBench: Benchmarking MLLMs in Long Context</strong><p>Creates the public pressure test for many-image and video reasoning, making long-context claims measurable.</p><a href="https://huggingface.co/datasets/FreedomIntelligence/MileBench" target="_blank" rel="noopener">Dataset</a></div>
+    </div>
+    <div class="impact-paper">
+      <span>Model</span>
+      <div><strong>LongLLaVA: Scaling Multi-modal LLMs to 1000 Images Efficiently via Hybrid Architecture</strong><p>Responds to the benchmark pressure with a hybrid architecture and progressive multimodal training recipe.</p><a href="https://github.com/FreedomIntelligence/LongLLaVA" target="_blank" rel="noopener">Repository</a></div>
+    </div>
+    <div class="impact-paper">
+      <span>Efficiency</span>
+      <div><strong>TRIM and efficient multimodal context</strong><p>Complements LongLLaVA by reducing redundant visual tokens so long-context systems can be deployed more cheaply.</p><a href="https://github.com/FreedomIntelligence/TRIM" target="_blank" rel="noopener">TRIM</a></div>
+    </div>
+  </div>
 </section>
 
 <section class="impact-section">

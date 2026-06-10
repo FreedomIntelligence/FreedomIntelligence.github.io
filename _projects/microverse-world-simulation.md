@@ -36,6 +36,28 @@ MicroVerse explores a different kind of world model: not city streets or game wo
 </p>
 
 <section class="impact-section">
+  <h2>Research Storyline</h2>
+  <div class="impact-storyline">
+    <div class="impact-step">
+      <span>Scope</span>
+      <div><strong>Move world models into biology</strong><p>MicroVerse treats organs, cells, and subcellular processes as evolving worlds whose important state is often hidden from surface images.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>Mechanism</span>
+      <div><strong>Use scientific constraints, not only pixels</strong><p>The project asks whether generative systems can respect biological mechanisms and state transitions, not merely produce plausible-looking pictures.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>Benchmark</span>
+      <div><strong>Evaluate micro-world dynamics</strong><p>Benchmarks pressure models to predict, generate, and reason about biologically meaningful transitions over time.</p></div>
+    </div>
+    <div class="impact-step">
+      <span>Bridge</span>
+      <div><strong>Connect scientific and economic simulations</strong><p>MicroVerse complements TwinMarket and Economic World Models by showing how the same simulation agenda can apply to high-stakes scientific domains.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="impact-section">
   <h2>Research Questions</h2>
   <div class="impact-grid">
     <div class="impact-card">
@@ -56,6 +78,34 @@ MicroVerse explores a different kind of world model: not city streets or game wo
 <div class="impact-figure">
   <img src="/assets/img/media-roundup-2026/microverse-bench.png" alt="MicroVerse benchmark figure">
 </div>
+
+<section class="impact-section">
+  <h2>Display Figures</h2>
+  <div class="impact-gallery">
+    <figure>
+      <img src="/assets/img/media-roundup-2026/microverse-overview.png" alt="MicroVerse overview">
+      <figcaption>MicroVerse frames biological processes as micro-worlds with hidden mechanisms and evolving states.</figcaption>
+    </figure>
+    <figure>
+      <img src="/assets/img/media-roundup-2026/microverse-bench.png" alt="MicroVerse benchmark">
+      <figcaption>The benchmark side asks whether predictions remain scientifically meaningful, not only visually plausible.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="impact-section">
+  <h2>Paper Trail</h2>
+  <div class="impact-paper-trail">
+    <div class="impact-paper">
+      <span>Micro</span>
+      <div><strong>MicroVerse: A Preliminary Exploration Toward a Micro-World Simulation</strong><p>Introduces biological micro-world simulation as a world-modeling direction for organs, cells, and subcellular processes.</p><a href="https://github.com/FreedomIntelligence/MicroVerse" target="_blank" rel="noopener">Repository</a></div>
+    </div>
+    <div class="impact-paper">
+      <span>Macro</span>
+      <div><strong>Economic World Models and TwinMarket</strong><p>Shows the same agentic simulation idea at social and market scale, giving MicroVerse a broader world-modeling context.</p><a href="/projects/economic-world-models/">Economic World Models</a></div>
+    </div>
+  </div>
+</section>
 
 <section class="impact-section">
   <h2>Why It Matters</h2>
