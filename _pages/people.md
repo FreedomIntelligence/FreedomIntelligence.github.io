@@ -19,6 +19,7 @@ horizontal: false
   <h2 class="category" id="{{ category | slugify }}">{{ category }}</h2>
   {%- assign categorized_people = site.people | where: "category", category -%}
   {%- assign sorted_people = categorized_people | sort: "importance" %}
+  {%- unless category == "Member" -%}
   <!-- Generate cards for each person -->
   {% if page.horizontal -%}
   <div class="container">
@@ -53,6 +54,7 @@ horizontal: false
     {%- endfor %}
   </div>
   {%- endif -%}
+  {%- endunless -%}
 
   {%- if category == "Member" -%}
   {% include alumni_current_students.html %}
