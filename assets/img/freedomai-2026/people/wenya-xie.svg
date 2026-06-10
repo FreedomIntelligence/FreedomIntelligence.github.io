@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Wenya Xie">
+  <rect width="512" height="512" rx="256" fill="#4338ca"/>
+  <circle cx="256" cy="212" r="118" fill="#818cf8" opacity=".45"/>
+  <path d="M94 410c25-82 86-128 162-128s137 46 162 128" fill="#e0e7ff" opacity=".92"/>
+  <text x="256" y="278" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="132" font-weight="700" fill="#ffffff">WX</text>
+</svg>
