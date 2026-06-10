@@ -1,7 +1,7 @@
 ---
 ---
 <!-- _layouts/bib.html -->
-<div class="row">
+<div class="row publication-entry"{% if entry.tags %} data-tags="{{ entry.tags | escape }}"{% endif %}>
   <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
     {%- if entry.preview -%}
     {% if entry.preview contains '://' -%}
@@ -134,6 +134,14 @@
     <div class="periodical">
       {{ periodical | strip }}
     </div>
+    {% if entry.tags %}
+    <div class="publication-tags" aria-label="Publication tags">
+      {% assign publication_tags = entry.tags | split: ';' %}
+      {% for tag in publication_tags %}
+      <span class="publication-tag">{{ tag | strip }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
     {%- endif %}
 
     <!-- Links/Buttons -->
