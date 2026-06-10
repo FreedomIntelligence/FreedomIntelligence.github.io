@@ -264,6 +264,24 @@ nav_order: 2
         </div>
 
         <div class="ai-model-showcase-cards-grid">
+            <div class="ai-model-showcase-card" data-category="benchmark">
+                <div class="ai-model-showcase-open-source-badge">Project</div>
+                <a href="/projects/economic-world-models/" aria-label="Economic World Models">
+                    <img src="/assets/img/economic-world-models/ewm-hero.png" alt="Economic World Models" class="ai-model-showcase-avatar">
+                </a>
+                <div class="ai-model-showcase-card-content">
+                    <h2 class="ai-model-showcase-model-name"><a href="/projects/economic-world-models/">Economic World Models</a></h2>
+                    <p class="ai-model-showcase-model-description">
+                        A systems blueprint for agentic economies: heterogeneous economic agents, evolving institutions, policy sandboxes, and sim-to-real economic twins.
+                    </p>
+                    <div class="ai-model-showcase-links-container">
+                        <a href="/projects/economic-world-models/" class="ai-model-showcase-badge ai-model-showcase-demo">Project Page</a>
+                        <a href="https://github.com/FreedomIntelligence/Awesome-Econ-World-Models/" class="ai-model-showcase-badge ai-model-showcase-github" rel="external nofollow noopener" target="_blank">GitHub</a>
+                        <a href="/assets/pdf/economic-world-models.pdf" class="ai-model-showcase-badge ai-model-showcase-huggingface" target="_blank">Paper</a>
+                    </div>
+                </div>
+            </div>
+
             <!-- 模型卡片 1 -->
             <div class="ai-model-showcase-card" data-category="image">
                 <div class="ai-model-showcase-open-source-badge">开源</div>
