@@ -29,6 +29,12 @@ nav_order: 2
     margin: 0.4rem 0 1.5rem;
   }
 
+  @media (min-width: 1200px) {
+    body > .container.mt-5 {
+      max-width: 1180px;
+    }
+  }
+
   .publication-filter button {
     border: 1px solid var(--global-divider-color);
     border-radius: 999px;
