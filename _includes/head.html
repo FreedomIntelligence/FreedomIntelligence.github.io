@@ -21,7 +21,7 @@
     {% endif %}
     <script src="{{ '/assets/js/block_polyfill_io.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/wechat_popover.js?v=2' | relative_url }}" defer></script>
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
     
     <!-- Dark Mode -->
