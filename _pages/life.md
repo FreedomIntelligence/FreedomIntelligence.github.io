@@ -26,6 +26,17 @@ nav_order: 4
     border-radius: 8px;
   }
 
+  .life-photo--contain img {
+    object-fit: contain;
+    border: 1px solid var(--global-divider-color);
+    background: #fff;
+    padding: 8px;
+  }
+
+  .life-photo--wide {
+    grid-column: span 2;
+  }
+
   .life-photo figcaption {
     margin-top: 7px;
     color: var(--global-text-color-light);
@@ -70,6 +81,10 @@ nav_order: 4
   @media (max-width: 720px) {
     .life-program {
       grid-template-columns: 1fr;
+    }
+
+    .life-photo--wide {
+      grid-column: span 1;
     }
   }
 </style>
@@ -122,6 +137,35 @@ FreedomAI 秉承“每个人争取自己的自由，就是争取整个社会的�
   <figure class="life-photo">
     <img src="/assets/img/freedomai-2026/life/football.png" alt="FreedomAI Lab football activity">
     <figcaption>足球活动：在运动里建立默契和团队感。</figcaption>
+  </figure>
+</div>
+
+## Milestones Together
+
+<div class="life-gallery">
+  <figure class="life-photo life-photo--wide">
+    <img src="/assets/img/freedomai-2026/impact/huatuogpt-longgang.jpg" alt="HuatuoGPT launch ceremony in Longgang">
+    <figcaption>域华佗 GPT 智能导诊和预问诊系统上线发布会：把实验室成果带到真实医疗场景。</figcaption>
+  </figure>
+
+  <figure class="life-photo life-photo--contain">
+    <img src="/assets/img/freedomai-2026/impact/iclr-financial-ai-award.jpg" alt="ICLR Advances in Financial AI Workshop best paper award">
+    <figcaption>ICLR Advances in Financial AI Workshop Best Paper Award。</figcaption>
+  </figure>
+
+  <figure class="life-photo life-photo--contain">
+    <img src="/assets/img/freedomai-2026/life/naacl-2019-best-explainable-nlp-paper.jpg" alt="NAACL 2019 Best Explainable NLP Paper certificate">
+    <figcaption>NAACL 2019 Best Explainable NLP Paper。</figcaption>
+  </figure>
+
+  <figure class="life-photo life-photo--contain">
+    <img src="/assets/img/freedomai-2026/life/sigir-2017-honorable-mention.jpg" alt="SIGIR 2017 best paper award honorable mention certificate">
+    <figcaption>SIGIR 2017 Best Paper Award Honorable Mention。</figcaption>
+  </figure>
+
+  <figure class="life-photo life-photo--contain">
+    <img src="/assets/img/freedomai-2026/life/nlpcc-2022-best-paper-award.jpg" alt="NLPCC 2022 best paper award certificate">
+    <figcaption>NLPCC 2022 Best Paper Award。</figcaption>
   </figure>
 </div>
 

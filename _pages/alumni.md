@@ -93,15 +93,19 @@ nav_order: 5
     <img src="/assets/img/freedomai-2026/people/zhengyang-tang-headshot.png" alt="Zhengyang Tang">
     <h3>唐正阳 Zhengyang Tang</h3>
     <div class="alumni-role">PhD graduate</div>
-    <p>Worked with Qwen, Kimi, Tencent Hunyuan, and Microsoft Research Asia; led or co-led AceGPT, ORLM, CALM, CoRT, and agentic systems research.</p>
+    <p>Worked with <a href="https://arxiv.org/abs/2505.09388">Qwen3</a>, <a href="https://arxiv.org/abs/2602.02276">Kimi K2.5</a>, Tencent Hunyuan, and Microsoft Research Asia; led or co-led <a href="https://aclanthology.org/2024.naacl-long.450/">AceGPT</a>, <a href="https://arxiv.org/abs/2405.17743">ORLM</a>, <a href="https://arxiv.org/abs/2510.04204">CALM/STORM</a>, <a href="https://arxiv.org/abs/2506.09820">CoRT</a>, and <a href="https://arxiv.org/abs/2604.00986">agentic privacy systems</a> research.</p>
     <ul>
       <li>PDF snapshot: 12,179 citations, h-index 11, i10-index 11.</li>
       <li>Representative areas: agents, optimization modeling, code reasoning, and multilingual LLMs.</li>
     </ul>
     <div class="alumni-links">
       <a href="https://tangzhy.github.io/">Homepage</a>
-      <a href="https://scholar.google.com/citations?hl=en&user=2RRV0PQAAAAJ">Google Scholar</a>
+      <a href="https://scholar.google.com/citations?user=2RRV0PQAAAAJ">Google Scholar</a>
       <a href="https://github.com/tangzhy">GitHub</a>
+      <a href="https://arxiv.org/abs/2505.09388">Qwen3 Report</a>
+      <a href="https://arxiv.org/abs/2602.02276">Kimi K2.5 Report</a>
+      <a href="https://github.com/FreedomIntelligence/AceGPT">AceGPT Code</a>
+      <a href="https://github.com/Cardinal-Operations/ORLM">ORLM Code</a>
     </div>
   </section>
 
@@ -109,15 +113,16 @@ nav_order: 5
     <img src="/assets/img/freedomai-2026/people/bohao-li.png" alt="Bohao Li">
     <h3>李博豪 Bohao Li</h3>
     <div class="alumni-role">PhD graduate</div>
-    <p>Led influential multimodal benchmark work, including SEED-Bench, and has research experience across multimodal evaluation and computer vision.</p>
+    <p>Led influential multimodal benchmark work, including <a href="https://arxiv.org/abs/2307.16125">SEED-Bench</a> and <a href="https://arxiv.org/abs/2311.17092">SEED-Bench-2</a>, and has research experience across multimodal evaluation and computer vision.</p>
     <ul>
       <li>PDF snapshot: 3,460 citations, h-index 12, i10-index 12.</li>
       <li>Representative areas: multimodal benchmarks, vision-language models, and few-shot learning.</li>
     </ul>
     <div class="alumni-links">
       <a href="https://bohao-lee.github.io/">Homepage</a>
-      <a href="https://scholar.google.com/citations?hl=en&user=YSuTMAIAAAAJ">Google Scholar</a>
+      <a href="https://scholar.google.com/citations?user=YSuTMAIAAAAJ">Google Scholar</a>
       <a href="https://github.com/Bohao-Lee">GitHub</a>
+      <a href="https://github.com/AILab-CVC/SEED-Bench">SEED-Bench Code</a>
     </div>
   </section>
 </div>
@@ -129,15 +134,17 @@ nav_order: 5
     <img src="/assets/img/freedomai-2026/people/junying-chen.png" alt="Junying Chen">
     <h3>陈俊颖 Junying Chen</h3>
     <div class="alumni-role">PhD student</div>
-    <p>Leads the HuatuoGPT series, including medical LLMs, multimodal medical models, and medical AI agents deployed in real-world contexts.</p>
+    <p>Leads the <a href="https://github.com/FreedomIntelligence/HuatuoGPT">HuatuoGPT</a> series, including <a href="https://arxiv.org/abs/2412.18925">medical reasoning LLMs</a>, <a href="https://arxiv.org/abs/2406.19280">multimodal medical models</a>, and medical AI agents deployed in real-world contexts.</p>
     <ul>
       <li>PDF snapshot: 2,524 citations, h-index 18, i10-index 21.</li>
       <li>Open-source impact: 6K GitHub stars and hundreds of thousands of model/data downloads.</li>
     </ul>
     <div class="alumni-links">
       <a href="https://jymchen.github.io/">Homepage</a>
-      <a href="https://scholar.google.com.hk/citations?authuser=1&hl=zh-CN&user=I0raPTYAAAAJ">Google Scholar</a>
+      <a href="https://scholar.google.com/citations?user=I0raPTYAAAAJ">Google Scholar</a>
       <a href="https://github.com/FreedomIntelligence/HuatuoGPT">HuatuoGPT</a>
+      <a href="https://github.com/FreedomIntelligence/HuatuoGPT-o1">HuatuoGPT-o1</a>
+      <a href="https://github.com/FreedomIntelligence/HuatuoGPT-Vision">HuatuoGPT-Vision</a>
     </div>
   </section>
 
@@ -145,7 +152,7 @@ nav_order: 5
     <img src="/assets/img/freedomai-2026/people/xidong-wang.png" alt="Xidong Wang">
     <h3>王熙栋 Xidong Wang</h3>
     <div class="alumni-role">PhD student</div>
-    <p>Former intern at Ant Group medical AI and Ubiquant; led CMB, LongLLaVA, Apollo, and medical benchmark work.</p>
+    <p>Former intern at Ant Group medical AI and Ubiquant; led <a href="https://aclanthology.org/2024.naacl-long.343/">CMB</a>, <a href="https://arxiv.org/abs/2409.02889">LongLLaVA</a>, <a href="https://arxiv.org/abs/2403.03640">Apollo</a>, and medical benchmark work.</p>
     <ul>
       <li>PDF snapshot: 1,502 citations, h-index 12, i10-index 13.</li>
       <li>Representative areas: medical LLM evaluation, long-context MLLMs, and multilingual medical AI.</li>
@@ -154,6 +161,9 @@ nav_order: 5
       <a href="https://github.com/wangxidong06">GitHub</a>
       <a href="https://scholar.google.com/citations?user=WJeSzQMAAAAJ">Google Scholar</a>
       <a href="https://openreview.net/profile?id=~Xidong_Wang3">OpenReview</a>
+      <a href="https://github.com/FreedomIntelligence/CMB">CMB Code</a>
+      <a href="https://github.com/FreedomIntelligence/LongLLaVA">LongLLaVA Code</a>
+      <a href="https://github.com/FreedomIntelligence/Apollo">Apollo Code</a>
     </div>
   </section>
 
@@ -161,7 +171,7 @@ nav_order: 5
     <img src="/assets/img/freedomai-2026/people/shunian-chen.jpeg" alt="Shunian Chen">
     <h3>陈舒年 Shunian Chen</h3>
     <div class="alumni-role">PhD student</div>
-    <p>Leads ALLaVA and other multimodal/audio-language model work, with an upcoming Stanford visit highlighted in the recruitment deck.</p>
+    <p>Leads <a href="https://arxiv.org/abs/2402.11684">ALLaVA</a> and other multimodal/audio-language model work, with an upcoming Stanford visit highlighted in the recruitment deck.</p>
     <ul>
       <li>PDF snapshot: 1,867 citations, h-index 13, i10-index 14.</li>
       <li>Representative areas: vision-language models, audio-language models, and LLM agents.</li>
@@ -170,6 +180,7 @@ nav_order: 5
       <a href="https://personal-page-sigma-seven.vercel.app/">Homepage</a>
       <a href="https://scholar.google.com/citations?user=T0yyq-EAAAAJ">Google Scholar</a>
       <a href="https://github.com/FreedomIntelligence/ALLaVA">ALLaVA</a>
+      <a href="https://huggingface.co/FreedomIntelligence/ALLaVA-3B">ALLaVA Model</a>
     </div>
   </section>
 </div>
@@ -181,17 +192,19 @@ nav_order: 5
     <img src="/assets/img/zhiyong.jpeg" alt="Zhiyong Wu">
     <h3>吴志勇 Zhiyong Wu</h3>
     <div class="alumni-role">PhD 2021, HKU</div>
-    <p>Former PhD student collaborator from the earlier HKU NLP period; now at Shanghai Artificial Intelligence Laboratory.</p>
+    <p>Former PhD student collaborator from the earlier HKU NLP period; now building OS agents at ByteDance Seed.</p>
     <div class="alumni-links">
       <a href="https://lividwo.github.io/zywu.github.io/">Homepage</a>
+      <a href="https://scholar.google.com/citations?user=wIlpfXEAAAAJ">Google Scholar</a>
+      <a href="https://arxiv.org/abs/2402.07456">OS-Copilot</a>
     </div>
   </section>
 </div>
 
 ## Alumni Achievements
 
-- Lab RA Zhang Chen received an ACL 2025 Outstanding Paper.
-- Visiting scholar Yazhou Zhang received a PRCV 2025 Best Paper nomination.
+- Lab RA Zhang Chen received an <a href="https://2025.aclweb.org/program/awards/">ACL 2025 Outstanding Paper</a>.
+- Visiting scholar Yazhou Zhang received a <a href="https://saiconference.com/CVC/CommitteeProfile/09b70e99-0afb-43ee-8981-94278a49e9cc">PRCV 2025 Best Paper nomination</a>.
 - A graduated PhD student from the lab has published in Nature.
 
 ## Grow With Your Peers
