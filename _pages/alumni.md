@@ -7,117 +7,193 @@ nav: true
 nav_order: 5
 ---
 
+<style>
+  .alumni-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    gap: 16px;
+    margin: 1.2rem 0 2rem;
+  }
+
+  .alumni-card {
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    padding: 16px;
+    background: var(--global-bg-color);
+  }
+
+  .alumni-card img {
+    width: 92px;
+    height: 92px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    border: 1px solid var(--global-divider-color);
+    background: #fff;
+  }
+
+  .alumni-card h3 {
+    margin: 0 0 4px;
+    font-size: 1.05rem;
+  }
+
+  .alumni-role {
+    color: var(--global-text-color-light);
+    font-size: 0.92rem;
+    margin-bottom: 10px;
+  }
+
+  .alumni-card p,
+  .alumni-card li {
+    line-height: 1.6;
+  }
+
+  .alumni-card ul {
+    margin: 0.7rem 0;
+    padding-left: 1rem;
+  }
+
+  .alumni-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .alumni-links a {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--global-theme-color);
+    border-radius: 6px;
+    padding: 4px 9px;
+    font-size: 0.88rem;
+  }
+</style>
+
 ## PhD Graduates
 
-<div class="card-columns">
-
-<div class="card mb-4">
-  <div class="card-body">
-    <h4 class="card-title">陈志鸿 (Zhihong Chen)</h4>
-    <p class="card-text">
-      <strong>首位毕业博士生</strong><br>
-      Stanford博后，后在硅谷创业，创办<a href="#startups">Cognita</a>公司拿到硅谷融资，近亿美刀被Mosaic Clinical Technologies收购（任CTO）。
-    </p>
+<div class="alumni-grid">
+  <section class="alumni-card">
+    <img src="/assets/img/freedomai-2026/people/zhihong-chen.png" alt="Zhihong Chen">
+    <h3>陈志鸿 Zhihong Chen</h3>
+    <div class="alumni-role">First PhD graduate</div>
+    <p>Stanford postdoc alum and co-founder of Cognita. Cognita was acquired by Mosaic Clinical Technologies, where the Cognita team continues as an AI-focused unit.</p>
     <ul>
-      <li>Google Scholar 引用: 5,326</li>
-      <li>h-index: 27, i10-index: 33</li>
+      <li>PDF snapshot: 5,326 citations, h-index 27, i10-index 33.</li>
+      <li>Representative areas: medical vision-language models, radiology AI, and healthcare foundation models.</li>
     </ul>
-    <a href="https://scholar.google.com/citations?user=PLACEHOLDER" class="btn btn-sm btn-outline-primary">Google Scholar</a>
-  </div>
-</div>
+    <div class="alumni-links">
+      <a href="https://zhjohnchan.github.io/">Homepage</a>
+      <a href="https://scholar.google.com/citations?hl=en&user=y55sF8cAAAAJ">Google Scholar</a>
+      <a href="https://www.radpartners.com/2025/11/mosaic-clinical-technologies-acquires-cognita-imaging-inc/">Cognita News</a>
+    </div>
+  </section>
 
-<div class="card mb-4">
-  <div class="card-body">
-    <h4 class="card-title">唐正阳 (Zhengyang Tang)</h4>
-    <p class="card-text">
-      <strong>毕业博士生</strong><br>
-      在阿里千问、KIMI、混元等实习，参与Qwen 3、Kimi K2.5等技术报告；独自领导AceGPT、ORLM等大模型项目。
-    </p>
+  <section class="alumni-card">
+    <img src="/assets/img/freedomai-2026/people/zhengyang-tang-headshot.png" alt="Zhengyang Tang">
+    <h3>唐正阳 Zhengyang Tang</h3>
+    <div class="alumni-role">PhD graduate</div>
+    <p>Worked with Qwen, Kimi, Tencent Hunyuan, and Microsoft Research Asia; led or co-led AceGPT, ORLM, CALM, CoRT, and agentic systems research.</p>
     <ul>
-      <li>Google Scholar 引用: 12,179</li>
-      <li>h-index: 11, i10-index: 11</li>
+      <li>PDF snapshot: 12,179 citations, h-index 11, i10-index 11.</li>
+      <li>Representative areas: agents, optimization modeling, code reasoning, and multilingual LLMs.</li>
     </ul>
-    <a href="https://scholar.google.com/citations?user=PLACEHOLDER" class="btn btn-sm btn-outline-primary">Google Scholar</a>
-  </div>
-</div>
+    <div class="alumni-links">
+      <a href="https://tangzhy.github.io/">Homepage</a>
+      <a href="https://scholar.google.com/citations?hl=en&user=2RRV0PQAAAAJ">Google Scholar</a>
+      <a href="https://github.com/tangzhy">GitHub</a>
+    </div>
+  </section>
 
-<div class="card mb-4">
-  <div class="card-body">
-    <h4 class="card-title">李博豪 (Bohao Li)</h4>
-    <p class="card-text">
-      <strong>毕业博士生</strong><br>
-      SeedBench成为多模态大模型最为知名的benchmark，曾在微软实习等。
-    </p>
+  <section class="alumni-card">
+    <img src="/assets/img/freedomai-2026/people/bohao-li.png" alt="Bohao Li">
+    <h3>李博豪 Bohao Li</h3>
+    <div class="alumni-role">PhD graduate</div>
+    <p>Led influential multimodal benchmark work, including SEED-Bench, and has research experience across multimodal evaluation and computer vision.</p>
     <ul>
-      <li>Google Scholar 引用: 3,460</li>
-      <li>h-index: 12, i10-index: 12</li>
+      <li>PDF snapshot: 3,460 citations, h-index 12, i10-index 12.</li>
+      <li>Representative areas: multimodal benchmarks, vision-language models, and few-shot learning.</li>
     </ul>
-    <a href="https://scholar.google.com/citations?user=PLACEHOLDER" class="btn btn-sm btn-outline-primary">Google Scholar</a>
-  </div>
+    <div class="alumni-links">
+      <a href="https://bohao-lee.github.io/">Homepage</a>
+      <a href="https://scholar.google.com/citations?hl=en&user=YSuTMAIAAAAJ">Google Scholar</a>
+      <a href="https://github.com/Bohao-Lee">GitHub</a>
+    </div>
+  </section>
 </div>
-
-</div>
-
----
 
 ## Outstanding Current Students
 
-<div class="card-columns">
-
-<div class="card mb-4">
-  <div class="card-body">
-    <h4 class="card-title">陈俊颖 (Junying Chen)</h4>
-    <p class="card-text">
-      <strong>博三学生</strong><br>
-      领导华佗GPT系列，模型落地到数百家医院或社康。
-    </p>
+<div class="alumni-grid">
+  <section class="alumni-card">
+    <img src="/assets/img/freedomai-2026/people/junying-chen.png" alt="Junying Chen">
+    <h3>陈俊颖 Junying Chen</h3>
+    <div class="alumni-role">PhD student</div>
+    <p>Leads the HuatuoGPT series, including medical LLMs, multimodal medical models, and medical AI agents deployed in real-world contexts.</p>
     <ul>
-      <li>Google Scholar 引用: 2,524</li>
-      <li>h-index: 18, i10-index: 21</li>
+      <li>PDF snapshot: 2,524 citations, h-index 18, i10-index 21.</li>
+      <li>Open-source impact: 6K GitHub stars and hundreds of thousands of model/data downloads.</li>
     </ul>
-  </div>
-</div>
+    <div class="alumni-links">
+      <a href="https://jymchen.github.io/">Homepage</a>
+      <a href="https://scholar.google.com.hk/citations?authuser=1&hl=zh-CN&user=I0raPTYAAAAJ">Google Scholar</a>
+      <a href="https://github.com/FreedomIntelligence/HuatuoGPT">HuatuoGPT</a>
+    </div>
+  </section>
 
-<div class="card mb-4">
-  <div class="card-body">
-    <h4 class="card-title">王熙栋 (Xidong Wang)</h4>
-    <p class="card-text">
-      <strong>博三学生（本科直博）</strong><br>
-      曾在蚂蚁医疗和九坤实习。领导了CMB、LongLLaVA、Apollo等工作。
-    </p>
+  <section class="alumni-card">
+    <img src="/assets/img/freedomai-2026/people/xidong-wang.png" alt="Xidong Wang">
+    <h3>王熙栋 Xidong Wang</h3>
+    <div class="alumni-role">PhD student</div>
+    <p>Former intern at Ant Group medical AI and Ubiquant; led CMB, LongLLaVA, Apollo, and medical benchmark work.</p>
     <ul>
-      <li>Google Scholar 引用: 1,502</li>
-      <li>h-index: 12, i10-index: 13</li>
+      <li>PDF snapshot: 1,502 citations, h-index 12, i10-index 13.</li>
+      <li>Representative areas: medical LLM evaluation, long-context MLLMs, and multilingual medical AI.</li>
     </ul>
-  </div>
-</div>
+    <div class="alumni-links">
+      <a href="https://github.com/wangxidong06">GitHub</a>
+      <a href="https://scholar.google.com/citations?user=WJeSzQMAAAAJ">Google Scholar</a>
+      <a href="https://openreview.net/profile?id=~Xidong_Wang3">OpenReview</a>
+    </div>
+  </section>
 
-<div class="card mb-4">
-  <div class="card-body">
-    <h4 class="card-title">陈舒年 (Shunian Chen)</h4>
-    <p class="card-text">
-      <strong>博二学生</strong><br>
-      领导了ALLaVA等多模态大模型工作，即将去Stanford访问。
-    </p>
+  <section class="alumni-card">
+    <img src="/assets/img/freedomai-2026/people/shunian-chen.jpeg" alt="Shunian Chen">
+    <h3>陈舒年 Shunian Chen</h3>
+    <div class="alumni-role">PhD student</div>
+    <p>Leads ALLaVA and other multimodal/audio-language model work, with an upcoming Stanford visit highlighted in the recruitment deck.</p>
     <ul>
-      <li>Google Scholar 引用: 1,867</li>
-      <li>h-index: 13, i10-index: 14</li>
+      <li>PDF snapshot: 1,867 citations, h-index 13, i10-index 14.</li>
+      <li>Representative areas: vision-language models, audio-language models, and LLM agents.</li>
     </ul>
-  </div>
+    <div class="alumni-links">
+      <a href="https://personal-page-sigma-seven.vercel.app/">Homepage</a>
+      <a href="https://scholar.google.com/citations?user=T0yyq-EAAAAJ">Google Scholar</a>
+      <a href="https://github.com/FreedomIntelligence/ALLaVA">ALLaVA</a>
+    </div>
+  </section>
 </div>
 
-</div>
+## Selected Alumni and Collaborators
 
----
+<div class="alumni-grid">
+  <section class="alumni-card">
+    <img src="/assets/img/zhiyong.jpeg" alt="Zhiyong Wu">
+    <h3>吴志勇 Zhiyong Wu</h3>
+    <div class="alumni-role">PhD 2021, HKU</div>
+    <p>Former PhD student collaborator from the earlier HKU NLP period; now at Shanghai Artificial Intelligence Laboratory.</p>
+    <div class="alumni-links">
+      <a href="https://lividwo.github.io/zywu.github.io/">Homepage</a>
+    </div>
+  </section>
+</div>
 
 ## Alumni Achievements
 
-- 实验室RA张辰获得了 **ACL 2025 Outstanding Paper**
-- 实验室访问学者张亚洲获得 **PRCV 2025 最佳论文提名**
-- 实验室已毕业博士生在 **Nature** 正刊发表论文
+- Lab RA Zhang Chen received an ACL 2025 Outstanding Paper.
+- Visiting scholar Yazhou Zhang received a PRCV 2025 Best Paper nomination.
+- A graduated PhD student from the lab has published in Nature.
 
----
+## Grow With Your Peers
 
-## Grow with Your Peers
-
-和同伴一起成长，1-2年即可从"小白"成长为行业翘楚。
+和同伴一起成长，1-2 年即可从“小白”成长为行业翘楚。
