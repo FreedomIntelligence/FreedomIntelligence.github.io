@@ -252,14 +252,17 @@ nav_order: 2
             <div class="ai-model-showcase-filter-row">
                 <div class="ai-model-showcase-filter-tab active" data-category="all">全部</div>
                 <div class="ai-model-showcase-filter-tab" data-category="llm">LLM</div>
+                <div class="ai-model-showcase-filter-tab" data-category="medical">Medical</div>
                 <div class="ai-model-showcase-filter-tab" data-category="audio">Audio</div>
             </div>
             <!-- 第二排 -->
             <div class="ai-model-showcase-filter-row">
                 <div class="ai-model-showcase-filter-tab" data-category="image">Image</div>
-                <div class="ai-model-showcase-filter-tab" data-category="video">Video</div>
                 <div class="ai-model-showcase-filter-tab" data-category="multimodal">Multimodal</div>
                 <div class="ai-model-showcase-filter-tab" data-category="benchmark">Benchmark</div>
+                <div class="ai-model-showcase-filter-tab" data-category="simulation">Simulation</div>
+                <div class="ai-model-showcase-filter-tab" data-category="data">Data</div>
+                <div class="ai-model-showcase-filter-tab" data-category="reasoning">Reasoning</div>
             </div>
         </div>
 
@@ -278,6 +281,152 @@ nav_order: 2
                         <a href="/projects/economic-world-models/" class="ai-model-showcase-badge ai-model-showcase-demo">Project Page</a>
                         <a href="https://github.com/FreedomIntelligence/Awesome-Econ-World-Models/" class="ai-model-showcase-badge ai-model-showcase-github" rel="external nofollow noopener" target="_blank">GitHub</a>
                         <a href="/assets/pdf/economic-world-models.pdf" class="ai-model-showcase-badge ai-model-showcase-huggingface" target="_blank">Paper</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ai-model-showcase-card" data-category="medical">
+                <div class="ai-model-showcase-open-source-badge">Medical</div>
+                <img src="/assets/img/media-roundup-2026/huatuogpt-overview.png" alt="HuatuoGPT medical AI ecosystem" class="ai-model-showcase-avatar">
+                <div class="ai-model-showcase-card-content">
+                    <h2 class="ai-model-showcase-model-name">HuatuoGPT Medical AI Ecosystem</h2>
+                    <p class="ai-model-showcase-model-description">
+                        An open medical AI line spanning HuatuoGPT, HuatuoGPT-II, HuatuoGPT-o1, HuatuoGPT-Vision, medical reasoning data, visual medical knowledge, and real-world triage deployments.
+                    </p>
+                    <div class="ai-model-showcase-links-container">
+                        <a href="https://github.com/FreedomIntelligence/HuatuoGPT" class="ai-model-showcase-badge ai-model-showcase-github" rel="external nofollow noopener" target="_blank">HuatuoGPT</a>
+                        <a href="https://github.com/FreedomIntelligence/HuatuoGPT-o1" class="ai-model-showcase-badge ai-model-showcase-github" rel="external nofollow noopener" target="_blank">HuatuoGPT-o1</a>
+                        <a href="https://github.com/FreedomIntelligence/HuatuoGPT-Vision" class="ai-model-showcase-badge ai-model-showcase-github" rel="external nofollow noopener" target="_blank">Vision</a>
+                        <a href="https://huggingface.co/FreedomIntelligence/HuatuoGPT-o1-8B" class="ai-model-showcase-badge ai-model-showcase-huggingface" rel="external nofollow noopener" target="_blank">Model</a>
+                        <a href="https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT" class="ai-model-showcase-badge ai-model-showcase-huggingface" rel="external nofollow noopener" target="_blank">Data</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ai-model-showcase-card" data-category="multimodal">
+                <div class="ai-model-showcase-open-source-badge">Multimodal</div>
+                <img src="/assets/img/media-roundup-2026/longllava-architecture.webp" alt="LongLLaVA long-context multimodal architecture" class="ai-model-showcase-avatar">
+                <div class="ai-model-showcase-card-content">
+                    <h2 class="ai-model-showcase-model-name">LongLLaVA and MileBench</h2>
+                    <p class="ai-model-showcase-model-description">
+                        Scaling multimodal LLMs toward thousand-image reasoning with a Mamba-Transformer hybrid architecture, long-context data construction, and MileBench-style evaluation.
+                    </p>
+                    <div class="ai-model-showcase-links-container">
+                        <a href="https://github.com/FreedomIntelligence/LongLLaVA" class="ai-model-showcase-badge ai-model-showcase-github" rel="external nofollow noopener" target="_blank">GitHub</a>
+                        <a href="https://huggingface.co/datasets/FreedomIntelligence/MileBench" class="ai-model-showcase-badge ai-model-showcase-huggingface" rel="external nofollow noopener" target="_blank">MileBench</a>
+                        <a href="https://arxiv.org/abs/2409.02889" class="ai-model-showcase-badge ai-model-showcase-demo" rel="external nofollow noopener" target="_blank">Paper</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ai-model-showcase-card" data-category="benchmark">
+                <div class="ai-model-showcase-open-source-badge">Benchmark</div>
+                <img src="/assets/img/media-roundup-2026/cmb-overview.png" alt="CMB comprehensive medical benchmark overview" class="ai-model-showcase-avatar">
+                <div class="ai-model-showcase-card-content">
+                    <h2 class="ai-model-showcase-model-name">Medical Evaluation Benchmarks</h2>
+                    <p class="ai-model-showcase-model-description">
+                        CMB, GMAI-MMBench, LiveClin, DxBench, and doctor-centric tasks form a medical evaluation stack for Chinese medicine, multimodal general medical AI, leakage-free clinical testing, and workflow alignment.
+                    </p>
+                    <div class="ai-model-showcase-links-container">
+                        <a href="https://github.com/FreedomIntelligence/CMB" class="ai-model-showcase-badge ai-model-showcase-github" rel="external nofollow noopener" target="_blank">CMB Code</a>
+                        <a href="https://arxiv.org/abs/2308.08833" class="ai-model-showcase-badge ai-model-showcase-demo" rel="external nofollow noopener" target="_blank">Paper</a>
+                        <a href="https://huggingface.co/datasets/FreedomIntelligence/CMB" class="ai-model-showcase-badge ai-model-showcase-huggingface" rel="external nofollow noopener" target="_blank">Dataset</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ai-model-showcase-card" data-category="simulation">
+                <div class="ai-model-showcase-open-source-badge">Simulation</div>
+                <img src="/assets/img/media-roundup-2026/twinmarket-bdi.png" alt="TwinMarket behavioral finance simulation" class="ai-model-showcase-avatar">
+                <div class="ai-model-showcase-card-content">
+                    <h2 class="ai-model-showcase-model-name">TwinMarket Financial AI Simulation</h2>
+                    <p class="ai-model-showcase-model-description">
+                        A NeurIPS 2025 and ICLR Financial AI award-winning multi-agent market simulator that studies virtual investors, behavioral biases, stylized facts, contagion, and policy stress tests.
+                    </p>
+                    <div class="ai-model-showcase-links-container">
+                        <a href="https://github.com/FreedomIntelligence/TwinMarket" class="ai-model-showcase-badge ai-model-showcase-github" rel="external nofollow noopener" target="_blank">GitHub</a>
+                        <a href="https://freedomintelligence.github.io/TwinMarket" class="ai-model-showcase-badge ai-model-showcase-demo" rel="external nofollow noopener" target="_blank">Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ai-model-showcase-card" data-category="simulation">
+                <div class="ai-model-showcase-open-source-badge">World Model</div>
+                <img src="/assets/img/media-roundup-2026/microverse-overview.png" alt="MicroVerse micro-world simulation overview" class="ai-model-showcase-avatar">
+                <div class="ai-model-showcase-card-content">
+                    <h2 class="ai-model-showcase-model-name">MicroVerse Micro-World Simulation</h2>
+                    <p class="ai-model-showcase-model-description">
+                        A micro-world modeling project for organs, cells, and subcellular processes, pushing world models from visual imitation toward mechanism-aware biological simulation.
+                    </p>
+                    <div class="ai-model-showcase-links-container">
+                        <a href="https://github.com/FreedomIntelligence/MicroVerse" class="ai-model-showcase-badge ai-model-showcase-github" rel="external nofollow noopener" target="_blank">GitHub</a>
+                        <a href="https://arxiv.org/abs/2603.00585" class="ai-model-showcase-badge ai-model-showcase-demo" rel="external nofollow noopener" target="_blank">Paper</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ai-model-showcase-card" data-category="llm">
+                <div class="ai-model-showcase-open-source-badge">LLM</div>
+                <img src="/assets/img/freedomai-2026/impact/apollo-map.jpg" alt="Apollo multilingual medical model map" class="ai-model-showcase-avatar">
+                <div class="ai-model-showcase-card-content">
+                    <h2 class="ai-model-showcase-model-name">Multilingual and Localized LLMs</h2>
+                    <p class="ai-model-showcase-model-description">
+                        Apollo, AceGPT, and Phoenix translate open LLM research into multilingual medical, Arabic, and cross-language chat systems, connecting models, corpora, benchmarks, and deployment-ready checkpoints.
+                    </p>
+                    <div class="ai-model-showcase-links-container">
+                        <a href="https://github.com/FreedomIntelligence/Apollo" class="ai-model-showcase-badge ai-model-showcase-github" rel="external nofollow noopener" target="_blank">Apollo</a>
+                        <a href="https://github.com/FreedomIntelligence/AceGPT" class="ai-model-showcase-badge ai-model-showcase-github" rel="external nofollow noopener" target="_blank">AceGPT</a>
+                        <a href="https://huggingface.co/FreedomIntelligence/Apollo-7B" class="ai-model-showcase-badge ai-model-showcase-huggingface" rel="external nofollow noopener" target="_blank">Apollo Model</a>
+                        <a href="https://huggingface.co/FreedomIntelligence/phoenix-inst-chat-7b" class="ai-model-showcase-badge ai-model-showcase-huggingface" rel="external nofollow noopener" target="_blank">Phoenix</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ai-model-showcase-card" data-category="data">
+                <div class="ai-model-showcase-open-source-badge">Data</div>
+                <img src="/assets/img/freedomai-2026/impact/github-repos.png" alt="FreedomIntelligence open-source repositories" class="ai-model-showcase-avatar">
+                <div class="ai-model-showcase-card-content">
+                    <h2 class="ai-model-showcase-model-name">RAG and Instruction Data Infrastructure</h2>
+                    <p class="ai-model-showcase-model-description">
+                        LLMZoo, InstructionZoo, RAG-Instruct, Huatuo-26M, and ApolloCorpus organize reusable data, instruction tuning recipes, retrieval-augmented tasks, and evaluation assets for downstream model builders.
+                    </p>
+                    <div class="ai-model-showcase-links-container">
+                        <a href="https://github.com/FreedomIntelligence/LLMZoo" class="ai-model-showcase-badge ai-model-showcase-github" rel="external nofollow noopener" target="_blank">LLMZoo</a>
+                        <a href="https://github.com/FreedomIntelligence/RAG-Instruct" class="ai-model-showcase-badge ai-model-showcase-github" rel="external nofollow noopener" target="_blank">RAG-Instruct</a>
+                        <a href="https://huggingface.co/FreedomIntelligence/RAG-Instruct-Llama3-3B" class="ai-model-showcase-badge ai-model-showcase-huggingface" rel="external nofollow noopener" target="_blank">Model</a>
+                        <a href="https://huggingface.co/datasets/FreedomIntelligence/ApolloCorpus" class="ai-model-showcase-badge ai-model-showcase-huggingface" rel="external nofollow noopener" target="_blank">Corpus</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ai-model-showcase-card" data-category="audio">
+                <div class="ai-model-showcase-open-source-badge">Audio</div>
+                <img src="/assets/img/media-roundup-2026/socratic-pipeline.png" alt="Speech and interactive AI pipeline" class="ai-model-showcase-avatar">
+                <div class="ai-model-showcase-card-content">
+                    <h2 class="ai-model-showcase-model-name">Speech, Audio, and Talking-Head AI</h2>
+                    <p class="ai-model-showcase-model-description">
+                        Soundwave, TalkVid, EchoMind, and S2S-Arena expand FreedomAI's work from text and images to speech-text alignment, empathetic speech evaluation, paralinguistic instruction following, and audio-driven video generation.
+                    </p>
+                    <div class="ai-model-showcase-links-container">
+                        <a href="https://github.com/FreedomIntelligence/Soundwave" class="ai-model-showcase-badge ai-model-showcase-github" rel="external nofollow noopener" target="_blank">Soundwave</a>
+                        <a href="https://github.com/FreedomIntelligence/TalkVid" class="ai-model-showcase-badge ai-model-showcase-github" rel="external nofollow noopener" target="_blank">TalkVid</a>
+                        <a href="https://huggingface.co/datasets/FreedomIntelligence/TalkVid" class="ai-model-showcase-badge ai-model-showcase-huggingface" rel="external nofollow noopener" target="_blank">Dataset</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ai-model-showcase-card" data-category="reasoning">
+                <div class="ai-model-showcase-open-source-badge">Reasoning</div>
+                <img src="/assets/img/freedomai-2026/impact/iclr-financial-ai-award.jpg" alt="FreedomAI reasoning and optimization award signal" class="ai-model-showcase-avatar">
+                <div class="ai-model-showcase-card-content">
+                    <h2 class="ai-model-showcase-model-name">Reasoning for Math and Optimization</h2>
+                    <p class="ai-model-showcase-model-description">
+                        MathScale, verifier-guided mathematical reasoning, ORLM, CALM/STORM, CoRT, and Video-R1 explore how models reason, critique, optimize, and act under verifiable or executable constraints.
+                    </p>
+                    <div class="ai-model-showcase-links-container">
+                        <a href="https://github.com/Cardinal-Operations/ORLM" class="ai-model-showcase-badge ai-model-showcase-github" rel="external nofollow noopener" target="_blank">ORLM</a>
+                        <a href="https://arxiv.org/abs/2405.17743" class="ai-model-showcase-badge ai-model-showcase-demo" rel="external nofollow noopener" target="_blank">ORLM Paper</a>
+                        <a href="https://github.com/FreedomIntelligence/ReasoningNLP" class="ai-model-showcase-badge ai-model-showcase-github" rel="external nofollow noopener" target="_blank">ReasoningNLP</a>
                     </div>
                 </div>
             </div>
