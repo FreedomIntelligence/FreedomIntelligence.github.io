@@ -10,11 +10,13 @@ horizontal: false
 ---
 
 <!-- pages/people.md -->
+{% include alumni_showcase_styles.html %}
+
 <div class="people">
 {%- if site.enable_people_categories and page.display_categories %}
   <!-- Display people -->
   {%- for category in page.display_categories %}
-  <h2 class="category">{{ category }}</h2>
+  <h2 class="category" id="{{ category | slugify }}">{{ category }}</h2>
   {%- assign categorized_people = site.people | where: "category", category -%}
   {%- assign sorted_people = categorized_people | sort: "importance" %}
   <!-- Generate cards for each person -->
@@ -22,16 +24,41 @@ horizontal: false
   <div class="container">
     <div class="row row-cols-2">
     {%- for people in sorted_people -%}
+      {%- assign skip_person = false -%}
+      {%- if category == "Current Students" and people.title == "Xidong Wang" -%}
+        {%- assign skip_person = true -%}
+      {%- endif -%}
+      {%- if category == "Alumni" and people.title == "Zhiyong Wu" -%}
+        {%- assign skip_person = true -%}
+      {%- endif -%}
+      {%- unless skip_person -%}
       {% include people_horizontal.html %}
+      {%- endunless -%}
     {%- endfor %}
     </div>
   </div>
   {%- else -%}
   <div class="grid">
     {%- for people in sorted_people -%}
+      {%- assign skip_person = false -%}
+      {%- if category == "Current Students" and people.title == "Xidong Wang" -%}
+        {%- assign skip_person = true -%}
+      {%- endif -%}
+      {%- if category == "Alumni" and people.title == "Zhiyong Wu" -%}
+        {%- assign skip_person = true -%}
+      {%- endif -%}
+      {%- unless skip_person -%}
       {% include people.html %}
+      {%- endunless -%}
     {%- endfor %}
   </div>
+  {%- endif -%}
+
+  {%- if category == "Current Students" -%}
+  <h3 class="alumni-section-title">Outstanding Current Students</h3>
+  {% include alumni_current_students.html %}
+  {%- elsif category == "Alumni" -%}
+  {% include alumni_alumni.html %}
   {%- endif -%}
   {% endfor %}
 
