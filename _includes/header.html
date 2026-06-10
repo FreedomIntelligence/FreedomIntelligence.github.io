@@ -55,8 +55,12 @@
 
               <!-- Other pages -->
               {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
+              {%- assign join_us_page = nil -%}
               {%- for p in sorted_pages -%}
               {%- if p.nav and p.autogen == nil -%}
+              {%- if p.title == "Join US" -%}
+              {%- assign join_us_page = p -%}
+              {%- else -%}
               {%- if p.dropdown %}
               <li class="nav-item dropdown {% if page.title == p.title %}active{% endif %}">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ p.title }}
@@ -84,6 +88,7 @@
               </li>
               {%- endif -%}
               {%- endif -%}
+              {%- endif -%}
               {% endfor -%}
               {%- if site.enable_darkmode %}
 
@@ -91,6 +96,15 @@
               <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
                 <a class="nav-link" href="{{ '/blog/' | relative_url }}">{{ site.blog_nav_title }}
                   {%- if page.url contains 'blog' -%}
+                  <span class="sr-only">(current)</span>
+                  {%- endif -%}
+                </a>
+              </li>
+              {%- endif %}
+              {%- if join_us_page %}
+              <li class="nav-item {% if page.title == join_us_page.title %}active{% endif %}">
+                <a class="nav-link" href="{{ join_us_page.url | relative_url }}">{{ join_us_page.title }}
+                  {%- if page.title == join_us_page.title -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
                 </a>

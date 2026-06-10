@@ -7,7 +7,32 @@
 {% assign entry_doi = entry.html | split: 'doi.org/' | last %}
 {% endif %}
 {% endif %}
-<div class="row publication-entry" data-title="{{ entry.title | escape }}"{% if entry.tags %} data-tags="{{ entry.tags | escape }}"{% endif %}{% if entry.arxiv %} data-arxiv="{{ entry.arxiv | escape }}"{% endif %}{% if entry_doi %} data-doi="{{ entry_doi | escape }}"{% endif %}{% if entry.code %} data-code-url="{{ entry.code | escape }}"{% endif %}>
+{% assign entry_github_url = entry.github %}
+{% unless entry_github_url %}
+{% if entry.code contains 'github.com' %}
+{% assign entry_github_url = entry.code %}
+{% endif %}
+{% endunless %}
+{% unless entry_github_url %}
+{% if entry.website contains 'github.com' %}
+{% assign entry_github_url = entry.website %}
+{% endif %}
+{% endunless %}
+{% unless entry_github_url %}
+{% if entry.html contains 'github.com' %}
+{% assign entry_github_url = entry.html %}
+{% endif %}
+{% endunless %}
+<div class="row publication-entry"
+  data-title="{{ entry.title | escape }}"
+  {% if entry.tags %}data-tags="{{ entry.tags | escape }}"{% endif %}
+  {% if entry.arxiv %}data-arxiv="{{ entry.arxiv | escape }}"{% endif %}
+  {% if entry_doi %}data-doi="{{ entry_doi | escape }}"{% endif %}
+  {% if entry.github %}data-github-url="{{ entry.github | escape }}"{% endif %}
+  {% if entry.code %}data-code-url="{{ entry.code | escape }}"{% endif %}
+  {% if entry.website %}data-website-url="{{ entry.website | escape }}"{% endif %}
+  {% if entry.html %}data-html-url="{{ entry.html | escape }}"{% endif %}
+  {% if entry_github_url %}data-resolved-github-url="{{ entry_github_url | escape }}"{% endif %}>
   <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
     {%- if entry.preview -%}
     {% if entry.preview contains '://' -%}

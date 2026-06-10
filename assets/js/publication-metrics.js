@@ -2,6 +2,7 @@
   const S2_BATCH_URL = 'https://api.semanticscholar.org/graph/v1/paper/batch?fields=title,citationCount,url';
   const S2_MATCH_URL = 'https://api.semanticscholar.org/graph/v1/paper/search/match?fields=title,citationCount,url&query=';
   const GITHUB_REPO_URL = 'https://api.github.com/repos/';
+  const SHIELDS_GITHUB_STARS_URL = 'https://img.shields.io/github/stars/';
   const CACHE_TTL_MS = 10 * 60 * 1000;
 
   function onReady(callback) {
@@ -95,6 +96,69 @@
     }
   }
 
+  function githubRepoPath(repo) {
+    return repo.split('/').map(encodeURIComponent).join('/');
+  }
+
+  function githubRepoForEntry(entry) {
+    const explicitRepo = (entry.dataset.githubRepo || '').trim();
+    if (/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(explicitRepo)) return explicitRepo;
+
+    const urls = [];
+    [
+      'resolvedGithubUrl',
+      'githubUrl',
+      'codeUrl',
+      'websiteUrl',
+      'htmlUrl'
+    ].forEach(function (key) {
+      if (entry.dataset[key]) urls.push(entry.dataset[key]);
+    });
+
+    entry.querySelectorAll('a[href*="github.com"]').forEach(function (link) {
+      urls.push(link.href);
+    });
+
+    const seen = new Set();
+    for (const url of urls) {
+      if (!url || seen.has(url)) continue;
+      seen.add(url);
+      const repo = githubRepoFromUrl(url);
+      if (repo) return repo;
+    }
+
+    return null;
+  }
+
+  function parseShieldStars(data) {
+    const raw = data && (data.value || data.message);
+    if (typeof raw === 'number') return raw;
+    if (!raw) return null;
+
+    const match = String(raw).trim().toLowerCase().replace(/,/g, '').match(/^([\d.]+)\s*([km])?/);
+    if (!match) return null;
+
+    let count = Number(match[1]);
+    if (!Number.isFinite(count)) return null;
+    if (match[2] === 'k') count *= 1000;
+    if (match[2] === 'm') count *= 1000000;
+    return Math.round(count);
+  }
+
+  async function fetchGithubStars(repo) {
+    const repoPath = githubRepoPath(repo);
+    const data = await requestJson(GITHUB_REPO_URL + repoPath).catch(function () {
+      return null;
+    });
+
+    if (data && typeof data.stargazers_count === 'number') return data.stargazers_count;
+
+    const fallback = await requestJson(SHIELDS_GITHUB_STARS_URL + repoPath + '.json').catch(function () {
+      return null;
+    });
+    return parseShieldStars(fallback);
+  }
+
   function citationIdentifier(entry) {
     const arxiv = (entry.dataset.arxiv || '').trim().replace(/^arxiv:/i, '');
     if (arxiv) return 'ARXIV:' + arxiv;
@@ -125,6 +189,8 @@
     link.href = 'https://github.com/' + repo;
     link.hidden = false;
     link.title = 'Live GitHub stars for ' + repo;
+    const marker = link.querySelector('[aria-hidden="true"]');
+    if (marker) marker.innerHTML = '&#9733;';
     const value = link.querySelector('[data-github-stars]');
     if (value) value.textContent = formatCount(count);
   }
@@ -167,7 +233,7 @@
     const repoEntries = new Map();
 
     entries.forEach(function (entry) {
-      const repo = githubRepoFromUrl(entry.dataset.codeUrl);
+      const repo = githubRepoForEntry(entry);
       if (!repo) return;
       if (!repoEntries.has(repo)) repoEntries.set(repo, []);
       repoEntries.get(repo).push(entry);
@@ -176,19 +242,17 @@
     await runWithConcurrency(Array.from(repoEntries.entries()), 4, async function (pair) {
       const repo = pair[0];
       const attachedEntries = pair[1];
-      const cacheKey = 'publication-metrics:github:' + repo;
-      let data = getCached(cacheKey);
+      const cacheKey = 'publication-metrics:github-stars:' + repo;
+      let count = getCached(cacheKey);
 
-      if (!data) {
-        data = await requestJson(GITHUB_REPO_URL + repo).catch(function () {
-          return null;
-        });
-        if (data) setCached(cacheKey, data);
+      if (typeof count !== 'number') {
+        count = await fetchGithubStars(repo);
+        if (typeof count === 'number') setCached(cacheKey, count);
       }
 
-      if (!data || typeof data.stargazers_count !== 'number') return;
+      if (typeof count !== 'number') return;
       attachedEntries.forEach(function (entry) {
-        setGithubStars(entry, repo, data.stargazers_count);
+        setGithubStars(entry, repo, count);
       });
     });
   }
@@ -319,10 +383,29 @@
     });
   }
 
+  function normalizeMetaRow(entry) {
+    const metrics = entry.querySelector('.publication-metrics');
+    const tags = entry.querySelector('.publication-tags');
+    if (!metrics && !tags) return;
+
+    let row = entry.querySelector('.publication-meta-row');
+    if (!row) {
+      row = document.createElement('div');
+      row.className = 'publication-meta-row';
+      row.setAttribute('aria-label', 'Publication metadata');
+      const anchor = metrics || tags;
+      anchor.parentNode.insertBefore(row, anchor);
+    }
+
+    if (metrics && metrics.parentNode !== row) row.appendChild(metrics);
+    if (tags && tags.parentNode !== row) row.appendChild(tags);
+  }
+
   onReady(function () {
     const entries = Array.from(document.querySelectorAll('.publication-entry'));
     if (!entries.length) return;
 
+    entries.forEach(normalizeMetaRow);
     entries.forEach(setScholarLink);
 
     if ('IntersectionObserver' in window) {

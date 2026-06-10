@@ -54,11 +54,17 @@ nav_order: 2
     color: #fff;
   }
 
-  .publication-tags {
+  .publication-meta-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.35rem;
-    margin: 0.35rem 0 0.2rem;
+    align-items: center;
+    gap: 0.35rem 0.4rem;
+    margin: 0.35rem 0 0.25rem;
+  }
+
+  .publication-tags,
+  .publication-metrics {
+    display: contents;
   }
 
   .publication-tag {
@@ -68,13 +74,6 @@ nav_order: 2
     font-size: 0.74rem;
     line-height: 1.2;
     padding: 0.18rem 0.5rem;
-  }
-
-  .publication-metrics {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-    margin: 0.35rem 0 0.25rem;
   }
 
   .publication-metric {
