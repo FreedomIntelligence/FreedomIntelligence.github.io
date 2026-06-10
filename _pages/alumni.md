@@ -189,14 +189,70 @@ nav_order: 5
 
 <div class="alumni-grid">
   <section class="alumni-card">
-    <img src="/assets/img/zhiyong.jpeg" alt="Zhiyong Wu">
-    <h3>吴志勇 Zhiyong Wu</h3>
-    <div class="alumni-role">PhD 2021, HKU</div>
-    <p>Former PhD student collaborator from the earlier HKU NLP period; now building OS agents at ByteDance Seed.</p>
+    <img src="/assets/img/freedomai-2026/people/guiming-chen.svg" alt="Guiming Hardy Chen">
+    <h3>陈桂铭 Guiming Hardy Chen</h3>
+    <div class="alumni-role">Former research engineer</div>
+    <p>Former full-time research engineer at CUHK-Shenzhen with Prof. Benyou Wang; now a PhD student at UC Santa Cruz working on vision-language and large language models.</p>
     <div class="alumni-links">
-      <a href="https://lividwo.github.io/zywu.github.io/">Homepage</a>
-      <a href="https://scholar.google.com/citations?user=wIlpfXEAAAAJ">Google Scholar</a>
-      <a href="https://arxiv.org/abs/2402.07456">OS-Copilot</a>
+      <a href="https://g-h-chen.github.io/">Homepage</a>
+      <a href="https://scholar.google.com/citations?user=Gype-NsAAAAJ">Google Scholar</a>
+      <a href="https://github.com/g-h-chen">GitHub</a>
+    </div>
+  </section>
+
+  <section class="alumni-card">
+    <img src="/assets/img/freedomai-2026/people/dingjie-song.jpg" alt="Dingjie Song">
+    <h3>宋定杰 Dingjie Song</h3>
+    <div class="alumni-role">Former research assistant</div>
+    <p>Former research assistant at the CUHK-Shenzhen NLP group; now a PhD student at Lehigh University and summer research intern at Salesforce AI Research.</p>
+    <div class="alumni-links">
+      <a href="https://bbsngg.github.io/">Homepage</a>
+      <a href="https://scholar.google.com/citations?user=YLQ8DCsAAAAJ">Google Scholar</a>
+      <a href="https://github.com/bbsngg">GitHub</a>
+    </div>
+  </section>
+
+  <section class="alumni-card">
+    <img src="/assets/img/freedomai-2026/people/zhan-su.svg" alt="Zhan Su">
+    <h3>苏展 Zhan Su</h3>
+    <div class="alumni-role">Assistant Professor, Halmstad University</div>
+    <p>Researcher working across language models, representation learning, and machine learning, now at Halmstad University.</p>
+    <div class="alumni-links">
+      <a href="https://www.hh.se/english/information-english/search-staff.html?person=A60D6623-A423-4410-A80D-30ED85F26743">Halmstad Profile</a>
+      <a href="https://scholar.google.com/citations?user=VzEpVpoAAAAJ&hl=zh-CN">Google Scholar</a>
+    </div>
+  </section>
+
+  <section class="alumni-card">
+    <img src="/assets/img/freedomai-2026/people/yazhou-zhang.svg" alt="Yazhou Zhang">
+    <h3>张亚洲 Yazhou Zhang</h3>
+    <div class="alumni-role">Visiting scholar</div>
+    <p>Visiting scholar collaborator; now an Associate Researcher at Tianjin University, with work across LLMs, affective computing, sarcasm detection, and sentiment analysis.</p>
+    <div class="alumni-links">
+      <a href="https://yzzhang2008.github.io/">Homepage</a>
+      <a href="https://scholar.google.com/citations?user=OeINnp8AAAAJ&hl=en">Google Scholar</a>
+    </div>
+  </section>
+
+  <section class="alumni-card">
+    <img src="/assets/img/freedomai-2026/people/feng-jiang.jpg" alt="Feng Jiang">
+    <h3>蒋峰 Feng Jiang</h3>
+    <div class="alumni-role">Associate Professor, SUAT</div>
+    <p>Former CUHK-Shenzhen postdoctoral research fellow; now an Associate Professor at Shenzhen University of Advanced Technology working on large language and speech models.</p>
+    <div class="alumni-links">
+      <a href="https://airi.suat-sz.edu.cn/info/1037/1349.htm">SUAT Profile</a>
+      <a href="https://fjiangai.github.io/">Homepage</a>
+      <a href="https://scholar.google.com/citations?user=zrxpiWYAAAAJ">Google Scholar</a>
+    </div>
+  </section>
+
+  <section class="alumni-card">
+    <img src="/assets/img/freedomai-2026/people/anningzhe-gao.svg" alt="Anningzhe Gao">
+    <h3>高安凝哲 Anningzhe Gao</h3>
+    <div class="alumni-role">ByteDance</div>
+    <p>Researcher at ByteDance, working on large language models, time series, machine learning, and medical AI collaborations.</p>
+    <div class="alumni-links">
+      <a href="https://scholar.google.com/citations?user=MLrDtaUAAAAJ&hl=en">Google Scholar</a>
     </div>
   </section>
 </div>
