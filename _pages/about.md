@@ -175,6 +175,18 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     object-fit: contain;
   }
 
+  .home-partners a.home-partner--slai {
+    min-height: 78px;
+    padding: 4px 8px;
+    border: 0;
+    background: transparent;
+  }
+
+  .home-partners a.home-partner--slai img {
+    max-height: 72px;
+    max-width: 250px;
+  }
+
   .home-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -371,7 +383,7 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
       <a href="https://www.sribd.cn/">
         <img src="/assets/img/freedomai-2026/sribd-logo.png" alt="Shenzhen Research Institute of Big Data">
       </a>
-      <a href="https://www.slai.edu.cn/en">
+      <a class="home-partner--slai" href="https://www.slai.edu.cn/en">
         <img src="/assets/img/freedomai-2026/slai-logo.png" alt="Shenzhen Loop Area Institute">
       </a>
     </div>
