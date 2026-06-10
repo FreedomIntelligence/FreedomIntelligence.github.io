@@ -5,7 +5,7 @@ permalink: /people/
 description:
 nav: true
 nav_order: 1
-display_categories: [Faculty, Current Students, Postdoc, Alumni]
+display_categories: [Member, Postdoc, Alumni]
 horizontal: false
 ---
 
@@ -25,7 +25,7 @@ horizontal: false
     <div class="row row-cols-2">
     {%- for people in sorted_people -%}
       {%- assign skip_person = false -%}
-      {%- if category == "Current Students" and people.title == "Xidong Wang" -%}
+      {%- if category == "Member" and people.title == "Xidong Wang" -%}
         {%- assign skip_person = true -%}
       {%- endif -%}
       {%- if category == "Alumni" and people.title == "Zhiyong Wu" -%}
@@ -41,7 +41,7 @@ horizontal: false
   <div class="grid">
     {%- for people in sorted_people -%}
       {%- assign skip_person = false -%}
-      {%- if category == "Current Students" and people.title == "Xidong Wang" -%}
+      {%- if category == "Member" and people.title == "Xidong Wang" -%}
         {%- assign skip_person = true -%}
       {%- endif -%}
       {%- if category == "Alumni" and people.title == "Zhiyong Wu" -%}
@@ -54,8 +54,7 @@ horizontal: false
   </div>
   {%- endif -%}
 
-  {%- if category == "Current Students" -%}
-  <h3 class="alumni-section-title">Selected Current Students</h3>
+  {%- if category == "Member" -%}
   {% include alumni_current_students.html %}
   {%- elsif category == "Alumni" -%}
   {% include alumni_alumni.html %}
