@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Welcome to CUHKSZ FreedomAI Lab. We are a group of researchers working on natural language processing, large language models, multimodal AI, and agents at the <a href="https://sds.cuhk.edu.cn/">School of Data Science</a>, <a href="https://cuhk.edu.cn/zh-hans">The Chinese University of Hong Kong, Shenzhen</a>, <a href="https://www.sribd.cn/">SRIBD</a>, and <a href="https://www.slai.edu.cn/en">Shenzhen Loop Area Institute</a>.
+subtitle: Welcome to Freedom AI. We are a group of researchers working on natural language processing, large language models, multimodal AI, and agents at the <a href="https://sds.cuhk.edu.cn/">School of Data Science</a>, <a href="https://cuhk.edu.cn/zh-hans">The Chinese University of Hong Kong, Shenzhen</a>, <a href="https://www.sribd.cn/">SRIBD</a>, and <a href="https://www.slai.edu.cn/en">Shenzhen Loop Area Institute</a>.
 logo: group_name.png
 research: picture.png
 
@@ -63,7 +63,7 @@ social: true
   </a>
 </div>
 
-FreedomAI Lab aims to free humanity from the boundaries of life through AI. Our current focus includes:
+Freedom AI aims to free humanity from the boundaries of life through AI. Our current focus includes:
 
 <ul class="highlight-list">
   <li>Democratizing large language models and open-source AI infrastructure.</li>

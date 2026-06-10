@@ -2,8 +2,8 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: CUHKSZ FreedomAI Lab
+title: Freedom AI # the website title (if blank, full name will be used instead)
+first_name: Freedom AI
 middle_name: 
 last_name: 
 email: 
@@ -39,7 +39,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 800px
+max_width: 1080px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -96,7 +96,7 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
 blog_name: Blog # blog_name will be displayed in your blog page
 blog_nav_title: Blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: Research highlights and updates from FreedomAI Lab.
+blog_description: Research highlights and updates from Freedom AI.
 permalink: /blog/:year/:title/
 
 # Pagination
