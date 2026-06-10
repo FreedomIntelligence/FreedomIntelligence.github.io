@@ -2,45 +2,90 @@
 layout: about
 title: About
 permalink: /
-subtitle: Welcome to CUHKSZ FreedomAI Lab! We are a group of researchers working on natural language processing in the <a href="https://sds.cuhk.edu.cn/">School of Data Science</a> at the <a href="https://cuhk.edu.cn/zh-hans">The Chinese University of HongKong, Shenzhen  </a> and <a href="https://www.sribd.cn/"> SRIBD </a>.
+subtitle: Welcome to CUHKSZ FreedomAI Lab. We are a group of researchers working on natural language processing, large language models, multimodal AI, and agents at the <a href="https://sds.cuhk.edu.cn/">School of Data Science</a>, <a href="https://cuhk.edu.cn/zh-hans">The Chinese University of Hong Kong, Shenzhen</a>, <a href="https://www.sribd.cn/">SRIBD</a>, and <a href="https://www.slai.edu.cn/en">Shenzhen Loop Area Institute</a>.
 logo: group_name.png
 research: picture.png
 
 profile:
-  align: left #right
+  align: left
   image: group_photo_2023.JPG
-  image_cicular: false # crops the image to make it circular
+  image_cicular: false
   image_caption: Lab members in Shenzhen
-  
 
-
-
-news: false  # includes a list of news items
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
-
+news: false
+selected_papers: false
+social: true
 ---
-The current focus of the FreedomAI Lab in CUHKSZ includes:<br>
-&#8226; Democratizing Large Language Models (LLMs);<br>
-&#8226; Advancing Medical, Mathematical, Reasoning, and Multilingual capabilities of LLMs;<br>
-&#8226; Developing Unified Multimodal Models for both understanding and generation;<br>
-&#8226; Exploring Agents, Tool Use, HCI, MCP, and RAG in LLMs;<br>
-&#8226; Evaluating and deepening the understanding of LLMs;<br>
-&#8226; Investigating core applications in NLP and Speech;<br>
-&#8226; LLM Applications in other fields.<br>
 
-<br>
+<style>
+  .partner-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 18px;
+    margin: 1.2rem 0 1.4rem;
+  }
 
-<h3>Highlights</h3>
+  .partner-logos a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 54px;
+    padding: 10px 14px;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    background: var(--global-bg-color);
+  }
 
-&#8226; <strong>Open Source Impact:</strong> GitHub逾万收藏星标; HuggingFace高校排行榜全球第14名，模型单月下载量超过20万。Be real "Open AI".<br>
-&#8226; <strong>Real-world Deployment:</strong> 华佗GPT应用到龙岗11家医院和186家社康，服务500万人口; Apollo医疗大模型覆盖50种语言。<br>
-&#8226; <strong>Awards:</strong> SIGIR 2017 Best Paper Honorable Mention, NAACL 2019 Best Explainable NLP Paper, NLPCC 2022 Best Paper, ICLR 2025 Financial AI Workshop Best Paper, NeurIPS 2025 ResponsibleFM Outstanding Paper.<br>
-&#8226; <strong>Entrepreneurship:</strong> 鼓励创业落地，多位成员创办AI公司（<a href="/startups/">详情</a>）。<br>
-&#8226; <strong>Culture:</strong> Work hard and play harder — 团队气氛活跃，运动氛围强（<a href="/life/">详情</a>）。<br>
+  .partner-logos img {
+    max-height: 42px;
+    max-width: 220px;
+    object-fit: contain;
+  }
 
-<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+  .highlight-list {
+    margin: 1rem 0 1.5rem;
+    padding-left: 1.1rem;
+  }
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+  .highlight-list li {
+    margin-bottom: 0.55rem;
+    line-height: 1.65;
+  }
+</style>
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
+<div class="partner-logos" aria-label="Partner institutions">
+  <a href="https://cuhk.edu.cn/zh-hans">
+    <img src="/assets/img/freedomai-2026/cuhksz-logo.png" alt="The Chinese University of Hong Kong, Shenzhen">
+  </a>
+  <a href="https://www.slai.edu.cn/en">
+    <img src="/assets/img/freedomai-2026/slai-logo.png" alt="Shenzhen Loop Area Institute">
+  </a>
+</div>
+
+FreedomAI Lab aims to free humanity from the boundaries of life through AI. Our current focus includes:
+
+<ul class="highlight-list">
+  <li>Democratizing large language models and open-source AI infrastructure.</li>
+  <li>Advancing medical, mathematical, reasoning, multilingual, and multimodal capabilities of LLMs.</li>
+  <li>Building agents, tool-use systems, HCI workflows, MCP applications, and RAG systems.</li>
+  <li>Evaluating and deepening the understanding of LLMs.</li>
+  <li>Deploying NLP, speech, and multimodal AI in real-world medical, educational, and social applications.</li>
+</ul>
+
+### Highlights
+
+<ul class="highlight-list">
+  <li><strong>Open source impact:</strong> FreedomIntelligence has accumulated 10K+ GitHub stars; Hugging Face downloads have reached the million scale, with monthly model downloads exceeding 200K.</li>
+  <li><strong>Real-world deployment:</strong> HuatuoGPT-powered intelligent triage and pre-consultation systems have been deployed in 11 public hospitals and 186 community health centers in Longgang, Shenzhen, serving a population of about 5 million.</li>
+  <li><strong>Global medical AI:</strong> Apollo expands multilingual medical LLMs to 50 languages, moving medical AI toward broader global access.</li>
+  <li><strong>Awards:</strong> SIGIR 2017 Best Paper Honorable Mention, NAACL 2019 Best Explainable NLP Paper, NLPCC 2022 Best Paper, ICLR 2025 Financial AI Workshop Best Paper, and NeurIPS 2025 ResponsibleFM Workshop Outstanding Paper.</li>
+  <li><strong>Entrepreneurship:</strong> We encourage members to build products that serve society. See <a href="/startups/">Startups</a>.</li>
+  <li><strong>Culture:</strong> Work hard and play harder. See <a href="/life/">Life</a>.</li>
+</ul>
+
+### Join Us
+
+We are recruiting research assistant professors, postdocs, PhD students, MPhil students, research assistants, visiting students, and engineers. We especially welcome students interested in the Shenzhen Loop Area Institute joint-training pathway and the Deep Eye summer/winter research program.
+
+Contact: <a href="mailto:wangbenyou@cuhk.edu.cn">wangbenyou@cuhk.edu.cn</a>
