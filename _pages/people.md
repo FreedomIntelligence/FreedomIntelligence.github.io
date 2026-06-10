@@ -84,3 +84,5 @@ horizontal: false
   {%- endif -%}
 {%- endif -%}
 </div>
+
+<script defer src="{{ '/assets/js/scholar-citations.js' | relative_url }}"></script>
