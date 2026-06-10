@@ -287,11 +287,6 @@ nav_order: 1
     padding-left: 1.1rem;
   }
 
-  .home-social {
-    margin: 2rem 0 0;
-    text-align: center;
-  }
-
   @media (max-width: 900px) {
     .home-stats,
     .home-grid,
@@ -470,15 +465,4 @@ nav_order: 1
       <li>Freedom to pursue ambitious research ideas.</li>
     </ul>
   </section>
-
-  <div class="home-social">
-    <div class="social">
-      <div class="contact-icons">
-        {% include social.html %}
-      </div>
-      <div class="contact-note">
-        {{ site.contact_note }}
-      </div>
-    </div>
-  </div>
 </div>
