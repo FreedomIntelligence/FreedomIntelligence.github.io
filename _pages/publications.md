@@ -195,4 +195,4 @@ nav_order: 2
     setFilter(hasInitialTag ? initialTag : 'all', false);
   });
 </script>
-<script defer src="{{ '/assets/js/publication-metrics.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/publication-metrics.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
