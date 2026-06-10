@@ -37,7 +37,16 @@ github: https://github.com/FreedomIntelligence/Awesome-Econ-World-Models/
     margin: 0.9rem 0 1.35rem;
   }
 
-  .ewm-tag,
+  .ewm-tag {
+    border: 1px solid var(--global-divider-color, var(--ewm-line));
+    border-radius: 999px;
+    color: var(--global-text-color-light, var(--ewm-muted));
+    display: inline-flex;
+    font-size: 0.74rem;
+    line-height: 1.2;
+    padding: 0.18rem 0.5rem;
+  }
+
   .ewm-action {
     border: 1px solid var(--ewm-line);
     border-radius: 999px;

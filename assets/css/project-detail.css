@@ -30,7 +30,16 @@
   margin: 0.9rem 0 1.35rem;
 }
 
-.impact-tag,
+.impact-tag {
+  border: 1px solid var(--global-divider-color, var(--impact-line));
+  border-radius: 999px;
+  color: var(--global-text-color-light, var(--impact-muted));
+  display: inline-flex;
+  font-size: 0.74rem;
+  line-height: 1.2;
+  padding: 0.18rem 0.5rem;
+}
+
 .impact-action {
   border: 1px solid var(--impact-line);
   border-radius: 999px;
@@ -39,10 +48,6 @@
   font-weight: 600;
   line-height: 1;
   padding: 0.48rem 0.72rem;
-}
-
-.impact-tag {
-  color: var(--impact-ink);
 }
 
 .impact-action {
