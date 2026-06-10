@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Join US
+title: Join Us
 permalink: /join-us/
 description: Year-round recruiting and the 2026 Deep Eye summer research program.
 nav: true
