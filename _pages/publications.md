@@ -7,6 +7,7 @@ years: [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016]
 publication_tags:
   - Multi-modal LLMs
   - Medical LLMs
+  - Multilingual LLMs
   - Agent
   - AI for Social Science
   - Human-agent Interaction
@@ -14,6 +15,8 @@ publication_tags:
   - AI for Reasoning and Agentic RL
   - AI for Healthcare
   - LLM Efficiency and AI Infra
+  - LLM Interpretability
+  - World Models and Embodied AI
 nav: true
 nav_order: 2
 ---
