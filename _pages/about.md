@@ -3,8 +3,6 @@ layout: default
 title: About
 permalink: /
 description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loop Area Institute.
-nav: true
-nav_order: 1
 ---
 
 <style>
@@ -369,6 +367,9 @@ nav_order: 1
     <div class="home-partners" aria-label="Partner institutions">
       <a href="https://cuhk.edu.cn/zh-hans">
         <img src="/assets/img/freedomai-2026/cuhksz-logo.png" alt="The Chinese University of Hong Kong, Shenzhen">
+      </a>
+      <a href="https://www.sribd.cn/">
+        <img src="/assets/img/freedomai-2026/sribd-logo.png" alt="Shenzhen Research Institute of Big Data">
       </a>
       <a href="https://www.slai.edu.cn/en">
         <img src="/assets/img/freedomai-2026/slai-logo.png" alt="Shenzhen Loop Area Institute">
