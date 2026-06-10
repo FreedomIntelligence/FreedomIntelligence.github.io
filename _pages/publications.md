@@ -70,6 +70,28 @@ nav_order: 2
     padding: 0.18rem 0.5rem;
   }
 
+  .publication-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0.35rem 0 0.25rem;
+  }
+
+  .publication-metric {
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    color: var(--global-text-color-light);
+    font-size: 0.76rem;
+    line-height: 1.2;
+    padding: 0.18rem 0.5rem;
+  }
+
+  .publication-metric:hover {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+
   .publications ol.bibliography.is-hidden,
   .publications li.is-hidden,
   .publication-entry.is-hidden,
@@ -173,3 +195,4 @@ nav_order: 2
     setFilter(hasInitialTag ? initialTag : 'all', false);
   });
 </script>
+<script defer src="{{ '/assets/js/publication-metrics.js' | relative_url }}"></script>

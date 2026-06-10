@@ -1,7 +1,13 @@
 ---
 ---
 <!-- _layouts/bib.html -->
-<div class="row publication-entry"{% if entry.tags %} data-tags="{{ entry.tags | escape }}"{% endif %}>
+{% assign entry_doi = entry.doi %}
+{% if entry_doi == nil %}
+{% if entry.html contains 'doi.org/' %}
+{% assign entry_doi = entry.html | split: 'doi.org/' | last %}
+{% endif %}
+{% endif %}
+<div class="row publication-entry" data-title="{{ entry.title | escape }}"{% if entry.tags %} data-tags="{{ entry.tags | escape }}"{% endif %}{% if entry.arxiv %} data-arxiv="{{ entry.arxiv | escape }}"{% endif %}{% if entry_doi %} data-doi="{{ entry_doi | escape }}"{% endif %}{% if entry.code %} data-code-url="{{ entry.code | escape }}"{% endif %}>
   <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
     {%- if entry.preview -%}
     {% if entry.preview contains '://' -%}
@@ -142,6 +148,20 @@
       {% endfor %}
     </div>
     {% endif %}
+    <div class="publication-metrics" aria-label="Publication metrics">
+      <a class="publication-metric publication-metric--github" href="#" target="_blank" rel="external nofollow noopener" hidden>
+        <span aria-hidden="true">★</span>
+        <span data-github-stars>--</span>
+        <span>GitHub</span>
+      </a>
+      <a class="publication-metric publication-metric--citations" href="#" target="_blank" rel="external nofollow noopener" hidden>
+        <span data-citation-count>--</span>
+        <span>Citations</span>
+      </a>
+      <a class="publication-metric publication-metric--scholar" href="#" target="_blank" rel="external nofollow noopener">
+        <span>Google Scholar</span>
+      </a>
+    </div>
     {%- endif %}
 
     <!-- Links/Buttons -->
