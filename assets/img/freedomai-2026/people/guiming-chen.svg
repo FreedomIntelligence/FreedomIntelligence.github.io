@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Guiming Hardy Chen avatar">
+  <rect width="512" height="512" fill="#eef7f4"/>
+  <circle cx="256" cy="210" r="112" fill="#b8ddd2"/>
+  <path d="M96 512c18-98 82-154 160-154s142 56 160 154z" fill="#5fae9e"/>
+  <text x="256" y="278" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="104" font-weight="700" fill="#24564c">GC</text>
+</svg>
