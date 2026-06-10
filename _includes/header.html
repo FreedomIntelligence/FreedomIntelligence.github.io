@@ -90,21 +90,21 @@
               {%- endif -%}
               {%- endif -%}
               {% endfor -%}
-              {%- if join_us_page %}
-              <li class="nav-item {% if page.url == join_us_page.url %}active{% endif %}">
-                <a class="nav-link" href="{{ join_us_page.url | relative_url }}">Join Us
-                  {%- if page.url == join_us_page.url -%}
-                  <span class="sr-only">(current)</span>
-                  {%- endif -%}
-                </a>
-              </li>
-              {%- endif %}
               {%- if site.enable_darkmode %}
 
               <!-- Blog -->
               <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
                 <a class="nav-link" href="{{ '/blog/' | relative_url }}">{{ site.blog_nav_title }}
                   {%- if page.url contains 'blog' -%}
+                  <span class="sr-only">(current)</span>
+                  {%- endif -%}
+                </a>
+              </li>
+              {%- endif %}
+              {%- if join_us_page %}
+              <li class="nav-item {% if page.url == join_us_page.url %}active{% endif %}">
+                <a class="nav-link" href="{{ join_us_page.url | relative_url }}">Join Us
+                  {%- if page.url == join_us_page.url -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
                 </a>
