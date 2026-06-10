@@ -242,6 +242,10 @@ d-appendix {
 
 .post.distill {
   padding-top: 1.75rem;
+
+  > d-title {
+    padding-top: 4.25rem !important;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -265,6 +269,10 @@ d-appendix {
 @media (max-width: 575px) {
   .post.distill {
     padding-top: 1.25rem;
+
+    > d-title {
+      padding-top: 4rem !important;
+    }
 
     d-title {
       h1 {
