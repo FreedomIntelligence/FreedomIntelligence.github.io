@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Sunzhu Li">
+  <rect width="512" height="512" rx="256" fill="#1d4ed8"/>
+  <circle cx="256" cy="222" r="126" fill="#60a5fa" opacity=".42"/>
+  <path d="M96 410c24-80 84-124 160-124s136 44 160 124" fill="#dbeafe" opacity=".9"/>
+  <text x="256" y="278" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="132" font-weight="700" fill="#ffffff">SL</text>
+</svg>
