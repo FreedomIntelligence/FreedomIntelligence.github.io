@@ -41,18 +41,34 @@
     return node.tagName && node.tagName.toLowerCase() === 'a';
   }
 
-  function baseLabel(node) {
-    if (!node.dataset.scholarBaseLabel) {
-      node.dataset.scholarBaseLabel = node.textContent.replace(/\s+/g, ' ').trim() || 'Google Scholar';
-    }
+  function removeInlineMetric(node) {
+    const existing = node.querySelector('[data-scholar-citations-inline]');
+    if (existing) existing.remove();
+  }
 
-    return node.dataset.scholarBaseLabel;
+  function appendInlineMetric(node, formatted) {
+    removeInlineMetric(node);
+
+    const wrapper = document.createElement('span');
+    wrapper.setAttribute('data-scholar-citations-inline', '');
+
+    const english = document.createElement('span');
+    english.setAttribute('data-lang', 'en');
+    english.textContent = ' (' + formatted + ' citations)';
+
+    const chinese = document.createElement('span');
+    chinese.setAttribute('data-lang', 'zh');
+    chinese.textContent = '（引用 ' + formatted + ' 次）';
+
+    wrapper.appendChild(english);
+    wrapper.appendChild(chinese);
+    node.appendChild(wrapper);
   }
 
   function setUnavailable(node) {
     node.classList.add('is-unavailable');
     if (isInlineLink(node)) {
-      node.textContent = baseLabel(node);
+      removeInlineMetric(node);
       return;
     }
 
@@ -69,9 +85,7 @@
       return;
     }
 
-    if (isInlineLink(node)) {
-      node.textContent = baseLabel(node) + ' (' + formatted + ' citations)';
-    }
+    if (isInlineLink(node)) appendInlineMetric(node, formatted);
 
     const value = node.querySelector('[data-scholar-citations-value]');
     const updated = node.querySelector('[data-scholar-updated]');

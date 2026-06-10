@@ -45,7 +45,7 @@
 
               <!-- About -->
               <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-                <a class="nav-link" href="{{ '/' | relative_url }}">{{ about_title }}
+                <a class="nav-link" href="{{ '/' | relative_url }}"><span data-lang="en">{{ about_title }}</span><span data-lang="zh">关于</span>
                   {%- if page.permalink == '/' -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
@@ -79,8 +79,21 @@
                 </div>
               </li>
               {%- else %}
+              {%- assign nav_title_zh = nil -%}
+              {%- case p.title -%}
+              {%- when "People" -%}{%- assign nav_title_zh = "团队" -%}
+              {%- when "Publications" -%}{%- assign nav_title_zh = "论文" -%}
+              {%- when "Projects" -%}{%- assign nav_title_zh = "项目" -%}
+              {%- when "Life" -%}{%- assign nav_title_zh = "生活" -%}
+              {%- when "Startups" -%}{%- assign nav_title_zh = "创业" -%}
+              {%- endcase -%}
               <li class="nav-item {% if page.title == p.title %}active{% endif %}">
-                <a class="nav-link" href="{{ p.url | relative_url }}">{{ p.title }}
+                <a class="nav-link" href="{{ p.url | relative_url }}">
+                  {%- if nav_title_zh -%}
+                  <span data-lang="en">{{ p.title }}</span><span data-lang="zh">{{ nav_title_zh }}</span>
+                  {%- else -%}
+                  {{ p.title }}
+                  {%- endif -%}
                   {%- if page.title == p.title -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
@@ -94,7 +107,7 @@
 
               <!-- Blog -->
               <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
-                <a class="nav-link" href="{{ '/blog/' | relative_url }}">{{ site.blog_nav_title }}
+                <a class="nav-link" href="{{ '/blog/' | relative_url }}"><span data-lang="en">{{ site.blog_nav_title }}</span><span data-lang="zh">博客</span>
                   {%- if page.url contains 'blog' -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
@@ -103,13 +116,20 @@
               {%- endif %}
               {%- if join_us_page %}
               <li class="nav-item {% if page.url == join_us_page.url %}active{% endif %}">
-                <a class="nav-link" href="{{ join_us_page.url | relative_url }}">Join Us
+                <a class="nav-link" href="{{ join_us_page.url | relative_url }}"><span data-lang="en">Join Us</span><span data-lang="zh">加入我们</span>
                   {%- if page.url == join_us_page.url -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
                 </a>
               </li>
               {%- endif %}
+
+              <!-- Toggle language -->
+              <li class="toggle-container language-toggle-container">
+                <button id="language-toggle" type="button" title="Switch language" aria-label="Switch language">
+                  <span data-language-label>中文</span>
+                </button>
+              </li>
 
               <!-- Toogle theme mode -->
               <li class="toggle-container">

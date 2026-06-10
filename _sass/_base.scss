@@ -290,6 +290,34 @@ blockquote {
   }
 }
 
+html:not([data-language="zh"]) [data-lang="zh"],
+html[data-language="zh"] [data-lang="en"] {
+  display: none !important;
+}
+
+.language-toggle-container {
+  display: flex;
+  align-items: center;
+  margin-left: 0.35rem;
+}
+
+#language-toggle {
+  min-width: 2.6rem;
+  padding: 0.08rem 0.45rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  background-color: var(--global-bg-color);
+  color: var(--global-text-color);
+  font-size: 0.78rem;
+  line-height: 1.45;
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+  }
+}
+
 // Social (bottom)
 
 .wechat-popover {

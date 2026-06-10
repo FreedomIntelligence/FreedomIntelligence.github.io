@@ -1,6 +1,7 @@
 ---
 layout: page
 title: People
+title_zh: 团队成员
 permalink: /people/
 description:
 nav: true
@@ -16,7 +17,15 @@ horizontal: false
 {%- if site.enable_people_categories and page.display_categories %}
   <!-- Display people -->
   {%- for category in page.display_categories %}
-  <h2 class="category" id="{{ category | slugify }}">{{ category }}</h2>
+  <h2 class="category" id="{{ category | slugify }}">
+    {%- if category == "Member" -%}
+    <span data-lang="en">Member</span><span data-lang="zh">成员</span>
+    {%- elsif category == "Alumni" -%}
+    <span data-lang="en">Alumni</span><span data-lang="zh">校友</span>
+    {%- else -%}
+    {{ category }}
+    {%- endif -%}
+  </h2>
   {%- assign categorized_people = site.people | where: "category", category -%}
   {%- assign sorted_people = categorized_people | sort: "importance" %}
   {%- unless category == "Member" -%}
