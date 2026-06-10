@@ -255,6 +255,57 @@ nav_order: 5
       <a href="https://scholar.google.com/citations?user=MLrDtaUAAAAJ&hl=en">Google Scholar</a>
     </div>
   </section>
+
+  <section class="alumni-card">
+    <img src="/assets/img/freedomai-2026/people/yan-hu.svg" alt="Yan Hu">
+    <h3>胡言 Yan Hu</h3>
+    <div class="alumni-role">National Health Data Institute (Shenzhen), CUHK-Shenzhen</div>
+    <p>Collaborator on medical AI and healthcare foundation model evaluation, with research spanning medical NLP, multimodal medical AI, and clinical benchmark design.</p>
+    <div class="alumni-links">
+      <a href="https://scholar.google.com/citations?user=-zzJSRQAAAAJ&hl=en">Google Scholar</a>
+    </div>
+  </section>
+
+  <section class="alumni-card">
+    <img src="/assets/img/freedomai-2026/people/jianqing-zhu.svg" alt="Jianqing Zhu">
+    <h3>祝建庆 Jianqing Zhu</h3>
+    <div class="alumni-role">Research Assistant Professor, SLAI</div>
+    <p>Works on large language models, deep learning, and Arabic LLM localization, including progressive vocabulary expansion and native alignment for multilingual foundation models.</p>
+    <div class="alumni-links">
+      <a href="https://scholar.google.com/citations?user=u6zwQf8AAAAJ&hl=en">Google Scholar</a>
+    </div>
+  </section>
+
+  <section class="alumni-card">
+    <img src="/assets/img/freedomai-2026/people/chen-zhang.jpg" alt="Chen Zhang">
+    <h3>张辰 Chen Zhang</h3>
+    <div class="alumni-role">Meituan Longmao</div>
+    <p>Former lab research assistant; now at Meituan Longmao, with work across medical AI, large language model evaluation, and multimodal benchmark research.</p>
+    <div class="alumni-links">
+      <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=IMwAXWcAAAAJ&pagesize=80&sortby=pubdate">Google Scholar</a>
+    </div>
+  </section>
+
+  <section class="alumni-card">
+    <img src="/assets/img/freedomai-2026/people/sunzhu-li.svg" alt="Sunzhu Li">
+    <h3>李孙竹 Sunzhu Li</h3>
+    <div class="alumni-role">DJI Zhuoyu</div>
+    <p>Now at DJI Zhuoyu, with research interests across large language models, multimodal systems, and intelligent systems applications.</p>
+    <div class="alumni-links">
+      <a href="https://scholar.google.com/citations?user=DugQG0IAAAAJ&hl=zh-CN">Google Scholar</a>
+    </div>
+  </section>
+
+  <section class="alumni-card">
+    <img src="/assets/img/freedomai-2026/people/hongbo-zhang.jpg" alt="Hongbo Zhang">
+    <h3>张鸿博 Hongbo Zhang</h3>
+    <div class="alumni-role">PhD student, Westlake University / Zhejiang University</div>
+    <p>Researcher in the WestlakeNLP group, working on natural language processing, LLM reasoning, and trustworthy NLP.</p>
+    <div class="alumni-links">
+      <a href="https://scholar.google.com/citations?user=mv7nG38AAAAJ&hl=zh-CN">Google Scholar</a>
+      <a href="https://westlakenlp.com/team.html">WestlakeNLP</a>
+    </div>
+  </section>
 </div>
 
 ## Alumni Achievements
