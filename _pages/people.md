@@ -55,7 +55,7 @@ horizontal: false
   {%- endif -%}
 
   {%- if category == "Current Students" -%}
-  <h3 class="alumni-section-title">Outstanding Current Students</h3>
+  <h3 class="alumni-section-title">Selected Current Students</h3>
   {% include alumni_current_students.html %}
   {%- elsif category == "Alumni" -%}
   {% include alumni_alumni.html %}
