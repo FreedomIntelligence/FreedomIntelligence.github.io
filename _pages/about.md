@@ -380,11 +380,11 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
       <a href="https://cuhk.edu.cn/zh-hans">
         <img src="/assets/img/freedomai-2026/cuhksz-logo.png" alt="The Chinese University of Hong Kong, Shenzhen">
       </a>
-      <a href="https://www.sribd.cn/">
-        <img src="/assets/img/freedomai-2026/sribd-logo.png" alt="Shenzhen Research Institute of Big Data">
-      </a>
       <a class="home-partner--slai" href="https://www.slai.edu.cn/en">
         <img src="/assets/img/freedomai-2026/slai-logo.png" alt="Shenzhen Loop Area Institute">
+      </a>
+      <a href="https://www.sribd.cn/">
+        <img src="/assets/img/freedomai-2026/sribd-logo.png" alt="Shenzhen Research Institute of Big Data">
       </a>
     </div>
   </section>
