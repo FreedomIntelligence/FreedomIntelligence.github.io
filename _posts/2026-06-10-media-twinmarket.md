@@ -1,8 +1,8 @@
 ---
 layout: distill
-title: "媒体解读｜TwinMarket：用千个虚拟投资者观察金融市场涌现"
+title: "媒体原文整理｜TwinMarket：千个虚拟投资者与金融市场涌现"
 date: 2026-06-10
-description: 机器之心报道 TwinMarket 如何构建可扩展的金融市场行为与社会模拟；本文整理核心内容、图示和项目入口。
+description: 保留机器之心关于 TwinMarket 的主要报道内容、行为建模图、市场模拟图、出处和项目入口，并补充 FreedomAI Lab 参与贡献说明。
 tags: media machine-heart TwinMarket social-simulation financial-ai
 
 authors:
@@ -12,34 +12,45 @@ authors:
       name: CUHKSZ
 
 toc:
-  - name: Why This Report Matters
-  - name: Main Takeaways
-  - name: Multimodal Materials
-  - name: Sources
+  - name: 原文信息
+  - name: FreedomAI Lab 参与贡献说明
+  - name: 原文主要内容整理
+  - name: 原文多模态材料
+  - name: 原文出处
 ---
 
-## Why This Report Matters
+## 原文信息
 
-TwinMarket 把大模型从“回答问题”推向“参与模拟社会”。机器之心报道中最醒目的说法是“用千个虚拟投资者重现金融市场涌现现象”，但对我们来说，更重要的是它提出了一个可扩展的行为模拟环境：不同智能体带着信念、目标和决策规则进入市场，整体行为由局部互动涌现出来。
+原文标题：**NeurIPS 2025｜当AI学会“炒股”：用千个虚拟投资者重现金融市场涌现现象**。
 
-这类研究连接了金融 AI、多智能体系统和社会模拟。它让我们可以追问：当智能体越来越像真实用户，市场、舆论、组织和平台会呈现怎样的群体行为？
+原文来源为机器之心公众号及镜像页。本文保留原文标题、主要内容、图示、论文和项目入口，并补充 FreedomAI Lab 参与贡献说明。为尊重原媒体版权，正文不整篇复制原文；完整原文请访问文末出处链接。
 
-## Main Takeaways
+## FreedomAI Lab 参与贡献说明
 
-1. **金融市场是检验多智能体行为的天然场景。** 它有明确的价格反馈，也有复杂的心理和信息传播因素。
-2. **虚拟投资者需要可解释的行为模型。** 报道中展示的结构强调信念、欲望、意图等行为组件，而不只是黑箱生成动作。
-3. **涌现现象要在群体层面观察。** 单个 Agent 的动作并不能解释泡沫、羊群效应或市场波动，必须看群体互动。
+TwinMarket 相关工作来自香港中文大学（深圳）等团队，报道中标注 Benyou Wang 相关信息。FreedomAI Lab 的参与贡献主要体现在多智能体金融市场模拟、虚拟投资者行为建模、市场涌现现象分析与开源项目维护。
 
-## Multimodal Materials
+## 原文主要内容整理
+
+原文围绕“AI 学会炒股”展开，介绍 TwinMarket 如何用大量虚拟投资者模拟金融市场行为。报道重点包括：构建具有信念、欲望、意图等结构的投资者 Agent；让多个 Agent 在市场环境中交互；观察价格泡沫、羊群效应、市场波动等群体涌现现象。
+
+原文要点保留：
+
+- 报道以 NeurIPS 2025 和“AI 学会炒股”为标题切入。
+- 原文介绍 TwinMarket 如何构建大规模虚拟投资者群体。
+- 文章保留了投资者行为建模框架和市场泡沫/涌现现象图示。
+- 原文相关点包括香港中文大学（深圳）、Benyou Wang 和 TwinMarket。
+
+下方保留原文中的行为建模图与市场模拟图。
+
+## 原文多模态材料
 
 {% include figure.html path="assets/img/media-roundup-2026/twinmarket-bdi.png" alt="TwinMarket BDI architecture figure" caption="TwinMarket 行为建模框架。图源：机器之心报道镜像页。" %}
 
 {% include figure.html path="assets/img/media-roundup-2026/twinmarket-bubble.png" alt="TwinMarket market simulation figure" caption="TwinMarket 中市场泡沫与群体行为模拟图示。图源：机器之心报道镜像页。" %}
 
-## Sources
+## 原文出处
 
 - 机器之心原文：[NeurIPS 2025｜当AI学会“炒股”：用千个虚拟投资者重现金融市场涌现现象](http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651001895&idx=4&sn=383c986589bd3d7dfc3623ae08b848f9)
 - 镜像页：[Xinfinite 镜像](https://www.xinfinite.net/t/topic/16071)
 - 论文：[TwinMarket: A Scalable Behavioral and Social Simulation for Financial Markets](https://arxiv.org/abs/2502.01506)
 - 项目入口：[FreedomIntelligence/TwinMarket](https://github.com/FreedomIntelligence/TwinMarket)
-
