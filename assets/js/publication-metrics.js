@@ -283,12 +283,75 @@
     await loadCitationByTitle(fallbackEntries);
   }
 
+  function entryIsVisible(entry) {
+    const item = entry.closest('li');
+    return getComputedStyle(entry).display !== 'none' && (!item || getComputedStyle(item).display !== 'none');
+  }
+
+  function loadMetricsForEntries(entries) {
+    const githubEntries = [];
+    const citationEntries = [];
+
+    entries.forEach(function (entry) {
+      if (!entryIsVisible(entry)) return;
+
+      if (!entry.dataset.githubMetricsRequested) {
+        entry.dataset.githubMetricsRequested = 'true';
+        githubEntries.push(entry);
+      }
+
+      if (!entry.dataset.citationMetricsRequested) {
+        entry.dataset.citationMetricsRequested = 'true';
+        citationEntries.push(entry);
+      }
+    });
+
+    if (githubEntries.length) loadGithubStars(githubEntries);
+    if (citationEntries.length) loadCitations(citationEntries);
+  }
+
+  function entriesNearViewport(entries) {
+    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    return entries.filter(function (entry) {
+      if (!entryIsVisible(entry)) return false;
+      const rect = entry.getBoundingClientRect();
+      return rect.bottom >= -700 && rect.top <= viewportHeight + 700;
+    });
+  }
+
   onReady(function () {
     const entries = Array.from(document.querySelectorAll('.publication-entry'));
     if (!entries.length) return;
 
     entries.forEach(setScholarLink);
-    loadGithubStars(entries);
-    loadCitations(entries);
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(function (items) {
+        loadMetricsForEntries(items
+          .filter(function (item) { return item.isIntersecting; })
+          .map(function (item) { return item.target; }));
+      }, { rootMargin: '700px 0px' });
+
+      entries.forEach(function (entry) {
+        observer.observe(entry);
+      });
+    } else {
+      const scheduleVisibleMetrics = function () {
+        loadMetricsForEntries(entriesNearViewport(entries));
+      };
+      window.addEventListener('scroll', scheduleVisibleMetrics, { passive: true });
+      window.addEventListener('resize', scheduleVisibleMetrics);
+      scheduleVisibleMetrics();
+    }
+
+    document.querySelectorAll('[data-publication-filter]').forEach(function (button) {
+      button.addEventListener('click', function () {
+        window.setTimeout(function () {
+          loadMetricsForEntries(entriesNearViewport(entries));
+        }, 0);
+      });
+    });
+
+    loadMetricsForEntries(entriesNearViewport(entries));
   });
 })();
