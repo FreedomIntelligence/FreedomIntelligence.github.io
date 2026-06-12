@@ -347,18 +347,17 @@ a.project-program-node:hover {
 }
 
 .project-paper-list li {
-  align-items: start;
   background: var(--global-bg-color);
   border: 1px solid var(--global-divider-color);
   border-radius: 8px;
   color: var(--global-text-color-light);
-  display: grid;
-  gap: 0.58rem;
-  grid-template-columns: 2rem minmax(0, 1fr);
+  display: block;
   line-height: 1.6;
   list-style: none;
   margin-bottom: 0;
-  padding: 0.62rem 0.7rem;
+  min-height: 3.12rem;
+  padding: 0.62rem 0.7rem 0.62rem 3.25rem;
+  position: relative;
 }
 
 .project-paper-list li::before {
@@ -374,7 +373,10 @@ a.project-program-node:hover {
   font-weight: 700;
   height: 1.85rem;
   justify-content: center;
+  left: 0.7rem;
   line-height: 1;
+  position: absolute;
+  top: 0.62rem;
   width: 1.85rem;
 }
 
@@ -941,10 +943,6 @@ html[data-theme='dark'] .project-program-media {
 
   .project-resources-panel summary strong {
     margin-left: 0;
-  }
-
-  .project-paper-list li {
-    grid-template-columns: 1fr;
   }
 
   .project-card-body {
