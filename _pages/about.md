@@ -109,32 +109,6 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     border-color: var(--global-theme-color);
   }
 
-  .home-stats {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 12px;
-    margin: 16px 0 0;
-  }
-
-  .home-stat {
-    border: 1px solid var(--global-divider-color);
-    border-radius: 8px;
-    padding: 14px 16px;
-    background: var(--global-bg-color);
-  }
-
-  .home-stat strong {
-    display: block;
-    margin-bottom: 0.2rem;
-    font-size: 1.45rem;
-    line-height: 1.1;
-  }
-
-  .home-stat span {
-    color: var(--global-text-color-light);
-    font-size: 0.92rem;
-  }
-
   .home-section {
     margin: 2.65rem 0;
   }
@@ -148,6 +122,109 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     max-width: 790px;
     color: var(--global-text-color-light);
     line-height: 1.72;
+  }
+
+  .home-atmosphere {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+    margin: -30px 18px 2.55rem;
+    overflow: hidden;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    background: var(--global-bg-color);
+    box-shadow: 0 18px 42px rgba(15, 23, 42, 0.12);
+  }
+
+  .home-atmosphere__media {
+    position: relative;
+    display: block;
+    min-height: 330px;
+    overflow: hidden;
+    background: #101820;
+  }
+
+  .home-atmosphere__slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    animation: home-atmosphere-fade 30s infinite;
+  }
+
+  .home-atmosphere__slide:nth-child(2) {
+    animation-delay: 6s;
+  }
+
+  .home-atmosphere__slide:nth-child(3) {
+    animation-delay: 12s;
+  }
+
+  .home-atmosphere__slide:nth-child(4) {
+    animation-delay: 18s;
+  }
+
+  .home-atmosphere__slide:nth-child(5) {
+    animation-delay: 24s;
+  }
+
+  .home-atmosphere__slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+  }
+
+  .home-atmosphere__caption {
+    position: absolute;
+    left: 16px;
+    bottom: 14px;
+    border-radius: 6px;
+    padding: 6px 10px;
+    background: rgba(7, 12, 16, 0.68);
+    color: #fff;
+    font-size: 0.88rem;
+    font-weight: 600;
+  }
+
+  .home-atmosphere__copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 28px;
+  }
+
+  .home-atmosphere__kicker {
+    margin-bottom: 0.7rem;
+    color: var(--global-theme-color);
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .home-atmosphere__copy h2 {
+    margin: 0 0 0.85rem;
+    font-size: 1.72rem;
+    line-height: 1.15;
+  }
+
+  .home-atmosphere__copy p {
+    margin-bottom: 1.15rem;
+    color: var(--global-text-color-light);
+    line-height: 1.68;
+  }
+
+  @keyframes home-atmosphere-fade {
+    0%,
+    18% {
+      opacity: 1;
+    }
+
+    24%,
+    100% {
+      opacity: 0;
+    }
   }
 
   .home-partners {
@@ -297,16 +374,30 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     padding-left: 1.1rem;
   }
 
+  @media (prefers-reduced-motion: reduce) {
+    .home-atmosphere__slide {
+      animation: none;
+    }
+
+    .home-atmosphere__slide:first-child {
+      opacity: 1;
+    }
+  }
+
   @media (max-width: 900px) {
-    .home-stats,
     .home-grid,
     .home-showcase {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .home-atmosphere,
     .home-impact,
     .home-join {
       grid-template-columns: 1fr;
+    }
+
+    .home-atmosphere {
+      margin: -24px 0 2.35rem;
     }
   }
 
@@ -323,10 +414,21 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
       font-size: 2.45rem;
     }
 
-    .home-stats,
     .home-grid,
     .home-showcase {
       grid-template-columns: 1fr;
+    }
+
+    .home-atmosphere {
+      margin-top: -18px;
+    }
+
+    .home-atmosphere__media {
+      min-height: 260px;
+    }
+
+    .home-atmosphere__copy {
+      padding: 22px;
     }
 
     .home-partners a {
@@ -354,38 +456,37 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     </div>
   </section>
 
-  <div class="home-stats" aria-label="Freedom AI impact metrics">
-    <div class="home-stat">
-      <strong>10K+</strong>
-      <span>GitHub stars across open-source projects</span>
-    </div>
-    <div class="home-stat">
-      <strong>1M+</strong>
-      <span>Hugging Face model and dataset downloads</span>
-    </div>
-    <div class="home-stat">
-      <strong>197</strong>
-      <span>Hospitals and community health centers reached</span>
-    </div>
-    <div class="home-stat">
-      <strong>50</strong>
-      <span>Languages supported by Apollo medical AI</span>
-    </div>
-  </div>
-
-  <section class="home-section">
-    <h2>Where We Work</h2>
-    <p class="home-section__intro">Freedom AI is based at the School of Data Science, The Chinese University of Hong Kong, Shenzhen, SRIBD, and Shenzhen Loop Area Institute. We work with students, engineers, clinicians, and industry partners to turn frontier AI into usable systems.</p>
-    <div class="home-partners" aria-label="Partner institutions">
-      <a href="https://cuhk.edu.cn/zh-hans">
-        <img src="/assets/img/freedomai-2026/cuhksz-logo.png" alt="The Chinese University of Hong Kong, Shenzhen">
-      </a>
-      <a class="home-partner--slai" href="https://www.slai.edu.cn/en">
-        <img src="/assets/img/freedomai-2026/slai-logo.png" alt="Shenzhen Loop Area Institute">
-      </a>
-      <a href="https://www.sribd.cn/">
-        <img src="/assets/img/freedomai-2026/sribd-logo.png" alt="Shenzhen Research Institute of Big Data">
-      </a>
+  <section class="home-atmosphere" aria-label="Life at Freedom AI">
+    <a class="home-atmosphere__media" href="/life/" aria-label="Explore life at Freedom AI">
+      <span class="home-atmosphere__slide">
+        <img src="/assets/img/freedomai-2026/life/camp.jpg" alt="Freedom AI group outdoor gathering">
+        <span class="home-atmosphere__caption">Group retreat</span>
+      </span>
+      <span class="home-atmosphere__slide">
+        <img src="/assets/img/freedomai-2026/life/dialogue.jpg" alt="Freedom AI academic dialogue">
+        <span class="home-atmosphere__caption">Academic dialogue</span>
+      </span>
+      <span class="home-atmosphere__slide">
+        <img src="/assets/img/freedomai-2026/life/bonfire.jpg" alt="Freedom AI bonfire gathering">
+        <span class="home-atmosphere__caption">Team gathering</span>
+      </span>
+      <span class="home-atmosphere__slide">
+        <img src="/assets/img/freedomai-2026/life/basketball.jpg" alt="Freedom AI basketball activity">
+        <span class="home-atmosphere__caption">Sports together</span>
+      </span>
+      <span class="home-atmosphere__slide">
+        <img src="/assets/img/freedomai-2026/life/night-gathering.jpg" alt="Freedom AI night gathering">
+        <span class="home-atmosphere__caption">Life after work</span>
+      </span>
+    </a>
+    <div class="home-atmosphere__copy">
+      <div class="home-atmosphere__kicker">Inside Freedom AI</div>
+      <h2>Serious research, real community.</h2>
+      <p>We care about intense research and the everyday life that keeps people curious: academic dialogues, retreats, sports, meals, and late-night conversations.</p>
+      <div class="home-actions">
+        <a class="home-button home-button--primary" href="/life/">Life at Freedom AI</a>
+        <a class="home-button" href="/blog/">Blog Updates</a>
+      </div>
     </div>
   </section>
 
@@ -459,6 +560,22 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
         <img src="/assets/img/freedomai-2026/impact/iclr-financial-ai-award.jpg" alt="ICLR Financial AI best paper award">
         <figcaption>Recognition for financial AI and socio-economic system research.</figcaption>
       </figure>
+    </div>
+  </section>
+
+  <section class="home-section">
+    <h2>Where We Work</h2>
+    <p class="home-section__intro">Freedom AI is based at the School of Data Science, The Chinese University of Hong Kong, Shenzhen, SRIBD, and Shenzhen Loop Area Institute. We work with students, engineers, clinicians, and industry partners to turn frontier AI into usable systems.</p>
+    <div class="home-partners" aria-label="Partner institutions">
+      <a href="https://cuhk.edu.cn/zh-hans">
+        <img src="/assets/img/freedomai-2026/cuhksz-logo.png" alt="The Chinese University of Hong Kong, Shenzhen">
+      </a>
+      <a class="home-partner--slai" href="https://www.slai.edu.cn/en">
+        <img src="/assets/img/freedomai-2026/slai-logo.png" alt="Shenzhen Loop Area Institute">
+      </a>
+      <a href="https://www.sribd.cn/">
+        <img src="/assets/img/freedomai-2026/sribd-logo.png" alt="Shenzhen Research Institute of Big Data">
+      </a>
     </div>
   </section>
 
