@@ -103,33 +103,6 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     gap: 10px;
   }
 
-  .home-hero-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 0.9rem;
-  }
-
-  .home-hero-links a {
-    display: inline-flex;
-    align-items: center;
-    min-height: 34px;
-    border: 1px solid rgba(255, 255, 255, 0.38);
-    border-radius: 6px;
-    padding: 0 11px;
-    background: rgba(255, 255, 255, 0.12);
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 0.88rem;
-    font-weight: 600;
-    backdrop-filter: blur(8px);
-  }
-
-  .home-hero-links a:hover {
-    border-color: rgba(255, 255, 255, 0.78);
-    color: #fff;
-    text-decoration: none;
-  }
-
   .home-button {
     display: inline-flex;
     align-items: center;
@@ -528,17 +501,12 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     <div class="home-hero__content">
       <div class="home-kicker">Freedom AI Research Group</div>
       <h1>Freedom AI</h1>
-      <p>FreedomAI's idea is simple: free humanity from the boundaries of life through AI. We pursue serious research, real community, building large language models, multimodal systems, agents, and medical AI that move from open research to real-world impact.</p>
+      <p>FreedomAI's idea is simple: free humanity from the boundaries of life through AI.</p>
       <div class="home-actions">
         <a class="home-button home-button--primary" href="/publications/">Publications</a>
         <a class="home-button" href="/projects/">Projects</a>
         <a class="home-button" href="/life/">Life at Freedom AI</a>
         <a class="home-button" href="/blog/">Blog Updates</a>
-      </div>
-      <div class="home-hero-links" aria-label="Freedom AI open-source and community links">
-        <a href="https://github.com/FreedomIntelligence" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://huggingface.co/FreedomIntelligence" target="_blank" rel="noopener">Hugging Face</a>
-        <a href="https://www.xiaohongshu.com/user/profile/683e7dcc000000001d009399" target="_blank" rel="noopener">小红书</a>
       </div>
     </div>
   </section>
