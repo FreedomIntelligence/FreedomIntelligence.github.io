@@ -22,7 +22,7 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     position: absolute;
     inset: 0;
     opacity: 0;
-    animation: home-hero-fade 32s infinite;
+    animation: home-hero-fade 48s infinite;
   }
 
   .home-hero__slide:nth-child(2) {
@@ -37,12 +37,24 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     animation-delay: 24s;
   }
 
+  .home-hero__slide:nth-child(5) {
+    animation-delay: 32s;
+  }
+
+  .home-hero__slide:nth-child(6) {
+    animation-delay: 40s;
+  }
+
   .home-hero__slide img {
     display: block;
     width: 100%;
     height: 100%;
     max-width: none;
     object-fit: cover;
+  }
+
+  .home-hero__slide--focus-right img {
+    object-position: center right;
   }
 
   .home-hero__slide::after {
@@ -161,11 +173,11 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
 
   @keyframes home-hero-fade {
     0%,
-    21% {
+    14% {
       opacity: 1;
     }
 
-    27%,
+    18%,
     100% {
       opacity: 0;
     }
@@ -491,20 +503,28 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
 <div class="home-page">
   <section class="home-hero">
     <span class="home-hero__slide">
-      <img src="/assets/img/freedomai-2026/life/camp.jpg" alt="Freedom AI research group gathering">
-      <span class="home-hero__tag">Group retreat</span>
+      <img src="/assets/img/freedomai-2026/life/slai-ccf-campus-night.jpg" alt="CCF community event at Shenzhen Loop Area Institute">
+      <span class="home-hero__tag">CCF at SLAI</span>
+    </span>
+    <span class="home-hero__slide home-hero__slide--focus-right">
+      <img src="/assets/img/freedomai-2026/life/basketball-day-layup.jpg" alt="Freedom AI daytime basketball activity">
+      <span class="home-hero__tag">Basketball together</span>
     </span>
     <span class="home-hero__slide">
-      <img src="/assets/img/freedomai-2026/impact/huatuogpt-longgang.jpg" alt="HuatuoGPT launch ceremony in Longgang">
-      <span class="home-hero__tag">Medical AI in practice</span>
+      <img src="/assets/img/freedomai-2026/life/openclaw-booth.jpg" alt="OpenClaw Open Day booth">
+      <span class="home-hero__tag">OpenClaw Open Day</span>
     </span>
     <span class="home-hero__slide">
-      <img src="/assets/img/freedomai-2026/life/dialogue.jpg" alt="Freedom AI academic dialogue">
-      <span class="home-hero__tag">Research dialogue</span>
+      <img src="/assets/img/freedomai-2026/life/rooftop-night-gathering.jpg" alt="Freedom AI rooftop night gathering">
+      <span class="home-hero__tag">Rooftop talks</span>
     </span>
     <span class="home-hero__slide">
-      <img src="/assets/img/freedomai-2026/life/football.png" alt="Freedom AI football activity">
-      <span class="home-hero__tag">Life at Freedom AI</span>
+      <img src="/assets/img/freedomai-2026/life/table-games-mahjong-room.jpg" alt="Freedom AI table games gathering">
+      <span class="home-hero__tag">Table games</span>
+    </span>
+    <span class="home-hero__slide">
+      <img src="/assets/img/freedomai-2026/life/outdoor-retreat-meal-prep.jpg" alt="Freedom AI outdoor retreat meal preparation">
+      <span class="home-hero__tag">Outdoor retreat</span>
     </span>
     <div class="home-hero__content">
       <div class="home-hero__copy">

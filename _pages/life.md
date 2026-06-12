@@ -128,6 +128,10 @@ nav_order: 4
     grid-column: span 8;
   }
 
+  .life-gallery > .life-photo--portrait {
+    grid-column: span 4;
+  }
+
   .life-photo img {
     display: block;
     width: 100%;
@@ -138,6 +142,10 @@ nav_order: 4
   }
 
   .life-photo--wide img {
+    height: 360px;
+  }
+
+  .life-photo--portrait img {
     height: 360px;
   }
 
@@ -215,7 +223,8 @@ nav_order: 4
     }
 
     .life-gallery > .life-photo,
-    .life-gallery > .life-photo--wide {
+    .life-gallery > .life-photo--wide,
+    .life-gallery > .life-photo--portrait {
       grid-column: span 6;
     }
 
@@ -244,12 +253,14 @@ nav_order: 4
     }
 
     .life-gallery > .life-photo,
-    .life-gallery > .life-photo--wide {
+    .life-gallery > .life-photo--wide,
+    .life-gallery > .life-photo--portrait {
       grid-column: span 12;
     }
 
     .life-photo img,
-    .life-photo--wide img {
+    .life-photo--wide img,
+    .life-photo--portrait img {
       height: 250px;
     }
   }
@@ -257,7 +268,7 @@ nav_order: 4
 
 <div class="life-page">
   <section class="life-hero">
-    <img src="/assets/img/freedomai-2026/life/camp.jpg" alt="Freedom AI group outdoor gathering">
+    <img src="/assets/img/freedomai-2026/life/basketball-night-court.jpg" alt="Freedom AI night basketball activity">
     <div class="life-hero__content">
       <div class="life-eyebrow">Work hard. Play harder.</div>
       <h2>Freedom begins with people who still love life.</h2>
@@ -290,7 +301,85 @@ nav_order: 4
   </section>
 
   <section class="life-section">
-    <h2>Social Life</h2>
+    <h2>Recent Life Moments</h2>
+    <p class="life-section__intro">科研之外的 Freedom AI，是球场、Open Day、项目展示、访谈和面对面交流共同组成的日常。下面这些照片更适合组成 Life 页面相册，其中横图也会挑选进入首页轮播。</p>
+    <div class="life-gallery">
+      <figure class="life-photo life-photo--wide">
+        <img src="/assets/img/freedomai-2026/life/slai-ccf-campus-night.jpg" alt="CCF community event at Shenzhen Loop Area Institute">
+        <figcaption>CCF 走进深圳河套学院：开放的校园交流与社区连接。</figcaption>
+      </figure>
+      <figure class="life-photo">
+        <img src="/assets/img/freedomai-2026/life/openclaw-booth.jpg" alt="OpenClaw Open Day booth">
+        <figcaption>OpenClaw 展台：同学们围在一起体验和讨论 AI 工具。</figcaption>
+      </figure>
+      <figure class="life-photo">
+        <img src="/assets/img/freedomai-2026/life/open-day-registration.jpg" alt="Open Day registration and consultation area">
+        <figcaption>Open Day 现场：报名、咨询和交流自然发生。</figcaption>
+      </figure>
+      <figure class="life-photo">
+        <img src="/assets/img/freedomai-2026/life/open-day-talk.jpg" alt="Freedom AI Open Day talk">
+        <figcaption>Open Day 分享：把项目、想法和新同学带到同一个空间。</figcaption>
+      </figure>
+      <figure class="life-photo life-photo--portrait">
+        <img src="/assets/img/freedomai-2026/life/project-demo-discussion.jpg" alt="Project demo discussion with students">
+        <figcaption>项目交流：面向同学讲解系统设计和研究思路。</figcaption>
+      </figure>
+      <figure class="life-photo">
+        <img src="/assets/img/freedomai-2026/life/livestream-setup.jpg" alt="Livestream interview setup">
+        <figcaption>直播与访谈：把实验室故事讲给更大的社区。</figcaption>
+      </figure>
+      <figure class="life-photo life-photo--wide">
+        <img src="/assets/img/freedomai-2026/life/basketball-day-layup.jpg" alt="Freedom AI daytime basketball activity">
+        <figcaption>白天的篮球活动：运动把新老成员自然地拉到一起。</figcaption>
+      </figure>
+      <figure class="life-photo">
+        <img src="/assets/img/freedomai-2026/life/basketball-night-court.jpg" alt="Freedom AI night basketball activity">
+        <figcaption>晚间球场：高强度研究之外，也要保持身体的节奏。</figcaption>
+      </figure>
+      <figure class="life-photo">
+        <img src="/assets/img/freedomai-2026/life/rooftop-night-gathering.jpg" alt="Freedom AI rooftop night gathering">
+        <figcaption>露台夜谈：山风、饮料和认真聊天的晚上。</figcaption>
+      </figure>
+      <figure class="life-photo">
+        <img src="/assets/img/freedomai-2026/life/city-night-gathering.jpg" alt="Freedom AI city night gathering">
+        <figcaption>城市夜晚的小聚：继续聊项目，也继续聊生活。</figcaption>
+      </figure>
+      <figure class="life-photo">
+        <img src="/assets/img/freedomai-2026/life/seaside-outing.jpg" alt="Freedom AI seaside outing">
+        <figcaption>海边出行：把实验室之外的生活也过得明亮。</figcaption>
+      </figure>
+      <figure class="life-photo life-photo--portrait">
+        <img src="/assets/img/freedomai-2026/life/partner-visit-office.jpg" alt="Partner visit and office group photo">
+        <figcaption>访问交流：与合作伙伴和前辈面对面沟通。</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="life-section">
+    <h2>Cards, Mahjong and Retreats</h2>
+    <p class="life-section__intro">有些照片不一定是正式活动，却最能说明团队为什么能长期一起做事：坐下来打一局德州扑克，围着麻将桌休息一会儿，或者在户外团建里一起准备一顿烤全羊。</p>
+    <div class="life-gallery">
+      <figure class="life-photo life-photo--wide">
+        <img src="/assets/img/freedomai-2026/life/table-games-mahjong-room.jpg" alt="Texas Hold'em and table games with Freedom AI members">
+        <figcaption>德州扑克和桌游时间：策略、判断和聊天都在同一张桌子上。</figcaption>
+      </figure>
+      <figure class="life-photo">
+        <img src="/assets/img/freedomai-2026/life/mahjong-table.jpg" alt="Mahjong table during a Freedom AI gathering">
+        <figcaption>麻将桌上的短暂休息：轻松一点，想法也会流动起来。</figcaption>
+      </figure>
+      <figure class="life-photo">
+        <img src="/assets/img/freedomai-2026/life/outdoor-retreat-meal-prep.jpg" alt="Outdoor retreat meal preparation">
+        <figcaption>户外团建：一起准备晚餐的过程也是团队合作。</figcaption>
+      </figure>
+      <figure class="life-photo life-photo--wide">
+        <img src="/assets/img/freedomai-2026/life/outdoor-retreat-roast.jpg" alt="Outdoor retreat roast">
+        <figcaption>烤全羊现场：活动里最热闹、也最有记忆点的时刻。</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="life-section">
+    <h2>Classic Moments</h2>
     <div class="life-gallery">
       <figure class="life-photo life-photo--wide">
         <img src="/assets/img/freedomai-2026/life/dialogue.jpg" alt="Freedom AI academic dialogue">
