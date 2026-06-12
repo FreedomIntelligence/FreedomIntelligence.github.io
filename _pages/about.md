@@ -23,6 +23,15 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     inset: 0;
     opacity: 0;
     animation: home-hero-fade 48s infinite;
+    transition: opacity 0.45s ease;
+  }
+
+  .home-hero--interactive .home-hero__slide {
+    animation: none;
+  }
+
+  .home-hero--interactive .home-hero__slide.is-active {
+    opacity: 1;
   }
 
   .home-hero__slide:nth-child(2) {
@@ -143,6 +152,50 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
   .home-hero .home-button:hover {
     color: #fff;
     border-color: #fff;
+  }
+
+  .home-hero__controls {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    left: 18px;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: opacity 0.2s ease;
+    visibility: hidden;
+  }
+
+  .home-hero--interactive .home-hero__controls {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .home-hero__control {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.62);
+    border-radius: 50%;
+    background: rgba(7, 12, 16, 0.36);
+    color: #fff;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+  }
+
+  .home-hero__control:hover,
+  .home-hero__control:focus {
+    border-color: #fff;
+    background: rgba(7, 12, 16, 0.58);
+    color: #fff;
+    outline: none;
+    transform: scale(1.04);
   }
 
   .home-button--primary {
@@ -439,6 +492,7 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
   @media (prefers-reduced-motion: reduce) {
     .home-hero__slide {
       animation: none;
+      transition: none;
     }
 
     .home-hero__slide:first-child {
@@ -490,6 +544,16 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
       font-size: 0.8rem;
     }
 
+    .home-hero__controls {
+      right: 10px;
+      left: 10px;
+    }
+
+    .home-hero__control {
+      width: 36px;
+      height: 36px;
+    }
+
     .home-partners a {
       width: 100%;
     }
@@ -526,6 +590,14 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
       <img src="/assets/img/freedomai-2026/life/outdoor-retreat-meal-prep.jpg" alt="Freedom AI outdoor retreat meal preparation">
       <span class="home-hero__tag">Outdoor retreat</span>
     </span>
+    <div class="home-hero__controls" aria-label="Hero carousel controls">
+      <button class="home-hero__control" type="button" aria-label="Previous slide" title="Previous slide" data-home-hero-prev>
+        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+      </button>
+      <button class="home-hero__control" type="button" aria-label="Next slide" title="Next slide" data-home-hero-next>
+        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+      </button>
+    </div>
     <div class="home-hero__content">
       <div class="home-hero__copy">
         <h1>Freedom AI</h1>
@@ -706,3 +778,63 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     </div>
   </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const hero = document.querySelector('.home-hero');
+    if (!hero) return;
+
+    const slides = Array.from(hero.querySelectorAll('.home-hero__slide'));
+    const previousButton = hero.querySelector('[data-home-hero-prev]');
+    const nextButton = hero.querySelector('[data-home-hero-next]');
+    if (slides.length < 2 || !previousButton || !nextButton) return;
+
+    const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let activeIndex = 0;
+    let rotationTimer = null;
+
+    function showSlide(index) {
+      activeIndex = (index + slides.length) % slides.length;
+      slides.forEach(function (slide, slideIndex) {
+        const isActive = slideIndex === activeIndex;
+        slide.classList.toggle('is-active', isActive);
+        slide.setAttribute('aria-hidden', String(!isActive));
+      });
+    }
+
+    function startRotation() {
+      window.clearInterval(rotationTimer);
+      if (motionQuery.matches) return;
+      rotationTimer = window.setInterval(function () {
+        showSlide(activeIndex + 1);
+      }, 8000);
+    }
+
+    function moveSlide(offset) {
+      showSlide(activeIndex + offset);
+      startRotation();
+    }
+
+    hero.classList.add('home-hero--interactive');
+    showSlide(activeIndex);
+    startRotation();
+
+    previousButton.addEventListener('click', function () {
+      moveSlide(-1);
+    });
+
+    nextButton.addEventListener('click', function () {
+      moveSlide(1);
+    });
+
+    hero.addEventListener('mouseenter', function () {
+      window.clearInterval(rotationTimer);
+    });
+
+    hero.addEventListener('mouseleave', startRotation);
+
+    if (typeof motionQuery.addEventListener === 'function') {
+      motionQuery.addEventListener('change', startRotation);
+    }
+  });
+</script>
