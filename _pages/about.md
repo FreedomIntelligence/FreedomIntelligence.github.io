@@ -103,6 +103,33 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     gap: 10px;
   }
 
+  .home-hero-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 0.9rem;
+  }
+
+  .home-hero-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 34px;
+    border: 1px solid rgba(255, 255, 255, 0.38);
+    border-radius: 6px;
+    padding: 0 11px;
+    background: rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.88rem;
+    font-weight: 600;
+    backdrop-filter: blur(8px);
+  }
+
+  .home-hero-links a:hover {
+    border-color: rgba(255, 255, 255, 0.78);
+    color: #fff;
+    text-decoration: none;
+  }
+
   .home-button {
     display: inline-flex;
     align-items: center;
@@ -378,6 +405,45 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     padding-left: 1.1rem;
   }
 
+  .home-social {
+    margin: 2.35rem 0 0;
+    border-top: 1px solid var(--global-divider-color);
+    padding-top: 1.45rem;
+  }
+
+  .home-social .contact-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.8rem;
+  }
+
+  .home-social .contact-icons a,
+  .home-social .contact-icons button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--global-divider-color) !important;
+    border-radius: 8px;
+    padding: 0;
+    background: var(--global-bg-color);
+  }
+
+  .home-social .contact-icons img {
+    width: 30px !important;
+    height: 30px !important;
+    object-fit: contain;
+  }
+
+  .home-social .contact-note {
+    margin-top: 0.75rem;
+    color: var(--global-text-color-light);
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .home-hero__slide {
       animation: none;
@@ -468,6 +534,11 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
         <a class="home-button" href="/projects/">Projects</a>
         <a class="home-button" href="/life/">Life at Freedom AI</a>
         <a class="home-button" href="/blog/">Blog Updates</a>
+      </div>
+      <div class="home-hero-links" aria-label="Freedom AI open-source and community links">
+        <a href="https://github.com/FreedomIntelligence" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://huggingface.co/FreedomIntelligence" target="_blank" rel="noopener">Hugging Face</a>
+        <a href="https://www.xiaohongshu.com/user/profile/683e7dcc000000001d009399" target="_blank" rel="noopener">小红书</a>
       </div>
     </div>
   </section>
@@ -632,4 +703,15 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
       <li>Freedom to pursue ambitious research ideas.</li>
     </ul>
   </section>
+
+  <div class="home-social" aria-label="Freedom AI online channels">
+    <div class="social">
+      <div class="contact-icons">
+        {% include social.html %}
+      </div>
+      <div class="contact-note">
+        {{ site.contact_note }}
+      </div>
+    </div>
+  </div>
 </div>
