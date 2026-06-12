@@ -170,19 +170,18 @@ nav_order: 5
   }
 
   .partner-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
 
   .partner-card {
     display: flex;
-    min-height: 132px;
+    min-height: 118px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 11px;
     border: 1px solid var(--global-divider-color);
     border-radius: 8px;
-    padding: 14px 12px;
+    padding: 16px 14px;
     background: var(--global-bg-color);
     text-align: center;
   }
@@ -190,22 +189,15 @@ nav_order: 5
   .partner-logo-wrap {
     display: flex;
     width: 100%;
-    height: 58px;
+    height: 74px;
     align-items: center;
     justify-content: center;
   }
 
   .partner-logo {
-    max-width: 118px;
-    max-height: 54px;
+    max-width: 145px;
+    max-height: 66px;
     object-fit: contain;
-  }
-
-  .partner-name {
-    color: var(--global-text-color);
-    font-size: 0.94rem;
-    font-weight: 600;
-    line-height: 1.35;
   }
 </style>
 
@@ -414,27 +406,21 @@ nav_order: 5
     <div class="partner-grid">
       <div class="partner-card">
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/nuoya.jpeg" alt="Noah's Ark Lab logo" loading="lazy"></div>
-        <div class="partner-name">Noah's Ark Lab</div>
       </div>
       <div class="partner-card">
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/hauwei.jpeg" alt="Huawei logo" loading="lazy"></div>
-        <div class="partner-name">Huawei</div>
       </div>
       <div class="partner-card">
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/tencent.jpeg" alt="Tencent AI Lab logo" loading="lazy"></div>
-        <div class="partner-name">Tencent AI Lab</div>
       </div>
       <div class="partner-card">
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/shanshu.jpeg" alt="Cardinal Operations logo" loading="lazy"></div>
-        <div class="partner-name">Cardinal Operations</div>
       </div>
       <div class="partner-card">
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/didi.jpeg" alt="Didi logo" loading="lazy"></div>
-        <div class="partner-name">Didi</div>
       </div>
       <div class="partner-card">
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/minimax.jpeg" alt="MiniMax logo" loading="lazy"></div>
-        <div class="partner-name">MiniMax</div>
       </div>
     </div>
   </div>
@@ -445,59 +431,45 @@ nav_order: 5
     <div class="partner-grid">
       <div class="partner-card">
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/nuoya.jpeg" alt="Noah's Ark Lab logo" loading="lazy"></div>
-        <div class="partner-name">Noah's Ark Lab</div>
       </div>
       <div class="partner-card">
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/dji.svg" alt="DJI logo" loading="lazy"></div>
-        <div class="partner-name">DJI</div>
       </div>
       <div class="partner-card">
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/tencent.jpeg" alt="Tencent Hunyuan logo" loading="lazy"></div>
-        <div class="partner-name">Tencent Hunyuan / 腾讯混元</div>
       </div>
       <div class="partner-card">
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/microsoft.jpeg" alt="Microsoft Research Asia logo" loading="lazy"></div>
-        <div class="partner-name">Microsoft Research Asia</div>
       </div>
       <div class="partner-card">
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/qwen.jpeg" alt="Qwen logo" loading="lazy"></div>
-        <div class="partner-name">Qwen</div>
       </div>
       <div class="partner-card">
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/hauwei.jpeg" alt="Huawei logo" loading="lazy"></div>
-        <div class="partner-name">Huawei</div>
       </div>
       <div class="partner-card">
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/tencent.jpeg" alt="Tencent AI Lab logo" loading="lazy"></div>
-        <div class="partner-name">Tencent AI Lab</div>
       </div>
       <div class="partner-card">
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/didi.jpeg" alt="Didi logo" loading="lazy"></div>
-        <div class="partner-name">Didi</div>
       </div>
       <div class="partner-card">
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/minimax.jpeg" alt="MiniMax logo" loading="lazy"></div>
-        <div class="partner-name">MiniMax</div>
       </div>
       <div class="partner-card">
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/mayi.jpeg" alt="Ant Group logo" loading="lazy"></div>
-        <div class="partner-name">Ant Group</div>
       </div>
       <div class="partner-card">
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/lixiang.jpeg" alt="Li Auto logo" loading="lazy"></div>
-        <div class="partner-name">Li Auto</div>
       </div>
       <div class="partner-card">
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/oppo.jpeg" alt="OPPO logo" loading="lazy"></div>
-        <div class="partner-name">OPPO</div>
       </div>
       <div class="partner-card">
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/kimi.svg" alt="Kimi logo" loading="lazy"></div>
-        <div class="partner-name">Kimi</div>
       </div>
       <div class="partner-card">
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/ubiquant.svg" alt="Ubiquant logo" loading="lazy"></div>
-        <div class="partner-name">Ubiquant / 九坤</div>
       </div>
     </div>
   </div>
