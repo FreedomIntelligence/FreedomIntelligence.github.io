@@ -47,12 +47,13 @@ blog_tags:
     }
 
     .blog-header-bar .blog-header-title {
-      max-width: 780px;
+      max-width: 100%;
       margin: 0 auto;
       color: var(--global-theme-color);
-      font-size: 2.35rem;
+      font-size: clamp(1.05rem, 3.2vw, 1.85rem);
       font-weight: 500;
       line-height: 1.2;
+      white-space: nowrap;
     }
 
     .blog-filter {
@@ -96,7 +97,7 @@ blog_tags:
 
     @media (max-width: 575px) {
       .blog-header-bar .blog-header-title {
-        font-size: 1.55rem;
+        font-size: clamp(0.82rem, 3.1vw, 1rem);
       }
 
       .blog-filter {
