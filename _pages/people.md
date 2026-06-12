@@ -68,6 +68,10 @@ hide_title: true
 
   {%- if category == "Member" -%}
   {% include alumni_current_students.html %}
+  <h2 class="category" id="collaborating-member">
+    <span data-lang="en">Collaborating member</span><span data-lang="zh">合作成员</span>
+  </h2>
+  {% include collaborating_members.html %}
   {%- elsif category == "Alumni" -%}
   {% include alumni_alumni.html %}
   {%- endif -%}

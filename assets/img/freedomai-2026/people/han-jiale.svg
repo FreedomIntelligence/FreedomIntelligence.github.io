@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Jiale Han avatar">
+  <rect width="512" height="512" rx="256" fill="#0f766e"/>
+  <circle cx="256" cy="214" r="118" fill="#5eead4" opacity=".36"/>
+  <path d="M96 512c20-96 82-150 160-150s140 54 160 150z" fill="#ccfbf1" opacity=".92"/>
+  <text x="256" y="280" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="116" font-weight="700" fill="#ffffff">JH</text>
+</svg>
