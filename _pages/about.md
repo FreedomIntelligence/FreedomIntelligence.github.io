@@ -18,25 +18,58 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     background: #121a20;
   }
 
-  .home-hero img {
+  .home-hero__slide {
     position: absolute;
     inset: 0;
+    opacity: 0;
+    animation: home-hero-fade 32s infinite;
+  }
+
+  .home-hero__slide:nth-child(2) {
+    animation-delay: 8s;
+  }
+
+  .home-hero__slide:nth-child(3) {
+    animation-delay: 16s;
+  }
+
+  .home-hero__slide:nth-child(4) {
+    animation-delay: 24s;
+  }
+
+  .home-hero__slide img {
+    display: block;
     width: 100%;
     height: 100%;
     max-width: none;
     object-fit: cover;
   }
 
-  .home-hero::after {
+  .home-hero__slide::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(7, 12, 16, 0.54);
+    background: linear-gradient(90deg, rgba(7, 12, 16, 0.72), rgba(7, 12, 16, 0.36) 52%, rgba(7, 12, 16, 0.18));
+  }
+
+  .home-hero__tag {
+    position: absolute;
+    right: 18px;
+    bottom: 16px;
+    z-index: 1;
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    border-radius: 6px;
+    padding: 6px 10px;
+    background: rgba(255, 255, 255, 0.13);
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 0.86rem;
+    font-weight: 600;
+    backdrop-filter: blur(8px);
   }
 
   .home-hero__content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     max-width: 760px;
     padding: 64px 44px 52px;
   }
@@ -124,23 +157,45 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     line-height: 1.72;
   }
 
+  @keyframes home-hero-fade {
+    0%,
+    21% {
+      opacity: 1;
+    }
+
+    27%,
+    100% {
+      opacity: 0;
+    }
+  }
+
   .home-atmosphere {
     position: relative;
     z-index: 2;
-    display: grid;
-    grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+    min-height: 430px;
     margin: -30px 18px 2.55rem;
     overflow: hidden;
     border: 1px solid var(--global-divider-color);
     border-radius: 8px;
-    background: var(--global-bg-color);
+    background: #101820;
     box-shadow: 0 18px 42px rgba(15, 23, 42, 0.12);
   }
 
+  .home-atmosphere::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+      linear-gradient(180deg, rgba(7, 12, 16, 0.12), rgba(7, 12, 16, 0.58)),
+      linear-gradient(90deg, rgba(7, 12, 16, 0.72), rgba(7, 12, 16, 0.18) 68%);
+    pointer-events: none;
+  }
+
   .home-atmosphere__media {
-    position: relative;
+    position: absolute;
+    inset: 0;
     display: block;
-    min-height: 330px;
     overflow: hidden;
     background: #101820;
   }
@@ -178,26 +233,34 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
 
   .home-atmosphere__caption {
     position: absolute;
+    z-index: 2;
     left: 16px;
-    bottom: 14px;
+    top: 16px;
     border-radius: 6px;
     padding: 6px 10px;
-    background: rgba(7, 12, 16, 0.68);
-    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    background: rgba(255, 255, 255, 0.14);
+    color: rgba(255, 255, 255, 0.88);
     font-size: 0.88rem;
     font-weight: 600;
+    backdrop-filter: blur(8px);
   }
 
   .home-atmosphere__copy {
+    position: absolute;
+    left: 28px;
+    right: 28px;
+    bottom: 28px;
+    z-index: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 28px;
+    align-items: flex-start;
+    max-width: 650px;
   }
 
   .home-atmosphere__kicker {
     margin-bottom: 0.7rem;
-    color: var(--global-theme-color);
+    color: rgba(255, 255, 255, 0.72);
     font-size: 0.82rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -205,14 +268,38 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
 
   .home-atmosphere__copy h2 {
     margin: 0 0 0.85rem;
+    color: #fff;
     font-size: 1.72rem;
     line-height: 1.15;
   }
 
   .home-atmosphere__copy p {
     margin-bottom: 1.15rem;
-    color: var(--global-text-color-light);
+    color: rgba(255, 255, 255, 0.86);
     line-height: 1.68;
+  }
+
+  .home-atmosphere .home-button {
+    border-color: rgba(255, 255, 255, 0.72);
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .home-atmosphere .home-button:hover {
+    border-color: #fff;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.16);
+  }
+
+  .home-atmosphere .home-button--primary {
+    border-color: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.92);
+    color: #101820;
+  }
+
+  .home-atmosphere .home-button--primary:hover {
+    color: #101820;
+    background: #fff;
   }
 
   @keyframes home-atmosphere-fade {
@@ -375,10 +462,12 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
   }
 
   @media (prefers-reduced-motion: reduce) {
+    .home-hero__slide,
     .home-atmosphere__slide {
       animation: none;
     }
 
+    .home-hero__slide:first-child,
     .home-atmosphere__slide:first-child {
       opacity: 1;
     }
@@ -390,7 +479,6 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .home-atmosphere,
     .home-impact,
     .home-join {
       grid-template-columns: 1fr;
@@ -421,14 +509,19 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
 
     .home-atmosphere {
       margin-top: -18px;
-    }
-
-    .home-atmosphere__media {
-      min-height: 260px;
+      min-height: 520px;
     }
 
     .home-atmosphere__copy {
-      padding: 22px;
+      left: 22px;
+      right: 22px;
+      bottom: 22px;
+    }
+
+    .home-hero__tag {
+      right: 14px;
+      bottom: 12px;
+      font-size: 0.8rem;
     }
 
     .home-partners a {
@@ -443,7 +536,22 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
 
 <div class="home-page">
   <section class="home-hero">
-    <img src="/assets/img/freedomai-2026/life/camp.jpg" alt="Freedom AI research group gathering">
+    <span class="home-hero__slide">
+      <img src="/assets/img/freedomai-2026/life/camp.jpg" alt="Freedom AI research group gathering">
+      <span class="home-hero__tag">Group retreat</span>
+    </span>
+    <span class="home-hero__slide">
+      <img src="/assets/img/freedomai-2026/impact/huatuogpt-longgang.jpg" alt="HuatuoGPT launch ceremony in Longgang">
+      <span class="home-hero__tag">Medical AI in practice</span>
+    </span>
+    <span class="home-hero__slide">
+      <img src="/assets/img/freedomai-2026/life/dialogue.jpg" alt="Freedom AI academic dialogue">
+      <span class="home-hero__tag">Research dialogue</span>
+    </span>
+    <span class="home-hero__slide">
+      <img src="/assets/img/freedomai-2026/life/football.png" alt="Freedom AI football activity">
+      <span class="home-hero__tag">Life at Freedom AI</span>
+    </span>
     <div class="home-hero__content">
       <div class="home-kicker">Freedom AI Research Group</div>
       <h1>Freedom AI</h1>
@@ -457,7 +565,7 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
   </section>
 
   <section class="home-atmosphere" aria-label="Life at Freedom AI">
-    <a class="home-atmosphere__media" href="/life/" aria-label="Explore life at Freedom AI">
+    <div class="home-atmosphere__media" aria-hidden="true">
       <span class="home-atmosphere__slide">
         <img src="/assets/img/freedomai-2026/life/camp.jpg" alt="Freedom AI group outdoor gathering">
         <span class="home-atmosphere__caption">Group retreat</span>
@@ -478,7 +586,7 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
         <img src="/assets/img/freedomai-2026/life/night-gathering.jpg" alt="Freedom AI night gathering">
         <span class="home-atmosphere__caption">Life after work</span>
       </span>
-    </a>
+    </div>
     <div class="home-atmosphere__copy">
       <div class="home-atmosphere__kicker">Inside Freedom AI</div>
       <h2>Serious research, real community.</h2>
