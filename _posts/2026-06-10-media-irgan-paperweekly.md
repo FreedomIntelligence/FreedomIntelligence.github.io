@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: "媒体报道摘要｜IRGAN 入选 PaperWeekly 2017 年度 NLP 论文 TOP10"
+title: "PaperWeekly｜IRGAN 入选 2017 年度 NLP 论文 TOP10"
 date: 2026-06-10
 description: "基于PaperWeekly 年度 NLP 论文评选记录整理的简要摘要，补充 FreedomAI Lab 参与贡献与资源链接。"
 tags: media PaperWeekly IRGAN NLP

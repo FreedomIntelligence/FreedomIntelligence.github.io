@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: "媒体报道摘要｜MicroVerse：AI 模拟看不见的微观世界"
+title: "机器之心｜MicroVerse：AI 模拟看不见的微观世界"
 date: 2026-06-10
 description: "基于机器之心关于 MicroVerse 的报道整理的简要摘要，补充 FreedomAI Lab 参与贡献与资源链接。"
 tags: media machine-heart MicroVerse world-model biomedical-ai

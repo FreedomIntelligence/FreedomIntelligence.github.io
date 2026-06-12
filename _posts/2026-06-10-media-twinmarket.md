@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: "媒体报道摘要｜TwinMarket：千个虚拟投资者与金融市场涌现"
+title: "机器之心｜TwinMarket：千个虚拟投资者与金融市场涌现"
 date: 2026-06-10
 description: "基于机器之心关于 TwinMarket 的报道整理的简要摘要，补充 FreedomAI Lab 参与贡献与资源链接。"
 tags: media machine-heart TwinMarket social-simulation financial-ai

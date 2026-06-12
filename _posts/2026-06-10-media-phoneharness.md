@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: "媒体报道摘要｜PhoneHarness：AI 手机时代需要怎样的 Agent Harness"
+title: "机器之心｜PhoneHarness：AI 手机时代需要怎样的 Agent Harness"
 date: 2026-06-10
 description: "基于机器之心关于 PhoneHarness 的报道整理的简要摘要，补充 FreedomAI Lab 参与贡献与资源链接。"
 tags: media machine-heart PhoneHarness mobile-agent GUI-agent

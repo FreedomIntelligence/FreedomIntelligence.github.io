@@ -2,6 +2,7 @@
 layout: post
 title: "多模态媒体报道与 FreedomAI 社区链接"
 date: 2026-06-10
+published: false
 description: 按时间顺序整理与 FreedomAI、港中深、王本友相关的多模态媒体报道、论文、项目和社区链接。
 tags: multimodal media-coverage
 categories: research

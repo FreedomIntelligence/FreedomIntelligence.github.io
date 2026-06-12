@@ -1,7 +1,8 @@
 ---
 layout: distill
-title: "媒体报道摘要｜PaperWeekly 招生与实习信息"
+title: "PaperWeekly / AI求职｜招生与实习信息"
 date: 2026-06-10
+published: false
 description: "基于PaperWeekly / AI 求职中与港中文（深圳）相关的招生和实习信息整理的简要摘要，补充 FreedomAI Lab 参与贡献与资源链接。"
 tags: media PaperWeekly recruiting internship NLP multimodal
 

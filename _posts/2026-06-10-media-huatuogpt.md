@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: "媒体报道摘要｜HuatuoGPT：开源中文医疗大模型与医生盲测"
+title: "机器之心 / PaperWeekly｜HuatuoGPT：开源中文医疗大模型与医生盲测"
 date: 2026-06-10
 description: "基于机器之心与 PaperWeekly 关于 HuatuoGPT 的报道整理的简要摘要，补充 FreedomAI Lab 参与贡献与资源链接。"
 tags: media machine-heart PaperWeekly HuatuoGPT medical-llm
