@@ -693,40 +693,6 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
       </div>
     </div>
 
-    <div class="home-impact-platforms" aria-label="Research and data platforms">
-      <div class="home-impact-platform">
-        <h3>Data sharing platform</h3>
-        <p>A multimodal data platform for speech, language, medicine, EEG, images, and video, supporting compliant cross-border data sharing and multilingual intelligent systems for the Asia-Pacific region.</p>
-      </div>
-      <div class="home-impact-platform">
-        <h3>Multimodal perception</h3>
-        <p>Models such as SoundWave, MELA, LongLLaVA, MotionLLM, and TCM-Omni connect audio, EEG, vision, motion, and traditional Chinese medicine signals with language-level reasoning.</p>
-      </div>
-      <div class="home-impact-platform">
-        <h3>Basic cognition</h3>
-        <p>HuatuoGPT-o1, Video-R1, AI4Math, MMAPIS, TS-align, and FLR explore structured cognition, complex reasoning, efficient alignment, and reliable model behavior.</p>
-      </div>
-      <div class="home-impact-platform">
-        <h3>Cross-modal generation</h3>
-        <p>MedGen, Apollo, AceGPT, BlenderLLM, Socratic user simulation, and USP extend AI systems toward controllable generation, multilingual healthcare, CAD design, and personalized digital twins.</p>
-      </div>
-    </div>
-
-    <div class="home-impact-deployments" aria-label="Deployment examples">
-      <div class="home-impact-deployment">
-        <h3>Medical AI deployment</h3>
-        <p>HuatuoGPT was publicly tested by the Shenzhen Municipal Health Commission in June 2023 and later deployed with the National Institute of Health Data Science in Shenzhen to serve Longgang's 5 million residents.</p>
-      </div>
-      <div class="home-impact-deployment">
-        <h3>Education and campus AI</h3>
-        <p>Phoenix supports campus consultation, AI customer service, and student entrepreneurship at CUHK-Shenzhen, while virtual campus agents explore embodied guidance, counseling, and onboarding.</p>
-      </div>
-      <div class="home-impact-deployment">
-        <h3>Student entrepreneurship</h3>
-        <p>Incubated projects include Shuta AI, an intelligent learning platform used by a large share of CUHK-Shenzhen undergraduates, and Freedom Artery, an open medical-agent company backed by seed funding.</p>
-      </div>
-    </div>
-
     <div class="home-showcase">
       <figure>
         <img src="/assets/img/freedomai-2026/impact/github-repos.png" alt="FreedomIntelligence GitHub repositories">
