@@ -208,11 +208,6 @@ nav_order: 5
       <span data-lang="en">Hugging Face model and dataset downloads across open resources.</span>
       <span data-lang="zh">开源模型与数据集在 Hugging Face 上的下载量。</span>
     </div>
-    <div class="impact-metric">
-      <strong>RMB 10M</strong>
-      <span data-lang="en">approximate annual industry collaboration scale with partners such as Huawei and Tencent AI Lab.</span>
-      <span data-lang="zh">与华为、腾讯 AI Lab 等伙伴开展的单年企业横向合作规模。</span>
-    </div>
   </div>
 </section>
 

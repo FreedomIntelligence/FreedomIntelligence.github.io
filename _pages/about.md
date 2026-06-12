@@ -237,18 +237,23 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     display: grid;
     grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
     gap: 18px;
-    align-items: stretch;
+    align-items: start;
     margin-top: 1.2rem;
+  }
+
+  .home-impact__visual {
+    overflow: hidden;
+    border-radius: 8px;
+    background: #fff;
   }
 
   .home-impact__visual img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
+    aspect-ratio: 1280 / 837;
     max-width: none;
-    min-height: 360px;
-    object-fit: cover;
-    border-radius: 8px;
+    object-fit: contain;
   }
 
   .home-impact__list {
@@ -274,7 +279,7 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
 
   .home-impact-summary {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 12px;
     margin-top: 1.15rem;
   }
@@ -560,10 +565,6 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
       <div class="home-impact-metric">
         <strong>95.4%</strong>
         <span>Reported triage accuracy in the Longgang deployment.</span>
-      </div>
-      <div class="home-impact-metric">
-        <strong>RMB 10M</strong>
-        <span>Approximate annual industry collaboration scale with partners such as Huawei and Tencent AI Lab.</span>
       </div>
     </div>
 
