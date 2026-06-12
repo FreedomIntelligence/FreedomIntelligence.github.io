@@ -18,17 +18,11 @@ nav_order: 2
 <link rel="stylesheet" href="{{ '/assets/css/project-hub.css' | relative_url }}">
 
 <div class="project-hub project-focused">
-  <div class="project-toolbar">
-    <div>
-      <span>Filter</span>
-      <strong>Show programs by research tag</strong>
-    </div>
-    <div class="project-filter" aria-label="Project filters">
-      <button type="button" class="is-active" data-project-filter="all">All</button>
-      {% for tag in page.project_tags %}
-        <button type="button" data-project-filter="{{ tag | escape }}">{{ tag }}</button>
-      {% endfor %}
-    </div>
+  <div class="project-filter project-filter-toolbar" aria-label="Project filters">
+    <button type="button" class="is-active" data-project-filter="all">All</button>
+    {% for tag in page.project_tags %}
+      <button type="button" data-project-filter="{{ tag | escape }}">{{ tag }}</button>
+    {% endfor %}
   </div>
 
   <p class="project-empty" hidden>No projects found for this tag.</p>
