@@ -57,43 +57,6 @@ nav_order: 5
     line-height: 1.45;
   }
 
-  .platform-grid,
-  .deployment-grid {
-    display: grid;
-    gap: 14px;
-    margin: 1rem 0 1.8rem;
-  }
-
-  .platform-grid {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  }
-
-  .deployment-grid {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  }
-
-  .platform-card,
-  .deployment-card {
-    border: 1px solid var(--global-divider-color);
-    border-radius: 8px;
-    padding: 15px;
-    background: var(--global-bg-color);
-  }
-
-  .platform-card h3,
-  .deployment-card h3 {
-    margin: 0 0 0.55rem;
-    font-size: 1rem;
-    line-height: 1.35;
-  }
-
-  .platform-card p,
-  .deployment-card p {
-    margin: 0;
-    color: var(--global-text-color-light);
-    line-height: 1.6;
-  }
-
   .impact-gallery {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
@@ -254,34 +217,6 @@ nav_order: 5
 </section>
 
 <section class="impact-section">
-  <h2><span data-lang="en">Research Platforms</span><span data-lang="zh">科研与数据平台</span></h2>
-
-  <p class="impact-lead">
-    <span data-lang="en">The Shenzhen Key Laboratory of Cross-Modal Cognitive Computing was approved by the Shenzhen Science and Technology Innovation Bureau on January 30, 2024. Its platform layout connects compliant multimodal data sharing with perception, cognition, and generation systems.</span>
-    <span data-lang="zh">深圳市跨模态认知计算重点实验室于 2024 年 1 月 30 日经深圳市科创局批准成立。实验室围绕合规多模态数据共享，以及感知、认知、生成三类智能系统平台展开建设。</span>
-  </p>
-
-  <div class="platform-grid">
-    <div class="platform-card">
-      <h3><span data-lang="en">Data sharing platform</span><span data-lang="zh">数据共享平台</span></h3>
-      <p><span data-lang="en">A multimodal data platform for speech, language, medicine, EEG, images, and video, supporting compliant cross-border sharing and multilingual AI for Asia-Pacific languages.</span><span data-lang="zh">面向语音、语言、医学、脑电、图像和视频等多模态数据，支持跨境合规共享与亚太多语言智能系统建设。</span></p>
-    </div>
-    <div class="platform-card">
-      <h3><span data-lang="en">Multimodal perception</span><span data-lang="zh">多模态感知平台</span></h3>
-      <p><span data-lang="en">SoundWave, MELA, LongLLaVA, MotionLLM, and TCM-Omni connect audio, EEG, images, video, motion, and traditional Chinese medicine signals with language-level understanding.</span><span data-lang="zh">SoundWave、MELA、LongLLaVA、MotionLLM、TCM-Omni 等工作连接音频、脑电、图像、视频、动作和中医多模态信号。</span></p>
-    </div>
-    <div class="platform-card">
-      <h3><span data-lang="en">Basic cognition</span><span data-lang="zh">基础认知平台</span></h3>
-      <p><span data-lang="en">HuatuoGPT-o1, Video-R1, AI4Math, MMAPIS, TS-align, and FLR explore structured cognition, complex reasoning, efficient alignment, and reliable behavior.</span><span data-lang="zh">HuatuoGPT-o1、Video-R1、AI4Math、MMAPIS、TS-align、FLR 等工作面向结构化认知、复杂推理、高效对齐和可靠行为。</span></p>
-    </div>
-    <div class="platform-card">
-      <h3><span data-lang="en">Cross-modal generation</span><span data-lang="zh">跨模态生成平台</span></h3>
-      <p><span data-lang="en">MedGen, Apollo, AceGPT, BlenderLLM, Socratic user simulation, and USP support controllable generation, multilingual healthcare, CAD design, and personalized digital twins.</span><span data-lang="zh">MedGen、Apollo、AceGPT、BlenderLLM、Socratic 用户模拟和 USP 支撑可控生成、多语言医疗、CAD 设计和个性化数字孪生。</span></p>
-    </div>
-  </div>
-</section>
-
-<section class="impact-section">
   <h2><span data-lang="en">Worldwide Impact</span><span data-lang="zh">全球影响力</span></h2>
 
   <div class="impact-gallery">
@@ -312,34 +247,6 @@ nav_order: 5
     <li><span data-lang="en">FreedomIntelligence has accumulated 10K+ GitHub stars and million-scale Hugging Face model/data downloads.</span><span data-lang="zh">FreedomIntelligence 已累计获得 10K+ GitHub stars，并在 Hugging Face 上达到百万级模型/数据下载量。</span></li>
     <li><span data-lang="en">The lab's medical AI and foundation-model work has been cited or covered by outlets including Nature, Financial Times, and CCTV.</span><span data-lang="zh">实验室的医疗 AI 与基础模型工作曾被 Nature、Financial Times、CCTV 等关注或报道。</span></li>
   </ul>
-</section>
-
-<section class="impact-section">
-  <h2><span data-lang="en">Deployment and Incubation</span><span data-lang="zh">应用落地与产业孵化</span></h2>
-
-  <p class="impact-lead">
-    <span data-lang="en">The lab introduction highlights a deployment pipeline that moves from publishable models to hospital systems, campus services, industry projects, and student-led companies.</span>
-    <span data-lang="zh">实验室介绍强调从可发表模型到医院系统、校园服务、产业项目和学生创业公司的完整落地链条。</span>
-  </p>
-
-  <div class="deployment-grid">
-    <div class="deployment-card">
-      <h3><span data-lang="en">Medical AI in public hospitals</span><span data-lang="zh">公立医院医疗 AI</span></h3>
-      <p><span data-lang="en">HuatuoGPT completed public testing with the Shenzhen Municipal Health Commission in June 2023 and was later deployed with the National Institute of Health Data Science in Shenzhen across Longgang's public medical network.</span><span data-lang="zh">华佗 GPT 于 2023 年 6 月在深圳市卫健委完成公测，并与国家健康医疗大数据研究院（深圳）合作部署到龙岗区公立医疗网络。</span></p>
-    </div>
-    <div class="deployment-card">
-      <h3><span data-lang="en">Education and campus AI</span><span data-lang="zh">教育与校园 AI</span></h3>
-      <p><span data-lang="en">Phoenix supports campus consultation, AI customer service, and startup API usage at CUHK-Shenzhen, while virtual campus agents explore onboarding, navigation, counseling, and embodied student support.</span><span data-lang="zh">凤凰大模型支持校内咨询、AI 客服和创业团队 API 调用；虚拟校园智能体探索迎新、导航、心理辅导和具身化学生支持。</span></p>
-    </div>
-    <div class="deployment-card">
-      <h3><span data-lang="en">Student startups</span><span data-lang="zh">学生创业</span></h3>
-      <p><span data-lang="en">Incubated companies include Shuta AI, an intelligent learning platform that reached a large share of CUHK-Shenzhen undergraduates, and Freedom Artery, an open medical-agent company backed by seed funding.</span><span data-lang="zh">孵化项目包括覆盖港中深大量本科生的智能学习平台薯塔 AI，以及获得种子轮投资、面向开源医疗智能体的自由动脉科技。</span></p>
-    </div>
-    <div class="deployment-card">
-      <h3><span data-lang="en">Industry projects</span><span data-lang="zh">产业项目</span></h3>
-      <p><span data-lang="en">Collaborations with Huawei, Tencent AI Lab, and other partners span large language models, multilingual models, multimodal systems, model acceleration, inference, training, and speech AI.</span><span data-lang="zh">与华为、腾讯 AI Lab 等伙伴的合作覆盖大语言模型、多语言模型、多模态系统、模型加速、推理训练和语音大模型。</span></p>
-    </div>
-  </div>
 </section>
 
 <section class="impact-section">
