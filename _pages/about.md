@@ -676,19 +676,19 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
       <div class="home-impact__list">
         <div class="home-impact-item">
           <h3>Healthcare at city scale</h3>
-          <p>HuatuoGPT has been deployed across 11 Longgang public hospitals and 186 community health centers, supporting the first district-wide multi-hospital LLM deployment and joint operation in China.</p>
+          <p>HuatuoGPT serves Longgang hospitals and community health centers, supporting city-scale triage and pre-consultation workflows.</p>
         </div>
         <div class="home-impact-item">
           <h3>Open-source ecosystem</h3>
-          <p>FreedomIntelligence models, datasets, benchmarks, and toolkits have received 10K+ GitHub stars and 1M+ Hugging Face downloads, giving researchers practical starting points for medical AI, multilingual AI, and multimodal reasoning.</p>
+          <p>FreedomIntelligence models, datasets, and benchmarks have 10K+ GitHub stars and 1M+ Hugging Face downloads.</p>
         </div>
         <div class="home-impact-item">
           <h3>Global access</h3>
-          <p>Apollo and AceGPT push medical and multilingual AI toward broader global access, including under-served languages and culturally aligned language systems.</p>
+          <p>Apollo and AceGPT expand multilingual medical AI for under-served languages and local healthcare contexts.</p>
         </div>
         <div class="home-impact-item">
           <h3>Award-winning research</h3>
-          <p>Our work has received recognitions at SIGIR, NAACL, NLPCC, ICLR Financial AI, and NeurIPS ResponsibleFM, and has been covered by Nature, Financial Times, Global Times, and major Shenzhen media outlets.</p>
+          <p>Recognized at SIGIR, NAACL, NLPCC, ICLR Financial AI, and NeurIPS ResponsibleFM, with coverage from Nature and major media.</p>
         </div>
       </div>
     </div>
