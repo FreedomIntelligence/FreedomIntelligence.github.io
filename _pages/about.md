@@ -70,7 +70,7 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, rgba(7, 12, 16, 0.72), rgba(7, 12, 16, 0.36) 52%, rgba(7, 12, 16, 0.18));
+    background: linear-gradient(90deg, rgba(7, 12, 16, 0.62), rgba(7, 12, 16, 0.34) 34%, rgba(7, 12, 16, 0.12) 68%, rgba(7, 12, 16, 0.04));
   }
 
   .home-hero__tag {
@@ -78,12 +78,12 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     right: 18px;
     bottom: 16px;
     z-index: 1;
-    border: 1px solid rgba(255, 255, 255, 0.34);
+    border: 1px solid rgba(255, 255, 255, 0.24);
     border-radius: 6px;
-    padding: 6px 10px;
-    background: rgba(255, 255, 255, 0.13);
-    color: rgba(255, 255, 255, 0.86);
-    font-size: 0.86rem;
+    padding: 5px 9px;
+    background: rgba(7, 12, 16, 0.24);
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 0.8rem;
     font-weight: 600;
     backdrop-filter: blur(8px);
   }
@@ -97,12 +97,13 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     align-items: flex-start;
     box-sizing: border-box;
     min-height: 430px;
-    max-width: 760px;
+    max-width: 650px;
     padding: 46px 44px 40px;
   }
 
   .home-hero__copy {
-    max-width: 720px;
+    max-width: 600px;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.36);
   }
 
   .home-hero h1 {
@@ -113,11 +114,11 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
   }
 
   .home-hero p {
-    max-width: 700px;
+    max-width: 560px;
     margin-bottom: 0;
     color: rgba(255, 255, 255, 0.9);
-    font-size: 1.08rem;
-    line-height: 1.7;
+    font-size: 1.05rem;
+    line-height: 1.62;
   }
 
   .home-actions {
@@ -145,8 +146,11 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
   }
 
   .home-hero .home-button {
-    border-color: rgba(255, 255, 255, 0.78);
-    color: #fff;
+    border-color: rgba(255, 255, 255, 0.46);
+    background: rgba(7, 12, 16, 0.18);
+    color: rgba(255, 255, 255, 0.86);
+    min-height: 38px;
+    padding: 0 14px;
   }
 
   .home-hero .home-button:hover {
@@ -170,19 +174,24 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
   }
 
   .home-hero--interactive .home-hero__controls {
-    opacity: 1;
+    opacity: 0.36;
     visibility: visible;
+  }
+
+  .home-hero--interactive:hover .home-hero__controls,
+  .home-hero--interactive:focus-within .home-hero__controls {
+    opacity: 1;
   }
 
   .home-hero__control {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 42px;
-    height: 42px;
-    border: 1px solid rgba(255, 255, 255, 0.62);
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgba(255, 255, 255, 0.46);
     border-radius: 50%;
-    background: rgba(7, 12, 16, 0.36);
+    background: rgba(7, 12, 16, 0.22);
     color: #fff;
     cursor: pointer;
     pointer-events: auto;
@@ -575,8 +584,8 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
       <span class="home-hero__tag">Basketball together</span>
     </span>
     <span class="home-hero__slide">
-      <img src="/assets/img/freedomai-2026/life/openclaw-booth.jpg" alt="OpenClaw Open Day booth">
-      <span class="home-hero__tag">OpenClaw Open Day</span>
+      <img src="/assets/img/freedomai-2026/life/football.png" alt="Freedom AI football on a rainy court">
+      <span class="home-hero__tag">Football in the rain</span>
     </span>
     <span class="home-hero__slide">
       <img src="/assets/img/freedomai-2026/life/rooftop-night-gathering.jpg" alt="Freedom AI rooftop night gathering">
@@ -587,8 +596,8 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
       <span class="home-hero__tag">Table games</span>
     </span>
     <span class="home-hero__slide">
-      <img src="/assets/img/freedomai-2026/life/outdoor-retreat-meal-prep.jpg" alt="Freedom AI outdoor retreat meal preparation">
-      <span class="home-hero__tag">Outdoor retreat</span>
+      <img src="/assets/img/freedomai-2026/life/bonfire.jpg" alt="Freedom AI bonfire gathering">
+      <span class="home-hero__tag">Bonfire night</span>
     </span>
     <div class="home-hero__controls" aria-label="Hero carousel controls">
       <button class="home-hero__control" type="button" aria-label="Previous slide" title="Previous slide" data-home-hero-prev>
@@ -601,7 +610,7 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     <div class="home-hero__content">
       <div class="home-hero__copy">
         <h1>Freedom AI</h1>
-        <p>FreedomAI's idea is simple: free humanity from the boundaries of life through AI.</p>
+        <p>free humanity from the boundaries of life through AI.</p>
       </div>
       <div class="home-actions">
         <a class="home-button" href="/life/">Life</a>

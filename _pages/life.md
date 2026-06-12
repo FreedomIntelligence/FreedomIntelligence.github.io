@@ -308,9 +308,9 @@ nav_order: 4
         <img src="/assets/img/freedomai-2026/life/slai-ccf-campus-night.jpg" alt="CCF community event at Shenzhen Loop Area Institute">
         <figcaption>CCF 走进深圳河套学院：开放的校园交流与社区连接。</figcaption>
       </figure>
-      <figure class="life-photo">
-        <img src="/assets/img/freedomai-2026/life/openclaw-booth.jpg" alt="OpenClaw Open Day booth">
-        <figcaption>OpenClaw 展台：同学们围在一起体验和讨论 AI 工具。</figcaption>
+      <figure class="life-photo life-photo--wide">
+        <img src="/assets/img/freedomai-2026/life/football.png" alt="Freedom AI football on a rainy court">
+        <figcaption>雨中足球：湿润的球场、继续奔跑的人和很真实的团队能量。</figcaption>
       </figure>
       <figure class="life-photo">
         <img src="/assets/img/freedomai-2026/life/open-day-registration.jpg" alt="Open Day registration and consultation area">
@@ -356,8 +356,8 @@ nav_order: 4
   </section>
 
   <section class="life-section">
-    <h2>Cards, Mahjong and Retreats</h2>
-    <p class="life-section__intro">有些照片不一定是正式活动，却最能说明团队为什么能长期一起做事：坐下来打一局德州扑克，围着麻将桌休息一会儿，或者在户外团建里一起准备一顿烤全羊。</p>
+    <h2>Cards, Mahjong and Nights Out</h2>
+    <p class="life-section__intro">有些照片不一定是正式活动，却最能说明团队为什么能长期一起做事：坐下来打一局德州扑克，围着麻将桌休息一会儿，或者在篝火旁把科研之外的话也聊开。</p>
     <div class="life-gallery">
       <figure class="life-photo life-photo--wide">
         <img src="/assets/img/freedomai-2026/life/table-games-mahjong-room.jpg" alt="Texas Hold'em and table games with Freedom AI members">
@@ -372,8 +372,8 @@ nav_order: 4
         <figcaption>户外团建：一起准备晚餐的过程也是团队合作。</figcaption>
       </figure>
       <figure class="life-photo life-photo--wide">
-        <img src="/assets/img/freedomai-2026/life/outdoor-retreat-roast.jpg" alt="Outdoor retreat roast">
-        <figcaption>烤全羊现场：活动里最热闹、也最有记忆点的时刻。</figcaption>
+        <img src="/assets/img/freedomai-2026/life/bonfire.jpg" alt="Freedom AI bonfire gathering">
+        <figcaption>篝火晚会：围坐下来以后，科研和人生都可以慢慢聊。</figcaption>
       </figure>
     </div>
   </section>
@@ -386,20 +386,12 @@ nav_order: 4
         <figcaption>与大师对话：面对面交流，打开新的研究视野。</figcaption>
       </figure>
       <figure class="life-photo">
-        <img src="/assets/img/freedomai-2026/life/bonfire.jpg" alt="Freedom AI bonfire gathering">
-        <figcaption>篝火晚会：在星空下聊科研，也聊人生。</figcaption>
-      </figure>
-      <figure class="life-photo">
         <img src="/assets/img/freedomai-2026/life/night-gathering.jpg" alt="Freedom AI night gathering">
         <figcaption>促膝夜谈：分享科研心得，也交换生活感悟。</figcaption>
       </figure>
       <figure class="life-photo">
         <img src="/assets/img/freedomai-2026/life/basketball.jpg" alt="Freedom AI basketball activity">
         <figcaption>篮球活动：和年轻研究者一起 play harder。</figcaption>
-      </figure>
-      <figure class="life-photo">
-        <img src="/assets/img/freedomai-2026/life/football.png" alt="Freedom AI football activity">
-        <figcaption>足球活动：在运动里建立默契和团队感。</figcaption>
       </figure>
     </div>
   </section>
