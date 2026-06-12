@@ -84,6 +84,96 @@ nav_order: 5
     font-size: 0.92rem;
   }
 
+  .impact-platform {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.85fr);
+    gap: 20px;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .impact-platform h3 {
+    margin: 0 0 0.7rem;
+    font-size: 1.25rem;
+    line-height: 1.35;
+  }
+
+  .impact-platform p {
+    line-height: 1.7;
+  }
+
+  .impact-platform-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin: 1rem 0;
+  }
+
+  .impact-platform-metric {
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    padding: 12px;
+    background: var(--global-bg-color);
+  }
+
+  .impact-platform-metric strong {
+    display: block;
+    color: var(--global-theme-color);
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+
+  .impact-platform-metric span {
+    display: block;
+    margin-top: 5px;
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+
+  .impact-resource-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 0.9rem;
+  }
+
+  .impact-resource-links a {
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    padding: 5px 11px;
+    color: var(--global-theme-color);
+    font-size: 0.9rem;
+    line-height: 1.3;
+    text-decoration: none;
+  }
+
+  .impact-resource-links a:hover {
+    border-color: var(--global-theme-color);
+    background: var(--global-theme-color);
+    color: #fff;
+  }
+
+  .impact-platform-media {
+    margin: 0;
+  }
+
+  .impact-platform-media img {
+    width: 100%;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    background: #fff;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+  }
+
+  .impact-platform-media figcaption {
+    margin-top: 7px;
+    color: var(--global-text-color-light);
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
   .award-grid {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
@@ -162,6 +252,12 @@ nav_order: 5
     max-height: 66px;
     object-fit: contain;
   }
+
+  @media (max-width: 760px) {
+    .impact-platform {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
 
 <section class="impact-section">
@@ -225,23 +321,105 @@ nav_order: 5
       <figcaption><span data-lang="en">Apollo expands multilingual medical AI to 50 languages.</span><span data-lang="zh">Apollo 将多语言医疗 AI 扩展到 50 种语言。</span></figcaption>
     </figure>
 
-    <figure>
-      <img src="/assets/img/freedomai-2026/impact/github-repos.png" alt="FreedomIntelligence GitHub repository list">
-      <figcaption><span data-lang="en">FreedomIntelligence open-source repositories span medical AI, multilingual AI, multimodal AI, and agents.</span><span data-lang="zh">FreedomIntelligence 开源仓库覆盖医疗 AI、多语言 AI、多模态 AI 和智能体。</span></figcaption>
-    </figure>
-
-    <figure>
-      <img src="/assets/img/freedomai-2026/impact/github-impact.jpg" alt="FreedomIntelligence model families and downloads">
-      <figcaption><span data-lang="en">Open model families such as HuatuoGPT, Apollo, LongLLaVA, and AceGPT continue to serve downstream users.</span><span data-lang="zh">HuatuoGPT、Apollo、LongLLaVA、AceGPT 等开放模型系列持续服务下游用户。</span></figcaption>
-    </figure>
   </div>
 
   <ul class="impact-list">
     <li><span data-lang="en">HuatuoGPT intelligent triage and pre-consultation systems have been applied in 11 public hospitals and 186 community health centers in Longgang, Shenzhen, serving about 5 million residents, supporting 300K+ service visits and 520K+ interactions, with reported triage accuracy of 95.4%.</span><span data-lang="zh">HuatuoGPT 智能分诊与预问诊系统已应用于深圳龙岗 11 家公立医院和 186 个社区健康中心，覆盖约 500 万居民，支持 30 万+服务人次和 52 万+交互次数，报告分诊准确率为 95.4%。</span></li>
     <li><span data-lang="en">Apollo expands medical LLMs to 50 languages, making medical AI more accessible globally.</span><span data-lang="zh">Apollo 将医学大模型扩展到 50 种语言，让医疗 AI 更容易服务全球用户。</span></li>
-    <li><span data-lang="en">FreedomIntelligence has accumulated 10K+ GitHub stars and million-scale Hugging Face model/data downloads.</span><span data-lang="zh">FreedomIntelligence 已累计获得 10K+ GitHub stars，并在 Hugging Face 上达到百万级模型/数据下载量。</span></li>
     <li><span data-lang="en">The lab's medical AI and foundation-model work has been cited or covered by outlets including Nature, Financial Times, and CCTV.</span><span data-lang="zh">实验室的医疗 AI 与基础模型工作曾被 Nature、Financial Times、CCTV 等关注或报道。</span></li>
   </ul>
+</section>
+
+<section class="impact-section">
+  <h2><span data-lang="en">GitHub Impact</span><span data-lang="zh">GitHub 开源影响力</span></h2>
+
+  <div class="impact-platform">
+    <div>
+      <h3><span data-lang="en">Research code that downstream builders can reuse</span><span data-lang="zh">让下游开发者可以复用的研究代码</span></h3>
+      <p>
+        <span data-lang="en">The FreedomIntelligence GitHub organization is the engineering backbone for our papers and deployments. It collects public code for medical LLMs, multilingual LLMs, long-context multimodal models, benchmarks, social simulation, mobile agents, and optimization reasoning.</span>
+        <span data-lang="zh">FreedomIntelligence GitHub 组织是我们论文、模型和真实部署背后的工程入口，集中开放医疗大模型、多语言大模型、长上下文多模态模型、评测基准、社会模拟、移动智能体和运筹推理等方向的代码。</span>
+      </p>
+
+      <div class="impact-platform-metrics">
+        <div class="impact-platform-metric">
+          <strong>10K+</strong>
+          <span data-lang="en">GitHub stars across open repositories.</span>
+          <span data-lang="zh">开源仓库累计 stars。</span>
+        </div>
+        <div class="impact-platform-metric">
+          <strong>Code + Benchmarks</strong>
+          <span data-lang="en">from models to evaluation suites.</span>
+          <span data-lang="zh">覆盖模型、数据处理与评测工具链。</span>
+        </div>
+        <div class="impact-platform-metric">
+          <strong>Medical / Multilingual / Agents</strong>
+          <span data-lang="en">core open-source directions.</span>
+          <span data-lang="zh">核心开源方向。</span>
+        </div>
+      </div>
+
+      <div class="impact-resource-links">
+        <a href="https://github.com/FreedomIntelligence" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://github.com/FreedomIntelligence/HuatuoGPT" target="_blank" rel="noopener">HuatuoGPT</a>
+        <a href="https://github.com/FreedomIntelligence/CMB" target="_blank" rel="noopener">CMB</a>
+        <a href="https://github.com/FreedomIntelligence/LongLLaVA" target="_blank" rel="noopener">LongLLaVA</a>
+        <a href="https://github.com/FreedomIntelligence/MicroVerse" target="_blank" rel="noopener">MicroVerse</a>
+        <a href="https://github.com/FreedomIntelligence/TwinMarket" target="_blank" rel="noopener">TwinMarket</a>
+      </div>
+    </div>
+
+    <figure class="impact-platform-media">
+      <img src="/assets/img/freedomai-2026/impact/github-repos.png" alt="FreedomIntelligence GitHub repository list">
+      <figcaption><span data-lang="en">Representative FreedomIntelligence repositories connect papers with usable code, benchmarks, and systems.</span><span data-lang="zh">代表性 FreedomIntelligence 仓库把论文、代码、评测和系统入口连接起来。</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="impact-section">
+  <h2><span data-lang="en">Hugging Face Impact</span><span data-lang="zh">Hugging Face 模型与数据影响力</span></h2>
+
+  <div class="impact-platform">
+    <div>
+      <h3><span data-lang="en">Open weights and datasets for the wider AI community</span><span data-lang="zh">面向全球 AI 社区开放模型权重与数据</span></h3>
+      <p>
+        <span data-lang="en">The FreedomIntelligence Hugging Face hub turns research releases into reusable model weights, datasets, and benchmark resources. It supports medical reasoning, medical vision-language modeling, multilingual medical AI, Arabic LLM localization, dialogue data, and evaluation datasets.</span>
+        <span data-lang="zh">FreedomIntelligence Hugging Face 主页把研究成果转化为可直接复用的模型权重、数据集和评测资源，支撑医学推理、医学视觉语言模型、多语言医学 AI、阿拉伯语大模型本地化、对话数据和评测数据等方向。</span>
+      </p>
+
+      <div class="impact-platform-metrics">
+        <div class="impact-platform-metric">
+          <strong>200+</strong>
+          <span data-lang="en">public model and dataset cards.</span>
+          <span data-lang="zh">公开模型与数据集卡片。</span>
+        </div>
+        <div class="impact-platform-metric">
+          <strong>1M+</strong>
+          <span data-lang="en">cumulative model and data downloads.</span>
+          <span data-lang="zh">模型与数据累计下载量。</span>
+        </div>
+        <div class="impact-platform-metric">
+          <strong>50</strong>
+          <span data-lang="en">languages in Apollo multilingual medical AI.</span>
+          <span data-lang="zh">Apollo 多语言医学 AI 覆盖语言。</span>
+        </div>
+      </div>
+
+      <div class="impact-resource-links">
+        <a href="https://huggingface.co/FreedomIntelligence" target="_blank" rel="noopener">Hugging Face</a>
+        <a href="https://huggingface.co/FreedomIntelligence/HuatuoGPT-o1-8B" target="_blank" rel="noopener">HuatuoGPT-o1</a>
+        <a href="https://huggingface.co/FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL" target="_blank" rel="noopener">HuatuoGPT-Vision</a>
+        <a href="https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT" target="_blank" rel="noopener">medical-o1 data</a>
+        <a href="https://huggingface.co/datasets/FreedomIntelligence/CMB" target="_blank" rel="noopener">CMB</a>
+        <a href="https://huggingface.co/datasets/FreedomIntelligence/ApolloCorpus" target="_blank" rel="noopener">ApolloCorpus</a>
+      </div>
+    </div>
+
+    <figure class="impact-platform-media">
+      <img src="/assets/img/freedomai-2026/impact/github-impact.jpg" alt="FreedomIntelligence model families and downloads">
+      <figcaption><span data-lang="en">Open model families such as HuatuoGPT, Apollo, LongLLaVA, AceGPT, and Phoenix continue to serve downstream users.</span><span data-lang="zh">HuatuoGPT、Apollo、LongLLaVA、AceGPT、Phoenix 等开放模型系列持续服务下游用户。</span></figcaption>
+    </figure>
+  </div>
 </section>
 
 <section class="impact-section">
