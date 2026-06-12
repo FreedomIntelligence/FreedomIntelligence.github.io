@@ -368,7 +368,7 @@ nav_order: 5
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/oppo.jpeg" alt="OPPO logo" loading="lazy"></div>
       </div>
       <div class="partner-card">
-        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/kimi.svg" alt="Kimi logo" loading="lazy"></div>
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/kimi.svg?v=2" alt="Kimi logo" loading="lazy"></div>
       </div>
       <div class="partner-card">
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/ubiquant.svg" alt="Ubiquant logo" loading="lazy"></div>
