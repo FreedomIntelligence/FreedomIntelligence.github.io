@@ -503,6 +503,10 @@ a.project-program-node:hover {
   margin: 0;
 }
 
+.project-hub > .project-toolbar:first-child {
+  margin-top: 0;
+}
+
 .project-filter {
   display: flex;
   flex-wrap: wrap;

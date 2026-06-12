@@ -18,59 +18,6 @@ nav_order: 2
 <link rel="stylesheet" href="{{ '/assets/css/project-hub.css' | relative_url }}">
 
 <div class="project-hub project-focused">
-  <p class="project-hub-intro">
-    FreedomAI 的项目围绕可解释推理、医学大模型、医学评测、多语言模型和运筹优化展开。可直接按研究 tag 筛选，每个方向都集中整理了相关论文、GitHub 代码、Hugging Face 模型与数据集。
-  </p>
-
-  <section class="project-overview" aria-label="Project overview">
-    <div>
-      <div class="project-eyebrow">Research programs</div>
-      <h2>From papers to open model systems</h2>
-      <p class="project-hub-intro">
-        Each program below groups the key papers with the code, models, datasets, and project pages that make the work reusable. Start with the map, filter by research tag, then expand resource stacks only when you need implementation details.
-      </p>
-    </div>
-    <div class="project-overview-metrics" aria-label="Project metrics">
-      <div><strong>5</strong><span>Research programs</span></div>
-      <div><strong>25+</strong><span>Core papers</span></div>
-      <div><strong>45+</strong><span>Code, model, and data links</span></div>
-      <div><strong>1M+</strong><span>Community downloads</span></div>
-    </div>
-  </section>
-
-  <div class="project-map-heading">
-    <span>Program map</span>
-    <strong>Jump directly to a research direction</strong>
-  </div>
-
-  <nav class="project-program-map project-focus-map" aria-label="Project program map">
-    <a class="project-program-node" href="#interpretable-llms">
-      <span>Explainability</span>
-      <strong>Interpretable LLM reasoning</strong>
-      <p>Diagnosis chains, verifiers, executable reasoning, and pruning.</p>
-    </a>
-    <a class="project-program-node" href="#huatuogpt">
-      <span>Medical models</span>
-      <strong>HuatuoGPT family</strong>
-      <p>Medical LLMs, complex reasoning, and medical vision-language models.</p>
-    </a>
-    <a class="project-program-node" href="#medical-evaluation">
-      <span>Evaluation</span>
-      <strong>Medical AI benchmarks</strong>
-      <p>Knowledge, multimodal, clinical, workflow, and education benchmarks.</p>
-    </a>
-    <a class="project-program-node" href="#multilingual-llms">
-      <span>Multilingual</span>
-      <strong>Localized LLMs</strong>
-      <p>Phoenix, AceGPT, Apollo, ApolloMoE, and multilingual corpora.</p>
-    </a>
-    <a class="project-program-node" href="#optimization-llms">
-      <span>Optimization</span>
-      <strong>Reasoning and OR models</strong>
-      <p>Optimization modeling, native reasoning, math scaling, and code reasoning.</p>
-    </a>
-  </nav>
-
   <div class="project-toolbar">
     <div>
       <span>Filter</span>
