@@ -70,16 +70,18 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
   .home-hero__content {
     position: relative;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+    min-height: 430px;
     max-width: 760px;
-    padding: 64px 44px 52px;
+    padding: 46px 44px 40px;
   }
 
-  .home-kicker {
-    margin-bottom: 0.85rem;
-    color: rgba(255, 255, 255, 0.78);
-    font-size: 0.88rem;
-    font-weight: 700;
-    text-transform: uppercase;
+  .home-hero__copy {
+    max-width: 720px;
   }
 
   .home-hero h1 {
@@ -91,7 +93,7 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
 
   .home-hero p {
     max-width: 700px;
-    margin-bottom: 1.3rem;
+    margin-bottom: 0;
     color: rgba(255, 255, 255, 0.9);
     font-size: 1.08rem;
     line-height: 1.7;
@@ -449,6 +451,7 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     }
 
     .home-hero__content {
+      min-height: 500px;
       padding: 44px 22px;
     }
 
@@ -499,14 +502,13 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
       <span class="home-hero__tag">Life at Freedom AI</span>
     </span>
     <div class="home-hero__content">
-      <div class="home-kicker">Freedom AI Research Group</div>
-      <h1>Freedom AI</h1>
-      <p>FreedomAI's idea is simple: free humanity from the boundaries of life through AI.</p>
+      <div class="home-hero__copy">
+        <h1>Freedom AI</h1>
+        <p>FreedomAI's idea is simple: free humanity from the boundaries of life through AI.</p>
+      </div>
       <div class="home-actions">
-        <a class="home-button home-button--primary" href="/publications/">Publications</a>
-        <a class="home-button" href="/projects/">Projects</a>
-        <a class="home-button" href="/life/">Life at Freedom AI</a>
-        <a class="home-button" href="/blog/">Blog Updates</a>
+        <a class="home-button" href="/life/">Life</a>
+        <a class="home-button" href="/blog/">Blog</a>
       </div>
     </div>
   </section>
