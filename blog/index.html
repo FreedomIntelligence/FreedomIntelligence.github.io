@@ -22,9 +22,8 @@ blog_tags:
 
 <div class="post">
 
-  <div class="header-bar">
-    <h1>{{ site.blog_name }}</h1>
-    <h2>{{ site.blog_description }}</h2>
+  <div class="header-bar blog-header-bar">
+    <h1 class="blog-header-title">{{ site.blog_description }}</h1>
   </div>
 
   {% if site.display_tags %}
@@ -43,6 +42,19 @@ blog_tags:
   {% endif %}
 
   <style>
+    .blog-header-bar {
+      padding-bottom: 2rem;
+    }
+
+    .blog-header-bar .blog-header-title {
+      max-width: 780px;
+      margin: 0 auto;
+      color: var(--global-theme-color);
+      font-size: 2.35rem;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
     .blog-filter {
       display: flex;
       flex-wrap: wrap;
@@ -83,6 +95,10 @@ blog_tags:
     }
 
     @media (max-width: 575px) {
+      .blog-header-bar .blog-header-title {
+        font-size: 1.55rem;
+      }
+
       .blog-filter {
         justify-content: flex-start;
       }
