@@ -79,31 +79,6 @@ nav_order: 6
     color: var(--global-text-color-light);
   }
 
-  .impact-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 14px;
-    margin: 1rem 0 1.8rem;
-  }
-
-  .impact-gallery figure {
-    margin: 0;
-  }
-
-  .impact-gallery img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: contain;
-    border-radius: 8px;
-    border: 1px solid var(--global-divider-color);
-    background: #fff;
-  }
-
-  .impact-gallery figcaption {
-    margin-top: 7px;
-    color: var(--global-text-color-light);
-    font-size: 0.92rem;
-  }
 </style>
 
 ## Working With Startups
@@ -213,44 +188,3 @@ nav_order: 6
     </div>
   </section>
 </div>
-
-## Industry Collaborations
-
-We work closely with industry partners across medical AI, multilingual AI, speech, operations research, and agentic systems.
-
-**Collaborative projects:** Noah's Ark Lab, Huawei, Tencent AI Lab, Cardinal Operations, Didi, MiniMax.
-
-**Student internships:** Noah's Ark Lab, Microsoft Research Asia, Qwen, Huawei, Tencent AI Lab, Tencent Hunyuan, Didi, MiniMax, Ant Group, Li Auto, OPPO, Kimi, and Ubiquant.
-
-## Worldwide Impact
-
-<div class="impact-gallery">
-  <figure>
-    <img src="/assets/img/freedomai-2026/impact/huatuogpt-longgang.jpg" alt="HuatuoGPT deployment in Longgang">
-    <figcaption>HuatuoGPT deployment in Longgang medical and community health settings.</figcaption>
-  </figure>
-
-  <figure>
-    <img src="/assets/img/freedomai-2026/impact/apollo-map.jpg" alt="Apollo multilingual medical AI map">
-    <figcaption>Apollo expands multilingual medical AI to 50 languages.</figcaption>
-  </figure>
-
-  <figure>
-    <img src="/assets/img/freedomai-2026/impact/iclr-financial-ai-award.jpg" alt="ICLR Financial AI Workshop best paper award">
-    <figcaption>TwinMarket received the ICLR 2025 Financial AI Workshop Best Paper Award.</figcaption>
-  </figure>
-
-  <figure>
-    <img src="/assets/img/freedomai-2026/impact/github-repos.png" alt="FreedomIntelligence GitHub repository list">
-    <figcaption>FreedomIntelligence open-source repositories span medical AI, multilingual AI, multimodal AI, and agents.</figcaption>
-  </figure>
-
-  <figure>
-    <img src="/assets/img/freedomai-2026/impact/github-impact.jpg" alt="FreedomIntelligence model families and downloads">
-    <figcaption>Open model families such as HuatuoGPT, Apollo, LongLLaVA, and AceGPT continue to serve downstream users.</figcaption>
-  </figure>
-</div>
-
-- HuatuoGPT intelligent triage and pre-consultation systems have been applied in 11 public hospitals and 186 community health centers in Longgang, Shenzhen, serving about 5 million people.
-- Apollo expands medical LLMs to 50 languages, making medical AI more accessible globally.
-- FreedomIntelligence has accumulated 10K+ GitHub stars and million-scale Hugging Face model/data downloads.
