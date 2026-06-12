@@ -5,12 +5,19 @@ pagination:
   enabled: true
   collection: posts
   permalink: /page/:num/
-  per_page: 20
+  per_page: 100
   sort_field: date
   sort_reverse: true
   trail:
     before: 1 # The number of links before the current page
     after: 3  # The number of links after the current page
+blog_tags:
+  - Media Coverage
+  - Medical AI
+  - Multimodal AI
+  - Agents & Simulation
+  - Models & Data
+  - Evaluation & Safety
 ---
 
 <div class="post">
@@ -35,6 +42,67 @@ pagination:
   </div>
   {% endif %}
 
+  <style>
+    .blog-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin: 1rem auto 1.4rem;
+      max-width: 880px;
+    }
+
+    .blog-filter button {
+      border: 1px solid var(--global-divider-color);
+      border-radius: 999px;
+      background: var(--global-bg-color);
+      color: var(--global-text-color);
+      cursor: pointer;
+      font-size: 0.88rem;
+      line-height: 1.2;
+      padding: 0.38rem 0.72rem;
+      transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    }
+
+    .blog-filter button:hover,
+    .blog-filter button.is-active {
+      border-color: var(--global-theme-color);
+      background: var(--global-theme-color);
+      color: #fff;
+    }
+
+    .blog-empty {
+      color: var(--global-text-color-light);
+      margin: 1rem auto;
+      max-width: 760px;
+      text-align: center;
+    }
+
+    .post-list li.is-hidden {
+      display: none;
+    }
+
+    @media (max-width: 575px) {
+      .blog-filter {
+        justify-content: flex-start;
+      }
+
+      .blog-filter button {
+        font-size: 0.82rem;
+        padding: 0.34rem 0.64rem;
+      }
+    }
+  </style>
+
+  <div class="blog-filter" aria-label="Blog filters">
+    <button type="button" class="is-active" data-blog-filter="all">All</button>
+    {% for tag in page.blog_tags %}
+      <button type="button" data-blog-filter="{{ tag | escape }}">{{ tag }}</button>
+    {% endfor %}
+  </div>
+
+  <p class="blog-empty" hidden>No blog posts found for this tag.</p>
+
   <ul class="post-list">
     {% for post in paginator.posts %}
 
@@ -46,8 +114,16 @@ pagination:
     {% assign year = post.date | date: "%Y" %}
     {% assign tags = post.tags | join: "" %}
     {% assign categories = post.categories | join: "" %}
+    {% capture blog_filter_tags %}
+      {% if post.tags contains 'media' or post.tags contains 'media-coverage' %}Media Coverage;{% endif %}
+      {% if post.tags contains 'medical-llm' or post.tags contains 'medical-benchmark' or post.tags contains 'biomedical-ai' or post.tags contains 'CMB' or post.tags contains 'HuatuoGPT' %}Medical AI;{% endif %}
+      {% if post.tags contains 'multimodal' or post.tags contains 'multimodal-agents' or post.tags contains 'LongLLaVA' or post.tags contains 'long-context' or post.tags contains 'PhoneHarness' or post.tags contains 'mobile-agent' or post.tags contains 'GUI-agent' %}Multimodal AI;{% endif %}
+      {% if post.tags contains 'TwinMarket' or post.tags contains 'MicroVerse' or post.tags contains 'PhoneHarness' or post.tags contains 'world-model' or post.tags contains 'social-simulation' or post.tags contains 'financial-ai' or post.tags contains 'mobile-agent' or post.tags contains 'GUI-agent' %}Agents & Simulation;{% endif %}
+      {% if post.tags contains 'FreedomAI' or post.tags contains 'Phoenix' or post.tags contains 'Chimera' or post.tags contains 'LLMZoo' or post.tags contains 'SocraticChat' or post.tags contains 'PlatoLM' or post.tags contains 'dialogue-data' or post.tags contains 'IRGAN' or post.tags contains 'NLP' or post.tags contains 'open-source' or post.tags contains 'language-models' or post.tags contains 'diffusion-models' or post.tags contains 'reasoning-models' or post.tags contains 'attention' or post.tags contains 'transformers' or post.tags contains 'efficient-attention' %}Models & Data;{% endif %}
+      {% if post.tags contains 'evaluation' or post.tags contains 'red-team' or post.tags contains 'model-comparison' or post.tags contains 'medical-benchmark' %}Evaluation & Safety;{% endif %}
+    {% endcapture %}
 
-    <li>
+    <li data-blog-tags="{{ blog_filter_tags | strip | strip_newlines | escape }}">
       <h3>
         {% if post.redirect == blank %}
           <a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -98,3 +174,60 @@ pagination:
   {% include pagination.html %}
 
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const buttons = Array.from(document.querySelectorAll('[data-blog-filter]'));
+    const posts = Array.from(document.querySelectorAll('.post-list > li'));
+    const empty = document.querySelector('.blog-empty');
+    const pagination = document.querySelector('.pagination');
+
+    function tagsFor(post) {
+      return (post.dataset.blogTags || '')
+        .split(';')
+        .map(function (tag) { return tag.trim(); })
+        .filter(Boolean);
+    }
+
+    function setFilter(activeTag, updateUrl) {
+      let visibleCount = 0;
+
+      posts.forEach(function (post) {
+        const shouldShow = activeTag === 'all' || tagsFor(post).includes(activeTag);
+        post.classList.toggle('is-hidden', !shouldShow);
+        if (shouldShow) visibleCount += 1;
+      });
+
+      buttons.forEach(function (button) {
+        const isActive = button.dataset.blogFilter === activeTag;
+        button.classList.toggle('is-active', isActive);
+        button.setAttribute('aria-pressed', String(isActive));
+      });
+
+      if (empty) empty.hidden = visibleCount > 0;
+      if (pagination) pagination.hidden = activeTag !== 'all';
+
+      if (updateUrl) {
+        const url = new URL(window.location.href);
+        if (activeTag === 'all') {
+          url.searchParams.delete('tag');
+        } else {
+          url.searchParams.set('tag', activeTag);
+        }
+        window.history.replaceState({}, '', url);
+      }
+    }
+
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        setFilter(button.dataset.blogFilter, true);
+      });
+    });
+
+    const initialTag = new URLSearchParams(window.location.search).get('tag');
+    const hasInitialTag = buttons.some(function (button) {
+      return button.dataset.blogFilter === initialTag;
+    });
+    setFilter(hasInitialTag ? initialTag : 'all', false);
+  });
+</script>
