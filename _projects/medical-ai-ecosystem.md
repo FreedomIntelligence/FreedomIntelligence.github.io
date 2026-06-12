@@ -15,7 +15,7 @@ github: https://github.com/FreedomIntelligence/HuatuoGPT
 <div class="impact-kicker">Medical AI ecosystem</div>
 
 <div class="impact-tags">
-  <span class="impact-tag">Medical LLMs</span>
+  <span class="impact-tag">AI for Healthcare</span>
   <span class="impact-tag">Clinical reasoning</span>
   <span class="impact-tag">Medical vision-language</span>
   <span class="impact-tag">Open data</span>

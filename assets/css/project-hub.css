@@ -272,8 +272,24 @@ a.project-program-node:hover {
   --program-accent: #7c3aed;
 }
 
+.project-theme-education {
+  --program-accent: #be123c;
+}
+
 .project-theme-multilingual {
   --program-accent: #c2410c;
+}
+
+.project-theme-speech {
+  --program-accent: #0369a1;
+}
+
+.project-theme-human {
+  --program-accent: #9333ea;
+}
+
+.project-theme-infra {
+  --program-accent: #4f46e5;
 }
 
 .project-theme-optimization {
