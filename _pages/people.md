@@ -96,3 +96,4 @@ hide_title: true
 </div>
 
 <script defer src="{{ '/assets/js/scholar-citations.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/github-stars.js' | relative_url }}"></script>

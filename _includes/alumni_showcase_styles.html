@@ -54,6 +54,7 @@
   .alumni-links a {
     display: inline-flex;
     align-items: center;
+    gap: 5px;
     border: 1px solid var(--global-theme-color);
     border-radius: 6px;
     padding: 4px 9px;
@@ -63,6 +64,25 @@
   .alumni-links a[aria-label="Google Scholar"] .ai-google-scholar {
     font-size: 1.25rem;
     line-height: 1;
+  }
+
+  .alumni-links a[data-github-link="true"] .fa-github {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .github-star-count {
+    align-items: center;
+    color: var(--global-text-color-light);
+    display: inline-flex;
+    font-size: 0.82rem;
+    gap: 3px;
+    line-height: 1;
+  }
+
+  .github-star-count .fa-star {
+    color: var(--global-theme-color);
+    font-size: 0.76rem;
   }
 
   .alumni-section-title {
