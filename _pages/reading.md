@@ -22,11 +22,66 @@ nav_order: 2
     FreedomAI 的项目围绕可解释推理、医学大模型、医学评测、多语言模型和运筹优化展开。可直接按研究 tag 筛选，每个方向都集中整理了相关论文、GitHub 代码、Hugging Face 模型与数据集。
   </p>
 
-  <div class="project-filter" aria-label="Project filters">
-    <button type="button" class="is-active" data-project-filter="all">All</button>
-    {% for tag in page.project_tags %}
-      <button type="button" data-project-filter="{{ tag | escape }}">{{ tag }}</button>
-    {% endfor %}
+  <section class="project-overview" aria-label="Project overview">
+    <div>
+      <div class="project-eyebrow">Research programs</div>
+      <h2>From papers to open model systems</h2>
+      <p class="project-hub-intro">
+        Each program below groups the key papers with the code, models, datasets, and project pages that make the work reusable. Start with the map, filter by research tag, then expand resource stacks only when you need implementation details.
+      </p>
+    </div>
+    <div class="project-overview-metrics" aria-label="Project metrics">
+      <div><strong>5</strong><span>Research programs</span></div>
+      <div><strong>25+</strong><span>Core papers</span></div>
+      <div><strong>45+</strong><span>Code, model, and data links</span></div>
+      <div><strong>1M+</strong><span>Community downloads</span></div>
+    </div>
+  </section>
+
+  <div class="project-map-heading">
+    <span>Program map</span>
+    <strong>Jump directly to a research direction</strong>
+  </div>
+
+  <nav class="project-program-map project-focus-map" aria-label="Project program map">
+    <a class="project-program-node" href="#interpretable-llms">
+      <span>Explainability</span>
+      <strong>Interpretable LLM reasoning</strong>
+      <p>Diagnosis chains, verifiers, executable reasoning, and pruning.</p>
+    </a>
+    <a class="project-program-node" href="#huatuogpt">
+      <span>Medical models</span>
+      <strong>HuatuoGPT family</strong>
+      <p>Medical LLMs, complex reasoning, and medical vision-language models.</p>
+    </a>
+    <a class="project-program-node" href="#medical-evaluation">
+      <span>Evaluation</span>
+      <strong>Medical AI benchmarks</strong>
+      <p>Knowledge, multimodal, clinical, workflow, and education benchmarks.</p>
+    </a>
+    <a class="project-program-node" href="#multilingual-llms">
+      <span>Multilingual</span>
+      <strong>Localized LLMs</strong>
+      <p>Phoenix, AceGPT, Apollo, ApolloMoE, and multilingual corpora.</p>
+    </a>
+    <a class="project-program-node" href="#optimization-llms">
+      <span>Optimization</span>
+      <strong>Reasoning and OR models</strong>
+      <p>Optimization modeling, native reasoning, math scaling, and code reasoning.</p>
+    </a>
+  </nav>
+
+  <div class="project-toolbar">
+    <div>
+      <span>Filter</span>
+      <strong>Show programs by research tag</strong>
+    </div>
+    <div class="project-filter" aria-label="Project filters">
+      <button type="button" class="is-active" data-project-filter="all">All</button>
+      {% for tag in page.project_tags %}
+        <button type="button" data-project-filter="{{ tag | escape }}">{{ tag }}</button>
+      {% endfor %}
+    </div>
   </div>
 
   <p class="project-empty" hidden>No projects found for this tag.</p>
@@ -55,8 +110,9 @@ nav_order: 2
         </ol>
       </div>
     </div>
-    <h3>GitHub / Hugging Face 资源</h3>
-    <div class="project-stack project-resource-stack">
+    <details class="project-resources-panel">
+      <summary><span>GitHub / Hugging Face 资源</span><strong>Code, models, datasets</strong></summary>
+      <div class="project-stack project-resource-stack">
       <a class="project-stack-row" href="https://github.com/FreedomIntelligence/Chain-of-Diagnosis" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/Chain-of-Diagnosis</strong><span>CoD 代码、诊断链数据、疾病库、DxBench 和 DiagnosisGPT 入口。</span></span></a>
       <a class="project-stack-row" href="https://huggingface.co/FreedomIntelligence/DiagnosisGPT-6B" target="_blank" rel="noopener"><span class="project-stack-type">HF Model</span><span class="project-stack-main"><strong>FreedomIntelligence/DiagnosisGPT-6B</strong><span>基于 CoD 的可解释诊断模型。</span></span></a>
       <a class="project-stack-row" href="https://huggingface.co/FreedomIntelligence/DiagnosisGPT-34B" target="_blank" rel="noopener"><span class="project-stack-type">HF Model</span><span class="project-stack-main"><strong>FreedomIntelligence/DiagnosisGPT-34B</strong><span>更大规模的 DiagnosisGPT 诊断模型。</span></span></a>
@@ -65,7 +121,8 @@ nav_order: 2
       <a class="project-stack-row" href="https://github.com/ChengpengLi1003/CoRT" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>ChengpengLi1003/CoRT</strong><span>代码集成推理项目。</span></span></a>
       <a class="project-stack-row" href="https://github.com/tulerfeng/Video-R1" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>tulerfeng/Video-R1</strong><span>视频推理强化学习代码。</span></span></a>
       <a class="project-stack-row" href="https://github.com/LWL-cpu/Question-Free-Fine-Tuning" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>LWL-cpu/Question-Free-Fine-Tuning</strong><span>面向高效自适应推理的 fine-tuning 资源。</span></span></a>
-    </div>
+      </div>
+    </details>
   </section>
 
   <section class="project-program-section project-theme-medical" id="huatuogpt" data-project-tags="Medical LLMs;AI for Healthcare;Multi-modal LLMs">
@@ -95,8 +152,9 @@ nav_order: 2
         </ol>
       </div>
     </div>
-    <h3>GitHub / Hugging Face 资源</h3>
-    <div class="project-stack project-resource-stack">
+    <details class="project-resources-panel">
+      <summary><span>GitHub / Hugging Face 资源</span><strong>Code, models, datasets</strong></summary>
+      <div class="project-stack project-resource-stack">
       <a class="project-stack-row" href="https://github.com/FreedomIntelligence/Huatuo-26M" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/Huatuo-26M</strong><span>中文医学 QA 数据集与构建资源。</span></span></a>
       <a class="project-stack-row" href="https://github.com/FreedomIntelligence/HuatuoGPT" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/HuatuoGPT</strong><span>华佗GPT 基础医学对话模型代码。</span></span></a>
       <a class="project-stack-row" href="https://github.com/FreedomIntelligence/HuatuoGPT-II" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/HuatuoGPT-II</strong><span>HuatuoGPT-II 训练和评测材料。</span></span></a>
@@ -109,7 +167,8 @@ nav_order: 2
       <a class="project-stack-row" href="https://huggingface.co/datasets/FreedomIntelligence/PubMedVision" target="_blank" rel="noopener"><span class="project-stack-type">HF Dataset</span><span class="project-stack-main"><strong>FreedomIntelligence/PubMedVision</strong><span>医学图文视觉指令数据。</span></span></a>
       <a class="project-stack-row" href="https://huggingface.co/FreedomIntelligence/HuatuoGPT-Vision-7B" target="_blank" rel="noopener"><span class="project-stack-type">HF Model</span><span class="project-stack-main"><strong>HuatuoGPT-Vision-7B</strong><span>Qwen2-7B / LLaVA-v1.5 架构医学多模态模型。</span></span></a>
       <a class="project-stack-row" href="https://huggingface.co/FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL" target="_blank" rel="noopener"><span class="project-stack-type">HF Model</span><span class="project-stack-main"><strong>HuatuoGPT-Vision-7B-Qwen2.5VL</strong><span>基于 Qwen2.5-VL 的 HuatuoGPT-Vision 新版本。</span></span></a>
-    </div>
+      </div>
+    </details>
   </section>
 
   <section class="project-program-section project-theme-eval" id="medical-evaluation" data-project-tags="Medical LLMs;AI for Healthcare;Multi-modal LLMs">
@@ -139,8 +198,9 @@ nav_order: 2
         </ol>
       </div>
     </div>
-    <h3>GitHub / Hugging Face 资源</h3>
-    <div class="project-stack project-resource-stack">
+    <details class="project-resources-panel">
+      <summary><span>GitHub / Hugging Face 资源</span><strong>Code, models, datasets</strong></summary>
+      <div class="project-stack project-resource-stack">
       <a class="project-stack-row" href="https://github.com/FreedomIntelligence/CMB" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/CMB</strong><span>中文医学 benchmark 代码。</span></span></a>
       <a class="project-stack-row" href="https://huggingface.co/datasets/FreedomIntelligence/CMB" target="_blank" rel="noopener"><span class="project-stack-type">HF Dataset</span><span class="project-stack-main"><strong>FreedomIntelligence/CMB</strong><span>CMB 数据集。</span></span></a>
       <a class="project-stack-row" href="https://github.com/uni-medical/GMAI-MMBench" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>uni-medical/GMAI-MMBench</strong><span>GMAI-MMBench 多模态评测代码。</span></span></a>
@@ -151,7 +211,8 @@ nav_order: 2
       <a class="project-stack-row" href="https://github.com/FreedomIntelligence/DotaGPT" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/DotaGPT</strong><span>DoctorFLAN / DotaBench 训练与评测代码。</span></span></a>
       <a class="project-stack-row" href="https://huggingface.co/datasets/FreedomIntelligence/DoctorFLAN" target="_blank" rel="noopener"><span class="project-stack-type">HF Dataset</span><span class="project-stack-main"><strong>FreedomIntelligence/DoctorFLAN</strong><span>医生工作流任务数据。</span></span></a>
       <a class="project-stack-row" href="https://huggingface.co/datasets/FreedomIntelligence/DotaBench" target="_blank" rel="noopener"><span class="project-stack-type">HF Dataset</span><span class="project-stack-main"><strong>FreedomIntelligence/DotaBench</strong><span>医生工作流多轮评测数据。</span></span></a>
-    </div>
+      </div>
+    </details>
   </section>
 
   <section class="project-program-section project-theme-multilingual" id="multilingual-llms" data-project-tags="Multilingual LLMs;Medical LLMs">
@@ -180,8 +241,9 @@ nav_order: 2
         </ol>
       </div>
     </div>
-    <h3>GitHub / Hugging Face 资源</h3>
-    <div class="project-stack project-resource-stack">
+    <details class="project-resources-panel">
+      <summary><span>GitHub / Hugging Face 资源</span><strong>Code, models, datasets</strong></summary>
+      <div class="project-stack project-resource-stack">
       <a class="project-stack-row" href="https://github.com/FreedomIntelligence/LLMZoo" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/LLMZoo</strong><span>Phoenix / LLMZoo 多语言模型资源。</span></span></a>
       <a class="project-stack-row" href="https://huggingface.co/FreedomIntelligence/phoenix-inst-chat-7b" target="_blank" rel="noopener"><span class="project-stack-type">HF Model</span><span class="project-stack-main"><strong>FreedomIntelligence/phoenix-inst-chat-7b</strong><span>Phoenix 多语言聊天模型。</span></span></a>
       <a class="project-stack-row" href="https://github.com/FreedomIntelligence/AceGPT" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/AceGPT</strong><span>阿拉伯语 LLM 本地化代码和资源。</span></span></a>
@@ -193,7 +255,8 @@ nav_order: 2
       <a class="project-stack-row" href="https://huggingface.co/FreedomIntelligence/Apollo-7B" target="_blank" rel="noopener"><span class="project-stack-type">HF Model</span><span class="project-stack-main"><strong>FreedomIntelligence/Apollo-7B</strong><span>Apollo 7B 多语言医学模型。</span></span></a>
       <a class="project-stack-row" href="https://huggingface.co/FreedomIntelligence/Apollo-72B" target="_blank" rel="noopener"><span class="project-stack-type">HF Model</span><span class="project-stack-main"><strong>FreedomIntelligence/Apollo-72B</strong><span>Apollo 72B 多语言医学模型。</span></span></a>
       <a class="project-stack-row" href="https://github.com/FreedomIntelligence/ApolloMoE" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/ApolloMoE</strong><span>面向 50 种语言的医学 MoE 模型代码。</span></span></a>
-    </div>
+      </div>
+    </details>
   </section>
 
   <section class="project-program-section project-theme-optimization" id="optimization-llms" data-project-tags="AI for Reasoning and Agentic RL">
@@ -221,8 +284,9 @@ nav_order: 2
         </ol>
       </div>
     </div>
-    <h3>GitHub / Hugging Face 资源</h3>
-    <div class="project-stack project-resource-stack">
+    <details class="project-resources-panel">
+      <summary><span>GitHub / Hugging Face 资源</span><strong>Code, models, datasets</strong></summary>
+      <div class="project-stack project-resource-stack">
       <a class="project-stack-row" href="https://github.com/Cardinal-Operations/ORLM" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>Cardinal-Operations/ORLM</strong><span>自动化优化建模训练框架、数据合成和 benchmark 入口。</span></span></a>
       <a class="project-stack-row" href="https://huggingface.co/CardinalOperations/ORLM-LLaMA-3-8B" target="_blank" rel="noopener"><span class="project-stack-type">HF Model</span><span class="project-stack-main"><strong>CardinalOperations/ORLM-LLaMA-3-8B</strong><span>ORLM 8B 优化建模模型。</span></span></a>
       <a class="project-stack-row" href="https://huggingface.co/datasets/CardinalOperations/OR-Instruct-Data-3K" target="_blank" rel="noopener"><span class="project-stack-type">HF Dataset</span><span class="project-stack-main"><strong>CardinalOperations/OR-Instruct-Data-3K</strong><span>优化建模指令数据。</span></span></a>
@@ -230,7 +294,8 @@ nav_order: 2
       <a class="project-stack-row" href="https://github.com/tangzhy/STORM" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>tangzhy/STORM</strong><span>CALM/STORM 优化建模推理资源。</span></span></a>
       <a class="project-stack-row" href="https://github.com/FreedomIntelligence/ReasoningNLP" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/ReasoningNLP</strong><span>推理相关论文与资源集合。</span></span></a>
       <a class="project-stack-row" href="https://github.com/ChengpengLi1003/CoRT" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>ChengpengLi1003/CoRT</strong><span>代码集成推理资源。</span></span></a>
-    </div>
+      </div>
+    </details>
   </section>
 </div>
 

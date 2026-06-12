@@ -39,6 +39,14 @@
   max-width: 1000px;
 }
 
+.project-focused > .project-hub-intro {
+  margin-bottom: 1.05rem;
+}
+
+.project-overview .project-hub-intro {
+  margin-bottom: 0;
+}
+
 .project-overview-metrics {
   background: var(--global-bg-color);
   border: 1px solid var(--global-divider-color);
@@ -404,6 +412,97 @@ a.project-program-node:hover {
   transform: translateY(-1px);
 }
 
+.project-resources-panel {
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+.project-resources-panel summary {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0.76rem 0.88rem;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.project-resources-panel summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-resources-panel summary::after {
+  color: var(--program-accent);
+  content: "+";
+  flex: 0 0 auto;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.project-resources-panel[open] summary {
+  background: var(--project-surface);
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.project-resources-panel[open] summary::after {
+  content: "-";
+}
+
+.project-resources-panel summary span {
+  color: var(--global-text-color);
+  font-weight: 700;
+}
+
+.project-resources-panel summary strong {
+  color: var(--global-text-color-light);
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-left: auto;
+}
+
+.project-resources-panel .project-resource-stack {
+  margin-top: 0;
+  padding: 0.78rem;
+}
+
+.project-toolbar {
+  align-items: center;
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  display: grid;
+  gap: 0.78rem;
+  grid-template-columns: minmax(180px, 0.28fr) minmax(0, 1fr);
+  margin: 0.95rem 0 1.35rem;
+  padding: 0.82rem 0.9rem;
+}
+
+.project-toolbar > div:first-child span {
+  color: var(--global-theme-color);
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.project-toolbar > div:first-child strong {
+  color: var(--global-text-color);
+  display: block;
+  font-size: 0.95rem;
+  line-height: 1.32;
+  margin-top: 0.16rem;
+}
+
+.project-toolbar .project-filter {
+  margin: 0;
+}
+
 .project-filter {
   display: flex;
   flex-wrap: wrap;
@@ -686,6 +785,8 @@ html[data-theme='dark'] .project-focused {
 html[data-theme='dark'] .project-overview-metrics,
 html[data-theme='dark'] .project-focus-map .project-program-node,
 html[data-theme='dark'] .project-paper-list li,
+html[data-theme='dark'] .project-resources-panel,
+html[data-theme='dark'] .project-toolbar,
 html[data-theme='dark'] .project-resource-stack .project-stack-row {
   box-shadow: none;
 }
@@ -714,6 +815,11 @@ html[data-theme='dark'] .project-program-media {
 
   .project-focus-map {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-toolbar {
+    align-items: start;
+    grid-template-columns: 1fr;
   }
 
   .project-program-node + .project-program-node {
@@ -822,6 +928,15 @@ html[data-theme='dark'] .project-program-media {
 
   .project-program-heading h2 {
     font-size: 1.3rem;
+  }
+
+  .project-resources-panel summary {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .project-resources-panel summary strong {
+    margin-left: 0;
   }
 
   .project-paper-list li {
