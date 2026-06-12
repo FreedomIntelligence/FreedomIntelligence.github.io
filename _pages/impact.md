@@ -25,7 +25,8 @@ nav_order: 5
 
   .impact-metric-grid,
   .impact-gallery,
-  .award-grid {
+  .award-grid,
+  .partner-grid {
     display: grid;
     gap: 14px;
     margin: 1rem 0 1.8rem;
@@ -120,6 +121,55 @@ nav_order: 5
     font-size: 0.93rem;
     line-height: 1.55;
   }
+
+  .partner-group {
+    margin-top: 1.35rem;
+  }
+
+  .partner-group h3 {
+    margin: 0 0 0.85rem;
+    font-size: 1.05rem;
+    line-height: 1.35;
+  }
+
+  .partner-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .partner-card {
+    display: flex;
+    min-height: 132px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    padding: 14px 12px;
+    background: var(--global-bg-color);
+    text-align: center;
+  }
+
+  .partner-logo-wrap {
+    display: flex;
+    width: 100%;
+    height: 58px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .partner-logo {
+    max-width: 118px;
+    max-height: 54px;
+    object-fit: contain;
+  }
+
+  .partner-name {
+    color: var(--global-text-color);
+    font-size: 0.94rem;
+    font-weight: 600;
+    line-height: 1.35;
+  }
 </style>
 
 <section class="impact-section">
@@ -152,25 +202,6 @@ nav_order: 5
       <span data-lang="zh">下方整理展示的代表性最佳论文、荣誉提名和产业认可。</span>
     </div>
   </div>
-</section>
-
-<section class="impact-section">
-  <h2><span data-lang="en">Industry Collaborations</span><span data-lang="zh">产业合作</span></h2>
-
-  <p class="impact-lead">
-    <span data-lang="en">We work closely with industry partners across medical AI, multilingual AI, speech, operations research, and agentic systems.</span>
-    <span data-lang="zh">我们与产业伙伴在医疗 AI、多语言 AI、语音、运筹优化和智能体系统等方向紧密合作。</span>
-  </p>
-
-  <p class="impact-list">
-    <strong><span data-lang="en">Collaborative projects:</span><span data-lang="zh">合作项目：</span></strong>
-    Noah's Ark Lab, Huawei, Tencent AI Lab, Cardinal Operations, Didi, MiniMax.
-  </p>
-
-  <p class="impact-list">
-    <strong><span data-lang="en">Student internships:</span><span data-lang="zh">学生实习：</span></strong>
-    Noah's Ark Lab, Microsoft Research Asia, Qwen, Huawei, Tencent AI Lab, Tencent Hunyuan, Didi, MiniMax, Ant Group, Li Auto, OPPO, Kimi, and Ubiquant.
-  </p>
 </section>
 
 <section class="impact-section">
@@ -254,4 +285,107 @@ nav_order: 5
   <ul class="impact-list">
     <li><span data-lang="en">Additional NSFC-listed recognition includes the NeurIPS 2025 ResponsibleFM Workshop Outstanding Paper Award for work on sparse autoencoder interpretability and utility.</span><span data-lang="zh">NSFC 材料中还记录了稀疏自编码器可解释性与效用相关工作获得 NeurIPS 2025 ResponsibleFM Workshop Outstanding Paper Award。</span></li>
   </ul>
+</section>
+
+<section class="impact-section">
+  <h2><span data-lang="en">Industry Collaborations</span><span data-lang="zh">产业合作</span></h2>
+
+  <p class="impact-lead">
+    <span data-lang="en">We work closely with industry partners across medical AI, multilingual AI, speech, operations research, and agentic systems.</span>
+    <span data-lang="zh">我们与产业伙伴在医疗 AI、多语言 AI、语音、运筹优化和智能体系统等方向紧密合作。</span>
+  </p>
+
+  <div class="partner-group">
+    <h3><span data-lang="en">Collaborative Projects</span><span data-lang="zh">合作项目</span></h3>
+
+    <div class="partner-grid">
+      <div class="partner-card">
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/nuoya.jpeg" alt="Noah's Ark Lab logo" loading="lazy"></div>
+        <div class="partner-name">Noah's Ark Lab</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/hauwei.jpeg" alt="Huawei logo" loading="lazy"></div>
+        <div class="partner-name">Huawei</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/tencent.jpeg" alt="Tencent AI Lab logo" loading="lazy"></div>
+        <div class="partner-name">Tencent AI Lab</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/shanshu.jpeg" alt="Cardinal Operations logo" loading="lazy"></div>
+        <div class="partner-name">Cardinal Operations</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/didi.jpeg" alt="Didi logo" loading="lazy"></div>
+        <div class="partner-name">Didi</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/minimax.jpeg" alt="MiniMax logo" loading="lazy"></div>
+        <div class="partner-name">MiniMax</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="partner-group">
+    <h3><span data-lang="en">Student Internships</span><span data-lang="zh">学生实习</span></h3>
+
+    <div class="partner-grid">
+      <div class="partner-card">
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/nuoya.jpeg" alt="Noah's Ark Lab logo" loading="lazy"></div>
+        <div class="partner-name">Noah's Ark Lab</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/dji.svg" alt="DJI logo" loading="lazy"></div>
+        <div class="partner-name">DJI</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/tencent.jpeg" alt="Tencent Hunyuan logo" loading="lazy"></div>
+        <div class="partner-name">Tencent Hunyuan / 腾讯混元</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/microsoft.jpeg" alt="Microsoft Research Asia logo" loading="lazy"></div>
+        <div class="partner-name">Microsoft Research Asia</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/qwen.jpeg" alt="Qwen logo" loading="lazy"></div>
+        <div class="partner-name">Qwen</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/hauwei.jpeg" alt="Huawei logo" loading="lazy"></div>
+        <div class="partner-name">Huawei</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/tencent.jpeg" alt="Tencent AI Lab logo" loading="lazy"></div>
+        <div class="partner-name">Tencent AI Lab</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/didi.jpeg" alt="Didi logo" loading="lazy"></div>
+        <div class="partner-name">Didi</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/minimax.jpeg" alt="MiniMax logo" loading="lazy"></div>
+        <div class="partner-name">MiniMax</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/mayi.jpeg" alt="Ant Group logo" loading="lazy"></div>
+        <div class="partner-name">Ant Group</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/lixiang.jpeg" alt="Li Auto logo" loading="lazy"></div>
+        <div class="partner-name">Li Auto</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/oppo.jpeg" alt="OPPO logo" loading="lazy"></div>
+        <div class="partner-name">OPPO</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/kimi.svg" alt="Kimi logo" loading="lazy"></div>
+        <div class="partner-name">Kimi</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/ubiquant.svg" alt="Ubiquant logo" loading="lazy"></div>
+        <div class="partner-name">Ubiquant / 九坤</div>
+      </div>
+    </div>
+  </div>
 </section>
