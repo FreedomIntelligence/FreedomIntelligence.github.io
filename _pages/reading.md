@@ -11,9 +11,38 @@ nav_order: 2
 <link rel="stylesheet" href="{{ '/assets/css/project-hub.css' | relative_url }}">
 
 <div class="project-hub project-focused">
-  <p class="project-hub-intro">
-    FreedomAI 的项目不是零散 release，而是围绕“可解释/可验证推理、医学大模型、医学评测、多语言模型、运筹优化”五条主线逐步展开。这个页面先给出整体地图，再把每条主线里的论文、GitHub 代码、Hugging Face 模型和数据集中列出来，方便直接复现或继续扩展。
-  </p>
+  <section class="project-overview" aria-label="Projects overview">
+    <div class="project-overview-copy">
+      <div class="project-eyebrow">Research Programs</div>
+      <h2>从论文、模型到数据与评测的五条研究主线</h2>
+      <p class="project-hub-intro">
+        FreedomAI 的项目不是零散 release，而是围绕“可解释/可验证推理、医学大模型、医学评测、多语言模型、运筹优化”五条主线逐步展开。这个页面先给出整体地图，再把每条主线里的论文、GitHub 代码、Hugging Face 模型和数据集中列出来，方便直接复现或继续扩展。
+      </p>
+    </div>
+    <div class="project-overview-metrics" aria-label="Project page summary">
+      <div>
+        <strong>5</strong>
+        <span>研究主线</span>
+      </div>
+      <div>
+        <strong>25</strong>
+        <span>相关论文</span>
+      </div>
+      <div>
+        <strong>48</strong>
+        <span>资源入口</span>
+      </div>
+      <div>
+        <strong>GitHub + HF</strong>
+        <span>代码、模型、数据</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="project-map-heading">
+    <span>Project map</span>
+    <strong>先看全局，再进入每条线</strong>
+  </div>
 
   <div class="project-program-map project-focus-map" aria-label="FreedomAI focused project map">
     <a class="project-program-node" href="#interpretable-llms">
@@ -51,7 +80,7 @@ nav_order: 2
     <a href="#optimization-llms">运筹优化</a>
   </div>
 
-  <section class="project-program-section" id="interpretable-llms">
+  <section class="project-program-section project-theme-explain" id="interpretable-llms">
     <div class="project-program-heading">
       <div class="project-eyebrow">Explainable and verifiable LLMs</div>
       <h2>可解释大模型相关 Project</h2>
@@ -88,7 +117,7 @@ nav_order: 2
     </div>
   </section>
 
-  <section class="project-program-section" id="huatuogpt">
+  <section class="project-program-section project-theme-medical" id="huatuogpt">
     <div class="project-program-heading">
       <div class="project-eyebrow">HuatuoGPT medical model family</div>
       <h2>华佗GPT系列大模型</h2>
@@ -132,7 +161,7 @@ nav_order: 2
     </div>
   </section>
 
-  <section class="project-program-section" id="medical-evaluation">
+  <section class="project-program-section project-theme-eval" id="medical-evaluation">
     <div class="project-program-heading">
       <div class="project-eyebrow">Medical LLM evaluation</div>
       <h2>医疗大模型评测系列</h2>
@@ -174,7 +203,7 @@ nav_order: 2
     </div>
   </section>
 
-  <section class="project-program-section" id="multilingual-llms">
+  <section class="project-program-section project-theme-multilingual" id="multilingual-llms">
     <div class="project-program-heading">
       <div class="project-eyebrow">Multilingual and localized LLMs</div>
       <h2>多语言大语言模型</h2>
@@ -216,7 +245,7 @@ nav_order: 2
     </div>
   </section>
 
-  <section class="project-program-section" id="optimization-llms">
+  <section class="project-program-section project-theme-optimization" id="optimization-llms">
     <div class="project-program-heading">
       <div class="project-eyebrow">Optimization modeling LLMs</div>
       <h2>运筹优化大模型系列</h2>
