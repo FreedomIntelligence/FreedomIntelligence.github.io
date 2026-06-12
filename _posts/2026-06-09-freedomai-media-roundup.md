@@ -74,7 +74,7 @@ and used only as contextual references to the linked public reports.
 <div class="media-roundup-lead">
 过去几年，香港中文大学（深圳）FreedomAI Lab 围绕开放医疗智能、通用对话数据、多模态长上下文、社会模拟和移动智能体基础设施持续开源。机器之心、量子位、PaperWeekly 等媒体的报道，把这些工作放在更宽的技术语境中：从中文医疗大模型，到一次处理上千张图像的多模态模型，再到金融市场、微观世界与手机 Agent 的可执行环境。
 <br><br>
-本文以 FreedomAI Lab 的视角重新整理这些公开报道。文中媒体图示均保留来源署名；图片来自对应报道或镜像页，版权归原媒体与原作者所有。完整原文、镜像页和项目链接见文末来源索引。
+本文以 FreedomAI Lab 的视角重新整理这些公开报道。文中媒体图示均保留来源署名；图片来自对应报道页面，版权归原媒体与原作者所有。完整原文和项目链接见文末来源索引。
 </div>
 
 ## Open Medical Intelligence
@@ -84,11 +84,11 @@ FreedomAI Lab 最早被广泛关注的一条主线，是让医学大模型更开
 <div class="media-roundup-grid">
   <figure class="media-roundup-card">
     <img src="{{ '/assets/img/media-roundup-2026/huatuogpt-overview.png' | relative_url }}" alt="HuatuoGPT media diagram">
-    <figcaption>图源：机器之心转载验证页，报道 HuatuoGPT 的中文医疗大模型路线。来源：<a href="https://www.sohu.com/a/680793310_129720">Sohu 镜像</a>；相关原文见 <a href="https://mp.weixin.qq.com/s/lwJb8N420xfMTvXJPM2gtg">机器之心公众号</a> 与 <a href="https://www.python88.com/topic/155876">PaperWeekly 镜像</a>。</figcaption>
+    <figcaption>图源：机器之心报道，展示 HuatuoGPT 的中文医疗大模型路线。相关原文见 <a href="https://mp.weixin.qq.com/s/lwJb8N420xfMTvXJPM2gtg">机器之心公众号</a>。</figcaption>
   </figure>
   <figure class="media-roundup-card">
     <img src="{{ '/assets/img/media-roundup-2026/huatuogpt-auto-eval.jpeg' | relative_url }}" alt="HuatuoGPT evaluation figure">
-    <figcaption>图源：机器之心转载验证页，展示 HuatuoGPT 报道中的评测材料。项目入口：<a href="https://github.com/FreedomIntelligence/HuatuoGPT">HuatuoGPT GitHub</a>、<a href="https://huggingface.co/FreedomIntelligence/HuatuoGPT-7B">HuatuoGPT-7B</a>。</figcaption>
+    <figcaption>图源：机器之心报道，展示 HuatuoGPT 报道中的评测材料。项目入口：<a href="https://github.com/FreedomIntelligence/HuatuoGPT">HuatuoGPT GitHub</a>、<a href="https://huggingface.co/FreedomIntelligence/HuatuoGPT-7B">HuatuoGPT-7B</a>。</figcaption>
   </figure>
 </div>
 
@@ -97,7 +97,7 @@ FreedomAI Lab 最早被广泛关注的一条主线，是让医学大模型更开
 <div class="media-roundup-grid">
   <figure class="media-roundup-card">
     <img src="{{ '/assets/img/media-roundup-2026/cmb-overview.png' | relative_url }}" alt="CMB benchmark overview">
-    <figcaption>图源：PaperWeekly CMB 报道镜像。来源：<a href="https://blog.csdn.net/c9Yv2cf9I06K2A9E/article/details/132632499">CSDN 镜像</a>、<a href="https://www.sohu.com/a/717301678_121119001">Sohu 转载验证页</a>；项目入口：<a href="https://github.com/FreedomIntelligence/CMB">CMB GitHub</a>、<a href="https://cmedbenchmark.llmzoo.com/">CMB 官网</a>。</figcaption>
+    <figcaption>图源：PaperWeekly CMB 报道，展示中文医疗基准的任务组织与评测框架。项目入口：<a href="https://github.com/FreedomIntelligence/CMB">CMB GitHub</a>、<a href="https://cmedbenchmark.llmzoo.com/">CMB 官网</a>。</figcaption>
   </figure>
 </div>
 
@@ -117,11 +117,11 @@ FreedomAI Lab 最早被广泛关注的一条主线，是让医学大模型更开
 <div class="media-roundup-grid">
   <figure class="media-roundup-card">
     <img src="{{ '/assets/img/media-roundup-2026/phoenix-llmzoo.png' | relative_url }}" alt="Phoenix and Chimera media figure">
-    <figcaption>图源：机器之心关于 Phoenix / Chimera 的报道转载页。来源：<a href="https://cloud.tencent.com/developer/article/2270060">腾讯云镜像</a>；原文：<a href="https://mp.weixin.qq.com/s/WLYmwT1LJ9YGFdW3GRZ55A">机器之心公众号</a>；项目入口：<a href="https://github.com/FreedomIntelligence/LLMZoo">LLMZoo</a>。</figcaption>
+    <figcaption>图源：机器之心关于 Phoenix / Chimera 的报道。原文：<a href="https://mp.weixin.qq.com/s/WLYmwT1LJ9YGFdW3GRZ55A">机器之心公众号</a>；项目入口：<a href="https://github.com/FreedomIntelligence/LLMZoo">LLMZoo</a>。</figcaption>
   </figure>
   <figure class="media-roundup-card">
     <img src="{{ '/assets/img/media-roundup-2026/phoenix-chinese-eval.png' | relative_url }}" alt="Phoenix Chinese evaluation chart">
-    <figcaption>图源：机器之心转载页，展示 Phoenix / Chimera 报道中的中文评测图示。相关数据：<a href="https://huggingface.co/datasets/FreedomIntelligence/phoenix-sft-data-v1">Phoenix SFT data</a>。</figcaption>
+    <figcaption>图源：机器之心报道，展示 Phoenix / Chimera 报道中的中文评测图示。相关数据：<a href="https://huggingface.co/datasets/FreedomIntelligence/phoenix-sft-data-v1">Phoenix SFT data</a>。</figcaption>
   </figure>
 </div>
 
@@ -130,7 +130,7 @@ FreedomAI Lab 最早被广泛关注的一条主线，是让医学大模型更开
 <div class="media-roundup-grid">
   <figure class="media-roundup-card">
     <img src="{{ '/assets/img/media-roundup-2026/socratic-pipeline.png' | relative_url }}" alt="SocraticChat pipeline figure">
-    <figcaption>图源：PaperWeekly SocraticChat / PlatoLM 报道转载页。来源：<a href="https://www.sohu.com/a/733642675_121119001">Sohu 转载验证页</a>、<a href="https://www.python88.com/topic/163925">Python88 镜像</a>；项目入口：<a href="https://github.com/FreedomIntelligence/PlatoLM">PlatoLM GitHub</a>。</figcaption>
+    <figcaption>图源：PaperWeekly SocraticChat / PlatoLM 报道，展示苏格拉底式对话数据构造流程。项目入口：<a href="https://github.com/FreedomIntelligence/PlatoLM">PlatoLM GitHub</a>。</figcaption>
   </figure>
 </div>
 
@@ -143,11 +143,11 @@ LongLLaVA 是我们在多模态方向的重要尝试之一。机器之心和 Pap
 <div class="media-roundup-grid">
   <figure class="media-roundup-card">
     <img src="{{ '/assets/img/media-roundup-2026/longllava-architecture.webp' | relative_url }}" alt="LongLLaVA architecture figure">
-    <figcaption>图源：机器之心 LongLLaVA 报道镜像。来源：<a href="https://www.xinfinite.net/t/topic/5744">Xinfinite 镜像</a>；相关原文见 <a href="http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650935336&idx=4&sn=1d0f7c1abd46f072741e563050151045">机器之心公众号</a>。</figcaption>
+    <figcaption>图源：机器之心 LongLLaVA 报道。相关原文见 <a href="http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650935336&idx=4&sn=1d0f7c1abd46f072741e563050151045">机器之心公众号</a>。</figcaption>
   </figure>
   <figure class="media-roundup-card">
     <img src="{{ '/assets/img/media-roundup-2026/longllava-training.png' | relative_url }}" alt="LongLLaVA training figure">
-    <figcaption>图源：机器之心 LongLLaVA 报道镜像。PaperWeekly 镜像：<a href="https://blog.csdn.net/c9Yv2cf9I06K2A9E/article/details/142544603">CSDN</a>；项目入口：<a href="https://github.com/FreedomIntelligence/LongLLaVA">LongLLaVA GitHub</a>。</figcaption>
+    <figcaption>图源：机器之心 LongLLaVA 报道。项目入口：<a href="https://github.com/FreedomIntelligence/LongLLaVA">LongLLaVA GitHub</a>。</figcaption>
   </figure>
 </div>
 
@@ -160,22 +160,22 @@ LongLLaVA 是我们在多模态方向的重要尝试之一。机器之心和 Pap
 <div class="media-roundup-grid">
   <figure class="media-roundup-card">
     <img src="{{ '/assets/img/media-roundup-2026/twinmarket-bdi.png' | relative_url }}" alt="TwinMarket BDI architecture figure">
-    <figcaption>图源：机器之心 TwinMarket 报道镜像。来源：<a href="https://www.xinfinite.net/t/topic/16071">Xinfinite 镜像</a>；原文：<a href="http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651001895&idx=4&sn=383c986589bd3d7dfc3623ae08b848f9">机器之心公众号</a>；项目入口：<a href="https://github.com/FreedomIntelligence/TwinMarket">TwinMarket GitHub</a>。</figcaption>
+    <figcaption>图源：机器之心 TwinMarket 报道。原文：<a href="http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651001895&idx=4&sn=383c986589bd3d7dfc3623ae08b848f9">机器之心公众号</a>；项目入口：<a href="https://github.com/FreedomIntelligence/TwinMarket">TwinMarket GitHub</a>。</figcaption>
   </figure>
   <figure class="media-roundup-card">
     <img src="{{ '/assets/img/media-roundup-2026/twinmarket-bubble.png' | relative_url }}" alt="TwinMarket market simulation figure">
-    <figcaption>图源：机器之心 TwinMarket 报道镜像，展示多智能体金融市场模拟中的行为涌现。</figcaption>
+    <figcaption>图源：机器之心 TwinMarket 报道，展示多智能体金融市场模拟中的行为涌现。</figcaption>
   </figure>
 </div>
 
 <div class="media-roundup-grid">
   <figure class="media-roundup-card">
     <img src="{{ '/assets/img/media-roundup-2026/microverse-overview.png' | relative_url }}" alt="MicroVerse overview figure">
-    <figcaption>图源：机器之心 MicroVerse 报道镜像。来源：<a href="https://www.xinfinite.net/t/topic/18385">Xinfinite 镜像</a>；原文：<a href="http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651022151&idx=3&sn=89303fe37f598d0481ba1effbe953e68">机器之心公众号</a>。</figcaption>
+    <figcaption>图源：机器之心 MicroVerse 报道。原文：<a href="http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651022151&idx=3&sn=89303fe37f598d0481ba1effbe953e68">机器之心公众号</a>。</figcaption>
   </figure>
   <figure class="media-roundup-card">
     <img src="{{ '/assets/img/media-roundup-2026/microverse-bench.png' | relative_url }}" alt="MicroVerse benchmark figure">
-    <figcaption>图源：机器之心 MicroVerse 报道镜像，展示微观世界模拟与评测设置。</figcaption>
+    <figcaption>图源：机器之心 MicroVerse 报道，展示微观世界模拟与评测设置。</figcaption>
   </figure>
 </div>
 
@@ -184,11 +184,11 @@ LongLLaVA 是我们在多模态方向的重要尝试之一。机器之心和 Pap
 <div class="media-roundup-grid">
   <figure class="media-roundup-card">
     <img src="{{ '/assets/img/media-roundup-2026/phoneharness-overview.png' | relative_url }}" alt="PhoneHarness overview figure">
-    <figcaption>图源：机器之心 PhoneHarness 报道转载页。来源：<a href="https://finance.sina.com.cn/tech/roll/2026-05-26/doc-inhzfshk8947849.shtml">新浪科技转载页</a>；原文：<a href="https://mp.weixin.qq.com/s/I2ztL6sFiHGxAiCfh_FTqg">机器之心公众号</a>。</figcaption>
+    <figcaption>图源：机器之心 PhoneHarness 报道。原文：<a href="https://mp.weixin.qq.com/s/I2ztL6sFiHGxAiCfh_FTqg">机器之心公众号</a>。</figcaption>
   </figure>
   <figure class="media-roundup-card">
     <img src="{{ '/assets/img/media-roundup-2026/phoneharness-architecture.png' | relative_url }}" alt="PhoneHarness architecture figure">
-    <figcaption>图源：机器之心 PhoneHarness 报道转载页，展示手机 Agent harness 的执行与编排框架。</figcaption>
+    <figcaption>图源：机器之心 PhoneHarness 报道，展示手机 Agent harness 的执行与编排框架。</figcaption>
   </figure>
 </div>
 
@@ -208,20 +208,20 @@ FreedomAI Lab 的研究会继续围绕开放基础设施展开。我们在 GitHu
 ### Media sources
 
 <ul class="source-list">
-  <li>机器之心：<a href="https://mp.weixin.qq.com/s/WLYmwT1LJ9YGFdW3GRZ55A">Phoenix / Chimera 原文</a>；<a href="https://cloud.tencent.com/developer/article/2270060">转载验证页</a>。</li>
-  <li>机器之心：<a href="https://mp.weixin.qq.com/s/lwJb8N420xfMTvXJPM2gtg">HuatuoGPT 原文</a>；<a href="https://www.sohu.com/a/680793310_129720">转载验证页</a>。</li>
-  <li>机器之心：<a href="http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650935336&idx=4&sn=1d0f7c1abd46f072741e563050151045">LongLLaVA 原文</a>；<a href="https://www.xinfinite.net/t/topic/5744">镜像页</a>。</li>
-  <li>机器之心：<a href="http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651001895&idx=4&sn=383c986589bd3d7dfc3623ae08b848f9">TwinMarket 原文</a>；<a href="https://www.xinfinite.net/t/topic/16071">镜像页</a>。</li>
-  <li>机器之心：<a href="http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651022151&idx=3&sn=89303fe37f598d0481ba1effbe953e68">MicroVerse 原文</a>；<a href="https://www.xinfinite.net/t/topic/18385">镜像页</a>。</li>
-  <li>机器之心：<a href="https://mp.weixin.qq.com/s/I2ztL6sFiHGxAiCfh_FTqg">PhoneHarness 原文</a>；<a href="https://finance.sina.com.cn/tech/roll/2026-05-26/doc-inhzfshk8947849.shtml">新浪科技转载页</a>；<a href="https://x.com/jiqizhixin/status/2063472517533335806">X 转发记录</a>。</li>
+  <li>机器之心：<a href="https://mp.weixin.qq.com/s/WLYmwT1LJ9YGFdW3GRZ55A">Phoenix / Chimera 原文</a>。</li>
+  <li>机器之心：<a href="https://mp.weixin.qq.com/s/lwJb8N420xfMTvXJPM2gtg">HuatuoGPT 原文</a>。</li>
+  <li>机器之心：<a href="http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650935336&idx=4&sn=1d0f7c1abd46f072741e563050151045">LongLLaVA 原文</a>。</li>
+  <li>机器之心：<a href="http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651001895&idx=4&sn=383c986589bd3d7dfc3623ae08b848f9">TwinMarket 原文</a>。</li>
+  <li>机器之心：<a href="http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651022151&idx=3&sn=89303fe37f598d0481ba1effbe953e68">MicroVerse 原文</a>。</li>
+  <li>机器之心：<a href="https://mp.weixin.qq.com/s/I2ztL6sFiHGxAiCfh_FTqg">PhoneHarness 原文</a>；<a href="https://x.com/jiqizhixin/status/2063472517533335806">X 转发记录</a>。</li>
   <li>量子位：<a href="https://www.qbitai.com/2023/07/69117.html">大模型红队攻击与模型对比界面报道</a>；<a href="https://mp.weixin.qq.com/s/l3zwXBBoQPaLCoynGGnevA">公众号原文</a>。</li>
-  <li>PaperWeekly：<a href="https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247624585&idx=3&sn=2738a85994cec0f8b20e2500c5d563e1&chksm=96e43809a193b11f327428cd38e626272a1499af6824cf4eb953b040f3167882d5258a3d5ae3&scene=126&sessionid=0">HuatuoGPT 原文</a>；<a href="https://www.python88.com/topic/155876">镜像页</a>。</li>
-  <li>PaperWeekly：<a href="https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247685068&idx=3&sn=cfa3e74011d850908de5543ec5abe715&chksm=9705cd04e675960fdccc62a83cc02948beab26b4b70ede86ec30bac99b60ed860a3607966ad4&scene=126&sessionid=0">LongLLaVA 原文</a>；<a href="https://blog.csdn.net/c9Yv2cf9I06K2A9E/article/details/142544603">镜像页</a>。</li>
-  <li>PaperWeekly：<a href="https://blog.csdn.net/c9Yv2cf9I06K2A9E/article/details/132632499">CMB 镜像页</a>；<a href="https://www.sohu.com/a/717301678_121119001">转载验证页</a>。</li>
-  <li>PaperWeekly：<a href="https://www.python88.com/topic/163925">SocraticChat / PlatoLM 镜像页</a>；<a href="https://www.sohu.com/a/733642675_121119001">转载验证页</a>。</li>
-  <li>PaperWeekly / AI 求职：<a href="https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247612887&idx=3&sn=e504e7c804d472b420adf6ad2ea68cb2&chksm=96ebe657a19c6f41e87a403bb1ea835133eaad38328e31b96d0eea4c292dbcb6620da0ea7c49&scene=126&sessionid=0">李海洲教授 NLP 等方向招生原文</a>；<a href="https://blog.csdn.net/c9Yv2cf9I06K2A9E/article/details/129483552">镜像页</a>。</li>
-  <li>PaperWeekly / AI 求职：<a href="https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247664430&idx=3&sn=4e0447f25c8772a1f1831dc1d249a6a1&chksm=974fe78d9ff31d0f51d00f33b4a837b8d623b22243bf15bded95dbc012fc9f7a5fbc22a765dd&scene=126&sessionid=0">大语言模型算法实习原文</a>；<a href="https://www.sohu.com/a/778110237_121119001">转载验证页</a>。</li>
-  <li>PaperWeekly / AI 求职：<a href="https://www.zhuanzhiai.com/document/adb239d17fc109c6fc77367315ef2efb">王本友 / 李海洲教授 NLP/ML 方向招生镜像页</a>；<a href="https://www.sohu.com/a/586239364_121119001">语音与语言实验室招生转载验证页</a>。</li>
+  <li>PaperWeekly：<a href="https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247624585&idx=3&sn=2738a85994cec0f8b20e2500c5d563e1&chksm=96e43809a193b11f327428cd38e626272a1499af6824cf4eb953b040f3167882d5258a3d5ae3&scene=126&sessionid=0">HuatuoGPT 原文</a>。</li>
+  <li>PaperWeekly：<a href="https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247685068&idx=3&sn=cfa3e74011d850908de5543ec5abe715&chksm=9705cd04e675960fdccc62a83cc02948beab26b4b70ede86ec30bac99b60ed860a3607966ad4&scene=126&sessionid=0">LongLLaVA 原文</a>。</li>
+  <li>PaperWeekly：<a href="https://blog.csdn.net/c9Yv2cf9I06K2A9E/article/details/132632499">CMB 报道链接</a>。</li>
+  <li>PaperWeekly：<a href="https://www.python88.com/topic/163925">SocraticChat / PlatoLM 报道链接</a>。</li>
+  <li>PaperWeekly / AI 求职：<a href="https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247612887&idx=3&sn=e504e7c804d472b420adf6ad2ea68cb2&chksm=96ebe657a19c6f41e87a403bb1ea835133eaad38328e31b96d0eea4c292dbcb6620da0ea7c49&scene=126&sessionid=0">李海洲教授 NLP 等方向招生原文</a>。</li>
+  <li>PaperWeekly / AI 求职：<a href="https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247664430&idx=3&sn=4e0447f25c8772a1f1831dc1d249a6a1&chksm=974fe78d9ff31d0f51d00f33b4a837b8d623b22243bf15bded95dbc012fc9f7a5fbc22a765dd&scene=126&sessionid=0">大语言模型算法实习原文</a>。</li>
+  <li>PaperWeekly / AI 求职：<a href="https://www.zhuanzhiai.com/document/adb239d17fc109c6fc77367315ef2efb">王本友 / 李海洲教授 NLP/ML 方向招生报道链接</a>；<a href="https://www.sohu.com/a/586239364_121119001">语音与语言实验室招生报道链接</a>。</li>
   <li>PaperWeekly：<a href="https://developer.aliyun.com/article/415559">2017 年度 NLP 论文 TOP10，IRGAN 入选记录</a>。</li>
 </ul>
 
