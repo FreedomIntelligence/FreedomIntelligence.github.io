@@ -270,6 +270,68 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     line-height: 1.62;
   }
 
+  .home-impact-summary {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 1.15rem;
+  }
+
+  .home-impact-metric {
+    border-top: 3px solid var(--global-theme-color);
+    padding: 13px 14px 14px;
+    background: var(--global-bg-color);
+  }
+
+  .home-impact-metric strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 1.32rem;
+    line-height: 1.15;
+  }
+
+  .home-impact-metric span {
+    color: var(--global-text-color-light);
+    font-size: 0.91rem;
+    line-height: 1.45;
+  }
+
+  .home-impact-platforms,
+  .home-impact-deployments {
+    display: grid;
+    gap: 14px;
+    margin-top: 1.2rem;
+  }
+
+  .home-impact-platforms {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .home-impact-deployments {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .home-impact-platform,
+  .home-impact-deployment {
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    padding: 16px;
+    background: var(--global-bg-color);
+  }
+
+  .home-impact-platform h3,
+  .home-impact-deployment h3 {
+    margin: 0 0 0.55rem;
+    font-size: 1rem;
+  }
+
+  .home-impact-platform p,
+  .home-impact-deployment p {
+    margin: 0;
+    color: var(--global-text-color-light);
+    line-height: 1.62;
+  }
+
   .home-showcase {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -328,6 +390,9 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
 
   @media (max-width: 900px) {
     .home-grid,
+    .home-impact-summary,
+    .home-impact-platforms,
+    .home-impact-deployments,
     .home-showcase {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -353,6 +418,9 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     }
 
     .home-grid,
+    .home-impact-summary,
+    .home-impact-platforms,
+    .home-impact-deployments,
     .home-showcase {
       grid-template-columns: 1fr;
     }
@@ -437,27 +505,82 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
 
   <section class="home-section">
     <h2>Impact</h2>
+    <p class="home-section__intro">Freedom AI grows inside a larger Shenzhen ecosystem for cross-modal cognitive computing. The Shenzhen Key Laboratory of Cross-Modal Cognitive Computing, built at CUHK-Shenzhen and approved by the Shenzhen Science and Technology Innovation Bureau on January 30, 2024, connects frontier research, student training, open-source systems, and deployments in healthcare, education, industry, and public-service settings.</p>
+
+    <div class="home-impact-summary" aria-label="Impact highlights">
+      <div class="home-impact-metric">
+        <strong>300K+</strong>
+        <span>HuatuoGPT service visits in Longgang public hospitals.</span>
+      </div>
+      <div class="home-impact-metric">
+        <strong>520K+</strong>
+        <span>Clinical AI interactions across triage and pre-consultation workflows.</span>
+      </div>
+      <div class="home-impact-metric">
+        <strong>95.4%</strong>
+        <span>Reported triage accuracy in the Longgang deployment.</span>
+      </div>
+      <div class="home-impact-metric">
+        <strong>RMB 10M</strong>
+        <span>Approximate annual industry collaboration scale with partners such as Huawei and Tencent AI Lab.</span>
+      </div>
+    </div>
+
     <div class="home-impact">
       <div class="home-impact__visual">
         <img src="/assets/img/freedomai-2026/impact/huatuogpt-longgang.jpg" alt="HuatuoGPT launch ceremony in Longgang">
       </div>
       <div class="home-impact__list">
         <div class="home-impact-item">
-          <h3>Healthcare deployment</h3>
-          <p>HuatuoGPT-powered intelligent triage and pre-consultation systems have been deployed in 11 public hospitals and 186 community health centers in Longgang, Shenzhen.</p>
+          <h3>Healthcare at city scale</h3>
+          <p>HuatuoGPT has been deployed across 11 Longgang public hospitals and 186 community health centers, supporting the first district-wide multi-hospital LLM deployment and joint operation in China.</p>
         </div>
         <div class="home-impact-item">
           <h3>Open-source ecosystem</h3>
-          <p>FreedomIntelligence projects serve researchers and builders through models, datasets, benchmarks, and practical toolkits.</p>
+          <p>FreedomIntelligence models, datasets, benchmarks, and toolkits have received 10K+ GitHub stars and 1M+ Hugging Face downloads, giving researchers practical starting points for medical AI, multilingual AI, and multimodal reasoning.</p>
         </div>
         <div class="home-impact-item">
           <h3>Global access</h3>
-          <p>Apollo expands multilingual medical LLMs to 50 languages, moving medical AI toward broader global access.</p>
+          <p>Apollo and AceGPT push medical and multilingual AI toward broader global access, including under-served languages and culturally aligned language systems.</p>
         </div>
         <div class="home-impact-item">
           <h3>Award-winning research</h3>
-          <p>Our work has received recognitions at SIGIR, NAACL, NLPCC, ICLR Financial AI, and NeurIPS ResponsibleFM.</p>
+          <p>Our work has received recognitions at SIGIR, NAACL, NLPCC, ICLR Financial AI, and NeurIPS ResponsibleFM, and has been covered by Nature, Financial Times, Global Times, and major Shenzhen media outlets.</p>
         </div>
+      </div>
+    </div>
+
+    <div class="home-impact-platforms" aria-label="Research and data platforms">
+      <div class="home-impact-platform">
+        <h3>Data sharing platform</h3>
+        <p>A multimodal data platform for speech, language, medicine, EEG, images, and video, supporting compliant cross-border data sharing and multilingual intelligent systems for the Asia-Pacific region.</p>
+      </div>
+      <div class="home-impact-platform">
+        <h3>Multimodal perception</h3>
+        <p>Models such as SoundWave, MELA, LongLLaVA, MotionLLM, and TCM-Omni connect audio, EEG, vision, motion, and traditional Chinese medicine signals with language-level reasoning.</p>
+      </div>
+      <div class="home-impact-platform">
+        <h3>Basic cognition</h3>
+        <p>HuatuoGPT-o1, Video-R1, AI4Math, MMAPIS, TS-align, and FLR explore structured cognition, complex reasoning, efficient alignment, and reliable model behavior.</p>
+      </div>
+      <div class="home-impact-platform">
+        <h3>Cross-modal generation</h3>
+        <p>MedGen, Apollo, AceGPT, BlenderLLM, Socratic user simulation, and USP extend AI systems toward controllable generation, multilingual healthcare, CAD design, and personalized digital twins.</p>
+      </div>
+    </div>
+
+    <div class="home-impact-deployments" aria-label="Deployment examples">
+      <div class="home-impact-deployment">
+        <h3>Medical AI deployment</h3>
+        <p>HuatuoGPT was publicly tested by the Shenzhen Municipal Health Commission in June 2023 and later deployed with the National Institute of Health Data Science in Shenzhen to serve Longgang's 5 million residents.</p>
+      </div>
+      <div class="home-impact-deployment">
+        <h3>Education and campus AI</h3>
+        <p>Phoenix supports campus consultation, AI customer service, and student entrepreneurship at CUHK-Shenzhen, while virtual campus agents explore embodied guidance, counseling, and onboarding.</p>
+      </div>
+      <div class="home-impact-deployment">
+        <h3>Student entrepreneurship</h3>
+        <p>Incubated projects include Shuta AI, an intelligent learning platform used by a large share of CUHK-Shenzhen undergraduates, and Freedom Artery, an open medical-agent company backed by seed funding.</p>
       </div>
     </div>
 
