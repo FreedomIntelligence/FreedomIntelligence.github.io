@@ -8,6 +8,7 @@ nav: true
 nav_order: 1
 display_categories: [Member, Alumni]
 horizontal: false
+hide_title: true
 ---
 
 <!-- pages/people.md -->
