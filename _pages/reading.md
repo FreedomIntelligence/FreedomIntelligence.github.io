@@ -15,7 +15,7 @@ nav: true
 nav_order: 2
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/project-hub.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/project-hub.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
 <div class="project-hub project-focused">
   <div class="project-filter project-filter-toolbar" aria-label="Project filters">
