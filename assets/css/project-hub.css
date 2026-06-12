@@ -296,6 +296,10 @@ a.project-program-node:hover {
   --program-accent: #047857;
 }
 
+.project-theme-economics {
+  --program-accent: #0e7490;
+}
+
 .project-program-heading {
   margin-bottom: 1.05rem;
   max-width: 980px;

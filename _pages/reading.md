@@ -13,6 +13,7 @@ project_tags:
   - LLM efficiency and AI Infra
   - AI for Reasoning and Agentic RL
   - LLM Interpretability
+  - Economic World Models
 nav: true
 nav_order: 2
 ---
@@ -366,6 +367,46 @@ nav_order: 2
         <a class="project-stack-row" href="https://github.com/FreedomIntelligence/OVM" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/OVM</strong><span>Outcome-supervised verifier 相关代码。</span></span></a>
         <a class="project-stack-row" href="https://github.com/ChengpengLi1003/CoRT" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>ChengpengLi1003/CoRT</strong><span>代码集成推理项目。</span></span></a>
         <a class="project-stack-row" href="https://github.com/tulerfeng/Video-R1" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>tulerfeng/Video-R1</strong><span>视频推理强化学习代码。</span></span></a>
+      </div>
+    </details>
+  </section>
+
+  <section class="project-program-section project-theme-economics" id="economic-world-models" data-project-tags="Economic World Models;AI for Reasoning and Agentic RL">
+    <div class="project-program-heading">
+      <div class="project-eyebrow">Economic world models and agentic economies</div>
+      <h2>经济世界模型</h2>
+      <p>
+        经济世界模型把市场、机构、政策和多智能体行为建成可计算、可演化、可对齐的世界。它连接 Economic World Models 的系统蓝图、TwinMarket 的金融市场沙盒、MicroVerse 的科学微世界模拟，以及 Awesome Econ World Models 的文献与资源地图。
+      </p>
+      <div class="project-actions">
+        <a class="project-action primary" href="/projects/economic-world-models/">Open Economic World Models</a>
+        <a class="project-action" href="https://github.com/FreedomIntelligence/Awesome-Econ-World-Models/" target="_blank" rel="noopener">Awesome EconWM</a>
+      </div>
+    </div>
+    <div class="project-program-layout">
+      <div class="project-program-media">
+        <img src="/assets/img/economic-world-models/ewm-hero.png" alt="Economic World Models compare physical-world transitions with agent-generated economic-world transitions">
+      </div>
+      <div>
+        <h3>相关论文整理</h3>
+        <ol class="project-paper-list">
+          <li><a href="/assets/pdf/economic-world-models.pdf" target="_blank" rel="noopener">From Economic Agents to Agentic Economies</a>：提出经济世界模型的系统蓝图，用可计算经济体支持智能体训练、政策沙盒、规划和安全分析。</li>
+          <li><a href="https://arxiv.org/abs/2502.01506" target="_blank" rel="noopener">TwinMarket: A Scalable Behavioral and Social Simulation for Financial Markets</a>：用 LLM 投资者模拟金融市场中的信念、意图、信息流和交易行为。</li>
+          <li><a href="https://github.com/FreedomIntelligence/MicroVerse" target="_blank" rel="noopener">MicroVerse: A Preliminary Exploration Toward a Micro-World Simulation</a>：把 world model 思路扩展到生物与科学微世界，强调隐藏机制和状态演化。</li>
+          <li><a href="https://github.com/FreedomIntelligence/Awesome-Econ-World-Models/" target="_blank" rel="noopener">Awesome Econ World Models</a>：持续整理经济智能体、agentic economies、制度演化、sim-to-real alignment 等方向的论文和资源。</li>
+        </ol>
+      </div>
+    </div>
+    <details class="project-resources-panel">
+      <summary><span>GitHub / Project 资源</span><strong>Paper, repositories, project pages</strong></summary>
+      <div class="project-stack project-resource-stack">
+      <a class="project-stack-row" href="/projects/economic-world-models/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>Economic World Models</strong><span>总览经济世界模型架构、能力阶梯、代表团队和系统路线图。</span></span></a>
+      <a class="project-stack-row" href="/assets/pdf/economic-world-models.pdf" target="_blank" rel="noopener"><span class="project-stack-type">Paper</span><span class="project-stack-main"><strong>From Economic Agents to Agentic Economies</strong><span>经济世界模型论文 PDF。</span></span></a>
+      <a class="project-stack-row" href="https://github.com/FreedomIntelligence/Awesome-Econ-World-Models/" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/Awesome-Econ-World-Models</strong><span>经济世界模型论文、系统和资源集合。</span></span></a>
+      <a class="project-stack-row" href="/projects/twinmarket-financial-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>TwinMarket Financial AI Simulation</strong><span>经济世界模型中的金融市场原型沙盒。</span></span></a>
+      <a class="project-stack-row" href="https://github.com/FreedomIntelligence/TwinMarket" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/TwinMarket</strong><span>金融行为与社会模拟代码资源。</span></span></a>
+      <a class="project-stack-row" href="/projects/microverse-world-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>MicroVerse Micro-World Simulation</strong><span>把世界模型扩展到科学微世界与生物过程。</span></span></a>
+      <a class="project-stack-row" href="https://github.com/FreedomIntelligence/MicroVerse" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/MicroVerse</strong><span>MicroVerse 项目资源。</span></span></a>
       </div>
     </details>
   </section>
