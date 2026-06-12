@@ -56,7 +56,9 @@ nav_order: 99
         <h3>For outstanding undergraduate and master students interested in the 2027 Shenzhen Loop Area Institute joint-training PhD pathway.</h3>
         <ul class="join-list">
           <li>Four-week research project with FreedomAI and Shenzhen Loop Area Institute mentorship.</li>
+          <li>Designed for outstanding undergraduate and master students who want early, resource-rich exposure to frontier AI research.</li>
           <li>Excellent performance can help lock in early admission opportunities for the Shenzhen Loop Area Institute program.</li>
+          <li>Project leads at Shenzhen Loop Area Institute provide substantial research resources, engineering support, and long-term mentorship.</li>
           <li>Free accommodation during the program, campus meal vouchers, and transportation subsidy for students from outside Shenzhen.</li>
           <li>Interview-based recommendation support is available for suitable applicants.</li>
         </ul>

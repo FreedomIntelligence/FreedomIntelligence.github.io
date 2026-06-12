@@ -195,29 +195,6 @@ nav_order: 4
     margin-top: 1.2rem;
   }
 
-  .life-program {
-    display: grid;
-    grid-template-columns: minmax(240px, 380px) 1fr;
-    gap: 22px;
-    align-items: center;
-    margin-top: 1.2rem;
-  }
-
-  .life-program img {
-    width: 100%;
-    max-height: 520px;
-    object-fit: contain;
-    border: 1px solid var(--global-divider-color);
-    border-radius: 8px;
-    background: #fff;
-  }
-
-  .life-program h3 {
-    margin-top: 0;
-    font-size: 1.25rem;
-  }
-
-  .life-program p,
   .life-list li {
     line-height: 1.7;
   }
@@ -242,8 +219,7 @@ nav_order: 4
       grid-column: span 6;
     }
 
-    .life-milestone,
-    .life-program {
+    .life-milestone {
       grid-template-columns: 1fr;
     }
   }
@@ -368,17 +344,6 @@ nav_order: 4
     </div>
   </section>
 
-  <section class="life-section">
-    <h2>Research Programs</h2>
-    <div class="life-program">
-      <img src="/assets/img/freedomai-2026/deep-eye-program.png" alt="Shenzhen Loop Area Institute 2026 Deep Eye summer research program">
-      <div>
-        <h3>Deep Eye Research Program</h3>
-        <p>Freedom AI welcomes outstanding undergraduate and master students to join intensive research programs with the Shenzhen Loop Area Institute. The 2026 summer program focuses on project-based research training, joint mentorship, and early exposure to frontier AI research.</p>
-        <p>优秀同学可以提前锁定深圳河套学院联培博士计划机会；项目期间提供住宿、校内餐券和深圳以外学生交通补贴。</p>
-      </div>
-    </div>
-  </section>
 
   <section class="life-section">
     <h2>Friendly Working Atmosphere</h2>
@@ -387,7 +352,6 @@ nav_order: 4
       <li>河套联培学生享受足量 GPU、毗邻香港的住宿条件和丰厚补助。</li>
       <li>与华为、千问、腾讯、MiniMax、Kimi、蚂蚁、九坤等产业伙伴保持紧密合作。</li>
       <li>鼓励独立的高年级博士生实习、创业、把 AI 部署到真实世界。</li>
-      <li>深圳河套学院聚焦项目负责人，资源丰厚，欢迎优秀本科生和硕士生参与 Deep Eye Research Program。</li>
       <li>我们相信研究的底色是热爱：热爱问题，热爱创造，也热爱生活。</li>
     </ul>
   </section>
