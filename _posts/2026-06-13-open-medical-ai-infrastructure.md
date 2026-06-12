@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: "Open Medical AI Infrastructure: 让通用医疗智能成为公共责任"
-date: 2026-06-13
+date: 2026-06-13 00:05:00 +0800
 description: "FreedomAI 倡议把 Generalist Medical AI 从单模型竞赛推进为开放、专家共治、可审计、面向真实医疗场景的社会基础设施。"
 tags: medical-llm medical-benchmark biomedical-ai open-source evaluation
 
