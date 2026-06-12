@@ -4,6 +4,13 @@ permalink: /projects/
 title: Projects
 title_zh: 项目
 description:
+project_tags:
+  - LLM Interpretability
+  - Medical LLMs
+  - AI for Healthcare
+  - Multi-modal LLMs
+  - Multilingual LLMs
+  - AI for Reasoning and Agentic RL
 nav: true
 nav_order: 2
 ---
@@ -11,76 +18,20 @@ nav_order: 2
 <link rel="stylesheet" href="{{ '/assets/css/project-hub.css' | relative_url }}">
 
 <div class="project-hub project-focused">
-  <section class="project-overview" aria-label="Projects overview">
-    <div class="project-overview-copy">
-      <div class="project-eyebrow">Research Programs</div>
-      <h2>从论文、模型到数据与评测的五条研究主线</h2>
-      <p class="project-hub-intro">
-        FreedomAI 的项目不是零散 release，而是围绕“可解释/可验证推理、医学大模型、医学评测、多语言模型、运筹优化”五条主线逐步展开。这个页面先给出整体地图，再把每条主线里的论文、GitHub 代码、Hugging Face 模型和数据集中列出来，方便直接复现或继续扩展。
-      </p>
-    </div>
-    <div class="project-overview-metrics" aria-label="Project page summary">
-      <div>
-        <strong>5</strong>
-        <span>研究主线</span>
-      </div>
-      <div>
-        <strong>25</strong>
-        <span>相关论文</span>
-      </div>
-      <div>
-        <strong>48</strong>
-        <span>资源入口</span>
-      </div>
-      <div>
-        <strong>GitHub + HF</strong>
-        <span>代码、模型、数据</span>
-      </div>
-    </div>
-  </section>
+  <p class="project-hub-intro">
+    FreedomAI 的项目围绕可解释推理、医学大模型、医学评测、多语言模型和运筹优化展开。可直接按研究 tag 筛选，每个方向都集中整理了相关论文、GitHub 代码、Hugging Face 模型与数据集。
+  </p>
 
-  <div class="project-map-heading">
-    <span>Project map</span>
-    <strong>先看全局，再进入每条线</strong>
+  <div class="project-filter" aria-label="Project filters">
+    <button type="button" class="is-active" data-project-filter="all">All</button>
+    {% for tag in page.project_tags %}
+      <button type="button" data-project-filter="{{ tag | escape }}">{{ tag }}</button>
+    {% endfor %}
   </div>
 
-  <div class="project-program-map project-focus-map" aria-label="FreedomAI focused project map">
-    <a class="project-program-node" href="#interpretable-llms">
-      <span>01 explain</span>
-      <strong>可解释大模型</strong>
-      <p>把诊断、推理和计算过程拆成可检查链条，减少黑箱式回答。</p>
-    </a>
-    <a class="project-program-node" href="#huatuogpt">
-      <span>02 medical models</span>
-      <strong>华佗GPT系列大模型</strong>
-      <p>从医学 QA 数据、医生问答模型到复杂推理和医学多模态。</p>
-    </a>
-    <a class="project-program-node" href="#medical-evaluation">
-      <span>03 evaluation</span>
-      <strong>医疗大模型评测系列</strong>
-      <p>覆盖中文医学知识、多模态医疗、实时临床和医生工作流。</p>
-    </a>
-    <a class="project-program-node" href="#multilingual-llms">
-      <span>04 multilingual</span>
-      <strong>多语言大语言模型</strong>
-      <p>Phoenix、AceGPT、Apollo 把开放大模型带到更多语言和地区。</p>
-    </a>
-    <a class="project-program-node" href="#optimization-llms">
-      <span>05 optimization</span>
-      <strong>运筹优化大模型</strong>
-      <p>让大模型从自然语言生成可执行的优化模型和求解代码。</p>
-    </a>
-  </div>
+  <p class="project-empty" hidden>No projects found for this tag.</p>
 
-  <div class="project-anchor-nav" aria-label="Project section navigation">
-    <a href="#interpretable-llms">可解释大模型</a>
-    <a href="#huatuogpt">华佗GPT</a>
-    <a href="#medical-evaluation">医疗评测</a>
-    <a href="#multilingual-llms">多语言</a>
-    <a href="#optimization-llms">运筹优化</a>
-  </div>
-
-  <section class="project-program-section project-theme-explain" id="interpretable-llms">
+  <section class="project-program-section project-theme-explain" id="interpretable-llms" data-project-tags="LLM Interpretability;Medical LLMs;AI for Reasoning and Agentic RL">
     <div class="project-program-heading">
       <div class="project-eyebrow">Explainable and verifiable LLMs</div>
       <h2>可解释大模型相关 Project</h2>
@@ -117,7 +68,7 @@ nav_order: 2
     </div>
   </section>
 
-  <section class="project-program-section project-theme-medical" id="huatuogpt">
+  <section class="project-program-section project-theme-medical" id="huatuogpt" data-project-tags="Medical LLMs;AI for Healthcare;Multi-modal LLMs">
     <div class="project-program-heading">
       <div class="project-eyebrow">HuatuoGPT medical model family</div>
       <h2>华佗GPT系列大模型</h2>
@@ -161,7 +112,7 @@ nav_order: 2
     </div>
   </section>
 
-  <section class="project-program-section project-theme-eval" id="medical-evaluation">
+  <section class="project-program-section project-theme-eval" id="medical-evaluation" data-project-tags="Medical LLMs;AI for Healthcare;Multi-modal LLMs">
     <div class="project-program-heading">
       <div class="project-eyebrow">Medical LLM evaluation</div>
       <h2>医疗大模型评测系列</h2>
@@ -203,7 +154,7 @@ nav_order: 2
     </div>
   </section>
 
-  <section class="project-program-section project-theme-multilingual" id="multilingual-llms">
+  <section class="project-program-section project-theme-multilingual" id="multilingual-llms" data-project-tags="Multilingual LLMs;Medical LLMs">
     <div class="project-program-heading">
       <div class="project-eyebrow">Multilingual and localized LLMs</div>
       <h2>多语言大语言模型</h2>
@@ -245,7 +196,7 @@ nav_order: 2
     </div>
   </section>
 
-  <section class="project-program-section project-theme-optimization" id="optimization-llms">
+  <section class="project-program-section project-theme-optimization" id="optimization-llms" data-project-tags="AI for Reasoning and Agentic RL">
     <div class="project-program-heading">
       <div class="project-eyebrow">Optimization modeling LLMs</div>
       <h2>运筹优化大模型系列</h2>
@@ -282,3 +233,58 @@ nav_order: 2
     </div>
   </section>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const buttons = Array.from(document.querySelectorAll('[data-project-filter]'));
+    const sections = Array.from(document.querySelectorAll('.project-program-section'));
+    const empty = document.querySelector('.project-empty');
+
+    function tagsFor(section) {
+      return (section.dataset.projectTags || '')
+        .split(';')
+        .map(function (tag) { return tag.trim(); })
+        .filter(Boolean);
+    }
+
+    function setFilter(activeTag, updateUrl) {
+      let visibleCount = 0;
+
+      sections.forEach(function (section) {
+        const shouldShow = activeTag === 'all' || tagsFor(section).includes(activeTag);
+        section.classList.toggle('is-hidden', !shouldShow);
+        if (shouldShow) visibleCount += 1;
+      });
+
+      buttons.forEach(function (button) {
+        const isActive = button.dataset.projectFilter === activeTag;
+        button.classList.toggle('is-active', isActive);
+        button.setAttribute('aria-pressed', String(isActive));
+      });
+
+      if (empty) empty.hidden = visibleCount > 0;
+
+      if (updateUrl) {
+        const url = new URL(window.location.href);
+        if (activeTag === 'all') {
+          url.searchParams.delete('tag');
+        } else {
+          url.searchParams.set('tag', activeTag);
+        }
+        window.history.replaceState({}, '', url);
+      }
+    }
+
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        setFilter(button.dataset.projectFilter, true);
+      });
+    });
+
+    const initialTag = new URLSearchParams(window.location.search).get('tag');
+    const hasInitialTag = buttons.some(function (button) {
+      return button.dataset.projectFilter === initialTag;
+    });
+    setFilter(hasInitialTag ? initialTag : 'all', false);
+  });
+</script>
