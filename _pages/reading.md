@@ -339,28 +339,36 @@ nav_order: 2
       <div class="project-eyebrow">Explainable and verifiable LLMs</div>
       <h2>LLM Interpretability</h2>
       <p>
-        可解释性放在最后作为横向能力：它关心模型“为什么这样回答”。在医学诊断里，Chain-of-Diagnosis 把诊断过程拆成医生式链条和置信度分布；在通用推理里，verifier、代码执行、路径剪枝和 sparse autoencoder 分析让推理过程更可检查、更可复现。
+        可解释性是横向能力：它关心模型为什么这样回答、哪些内部特征真正有用、以及如何把机制理解转成可控编辑。这个方向现在以 sparse autoencoder、model unlearning 和 circuit analysis 为主线，同时连接医学诊断链、verifier 和代码集成推理。
       </p>
+      <div class="project-actions">
+        <a class="project-action primary" href="/projects/llm-interpretability/">Open LLM Interpretability</a>
+        <a class="project-action" href="https://arxiv.org/abs/2510.03659" target="_blank" rel="noopener">Open ICLR 2026 paper</a>
+      </div>
     </div>
     <div class="project-program-layout">
       <div class="project-program-media">
-        <img src="/assets/img/media-roundup-2026/huatuogpt-auto-eval.jpeg" alt="Explainable and verifiable reasoning workflow">
+        <img src="/assets/img/freedomai-2026/impact/llm-interpretability.svg" alt="LLM interpretability and sparse autoencoder analysis">
       </div>
       <div>
         <h3>相关论文整理</h3>
         <ol class="project-paper-list">
+          <li><a href="https://arxiv.org/abs/2510.03659" target="_blank" rel="noopener">Does Higher Interpretability Imply Better Utility? A Pairwise Analysis on Sparse Autoencoders</a>：ICLR 2026，系统比较 SAE 的可解释性指标和实际 steering utility；获 NeurIPS 2025 ResponsibleFM Workshop Outstanding Paper Award。</li>
+          <li><a href="https://arxiv.org/abs/2505.24428" target="_blank" rel="noopener">Model Unlearning via Sparse Autoencoder Subspace Guided Projections</a>：EMNLP 2025，用 SAE subspace guided projections 做更可控的模型遗忘。</li>
+          <li><a href="https://arxiv.org/abs/2502.11812" target="_blank" rel="noopener">Towards Understanding Fine-Tuning Mechanisms of LLMs via Circuit Analysis</a>：ICML 2025，用 circuit analysis 理解微调如何改变模型内部计算。</li>
           <li><a href="https://arxiv.org/abs/2407.13301" target="_blank" rel="noopener">CoD, Towards an Interpretable Medical Agent using Chain of Diagnosis</a>：用五步诊断链和置信度分布提升医学诊断可解释性。</li>
-          <li><a href="https://arxiv.org/abs/2303.14725" target="_blank" rel="noopener">Natural Language Reasoning, a Survey</a>：梳理自然语言推理任务、方法和评价。</li>
           <li><a href="https://arxiv.org/abs/2311.09724" target="_blank" rel="noopener">Outcome-supervised Verifiers for Planning in Mathematical Reasoning</a>：用结果监督 verifier 辅助数学规划推理。</li>
           <li><a href="https://arxiv.org/abs/2506.09820" target="_blank" rel="noopener">CoRT: Code-integrated Reasoning within Thinking</a>：把代码执行放入思维过程，让中间计算更透明。</li>
-          <li><a href="https://arxiv.org/abs/2503.21776" target="_blank" rel="noopener">Video-R1: Reinforcing Video Reasoning in MLLMs</a>：把可验证推理训练扩展到视频多模态模型。</li>
-          <li><a href="https://arxiv.org/abs/2510.03659" target="_blank" rel="noopener">Does Higher Interpretability Imply Better Utility? A Pairwise Analysis on Sparse Autoencoders</a>：分析更高可解释性是否一定带来更好效用。</li>
         </ol>
       </div>
     </div>
     <details class="project-resources-panel">
-      <summary><span>GitHub / Hugging Face 资源</span><strong>Code, models, datasets</strong></summary>
+      <summary><span>论文 / GitHub / Hugging Face 资源</span><strong>Papers, code, models, datasets</strong></summary>
       <div class="project-stack project-resource-stack">
+        <a class="project-stack-row" href="/projects/llm-interpretability/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>LLM Interpretability and Sparse Autoencoders</strong><span>SAE utility、SAE-guided unlearning 和 circuit analysis 的详情页。</span></span></a>
+        <a class="project-stack-row" href="https://arxiv.org/abs/2510.03659" target="_blank" rel="noopener"><span class="project-stack-type">ICLR 2026</span><span class="project-stack-main"><strong>Does Higher Interpretability Imply Better Utility?</strong><span>Pairwise analysis on sparse autoencoders。</span></span></a>
+        <a class="project-stack-row" href="https://arxiv.org/abs/2505.24428" target="_blank" rel="noopener"><span class="project-stack-type">EMNLP 2025</span><span class="project-stack-main"><strong>Model Unlearning via SAE Subspace Guided Projections</strong><span>可解释子空间引导的模型遗忘。</span></span></a>
+        <a class="project-stack-row" href="https://arxiv.org/abs/2502.11812" target="_blank" rel="noopener"><span class="project-stack-type">ICML 2025</span><span class="project-stack-main"><strong>Fine-Tuning Mechanisms via Circuit Analysis</strong><span>用 circuit analysis 理解 LLM 微调机制。</span></span></a>
         <a class="project-stack-row" href="https://github.com/FreedomIntelligence/Chain-of-Diagnosis" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/Chain-of-Diagnosis</strong><span>CoD 代码、诊断链数据、疾病库、DxBench 和 DiagnosisGPT 入口。</span></span></a>
         <a class="project-stack-row" href="https://huggingface.co/FreedomIntelligence/DiagnosisGPT-6B" target="_blank" rel="noopener"><span class="project-stack-type">HF Model</span><span class="project-stack-main"><strong>FreedomIntelligence/DiagnosisGPT-6B</strong><span>基于 CoD 的可解释诊断模型。</span></span></a>
         <a class="project-stack-row" href="https://huggingface.co/datasets/FreedomIntelligence/DxBench" target="_blank" rel="noopener"><span class="project-stack-type">HF Dataset</span><span class="project-stack-main"><strong>FreedomIntelligence/DxBench</strong><span>真实医患对话构建的疾病诊断 benchmark。</span></span></a>
