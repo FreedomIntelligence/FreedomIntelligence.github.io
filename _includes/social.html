@@ -18,18 +18,10 @@
             <a href="https://www.researchgate.net/profile/{{site.research_gate_profile}}/" title="ResearchGate"><i class="ai ai-researchgate"></i></a>
             {% endif %}
             {%- if site.lab_email -%}
-            <a href="mailto:{{ site.lab_email }}" title="Email" target="_blank" style="text-decoration: none; border: none;">
-              <img src="https://images.vexels.com/media/users/3/140928/isolated/preview/8d338f5acd60bfbc9b5fb1b208c8814f-outlined-email-round-icon.png?w=360" 
-                   alt="Email" 
-                   style="width:64px; height:64px; vertical-align:middle;">
-            </a>
+            <a href="mailto:{{ site.lab_email }}" title="Email" target="_blank"><i class="fas fa-envelope"></i></a>
             {% endif %}
             {%- if site.github_username -%}
-            <a href="https://github.com/{{ site.github_username }}" title="GitHub" target="_blank" style="text-decoration: none; border: none;">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg" 
-                   alt="GitHub" 
-                   style="width:64px; height:64px; vertical-align:middle;">
-            </a>
+            <a href="https://github.com/{{ site.github_username }}" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
             {% endif %}
             {%- if site.hf_username -%}
             <a href="https://huggingface.co/{{ site.hf_username }}" title="HuggingFace" style="text-decoration: none; border: none;">
