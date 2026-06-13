@@ -2,7 +2,7 @@
 layout: page
 title: Life
 permalink: /life/
-description: Work hard and play harder at Freedom AI.
+description: "<span class=\"life-tagline-highlight\">Work hard and play harder</span> at Freedom AI."
 nav: true
 nav_order: 4
 ---
@@ -10,6 +10,20 @@ nav_order: 4
 <style>
   .life-page {
     margin-top: 0.4rem;
+  }
+
+  .post-header .post-title {
+    display: none;
+  }
+
+  .post-header .post-description {
+    font-size: 1.1rem;
+  }
+
+  .life-tagline-highlight {
+    color: #d63b2f;
+    font-weight: 700;
+    background: linear-gradient(180deg, transparent 58%, rgba(214, 59, 47, 0.18) 0);
   }
 
   .life-hero {
@@ -211,7 +225,7 @@ nav_order: 4
   <section class="life-hero">
     <img src="/assets/img/freedomai-2026/life/basketball-night-court.jpg" alt="Freedom AI night basketball activity">
     <div class="life-hero__content">
-      <div class="life-eyebrow">Work hard. Play harder.</div>
+      <div class="life-eyebrow"><span class="life-tagline-highlight">Work hard and play harder</span> at Freedom AI.</div>
       <h2>Freedom begins with people who still love life.</h2>
       <p>Freedom AI 秉承“每个人争取自己的自由，就是争取整个社会的自由”。我们鼓励成员为自己信仰的 AI 真理而战，为热爱和自由而做研究。</p>
       <p><strong>Free humanity from the boundaries of life through AI.</strong></p>
