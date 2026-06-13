@@ -1,174 +1,161 @@
 {
-  "generated_at": "2026-06-13T14:28:43Z",
+  "generated_at": "2026-06-13T19:55:35Z",
   "profiles": {
     "2RRV0PQAAAAJ": {
-      "citations": 13190,
-      "citations_recent": 13175,
+      "citations": 13139,
+      "citations_recent": 13124,
       "h_index": 11,
       "h_index_recent": 10,
       "i10_index": 11,
       "i10_index_recent": 10,
-      "last_error": "Google Scholar: HTTP Error 403: Forbidden",
       "name": "Zhengyang Tang",
       "scholar_url": "https://scholar.google.com/citations?user=2RRV0PQAAAAJ&hl=en",
       "source": "google_scholar",
-      "updated_at": "2026-06-12T15:42:28Z"
+      "updated_at": "2026-06-13T19:55:35Z"
     },
     "3lVMRAEAAAAJ": {
-      "citations": 696,
-      "citations_recent": 696,
+      "citations": 702,
+      "citations_recent": 702,
       "h_index": 7,
       "h_index_recent": 7,
       "i10_index": 6,
       "i10_index_recent": 6,
-      "last_error": "Google Scholar: HTTP Error 403: Forbidden",
       "name": "Zhenyang Cai",
       "scholar_url": "https://scholar.google.com/citations?user=3lVMRAEAAAAJ&hl=en",
       "source": "google_scholar",
-      "updated_at": "2026-06-12T15:42:28Z"
+      "updated_at": "2026-06-13T19:55:35Z"
     },
     "E99B1yEAAAAJ": {
-      "citations": 564,
-      "citations_recent": 564,
+      "citations": 571,
+      "citations_recent": 571,
       "h_index": 13,
       "h_index_recent": 13,
       "i10_index": 13,
       "i10_index_recent": 13,
-      "last_error": "Google Scholar: HTTP Error 403: Forbidden",
       "name": "Nuo Chen",
       "scholar_url": "https://scholar.google.com/citations?user=E99B1yEAAAAJ&hl=en",
       "source": "google_scholar",
-      "updated_at": "2026-06-12T15:42:28Z"
+      "updated_at": "2026-06-13T19:55:35Z"
     },
     "EsCgPkQAAAAJ": {
-      "citations": 1175,
-      "citations_recent": 1175,
+      "citations": 1177,
+      "citations_recent": 1177,
       "h_index": 7,
       "h_index_recent": 7,
       "i10_index": 7,
       "i10_index_recent": 7,
-      "last_error": "Google Scholar: HTTP Error 403: Forbidden",
       "name": "Fei Yu",
       "scholar_url": "https://scholar.google.com/citations?user=EsCgPkQAAAAJ&hl=en",
       "source": "google_scholar",
-      "updated_at": "2026-06-12T15:42:28Z"
+      "updated_at": "2026-06-13T19:55:35Z"
     },
     "F0BAd_IAAAAJ": {
-      "citations": 1617,
-      "citations_recent": 1617,
+      "citations": 1630,
+      "citations_recent": 1630,
       "h_index": 18,
       "h_index_recent": 18,
       "i10_index": 24,
       "i10_index_recent": 24,
-      "last_error": "Google Scholar: HTTP Error 403: Forbidden",
       "name": "Ke Ji",
       "scholar_url": "https://scholar.google.com/citations?user=F0BAd_IAAAAJ&hl=en",
       "source": "google_scholar",
-      "updated_at": "2026-06-12T15:42:28Z"
+      "updated_at": "2026-06-13T19:55:35Z"
     },
     "I0raPTYAAAAJ": {
-      "citations": 2615,
-      "citations_recent": 2615,
+      "citations": 2625,
+      "citations_recent": 2625,
       "h_index": 18,
       "h_index_recent": 18,
       "i10_index": 22,
       "i10_index_recent": 22,
-      "last_error": "Google Scholar: HTTP Error 403: Forbidden",
       "name": "Junying Chen",
       "scholar_url": "https://scholar.google.com/citations?user=I0raPTYAAAAJ&hl=en",
       "source": "google_scholar",
-      "updated_at": "2026-06-12T15:42:28Z"
+      "updated_at": "2026-06-13T19:55:35Z"
     },
     "Jk4vJU8AAAAJ": {
-      "citations": 10993,
-      "citations_recent": 10345,
+      "citations": 11036,
+      "citations_recent": 10388,
       "h_index": 56,
       "h_index_recent": 52,
       "i10_index": 112,
       "i10_index_recent": 110,
-      "last_error": "Google Scholar: HTTP Error 403: Forbidden",
       "name": "Benyou Wang",
       "scholar_url": "https://scholar.google.com/citations?user=Jk4vJU8AAAAJ&hl=en",
       "source": "google_scholar",
-      "updated_at": "2026-06-12T15:42:28Z"
+      "updated_at": "2026-06-13T19:55:35Z"
     },
     "SSaBaioAAAAJ": {
-      "citations": 727,
-      "citations_recent": 726,
+      "citations": 735,
+      "citations_recent": 734,
       "h_index": 13,
       "h_index_recent": 13,
       "i10_index": 16,
       "i10_index_recent": 16,
-      "last_error": "Google Scholar: HTTP Error 403: Forbidden",
       "name": "Rongsheng Wang",
       "scholar_url": "https://scholar.google.com/citations?user=SSaBaioAAAAJ&hl=en",
       "source": "google_scholar",
-      "updated_at": "2026-06-12T15:42:28Z"
+      "updated_at": "2026-06-13T19:55:35Z"
     },
     "T0yyq-EAAAAJ": {
-      "citations": 1942,
-      "citations_recent": 1942,
+      "citations": 1952,
+      "citations_recent": 1952,
       "h_index": 13,
       "h_index_recent": 13,
       "i10_index": 15,
       "i10_index_recent": 15,
-      "last_error": "Google Scholar: HTTP Error 403: Forbidden",
       "name": "Shunian Chen",
       "scholar_url": "https://scholar.google.com/citations?user=T0yyq-EAAAAJ&hl=en",
       "source": "google_scholar",
-      "updated_at": "2026-06-12T15:42:28Z"
+      "updated_at": "2026-06-13T19:55:35Z"
     },
     "WJeSzQMAAAAJ": {
-      "citations": 1580,
-      "citations_recent": 1580,
+      "citations": 1588,
+      "citations_recent": 1588,
       "h_index": 12,
       "h_index_recent": 12,
       "i10_index": 13,
       "i10_index_recent": 13,
-      "last_error": "Google Scholar: HTTP Error 403: Forbidden",
       "name": "Xidong WANG",
       "scholar_url": "https://scholar.google.com/citations?user=WJeSzQMAAAAJ&hl=en",
       "source": "google_scholar",
-      "updated_at": "2026-06-12T15:42:28Z"
+      "updated_at": "2026-06-13T19:55:35Z"
     },
     "YSuTMAIAAAAJ": {
-      "citations": 3562,
-      "citations_recent": 3557,
+      "citations": 3585,
+      "citations_recent": 3580,
       "h_index": 12,
       "h_index_recent": 12,
       "i10_index": 12,
       "i10_index_recent": 12,
-      "last_error": "Google Scholar: HTTP Error 403: Forbidden",
       "name": "Li Bohao",
       "scholar_url": "https://scholar.google.com/citations?user=YSuTMAIAAAAJ&hl=en",
       "source": "google_scholar",
-      "updated_at": "2026-06-12T15:42:28Z"
+      "updated_at": "2026-06-13T19:55:35Z"
     },
     "aJEGhzkAAAAJ": {
-      "citations": 695,
-      "citations_recent": 695,
+      "citations": 712,
+      "citations_recent": 712,
       "h_index": 10,
       "h_index_recent": 10,
       "i10_index": 10,
       "i10_index_recent": 10,
-      "last_error": "Google Scholar: HTTP Error 403: Forbidden",
       "name": "Tongxu Luo",
       "scholar_url": "https://scholar.google.com/citations?user=aJEGhzkAAAAJ&hl=en",
       "source": "google_scholar",
-      "updated_at": "2026-06-12T15:42:28Z"
+      "updated_at": "2026-06-13T19:55:35Z"
     },
     "y55sF8cAAAAJ": {
-      "citations": 5494,
-      "citations_recent": 5465,
+      "citations": 5517,
+      "citations_recent": 5488,
       "h_index": 27,
       "h_index_recent": 27,
       "i10_index": 33,
       "i10_index_recent": 33,
-      "last_error": "Google Scholar: HTTP Error 403: Forbidden",
       "name": "Zhihong Chen",
       "scholar_url": "https://scholar.google.com/citations?user=y55sF8cAAAAJ&hl=en",
       "source": "google_scholar",
-      "updated_at": "2026-06-12T15:42:28Z"
+      "updated_at": "2026-06-13T19:55:35Z"
     }
   },
   "source": "google_scholar"
