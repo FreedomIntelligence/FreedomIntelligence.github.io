@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">LLM interpretability and sparse autoencoder analysis</title>
+  <desc id="desc">A schematic of model circuits, sparse features, and subspace projections.</desc>
+  <rect width="1200" height="680" fill="#f7fafc"/>
+  <rect x="70" y="70" width="1060" height="540" rx="28" fill="#ffffff" stroke="#d8e2ec" stroke-width="3"/>
+  <g fill="none" stroke="#90a4b8" stroke-width="5" stroke-linecap="round">
+    <path d="M250 215 C375 145 475 290 600 220 S830 150 950 240"/>
+    <path d="M250 340 C380 410 475 270 600 345 S835 455 950 360"/>
+    <path d="M250 465 C385 505 470 420 600 455 S820 495 950 440"/>
+  </g>
+  <g fill="#1f6693">
+    <circle cx="250" cy="215" r="24"/>
+    <circle cx="600" cy="220" r="24"/>
+    <circle cx="950" cy="240" r="24"/>
+    <circle cx="250" cy="340" r="24"/>
+    <circle cx="600" cy="345" r="24"/>
+    <circle cx="950" cy="360" r="24"/>
+    <circle cx="250" cy="465" r="24"/>
+    <circle cx="600" cy="455" r="24"/>
+    <circle cx="950" cy="440" r="24"/>
+  </g>
+  <g fill="#ffffff" stroke="#28705f" stroke-width="4">
+    <rect x="382" y="128" width="132" height="72" rx="16"/>
+    <rect x="692" y="128" width="132" height="72" rx="16"/>
+    <rect x="382" y="480" width="132" height="72" rx="16"/>
+    <rect x="692" y="480" width="132" height="72" rx="16"/>
+  </g>
+  <g fill="#28705f" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" text-anchor="middle">
+    <text x="448" y="174">SAE</text>
+    <text x="758" y="174">DTC</text>
+    <text x="448" y="526">SSPU</text>
+    <text x="758" y="526">LoRA</text>
+  </g>
+  <g fill="#111827" font-family="Arial, Helvetica, sans-serif">
+    <text x="120" y="128" font-size="42" font-weight="700">LLM Interpretability</text>
+    <text x="120" y="172" font-size="24" fill="#536273">Sparse features, circuit dynamics, and controllable behavior</text>
+    <text x="110" y="575" font-size="22" fill="#536273">Interpretability -> utility analysis -> unlearning projections -> fine-tuning circuits</text>
+  </g>
+  <g stroke="#8a620f" stroke-width="4" stroke-linecap="round">
+    <path d="M514 164 H692"/>
+    <path d="M514 516 H692"/>
+    <path d="M760 200 L930 330"/>
+    <path d="M448 480 L286 360"/>
+  </g>
+  <g fill="#8a620f">
+    <circle cx="930" cy="330" r="10"/>
+    <circle cx="286" cy="360" r="10"/>
+  </g>
+</svg>
