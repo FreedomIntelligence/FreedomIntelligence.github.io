@@ -163,62 +163,8 @@ nav_order: 4
     line-height: 1.5;
   }
 
-  .life-milestone {
-    display: grid;
-    grid-template-columns: minmax(0, 1.25fr) minmax(260px, 0.75fr);
-    gap: 18px;
-    align-items: stretch;
-    margin-top: 1.2rem;
-  }
-
-  .life-milestone__image img {
-    width: 100%;
-    height: 100%;
-    max-width: none;
-    min-height: 360px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-
-  .life-milestone__copy {
-    border-left: 3px solid var(--global-theme-color);
-    padding-left: 18px;
-    align-self: center;
-  }
-
-  .life-milestone__copy h3 {
-    margin-top: 0;
-    font-size: 1.25rem;
-  }
-
-  .life-milestone__copy p {
-    color: var(--global-text-color-light);
-    line-height: 1.7;
-  }
-
-  .life-awards {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 14px;
-    margin-top: 1.2rem;
-  }
-
-  .life-list li {
-    line-height: 1.7;
-  }
-
-  .life-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px 26px;
-    margin: 1.2rem 0 0;
-    padding-left: 1.1rem;
-  }
-
   @media (max-width: 900px) {
-    .life-values,
-    .life-awards,
-    .life-list {
+    .life-values {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
@@ -228,9 +174,6 @@ nav_order: 4
       grid-column: span 6;
     }
 
-    .life-milestone {
-      grid-template-columns: 1fr;
-    }
   }
 
   @media (max-width: 640px) {
@@ -246,9 +189,7 @@ nav_order: 4
       font-size: 2.1rem;
     }
 
-    .life-values,
-    .life-awards,
-    .life-list {
+    .life-values {
       grid-template-columns: 1fr;
     }
 
@@ -396,44 +337,4 @@ nav_order: 4
     </div>
   </section>
 
-  <section class="life-section">
-    <h2>Milestones Together</h2>
-    <div class="life-milestone">
-      <div class="life-milestone__image">
-        <img src="/assets/img/freedomai-2026/impact/huatuogpt-longgang.jpg" alt="HuatuoGPT launch ceremony in Longgang">
-      </div>
-      <div class="life-milestone__copy">
-        <h3>从实验室走向真实世界</h3>
-        <p>域华佗 GPT 智能导诊和预问诊系统在深圳龙岗上线，把医疗大模型带到真实医院和社区健康场景。</p>
-        <p>我们鼓励成员把 research taste、工程能力和社会问题连接起来，让 AI 真正服务更多人。</p>
-      </div>
-    </div>
-
-    <div class="life-awards">
-      <figure class="life-photo life-photo--contain">
-        <img src="/assets/img/freedomai-2026/impact/iclr-financial-ai-award.jpg" alt="ICLR Advances in Financial AI Workshop best paper award">
-        <figcaption>ICLR Advances in Financial AI Workshop Best Paper Award。</figcaption>
-      </figure>
-      <figure class="life-photo life-photo--contain">
-        <img src="/assets/img/freedomai-2026/life/naacl-2019-best-explainable-nlp-paper.jpg" alt="NAACL 2019 Best Explainable NLP Paper certificate">
-        <figcaption>NAACL 2019 Best Explainable NLP Paper。</figcaption>
-      </figure>
-      <figure class="life-photo life-photo--contain">
-        <img src="/assets/img/freedomai-2026/life/nlpcc-2022-best-paper-award.jpg" alt="NLPCC 2022 best paper award certificate">
-        <figcaption>NLPCC 2022 Best Paper Award。</figcaption>
-      </figure>
-    </div>
-  </section>
-
-
-  <section class="life-section">
-    <h2>Friendly Working Atmosphere</h2>
-    <ul class="life-list">
-      <li>香港中文大学博士学位，学位通行全球。</li>
-      <li>河套联培学生享受足量 GPU、毗邻香港的住宿条件和丰厚补助。</li>
-      <li>与华为、千问、腾讯、MiniMax、Kimi、蚂蚁、九坤等产业伙伴保持紧密合作。</li>
-      <li>鼓励独立的高年级博士生实习、创业、把 AI 部署到真实世界。</li>
-      <li>我们相信研究的底色是热爱：热爱问题，热爱创造，也热爱生活。</li>
-    </ul>
-  </section>
 </div>

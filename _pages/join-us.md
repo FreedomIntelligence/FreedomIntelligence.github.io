@@ -111,6 +111,17 @@ nav_order: 99
   </section>
 
   <section class="join-section">
+    <h2>Friendly Working Atmosphere</h2>
+    <ul class="join-feature-list">
+      <li>香港中文大学博士学位，学位通行全球。</li>
+      <li>河套联培学生享受足量 GPU、毗邻香港的住宿条件和丰厚补助。</li>
+      <li>与华为、千问、腾讯、MiniMax、Kimi、蚂蚁、九坤等产业伙伴保持紧密合作。</li>
+      <li>鼓励独立的高年级博士生实习、创业、把 AI 部署到真实世界。</li>
+      <li>我们相信研究的底色是热爱：热爱问题，热爱创造，也热爱生活。</li>
+    </ul>
+  </section>
+
+  <section class="join-section">
     <h2>What You Can Build Here</h2>
     <div class="join-grid">
       <div class="join-card">

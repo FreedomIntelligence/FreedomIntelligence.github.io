@@ -100,6 +100,19 @@
   margin-top: 0.38rem;
 }
 
+.join-feature-list {
+  display: grid;
+  gap: 0.65rem 1.4rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.join-feature-list li {
+  color: var(--global-text-color-light);
+  line-height: 1.7;
+}
+
 .join-program {
   border: 1px solid var(--global-divider-color);
   border-radius: 8px;
@@ -214,6 +227,10 @@ html[data-theme='dark'] .join-contact {
   }
 
   .join-impact {
+    grid-template-columns: 1fr;
+  }
+
+  .join-feature-list {
     grid-template-columns: 1fr;
   }
 }
