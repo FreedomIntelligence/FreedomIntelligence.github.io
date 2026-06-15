@@ -551,6 +551,12 @@ nav_order: 5
       <div class="partner-card">
         <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/ubiquant.svg" alt="Ubiquant logo" loading="lazy"></div>
       </div>
+      <div class="partner-card">
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/wechat.svg" alt="WeChat logo" loading="lazy"></div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo-wrap"><img class="partner-logo" src="/assets/img/collaborators/china-merchants.svg" alt="China Merchants logo" loading="lazy"></div>
+      </div>
     </div>
   </div>
 </section>
