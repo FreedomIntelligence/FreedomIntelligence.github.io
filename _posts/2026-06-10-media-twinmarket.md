@@ -19,13 +19,37 @@ toc:
   - name: Resources
 
 _styles: >
+  d-article > p:not(.tm-note) {
+    color: var(--global-text-color);
+    font-size: 1.02rem;
+    line-height: 1.86;
+    margin: 1rem auto 1.15rem;
+    max-width: 760px;
+  }
+
+  d-article > h2 {
+    border-top: 1px solid var(--global-divider-color);
+    font-size: 1.42rem;
+    line-height: 1.3;
+    margin: 2.45rem 0 1rem;
+    padding-top: 1.25rem;
+  }
+
+  d-article > h2:first-of-type {
+    margin-top: 1.6rem;
+  }
+
   .tm-note {
-    border-left: 3px solid var(--global-theme-color);
+    background: rgba(18, 161, 80, 0.055);
+    border: 1px solid var(--global-divider-color);
+    border-left: 4px solid var(--global-theme-color);
+    border-radius: 8px;
     color: var(--global-text-color-light);
     font-size: 0.95rem;
     line-height: 1.7;
-    margin: 0 0 1.35rem;
-    padding: 0.1rem 0 0.1rem 1rem;
+    margin: 0 auto 1.45rem;
+    max-width: 820px;
+    padding: 0.85rem 1rem;
   }
 
   .tm-hero {
@@ -33,8 +57,9 @@ _styles: >
     background: color-mix(in srgb, var(--global-theme-color) 7%, transparent);
     border: 1px solid var(--global-divider-color);
     border-color: color-mix(in srgb, var(--global-theme-color) 22%, var(--global-divider-color));
-    border-radius: 14px;
-    margin: 1.3rem 0 1.8rem;
+    border-radius: 8px;
+    margin: 1.45rem auto 2rem;
+    max-width: 900px;
     overflow: hidden;
   }
 
@@ -49,114 +74,167 @@ _styles: >
   .tm-hero figcaption,
   .tm-figure figcaption,
   .tm-card figcaption {
+    background: #fbfcfd;
+    border-top: 1px solid var(--global-divider-color);
     color: var(--global-text-color-light);
-    font-size: 0.86rem;
-    line-height: 1.55;
+    font-size: 0.88rem;
+    line-height: 1.62;
     margin: 0;
-    padding: 0.75rem 0.9rem 0.9rem;
+    padding: 0.8rem 0.95rem 0.9rem;
   }
 
   .tm-kicker {
     color: var(--global-theme-color);
-    font-size: 0.86rem;
+    font-size: 0.82rem;
     font-weight: 700;
     letter-spacing: 0;
-    margin: 1.2rem 0 0.4rem;
+    margin: 2rem 0 -0.15rem;
     text-transform: uppercase;
   }
 
   .tm-grid {
     display: grid;
-    gap: 1rem;
+    align-items: start;
+    gap: 1.15rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin: 1.2rem 0;
+    margin: 1.35rem 0 1.75rem;
   }
 
   .tm-card,
   .tm-figure,
   .tm-resource {
     border: 1px solid var(--global-divider-color);
-    border-radius: 12px;
+    border-radius: 8px;
     overflow: hidden;
   }
 
   .tm-card {
     background: var(--global-card-bg-color, var(--global-bg-color));
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.035);
+  }
+
+  .tm-card img {
+    background: #f8fafc;
+    max-height: 430px;
+    object-fit: contain;
   }
 
   .tm-callout {
     background: rgba(18, 161, 80, 0.07);
     background: color-mix(in srgb, var(--global-theme-color) 8%, transparent);
-    border-radius: 12px;
+    border: 1px solid var(--global-divider-color);
+    border-color: color-mix(in srgb, var(--global-theme-color) 20%, var(--global-divider-color));
+    border-radius: 8px;
     color: var(--global-text-color);
-    font-size: 0.98rem;
-    line-height: 1.7;
-    margin: 1.2rem 0;
-    padding: 1rem 1.1rem;
+    font-size: 1rem;
+    line-height: 1.76;
+    margin: 1.35rem auto 1.65rem;
+    max-width: 820px;
+    padding: 1rem 1.15rem;
   }
 
   .tm-points {
     display: grid;
-    gap: 0.85rem;
+    gap: 0.95rem;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    margin: 1rem 0 1.3rem;
+    margin: 1.3rem 0 1.55rem;
   }
 
   .tm-point {
+    background: #fbfcfd;
     border: 1px solid var(--global-divider-color);
-    border-radius: 12px;
-    padding: 0.95rem;
+    border-radius: 8px;
+    padding: 1rem;
   }
 
   .tm-point strong {
+    color: var(--global-text-color);
     display: block;
-    margin-bottom: 0.35rem;
+    font-size: 0.98rem;
+    margin-bottom: 0.4rem;
   }
 
   .tm-point span {
     color: var(--global-text-color-light);
     display: block;
-    font-size: 0.9rem;
-    line-height: 1.55;
+    font-size: 0.91rem;
+    line-height: 1.6;
+  }
+
+  .tm-figure {
+    margin: 1.35rem auto 1.75rem;
+    max-width: 880px;
   }
 
   .tm-resource-grid {
     display: grid;
-    gap: 0.8rem;
+    gap: 0.9rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 1.1rem;
   }
 
   .tm-resource {
+    background: #fbfcfd;
     color: inherit;
     display: block;
-    padding: 0.9rem 1rem;
+    padding: 0.95rem 1rem;
     text-decoration: none;
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+
+  .tm-resource:hover {
+    border-color: var(--global-theme-color);
+    text-decoration: none;
+    transform: translateY(-1px);
   }
 
   .tm-resource strong {
     display: block;
-    margin-bottom: 0.25rem;
+    font-size: 0.98rem;
+    margin-bottom: 0.28rem;
   }
 
   .tm-resource span {
     color: var(--global-text-color-light);
     display: block;
     font-size: 0.9rem;
-    line-height: 1.5;
+    line-height: 1.55;
   }
 
   @media (max-width: 760px) {
+    d-article > p:not(.tm-note) {
+      font-size: 0.98rem;
+      line-height: 1.78;
+      margin: 0.85rem 0 1rem;
+    }
+
+    d-article > h2 {
+      font-size: 1.24rem;
+      margin-top: 2rem;
+      padding-top: 1rem;
+    }
+
     .tm-grid,
     .tm-points,
     .tm-resource-grid {
       grid-template-columns: 1fr;
     }
+
+    .tm-note,
+    .tm-callout {
+      padding: 0.85rem 0.9rem;
+    }
+
+    .tm-hero,
+    .tm-figure,
+    .tm-grid {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 ---
 
-<p class="tm-note">
-本文基于机器之心原报道与公开项目资料整理。为尊重原媒体版权，页面不逐字镜像全文，而是把 TwinMarket 的研究故事、关键图示和资源入口重新整理为更适合本站阅读的图文导读。图片来自机器之心报道及相关转载页面，版权归原媒体与原作者所有。
-</p>
+<p class="tm-note">本文基于机器之心原报道与公开项目资料整理。为尊重原媒体版权，页面不逐字镜像全文，而是把 TwinMarket 的研究故事、关键图示和资源入口重新整理为更适合本站阅读的图文导读。图片来自机器之心报道及相关转载页面，版权归原媒体与原作者所有。</p>
 
 <figure class="tm-hero">
   <img src="{{ '/assets/img/media-reposts/media-twinmarket/img-002-1e52040077.png' | relative_url }}" alt="TwinMarket framework overview">
