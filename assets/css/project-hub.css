@@ -245,6 +245,31 @@ a.project-program-node:hover {
   scroll-margin-top: 5rem;
 }
 
+.project-program-section.is-clickable {
+  cursor: pointer;
+  transition: background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.project-program-section.is-clickable:hover {
+  background: linear-gradient(90deg, rgba(15, 23, 42, 0.025), transparent 72%);
+}
+
+.project-program-section.is-clickable:focus {
+  border-radius: 8px;
+  box-shadow: 0 0 0 3px rgba(0, 128, 0, 0.14);
+  outline: 2px solid var(--program-accent);
+  outline-offset: 4px;
+}
+
+.project-program-section.is-clickable:hover .project-program-heading h2 {
+  color: var(--program-accent);
+}
+
+.project-program-section.is-clickable:hover .project-program-media {
+  border-color: var(--program-accent);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
 .project-program-section + .project-program-section {
   border-top: 1px solid var(--global-divider-color);
 }

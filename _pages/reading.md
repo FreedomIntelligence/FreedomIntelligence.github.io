@@ -30,7 +30,7 @@ nav_order: 2
 
   <p class="project-empty" hidden>No projects found for this tag.</p>
 
-  <section class="project-program-section project-theme-medical" id="huatuogpt" data-project-tags="AI for Healthcare;Multi-modal LLMs">
+  <section class="project-program-section project-theme-medical" id="huatuogpt" data-project-tags="AI for Healthcare;Multi-modal LLMs" data-project-url="/projects/medical-ai-ecosystem/">
     <div class="project-program-heading">
       <div class="project-eyebrow">HuatuoGPT medical model family</div>
       <h2>AI for Healthcare：华佗GPT系列大模型</h2>
@@ -70,7 +70,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-eval" id="medical-evaluation" data-project-tags="AI for Healthcare;Multi-modal LLMs">
+  <section class="project-program-section project-theme-eval" id="medical-evaluation" data-project-tags="AI for Healthcare;Multi-modal LLMs" data-project-url="/projects/medical-evaluation-benchmarks/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Healthcare AI evaluation</div>
       <h2>医疗 AI 评测系列</h2>
@@ -108,7 +108,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-education" id="medical-education-sp" data-project-tags="AI for Healthcare;Human-Agent Interaction">
+  <section class="project-program-section project-theme-education" id="medical-education-sp" data-project-tags="AI for Healthcare;Human-Agent Interaction" data-project-url="/projects/medical-education-standardized-patients/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Medical education and AI standardized patients</div>
       <h2>医学教育与 AI 标准化病人</h2>
@@ -116,8 +116,8 @@ nav_order: 2
         这条线面向医学教育中的 SP（standardized patients）训练，把 AI 病人做成可控、可复用、可评测的练习对象。它同时连接 ACL 医学教育评测与 CHI/人机交互里的共创设计问题：AI 病人不只要“像病人说话”，还要真正帮助学生练习病史采集、沟通和临床推理。
       </p>
       <div class="project-actions">
-        <a class="project-action primary" href="https://github.com/FreedomIntelligence/EasyMED" target="_blank" rel="noopener">Open EasyMED</a>
-        <a class="project-action" href="https://arxiv.org/abs/2602.05856" target="_blank" rel="noopener">CHI AI-SP paper</a>
+        <a class="project-action primary" href="/projects/medical-education-standardized-patients/">Open AI Standardized Patients</a>
+        <a class="project-action" href="https://github.com/FreedomIntelligence/EasyMED" target="_blank" rel="noopener">Open EasyMED</a>
       </div>
     </div>
     <div class="project-program-layout">
@@ -143,7 +143,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-multilingual" id="multilingual-llms" data-project-tags="Multilingual LLMs;AI for Healthcare">
+  <section class="project-program-section project-theme-multilingual" id="multilingual-llms" data-project-tags="Multilingual LLMs;AI for Healthcare" data-project-url="/projects/multilingual-localized-llms/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Multilingual and localized LLMs</div>
       <h2>多语言大语言模型</h2>
@@ -180,7 +180,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-speech" id="speech-llms" data-project-tags="Speech LLMs;Human-Agent Interaction">
+  <section class="project-program-section project-theme-speech" id="speech-llms" data-project-tags="Speech LLMs;Human-Agent Interaction" data-project-url="/projects/speech-audio-talking-head-ai/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Speech LLMs and speech-to-speech agents</div>
       <h2>Speech LLMs</h2>
@@ -220,7 +220,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-human" id="human-agent-interaction" data-project-tags="Human-Agent Interaction;AI for Reasoning and Agentic RL;Speech LLMs">
+  <section class="project-program-section project-theme-human" id="human-agent-interaction" data-project-tags="Human-Agent Interaction;AI for Reasoning and Agentic RL;Speech LLMs" data-project-url="/projects/human-agent-interaction/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Human-agent interaction and simulation</div>
       <h2>Human-Agent Interaction</h2>
@@ -228,7 +228,8 @@ nav_order: 2
         这条线关注智能体如何和真实用户、学习者、患者、市场参与者以及模拟世界互动。它覆盖 LLM user simulator、AI standardized patients、speech-to-speech human-likeness evaluation、MicroVerse 交互式科学仿真，以及 TwinMarket 这类多智能体社会/金融模拟。
       </p>
       <div class="project-actions">
-        <a class="project-action primary" href="/projects/economic-world-models/">Open Economic World Models</a>
+        <a class="project-action primary" href="/projects/human-agent-interaction/">Open Human-Agent Interaction</a>
+        <a class="project-action" href="/projects/economic-world-models/">Open Economic World Models</a>
         <a class="project-action" href="/projects/microverse-world-simulation/">Open MicroVerse</a>
       </div>
     </div>
@@ -258,7 +259,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-infra" id="llm-efficiency-ai-infra" data-project-tags="LLM efficiency and AI Infra;AI for Reasoning and Agentic RL;Multi-modal LLMs">
+  <section class="project-program-section project-theme-infra" id="llm-efficiency-ai-infra" data-project-tags="LLM efficiency and AI Infra;AI for Reasoning and Agentic RL;Multi-modal LLMs" data-project-url="/projects/llm-efficiency-ai-infra/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Efficient training, inference, retrieval, and multimodal context</div>
       <h2>LLM efficiency and AI Infra</h2>
@@ -266,7 +267,8 @@ nav_order: 2
         这条线把“能不能跑得起、训得动、改得快”作为项目主题，覆盖推理路径剪枝、question-free fine-tuning、prefix fine-tuning、editable efficient RAG、长上下文多模态和 token reduction。
       </p>
       <div class="project-actions">
-        <a class="project-action primary" href="/projects/long-context-multimodal/">Open LongLLaVA and MileBench</a>
+        <a class="project-action primary" href="/projects/llm-efficiency-ai-infra/">Open LLM Infra</a>
+        <a class="project-action" href="/projects/long-context-multimodal/">Open LongLLaVA and MileBench</a>
         <a class="project-action" href="/projects/rag-instruction-data/">Open Data Infrastructure</a>
       </div>
     </div>
@@ -298,7 +300,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-optimization" id="optimization-llms" data-project-tags="AI for Reasoning and Agentic RL;LLM efficiency and AI Infra">
+  <section class="project-program-section project-theme-optimization" id="optimization-llms" data-project-tags="AI for Reasoning and Agentic RL;LLM efficiency and AI Infra" data-project-url="/projects/reasoning-math-optimization/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Optimization modeling LLMs</div>
       <h2>运筹优化大模型系列</h2>
@@ -334,7 +336,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-explain" id="interpretable-llms" data-project-tags="LLM Interpretability;AI for Healthcare;AI for Reasoning and Agentic RL">
+  <section class="project-program-section project-theme-explain" id="interpretable-llms" data-project-tags="LLM Interpretability;AI for Healthcare;AI for Reasoning and Agentic RL" data-project-url="/projects/llm-interpretability/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Explainable and verifiable LLMs</div>
       <h2>LLM Interpretability</h2>
@@ -379,7 +381,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-economics" id="economic-world-models" data-project-tags="Economic World Models;AI for Reasoning and Agentic RL">
+  <section class="project-program-section project-theme-economics" id="economic-world-models" data-project-tags="Economic World Models;AI for Reasoning and Agentic RL" data-project-url="/projects/economic-world-models/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Economic world models and agentic economies</div>
       <h2>经济世界模型</h2>
@@ -460,6 +462,32 @@ nav_order: 2
         window.history.replaceState({}, '', url);
       }
     }
+
+    sections.forEach(function (section) {
+      const projectUrl = section.dataset.projectUrl;
+      if (!projectUrl) return;
+
+      const title = section.querySelector('h2');
+      section.classList.add('is-clickable');
+      section.setAttribute('role', 'link');
+      section.setAttribute('tabindex', '0');
+      if (title) {
+        section.setAttribute('aria-label', 'Open project: ' + title.textContent.trim());
+      }
+
+      section.addEventListener('click', function (event) {
+        const target = event.target;
+        if (!(target instanceof Element)) return;
+        if (target.closest('a, button, summary, details, input, select, textarea, [role="button"], .project-resources-panel')) return;
+        window.location.href = projectUrl;
+      });
+
+      section.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+          window.location.href = projectUrl;
+        }
+      });
+    });
 
     buttons.forEach(function (button) {
       button.addEventListener('click', function () {
