@@ -251,6 +251,7 @@ github: https://github.com/FreedomIntelligence/Awesome-Econ-World-Models/
 <div class="ewm-actions">
   <a class="ewm-action" href="https://github.com/FreedomIntelligence/Awesome-Econ-World-Models/" target="_blank" rel="noopener">Resources</a>
   <a class="ewm-action secondary" href="{{ '/assets/pdf/economic-world-models.pdf' | relative_url }}" target="_blank" rel="noopener">Paper</a>
+  <a class="ewm-action secondary" href="{{ '/projects/' | relative_url }}">All Projects</a>
 </div>
 
 <div class="ewm-hero-image">
@@ -387,5 +388,9 @@ The Economic World Models page is the umbrella. Under it, TwinMarket provides a 
     </a>
   </div>
 </section>
+
+<div class="ewm-actions">
+  <a class="ewm-action secondary" href="{{ '/projects/' | relative_url }}">Back to Projects</a>
+</div>
 
 </div>
