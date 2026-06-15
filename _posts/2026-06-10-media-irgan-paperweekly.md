@@ -4,6 +4,9 @@ title: "PaperWeekly｜IRGAN 入选 2017 年度 NLP 论文 TOP10"
 date: 2026-06-10
 description: "基于PaperWeekly 年度 NLP 论文评选记录整理的简要摘要，补充 FreedomAI Lab 参与贡献与资源链接。"
 tags: media PaperWeekly IRGAN NLP
+source_links:
+  - label: "PaperWeekly 记录"
+    url: "https://developer.aliyun.com/article/415559"
 
 authors:
   - name: FreedomAI Lab

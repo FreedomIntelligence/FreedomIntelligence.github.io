@@ -4,6 +4,11 @@ title: "机器之心｜TwinMarket：千个虚拟投资者与金融市场涌现"
 date: 2026-06-10
 description: "基于机器之心关于 TwinMarket 的报道整理的图文导读，补充完整多模态图示、研究脉络与 FreedomAI Lab 资源入口。"
 tags: media machine-heart TwinMarket social-simulation financial-ai
+source_links:
+  - label: "机器之心原文"
+    url: "http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651001895&idx=4&sn=383c986589bd3d7dfc3623ae08b848f9"
+  - label: "冷月清谈转载页"
+    url: "https://www.xinfinite.net/t/topic/16071"
 
 authors:
   - name: FreedomAI Lab

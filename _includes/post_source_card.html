@@ -1,0 +1,13 @@
+{% if page.source_links %}
+<div class="post-source-card" aria-label="Original sources">
+  <div class="post-source-card__eyebrow">原文与来源</div>
+  <p>
+    本文为媒体报道导读与转载整理。完整原文请访问原媒体页面；本站补充研究脉络、项目入口与 FreedomAI Lab 相关说明。
+  </p>
+  <div class="post-source-card__links">
+    {% for source in page.source_links %}
+      <a href="{{ source.url }}" target="_blank" rel="noopener">{{ source.label }}</a>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

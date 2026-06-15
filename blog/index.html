@@ -91,6 +91,37 @@ blog_tags:
       text-align: center;
     }
 
+    .post-source-preview {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      align-items: center;
+      margin: 0.2rem 0 0.8rem;
+      color: var(--global-text-color-light);
+      font-size: 0.88rem;
+      line-height: 1.45;
+    }
+
+    .post-source-preview span {
+      font-weight: 600;
+    }
+
+    .post-source-preview a,
+    .post-source-preview .post-source-preview__more {
+      border: 1px solid var(--global-divider-color);
+      border-radius: 999px;
+      padding: 0.18rem 0.56rem;
+      color: var(--global-theme-color);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .post-source-preview a:hover {
+      border-color: var(--global-theme-color);
+      background: var(--global-theme-color);
+      color: #fff;
+    }
+
     .post-list li.is-hidden {
       display: none;
     }
@@ -156,6 +187,18 @@ blog_tags:
         {% endif %}
       </h3>
       <p>{{ post.description }}</p>
+      {% if post.source_links %}
+      <div class="post-source-preview" aria-label="Original sources">
+        <span>原文</span>
+        {% for source in post.source_links limit: 2 %}
+          <a href="{{ source.url }}" target="_blank" rel="noopener">{{ source.label }}</a>
+        {% endfor %}
+        {% assign extra_sources = post.source_links.size | minus: 2 %}
+        {% if extra_sources > 0 %}
+          <span class="post-source-preview__more">+{{ extra_sources }}</span>
+        {% endif %}
+      </div>
+      {% endif %}
       <p class="post-meta">
         {{ read_time }} min read &nbsp; &middot; &nbsp;
         {{ post.date | date: '%B %-d, %Y' }}

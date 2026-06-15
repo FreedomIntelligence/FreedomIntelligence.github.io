@@ -4,6 +4,11 @@ title: "机器之心｜PhoneHarness：AI 手机时代需要怎样的 Agent Harne
 date: 2026-06-10
 description: "基于机器之心关于 PhoneHarness 的报道整理的简要摘要，补充 FreedomAI Lab 参与贡献与资源链接。"
 tags: media machine-heart PhoneHarness mobile-agent GUI-agent
+source_links:
+  - label: "机器之心原文"
+    url: "https://mp.weixin.qq.com/s/I2ztL6sFiHGxAiCfh_FTqg"
+  - label: "X 转发记录"
+    url: "https://x.com/jiqizhixin/status/2063472517533335806"
 
 authors:
   - name: FreedomAI Lab

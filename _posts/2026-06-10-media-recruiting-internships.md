@@ -5,6 +5,11 @@ date: 2026-06-10
 published: false
 description: "基于PaperWeekly / AI 求职中与港中文（深圳）相关的招生和实习信息整理的简要摘要，补充 FreedomAI Lab 参与贡献与资源链接。"
 tags: media PaperWeekly recruiting internship NLP multimodal
+source_links:
+  - label: "招生原文"
+    url: "https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247612887&idx=3&sn=e504e7c804d472b420adf6ad2ea68cb2&chksm=96ebe657a19c6f41e87a403bb1ea835133eaad38328e31b96d0eea4c292dbcb6620da0ea7c49&scene=126&sessionid=0"
+  - label: "实习原文"
+    url: "https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247664430&idx=3&sn=4e0447f25c8772a1f1831dc1d249a6a1&chksm=974fe78d9ff31d0f51d00f33b4a837b8d623b22243bf15bded95dbc012fc9f7a5fbc22a765dd&scene=126&sessionid=0"
 
 authors:
   - name: FreedomAI Lab

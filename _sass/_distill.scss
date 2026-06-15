@@ -81,6 +81,24 @@ d-article {
     overflow-x: auto;
   }
 
+  .post-source-card {
+    max-width: 780px;
+    margin: 0 auto 1.55rem;
+
+    p {
+      color: var(--global-text-color-light) !important;
+    }
+
+    a {
+      border-bottom: 0 !important;
+      color: var(--global-theme-color) !important;
+
+      &:hover {
+        color: #fff !important;
+      }
+    }
+  }
+
   d-contents {
     align-self: start;
     grid-column: 1 / 4;

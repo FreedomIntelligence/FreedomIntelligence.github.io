@@ -4,6 +4,11 @@ title: "机器之心｜开源中文医疗大模型华佗GPT来了，真人医生
 date: 2026-06-10
 description: "基于机器之心关于 HuatuoGPT 的报道整理的简要摘要，补充 FreedomAI Lab 参与贡献与资源链接。"
 tags: media machine-heart PaperWeekly HuatuoGPT medical-llm
+source_links:
+  - label: "机器之心原文"
+    url: "https://mp.weixin.qq.com/s/lwJb8N420xfMTvXJPM2gtg"
+  - label: "PaperWeekly 原文"
+    url: "https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247624585&idx=3&sn=2738a85994cec0f8b20e2500c5d563e1&chksm=96e43809a193b11f327428cd38e626272a1499af6824cf4eb953b040f3167882d5258a3d5ae3&scene=126&sessionid=0"
 
 authors:
   - name: FreedomAI Lab
