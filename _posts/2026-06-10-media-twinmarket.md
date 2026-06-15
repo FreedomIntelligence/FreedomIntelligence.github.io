@@ -83,15 +83,6 @@ _styles: >
     padding: 0.8rem 0.95rem 0.9rem;
   }
 
-  .tm-kicker {
-    color: var(--global-theme-color);
-    font-size: 0.82rem;
-    font-weight: 700;
-    letter-spacing: 0;
-    margin: 2rem 0 -0.15rem;
-    text-transform: uppercase;
-  }
-
   .tm-grid {
     display: grid;
     align-items: start;
@@ -241,8 +232,6 @@ _styles: >
   <figcaption>图源：机器之心 TwinMarket 报道。TwinMarket 把世界知识、金融市场环境、社交信息和虚拟投资者连接在同一个可模拟系统中。</figcaption>
 </figure>
 
-<div class="tm-kicker">Quick Read</div>
-
 ## Quick Read
 
 TwinMarket 是一个面向金融市场的多智能体社会模拟框架。它不把市场直接写成一个宏观公式，而是从大量虚拟投资者出发，让每个 agent 带着自己的信息、信念、偏好、社交关系和交易意图，在同一个股票市场环境里互动。价格波动、羊群效应、泡沫和回撤等现象，随后从这些微观行为中涌现出来。
@@ -268,8 +257,6 @@ TwinMarket 是一个面向金融市场的多智能体社会模拟框架。它不
 报道中的重点不是“AI 会不会炒股”，而是更基础的问题：当一个社会经济系统由许多具备认知、情绪和社交影响的 agent 组成时，我们能否用可控的数字沙盘研究市场行为如何形成。
 </div>
 
-<div class="tm-kicker">Framework</div>
-
 ## Framework
 
 TwinMarket 的结构可以分成两层：微观层是虚拟投资者，宏观层是市场基础设施。微观层负责观察、理解、计划和交易；宏观层负责提供新闻、股票数据、社交传播、订单撮合和价格反馈。系统每天推进一轮，agent 根据新信息更新内部状态并提交交易行为，市场再把交易结果反向反馈给 agent。
@@ -291,8 +278,6 @@ TwinMarket 的结构可以分成两层：微观层是虚拟投资者，宏观层
 </div>
 
 这个设计比传统规则型 Agent-Based Model 更灵活。传统模型通常需要手工指定每类投资者的规则，而 LLM agent 可以把更丰富的语言信息、新闻冲击、社交观点和非理性因素纳入推理过程。研究者也可以通过改变 agent 人群、信息环境或市场规则，做反事实实验。
-
-<div class="tm-kicker">Data and Experiments</div>
 
 ## Data and Experiments
 
@@ -321,8 +306,6 @@ TwinMarket 的结构可以分成两层：微观层是虚拟投资者，宏观层
     <figcaption>不同活跃用户比例下的成交量与误差变化。规模和参与度会影响模拟市场的稳定性与拟合效果。</figcaption>
   </figure>
 </div>
-
-<div class="tm-kicker">Emergent Market Behavior</div>
 
 ## Emergent Market Behavior
 
