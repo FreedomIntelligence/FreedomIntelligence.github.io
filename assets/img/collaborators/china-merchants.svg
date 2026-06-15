@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 110" role="img" aria-label="China Merchants logo">
   <rect width="280" height="110" rx="14" fill="#ffffff"/>
-  <circle cx="62" cy="55" r="30" fill="#c41230"/>
-  <path d="M50 73 L62 31 L74 73 Z" fill="#ffffff"/>
-  <path d="M45 73 H79 L72 62 H52 Z" fill="#1b4f9c"/>
-  <text x="170" y="45" text-anchor="middle" font-family="'Microsoft YaHei', SimHei, Arial, sans-serif" font-size="28" font-weight="800" fill="#173b7a">轮船招商局</text>
-  <text x="170" y="76" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#173b7a">China Merchants</text>
+  <circle cx="140" cy="31" r="23" fill="#c41230"/>
+  <path d="M131 47 L140 15 L149 47 Z" fill="#ffffff"/>
+  <path d="M127 47 H153 L148 39 H132 Z" fill="#1b4f9c"/>
+  <text x="140" y="74" text-anchor="middle" font-family="'Microsoft YaHei', SimHei, Arial, sans-serif" font-size="23" font-weight="800" fill="#173b7a">轮船招商局</text>
+  <text x="140" y="98" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#173b7a">China Merchants</text>
 </svg>
