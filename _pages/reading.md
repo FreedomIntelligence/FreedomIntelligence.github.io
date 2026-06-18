@@ -10,8 +10,9 @@ project_tags:
   - Multilingual LLMs
   - Speech LLMs
   - Human-Agent Interaction
+  - LLM Agents and Applications
   - LLM efficiency and AI Infra
-  - AI for Reasoning and Agentic RL
+  - LLM Reasoning & Agentic RL
   - LLM Interpretability
   - Economic World Models
 nav: true
@@ -220,7 +221,87 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-human" id="human-agent-interaction" data-project-tags="Human-Agent Interaction;AI for Reasoning and Agentic RL;Speech LLMs" data-project-url="/projects/human-agent-interaction/">
+  <section class="project-program-section project-theme-optimization" id="llm-reasoning-agentic-rl" data-project-tags="LLM Reasoning & Agentic RL;LLM efficiency and AI Infra;Multi-modal LLMs" data-project-url="/projects/llm-reasoning-agentic-rl/">
+    <div class="project-program-heading">
+      <div class="project-eyebrow">Reasoning, RL, and adaptive test-time compute</div>
+      <h2>LLM Reasoning & Agentic RL</h2>
+      <p>
+        This project organizes the lab's recent work on verifiable reasoning, policy optimization, path pruning, code-integrated thinking, and multimodal R1-style training. The through-line is simple: make LLMs reason with feedback signals that are inspectable, efficient, and useful for downstream agents.
+      </p>
+      <div class="project-actions">
+        <a class="project-action primary" href="/projects/llm-reasoning-agentic-rl/">Open LLM Reasoning & Agentic RL</a>
+        <a class="project-action" href="/projects/reasoning-math-optimization/">Open Math and Optimization</a>
+        <a class="project-action" href="https://wabyking.github.io/" target="_blank" rel="noopener">Papers from Benyou Wang</a>
+      </div>
+    </div>
+    <div class="project-program-layout">
+      <div class="project-program-media">
+        <img src="/assets/img/freedomai-2026/impact/iclr-financial-ai-award.jpg" alt="LLM reasoning and agentic reinforcement learning project signal">
+      </div>
+      <div>
+        <h3>Paper organization</h3>
+        <ol class="project-paper-list">
+          <li><a href="https://wabyking.github.io/" target="_blank" rel="noopener">OnePO: Direct One-stage Policy Optimization for SFT-free Domain Adaptation</a> - direct policy optimization without a separate SFT stage.</li>
+          <li><a href="https://arxiv.org/abs/2605.25511" target="_blank" rel="noopener">CRPO: Character-centric Group Relative Policy Optimization for Role-aware Reasoning in Role-playing Agents</a> - RL objectives for role-aware reasoning agents.</li>
+          <li><a href="https://arxiv.org/abs/2506.12860" target="_blank" rel="noopener">Question-Free Fine-Tuning</a> - efficient and adaptive reasoning fine-tuning.</li>
+          <li><a href="https://arxiv.org/abs/2604.16029" target="_blank" rel="noopener">Cut Your Losses! Learning to Prune Paths Early for Efficient Parallel Reasoning</a> - learnable path pruning for large reasoning models.</li>
+          <li><a href="https://arxiv.org/abs/2503.21776" target="_blank" rel="noopener">Video-R1: Reinforcing Video Reasoning in MLLMs</a> - R1-style reinforcement learning for multimodal video reasoning.</li>
+          <li><a href="https://arxiv.org/abs/2506.09820" target="_blank" rel="noopener">CoRT: Code-integrated Reasoning within Thinking</a> - executable computation inside the reasoning process.</li>
+        </ol>
+      </div>
+    </div>
+    <details class="project-resources-panel">
+      <summary><span>Project stack</span><strong>Reasoning papers, code, and datasets</strong></summary>
+      <div class="project-stack project-resource-stack">
+        <a class="project-stack-row" href="https://bijiaxihh.github.io/STOP/" target="_blank" rel="noopener"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>STOP / Cut Your Losses</strong><span>Early path pruning for efficient parallel reasoning.</span></span></a>
+        <a class="project-stack-row" href="https://github.com/tulerfeng/Video-R1" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>Video-R1</strong><span>Video-R1-CoT and RL training resources for video reasoning.</span></span></a>
+        <a class="project-stack-row" href="https://github.com/ChengpengLi1003/CoRT" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>CoRT</strong><span>Code-integrated reasoning resources.</span></span></a>
+        <a class="project-stack-row" href="https://github.com/1KE-JI/UPFT" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>UPFT</strong><span>Unsupervised prefix fine-tuning for efficient reasoning models.</span></span></a>
+      </div>
+    </details>
+  </section>
+
+  <section class="project-program-section project-theme-human" id="llm-agents-applications" data-project-tags="LLM Agents and Applications;Human-Agent Interaction;Economic World Models" data-project-url="/projects/llm-agents-applications/">
+    <div class="project-program-heading">
+      <div class="project-eyebrow">Agents, simulators, tools, and applied environments</div>
+      <h2>LLM Agents and Applications</h2>
+      <p>
+        This project groups papers where LLMs become agents: tool planners, user simulators, standardized patients, role-playing agents, market participants, and micro-world actors. The goal is to organize agent papers by what the agent does, what environment it acts in, and how the interaction is evaluated.
+      </p>
+      <div class="project-actions">
+        <a class="project-action primary" href="/projects/llm-agents-applications/">Open LLM Agents and Applications</a>
+        <a class="project-action" href="/projects/human-agent-interaction/">Open Human-Agent Interaction</a>
+        <a class="project-action" href="https://wabyking.github.io/" target="_blank" rel="noopener">Papers from Benyou Wang</a>
+      </div>
+    </div>
+    <div class="project-program-layout">
+      <div class="project-program-media">
+        <img src="/assets/img/media-roundup-2026/twinmarket-bdi.png" alt="LLM agents and applications project map">
+      </div>
+      <div>
+        <h3>Paper organization</h3>
+        <ol class="project-paper-list">
+          <li><a href="https://aclanthology.org/2025.naacl-long.169/" target="_blank" rel="noopener">Smurfs: Multi-Agent System using Context-Efficient DFSDT for Tool Planning</a> - multi-agent tool planning with context-efficient search.</li>
+          <li><a href="https://arxiv.org/abs/2308.11534" target="_blank" rel="noopener">Large Language Model as a User Simulator</a> - LLM users for dialogue training and evaluation.</li>
+          <li><a href="https://openreview.net/forum?id=9nddtu94uX" target="_blank" rel="noopener">PlatoLM: Teaching LLMs via a Socratic Questioning User Simulator</a> - Socratic interaction as a training signal.</li>
+          <li><a href="https://arxiv.org/abs/2511.14783" target="_blank" rel="noopener">Human or LLM as Standardized Patients?</a> - AI patients for medical education and evaluation.</li>
+          <li><a href="https://arxiv.org/abs/2502.01506" target="_blank" rel="noopener">TwinMarket: A Scalable Behavioral and Social Simulation for Financial Markets</a> - LLM investor agents in market simulation.</li>
+          <li><a href="https://arxiv.org/abs/2603.00585" target="_blank" rel="noopener">MicroVerse</a> - agentic micro-world simulation for scientific processes.</li>
+        </ol>
+      </div>
+    </div>
+    <details class="project-resources-panel">
+      <summary><span>Project stack</span><strong>Agent applications and environments</strong></summary>
+      <div class="project-stack project-resource-stack">
+        <a class="project-stack-row" href="https://arxiv.org/abs/2405.05955" target="_blank" rel="noopener"><span class="project-stack-type">Paper</span><span class="project-stack-main"><strong>Smurfs</strong><span>Multi-agent tool planning through context-efficient DFSDT.</span></span></a>
+        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/EasyMED" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>EasyMED</strong><span>AI standardized patient framework and evaluation resources.</span></span></a>
+        <a class="project-stack-row" href="/projects/twinmarket-financial-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>TwinMarket</strong><span>Financial market simulation with LLM agents.</span></span></a>
+        <a class="project-stack-row" href="/projects/microverse-world-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>MicroVerse</strong><span>Micro-world simulation with hidden mechanisms and evolving states.</span></span></a>
+      </div>
+    </details>
+  </section>
+
+  <section class="project-program-section project-theme-human" id="human-agent-interaction" data-project-tags="Human-Agent Interaction;LLM Agents and Applications;Speech LLMs" data-project-url="/projects/human-agent-interaction/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Human-agent interaction and simulation</div>
       <h2>Human-Agent Interaction</h2>
@@ -259,7 +340,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-infra" id="llm-efficiency-ai-infra" data-project-tags="LLM efficiency and AI Infra;AI for Reasoning and Agentic RL;Multi-modal LLMs" data-project-url="/projects/llm-efficiency-ai-infra/">
+  <section class="project-program-section project-theme-infra" id="llm-efficiency-ai-infra" data-project-tags="LLM efficiency and AI Infra;LLM Reasoning & Agentic RL;Multi-modal LLMs" data-project-url="/projects/llm-efficiency-ai-infra/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Efficient training, inference, retrieval, and multimodal context</div>
       <h2>LLM efficiency and AI Infra</h2>
@@ -300,7 +381,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-optimization" id="optimization-llms" data-project-tags="AI for Reasoning and Agentic RL;LLM efficiency and AI Infra" data-project-url="/projects/reasoning-math-optimization/">
+  <section class="project-program-section project-theme-optimization" id="optimization-llms" data-project-tags="LLM Reasoning & Agentic RL;LLM efficiency and AI Infra" data-project-url="/projects/reasoning-math-optimization/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Optimization modeling LLMs</div>
       <h2>运筹优化大模型系列</h2>
@@ -336,7 +417,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-explain" id="interpretable-llms" data-project-tags="LLM Interpretability;AI for Healthcare;AI for Reasoning and Agentic RL" data-project-url="/projects/llm-interpretability/">
+  <section class="project-program-section project-theme-explain" id="interpretable-llms" data-project-tags="LLM Interpretability;AI for Healthcare;LLM Reasoning & Agentic RL" data-project-url="/projects/llm-interpretability/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Explainable and verifiable LLMs</div>
       <h2>LLM Interpretability</h2>
@@ -381,7 +462,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-economics" id="economic-world-models" data-project-tags="Economic World Models;AI for Reasoning and Agentic RL" data-project-url="/projects/economic-world-models/">
+  <section class="project-program-section project-theme-economics" id="economic-world-models" data-project-tags="Economic World Models;LLM Agents and Applications;LLM Reasoning & Agentic RL" data-project-url="/projects/economic-world-models/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Economic world models and agentic economies</div>
       <h2>经济世界模型</h2>
