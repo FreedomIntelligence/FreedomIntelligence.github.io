@@ -309,6 +309,10 @@ a.project-program-node:hover {
   --program-accent: #0369a1;
 }
 
+.project-theme-multimodal {
+  --program-accent: #0891b2;
+}
+
 .project-theme-human {
   --program-accent: #9333ea;
 }

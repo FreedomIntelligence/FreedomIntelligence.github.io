@@ -8,10 +8,10 @@ project_tags:
   - LLM Reasoning & Agentic RL
   - LLM Agents and Applications
   - Human-Agent Interaction
+  - Multi-modal LLMs
   - Environment Engineering & World Models
   - Economic World Models
   - AI for Healthcare
-  - Multi-modal LLMs
   - Multilingual LLMs
   - Speech LLMs
   - LLM efficiency and AI Infra
@@ -147,6 +147,48 @@ nav_order: 2
         <a class="project-stack-row" href="/projects/twinmarket-financial-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>TwinMarket</strong><span>金融市场行为和社会仿真。</span></span></a>
         <a class="project-stack-row" href="/projects/microverse-world-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>MicroVerse</strong><span>面向生物机制的 micro-world simulation。</span></span></a>
         <a class="project-stack-row" href="https://github.com/FreedomIntelligence/EasyMED" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>EasyMED</strong><span>AI 标准化病人训练与评测。</span></span></a>
+      </div>
+    </details>
+  </section>
+
+  <section class="project-program-section project-theme-multimodal" id="multimodal-llms" data-project-tags="Multi-modal LLMs;LLM Reasoning & Agentic RL;LLM efficiency and AI Infra;AI for Healthcare;Speech LLMs" data-project-url="/projects/multimodal-foundation-models/">
+    <div class="project-program-heading">
+      <div class="project-eyebrow">Multimodal foundation models and visual reasoning</div>
+      <h2>多模态大模型</h2>
+      <p>
+        多模态大模型方向把文字、图像、视频、音频和医学视觉放进同一个能力地图：从 LongLLaVA/MileBench 的长上下文视觉理解，到 TRIM 的视觉 token 压缩、ShareGPT-4o-Image/Janus-4o 的开放图像生成，再到 Video-R1、HuatuoGPT-Vision 和 FusionAudio 这类面向推理、医疗和音频场景的模型与数据。
+      </p>
+      <div class="project-actions">
+        <a class="project-action primary" href="/projects/multimodal-foundation-models/">Open Multimodal LLMs</a>
+        <a class="project-action" href="/projects/long-context-multimodal/">Open LongLLaVA and MileBench</a>
+        <a class="project-action" href="/projects/sharegpt-4o-image-janus-4o/">Open ShareGPT-4o and Janus-4o</a>
+      </div>
+    </div>
+    <div class="project-program-layout">
+      <div class="project-program-media">
+        <img src="/assets/img/media-roundup-2026/longllava-architecture.webp" alt="Long-context multimodal LLM architecture">
+      </div>
+      <div>
+        <h3>相关论文整理</h3>
+        <ol class="project-paper-list">
+          <li><a href="https://arxiv.org/abs/2409.02889" target="_blank" rel="noopener">LongLLaVA: Scaling Multi-modal LLMs to 1000 Images Efficiently</a>：长上下文多图像理解和推理。</li>
+          <li><a href="https://arxiv.org/abs/2404.18532" target="_blank" rel="noopener">MileBench: Benchmarking MLLMs in Long Context</a>：多图像、视频和长视觉上下文评测。</li>
+          <li><a href="https://arxiv.org/abs/2409.10994" target="_blank" rel="noopener">TRIM: Less is More for Efficient Multi-modal LLMs</a>：减少冗余视觉 token，降低多模态推理成本。</li>
+          <li><a href="https://arxiv.org/abs/2506.18095" target="_blank" rel="noopener">ShareGPT-4o-Image and Janus-4o</a>：开放 GPT-4o 风格图像生成/编辑数据和统一多模态模型。</li>
+          <li><a href="https://arxiv.org/abs/2503.21776" target="_blank" rel="noopener">Video-R1: Reinforcing Video Reasoning in MLLMs</a>：把 R1-style reasoning training 扩展到视频理解。</li>
+          <li><a href="https://arxiv.org/abs/2406.19280" target="_blank" rel="noopener">HuatuoGPT-Vision</a>：面向医学视觉知识注入的多模态医学大模型。</li>
+        </ol>
+      </div>
+    </div>
+    <details class="project-resources-panel">
+      <summary><span>模型 / 数据 / 代码入口</span><strong>Multimodal stack</strong></summary>
+      <div class="project-stack project-resource-stack">
+        <a class="project-stack-row" href="/projects/multimodal-foundation-models/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>多模态大模型</strong><span>总览视觉理解、视觉生成、视频推理、医学视觉和音频多模态。</span></span></a>
+        <a class="project-stack-row" href="/projects/long-context-multimodal/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>LongLLaVA and MileBench</strong><span>长上下文多模态模型和 benchmark。</span></span></a>
+        <a class="project-stack-row" href="/projects/sharegpt-4o-image-janus-4o/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>ShareGPT-4o-Image and Janus-4o</strong><span>开放图像生成/编辑数据和统一多模态模型。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/LongLLaVA" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/LongLLaVA</strong><span>长上下文多模态模型资源。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/TRIM" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/TRIM</strong><span>高效多模态 token reduction。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/HuatuoGPT-Vision" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>HuatuoGPT-Vision</strong><span>医学视觉语言模型和数据资源。</span></span></a>
       </div>
     </details>
   </section>
