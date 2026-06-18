@@ -321,6 +321,10 @@ a.project-program-node:hover {
   --program-accent: #047857;
 }
 
+.project-theme-environment {
+  --program-accent: #0d9488;
+}
+
 .project-theme-economics {
   --program-accent: #0e7490;
 }

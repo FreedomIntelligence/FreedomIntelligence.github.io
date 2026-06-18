@@ -14,6 +14,7 @@ project_tags:
   - LLM efficiency and AI Infra
   - LLM Reasoning & Agentic RL
   - LLM Interpretability
+  - Environment Engineering & World Models
   - Economic World Models
 nav: true
 nav_order: 2
@@ -462,7 +463,48 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-economics" id="economic-world-models" data-project-tags="Economic World Models;LLM Agents and Applications;LLM Reasoning & Agentic RL" data-project-url="/projects/economic-world-models/">
+  <section class="project-program-section project-theme-environment" id="environment-engineering-world-models" data-project-tags="Environment Engineering & World Models;Economic World Models;Human-Agent Interaction;LLM Agents and Applications;LLM Reasoning & Agentic RL" data-project-url="/projects/environment-engineering-world-models/">
+    <div class="project-program-heading">
+      <div class="project-eyebrow">Environment engineering and world models</div>
+      <h2>环境工程和世界模型</h2>
+      <p>
+        这条线把“模型能力”放进可运行环境中：定义状态、行动、工具、用户、规则、世界动力学和评测对齐，让智能体能在用户模拟、金融市场、科学微世界和可执行优化环境中训练、评测和迭代。
+      </p>
+      <div class="project-actions">
+        <a class="project-action primary" href="/projects/environment-engineering-world-models/">Open Environment Engineering</a>
+        <a class="project-action" href="https://wabyking.github.io/" target="_blank" rel="noopener">Benyou Wang Papers</a>
+      </div>
+    </div>
+    <div class="project-program-layout">
+      <div class="project-program-media">
+        <img src="/assets/img/economic-world-models/ewm-hero.png" alt="Environment engineering connects agents, environments, co-evolution, and real-world alignment">
+      </div>
+      <div>
+        <h3>相关论文整理</h3>
+        <ol class="project-paper-list">
+          <li><a href="https://arxiv.org/abs/2603.00585" target="_blank" rel="noopener">MicroVerse: A Preliminary Exploration Toward a Micro-World Simulation</a>：把 world model 扩展到器官、细胞和亚细胞过程，强调隐藏机制、状态演化和科学约束。</li>
+          <li><a href="https://arxiv.org/abs/2502.01506" target="_blank" rel="noopener">TwinMarket: A Scalable Behavioral and Social Simulation for Financial Markets</a>：用 LLM 投资者构造金融市场环境，从个体信念和信息流生成宏观行为。</li>
+          <li><a href="/assets/pdf/economic-world-models.pdf" target="_blank" rel="noopener">From Economic Agents to Agentic Economies</a>：把智能体、环境、共演化和真实世界对齐组织成经济世界模型的系统蓝图。</li>
+          <li><a href="https://arxiv.org/abs/2308.11534" target="_blank" rel="noopener">Large Language Model as a User Simulator</a>：用 LLM 构造可控用户环境，为多轮对话训练和评测提供可重复交互对象。</li>
+          <li><a href="https://arxiv.org/abs/2405.17743" target="_blank" rel="noopener">ORLM: A Customizable Framework in Training Large Models for Automated Optimization Modeling</a>：把自然语言问题转成优化模型、约束、目标函数和可执行代码。</li>
+          <li><a href="https://arxiv.org/abs/2510.04204" target="_blank" rel="noopener">CALM Before the STORM</a>：研究优化建模中的原生推理能力，把工程问题组织成可验证建模环境。</li>
+        </ol>
+      </div>
+    </div>
+    <details class="project-resources-panel">
+      <summary><span>项目 / 论文 / 代码资源</span><strong>Environment stack</strong></summary>
+      <div class="project-stack project-resource-stack">
+        <a class="project-stack-row" href="/projects/environment-engineering-world-models/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>环境工程和世界模型</strong><span>组织环境定义、智能体接口、世界动力学和评测对齐的总览页。</span></span></a>
+        <a class="project-stack-row" href="/projects/economic-world-models/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>Economic World Models</strong><span>经济世界模型架构、能力阶梯和 agentic economies。</span></span></a>
+        <a class="project-stack-row" href="/projects/twinmarket-financial-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>TwinMarket</strong><span>金融市场中的多智能体社会仿真环境。</span></span></a>
+        <a class="project-stack-row" href="/projects/microverse-world-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>MicroVerse</strong><span>面向生物和科学机制的微世界模拟。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/Cardinal-Operations/ORLM" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>Cardinal-Operations/ORLM</strong><span>自动化优化建模训练框架和 benchmark。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/tangzhy/STORM" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>tangzhy/STORM</strong><span>CALM/STORM 优化建模推理资源。</span></span></a>
+      </div>
+    </details>
+  </section>
+
+  <section class="project-program-section project-theme-economics" id="economic-world-models" data-project-tags="Economic World Models;Environment Engineering & World Models;LLM Agents and Applications;LLM Reasoning & Agentic RL" data-project-url="/projects/economic-world-models/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Economic world models and agentic economies</div>
       <h2>经济世界模型</h2>
