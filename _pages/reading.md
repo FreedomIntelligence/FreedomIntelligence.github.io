@@ -5,17 +5,17 @@ title: Projects
 title_zh: 项目
 description:
 project_tags:
+  - LLM Reasoning & Agentic RL
+  - LLM Agents and Applications
+  - Human-Agent Interaction
+  - Environment Engineering & World Models
+  - Economic World Models
   - AI for Healthcare
   - Multi-modal LLMs
   - Multilingual LLMs
   - Speech LLMs
-  - Human-Agent Interaction
-  - LLM Agents and Applications
   - LLM efficiency and AI Infra
-  - LLM Reasoning & Agentic RL
   - LLM Interpretability
-  - Environment Engineering & World Models
-  - Economic World Models
 nav: true
 nav_order: 2
 ---
@@ -31,6 +31,242 @@ nav_order: 2
   </div>
 
   <p class="project-empty" hidden>No projects found for this tag.</p>
+
+  <section class="project-program-section project-theme-optimization" id="llm-reasoning-agentic-rl" data-project-tags="LLM Reasoning & Agentic RL;LLM efficiency and AI Infra;Multi-modal LLMs" data-project-url="/projects/llm-reasoning-agentic-rl/">
+    <div class="project-program-heading">
+      <div class="project-eyebrow">Reasoning, RL, and adaptive test-time compute</div>
+      <h2>LLM Reasoning & Agentic RL</h2>
+      <p>
+        This project organizes the lab's recent work on verifiable reasoning, policy optimization, path pruning, code-integrated thinking, and multimodal R1-style training. The through-line is simple: make LLMs reason with feedback signals that are inspectable, efficient, and useful for downstream agents.
+      </p>
+      <div class="project-actions">
+        <a class="project-action primary" href="/projects/llm-reasoning-agentic-rl/">Open LLM Reasoning & Agentic RL</a>
+        <a class="project-action" href="/projects/reasoning-math-optimization/">Open Math and Optimization</a>
+        <a class="project-action" href="https://wabyking.github.io/" target="_blank" rel="noopener">Papers from Benyou Wang</a>
+      </div>
+    </div>
+    <div class="project-program-layout">
+      <div class="project-program-media">
+        <img src="/assets/img/freedomai-2026/impact/iclr-financial-ai-award.jpg" alt="LLM reasoning and agentic reinforcement learning project signal">
+      </div>
+      <div>
+        <h3>Paper organization</h3>
+        <ol class="project-paper-list">
+          <li><a href="https://wabyking.github.io/" target="_blank" rel="noopener">OnePO: Direct One-stage Policy Optimization for SFT-free Domain Adaptation</a> - direct policy optimization without a separate SFT stage.</li>
+          <li><a href="https://arxiv.org/abs/2605.25511" target="_blank" rel="noopener">CRPO: Character-centric Group Relative Policy Optimization for Role-aware Reasoning in Role-playing Agents</a> - RL objectives for role-aware reasoning agents.</li>
+          <li><a href="https://arxiv.org/abs/2506.12860" target="_blank" rel="noopener">Question-Free Fine-Tuning</a> - efficient and adaptive reasoning fine-tuning.</li>
+          <li><a href="https://arxiv.org/abs/2604.16029" target="_blank" rel="noopener">Cut Your Losses! Learning to Prune Paths Early for Efficient Parallel Reasoning</a> - learnable path pruning for large reasoning models.</li>
+          <li><a href="https://arxiv.org/abs/2503.21776" target="_blank" rel="noopener">Video-R1: Reinforcing Video Reasoning in MLLMs</a> - R1-style reinforcement learning for multimodal video reasoning.</li>
+          <li><a href="https://arxiv.org/abs/2506.09820" target="_blank" rel="noopener">CoRT: Code-integrated Reasoning within Thinking</a> - executable computation inside the reasoning process.</li>
+        </ol>
+      </div>
+    </div>
+    <details class="project-resources-panel">
+      <summary><span>Project stack</span><strong>Reasoning papers, code, and datasets</strong></summary>
+      <div class="project-stack project-resource-stack">
+        <a class="project-stack-row" href="https://bijiaxihh.github.io/STOP/" target="_blank" rel="noopener"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>STOP / Cut Your Losses</strong><span>Early path pruning for efficient parallel reasoning.</span></span></a>
+        <a class="project-stack-row" href="https://github.com/tulerfeng/Video-R1" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>Video-R1</strong><span>Video-R1-CoT and RL training resources for video reasoning.</span></span></a>
+        <a class="project-stack-row" href="https://github.com/ChengpengLi1003/CoRT" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>CoRT</strong><span>Code-integrated reasoning resources.</span></span></a>
+        <a class="project-stack-row" href="https://github.com/1KE-JI/UPFT" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>UPFT</strong><span>Unsupervised prefix fine-tuning for efficient reasoning models.</span></span></a>
+      </div>
+    </details>
+  </section>
+
+  <section class="project-program-section project-theme-human" id="llm-agents-applications" data-project-tags="LLM Agents and Applications;Human-Agent Interaction;Economic World Models" data-project-url="/projects/llm-agents-applications/">
+    <div class="project-program-heading">
+      <div class="project-eyebrow">Agents, simulators, tools, and applied environments</div>
+      <h2>LLM Agents and Applications</h2>
+      <p>
+        This project groups papers where LLMs become agents: tool planners, user simulators, standardized patients, role-playing agents, market participants, and micro-world actors. The goal is to organize agent papers by what the agent does, what environment it acts in, and how the interaction is evaluated.
+      </p>
+      <div class="project-actions">
+        <a class="project-action primary" href="/projects/llm-agents-applications/">Open LLM Agents and Applications</a>
+        <a class="project-action" href="/projects/human-agent-interaction/">Open Human-Agent Interaction</a>
+        <a class="project-action" href="https://wabyking.github.io/" target="_blank" rel="noopener">Papers from Benyou Wang</a>
+      </div>
+    </div>
+    <div class="project-program-layout">
+      <div class="project-program-media">
+        <img src="/assets/img/media-roundup-2026/twinmarket-bdi.png" alt="LLM agents and applications project map">
+      </div>
+      <div>
+        <h3>Paper organization</h3>
+        <ol class="project-paper-list">
+          <li><a href="https://aclanthology.org/2025.naacl-long.169/" target="_blank" rel="noopener">Smurfs: Multi-Agent System using Context-Efficient DFSDT for Tool Planning</a> - multi-agent tool planning with context-efficient search.</li>
+          <li><a href="https://arxiv.org/abs/2308.11534" target="_blank" rel="noopener">Large Language Model as a User Simulator</a> - LLM users for dialogue training and evaluation.</li>
+          <li><a href="https://openreview.net/forum?id=9nddtu94uX" target="_blank" rel="noopener">PlatoLM: Teaching LLMs via a Socratic Questioning User Simulator</a> - Socratic interaction as a training signal.</li>
+          <li><a href="https://arxiv.org/abs/2511.14783" target="_blank" rel="noopener">Human or LLM as Standardized Patients?</a> - AI patients for medical education and evaluation.</li>
+          <li><a href="https://arxiv.org/abs/2502.01506" target="_blank" rel="noopener">TwinMarket: A Scalable Behavioral and Social Simulation for Financial Markets</a> - LLM investor agents in market simulation.</li>
+          <li><a href="https://arxiv.org/abs/2603.00585" target="_blank" rel="noopener">MicroVerse</a> - agentic micro-world simulation for scientific processes.</li>
+        </ol>
+      </div>
+    </div>
+    <details class="project-resources-panel">
+      <summary><span>Project stack</span><strong>Agent applications and environments</strong></summary>
+      <div class="project-stack project-resource-stack">
+        <a class="project-stack-row" href="https://arxiv.org/abs/2405.05955" target="_blank" rel="noopener"><span class="project-stack-type">Paper</span><span class="project-stack-main"><strong>Smurfs</strong><span>Multi-agent tool planning through context-efficient DFSDT.</span></span></a>
+        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/EasyMED" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>EasyMED</strong><span>AI standardized patient framework and evaluation resources.</span></span></a>
+        <a class="project-stack-row" href="/projects/twinmarket-financial-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>TwinMarket</strong><span>Financial market simulation with LLM agents.</span></span></a>
+        <a class="project-stack-row" href="/projects/microverse-world-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>MicroVerse</strong><span>Micro-world simulation with hidden mechanisms and evolving states.</span></span></a>
+      </div>
+    </details>
+  </section>
+
+  <section class="project-program-section project-theme-human" id="human-agent-interaction" data-project-tags="Human-Agent Interaction;LLM Agents and Applications;Speech LLMs" data-project-url="/projects/human-agent-interaction/">
+    <div class="project-program-heading">
+      <div class="project-eyebrow">Human-agent interaction and simulation</div>
+      <h2>Human-Agent Interaction</h2>
+      <p>
+        这条线关注智能体如何和真实用户、学习者、患者、市场参与者以及模拟世界互动。它覆盖 LLM user simulator、AI standardized patients、speech-to-speech human-likeness evaluation、MicroVerse 交互式科学仿真，以及 TwinMarket 这类多智能体社会/金融模拟。
+      </p>
+      <div class="project-actions">
+        <a class="project-action primary" href="/projects/human-agent-interaction/">Open Human-Agent Interaction</a>
+        <a class="project-action" href="/projects/economic-world-models/">Open Economic World Models</a>
+        <a class="project-action" href="/projects/microverse-world-simulation/">Open MicroVerse</a>
+      </div>
+    </div>
+    <div class="project-program-layout">
+      <div class="project-program-media">
+        <img src="/assets/img/media-roundup-2026/twinmarket-bdi.png" alt="Human-agent and multi-agent simulation">
+      </div>
+      <div>
+        <h3>相关论文整理</h3>
+        <ol class="project-paper-list">
+          <li><a href="https://arxiv.org/abs/2308.11534" target="_blank" rel="noopener">Large Language Model as a User Simulator</a>：用 LLM 模拟用户，生成对话训练和评测数据。</li>
+          <li><a href="https://openreview.net/forum?id=9nddtu94uX" target="_blank" rel="noopener">PlatoLM: Teaching LLMs via a Socratic Questioning User Simulator</a>：通过苏格拉底式用户模拟训练多轮对话。</li>
+          <li><a href="https://arxiv.org/abs/2511.14783" target="_blank" rel="noopener">Human or LLM as Standardized Patients?</a>：医学教育中的 AI 标准化病人。</li>
+          <li><a href="https://arxiv.org/abs/2602.24080" target="_blank" rel="noopener">Human or Machine? A Preliminary Turing Test for Speech-to-Speech Interaction</a>：语音交互中的人类感评测。</li>
+          <li><a href="https://arxiv.org/abs/2603.00585" target="_blank" rel="noopener">MicroVerse: A Preliminary Exploration Toward a Micro-World Simulation</a>：面向生物过程和教育可视化的微观世界仿真。</li>
+          <li><a href="https://arxiv.org/abs/2502.01506" target="_blank" rel="noopener">TwinMarket</a>：金融市场中的行为与社会多智能体仿真。</li>
+        </ol>
+      </div>
+    </div>
+    <details class="project-resources-panel">
+      <summary><span>项目入口</span><strong>Simulation and interaction resources</strong></summary>
+      <div class="project-stack project-resource-stack">
+        <a class="project-stack-row" href="/projects/twinmarket-financial-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>TwinMarket</strong><span>金融市场行为和社会仿真。</span></span></a>
+        <a class="project-stack-row" href="/projects/microverse-world-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>MicroVerse</strong><span>面向生物机制的 micro-world simulation。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/EasyMED" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>EasyMED</strong><span>AI 标准化病人训练与评测。</span></span></a>
+      </div>
+    </details>
+  </section>
+
+  <section class="project-program-section project-theme-environment" id="environment-engineering-world-models" data-project-tags="Environment Engineering & World Models;Economic World Models;Human-Agent Interaction;LLM Agents and Applications;LLM Reasoning & Agentic RL" data-project-url="/projects/environment-engineering-world-models/">
+    <div class="project-program-heading">
+      <div class="project-eyebrow">Environment engineering and world models</div>
+      <h2>环境工程和世界模型</h2>
+      <p>
+        这条线把“模型能力”放进可运行环境中：定义状态、行动、工具、用户、规则、世界动力学和评测对齐，让智能体能在用户模拟、金融市场、科学微世界和可执行优化环境中训练、评测和迭代。
+      </p>
+      <div class="project-actions">
+        <a class="project-action primary" href="/projects/environment-engineering-world-models/">Open Environment Engineering</a>
+        <a class="project-action" href="https://wabyking.github.io/" target="_blank" rel="noopener">Benyou Wang Papers</a>
+      </div>
+    </div>
+    <div class="project-program-layout">
+      <div class="project-program-media">
+        <img src="/assets/img/economic-world-models/ewm-hero.png" alt="Environment engineering connects agents, environments, co-evolution, and real-world alignment">
+      </div>
+      <div>
+        <h3>相关论文整理</h3>
+        <ol class="project-paper-list">
+          <li><a href="https://arxiv.org/abs/2603.00585" target="_blank" rel="noopener">MicroVerse: A Preliminary Exploration Toward a Micro-World Simulation</a>：把 world model 扩展到器官、细胞和亚细胞过程，强调隐藏机制、状态演化和科学约束。</li>
+          <li><a href="https://arxiv.org/abs/2502.01506" target="_blank" rel="noopener">TwinMarket: A Scalable Behavioral and Social Simulation for Financial Markets</a>：用 LLM 投资者构造金融市场环境，从个体信念和信息流生成宏观行为。</li>
+          <li><a href="/assets/pdf/economic-world-models.pdf" target="_blank" rel="noopener">From Economic Agents to Agentic Economies</a>：把智能体、环境、共演化和真实世界对齐组织成经济世界模型的系统蓝图。</li>
+          <li><a href="https://arxiv.org/abs/2308.11534" target="_blank" rel="noopener">Large Language Model as a User Simulator</a>：用 LLM 构造可控用户环境，为多轮对话训练和评测提供可重复交互对象。</li>
+          <li><a href="https://arxiv.org/abs/2405.17743" target="_blank" rel="noopener">ORLM: A Customizable Framework in Training Large Models for Automated Optimization Modeling</a>：把自然语言问题转成优化模型、约束、目标函数和可执行代码。</li>
+          <li><a href="https://arxiv.org/abs/2510.04204" target="_blank" rel="noopener">CALM Before the STORM</a>：研究优化建模中的原生推理能力，把工程问题组织成可验证建模环境。</li>
+        </ol>
+      </div>
+    </div>
+    <details class="project-resources-panel">
+      <summary><span>项目 / 论文 / 代码资源</span><strong>Environment stack</strong></summary>
+      <div class="project-stack project-resource-stack">
+        <a class="project-stack-row" href="/projects/environment-engineering-world-models/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>环境工程和世界模型</strong><span>组织环境定义、智能体接口、世界动力学和评测对齐的总览页。</span></span></a>
+        <a class="project-stack-row" href="/projects/economic-world-models/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>Economic World Models</strong><span>经济世界模型架构、能力阶梯和 agentic economies。</span></span></a>
+        <a class="project-stack-row" href="/projects/twinmarket-financial-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>TwinMarket</strong><span>金融市场中的多智能体社会仿真环境。</span></span></a>
+        <a class="project-stack-row" href="/projects/microverse-world-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>MicroVerse</strong><span>面向生物和科学机制的微世界模拟。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/Cardinal-Operations/ORLM" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>Cardinal-Operations/ORLM</strong><span>自动化优化建模训练框架和 benchmark。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/tangzhy/STORM" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>tangzhy/STORM</strong><span>CALM/STORM 优化建模推理资源。</span></span></a>
+      </div>
+    </details>
+  </section>
+
+  <section class="project-program-section project-theme-economics" id="economic-world-models" data-project-tags="Economic World Models;Environment Engineering & World Models;LLM Agents and Applications;LLM Reasoning & Agentic RL" data-project-url="/projects/economic-world-models/">
+    <div class="project-program-heading">
+      <div class="project-eyebrow">Economic world models and agentic economies</div>
+      <h2>经济世界模型</h2>
+      <p>
+        经济世界模型把市场、机构、政策和多智能体行为建成可计算、可演化、可对齐的世界。它连接 Economic World Models 的系统蓝图、TwinMarket 的金融市场沙盒、MicroVerse 的科学微世界模拟，以及 Awesome Econ World Models 的文献与资源地图。
+      </p>
+      <div class="project-actions">
+        <a class="project-action primary" href="/projects/economic-world-models/">Open Economic World Models</a>
+        <a class="project-action" href="https://github.com/FreedomIntelligence/Awesome-Econ-World-Models/" target="_blank" rel="noopener">Awesome EconWM</a>
+      </div>
+    </div>
+    <div class="project-program-layout">
+      <div class="project-program-media">
+        <img src="/assets/img/economic-world-models/ewm-hero.png" alt="Economic World Models compare physical-world transitions with agent-generated economic-world transitions">
+      </div>
+      <div>
+        <h3>相关论文整理</h3>
+        <ol class="project-paper-list">
+          <li><a href="/assets/pdf/economic-world-models.pdf" target="_blank" rel="noopener">From Economic Agents to Agentic Economies</a>：提出经济世界模型的系统蓝图，用可计算经济体支持智能体训练、政策沙盒、规划和安全分析。</li>
+          <li><a href="https://arxiv.org/abs/2502.01506" target="_blank" rel="noopener">TwinMarket: A Scalable Behavioral and Social Simulation for Financial Markets</a>：用 LLM 投资者模拟金融市场中的信念、意图、信息流和交易行为。</li>
+          <li><a href="https://github.com/FreedomIntelligence/MicroVerse" target="_blank" rel="noopener">MicroVerse: A Preliminary Exploration Toward a Micro-World Simulation</a>：把 world model 思路扩展到生物与科学微世界，强调隐藏机制和状态演化。</li>
+          <li><a href="https://github.com/FreedomIntelligence/Awesome-Econ-World-Models/" target="_blank" rel="noopener">Awesome Econ World Models</a>：持续整理经济智能体、agentic economies、制度演化、sim-to-real alignment 等方向的论文和资源。</li>
+        </ol>
+      </div>
+    </div>
+    <details class="project-resources-panel">
+      <summary><span>GitHub / Project 资源</span><strong>Paper, repositories, project pages</strong></summary>
+      <div class="project-stack project-resource-stack">
+      <a class="project-stack-row" href="/projects/economic-world-models/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>Economic World Models</strong><span>总览经济世界模型架构、能力阶梯、代表团队和系统路线图。</span></span></a>
+      <a class="project-stack-row" href="/assets/pdf/economic-world-models.pdf" target="_blank" rel="noopener"><span class="project-stack-type">Paper</span><span class="project-stack-main"><strong>From Economic Agents to Agentic Economies</strong><span>经济世界模型论文 PDF。</span></span></a>
+      <a class="project-stack-row" href="https://github.com/FreedomIntelligence/Awesome-Econ-World-Models/" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/Awesome-Econ-World-Models</strong><span>经济世界模型论文、系统和资源集合。</span></span></a>
+      <a class="project-stack-row" href="/projects/twinmarket-financial-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>TwinMarket Financial AI Simulation</strong><span>经济世界模型中的金融市场原型沙盒。</span></span></a>
+      <a class="project-stack-row" href="https://github.com/FreedomIntelligence/TwinMarket" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/TwinMarket</strong><span>金融行为与社会模拟代码资源。</span></span></a>
+      <a class="project-stack-row" href="/projects/microverse-world-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>MicroVerse Micro-World Simulation</strong><span>把世界模型扩展到科学微世界与生物过程。</span></span></a>
+      <a class="project-stack-row" href="https://github.com/FreedomIntelligence/MicroVerse" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/MicroVerse</strong><span>MicroVerse 项目资源。</span></span></a>
+      </div>
+    </details>
+  </section>
+
+  <section class="project-program-section project-theme-optimization" id="optimization-llms" data-project-tags="LLM Reasoning & Agentic RL;LLM efficiency and AI Infra" data-project-url="/projects/reasoning-math-optimization/">
+    <div class="project-program-heading">
+      <div class="project-eyebrow">Optimization modeling LLMs</div>
+      <h2>运筹优化大模型系列</h2>
+      <p>
+        运筹优化主线把自然语言问题转成数学优化模型、约束、目标函数和可执行代码。ORLM 提供开放模型与 IndustryOR benchmark，CALM/STORM 进一步研究优化建模中的原生推理能力。
+      </p>
+      <div class="project-actions">
+        <a class="project-action primary" href="/projects/reasoning-math-optimization/">Open Reasoning and Optimization</a>
+      </div>
+    </div>
+    <div class="project-program-layout">
+      <div class="project-program-media">
+        <img src="/assets/img/freedomai-2026/impact/iclr-financial-ai-award.jpg" alt="Reasoning and optimization project signal">
+      </div>
+      <div>
+        <h3>相关论文整理</h3>
+        <ol class="project-paper-list">
+          <li><a href="https://arxiv.org/abs/2405.17743" target="_blank" rel="noopener">ORLM: A Customizable Framework in Training Large Models for Automated Optimization Modeling</a>：OR-Instruct、ORLM 和 IndustryOR。</li>
+          <li><a href="https://arxiv.org/abs/2510.04204" target="_blank" rel="noopener">CALM Before the STORM: Unlocking Native Reasoning for Optimization Modeling</a>：优化建模中的原生推理。</li>
+          <li><a href="https://arxiv.org/abs/2403.02884" target="_blank" rel="noopener">MathScale: Scaling Instruction Tuning for Mathematical Reasoning</a>：数学推理 scaling 与 verifier 相关基础。</li>
+          <li><a href="https://arxiv.org/abs/2506.09820" target="_blank" rel="noopener">CoRT: Code-integrated Reasoning within Thinking</a>：将代码执行接入思维链，也服务于形式化建模和计算。</li>
+        </ol>
+      </div>
+    </div>
+    <details class="project-resources-panel">
+      <summary><span>GitHub / Hugging Face 资源</span><strong>Code, models, datasets</strong></summary>
+      <div class="project-stack project-resource-stack">
+        <a class="project-stack-row" href="https://github.com/Cardinal-Operations/ORLM" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>Cardinal-Operations/ORLM</strong><span>自动化优化建模训练框架、数据合成和 benchmark 入口。</span></span></a>
+        <a class="project-stack-row" href="https://huggingface.co/datasets/CardinalOperations/IndustryOR" target="_blank" rel="noopener"><span class="project-stack-type">HF Dataset</span><span class="project-stack-main"><strong>CardinalOperations/IndustryOR</strong><span>100 个真实工业运筹问题 benchmark。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/tangzhy/STORM" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>tangzhy/STORM</strong><span>CALM/STORM 优化建模推理资源。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/ChengpengLi1003/CoRT" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>ChengpengLi1003/CoRT</strong><span>代码集成推理资源。</span></span></a>
+      </div>
+    </details>
+  </section>
 
   <section class="project-program-section project-theme-medical" id="huatuogpt" data-project-tags="AI for Healthcare;Multi-modal LLMs" data-project-url="/projects/medical-ai-ecosystem/">
     <div class="project-program-heading">
@@ -222,125 +458,6 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-optimization" id="llm-reasoning-agentic-rl" data-project-tags="LLM Reasoning & Agentic RL;LLM efficiency and AI Infra;Multi-modal LLMs" data-project-url="/projects/llm-reasoning-agentic-rl/">
-    <div class="project-program-heading">
-      <div class="project-eyebrow">Reasoning, RL, and adaptive test-time compute</div>
-      <h2>LLM Reasoning & Agentic RL</h2>
-      <p>
-        This project organizes the lab's recent work on verifiable reasoning, policy optimization, path pruning, code-integrated thinking, and multimodal R1-style training. The through-line is simple: make LLMs reason with feedback signals that are inspectable, efficient, and useful for downstream agents.
-      </p>
-      <div class="project-actions">
-        <a class="project-action primary" href="/projects/llm-reasoning-agentic-rl/">Open LLM Reasoning & Agentic RL</a>
-        <a class="project-action" href="/projects/reasoning-math-optimization/">Open Math and Optimization</a>
-        <a class="project-action" href="https://wabyking.github.io/" target="_blank" rel="noopener">Papers from Benyou Wang</a>
-      </div>
-    </div>
-    <div class="project-program-layout">
-      <div class="project-program-media">
-        <img src="/assets/img/freedomai-2026/impact/iclr-financial-ai-award.jpg" alt="LLM reasoning and agentic reinforcement learning project signal">
-      </div>
-      <div>
-        <h3>Paper organization</h3>
-        <ol class="project-paper-list">
-          <li><a href="https://wabyking.github.io/" target="_blank" rel="noopener">OnePO: Direct One-stage Policy Optimization for SFT-free Domain Adaptation</a> - direct policy optimization without a separate SFT stage.</li>
-          <li><a href="https://arxiv.org/abs/2605.25511" target="_blank" rel="noopener">CRPO: Character-centric Group Relative Policy Optimization for Role-aware Reasoning in Role-playing Agents</a> - RL objectives for role-aware reasoning agents.</li>
-          <li><a href="https://arxiv.org/abs/2506.12860" target="_blank" rel="noopener">Question-Free Fine-Tuning</a> - efficient and adaptive reasoning fine-tuning.</li>
-          <li><a href="https://arxiv.org/abs/2604.16029" target="_blank" rel="noopener">Cut Your Losses! Learning to Prune Paths Early for Efficient Parallel Reasoning</a> - learnable path pruning for large reasoning models.</li>
-          <li><a href="https://arxiv.org/abs/2503.21776" target="_blank" rel="noopener">Video-R1: Reinforcing Video Reasoning in MLLMs</a> - R1-style reinforcement learning for multimodal video reasoning.</li>
-          <li><a href="https://arxiv.org/abs/2506.09820" target="_blank" rel="noopener">CoRT: Code-integrated Reasoning within Thinking</a> - executable computation inside the reasoning process.</li>
-        </ol>
-      </div>
-    </div>
-    <details class="project-resources-panel">
-      <summary><span>Project stack</span><strong>Reasoning papers, code, and datasets</strong></summary>
-      <div class="project-stack project-resource-stack">
-        <a class="project-stack-row" href="https://bijiaxihh.github.io/STOP/" target="_blank" rel="noopener"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>STOP / Cut Your Losses</strong><span>Early path pruning for efficient parallel reasoning.</span></span></a>
-        <a class="project-stack-row" href="https://github.com/tulerfeng/Video-R1" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>Video-R1</strong><span>Video-R1-CoT and RL training resources for video reasoning.</span></span></a>
-        <a class="project-stack-row" href="https://github.com/ChengpengLi1003/CoRT" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>CoRT</strong><span>Code-integrated reasoning resources.</span></span></a>
-        <a class="project-stack-row" href="https://github.com/1KE-JI/UPFT" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>UPFT</strong><span>Unsupervised prefix fine-tuning for efficient reasoning models.</span></span></a>
-      </div>
-    </details>
-  </section>
-
-  <section class="project-program-section project-theme-human" id="llm-agents-applications" data-project-tags="LLM Agents and Applications;Human-Agent Interaction;Economic World Models" data-project-url="/projects/llm-agents-applications/">
-    <div class="project-program-heading">
-      <div class="project-eyebrow">Agents, simulators, tools, and applied environments</div>
-      <h2>LLM Agents and Applications</h2>
-      <p>
-        This project groups papers where LLMs become agents: tool planners, user simulators, standardized patients, role-playing agents, market participants, and micro-world actors. The goal is to organize agent papers by what the agent does, what environment it acts in, and how the interaction is evaluated.
-      </p>
-      <div class="project-actions">
-        <a class="project-action primary" href="/projects/llm-agents-applications/">Open LLM Agents and Applications</a>
-        <a class="project-action" href="/projects/human-agent-interaction/">Open Human-Agent Interaction</a>
-        <a class="project-action" href="https://wabyking.github.io/" target="_blank" rel="noopener">Papers from Benyou Wang</a>
-      </div>
-    </div>
-    <div class="project-program-layout">
-      <div class="project-program-media">
-        <img src="/assets/img/media-roundup-2026/twinmarket-bdi.png" alt="LLM agents and applications project map">
-      </div>
-      <div>
-        <h3>Paper organization</h3>
-        <ol class="project-paper-list">
-          <li><a href="https://aclanthology.org/2025.naacl-long.169/" target="_blank" rel="noopener">Smurfs: Multi-Agent System using Context-Efficient DFSDT for Tool Planning</a> - multi-agent tool planning with context-efficient search.</li>
-          <li><a href="https://arxiv.org/abs/2308.11534" target="_blank" rel="noopener">Large Language Model as a User Simulator</a> - LLM users for dialogue training and evaluation.</li>
-          <li><a href="https://openreview.net/forum?id=9nddtu94uX" target="_blank" rel="noopener">PlatoLM: Teaching LLMs via a Socratic Questioning User Simulator</a> - Socratic interaction as a training signal.</li>
-          <li><a href="https://arxiv.org/abs/2511.14783" target="_blank" rel="noopener">Human or LLM as Standardized Patients?</a> - AI patients for medical education and evaluation.</li>
-          <li><a href="https://arxiv.org/abs/2502.01506" target="_blank" rel="noopener">TwinMarket: A Scalable Behavioral and Social Simulation for Financial Markets</a> - LLM investor agents in market simulation.</li>
-          <li><a href="https://arxiv.org/abs/2603.00585" target="_blank" rel="noopener">MicroVerse</a> - agentic micro-world simulation for scientific processes.</li>
-        </ol>
-      </div>
-    </div>
-    <details class="project-resources-panel">
-      <summary><span>Project stack</span><strong>Agent applications and environments</strong></summary>
-      <div class="project-stack project-resource-stack">
-        <a class="project-stack-row" href="https://arxiv.org/abs/2405.05955" target="_blank" rel="noopener"><span class="project-stack-type">Paper</span><span class="project-stack-main"><strong>Smurfs</strong><span>Multi-agent tool planning through context-efficient DFSDT.</span></span></a>
-        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/EasyMED" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>EasyMED</strong><span>AI standardized patient framework and evaluation resources.</span></span></a>
-        <a class="project-stack-row" href="/projects/twinmarket-financial-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>TwinMarket</strong><span>Financial market simulation with LLM agents.</span></span></a>
-        <a class="project-stack-row" href="/projects/microverse-world-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>MicroVerse</strong><span>Micro-world simulation with hidden mechanisms and evolving states.</span></span></a>
-      </div>
-    </details>
-  </section>
-
-  <section class="project-program-section project-theme-human" id="human-agent-interaction" data-project-tags="Human-Agent Interaction;LLM Agents and Applications;Speech LLMs" data-project-url="/projects/human-agent-interaction/">
-    <div class="project-program-heading">
-      <div class="project-eyebrow">Human-agent interaction and simulation</div>
-      <h2>Human-Agent Interaction</h2>
-      <p>
-        这条线关注智能体如何和真实用户、学习者、患者、市场参与者以及模拟世界互动。它覆盖 LLM user simulator、AI standardized patients、speech-to-speech human-likeness evaluation、MicroVerse 交互式科学仿真，以及 TwinMarket 这类多智能体社会/金融模拟。
-      </p>
-      <div class="project-actions">
-        <a class="project-action primary" href="/projects/human-agent-interaction/">Open Human-Agent Interaction</a>
-        <a class="project-action" href="/projects/economic-world-models/">Open Economic World Models</a>
-        <a class="project-action" href="/projects/microverse-world-simulation/">Open MicroVerse</a>
-      </div>
-    </div>
-    <div class="project-program-layout">
-      <div class="project-program-media">
-        <img src="/assets/img/media-roundup-2026/twinmarket-bdi.png" alt="Human-agent and multi-agent simulation">
-      </div>
-      <div>
-        <h3>相关论文整理</h3>
-        <ol class="project-paper-list">
-          <li><a href="https://arxiv.org/abs/2308.11534" target="_blank" rel="noopener">Large Language Model as a User Simulator</a>：用 LLM 模拟用户，生成对话训练和评测数据。</li>
-          <li><a href="https://openreview.net/forum?id=9nddtu94uX" target="_blank" rel="noopener">PlatoLM: Teaching LLMs via a Socratic Questioning User Simulator</a>：通过苏格拉底式用户模拟训练多轮对话。</li>
-          <li><a href="https://arxiv.org/abs/2511.14783" target="_blank" rel="noopener">Human or LLM as Standardized Patients?</a>：医学教育中的 AI 标准化病人。</li>
-          <li><a href="https://arxiv.org/abs/2602.24080" target="_blank" rel="noopener">Human or Machine? A Preliminary Turing Test for Speech-to-Speech Interaction</a>：语音交互中的人类感评测。</li>
-          <li><a href="https://arxiv.org/abs/2603.00585" target="_blank" rel="noopener">MicroVerse: A Preliminary Exploration Toward a Micro-World Simulation</a>：面向生物过程和教育可视化的微观世界仿真。</li>
-          <li><a href="https://arxiv.org/abs/2502.01506" target="_blank" rel="noopener">TwinMarket</a>：金融市场中的行为与社会多智能体仿真。</li>
-        </ol>
-      </div>
-    </div>
-    <details class="project-resources-panel">
-      <summary><span>项目入口</span><strong>Simulation and interaction resources</strong></summary>
-      <div class="project-stack project-resource-stack">
-        <a class="project-stack-row" href="/projects/twinmarket-financial-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>TwinMarket</strong><span>金融市场行为和社会仿真。</span></span></a>
-        <a class="project-stack-row" href="/projects/microverse-world-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>MicroVerse</strong><span>面向生物机制的 micro-world simulation。</span></span></a>
-        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/EasyMED" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>EasyMED</strong><span>AI 标准化病人训练与评测。</span></span></a>
-      </div>
-    </details>
-  </section>
-
   <section class="project-program-section project-theme-infra" id="llm-efficiency-ai-infra" data-project-tags="LLM efficiency and AI Infra;LLM Reasoning & Agentic RL;Multi-modal LLMs" data-project-url="/projects/llm-efficiency-ai-infra/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Efficient training, inference, retrieval, and multimodal context</div>
@@ -378,42 +495,6 @@ nav_order: 2
         <a class="project-stack-row" href="https://github.com/1KE-JI/UPFT" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>1KE-JI/UPFT</strong><span>Unsupervised prefix fine-tuning resources。</span></span></a>
         <a class="project-stack-row" href="https://github.com/FreedomIntelligence/RAG-Instruct" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/RAG-Instruct</strong><span>Retrieval-augmented instruction data。</span></span></a>
         <a class="project-stack-row" href="https://github.com/FreedomIntelligence/LLMZoo" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/LLMZoo</strong><span>开放模型和训练资源集合。</span></span></a>
-      </div>
-    </details>
-  </section>
-
-  <section class="project-program-section project-theme-optimization" id="optimization-llms" data-project-tags="LLM Reasoning & Agentic RL;LLM efficiency and AI Infra" data-project-url="/projects/reasoning-math-optimization/">
-    <div class="project-program-heading">
-      <div class="project-eyebrow">Optimization modeling LLMs</div>
-      <h2>运筹优化大模型系列</h2>
-      <p>
-        运筹优化主线把自然语言问题转成数学优化模型、约束、目标函数和可执行代码。ORLM 提供开放模型与 IndustryOR benchmark，CALM/STORM 进一步研究优化建模中的原生推理能力。
-      </p>
-      <div class="project-actions">
-        <a class="project-action primary" href="/projects/reasoning-math-optimization/">Open Reasoning and Optimization</a>
-      </div>
-    </div>
-    <div class="project-program-layout">
-      <div class="project-program-media">
-        <img src="/assets/img/freedomai-2026/impact/iclr-financial-ai-award.jpg" alt="Reasoning and optimization project signal">
-      </div>
-      <div>
-        <h3>相关论文整理</h3>
-        <ol class="project-paper-list">
-          <li><a href="https://arxiv.org/abs/2405.17743" target="_blank" rel="noopener">ORLM: A Customizable Framework in Training Large Models for Automated Optimization Modeling</a>：OR-Instruct、ORLM 和 IndustryOR。</li>
-          <li><a href="https://arxiv.org/abs/2510.04204" target="_blank" rel="noopener">CALM Before the STORM: Unlocking Native Reasoning for Optimization Modeling</a>：优化建模中的原生推理。</li>
-          <li><a href="https://arxiv.org/abs/2403.02884" target="_blank" rel="noopener">MathScale: Scaling Instruction Tuning for Mathematical Reasoning</a>：数学推理 scaling 与 verifier 相关基础。</li>
-          <li><a href="https://arxiv.org/abs/2506.09820" target="_blank" rel="noopener">CoRT: Code-integrated Reasoning within Thinking</a>：将代码执行接入思维链，也服务于形式化建模和计算。</li>
-        </ol>
-      </div>
-    </div>
-    <details class="project-resources-panel">
-      <summary><span>GitHub / Hugging Face 资源</span><strong>Code, models, datasets</strong></summary>
-      <div class="project-stack project-resource-stack">
-        <a class="project-stack-row" href="https://github.com/Cardinal-Operations/ORLM" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>Cardinal-Operations/ORLM</strong><span>自动化优化建模训练框架、数据合成和 benchmark 入口。</span></span></a>
-        <a class="project-stack-row" href="https://huggingface.co/datasets/CardinalOperations/IndustryOR" target="_blank" rel="noopener"><span class="project-stack-type">HF Dataset</span><span class="project-stack-main"><strong>CardinalOperations/IndustryOR</strong><span>100 个真实工业运筹问题 benchmark。</span></span></a>
-        <a class="project-stack-row" href="https://github.com/tangzhy/STORM" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>tangzhy/STORM</strong><span>CALM/STORM 优化建模推理资源。</span></span></a>
-        <a class="project-stack-row" href="https://github.com/ChengpengLi1003/CoRT" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>ChengpengLi1003/CoRT</strong><span>代码集成推理资源。</span></span></a>
       </div>
     </details>
   </section>
@@ -459,87 +540,6 @@ nav_order: 2
         <a class="project-stack-row" href="https://github.com/FreedomIntelligence/OVM" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/OVM</strong><span>Outcome-supervised verifier 相关代码。</span></span></a>
         <a class="project-stack-row" href="https://github.com/ChengpengLi1003/CoRT" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>ChengpengLi1003/CoRT</strong><span>代码集成推理项目。</span></span></a>
         <a class="project-stack-row" href="https://github.com/tulerfeng/Video-R1" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>tulerfeng/Video-R1</strong><span>视频推理强化学习代码。</span></span></a>
-      </div>
-    </details>
-  </section>
-
-  <section class="project-program-section project-theme-environment" id="environment-engineering-world-models" data-project-tags="Environment Engineering & World Models;Economic World Models;Human-Agent Interaction;LLM Agents and Applications;LLM Reasoning & Agentic RL" data-project-url="/projects/environment-engineering-world-models/">
-    <div class="project-program-heading">
-      <div class="project-eyebrow">Environment engineering and world models</div>
-      <h2>环境工程和世界模型</h2>
-      <p>
-        这条线把“模型能力”放进可运行环境中：定义状态、行动、工具、用户、规则、世界动力学和评测对齐，让智能体能在用户模拟、金融市场、科学微世界和可执行优化环境中训练、评测和迭代。
-      </p>
-      <div class="project-actions">
-        <a class="project-action primary" href="/projects/environment-engineering-world-models/">Open Environment Engineering</a>
-        <a class="project-action" href="https://wabyking.github.io/" target="_blank" rel="noopener">Benyou Wang Papers</a>
-      </div>
-    </div>
-    <div class="project-program-layout">
-      <div class="project-program-media">
-        <img src="/assets/img/economic-world-models/ewm-hero.png" alt="Environment engineering connects agents, environments, co-evolution, and real-world alignment">
-      </div>
-      <div>
-        <h3>相关论文整理</h3>
-        <ol class="project-paper-list">
-          <li><a href="https://arxiv.org/abs/2603.00585" target="_blank" rel="noopener">MicroVerse: A Preliminary Exploration Toward a Micro-World Simulation</a>：把 world model 扩展到器官、细胞和亚细胞过程，强调隐藏机制、状态演化和科学约束。</li>
-          <li><a href="https://arxiv.org/abs/2502.01506" target="_blank" rel="noopener">TwinMarket: A Scalable Behavioral and Social Simulation for Financial Markets</a>：用 LLM 投资者构造金融市场环境，从个体信念和信息流生成宏观行为。</li>
-          <li><a href="/assets/pdf/economic-world-models.pdf" target="_blank" rel="noopener">From Economic Agents to Agentic Economies</a>：把智能体、环境、共演化和真实世界对齐组织成经济世界模型的系统蓝图。</li>
-          <li><a href="https://arxiv.org/abs/2308.11534" target="_blank" rel="noopener">Large Language Model as a User Simulator</a>：用 LLM 构造可控用户环境，为多轮对话训练和评测提供可重复交互对象。</li>
-          <li><a href="https://arxiv.org/abs/2405.17743" target="_blank" rel="noopener">ORLM: A Customizable Framework in Training Large Models for Automated Optimization Modeling</a>：把自然语言问题转成优化模型、约束、目标函数和可执行代码。</li>
-          <li><a href="https://arxiv.org/abs/2510.04204" target="_blank" rel="noopener">CALM Before the STORM</a>：研究优化建模中的原生推理能力，把工程问题组织成可验证建模环境。</li>
-        </ol>
-      </div>
-    </div>
-    <details class="project-resources-panel">
-      <summary><span>项目 / 论文 / 代码资源</span><strong>Environment stack</strong></summary>
-      <div class="project-stack project-resource-stack">
-        <a class="project-stack-row" href="/projects/environment-engineering-world-models/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>环境工程和世界模型</strong><span>组织环境定义、智能体接口、世界动力学和评测对齐的总览页。</span></span></a>
-        <a class="project-stack-row" href="/projects/economic-world-models/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>Economic World Models</strong><span>经济世界模型架构、能力阶梯和 agentic economies。</span></span></a>
-        <a class="project-stack-row" href="/projects/twinmarket-financial-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>TwinMarket</strong><span>金融市场中的多智能体社会仿真环境。</span></span></a>
-        <a class="project-stack-row" href="/projects/microverse-world-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>MicroVerse</strong><span>面向生物和科学机制的微世界模拟。</span></span></a>
-        <a class="project-stack-row" href="https://github.com/Cardinal-Operations/ORLM" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>Cardinal-Operations/ORLM</strong><span>自动化优化建模训练框架和 benchmark。</span></span></a>
-        <a class="project-stack-row" href="https://github.com/tangzhy/STORM" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>tangzhy/STORM</strong><span>CALM/STORM 优化建模推理资源。</span></span></a>
-      </div>
-    </details>
-  </section>
-
-  <section class="project-program-section project-theme-economics" id="economic-world-models" data-project-tags="Economic World Models;Environment Engineering & World Models;LLM Agents and Applications;LLM Reasoning & Agentic RL" data-project-url="/projects/economic-world-models/">
-    <div class="project-program-heading">
-      <div class="project-eyebrow">Economic world models and agentic economies</div>
-      <h2>经济世界模型</h2>
-      <p>
-        经济世界模型把市场、机构、政策和多智能体行为建成可计算、可演化、可对齐的世界。它连接 Economic World Models 的系统蓝图、TwinMarket 的金融市场沙盒、MicroVerse 的科学微世界模拟，以及 Awesome Econ World Models 的文献与资源地图。
-      </p>
-      <div class="project-actions">
-        <a class="project-action primary" href="/projects/economic-world-models/">Open Economic World Models</a>
-        <a class="project-action" href="https://github.com/FreedomIntelligence/Awesome-Econ-World-Models/" target="_blank" rel="noopener">Awesome EconWM</a>
-      </div>
-    </div>
-    <div class="project-program-layout">
-      <div class="project-program-media">
-        <img src="/assets/img/economic-world-models/ewm-hero.png" alt="Economic World Models compare physical-world transitions with agent-generated economic-world transitions">
-      </div>
-      <div>
-        <h3>相关论文整理</h3>
-        <ol class="project-paper-list">
-          <li><a href="/assets/pdf/economic-world-models.pdf" target="_blank" rel="noopener">From Economic Agents to Agentic Economies</a>：提出经济世界模型的系统蓝图，用可计算经济体支持智能体训练、政策沙盒、规划和安全分析。</li>
-          <li><a href="https://arxiv.org/abs/2502.01506" target="_blank" rel="noopener">TwinMarket: A Scalable Behavioral and Social Simulation for Financial Markets</a>：用 LLM 投资者模拟金融市场中的信念、意图、信息流和交易行为。</li>
-          <li><a href="https://github.com/FreedomIntelligence/MicroVerse" target="_blank" rel="noopener">MicroVerse: A Preliminary Exploration Toward a Micro-World Simulation</a>：把 world model 思路扩展到生物与科学微世界，强调隐藏机制和状态演化。</li>
-          <li><a href="https://github.com/FreedomIntelligence/Awesome-Econ-World-Models/" target="_blank" rel="noopener">Awesome Econ World Models</a>：持续整理经济智能体、agentic economies、制度演化、sim-to-real alignment 等方向的论文和资源。</li>
-        </ol>
-      </div>
-    </div>
-    <details class="project-resources-panel">
-      <summary><span>GitHub / Project 资源</span><strong>Paper, repositories, project pages</strong></summary>
-      <div class="project-stack project-resource-stack">
-      <a class="project-stack-row" href="/projects/economic-world-models/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>Economic World Models</strong><span>总览经济世界模型架构、能力阶梯、代表团队和系统路线图。</span></span></a>
-      <a class="project-stack-row" href="/assets/pdf/economic-world-models.pdf" target="_blank" rel="noopener"><span class="project-stack-type">Paper</span><span class="project-stack-main"><strong>From Economic Agents to Agentic Economies</strong><span>经济世界模型论文 PDF。</span></span></a>
-      <a class="project-stack-row" href="https://github.com/FreedomIntelligence/Awesome-Econ-World-Models/" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/Awesome-Econ-World-Models</strong><span>经济世界模型论文、系统和资源集合。</span></span></a>
-      <a class="project-stack-row" href="/projects/twinmarket-financial-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>TwinMarket Financial AI Simulation</strong><span>经济世界模型中的金融市场原型沙盒。</span></span></a>
-      <a class="project-stack-row" href="https://github.com/FreedomIntelligence/TwinMarket" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/TwinMarket</strong><span>金融行为与社会模拟代码资源。</span></span></a>
-      <a class="project-stack-row" href="/projects/microverse-world-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>MicroVerse Micro-World Simulation</strong><span>把世界模型扩展到科学微世界与生物过程。</span></span></a>
-      <a class="project-stack-row" href="https://github.com/FreedomIntelligence/MicroVerse" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/MicroVerse</strong><span>MicroVerse 项目资源。</span></span></a>
       </div>
     </details>
   </section>
