@@ -159,20 +159,25 @@ nav_order: 6
     </div>
   </section>
 
-  <section class="startup-item">
-    <div class="startup-head">
-      <img class="startup-logo" src="/assets/img/freedomai-2026/startups/heryin.png" alt="Heryin logo">
-      <div>
-        <h3 class="startup-name">和瑛元筑</h3>
-        <div class="startup-founder">Founder: Zhiqi Gao</div>
+<section class="startup-item">
+  <div class="startup-head">
+    <img class="startup-logo" src="/assets/img/freedomai-2026/startups/heryin.png" alt="Heryin logo">
+    <div>
+      <h3 class="startup-name">和瑛元筑</h3>
+      <div class="startup-founder">
+        Founder: 
+        <a href="https://www.linkedin.com/in/zhiqi-gao-b06a2a253/" target="_blank" rel="noopener noreferrer">
+          Zhiqi Gao
+        </a>
       </div>
     </div>
-    <p class="startup-desc">和瑛元筑面向城市空间智能、文化遗产数字化、三维重建与数字孪生，展示了多个空间数字化项目案例。</p>
-    <div class="startup-links">
-      <a href="https://heryin.net/">Website</a>
-      <a href="https://heryin.net/project">Projects</a>
-    </div>
-  </section>
+  </div>
+  <p class="startup-desc">和瑛元筑面向城市空间智能、文化遗产数字化、三维重建与数字孪生，展示了多个空间数字化项目案例。</p>
+  <div class="startup-links">
+    <a href="https://heryin.net/">Website</a>
+    <a href="https://heryin.net/project">Projects</a>
+  </div>
+</section>
 
   <section class="startup-item">
     <div class="startup-head">
