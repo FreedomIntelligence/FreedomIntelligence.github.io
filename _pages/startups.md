@@ -179,6 +179,7 @@ nav_order: 6
   </div>
 </section>
 
+
   <section class="startup-item">
     <div class="startup-head">
       <img class="startup-logo" src="/assets/img/freedomai-2026/startups/citeanything.png" alt="CiteAnything logo">
