@@ -24,13 +24,29 @@ nav_order: 2
 
 <div class="project-hub project-focused">
   <div class="project-filter project-filter-toolbar" aria-label="Project filters">
-    <button type="button" class="is-active" data-project-filter="all">All</button>
+    <button type="button" class="is-active" data-project-filter="all"><span data-lang="en">All</span><span data-lang="zh">全部</span></button>
     {% for tag in page.project_tags %}
-      <button type="button" data-project-filter="{{ tag | escape }}">{{ tag }}</button>
+      {% capture tag_zh %}
+        {%- case tag -%}
+        {%- when "LLM Reasoning & Agentic RL" -%}大模型推理与 Agentic RL
+        {%- when "LLM Agents and Applications" -%}大模型智能体与应用
+        {%- when "Human-Agent Interaction" -%}人机智能体交互
+        {%- when "Multi-modal LLMs" -%}多模态大模型
+        {%- when "Environment Engineering & World Models" -%}环境工程与世界模型
+        {%- when "Economic World Models" -%}经济世界模型
+        {%- when "AI for Healthcare" -%}AI 医疗健康
+        {%- when "Multilingual LLMs" -%}多语言大模型
+        {%- when "Speech LLMs" -%}语音大模型
+        {%- when "LLM efficiency and AI Infra" -%}大模型效率与基础设施
+        {%- when "LLM Interpretability" -%}大模型可解释性
+        {%- else -%}{{ tag }}
+        {%- endcase -%}
+      {% endcapture %}
+      <button type="button" data-project-filter="{{ tag | escape }}"><span data-lang="en">{{ tag }}</span><span data-lang="zh">{{ tag_zh | strip }}</span></button>
     {% endfor %}
   </div>
 
-  <p class="project-empty" hidden>No projects found for this tag.</p>
+  <p class="project-empty" hidden><span data-lang="en">No projects found for this tag.</span><span data-lang="zh">该标签下暂无项目。</span></p>
 
   <section class="project-program-section project-theme-optimization" id="llm-reasoning-agentic-rl" data-project-tags="LLM Reasoning & Agentic RL;LLM efficiency and AI Infra;Multi-modal LLMs" data-project-url="/projects/llm-reasoning-agentic-rl/">
     <div class="project-program-heading">

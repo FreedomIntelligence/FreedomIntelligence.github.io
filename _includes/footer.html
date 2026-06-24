@@ -125,6 +125,9 @@
     {%- if site.last_updated -%}
     Last updated: {{ "now" | date: '%B %d, %Y' }}.
     {%- endif %}
+    {%- if page.permalink == '/' -%}
+    <img src="https://visitor-badge.laobi.icu/badge?page_id=https%3A%2F%2Fgithub.com%2FFreedomIntelligence&left_text=visitors" alt="visitors" style="vertical-align: middle; margin-left: 6px;">
+    {%- endif %}
   </div>
 <!--   <script>
         !

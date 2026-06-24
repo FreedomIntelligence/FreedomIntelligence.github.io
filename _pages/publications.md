@@ -2,6 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
+title_zh: 发表
 description:
 years: [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016]
 publication_tags:
@@ -105,13 +106,30 @@ nav_order: 2
 </style>
 
 <div class="publication-filter" aria-label="Publication filters">
-  <button type="button" class="is-active" data-publication-filter="all">All</button>
+  <button type="button" class="is-active" data-publication-filter="all"><span data-lang="en">All</span><span data-lang="zh">全部</span></button>
   {% for tag in page.publication_tags %}
-    <button type="button" data-publication-filter="{{ tag | escape }}">{{ tag }}</button>
+    {% capture tag_zh %}
+      {%- case tag -%}
+      {%- when "Multi-modal LLMs" -%}多模态大模型
+      {%- when "Medical LLMs" -%}医疗大模型
+      {%- when "Multilingual LLMs" -%}多语言大模型
+      {%- when "Agent" -%}智能体
+      {%- when "AI for Social Science" -%}AI 与社会科学
+      {%- when "Human-agent Interaction" -%}人机智能体交互
+      {%- when "Speech LLMs" -%}语音大模型
+      {%- when "AI for Reasoning and Agentic RL" -%}推理与 Agentic RL
+      {%- when "AI for Healthcare" -%}AI 医疗健康
+      {%- when "LLM Efficiency and AI Infra" -%}大模型效率与基础设施
+      {%- when "LLM Interpretability" -%}大模型可解释性
+      {%- when "World Models and Embodied AI" -%}世界模型与具身 AI
+      {%- else -%}{{ tag }}
+      {%- endcase -%}
+    {% endcapture %}
+    <button type="button" data-publication-filter="{{ tag | escape }}"><span data-lang="en">{{ tag }}</span><span data-lang="zh">{{ tag_zh | strip }}</span></button>
   {% endfor %}
 </div>
 
-<p class="publication-empty" hidden>No publications found for this tag.</p>
+<p class="publication-empty" hidden><span data-lang="en">No publications found for this tag.</span><span data-lang="zh">该标签下暂无论文。</span></p>
 
 <div class="publications" id="publication-list">
 

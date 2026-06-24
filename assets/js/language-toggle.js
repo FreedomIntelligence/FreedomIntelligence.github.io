@@ -47,6 +47,18 @@
       button.setAttribute("title", nextLabel.title);
       button.setAttribute("aria-label", nextLabel.title);
     });
+
+    // Sync browser tab title with the visible h1 title
+    const titleEl = document.querySelector("h1.post-title, h1.blog-header-title");
+    if (titleEl) {
+      const titleSpan = titleEl.querySelector(`[data-lang="${selectedLanguage}"]`);
+      if (titleSpan) {
+        const siteName = document.title.split(" | ").slice(1).join(" | ");
+        document.title = siteName
+          ? `${titleSpan.textContent.trim()} | ${siteName}`
+          : titleSpan.textContent.trim();
+      }
+    }
   }
 
   document.addEventListener("DOMContentLoaded", () => {

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: People
-title_zh: 团队成员
+title_zh: 团队
 permalink: /people/
 description:
 nav: true
@@ -12,6 +12,8 @@ hide_title: true
 ---
 
 <!-- pages/people.md -->
+<!-- Hidden element for browser tab title sync only -->
+<h1 class="post-title" style="display:none" aria-hidden="true"><span data-lang="en">People</span><span data-lang="zh">团队</span></h1>
 {% include alumni_showcase_styles.html %}
 
 <div class="people">

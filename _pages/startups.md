@@ -1,8 +1,10 @@
 ---
 layout: page
 title: Startups
+title_zh: 创业
 permalink: /startups/
 description: We encourage entrepreneurship and real-world deployment.
+description_zh: 我们鼓励创业与 AI 真实落地。
 nav: true
 nav_order: 6
 ---
@@ -81,9 +83,9 @@ nav_order: 6
 
 </style>
 
-## Working With Startups
+## <span data-lang="en">Working With Startups</span><span data-lang="zh">创业支持</span>
 
-研究工作鼓励落地，成员鼓励创业，服务社会。Deploy your AI in real world: 不从纸上逞空谈，要实地把中华改造。
+<span data-lang="en">We encourage research to be deployed in the real world, and members to start companies that serve society.</span><span data-lang="zh">研究工作鼓励落地，成员鼓励创业，服务社会。Deploy your AI in real world: 不从纸上逞空谈，要实地把中华改造。</span>
 
 <div class="startup-grid">
   <section class="startup-item">
@@ -91,10 +93,10 @@ nav_order: 6
       <img class="startup-logo" src="/assets/img/freedomai-2026/startups/freedomai.png" alt="Freedom AI logo">
       <div>
         <h3 class="startup-name">自由动脉 Freedom AI</h3>
-        <div class="startup-founder">Founder: Jianquan Li</div>
+        <div class="startup-founder"><span data-lang="en">Founder: Jianquan Li</span><span data-lang="zh">创始人：李建全</span></div>
       </div>
     </div>
-    <p class="startup-desc">深圳自由动脉科技有限公司致力于通用医疗人工智能，以医疗教育和医疗 AI 应用为起点，构建面向临床与公众的开放医疗社区。</p>
+    <p class="startup-desc"><span data-lang="en">Shenzhen Freedom AI Technology is dedicated to general medical AI, starting from medical education and healthcare AI applications, building an open medical community for clinicians and the public.</span><span data-lang="zh">深圳自由动脉科技有限公司致力于通用医疗人工智能，以医疗教育和医疗 AI 应用为起点，构建面向临床与公众的开放医疗社区。</span></p>
     <div class="startup-links">
       <a href="https://www.freedomai.cn/">Website</a>
       <a href="https://www.freedomai.cn/about/">About</a>
@@ -106,10 +108,10 @@ nav_order: 6
       <img class="startup-logo" src="/assets/img/freedomai-2026/startups/cognita-mark.jpg" alt="Cognita mark">
       <div>
         <h3 class="startup-name">Cognita</h3>
-        <div class="startup-founder">Co-founder: Zhihong Chen</div>
+        <div class="startup-founder"><span data-lang="en">Co-founder: Zhihong Chen</span><span data-lang="zh">联合创始人：陈志宏</span></div>
       </div>
     </div>
-    <p class="startup-desc">Cognita is a Silicon Valley medical imaging AI startup co-founded by Zhihong Chen. Mosaic Clinical Technologies announced the acquisition of Cognita Imaging in 2025.</p>
+    <p class="startup-desc"><span data-lang="en">Cognita is a Silicon Valley medical imaging AI startup co-founded by Zhihong Chen. Mosaic Clinical Technologies announced the acquisition of Cognita Imaging in 2025.</span><span data-lang="zh">Cognita 是由陈志宏联合创办的硅谷医疗影像 AI 初创公司，2025 年被 Mosaic Clinical Technologies 收购。</span></p>
     <div class="startup-links">
       <a href="https://www.radpartners.com/2025/11/mosaic-clinical-technologies-acquires-cognita-imaging-inc/">Acquisition News</a>
       <a href="https://radiologybusiness.com/topics/healthcare-management/mergers-and-acquisitions/radiology-partners-acquires-healthcare-ai-company-80m">Coverage</a>
@@ -121,10 +123,10 @@ nav_order: 6
       <img class="startup-logo" src="/assets/img/freedomai-2026/startups/metastone.jpg" alt="METASTONE logo">
       <div>
         <h3 class="startup-name">METASTONE 是石科技</h3>
-        <div class="startup-founder">Founder: Jianye Hou</div>
+        <div class="startup-founder"><span data-lang="en">Founder: Jianye Hou</span><span data-lang="zh">创始人：侯建业</span></div>
       </div>
     </div>
-    <p class="startup-desc">是石科技提供高效能 HPC + AI 统一计算平台、模型专家服务和算力云服务，赋能 AI 产业化。</p>
+    <p class="startup-desc"><span data-lang="en">METASTONE provides high-performance HPC+AI unified computing platforms, model expert services, and cloud computing services to empower AI industrialization.</span><span data-lang="zh">是石科技提供高效能 HPC + AI 统一计算平台、模型专家服务和算力云服务，赋能 AI 产业化。</span></p>
     <div class="startup-links">
       <a href="https://meta-stone.com/">Website</a>
       <a href="https://www.meta-stone.com/posts">News</a>
@@ -136,10 +138,10 @@ nav_order: 6
       <img class="startup-logo" src="/assets/img/freedomai-2026/startups/friesai.png" alt="FriesAI logo">
       <div>
         <h3 class="startup-name">薯塔 AI FriesAI</h3>
-        <div class="startup-founder">Founder: Xiao Yang</div>
+        <div class="startup-founder"><span data-lang="en">Founder: Xiao Yang</span><span data-lang="zh">创始人：杨骁</span></div>
       </div>
     </div>
-    <p class="startup-desc">薯塔 AI 面向学生的学习场景，提供课程翻译、问答和学习辅助。PDF 中记录其日活超过千人，在港中文（深圳）覆盖率约 60%。</p>
+    <p class="startup-desc"><span data-lang="en">FriesAI focuses on student learning scenarios, offering course translation, Q&A, and study assistance. It has over 1,000 daily active users and covers approximately 60% of CUHK-Shenzhen students.</span><span data-lang="zh">薯塔 AI 面向学生的学习场景，提供课程翻译、问答和学习辅助。日活超过千人，在港中文（深圳）覆盖率约 60%。</span></p>
     <div class="startup-links">
       <a href="https://www.index.friesai.cn/">Website</a>
     </div>
@@ -150,10 +152,10 @@ nav_order: 6
       <img class="startup-logo" src="/assets/img/freedomai-2026/startups/tennsync.jpg" alt="TennSync logo">
       <div>
         <h3 class="startup-name">网事 TennSync</h3>
-        <div class="startup-founder">Founder: Yuxuan Zhu</div>
+        <div class="startup-founder"><span data-lang="en">Founder: Yuxuan Zhu</span><span data-lang="zh">创始人：朱宇轩</span></div>
       </div>
     </div>
-    <p class="startup-desc">TennSync is a tennis recording and action-comparison app. PDF 中记录其已服务上千用户，为网球爱好者节省超过 5,000 小时。</p>
+    <p class="startup-desc"><span data-lang="en">TennSync is a tennis recording and action-comparison app, having served thousands of users and saved them over 5,000 hours of video review time.</span><span data-lang="zh">TennSync 是一款网球录像与动作对比应用，已服务上千用户，为网球爱好者节省超过 5,000 小时。</span></p>
     <div class="startup-links">
       <a href="https://apps.apple.com/us/app/tennsync-tennis-ai/id6743940743?l=zh-Hans-CN">App Store</a>
     </div>
@@ -165,17 +167,14 @@ nav_order: 6
     <div>
       <h3 class="startup-name">和瑛元筑</h3>
       <div class="startup-founder">
-        Founder: 
-        <a href="https://www.linkedin.com/in/zhiqi-gao-b06a2a253/" target="_blank" rel="noopener noreferrer">
-          Zhiqi Gao
-        </a>
+        <span data-lang="en">Founder: </span><span data-lang="zh">创始人：</span><a href="https://www.linkedin.com/in/zhiqi-gao-b06a2a253/" target="_blank" rel="noopener noreferrer">Zhiqi Gao</a>
       </div>
     </div>
   </div>
-  <p class="startup-desc">和瑛元筑面向城市空间智能、文化遗产数字化、三维重建与数字孪生，展示了多个空间数字化项目案例。</p>
+  <p class="startup-desc"><span data-lang="en">Heryin focuses on urban spatial intelligence, cultural heritage digitization, 3D reconstruction, and digital twins, showcasing multiple spatial digitization project cases.</span><span data-lang="zh">和瑛元筑面向城市空间智能、文化遗产数字化、三维重建与数字孪生，展示了多个空间数字化项目案例。</span></p>
   <div class="startup-links">
     <a href="https://heryin.net/">Website</a>
-    <a href="https://heryin.net/project">Projects</a>
+    <a href="https://heryin.net/project"><span data-lang="en">Projects</span><span data-lang="zh">项目</span></a>
   </div>
 </section>
 
@@ -185,12 +184,12 @@ nav_order: 6
       <img class="startup-logo" src="/assets/img/freedomai-2026/startups/citeanything.png" alt="CiteAnything logo">
       <div>
         <h3 class="startup-name">CiteAnything</h3>
-        <div class="startup-founder">Founder: Chizhong Wang</div>
+        <div class="startup-founder"><span data-lang="en">Founder: Chizhong Wang</span><span data-lang="zh">创始人：王驰中</span></div>
       </div>
     </div>
-    <p class="startup-desc">CiteAnything 致力于为大模型输出构建可验证的证据。当前未找到可可靠确认的公开官网链接，页面先保留 PDF 中的 logo 和项目信息。</p>
+    <p class="startup-desc"><span data-lang="en">CiteAnything is dedicated to building verifiable evidence for large model outputs.</span><span data-lang="zh">CiteAnything 致力于为大模型输出构建可验证的证据。</span></p>
     <div class="startup-links">
-      <span class="startup-status">Public link pending</span>
+      <span class="startup-status"><span data-lang="en">Public link pending</span><span data-lang="zh">官网链接待补充</span></span>
     </div>
   </section>
 </div>

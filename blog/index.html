@@ -22,8 +22,14 @@ blog_tags:
 
 <div class="post">
 
+  <!-- Hidden element used only for browser tab title sync -->
+  <h1 class="post-title" style="display:none" aria-hidden="true"><span data-lang="en">Blog</span><span data-lang="zh">博客</span></h1>
+
   <div class="header-bar blog-header-bar">
-    <h1 class="blog-header-title">{{ site.blog_description }}</h1>
+    <h1 class="blog-header-title">
+      <span data-lang="en">{{ site.blog_description }}</span>
+      <span data-lang="zh">Freedom AI 的科研动态与成果分享。</span>
+    </h1>
   </div>
 
   {% if site.display_tags %}
@@ -143,13 +149,24 @@ blog_tags:
   </style>
 
   <div class="blog-filter" aria-label="Blog filters">
-    <button type="button" class="is-active" data-blog-filter="all">All</button>
+    <button type="button" class="is-active" data-blog-filter="all"><span data-lang="en">All</span><span data-lang="zh">全部</span></button>
     {% for tag in page.blog_tags %}
-      <button type="button" data-blog-filter="{{ tag | escape }}">{{ tag }}</button>
+      {% capture tag_zh %}
+        {%- case tag -%}
+        {%- when "Media Coverage" -%}媒体报道
+        {%- when "Medical AI" -%}医疗 AI
+        {%- when "Multimodal AI" -%}多模态 AI
+        {%- when "Agents & Simulation" -%}智能体与模拟
+        {%- when "Models & Data" -%}模型与数据
+        {%- when "Evaluation & Safety" -%}评测与安全
+        {%- else -%}{{ tag }}
+        {%- endcase -%}
+      {% endcapture %}
+      <button type="button" data-blog-filter="{{ tag | escape }}"><span data-lang="en">{{ tag }}</span><span data-lang="zh">{{ tag_zh | strip }}</span></button>
     {% endfor %}
   </div>
 
-  <p class="blog-empty" hidden>No blog posts found for this tag.</p>
+  <p class="blog-empty" hidden><span data-lang="en">No blog posts found for this tag.</span><span data-lang="zh">该标签下暂无文章。</span></p>
 
   <ul class="post-list">
     {% for post in paginator.posts %}

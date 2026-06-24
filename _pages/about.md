@@ -273,8 +273,6 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
   .home-partners a.home-partner--slai {
     min-height: 78px;
     padding: 4px 8px;
-    border: 0;
-    background: transparent;
   }
 
   .home-partners a.home-partner--slai img {
@@ -493,6 +491,12 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     object-fit: contain;
   }
 
+  .home-social .contact-icons .wechat-qr img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain;
+  }
+
   .home-social .contact-note {
     margin-top: 0.75rem;
     color: var(--global-text-color-light);
@@ -571,6 +575,10 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
       height: 230px;
     }
   }
+
+  .home-hero [data-lang] {
+    color: inherit;
+  }
 </style>
 
 <div class="home-page">
@@ -610,62 +618,62 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     <div class="home-hero__content">
       <div class="home-hero__copy">
         <h1>Freedom AI</h1>
-        <p>free humanity from the boundaries of life through AI.</p>
+        <p><span data-lang="en">free humanity from the boundaries of life through AI.</span><span data-lang="zh">用 AI 让人类突破生命的边界。</span></p>
       </div>
       <div class="home-actions">
-        <a class="home-button" href="/life/">Life</a>
-        <a class="home-button" href="/blog/">Blog</a>
+        <a class="home-button" href="/life/"><span data-lang="en">Life</span><span data-lang="zh">生活</span></a>
+        <a class="home-button" href="/blog/"><span data-lang="en">Blog</span><span data-lang="zh">博客</span></a>
       </div>
     </div>
   </section>
 
   <section class="home-section">
-    <h2>Research Directions</h2>
-    <p class="home-section__intro">Our work focuses on open, capable, and deployable AI systems, with a strong emphasis on reasoning, medicine, multimodality, agents, and evaluation.</p>
+    <h2><span data-lang="en">Research Directions</span><span data-lang="zh">研究方向</span></h2>
+    <p class="home-section__intro"><span data-lang="en">Our work focuses on open, capable, and deployable AI systems, with a strong emphasis on reasoning, medicine, multimodality, agents, and evaluation.</span><span data-lang="zh">我们的工作聚焦于开放、有能力、可部署的 AI 系统，重点涵盖推理、医学、多模态、智能体与评测。</span></p>
     <div class="home-grid">
       <div class="home-card">
-        <h3>Large Language Models</h3>
-        <p>Open-source LLM infrastructure, multilingual adaptation, reasoning, optimization, and alignment.</p>
+        <h3><span data-lang="en">Large Language Models</span><span data-lang="zh">大语言模型</span></h3>
+        <p><span data-lang="en">Open-source LLM infrastructure, multilingual adaptation, reasoning, optimization, and alignment.</span><span data-lang="zh">开源大模型基础设施、多语言适配、推理、优化与对齐。</span></p>
       </div>
       <div class="home-card">
-        <h3>Medical AI</h3>
-        <p>HuatuoGPT, Apollo, medical benchmarks, multimodal medical models, and clinical deployment.</p>
+        <h3><span data-lang="en">Medical AI</span><span data-lang="zh">医疗 AI</span></h3>
+        <p><span data-lang="en">HuatuoGPT, Apollo, medical benchmarks, multimodal medical models, and clinical deployment.</span><span data-lang="zh">HuatuoGPT、Apollo、医学评测基准、多模态医学模型和临床部署。</span></p>
       </div>
       <div class="home-card">
-        <h3>Multimodal Intelligence</h3>
-        <p>Vision-language, audio-language, long-context multimodal models, and large-scale evaluation.</p>
+        <h3><span data-lang="en">Multimodal Intelligence</span><span data-lang="zh">多模态智能</span></h3>
+        <p><span data-lang="en">Vision-language, audio-language, long-context multimodal models, and large-scale evaluation.</span><span data-lang="zh">视觉语言、音频语言、长上下文多模态模型及大规模评测。</span></p>
       </div>
       <div class="home-card">
-        <h3>Agents and Tools</h3>
-        <p>Tool-use systems, HCI workflows, MCP applications, RAG systems, and privacy-aware agents.</p>
+        <h3><span data-lang="en">Agents and Tools</span><span data-lang="zh">智能体与工具</span></h3>
+        <p><span data-lang="en">Tool-use systems, HCI workflows, MCP applications, RAG systems, and privacy-aware agents.</span><span data-lang="zh">工具使用系统、人机交互工作流、MCP 应用、RAG 系统和隐私感知智能体。</span></p>
       </div>
       <div class="home-card">
-        <h3>Evaluation and Safety</h3>
-        <p>Benchmarks and analysis for LLM capabilities, robustness, responsibility, and real-world readiness.</p>
+        <h3><span data-lang="en">Evaluation and Safety</span><span data-lang="zh">评测与安全</span></h3>
+        <p><span data-lang="en">Benchmarks and analysis for LLM capabilities, robustness, responsibility, and real-world readiness.</span><span data-lang="zh">大模型能力、鲁棒性、责任性与真实场景适用性的基准与分析。</span></p>
       </div>
       <div class="home-card">
-        <h3>AI for Society</h3>
-        <p>Financial AI, socio-economic simulations, education, healthcare access, and public-good applications.</p>
+        <h3><span data-lang="en">AI for Society</span><span data-lang="zh">AI 赋能社会</span></h3>
+        <p><span data-lang="en">Financial AI, socio-economic simulations, education, healthcare access, and public-good applications.</span><span data-lang="zh">金融 AI、社会经济模拟、教育、医疗普及与公益应用。</span></p>
       </div>
     </div>
   </section>
 
   <section class="home-section">
-    <h2>Impact</h2>
-    <p class="home-section__intro">Freedom AI grows inside a larger Shenzhen ecosystem for cross-modal cognitive computing. The Shenzhen Key Laboratory of Cross-Modal Cognitive Computing, built at CUHK-Shenzhen and approved by the Shenzhen Science and Technology Innovation Bureau on January 30, 2024, connects frontier research, student training, open-source systems, and deployments in healthcare, education, industry, and public-service settings.</p>
+    <h2><span data-lang="en">Impact</span><span data-lang="zh">影响力</span></h2>
+    <p class="home-section__intro"><span data-lang="en">Freedom AI grows inside a larger Shenzhen ecosystem for cross-modal cognitive computing. The Shenzhen Key Laboratory of Cross-Modal Cognitive Computing, built at CUHK-Shenzhen and approved by the Shenzhen Science and Technology Innovation Bureau on January 30, 2024, connects frontier research, student training, open-source systems, and deployments in healthcare, education, industry, and public-service settings.</span><span data-lang="zh">Freedom AI 成长于深圳更大的跨模态认知计算生态系统中。深圳市跨模态认知计算重点实验室依托香港中文大学（深圳）建设，于 2024 年 1 月 30 日获深圳市科技创新局批准，连接前沿研究、学生培养、开源系统以及医疗、教育、产业和公共服务领域的落地应用。</span></p>
 
     <div class="home-impact-summary" aria-label="Impact highlights">
       <div class="home-impact-metric">
         <strong>300K+</strong>
-        <span>HuatuoGPT service visits in Longgang public hospitals.</span>
+        <span><span data-lang="en">HuatuoGPT service visits in Longgang public hospitals.</span><span data-lang="zh">龙岗公立医院 HuatuoGPT 服务人次。</span></span>
       </div>
       <div class="home-impact-metric">
         <strong>520K+</strong>
-        <span>Clinical AI interactions across triage and pre-consultation workflows.</span>
+        <span><span data-lang="en">Clinical AI interactions across triage and pre-consultation workflows.</span><span data-lang="zh">分诊与预问诊流程中的医疗 AI 交互次数。</span></span>
       </div>
       <div class="home-impact-metric">
         <strong>95.4%</strong>
-        <span>Reported triage accuracy in the Longgang deployment.</span>
+        <span><span data-lang="en">Reported triage accuracy in the Longgang deployment.</span><span data-lang="zh">龙岗部署中报告的分诊准确率。</span></span>
       </div>
     </div>
 
@@ -675,20 +683,20 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
       </div>
       <div class="home-impact__list">
         <div class="home-impact-item">
-          <h3>Healthcare at city scale</h3>
-          <p>HuatuoGPT serves Longgang hospitals and community health centers, supporting city-scale triage and pre-consultation workflows.</p>
+          <h3><span data-lang="en">Healthcare at city scale</span><span data-lang="zh">城市规模的医疗服务</span></h3>
+          <p><span data-lang="en">HuatuoGPT serves Longgang hospitals and community health centers, supporting city-scale triage and pre-consultation workflows.</span><span data-lang="zh">HuatuoGPT 服务龙岗医院和社区健康中心，支持城市级分诊与预问诊工作流。</span></p>
         </div>
         <div class="home-impact-item">
-          <h3>Open-source ecosystem</h3>
-          <p>FreedomIntelligence models, datasets, and benchmarks have 10K+ GitHub stars and 1M+ Hugging Face downloads.</p>
+          <h3><span data-lang="en">Open-source ecosystem</span><span data-lang="zh">开源生态</span></h3>
+          <p><span data-lang="en">FreedomIntelligence models, datasets, and benchmarks have 10K+ GitHub stars and 1M+ Hugging Face downloads.</span><span data-lang="zh">FreedomIntelligence 模型、数据集和基准已获 10K+ GitHub stars 和 100 万+次 Hugging Face 下载。</span></p>
         </div>
         <div class="home-impact-item">
-          <h3>Global access</h3>
-          <p>Apollo and AceGPT expand multilingual medical AI for under-served languages and local healthcare contexts.</p>
+          <h3><span data-lang="en">Global access</span><span data-lang="zh">全球覆盖</span></h3>
+          <p><span data-lang="en">Apollo and AceGPT expand multilingual medical AI for under-served languages and local healthcare contexts.</span><span data-lang="zh">Apollo 和 AceGPT 将多语言医疗 AI 扩展到服务不足的语言和本地医疗场景。</span></p>
         </div>
         <div class="home-impact-item">
-          <h3>Award-winning research</h3>
-          <p>Recognized at SIGIR, NAACL, NLPCC, ICLR Financial AI, and NeurIPS ResponsibleFM, with coverage from Nature and major media.</p>
+          <h3><span data-lang="en">Award-winning research</span><span data-lang="zh">获奖研究</span></h3>
+          <p><span data-lang="en">Recognized at SIGIR, NAACL, NLPCC, ICLR Financial AI, and NeurIPS ResponsibleFM, with coverage from Nature and major media.</span><span data-lang="zh">在 SIGIR、NAACL、NLPCC、ICLR 金融 AI 和 NeurIPS ResponsibleFM 获奖，并获 Nature 及主流媒体报道。</span></p>
         </div>
       </div>
     </div>
@@ -696,22 +704,22 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     <div class="home-showcase">
       <figure>
         <img src="/assets/img/freedomai-2026/impact/github-repos.png" alt="FreedomIntelligence GitHub repositories">
-        <figcaption>Open-source models, datasets, and benchmarks used by the community.</figcaption>
+        <figcaption><span data-lang="en">Open-source models, datasets, and benchmarks used by the community.</span><span data-lang="zh">社区广泛使用的开源模型、数据集和基准。</span></figcaption>
       </figure>
       <figure>
         <img src="/assets/img/freedomai-2026/impact/apollo-map.jpg" alt="Apollo multilingual medical AI map">
-        <figcaption>Apollo brings multilingual medical AI to under-served languages.</figcaption>
+        <figcaption><span data-lang="en">Apollo brings multilingual medical AI to under-served languages.</span><span data-lang="zh">Apollo 将多语言医疗 AI 带到服务不足的语言。</span></figcaption>
       </figure>
       <figure>
         <img src="/assets/img/freedomai-2026/impact/iclr-financial-ai-award.jpg" alt="ICLR Financial AI best paper award">
-        <figcaption>Recognition for financial AI and socio-economic system research.</figcaption>
+        <figcaption><span data-lang="en">Recognition for financial AI and socio-economic system research.</span><span data-lang="zh">金融 AI 与社会经济系统研究获得认可。</span></figcaption>
       </figure>
     </div>
   </section>
 
   <section class="home-section">
-    <h2>Where We Work</h2>
-    <p class="home-section__intro">Freedom AI is based at the School of Data Science, The Chinese University of Hong Kong, Shenzhen, SRIBD, and Shenzhen Loop Area Institute. We work with students, engineers, clinicians, and industry partners to turn frontier AI into usable systems.</p>
+    <h2><span data-lang="en">Where We Work</span><span data-lang="zh">我们在哪里</span></h2>
+    <p class="home-section__intro"><span data-lang="en">Freedom AI is based at the School of Data Science, The Chinese University of Hong Kong, Shenzhen, SRIBD, and Shenzhen Loop Area Institute. We work with students, engineers, clinicians, and industry partners to turn frontier AI into usable systems.</span><span data-lang="zh">Freedom AI 依托香港中文大学（深圳）数据科学学院、深圳市大数据研究院和深圳河套学院。我们与学生、工程师、临床医生及产业伙伴合作，将前沿 AI 转化为可用的系统。</span></p>
     <div class="home-partners" aria-label="Partner institutions">
       <a href="https://cuhk.edu.cn/zh-hans">
         <img src="/assets/img/freedomai-2026/cuhksz-logo.png" alt="The Chinese University of Hong Kong, Shenzhen">
@@ -727,18 +735,18 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
 
   <section class="home-section home-join">
     <div>
-      <h2>Join Us</h2>
-      <p>We are recruiting research assistant professors, postdocs, PhD students, MPhil students, research assistants, visiting students, and engineers. We especially welcome students interested in the Shenzhen Loop Area Institute joint-training pathway and the Deep Eye research program.</p>
+      <h2><span data-lang="en">Join Us</span><span data-lang="zh">加入我们</span></h2>
+      <p><span data-lang="en">We are recruiting research assistant professors, postdocs, PhD students, MPhil students, research assistants, visiting students, and engineers. We especially welcome students interested in the Shenzhen Loop Area Institute joint-training pathway and the Deep Eye research program.</span><span data-lang="zh">我们正在招募研究助理教授、博士后、博士生、硕士生、研究助理、访问学生和工程师。尤其欢迎有意申请深圳河套学院联培项目和深眼科研项目的同学。</span></p>
       <div class="home-actions">
-        <a class="home-button home-button--primary" href="mailto:wangbenyou@cuhk.edu.cn">Contact Us</a>
-        <a class="home-button" href="/alumni/">People and Alumni</a>
+        <a class="home-button home-button--primary" href="mailto:wangbenyou@cuhk.edu.cn"><span data-lang="en">Contact Us</span><span data-lang="zh">联系我们</span></a>
+        <a class="home-button" href="/alumni/"><span data-lang="en">People and Alumni</span><span data-lang="zh">团队与校友</span></a>
       </div>
     </div>
     <ul>
-      <li>Project-based frontier AI training.</li>
-      <li>Strong GPU and engineering resources.</li>
-      <li>Close collaboration with industry and hospitals.</li>
-      <li>Freedom to pursue ambitious research ideas.</li>
+      <li><span data-lang="en">Project-based frontier AI training.</span><span data-lang="zh">项目制前沿 AI 训练。</span></li>
+      <li><span data-lang="en">Strong GPU and engineering resources.</span><span data-lang="zh">充足 GPU 与工程资源。</span></li>
+      <li><span data-lang="en">Close collaboration with industry and hospitals.</span><span data-lang="zh">与产业和医院紧密合作。</span></li>
+      <li><span data-lang="en">Freedom to pursue ambitious research ideas.</span><span data-lang="zh">自由追求有雄心的研究想法。</span></li>
     </ul>
   </section>
 
