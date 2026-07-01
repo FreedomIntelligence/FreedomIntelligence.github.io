@@ -3,8 +3,8 @@ layout: page
 title: Join Us
 title_zh: 加入我们
 permalink: /join-us/
-description: Year-round recruiting and the 2026 Deep Eye summer research program.
-description_zh: 常年招募与 2026 深瞳暑期科研项目。
+description: Year-round recruiting for students, researchers, engineers, and builders of open AI systems.
+description_zh: 面向学生、研究者、工程师和开放 AI 系统建设者的常年招募。
 nav: true
 nav_order: 99
 ---
@@ -29,8 +29,6 @@ nav_order: 99
 
   <div class="join-actions">
     <a class="join-button primary" href="mailto:wangbenyou@cuhk.edu.cn"><span data-lang="en">Contact wangbenyou@cuhk.edu.cn</span><span data-lang="zh">联系 wangbenyou@cuhk.edu.cn</span></a>
-    <a class="join-button" href="{{ '/assets/pdf/freedomai-2026-summer.pdf' | relative_url }}" target="_blank" rel="noopener"><span data-lang="en">Download 2026 Summer PDF</span><span data-lang="zh">下载 2026 暑期项目 PDF</span></a>
-    <a class="join-button" href="mailto:externalaffairs@slai.edu.cn"><span data-lang="en">Deep Eye Consultation</span><span data-lang="zh">深瞳项目咨询</span></a>
   </div>
 
   <section class="join-section">
@@ -47,38 +45,6 @@ nav_order: 99
       <div class="join-card">
         <h3><span data-lang="en">Research assistants and engineers</span><span data-lang="zh">研究助理与工程师</span></h3>
         <p><span data-lang="en">For builders who enjoy datasets, models, evaluation, infrastructure, demos, and keeping research systems reproducible.</span><span data-lang="zh">适合喜欢数据集、模型、评测、基础设施、演示开发，以及维护研究系统可复现性的建设者。</span></p>
-      </div>
-    </div>
-  </section>
-
-  <section class="join-section">
-    <h2><span data-lang="en">Deep Eye Research Program 2026</span><span data-lang="zh">深瞳科研项目 2026</span></h2>
-    <div class="join-program">
-      <img src="{{ '/assets/img/freedomai-2026/deep-eye-program.png' | relative_url }}" alt="Shenzhen Loop Area Institute 2026 Deep Eye summer research program">
-      <div class="join-program-body">
-        <h3><span data-lang="en">For outstanding undergraduate and master students interested in the 2027 Shenzhen Loop Area Institute joint-training PhD pathway.</span><span data-lang="zh">面向有意申请 2027 年深圳河套学院联培博士项目的优秀本科生与硕士生。</span></h3>
-        <ul class="join-list">
-          <li><span data-lang="en">Four-week research project with FreedomAI and Shenzhen Loop Area Institute mentorship.</span><span data-lang="zh">为期四周的科研项目，由 FreedomAI 和深圳河套学院联合指导。</span></li>
-          <li><span data-lang="en">Designed for outstanding undergraduate and master students who want early, resource-rich exposure to frontier AI research.</span><span data-lang="zh">专为希望提前接触资源丰富的前沿 AI 科研环境的优秀本科生和硕士生设计。</span></li>
-          <li><span data-lang="en">Excellent performance can help lock in early admission opportunities for the Shenzhen Loop Area Institute program.</span><span data-lang="zh">表现优秀者可获得深圳河套学院项目提前录取机会。</span></li>
-          <li><span data-lang="en">Project leads at Shenzhen Loop Area Institute provide substantial research resources, engineering support, and long-term mentorship.</span><span data-lang="zh">深圳河套学院项目负责人提供充足科研资源、工程支持和长期指导。</span></li>
-          <li><span data-lang="en">Free accommodation during the program, campus meal vouchers, and transportation subsidy for students from outside Shenzhen.</span><span data-lang="zh">项目期间提供免费住宿、校园餐补，以及外地学生的交通补贴。</span></li>
-          <li><span data-lang="en">Interview-based recommendation support is available for suitable applicants.</span><span data-lang="zh">对合适的申请者提供面试推荐支持。</span></li>
-        </ul>
-        <div class="join-timeline">
-          <div class="join-date">
-            <strong><span data-lang="en">Program dates</span><span data-lang="zh">项目时间</span></strong>
-            <span><span data-lang="en">July 13, 2026 to August 9, 2026; extendable to August 16, 2026.</span><span data-lang="zh">2026 年 7 月 13 日至 8 月 9 日，可延长至 8 月 16 日。</span></span>
-          </div>
-          <div class="join-date">
-            <strong><span data-lang="en">Application deadline</span><span data-lang="zh">申请截止日期</span></strong>
-            <span><span data-lang="en">June 25, 2026.</span><span data-lang="zh">2026 年 6 月 25 日。</span></span>
-          </div>
-          <div class="join-date">
-            <strong><span data-lang="en">Consultation</span><span data-lang="zh">咨询联系</span></strong>
-            <span>wangbenyou@cuhk.edu.cn or externalaffairs@slai.edu.cn.</span>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -162,8 +128,8 @@ nav_order: 99
 
   <section class="join-section join-contact">
     <p>
-      <span data-lang="en">To apply or ask about openings, send your CV, transcript if available, representative project or paper links, and a short note about your research interests to <a href="mailto:wangbenyou@cuhk.edu.cn">wangbenyou@cuhk.edu.cn</a>. For Deep Eye program consultation, contact <a href="mailto:externalaffairs@slai.edu.cn">externalaffairs@slai.edu.cn</a>.</span>
-      <span data-lang="zh">申请或了解职位信息，请将简历、成绩单（如有）、代表性项目或论文链接，以及简短的研究兴趣说明发送至 <a href="mailto:wangbenyou@cuhk.edu.cn">wangbenyou@cuhk.edu.cn</a>。深瞳项目咨询请联系 <a href="mailto:externalaffairs@slai.edu.cn">externalaffairs@slai.edu.cn</a>。</span>
+      <span data-lang="en">To apply or ask about openings, send your CV, transcript if available, representative project or paper links, and a short note about your research interests to <a href="mailto:wangbenyou@cuhk.edu.cn">wangbenyou@cuhk.edu.cn</a>.</span>
+      <span data-lang="zh">申请或了解职位信息，请将简历、成绩单（如有）、代表性项目或论文链接，以及简短的研究兴趣说明发送至 <a href="mailto:wangbenyou@cuhk.edu.cn">wangbenyou@cuhk.edu.cn</a>。</span>
     </p>
   </section>
 </div>
