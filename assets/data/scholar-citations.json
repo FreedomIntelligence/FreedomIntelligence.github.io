@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T01:54:41Z",
+  "generated_at": "2026-07-01T04:55:02Z",
   "profiles": {
     "1AHFs0kAAAAJ": {
       "citations": 52,
@@ -8,6 +8,7 @@
       "h_index_recent": 1,
       "i10_index": 1,
       "i10_index_recent": 1,
+      "last_error": "Google Scholar: HTTP Error 403: Forbidden",
       "name": "Minghao Wu",
       "scholar_url": "https://scholar.google.com/citations?user=1AHFs0kAAAAJ&hl=en",
       "source": "google_scholar",
@@ -176,6 +177,7 @@
       "h_index_recent": 5,
       "i10_index": 5,
       "i10_index_recent": 5,
+      "last_error": "Google Scholar: HTTP Error 403: Forbidden",
       "name": "Juhao Liang",
       "scholar_url": "https://scholar.google.com/citations?user=kglBjScAAAAJ&hl=en",
       "source": "google_scholar",
