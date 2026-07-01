@@ -1,6 +1,18 @@
 {
-  "generated_at": "2026-06-30T20:20:22Z",
+  "generated_at": "2026-07-01T01:54:41Z",
   "profiles": {
+    "1AHFs0kAAAAJ": {
+      "citations": 52,
+      "citations_recent": 52,
+      "h_index": 1,
+      "h_index_recent": 1,
+      "i10_index": 1,
+      "i10_index_recent": 1,
+      "name": "Minghao Wu",
+      "scholar_url": "https://scholar.google.com/citations?user=1AHFs0kAAAAJ&hl=en",
+      "source": "google_scholar",
+      "updated_at": "2026-07-01T01:54:41Z"
+    },
     "2RRV0PQAAAAJ": {
       "citations": 14081,
       "citations_recent": 14064,
@@ -156,6 +168,18 @@
       "scholar_url": "https://scholar.google.com/citations?user=aJEGhzkAAAAJ&hl=en",
       "source": "google_scholar",
       "updated_at": "2026-06-30T14:44:32Z"
+    },
+    "kglBjScAAAAJ": {
+      "citations": 190,
+      "citations_recent": 190,
+      "h_index": 5,
+      "h_index_recent": 5,
+      "i10_index": 5,
+      "i10_index_recent": 5,
+      "name": "Juhao Liang",
+      "scholar_url": "https://scholar.google.com/citations?user=kglBjScAAAAJ&hl=en",
+      "source": "google_scholar",
+      "updated_at": "2026-07-01T01:54:41Z"
     },
     "y55sF8cAAAAJ": {
       "citations": 5661,
