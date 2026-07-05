@@ -20,6 +20,8 @@ toc:
   - name: "5. Advice to Students: Write Papers on the Real Ground"
 ---
 
+{% include figure.html path="assets/img/media-roundup-2026/shenzhen-tv-ai-agents-interview.jpg" class="img-fluid rounded z-depth-0" zoomable=true alt="Shenzhen TV interviews Benyou Wang at the SLAI Open Day" caption="Shenzhen TV interview with Benyou Wang at the Shenzhen Loop Area Institute Open Day." %}
+
 This post is adapted from an interview at the Shenzhen Loop Area Institute (SLAI) Open Day, where several demos touched on economic world models, medical AI deployment, embodied intelligence, brain-computer interfaces, and the future of research training.
 
 The central message is simple: **the next stage of AI will not be defined only by larger models, but by whether we can build systems that understand messy worlds, close feedback loops, and solve real problems with responsibility.**
