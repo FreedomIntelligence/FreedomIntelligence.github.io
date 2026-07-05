@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: "Interview on the SLAI Open Day: Economic World Models, Closed-Loop AI, and Language-Centered AGI"
-date: 2026-07-05 00:00:00 +0800
+date: 2026-07-05
 permalink: /blog/2026/slai-open-day-interview/
 description: "An Open Day conversation on why economic world models are harder than physical world models, why real AI deployment needs loop engineering, and why language remains central to general intelligence."
 tags: slai open-day world-models medical-ai language-models research
