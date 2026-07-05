@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: "AI Agents in 2026: From Model Demos to Closed-Loop Delivery"
+title: "Interview for Red Star News (红星新闻): From Model Demos to Closed-Loop Delivery for AI Agents in 2026"
 date: 2026-06-29
 description: A structured essay adapted from a recent interview on why AI agents are moving from model-centric demos to closed-loop, verifiable, large-scale delivery.
 tags: ai-agents harness-engineering agi
