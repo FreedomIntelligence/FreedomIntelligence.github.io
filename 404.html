@@ -2,8 +2,9 @@
 layout: page
 permalink: /404.html
 title: "Page not found"
-description: "Looks like there has been a mistake. Nothing exists here."
+description: "Redirecting to the main page."
 redirect: true
+redirect_url: "https://freedomintelligence.github.io/"
 ---
 
-<p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="{{ site.baseurl | prepend: site.url }}/">here</a>.</p>
+<p>Redirecting to the main page. If not redirected, please click <a href="{{ page.redirect_url }}">here</a>.</p>
