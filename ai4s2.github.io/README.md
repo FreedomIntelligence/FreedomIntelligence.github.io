@@ -2,6 +2,10 @@
 
 Static homepage for the Center for AI for Social Science.
 
+## Media Archive
+
+The original media extracted from the project-highlight and AI4S2 introduction PPT decks lives under `assets/media/ppt/`. The homepage media library is driven by `assets/media/ppt/manifest.json`, so the PPTX files themselves do not need to be committed.
+
 ## Deploying to both GitHub Pages URLs
 
 This site uses only relative asset paths, so the same code can be hosted at both:

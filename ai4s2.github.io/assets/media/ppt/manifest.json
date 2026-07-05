@@ -1,0 +1,661 @@
+{
+    "generatedAt":  "2026-07-05T22:37:23",
+    "totalItems":  71,
+    "collections":  [
+                        {
+                            "id":  "project-highlights",
+                            "title":  "Project Highlights Deck",
+                            "source":  "Social Science Intelligence project highlights and outcomes deck",
+                            "itemCount":  30,
+                            "items":  [
+                                          {
+                                              "id":  "project-highlights-image1-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image1.png",
+                                              "name":  "image1.png",
+                                              "type":  "image/png",
+                                              "bytes":  32823,
+                                              "alt":  "Project Highlights Deck asset 01",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image1.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image10-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image10.png",
+                                              "name":  "image10.png",
+                                              "type":  "image/png",
+                                              "bytes":  3059017,
+                                              "alt":  "Project Highlights Deck asset 02",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image10.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image11-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image11.png",
+                                              "name":  "image11.png",
+                                              "type":  "image/png",
+                                              "bytes":  1923454,
+                                              "alt":  "Project Highlights Deck asset 03",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image11.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image12-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image12.png",
+                                              "name":  "image12.png",
+                                              "type":  "image/png",
+                                              "bytes":  1928048,
+                                              "alt":  "Project Highlights Deck asset 04",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image12.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image13-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image13.png",
+                                              "name":  "image13.png",
+                                              "type":  "image/png",
+                                              "bytes":  5835467,
+                                              "alt":  "Project Highlights Deck asset 05",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image13.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image14-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image14.png",
+                                              "name":  "image14.png",
+                                              "type":  "image/png",
+                                              "bytes":  5705094,
+                                              "alt":  "Project Highlights Deck asset 06",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image14.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image15-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image15.png",
+                                              "name":  "image15.png",
+                                              "type":  "image/png",
+                                              "bytes":  790094,
+                                              "alt":  "Project Highlights Deck asset 07",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image15.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image16-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image16.png",
+                                              "name":  "image16.png",
+                                              "type":  "image/png",
+                                              "bytes":  319074,
+                                              "alt":  "Project Highlights Deck asset 08",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image16.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image17-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image17.png",
+                                              "name":  "image17.png",
+                                              "type":  "image/png",
+                                              "bytes":  244453,
+                                              "alt":  "Project Highlights Deck asset 09",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image17.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image18-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image18.png",
+                                              "name":  "image18.png",
+                                              "type":  "image/png",
+                                              "bytes":  278497,
+                                              "alt":  "Project Highlights Deck asset 10",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image18.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image19-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image19.png",
+                                              "name":  "image19.png",
+                                              "type":  "image/png",
+                                              "bytes":  3154767,
+                                              "alt":  "Project Highlights Deck asset 11",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image19.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image2-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image2.png",
+                                              "name":  "image2.png",
+                                              "type":  "image/png",
+                                              "bytes":  18984,
+                                              "alt":  "Project Highlights Deck asset 12",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image2.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image20-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image20.png",
+                                              "name":  "image20.png",
+                                              "type":  "image/png",
+                                              "bytes":  36907,
+                                              "alt":  "Project Highlights Deck asset 13",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image20.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image21-svg",
+                                              "src":  "./assets/media/ppt/project-highlights/image21.svg",
+                                              "name":  "image21.svg",
+                                              "type":  "image/svg+xml",
+                                              "bytes":  3145,
+                                              "alt":  "Project Highlights Deck asset 14",
+                                              "thumb":  "./assets/media/ppt/project-highlights/image21.svg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image22-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image22.png",
+                                              "name":  "image22.png",
+                                              "type":  "image/png",
+                                              "bytes":  142704,
+                                              "alt":  "Project Highlights Deck asset 15",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image22.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image23-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image23.png",
+                                              "name":  "image23.png",
+                                              "type":  "image/png",
+                                              "bytes":  66409,
+                                              "alt":  "Project Highlights Deck asset 16",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image23.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image24-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image24.png",
+                                              "name":  "image24.png",
+                                              "type":  "image/png",
+                                              "bytes":  788116,
+                                              "alt":  "Project Highlights Deck asset 17",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image24.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image25-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image25.png",
+                                              "name":  "image25.png",
+                                              "type":  "image/png",
+                                              "bytes":  135163,
+                                              "alt":  "Project Highlights Deck asset 18",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image25.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image26-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image26.png",
+                                              "name":  "image26.png",
+                                              "type":  "image/png",
+                                              "bytes":  147896,
+                                              "alt":  "Project Highlights Deck asset 19",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image26.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image27-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image27.png",
+                                              "name":  "image27.png",
+                                              "type":  "image/png",
+                                              "bytes":  205508,
+                                              "alt":  "Project Highlights Deck asset 20",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image27.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image28-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image28.png",
+                                              "name":  "image28.png",
+                                              "type":  "image/png",
+                                              "bytes":  3844,
+                                              "alt":  "Project Highlights Deck asset 21",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image28.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image29-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image29.png",
+                                              "name":  "image29.png",
+                                              "type":  "image/png",
+                                              "bytes":  287727,
+                                              "alt":  "Project Highlights Deck asset 22",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image29.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image3-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image3.png",
+                                              "name":  "image3.png",
+                                              "type":  "image/png",
+                                              "bytes":  2385512,
+                                              "alt":  "Project Highlights Deck asset 23",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image3.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image30-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image30.png",
+                                              "name":  "image30.png",
+                                              "type":  "image/png",
+                                              "bytes":  121020,
+                                              "alt":  "Project Highlights Deck asset 24",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image30.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image4-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image4.png",
+                                              "name":  "image4.png",
+                                              "type":  "image/png",
+                                              "bytes":  169159,
+                                              "alt":  "Project Highlights Deck asset 25",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image4.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image5-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image5.png",
+                                              "name":  "image5.png",
+                                              "type":  "image/png",
+                                              "bytes":  195659,
+                                              "alt":  "Project Highlights Deck asset 26",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image5.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image6-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image6.png",
+                                              "name":  "image6.png",
+                                              "type":  "image/png",
+                                              "bytes":  165346,
+                                              "alt":  "Project Highlights Deck asset 27",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image6.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image7-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image7.png",
+                                              "name":  "image7.png",
+                                              "type":  "image/png",
+                                              "bytes":  116510,
+                                              "alt":  "Project Highlights Deck asset 28",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image7.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image8-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image8.png",
+                                              "name":  "image8.png",
+                                              "type":  "image/png",
+                                              "bytes":  167313,
+                                              "alt":  "Project Highlights Deck asset 29",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image8.jpg"
+                                          },
+                                          {
+                                              "id":  "project-highlights-image9-png",
+                                              "src":  "./assets/media/ppt/project-highlights/image9.png",
+                                              "name":  "image9.png",
+                                              "type":  "image/png",
+                                              "bytes":  8964058,
+                                              "alt":  "Project Highlights Deck asset 30",
+                                              "thumb":  "./assets/media/ppt-thumbs/project-highlights/image9.jpg"
+                                          }
+                                      ]
+                        },
+                        {
+                            "id":  "center-introduction",
+                            "title":  "AI4S2 Center Introduction Deck",
+                            "source":  "AI4S2 center introduction deck",
+                            "itemCount":  41,
+                            "items":  [
+                                          {
+                                              "id":  "center-introduction-image1-png",
+                                              "src":  "./assets/media/ppt/center-introduction/image1.png",
+                                              "name":  "image1.png",
+                                              "type":  "image/png",
+                                              "bytes":  75795,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 01",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image1.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image10-png",
+                                              "src":  "./assets/media/ppt/center-introduction/image10.png",
+                                              "name":  "image10.png",
+                                              "type":  "image/png",
+                                              "bytes":  107707,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 02",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image10.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image11-png",
+                                              "src":  "./assets/media/ppt/center-introduction/image11.png",
+                                              "name":  "image11.png",
+                                              "type":  "image/png",
+                                              "bytes":  3154767,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 03",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image11.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image12-jpeg",
+                                              "src":  "./assets/media/ppt/center-introduction/image12.jpeg",
+                                              "name":  "image12.jpeg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  20732,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 04",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image12.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image13-png",
+                                              "src":  "./assets/media/ppt/center-introduction/image13.png",
+                                              "name":  "image13.png",
+                                              "type":  "image/png",
+                                              "bytes":  256007,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 05",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image13.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image14-jpeg",
+                                              "src":  "./assets/media/ppt/center-introduction/image14.jpeg",
+                                              "name":  "image14.jpeg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  34968,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 06",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image14.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image15-jpeg",
+                                              "src":  "./assets/media/ppt/center-introduction/image15.jpeg",
+                                              "name":  "image15.jpeg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  14167,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 07",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image15.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image16-jpeg",
+                                              "src":  "./assets/media/ppt/center-introduction/image16.jpeg",
+                                              "name":  "image16.jpeg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  30593,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 08",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image16.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image17-png",
+                                              "src":  "./assets/media/ppt/center-introduction/image17.png",
+                                              "name":  "image17.png",
+                                              "type":  "image/png",
+                                              "bytes":  100064,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 09",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image17.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image18-jpeg",
+                                              "src":  "./assets/media/ppt/center-introduction/image18.jpeg",
+                                              "name":  "image18.jpeg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  7701,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 10",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image18.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image19-png",
+                                              "src":  "./assets/media/ppt/center-introduction/image19.png",
+                                              "name":  "image19.png",
+                                              "type":  "image/png",
+                                              "bytes":  104888,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 11",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image19.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image2-png",
+                                              "src":  "./assets/media/ppt/center-introduction/image2.png",
+                                              "name":  "image2.png",
+                                              "type":  "image/png",
+                                              "bytes":  26324,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 12",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image2.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image20-jpeg",
+                                              "src":  "./assets/media/ppt/center-introduction/image20.jpeg",
+                                              "name":  "image20.jpeg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  29246,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 13",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image20.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image21-jpeg",
+                                              "src":  "./assets/media/ppt/center-introduction/image21.jpeg",
+                                              "name":  "image21.jpeg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  63831,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 14",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image21.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image22-png",
+                                              "src":  "./assets/media/ppt/center-introduction/image22.png",
+                                              "name":  "image22.png",
+                                              "type":  "image/png",
+                                              "bytes":  167872,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 15",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image22.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image23-jpg",
+                                              "src":  "./assets/media/ppt/center-introduction/image23.jpg",
+                                              "name":  "image23.jpg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  59398,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 16",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image23.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image24-png",
+                                              "src":  "./assets/media/ppt/center-introduction/image24.png",
+                                              "name":  "image24.png",
+                                              "type":  "image/png",
+                                              "bytes":  159581,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 17",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image24.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image25-jpeg",
+                                              "src":  "./assets/media/ppt/center-introduction/image25.jpeg",
+                                              "name":  "image25.jpeg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  38650,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 18",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image25.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image26-jpeg",
+                                              "src":  "./assets/media/ppt/center-introduction/image26.jpeg",
+                                              "name":  "image26.jpeg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  15079,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 19",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image26.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image27-jpeg",
+                                              "src":  "./assets/media/ppt/center-introduction/image27.jpeg",
+                                              "name":  "image27.jpeg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  11191,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 20",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image27.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image28-jpeg",
+                                              "src":  "./assets/media/ppt/center-introduction/image28.jpeg",
+                                              "name":  "image28.jpeg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  19631,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 21",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image28.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image29-jpeg",
+                                              "src":  "./assets/media/ppt/center-introduction/image29.jpeg",
+                                              "name":  "image29.jpeg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  13697,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 22",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image29.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image3-png",
+                                              "src":  "./assets/media/ppt/center-introduction/image3.png",
+                                              "name":  "image3.png",
+                                              "type":  "image/png",
+                                              "bytes":  32823,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 23",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image3.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image30-jpeg",
+                                              "src":  "./assets/media/ppt/center-introduction/image30.jpeg",
+                                              "name":  "image30.jpeg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  18055,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 24",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image30.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image31-png",
+                                              "src":  "./assets/media/ppt/center-introduction/image31.png",
+                                              "name":  "image31.png",
+                                              "type":  "image/png",
+                                              "bytes":  75785,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 25",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image31.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image32-png",
+                                              "src":  "./assets/media/ppt/center-introduction/image32.png",
+                                              "name":  "image32.png",
+                                              "type":  "image/png",
+                                              "bytes":  92601,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 26",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image32.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image33-jpeg",
+                                              "src":  "./assets/media/ppt/center-introduction/image33.jpeg",
+                                              "name":  "image33.jpeg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  8574,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 27",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image33.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image34-jpeg",
+                                              "src":  "./assets/media/ppt/center-introduction/image34.jpeg",
+                                              "name":  "image34.jpeg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  26164,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 28",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image34.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image35-png",
+                                              "src":  "./assets/media/ppt/center-introduction/image35.png",
+                                              "name":  "image35.png",
+                                              "type":  "image/png",
+                                              "bytes":  1544221,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 29",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image35.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image36-jpeg",
+                                              "src":  "./assets/media/ppt/center-introduction/image36.jpeg",
+                                              "name":  "image36.jpeg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  13672,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 30",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image36.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image37-png",
+                                              "src":  "./assets/media/ppt/center-introduction/image37.png",
+                                              "name":  "image37.png",
+                                              "type":  "image/png",
+                                              "bytes":  86552,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 31",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image37.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image38-jpeg",
+                                              "src":  "./assets/media/ppt/center-introduction/image38.jpeg",
+                                              "name":  "image38.jpeg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  16657,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 32",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image38.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image39-jpeg",
+                                              "src":  "./assets/media/ppt/center-introduction/image39.jpeg",
+                                              "name":  "image39.jpeg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  20657,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 33",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image39.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image4-png",
+                                              "src":  "./assets/media/ppt/center-introduction/image4.png",
+                                              "name":  "image4.png",
+                                              "type":  "image/png",
+                                              "bytes":  99445,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 34",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image4.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image40-png",
+                                              "src":  "./assets/media/ppt/center-introduction/image40.png",
+                                              "name":  "image40.png",
+                                              "type":  "image/png",
+                                              "bytes":  38530,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 35",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image40.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image41-png",
+                                              "src":  "./assets/media/ppt/center-introduction/image41.png",
+                                              "name":  "image41.png",
+                                              "type":  "image/png",
+                                              "bytes":  43794,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 36",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image41.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image5-jpeg",
+                                              "src":  "./assets/media/ppt/center-introduction/image5.jpeg",
+                                              "name":  "image5.jpeg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  56272,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 37",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image5.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image6-jpeg",
+                                              "src":  "./assets/media/ppt/center-introduction/image6.jpeg",
+                                              "name":  "image6.jpeg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  51026,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 38",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image6.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image7-jpeg",
+                                              "src":  "./assets/media/ppt/center-introduction/image7.jpeg",
+                                              "name":  "image7.jpeg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  182111,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 39",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image7.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image8-jpeg",
+                                              "src":  "./assets/media/ppt/center-introduction/image8.jpeg",
+                                              "name":  "image8.jpeg",
+                                              "type":  "image/jpeg",
+                                              "bytes":  61464,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 40",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image8.jpg"
+                                          },
+                                          {
+                                              "id":  "center-introduction-image9-png",
+                                              "src":  "./assets/media/ppt/center-introduction/image9.png",
+                                              "name":  "image9.png",
+                                              "type":  "image/png",
+                                              "bytes":  180723,
+                                              "alt":  "AI4S2 Center Introduction Deck asset 41",
+                                              "thumb":  "./assets/media/ppt-thumbs/center-introduction/image9.jpg"
+                                          }
+                                      ]
+                        }
+                    ]
+}
