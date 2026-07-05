@@ -21,6 +21,8 @@ toc:
   - name: 7. How Enterprises Should Avoid AI Anxiety
 ---
 
+{% include figure.html path="assets/img/media-roundup-2026/shenzhen-tv-ai-agents-interview.jpg" class="img-fluid rounded z-depth-0" zoomable=true alt="Shenzhen TV interviews Benyou Wang on AI agents" caption="Shenzhen TV interview with Benyou Wang on AI agents, loop engineering, and real-world deployment." %}
+
 This post is adapted from a Shenzhen TV interview with Benyou Wang on AI agents. The discussion began with a surprisingly vivid case: Chinese air conditioners, especially Midea's PortaSplit, became highly sought after in Europe during a heat wave. According to public reports, Austrian resident Denis Yurchak spent two days searching for a unit, monitored stock with AI agents, and eventually drove about 200 kilometers to secure one. The case was covered by [Xinhua](https://english.news.cn/europe/20260705/df765990e4b1498cb37db3ce7a88ce51/c.html), and Yurchak also shared the experience on [X](https://x.com/denisyurchak/status/2069866683586445766).
 
 At first glance, this looks like a consumer story: a shortage, a popular product, and someone determined enough to chase inventory across platforms and cities. But it also marks something more interesting. Many earlier AI agent examples were framed around coding, slide generation, report writing, or office automation. This case spread because an agent helped an ordinary person solve an ordinary but urgent life problem: finding a real product, in a real market, under real constraints.
