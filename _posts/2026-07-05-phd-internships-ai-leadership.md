@@ -25,7 +25,7 @@ Many PhD students admire internships, especially internships at large technology
 
 This essay is therefore not an argument against internships. It is an argument for asking what kind of growth an internship should serve.
 
-In ecosystems such as the Hetao and Shenzhen Loop Area, there are also mechanisms to support students in local industry internships, including opportunities with companies such as Tencent and Huawei. I believe this kind of collaboration will become more flexible and more inclusive over time.
+In ecosystems such as the Shenzhen Loop Area Institute, there are also mechanisms to support students in local industry internships, including opportunities with companies such as Tencent and Huawei. I believe this kind of collaboration will become more flexible and more inclusive over time.
 
 But we should still ask a harder question: **if doctoral training is effectively replaced by four continuous years of big-company internships, is that really the best path for PhD students?**
 
