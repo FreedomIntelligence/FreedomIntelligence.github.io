@@ -1,9 +1,10 @@
 ---
 layout: distill
 title: "Interview on the SLAI Open Day: Economic World Models, Closed-Loop AI, and Language-Centered AGI"
-date: 2026-07-05
-description: An Open Day conversation on why economic world models are harder than physical world models, why real AI deployment needs loop engineering, and why language remains central to general intelligence.
-tags: SLAI open-day world-models medical-ai language-models research
+date: 2026-07-05 00:00:00 +0800
+permalink: /blog/2026/slai-open-day-interview/
+description: "An Open Day conversation on why economic world models are harder than physical world models, why real AI deployment needs loop engineering, and why language remains central to general intelligence."
+tags: slai open-day world-models medical-ai language-models research
 
 authors:
   - name: Benyou Wang
@@ -12,11 +13,11 @@ authors:
       name: CUHK-Shenzhen
 
 toc:
-  - name: 1. Economic World Models Are Not Physics with Prices
-  - name: 2. Deployment Requires Closed Loops, Not Only Strong Models
-  - name: 3. Why SLAI Matters for Young Researchers
-  - name: 4. Language as the Brain of Embodied and Scientific Intelligence
-  - name: 5. Advice to Students: Write Papers on the Real Ground
+  - name: "1. Economic World Models Are Not Physics with Prices"
+  - name: "2. Deployment Requires Closed Loops, Not Only Strong Models"
+  - name: "3. Why SLAI Matters for Young Researchers"
+  - name: "4. Language as the Brain of Embodied and Scientific Intelligence"
+  - name: "5. Advice to Students: Write Papers on the Real Ground"
 ---
 
 This post is adapted from an interview at the Shenzhen Loop Area Institute (SLAI) Open Day, where several demos touched on economic world models, medical AI deployment, embodied intelligence, brain-computer interfaces, and the future of research training.
