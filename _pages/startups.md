@@ -149,6 +149,22 @@ nav_order: 6
 
   <section class="startup-item">
     <div class="startup-head">
+      <img class="startup-logo" src="/assets/img/freedomai-2026/startups/neoteai.svg" alt="NeoteAI logo">
+      <div>
+        <h3 class="startup-name">新智具身 NeoteAI</h3>
+        <div class="startup-founder"><span data-lang="en">CTO: </span><span data-lang="zh">CTO：</span><a href="https://shunlinlu.github.io/" target="_blank" rel="noopener noreferrer">Shunlin Lu</a></div>
+      </div>
+    </div>
+    <p class="startup-desc"><span data-lang="en">NeoteAI is a Fudan-origin embodied intelligence startup focused on tactile perception, spanning visuo-tactile sensors, tactile data platforms, and tactile embodied foundation models for real-world robot manipulation.</span><span data-lang="zh">新智具身源自复旦大学可信具身智能研究院，聚焦以触觉为原生模态的具身智能，布局视触觉传感器、具身数据平台和含触觉的具身大模型。</span></p>
+    <div class="startup-links">
+      <a href="https://www.neoteai.com/">Website</a>
+      <a href="https://www.neoteai.com/about.html">About</a>
+      <a href="https://mp.weixin.qq.com/s/02_mRnTmKSsMjP5pd04_RA">Coverage</a>
+    </div>
+  </section>
+
+  <section class="startup-item">
+    <div class="startup-head">
       <img class="startup-logo" src="/assets/img/freedomai-2026/startups/tennsync.jpg" alt="TennSync logo">
       <div>
         <h3 class="startup-name">网事 TennSync</h3>
