@@ -6,7 +6,7 @@ title_zh: 项目
 description:
 project_tags:
   - LLM Reasoning & Agentic RL
-  - LLM Agents and Applications
+  - "LLM Agents, Applications & Human-Agent Interaction"
   - Multi-modal LLMs
   - Environment Engineering & World Models
   - Economic World Models
@@ -28,7 +28,7 @@ nav_order: 2
       {% capture tag_zh %}
         {%- case tag -%}
         {%- when "LLM Reasoning & Agentic RL" -%}大模型推理与 Agentic RL
-        {%- when "LLM Agents and Applications" -%}大模型智能体与应用
+        {%- when "LLM Agents, Applications & Human-Agent Interaction" -%}大模型智能体、应用与人机交互
         {%- when "Multi-modal LLMs" -%}多模态大模型
         {%- when "Environment Engineering & World Models" -%}环境工程与世界模型
         {%- when "Economic World Models" -%}经济世界模型
@@ -86,16 +86,16 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-human" id="llm-agents-applications" data-project-tags="LLM Agents and Applications;Economic World Models" data-project-url="/projects/llm-agents-applications/">
+  <section class="project-program-section project-theme-human" id="llm-agents-applications" data-project-tags="LLM Agents, Applications & Human-Agent Interaction;Economic World Models;Speech LLMs" data-project-url="/projects/llm-agents-applications/">
     <div class="project-program-heading">
-      <div class="project-eyebrow">Agents, simulators, tools, and applied environments</div>
-      <h2>LLM Agents and Applications</h2>
+      <div class="project-eyebrow">Agents, applications, simulators, and human-agent interaction</div>
+      <h2>LLM Agents, Applications & Human-Agent Interaction</h2>
       <p>
-        This project groups papers where LLMs become agents: tool planners, user simulators, standardized patients, role-playing agents, market participants, and micro-world actors. The goal is to organize agent papers by what the agent does, what environment it acts in, and how the interaction is evaluated.
+        This project groups papers where LLMs become agents and interactive systems: tool planners, user simulators, standardized patients, role-playing agents, market participants, speech-to-speech systems, and micro-world actors. The goal is to organize agent papers by what the agent does, what environment it acts in, how it interacts with humans, and how the interaction is evaluated.
       </p>
       <div class="project-actions">
-        <a class="project-action primary" href="/projects/llm-agents-applications/">Open LLM Agents and Applications</a>
-        <a class="project-action" href="/projects/human-agent-interaction/">Open Human-Agent Interaction</a>
+        <a class="project-action primary" href="/projects/llm-agents-applications/">Open Agent Applications</a>
+        <a class="project-action" href="/projects/human-agent-interaction/">Open Interaction Details</a>
         <a class="project-action" href="https://wabyking.github.io/" target="_blank" rel="noopener">Papers from Benyou Wang</a>
       </div>
     </div>
@@ -110,6 +110,7 @@ nav_order: 2
           <li><a href="https://arxiv.org/abs/2308.11534" target="_blank" rel="noopener">Large Language Model as a User Simulator</a> - LLM users for dialogue training and evaluation.</li>
           <li><a href="https://openreview.net/forum?id=9nddtu94uX" target="_blank" rel="noopener">PlatoLM: Teaching LLMs via a Socratic Questioning User Simulator</a> - Socratic interaction as a training signal.</li>
           <li><a href="https://arxiv.org/abs/2511.14783" target="_blank" rel="noopener">Human or LLM as Standardized Patients?</a> - AI patients for medical education and evaluation.</li>
+          <li><a href="https://arxiv.org/abs/2602.24080" target="_blank" rel="noopener">Human or Machine? A Preliminary Turing Test for Speech-to-Speech Interaction</a> - human-likeness evaluation for speech-to-speech interaction.</li>
           <li><a href="https://arxiv.org/abs/2502.01506" target="_blank" rel="noopener">TwinMarket: A Scalable Behavioral and Social Simulation for Financial Markets</a> - LLM investor agents in market simulation.</li>
           <li><a href="https://arxiv.org/abs/2603.00585" target="_blank" rel="noopener">MicroVerse</a> - agentic micro-world simulation for scientific processes.</li>
         </ol>
@@ -122,45 +123,6 @@ nav_order: 2
         <a class="project-stack-row" href="https://github.com/FreedomIntelligence/EasyMED" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>EasyMED</strong><span>AI standardized patient framework and evaluation resources.</span></span></a>
         <a class="project-stack-row" href="/projects/twinmarket-financial-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>TwinMarket</strong><span>Financial market simulation with LLM agents.</span></span></a>
         <a class="project-stack-row" href="/projects/microverse-world-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>MicroVerse</strong><span>Micro-world simulation with hidden mechanisms and evolving states.</span></span></a>
-      </div>
-    </details>
-  </section>
-
-  <section class="project-program-section project-theme-human" id="human-agent-interaction" data-project-tags="LLM Agents and Applications;Speech LLMs" data-project-url="/projects/human-agent-interaction/">
-    <div class="project-program-heading">
-      <div class="project-eyebrow">Human-agent interaction and simulation</div>
-      <h2>Human-Agent Interaction</h2>
-      <p>
-        这条线关注智能体如何和真实用户、学习者、患者、市场参与者以及模拟世界互动。它覆盖 LLM user simulator、AI standardized patients、speech-to-speech human-likeness evaluation、MicroVerse 交互式科学仿真，以及 TwinMarket 这类多智能体社会/金融模拟。
-      </p>
-      <div class="project-actions">
-        <a class="project-action primary" href="/projects/human-agent-interaction/">Open Human-Agent Interaction</a>
-        <a class="project-action" href="/projects/economic-world-models/">Open Economic World Models</a>
-        <a class="project-action" href="/projects/microverse-world-simulation/">Open MicroVerse</a>
-      </div>
-    </div>
-    <div class="project-program-layout">
-      <div class="project-program-media">
-        <img src="/assets/img/media-roundup-2026/twinmarket-bdi.png" alt="Human-agent and multi-agent simulation">
-      </div>
-      <div>
-        <h3>相关论文整理</h3>
-        <ol class="project-paper-list">
-          <li><a href="https://arxiv.org/abs/2308.11534" target="_blank" rel="noopener">Large Language Model as a User Simulator</a>：用 LLM 模拟用户，生成对话训练和评测数据。</li>
-          <li><a href="https://openreview.net/forum?id=9nddtu94uX" target="_blank" rel="noopener">PlatoLM: Teaching LLMs via a Socratic Questioning User Simulator</a>：通过苏格拉底式用户模拟训练多轮对话。</li>
-          <li><a href="https://arxiv.org/abs/2511.14783" target="_blank" rel="noopener">Human or LLM as Standardized Patients?</a>：医学教育中的 AI 标准化病人。</li>
-          <li><a href="https://arxiv.org/abs/2602.24080" target="_blank" rel="noopener">Human or Machine? A Preliminary Turing Test for Speech-to-Speech Interaction</a>：语音交互中的人类感评测。</li>
-          <li><a href="https://arxiv.org/abs/2603.00585" target="_blank" rel="noopener">MicroVerse: A Preliminary Exploration Toward a Micro-World Simulation</a>：面向生物过程和教育可视化的微观世界仿真。</li>
-          <li><a href="https://arxiv.org/abs/2502.01506" target="_blank" rel="noopener">TwinMarket</a>：金融市场中的行为与社会多智能体仿真。</li>
-        </ol>
-      </div>
-    </div>
-    <details class="project-resources-panel">
-      <summary><span>项目入口</span><strong>Simulation and interaction resources</strong></summary>
-      <div class="project-stack project-resource-stack">
-        <a class="project-stack-row" href="/projects/twinmarket-financial-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>TwinMarket</strong><span>金融市场行为和社会仿真。</span></span></a>
-        <a class="project-stack-row" href="/projects/microverse-world-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>MicroVerse</strong><span>面向生物机制的 micro-world simulation。</span></span></a>
-        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/EasyMED" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>EasyMED</strong><span>AI 标准化病人训练与评测。</span></span></a>
       </div>
     </details>
   </section>
@@ -207,7 +169,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-environment" id="environment-engineering-world-models" data-project-tags="Environment Engineering & World Models;Economic World Models;LLM Agents and Applications;LLM Reasoning & Agentic RL" data-project-url="/projects/environment-engineering-world-models/">
+  <section class="project-program-section project-theme-environment" id="environment-engineering-world-models" data-project-tags="Environment Engineering & World Models;Economic World Models;LLM Agents, Applications & Human-Agent Interaction;LLM Reasoning & Agentic RL" data-project-url="/projects/environment-engineering-world-models/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Environment engineering and world models</div>
       <h2>环境工程和世界模型</h2>
@@ -248,7 +210,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-economics" id="economic-world-models" data-project-tags="Economic World Models;Environment Engineering & World Models;LLM Agents and Applications;LLM Reasoning & Agentic RL" data-project-url="/projects/economic-world-models/">
+  <section class="project-program-section project-theme-economics" id="economic-world-models" data-project-tags="Economic World Models;Environment Engineering & World Models;LLM Agents, Applications & Human-Agent Interaction;LLM Reasoning & Agentic RL" data-project-url="/projects/economic-world-models/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Economic world models and agentic economies</div>
       <h2>经济世界模型</h2>
@@ -402,7 +364,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-education" id="medical-education-sp" data-project-tags="AI for Healthcare;LLM Agents and Applications" data-project-url="/projects/medical-education-standardized-patients/">
+  <section class="project-program-section project-theme-education" id="medical-education-sp" data-project-tags="AI for Healthcare;LLM Agents, Applications & Human-Agent Interaction" data-project-url="/projects/medical-education-standardized-patients/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Medical education and AI standardized patients</div>
       <h2>医学教育与 AI 标准化病人</h2>
@@ -474,7 +436,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-speech" id="speech-llms" data-project-tags="Speech LLMs;LLM Agents and Applications" data-project-url="/projects/speech-audio-talking-head-ai/">
+  <section class="project-program-section project-theme-speech" id="speech-llms" data-project-tags="Speech LLMs;LLM Agents, Applications & Human-Agent Interaction" data-project-url="/projects/speech-audio-talking-head-ai/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Speech LLMs and speech-to-speech agents</div>
       <h2>Speech LLMs</h2>
@@ -606,8 +568,10 @@ nav_order: 2
     const buttons = Array.from(document.querySelectorAll('[data-project-filter]'));
     const sections = Array.from(document.querySelectorAll('.project-program-section'));
     const empty = document.querySelector('.project-empty');
+    const mergedAgentTag = 'LLM Agents, Applications & Human-Agent Interaction';
     const filterAliases = {
-      'Human-Agent Interaction': 'LLM Agents and Applications'
+      'LLM Agents and Applications': mergedAgentTag,
+      'Human-Agent Interaction': mergedAgentTag
     };
 
     function normalizeFilterTag(tag) {
