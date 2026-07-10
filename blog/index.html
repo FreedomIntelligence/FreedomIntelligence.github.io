@@ -97,6 +97,132 @@ blog_tags:
       text-align: center;
     }
 
+    .post-list {
+      max-width: 980px;
+    }
+
+    .post-list > li {
+      border-bottom: 0;
+      margin: 0 0 1rem;
+      padding: 0;
+    }
+
+    .blog-list-card {
+      display: grid;
+      grid-template-columns: minmax(180px, 260px) minmax(0, 1fr);
+      gap: 1rem;
+      align-items: stretch;
+      border: 1px solid var(--global-divider-color);
+      border-radius: 8px;
+      background: var(--global-bg-color);
+      padding: 0.85rem;
+    }
+
+    .blog-list-thumb {
+      display: block;
+      overflow: hidden;
+      border-radius: 6px;
+      aspect-ratio: 16 / 9;
+      min-height: 150px;
+      color: #fff;
+      text-decoration: none;
+      background: #1f2933;
+    }
+
+    .blog-list-thumb:hover {
+      text-decoration: none;
+    }
+
+    .blog-list-thumb img,
+    .blog-generated-thumb {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .blog-list-thumb img {
+      object-fit: cover;
+      transition: transform 0.2s ease;
+    }
+
+    .blog-list-thumb:hover img {
+      transform: scale(1.03);
+    }
+
+    .blog-list-body {
+      min-width: 0;
+    }
+
+    .blog-list-body h3 {
+      margin-top: 0;
+    }
+
+    .blog-list-body .post-title {
+      overflow-wrap: anywhere;
+    }
+
+    .blog-generated-thumb {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 150px;
+      padding: 0.9rem;
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.16) 0 1px, transparent 1px 18px),
+        #244443;
+    }
+
+    .blog-generated-thumb-1 {
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.14) 0 1px, transparent 1px 18px),
+        #5a2d2a;
+    }
+
+    .blog-generated-thumb-2 {
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.14) 0 1px, transparent 1px 18px),
+        #404b2f;
+    }
+
+    .blog-generated-thumb-3 {
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.14) 0 1px, transparent 1px 18px),
+        #27384f;
+    }
+
+    .blog-generated-thumb-4 {
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.14) 0 1px, transparent 1px 18px),
+        #5a3f28;
+    }
+
+    .blog-generated-thumb-5 {
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.14) 0 1px, transparent 1px 18px),
+        #31445a;
+    }
+
+    .blog-generated-thumb__kicker,
+    .blog-generated-thumb__meta {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0;
+      line-height: 1.2;
+      opacity: 0.82;
+      text-transform: uppercase;
+    }
+
+    .blog-generated-thumb__title {
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      font-size: clamp(0.92rem, 2vw, 1.15rem);
+      font-weight: 700;
+      line-height: 1.2;
+      overflow-wrap: anywhere;
+    }
+
     .post-source-preview {
       display: flex;
       flex-wrap: wrap;
@@ -135,6 +261,14 @@ blog_tags:
     @media (max-width: 575px) {
       .blog-header-bar .blog-header-title {
         font-size: clamp(0.82rem, 3.1vw, 1rem);
+      }
+
+      .blog-list-card {
+        grid-template-columns: 1fr;
+      }
+
+      .blog-list-thumb {
+        min-height: 0;
       }
 
       .blog-filter {
@@ -187,8 +321,57 @@ blog_tags:
       {% if post.tags contains 'FreedomAI' or post.tags contains 'Phoenix' or post.tags contains 'Chimera' or post.tags contains 'LLMZoo' or post.tags contains 'SocraticChat' or post.tags contains 'PlatoLM' or post.tags contains 'dialogue-data' or post.tags contains 'IRGAN' or post.tags contains 'NLP' or post.tags contains 'open-source' or post.tags contains 'language-models' or post.tags contains 'diffusion-models' or post.tags contains 'reasoning-models' or post.tags contains 'attention' or post.tags contains 'transformers' or post.tags contains 'efficient-attention' %}Models & Data;{% endif %}
       {% if post.tags contains 'evaluation' or post.tags contains 'red-team' or post.tags contains 'model-comparison' or post.tags contains 'medical-benchmark' %}Evaluation & Safety;{% endif %}
     {% endcapture %}
+    {% capture post_href %}
+      {% if post.redirect == blank %}
+        {{ post.url | prepend: site.baseurl }}
+      {% elsif post.redirect contains '://' %}
+        {{ post.redirect }}
+      {% else %}
+        {{ post.redirect | relative_url }}
+      {% endif %}
+    {% endcapture %}
+    {% assign post_href = post_href | strip %}
+    {% capture post_target_attrs %}{% if post.redirect contains '://' %} target="_blank" rel="noopener"{% endif %}{% endcapture %}
+    {% assign post_image = post.og_image | default: post.image | default: post.img | default: post.thumbnail %}
+    {% if post_image == blank and post.content contains '<img' %}
+      {% assign image_parts = post.content | split: '<img' %}
+      {% assign image_tag = image_parts[1] %}
+      {% assign src_parts = image_tag | split: 'src="' %}
+      {% if src_parts.size > 1 %}
+        {% assign post_image = src_parts[1] | split: '"' | first %}
+      {% endif %}
+    {% endif %}
+    {% if post_image == blank and post.content contains 'path="' %}
+      {% assign path_parts = post.content | split: 'path="' %}
+      {% assign post_image = path_parts[1] | split: '"' | first %}
+    {% endif %}
+    {% assign image_prefix = post_image | slice: 0, 1 %}
+    {% capture post_image_url %}
+      {% if post_image contains '://' %}
+        {{ post_image }}
+      {% elsif post_image != blank and image_prefix == '/' %}
+        {{ post_image | relative_url }}
+      {% elsif post_image != blank %}
+        {{ post_image | prepend: '/' | relative_url }}
+      {% endif %}
+    {% endcapture %}
+    {% assign post_image_url = post_image_url | strip %}
+    {% assign generated_thumb_class = forloop.index0 | modulo: 6 %}
 
     <li data-blog-tags="{{ blog_filter_tags | strip | strip_newlines | escape }}">
+      <article class="blog-list-card">
+        <a class="blog-list-thumb" href="{{ post_href }}"{{ post_target_attrs }} aria-label="Open {{ post.title | escape }}">
+          {% if post_image_url != blank %}
+            <img src="{{ post_image_url }}" alt="{{ post.title | escape }}" loading="lazy">
+          {% else %}
+            <span class="blog-generated-thumb blog-generated-thumb-{{ generated_thumb_class }}" aria-hidden="true">
+              <span class="blog-generated-thumb__kicker">Freedom AI Blog</span>
+              <span class="blog-generated-thumb__title">{{ post.title }}</span>
+              <span class="blog-generated-thumb__meta">{{ post.date | date: '%b %-d, %Y' }}</span>
+            </span>
+          {% endif %}
+        </a>
+        <div class="blog-list-body">
       <h3>
         {% if post.redirect == blank %}
           <a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -243,6 +426,8 @@ blog_tags:
               {% endfor %}
           {% endif %}
     </p>
+        </div>
+      </article>
     </li>
 
     {% endfor %}
