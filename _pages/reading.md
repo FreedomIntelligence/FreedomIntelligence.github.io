@@ -7,7 +7,6 @@ description:
 project_tags:
   - LLM Reasoning & Agentic RL
   - LLM Agents and Applications
-  - Human-Agent Interaction
   - Multi-modal LLMs
   - Environment Engineering & World Models
   - Economic World Models
@@ -30,7 +29,6 @@ nav_order: 2
         {%- case tag -%}
         {%- when "LLM Reasoning & Agentic RL" -%}大模型推理与 Agentic RL
         {%- when "LLM Agents and Applications" -%}大模型智能体与应用
-        {%- when "Human-Agent Interaction" -%}人机智能体交互
         {%- when "Multi-modal LLMs" -%}多模态大模型
         {%- when "Environment Engineering & World Models" -%}环境工程与世界模型
         {%- when "Economic World Models" -%}经济世界模型
@@ -88,7 +86,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-human" id="llm-agents-applications" data-project-tags="LLM Agents and Applications;Human-Agent Interaction;Economic World Models" data-project-url="/projects/llm-agents-applications/">
+  <section class="project-program-section project-theme-human" id="llm-agents-applications" data-project-tags="LLM Agents and Applications;Economic World Models" data-project-url="/projects/llm-agents-applications/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Agents, simulators, tools, and applied environments</div>
       <h2>LLM Agents and Applications</h2>
@@ -128,7 +126,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-human" id="human-agent-interaction" data-project-tags="Human-Agent Interaction;LLM Agents and Applications;Speech LLMs" data-project-url="/projects/human-agent-interaction/">
+  <section class="project-program-section project-theme-human" id="human-agent-interaction" data-project-tags="LLM Agents and Applications;Speech LLMs" data-project-url="/projects/human-agent-interaction/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Human-agent interaction and simulation</div>
       <h2>Human-Agent Interaction</h2>
@@ -209,7 +207,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-environment" id="environment-engineering-world-models" data-project-tags="Environment Engineering & World Models;Economic World Models;Human-Agent Interaction;LLM Agents and Applications;LLM Reasoning & Agentic RL" data-project-url="/projects/environment-engineering-world-models/">
+  <section class="project-program-section project-theme-environment" id="environment-engineering-world-models" data-project-tags="Environment Engineering & World Models;Economic World Models;LLM Agents and Applications;LLM Reasoning & Agentic RL" data-project-url="/projects/environment-engineering-world-models/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Environment engineering and world models</div>
       <h2>环境工程和世界模型</h2>
@@ -404,7 +402,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-education" id="medical-education-sp" data-project-tags="AI for Healthcare;Human-Agent Interaction" data-project-url="/projects/medical-education-standardized-patients/">
+  <section class="project-program-section project-theme-education" id="medical-education-sp" data-project-tags="AI for Healthcare;LLM Agents and Applications" data-project-url="/projects/medical-education-standardized-patients/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Medical education and AI standardized patients</div>
       <h2>医学教育与 AI 标准化病人</h2>
@@ -476,7 +474,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-speech" id="speech-llms" data-project-tags="Speech LLMs;Human-Agent Interaction" data-project-url="/projects/speech-audio-talking-head-ai/">
+  <section class="project-program-section project-theme-speech" id="speech-llms" data-project-tags="Speech LLMs;LLM Agents and Applications" data-project-url="/projects/speech-audio-talking-head-ai/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Speech LLMs and speech-to-speech agents</div>
       <h2>Speech LLMs</h2>
@@ -608,6 +606,13 @@ nav_order: 2
     const buttons = Array.from(document.querySelectorAll('[data-project-filter]'));
     const sections = Array.from(document.querySelectorAll('.project-program-section'));
     const empty = document.querySelector('.project-empty');
+    const filterAliases = {
+      'Human-Agent Interaction': 'LLM Agents and Applications'
+    };
+
+    function normalizeFilterTag(tag) {
+      return filterAliases[tag] || tag;
+    }
 
     function tagsFor(section) {
       return (section.dataset.projectTags || '')
@@ -617,6 +622,7 @@ nav_order: 2
     }
 
     function setFilter(activeTag, updateUrl) {
+      activeTag = normalizeFilterTag(activeTag);
       let visibleCount = 0;
 
       sections.forEach(function (section) {
@@ -676,7 +682,7 @@ nav_order: 2
       });
     });
 
-    const initialTag = new URLSearchParams(window.location.search).get('tag');
+    const initialTag = normalizeFilterTag(new URLSearchParams(window.location.search).get('tag'));
     const hasInitialTag = buttons.some(function (button) {
       return button.dataset.projectFilter === initialTag;
     });
