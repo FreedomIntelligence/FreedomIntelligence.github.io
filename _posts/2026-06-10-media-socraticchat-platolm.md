@@ -4,6 +4,7 @@ title: "PaperWeekly｜SocraticChat / PlatoLM：用苏格拉底提问蒸馏对话
 date: 2026-06-10
 description: "基于PaperWeekly 关于 SocraticChat / PlatoLM 的报道整理的简要摘要，补充 FreedomAI Lab 参与贡献与资源链接。"
 tags: media PaperWeekly SocraticChat PlatoLM dialogue-data
+og_image: "/assets/img/media-roundup-2026/socratic-pipeline.png"
 source_links:
   - label: "PaperWeekly 原文"
     url: "https://www.python88.com/topic/163925"
@@ -18,6 +19,8 @@ toc:
   - name: Resources
 
 ---
+
+{% include figure.html path="assets/img/media-roundup-2026/socratic-pipeline.png" class="img-fluid rounded z-depth-0" zoomable=true alt="SocraticChat and PlatoLM pipeline from the original media report" caption="Representative figure from the original media report." %}
 
 <p style="color: var(--global-text-color-light); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.2rem;">本文为媒体报道摘要，不保留完整转载内容；原文版权归原媒体与原作者所有。SocraticChat / PlatoLM 与深圳市大数据研究院、香港中文大学（深圳）和王本友教授团队相关。FreedomAI Lab 的参与贡献主要体现在苏格拉底式提问数据构造、对话能力蒸馏、开源数据集与 PlatoLM 模型资源发布。 完整原文、论文、代码和项目入口见文末 Resources。</p>
 

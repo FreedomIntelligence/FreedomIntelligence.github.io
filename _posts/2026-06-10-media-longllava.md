@@ -4,6 +4,7 @@ title: "机器之心 / PaperWeekly｜LongLLaVA：Mamba+Transformer 混合架构�
 date: 2026-06-10
 description: "基于机器之心与 PaperWeekly 关于 LongLLaVA 的报道整理的简要摘要，补充 FreedomAI Lab 参与贡献与资源链接。"
 tags: media machine-heart PaperWeekly LongLLaVA multimodal long-context
+og_image: "/assets/img/media-reposts/media-longllava/img-001-405a4b6fe6.png"
 source_links:
   - label: "机器之心原文"
     url: "http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650935336&idx=4&sn=1d0f7c1abd46f072741e563050151045"
@@ -20,6 +21,8 @@ toc:
   - name: Resources
 
 ---
+
+{% include figure.html path="assets/img/media-reposts/media-longllava/img-001-405a4b6fe6.png" class="img-fluid rounded z-depth-0" zoomable=true alt="LongLLaVA processed-image comparison from the original media report" caption="Representative figure from the original media report." %}
 
 <p style="color: var(--global-text-color-light); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.2rem;">本文为媒体报道摘要，不保留完整转载内容；原文版权归原媒体与原作者所有。LongLLaVA 由香港中文大学（深圳）、深圳大数据研究院等团队共同提出，报道中提到通讯作者王本友教授，相关开源资源由 FreedomIntelligence 社区维护。FreedomAI Lab 的参与贡献主要体现在多模态长上下文建模、混合架构设计、训练数据构建与开源项目发布。 完整原文、论文、代码和项目入口见文末 Resources。</p>
 

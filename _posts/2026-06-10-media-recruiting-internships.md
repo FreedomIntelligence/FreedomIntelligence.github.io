@@ -5,6 +5,7 @@ date: 2026-06-10
 published: false
 description: "基于PaperWeekly / AI 求职中与港中文（深圳）相关的招生和实习信息整理的简要摘要，补充 FreedomAI Lab 参与贡献与资源链接。"
 tags: media PaperWeekly recruiting internship NLP multimodal
+og_image: "/assets/img/media-reposts/media-recruiting-internships/img-001-af8361ab98.jpg"
 source_links:
   - label: "招生原文"
     url: "https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247612887&idx=3&sn=e504e7c804d472b420adf6ad2ea68cb2&chksm=96ebe657a19c6f41e87a403bb1ea835133eaad38328e31b96d0eea4c292dbcb6620da0ea7c49&scene=126&sessionid=0"
@@ -21,6 +22,8 @@ toc:
   - name: Resources
 
 ---
+
+{% include figure.html path="assets/img/media-reposts/media-recruiting-internships/img-001-af8361ab98.jpg" class="img-fluid rounded z-depth-0" zoomable=true alt="CUHK-Shenzhen campus image from the original media report" caption="Representative image from the original media report." %}
 
 <p style="color: var(--global-text-color-light); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.2rem;">本文为媒体报道摘要，不保留完整转载内容；原文版权归原媒体与原作者所有。这些原文与港中文（深圳）FreedomAI Lab 所在的研究生态相关，涵盖 NLP/ML、多模态大模型、大语言模型算法实习等方向。FreedomAI Lab 的参与主要体现在开放研究课题、学生培养、项目实践和长期科研训练入口。 完整原文、论文、代码和项目入口见文末 Resources。</p>
 

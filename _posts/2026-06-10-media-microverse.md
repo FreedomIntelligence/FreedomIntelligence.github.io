@@ -4,6 +4,7 @@ title: "机器之心｜MicroVerse：AI 模拟看不见的微观世界"
 date: 2026-06-10
 description: "基于机器之心关于 MicroVerse 的报道整理的简要摘要，补充 FreedomAI Lab 参与贡献与资源链接。"
 tags: media machine-heart MicroVerse world-model biomedical-ai
+og_image: "/assets/img/media-roundup-2026/microverse-bench.png"
 source_links:
   - label: "机器之心原文"
     url: "http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651022151&idx=3&sn=89303fe37f598d0481ba1effbe953e68"
@@ -18,6 +19,8 @@ toc:
   - name: Resources
 
 ---
+
+{% include figure.html path="assets/img/media-roundup-2026/microverse-bench.png" class="img-fluid rounded z-depth-0" zoomable=true alt="MicroWorldBench evaluation process from the original media report" caption="Representative figure from the original media report." %}
 
 <p style="color: var(--global-text-color-light); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.2rem;">本文为媒体报道摘要，不保留完整转载内容；原文版权归原媒体与原作者所有。MicroVerse 由香港中文大学（深圳）等团队推动，原文中提到王本友教授指导。FreedomAI Lab 的参与贡献主要体现在微观世界建模、多模态科学模拟、MicroWorldBench 评测设置与开源项目资源维护。 完整原文、论文、代码和项目入口见文末 Resources。</p>
 

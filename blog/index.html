@@ -124,9 +124,10 @@ blog_tags:
       border-radius: 6px;
       aspect-ratio: 16 / 9;
       min-height: 150px;
+      border: 1px solid rgba(148, 163, 184, 0.25);
       color: #fff;
       text-decoration: none;
-      background: #1f2933;
+      background: #f6f8fb;
     }
 
     .blog-list-thumb:hover {
@@ -141,12 +142,15 @@ blog_tags:
     }
 
     .blog-list-thumb img {
-      object-fit: cover;
-      transition: transform 0.2s ease;
+      box-sizing: border-box;
+      object-fit: contain;
+      object-position: center;
+      padding: 0.2rem;
+      transition: filter 0.2s ease;
     }
 
     .blog-list-thumb:hover img {
-      transform: scale(1.03);
+      filter: contrast(1.04) saturate(1.03);
     }
 
     .blog-list-body {
