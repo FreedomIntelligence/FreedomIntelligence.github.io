@@ -120,6 +120,7 @@ blog_tags:
 
     .blog-list-thumb {
       display: block;
+      position: relative;
       overflow: hidden;
       border-radius: 6px;
       aspect-ratio: 16 / 9;
@@ -142,6 +143,8 @@ blog_tags:
     }
 
     .blog-list-thumb img {
+      position: absolute;
+      inset: 0;
       box-sizing: border-box;
       object-fit: contain;
       object-position: center;
@@ -167,9 +170,10 @@ blog_tags:
 
     .blog-generated-thumb {
       display: flex;
+      position: absolute;
+      inset: 0;
       flex-direction: column;
       justify-content: space-between;
-      min-height: 150px;
       padding: 0.9rem;
       background:
         linear-gradient(135deg, rgba(255, 255, 255, 0.16) 0 1px, transparent 1px 18px),
@@ -272,7 +276,7 @@ blog_tags:
       }
 
       .blog-list-thumb {
-        min-height: 0;
+        min-height: 180px;
       }
 
       .blog-filter {
