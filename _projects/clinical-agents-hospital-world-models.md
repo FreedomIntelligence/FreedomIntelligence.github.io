@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Clinical Agents & Hospital World Models
+title: Clinical & Hospital World Models
 description: Clinical agents, patient-dynamics world models, hospital information-system environments, multi-role simulations, and medical skills.
 img: assets/img/media-roundup-2026/huatuogpt-auto-eval.jpeg
 importance: 3
@@ -35,7 +35,7 @@ github: https://github.com/FreedomIntelligence/SepsisAgent
 </div>
 
 <p class="impact-lede">
-Clinical Agents & Hospital World Models moves medical AI from isolated QA to environments where agents act, observe, call tools, interact with clinical roles, and reason over changing patient or hospital states. This page intentionally excludes DentalGPT and GlobalDentBench, which are now organized under the dedicated dental foundation model direction.
+Clinical & Hospital World Models moves medical AI from isolated QA to environments where agents act, observe, call tools, interact with clinical roles, and reason over changing patient or hospital states. This page intentionally excludes DentalGPT and GlobalDentBench, which are now organized under the dedicated dental foundation model direction.
 </p>
 
 <section class="impact-section">
