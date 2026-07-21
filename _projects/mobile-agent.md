@@ -3,7 +3,7 @@ layout: page
 title: Mobile Agent
 description: Benchmarks, environments, safety tests, and training recipes for phone-use agents operating real mobile workflows.
 img: assets/img/media-roundup-2026/phoneharness-overview.png
-importance: 4
+importance: 0
 category: work
 github: https://github.com/PhoneHarness/PhoneHarness
 ---
