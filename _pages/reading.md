@@ -7,6 +7,8 @@ description:
 project_tags:
   - LLM Reasoning & Agentic RL
   - "LLM Agents, Applications & Human-Agent Interaction"
+  - AI Education
+  - Mobile Agent
   - Multi-modal LLMs
   - Environment Engineering & World Models
   - Economic World Models
@@ -29,6 +31,8 @@ nav_order: 2
         {%- case tag -%}
         {%- when "LLM Reasoning & Agentic RL" -%}大模型推理与 Agentic RL
         {%- when "LLM Agents, Applications & Human-Agent Interaction" -%}大模型智能体、应用与人机交互
+        {%- when "AI Education" -%}AI 教育
+        {%- when "Mobile Agent" -%}手机智能体
         {%- when "Multi-modal LLMs" -%}多模态大模型
         {%- when "Environment Engineering & World Models" -%}环境工程与世界模型
         {%- when "Economic World Models" -%}经济世界模型
@@ -123,6 +127,84 @@ nav_order: 2
         <a class="project-stack-row" href="https://github.com/FreedomIntelligence/EasyMED" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>EasyMED</strong><span>AI standardized patient framework and evaluation resources.</span></span></a>
         <a class="project-stack-row" href="/projects/twinmarket-financial-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>TwinMarket</strong><span>Financial market simulation with LLM agents.</span></span></a>
         <a class="project-stack-row" href="/projects/microverse-world-simulation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>MicroVerse</strong><span>Micro-world simulation with hidden mechanisms and evolving states.</span></span></a>
+      </div>
+    </details>
+  </section>
+
+  <section class="project-program-section project-theme-education" id="ai-education" data-project-tags="AI Education;LLM Agents, Applications & Human-Agent Interaction;AI for Healthcare" data-project-url="/projects/ai-education/">
+    <div class="project-program-heading">
+      <div class="project-eyebrow">Education agents, tutors, and learning simulation</div>
+      <h2>AI Education</h2>
+      <p>
+        这条线把 LLM agent 从“答题工具”推进到可教学、可陪练、可评测的教育智能体：包括自我调节学习助手、LLM user simulator、PlatoLM / SocraticChat 的苏格拉底式多轮对话训练，以及 EasyMED / SPBench 中的 AI 标准化病人。
+      </p>
+      <div class="project-actions">
+        <a class="project-action primary" href="/projects/ai-education/">Open AI Education</a>
+        <a class="project-action" href="https://github.com/FreedomIntelligence/PlatoLM" target="_blank" rel="noopener">Open PlatoLM</a>
+        <a class="project-action" href="https://github.com/FreedomIntelligence/EasyMED" target="_blank" rel="noopener">Open EasyMED</a>
+      </div>
+    </div>
+    <div class="project-program-layout">
+      <div class="project-program-media">
+        <img src="/assets/img/media-roundup-2026/socratic-pipeline.png" alt="Socratic dialogue and education agent pipeline">
+      </div>
+      <div>
+        <h3>相关论文整理</h3>
+        <ol class="project-paper-list">
+          <li><a href="https://arxiv.org/abs/2506.09968" target="_blank" rel="noopener">SRLAgent</a>：用游戏化机制和 LLM assistance 增强 self-regulated learning。</li>
+          <li><a href="https://arxiv.org/abs/2308.11534" target="_blank" rel="noopener">Large Language Model as a User Simulator</a>：把 LLM 作为可控用户模拟器，用于多轮对话训练和评测。</li>
+          <li><a href="https://openreview.net/forum?id=9nddtu94uX" target="_blank" rel="noopener">PlatoLM</a>：通过苏格拉底式追问，把多轮教学对话能力蒸馏进 LLM。</li>
+          <li><a href="https://arxiv.org/abs/2511.14783" target="_blank" rel="noopener">Human or LLM as Standardized Patients?</a>：用 EasyMED 和 SPBench 评测 AI 标准化病人的医学教育效果。</li>
+          <li><a href="https://arxiv.org/abs/2602.05856" target="_blank" rel="noopener">It Talks Like a Patient, But Feels Different</a>：从 CHI / co-design 视角研究 AI 标准化病人的学习体验和设计需求。</li>
+        </ol>
+      </div>
+    </div>
+    <details class="project-resources-panel">
+      <summary><span>项目 / 数据 / 代码资源</span><strong>Education agent stack</strong></summary>
+      <div class="project-stack project-resource-stack">
+        <a class="project-stack-row" href="/projects/ai-education/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>AI Education</strong><span>教育智能体、学习模拟、Socratic dialogue 和 AI standardized patients 总览。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/PlatoLM" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/PlatoLM</strong><span>PlatoLM 模型、Socratic-style dialogue training 和开源资源。</span></span></a>
+        <a class="project-stack-row" href="https://huggingface.co/datasets/FreedomIntelligence/SocraticChat" target="_blank" rel="noopener"><span class="project-stack-type">HF Dataset</span><span class="project-stack-main"><strong>SocraticChat</strong><span>苏格拉底式对话数据资源。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/EasyMED" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/EasyMED</strong><span>AI 标准化病人和医学教育评测资源。</span></span></a>
+      </div>
+    </details>
+  </section>
+
+  <section class="project-program-section project-theme-human" id="mobile-agent" data-project-tags="Mobile Agent;LLM Agents, Applications & Human-Agent Interaction;Multi-modal LLMs;LLM efficiency and AI Infra" data-project-url="/projects/mobile-agent/">
+    <div class="project-program-heading">
+      <div class="project-eyebrow">Phone-use agents and mobile workflow execution</div>
+      <h2>Mobile Agent</h2>
+      <p>
+        这条线把手机变成通用智能体的真实执行场：从隐私与安全评测，到可控手机环境、GUI / CLI / tool mixed-action harness，再到面向真实 App workflow 的 open model 训练，让 phone-use agents 能可靠、安全、可审计地完成任务。
+      </p>
+      <div class="project-actions">
+        <a class="project-action primary" href="/projects/mobile-agent/">Open Mobile Agent</a>
+        <a class="project-action" href="https://phoneharness.github.io/" target="_blank" rel="noopener">Open PhoneHarness</a>
+        <a class="project-action" href="https://huggingface.co/datasets/PhoneHarness/phoneharness-bench" target="_blank" rel="noopener">Open Dataset</a>
+      </div>
+    </div>
+    <div class="project-program-layout">
+      <div class="project-program-media">
+        <img src="/assets/img/media-roundup-2026/phoneharness-overview.png" alt="PhoneHarness mobile agent overview">
+      </div>
+      <div>
+        <h3>相关论文整理</h3>
+        <ol class="project-paper-list">
+          <li><a href="https://arxiv.org/abs/2604.00986" target="_blank" rel="noopener">Do Phone-Use Agents Respect Your Privacy?</a>：用 MyPhoneBench 评测手机智能体的权限、披露和记忆控制风险。</li>
+          <li><a href="https://arxiv.org/abs/2605.07630" target="_blank" rel="noopener">Safe, or Simply Incapable?</a>：区分真正安全、危险行动和“什么也做不好”的失败。</li>
+          <li><a href="https://arxiv.org/abs/2605.29486" target="_blank" rel="noopener">PhoneWorld</a>：把真实 GUI 轨迹和截图转成可复用、可执行、可验证的手机环境。</li>
+          <li><a href="https://arxiv.org/abs/2606.14832" target="_blank" rel="noopener">PhoneHarness</a>：用 GUI、CLI 和 tool action 的混合动作空间评测真实手机工作流完成度。</li>
+          <li><a href="https://arxiv.org/abs/2606.23049" target="_blank" rel="noopener">PhoneBuddy</a>：结合真实 App 环境和 mock phone environment 训练开放 phone-use agent 模型。</li>
+        </ol>
+      </div>
+    </div>
+    <details class="project-resources-panel">
+      <summary><span>项目 / 代码 / 数据资源</span><strong>Mobile agent stack</strong></summary>
+      <div class="project-stack project-resource-stack">
+        <a class="project-stack-row" href="/projects/mobile-agent/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>Mobile Agent</strong><span>手机智能体的评测、安全、环境、harness 和训练路线总览。</span></span></a>
+        <a class="project-stack-row" href="https://phoneharness.github.io/" target="_blank" rel="noopener"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>PhoneHarness</strong><span>Mixed GUI、CLI 和 tool action 的手机智能体项目主页。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/PhoneHarness/PhoneHarness" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>PhoneHarness/PhoneHarness</strong><span>Phone-use agent harness 和 evaluation workflow 代码。</span></span></a>
+        <a class="project-stack-row" href="https://huggingface.co/datasets/PhoneHarness/phoneharness-bench" target="_blank" rel="noopener"><span class="project-stack-type">HF Dataset</span><span class="project-stack-main"><strong>PhoneHarness Bench</strong><span>手机智能体 mixed-action benchmark 数据资源。</span></span></a>
       </div>
     </details>
   </section>
