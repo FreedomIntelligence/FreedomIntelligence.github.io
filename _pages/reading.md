@@ -6,6 +6,10 @@ title_zh: 项目
 description:
 project_tags:
   - Mobile Agent
+  - General LLM Evaluation
+  - Agentic Creation & Executable Artifacts
+  - Clinical Agents & Hospital World Models
+  - Dental Foundation Models
   - LLM Reasoning & Agentic RL
   - "LLM Agents, Applications & Human-Agent Interaction"
   - AI Education
@@ -29,6 +33,10 @@ nav_order: 2
     {% for tag in page.project_tags %}
       {% capture tag_zh %}
         {%- case tag -%}
+        {%- when "General LLM Evaluation" -%}通用大模型评估
+        {%- when "Agentic Creation & Executable Artifacts" -%}智能体创作与可执行产物
+        {%- when "Clinical Agents & Hospital World Models" -%}临床智能体与医院世界模型
+        {%- when "Dental Foundation Models" -%}牙科大模型
         {%- when "LLM Reasoning & Agentic RL" -%}大模型推理与 Agentic RL
         {%- when "LLM Agents, Applications & Human-Agent Interaction" -%}大模型智能体、应用与人机交互
         {%- when "AI Education" -%}AI 教育
@@ -85,6 +93,167 @@ nav_order: 2
         <a class="project-stack-row" href="https://phoneharness.github.io/" target="_blank" rel="noopener"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>PhoneHarness</strong><span>Mixed GUI、CLI 和 tool action 的手机智能体项目主页。</span></span></a>
         <a class="project-stack-row" href="https://github.com/PhoneHarness/PhoneHarness" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>PhoneHarness/PhoneHarness</strong><span>Phone-use agent harness 和 evaluation workflow 代码。</span></span></a>
         <a class="project-stack-row" href="https://huggingface.co/datasets/PhoneHarness/phoneharness-bench" target="_blank" rel="noopener"><span class="project-stack-type">HF Dataset</span><span class="project-stack-main"><strong>PhoneHarness Bench</strong><span>手机智能体 mixed-action benchmark 数据资源。</span></span></a>
+      </div>
+    </details>
+  </section>
+
+  <section class="project-program-section project-theme-eval" id="general-llm-evaluation" data-project-tags="General LLM Evaluation;Multi-modal LLMs;AI for Healthcare;LLM Agents, Applications & Human-Agent Interaction" data-project-url="/projects/general-llm-evaluation/">
+    <div class="project-program-heading">
+      <div class="project-eyebrow">Rubrics, judges, freshness, bias, ethics, and rewards</div>
+      <h2>通用大模型评估</h2>
+      <p>
+        这个方向把 Rubric-based Evaluation & Reward Design 和 Trustworthy / Responsible AI Evaluation 合并成一条更大的“通用评估”主线：从 per-sample criteria、LLM-as-a-judge 偏差、时间泛化、文化偏差，到医疗伦理和 rubric-to-reward，把开放式能力评测变成可审计、可复现、可训练的反馈系统。
+      </p>
+      <div class="project-actions">
+        <a class="project-action primary" href="/projects/general-llm-evaluation/">Open General Evaluation</a>
+        <a class="project-action" href="https://github.com/FreedomIntelligence/Awesome-Rubrics" target="_blank" rel="noopener">Open Awesome-Rubrics</a>
+        <a class="project-action" href="https://github.com/FreedomIntelligence/MLLM-Bench" target="_blank" rel="noopener">Open MLLM-Bench</a>
+      </div>
+    </div>
+    <div class="project-program-layout">
+      <div class="project-program-media">
+        <img src="/assets/img/freedomai-2026/impact/github-impact.jpg" alt="General LLM evaluation project signal">
+      </div>
+      <div>
+        <h3>相关论文整理</h3>
+        <ol class="project-paper-list">
+          <li><a href="https://aclanthology.org/2025.naacl-long.256/" target="_blank" rel="noopener">MLLM-Bench</a>：用 per-sample criteria 评估多模态大模型，让样本级标准成为 judge 的核心输入。</li>
+          <li><a href="https://arxiv.org/abs/2402.10669" target="_blank" rel="noopener">Humans or LLMs as the Judge?</a>：系统分析人类和 LLM judge 的判断偏差，为自动评测校准提供依据。</li>
+          <li><a href="https://github.com/FreedomIntelligence/FreshBench" target="_blank" rel="noopener">FreshBench</a>：评估大模型的 temporal generalization，判断模型是否“过时”。</li>
+          <li><a href="https://arxiv.org/abs/2505.18562" target="_blank" rel="noopener">From Word to World</a>：用 word association test 评估和缓解 LLM 的文化偏差。</li>
+          <li><a href="https://github.com/FreedomIntelligence/PrinciplismQA" target="_blank" rel="noopener">PrinciplismQA</a>：把四原则医学伦理转成 MCQA、临床病例和 rubric keypoints。</li>
+          <li><a href="https://github.com/FreedomIntelligence/Awesome-Rubrics" target="_blank" rel="noopener">Awesome-Rubrics</a>：整理 rubric-based evaluation、reward modeling 和 post-training 资源。</li>
+        </ol>
+      </div>
+    </div>
+    <details class="project-resources-panel">
+      <summary><span>论文 / GitHub / 资源入口</span><strong>Evaluation and reward stack</strong></summary>
+      <div class="project-stack project-resource-stack">
+        <a class="project-stack-row" href="/projects/general-llm-evaluation/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>General LLM Evaluation</strong><span>通用大模型评估、rubric judge、可靠性和 reward design 总览。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/Awesome-Rubrics" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/Awesome-Rubrics</strong><span>Rubric-based evaluation、alignment 和 agentic AI 文献地图。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/MLLM-Bench" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/MLLM-Bench</strong><span>Per-sample criteria 多模态评测代码与数据。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/FreshBench" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/FreshBench</strong><span>时间泛化和模型新鲜度评测资源。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/PrinciplismQA" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/PrinciplismQA</strong><span>医学伦理知识、病例和 rubric scoring 资源。</span></span></a>
+      </div>
+    </details>
+  </section>
+
+  <section class="project-program-section project-theme-optimization" id="agentic-creation-executable-artifacts" data-project-tags="Agentic Creation & Executable Artifacts;LLM Agents, Applications & Human-Agent Interaction;Environment Engineering & World Models;LLM Reasoning & Agentic RL" data-project-url="/projects/agentic-creation-executable-artifacts/">
+    <div class="project-program-heading">
+      <div class="project-eyebrow">From instructions to runnable games, CAD scripts, solvers, and code</div>
+      <h2>Agentic Creation & Executable Artifacts</h2>
+      <p>
+        这条线关注的不是“模型说得像不像”，而是智能体能不能把自然语言需求变成真正可运行、可渲染、可验证的产物。代表任务包括生成可玩的 Godot 游戏、可执行的 Blender CAD 脚本、数学建模求解器，以及把推理过程接到代码执行环境中。
+      </p>
+      <div class="project-actions">
+        <a class="project-action primary" href="/projects/agentic-creation-executable-artifacts/">Open Agentic Creation</a>
+        <a class="project-action" href="https://github.com/FreedomIntelligence/gamecraft-bench" target="_blank" rel="noopener">Open GameCraft-Bench</a>
+        <a class="project-action" href="https://github.com/FreedomIntelligence/BlenderLLM" target="_blank" rel="noopener">Open BlenderLLM</a>
+      </div>
+    </div>
+    <div class="project-program-layout">
+      <div class="project-program-media">
+        <img src="/assets/img/freedomai-2026/impact/github-repos.png" alt="Executable artifacts from agentic creation">
+      </div>
+      <div>
+        <h3>相关论文整理</h3>
+        <ol class="project-paper-list">
+          <li><a href="https://arxiv.org/abs/2606.17861" target="_blank" rel="noopener">GameCraft-Bench</a>：评估 coding agents 是否能把游戏规格生成完整、可启动、可 replay 的 Godot 项目。</li>
+          <li><a href="https://arxiv.org/abs/2412.14203" target="_blank" rel="noopener">BlenderLLM</a>：训练 LLM 生成可在 Blender 中执行并渲染 3D 模型的 CAD 脚本。</li>
+          <li><a href="https://arxiv.org/abs/2405.13144" target="_blank" rel="noopener">Mamo</a>：面向数学建模的 benchmark 和 solver，把自然语言问题转成可求解模型。</li>
+          <li><a href="https://arxiv.org/abs/2405.17743" target="_blank" rel="noopener">ORLM</a>：训练大模型做自动化优化建模，连接问题描述、约束、目标函数和代码。</li>
+          <li><a href="https://arxiv.org/abs/2506.09820" target="_blank" rel="noopener">CoRT</a>：把 code execution 放进 reasoning，提升中间计算的可验证性。</li>
+        </ol>
+      </div>
+    </div>
+    <details class="project-resources-panel">
+      <summary><span>项目 / 代码 / benchmark</span><strong>Executable artifact stack</strong></summary>
+      <div class="project-stack project-resource-stack">
+        <a class="project-stack-row" href="/projects/agentic-creation-executable-artifacts/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>Agentic Creation</strong><span>可执行产物生成、验证和交互式评测总览。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/gamecraft-bench" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/gamecraft-bench</strong><span>可玩游戏生成 benchmark、任务、replay 和 hidden rubric。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/BlenderLLM" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/BlenderLLM</strong><span>CAD script 生成模型、BlendNet 数据和 CADBench。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/Mamo" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/Mamo</strong><span>数学建模 benchmark 与 solver 资源。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/Cardinal-Operations/ORLM" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>Cardinal-Operations/ORLM</strong><span>自动化优化建模训练框架和 IndustryOR benchmark。</span></span></a>
+      </div>
+    </details>
+  </section>
+
+  <section class="project-program-section project-theme-medical" id="clinical-agents-hospital-world-models" data-project-tags="Clinical Agents & Hospital World Models;AI for Healthcare;Environment Engineering & World Models;LLM Agents, Applications & Human-Agent Interaction" data-project-url="/projects/clinical-agents-hospital-world-models/">
+    <div class="project-program-heading">
+      <div class="project-eyebrow">Clinical agents, patient dynamics, HIS environments, and hospital twins</div>
+      <h2>Clinical Agents & Hospital World Models</h2>
+      <p>
+        这个方向把医疗 AI 从静态问答推进到临床环境中的 agent：它关心 ICU 患者动态、医院信息系统、医生工作流、多角色医院仿真、工具调用和安全治理。牙科 benchmark 和 DentalGPT 已单独放入牙科大模型方向，这里只保留临床智能体与医院世界模型。
+      </p>
+      <div class="project-actions">
+        <a class="project-action primary" href="/projects/clinical-agents-hospital-world-models/">Open Clinical Agents</a>
+        <a class="project-action" href="https://github.com/FreedomIntelligence/SepsisAgent" target="_blank" rel="noopener">Open SepsisAgent</a>
+        <a class="project-action" href="https://github.com/FreedomIntelligence/TwinHospital" target="_blank" rel="noopener">Open TwinHospital</a>
+      </div>
+    </div>
+    <div class="project-program-layout">
+      <div class="project-program-media">
+        <img src="/assets/img/media-roundup-2026/huatuogpt-auto-eval.jpeg" alt="Clinical agents and hospital world models">
+      </div>
+      <div>
+        <h3>相关论文整理</h3>
+        <ol class="project-paper-list">
+          <li><a href="https://arxiv.org/abs/2605.14723" target="_blank" rel="noopener">SepsisAgent</a>：通过 Clinical World Model 进行 propose-simulate-refine，并用 agentic RL 学习 ICU 治疗策略。</li>
+          <li><a href="https://github.com/FreedomIntelligence/Agentic-Hospital" target="_blank" rel="noopener">Agentic-Hospital</a>：把 HIS/EMR、角色仿真、工具接口、治理和 rubric 评测组织成医院级 agent 环境。</li>
+          <li><a href="https://github.com/FreedomIntelligence/TwinHospital" target="_blank" rel="noopener">TwinHospital</a>：结合真实 HIS data flow 与多角色仿真，复现挂号、问诊、治疗和管理流程。</li>
+          <li><a href="https://arxiv.org/abs/2510.11040" target="_blank" rel="noopener">Doctor-Centric Medical AI</a>：把任务和 benchmark 对齐到医生真实工作流。</li>
+          <li><a href="https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills" target="_blank" rel="noopener">OpenClaw-Medical-Skills</a>：开放医疗 AI skills library，为临床 agent 提供可调用技能入口。</li>
+        </ol>
+      </div>
+    </div>
+    <details class="project-resources-panel">
+      <summary><span>临床 agent / 医院环境 / 技能库</span><strong>Hospital world-model stack</strong></summary>
+      <div class="project-stack project-resource-stack">
+        <a class="project-stack-row" href="/projects/clinical-agents-hospital-world-models/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>Clinical Agents & Hospital World Models</strong><span>临床智能体、医院数字环境和患者动态世界模型总览。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/SepsisAgent" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/SepsisAgent</strong><span>ICU sepsis treatment recommendation with Clinical World Model。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/Agentic-Hospital" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/Agentic-Hospital</strong><span>Hospital-scale actionable environment for autonomous agents。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/TwinHospital" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/TwinHospital</strong><span>HIS data-flow-driven hospital process simulation。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/OpenClaw-Medical-Skills</strong><span>面向 medical agents 的开放技能库。</span></span></a>
+      </div>
+    </details>
+  </section>
+
+  <section class="project-program-section project-theme-medical" id="dental-foundation-models" data-project-tags="Dental Foundation Models;AI for Healthcare;Multi-modal LLMs;General LLM Evaluation" data-project-url="/projects/dental-foundation-models/">
+    <div class="project-program-heading">
+      <div class="project-eyebrow">Dental LLMs, multimodal diagnosis, clinical reasoning, and benchmarks</div>
+      <h2>牙科大模型</h2>
+      <p>
+        牙科是可以独立成方向的垂直医疗 AI：既有 DentalGPT 这样的多模态牙科大模型，也有 GlobalDentBench、OmniDentBench 等面向临床推理、安全风险和专家校准的 benchmark。它强调口腔影像、病例推理、专科 taxonomy、真实临床风险和专家评分。
+      </p>
+      <div class="project-actions">
+        <a class="project-action primary" href="/projects/dental-foundation-models/">Open Dental LLMs</a>
+        <a class="project-action" href="https://freedomdle.cn/" target="_blank" rel="noopener">Open OmniDentBench</a>
+        <a class="project-action" href="https://github.com/FreedomIntelligence/DentalGPT" target="_blank" rel="noopener">Open DentalGPT</a>
+      </div>
+    </div>
+    <div class="project-program-layout">
+      <div class="project-program-media">
+        <img src="/assets/img/media-roundup-2026/cmb-overview.png" alt="Dental foundation models and benchmarks">
+      </div>
+      <div>
+        <h3>相关论文与 benchmark</h3>
+        <ol class="project-paper-list">
+          <li><a href="https://arxiv.org/abs/2512.11558" target="_blank" rel="noopener">DentalGPT</a>：用 120K+ 牙科图像、domain knowledge injection 和 GRPO 强化多模态复杂推理。</li>
+          <li><a href="https://arxiv.org/abs/2605.24636" target="_blank" rel="noopener">GlobalDentBench</a>：覆盖 88 个国家/地区、14 个牙科专科、8,978 道专家校准题的 multinational dental benchmark。</li>
+          <li><a href="https://freedomdle.cn/" target="_blank" rel="noopener">OmniDentBench</a>：面向复杂临床决策和生物医学研究的全球牙科基准评测平台。</li>
+          <li><a href="https://arxiv.org/abs/2508.20416" target="_blank" rel="noopener">DentalBench</a>：双语牙科 QA benchmark 和大规模 DentalCorpus，用于评估和增强牙科理解。</li>
+          <li><a href="https://arxiv.org/abs/2511.22055" target="_blank" rel="noopener">OralGPT-Omni</a>：牙科多模态大模型与 MMOral-Uni benchmark，覆盖多种口腔影像任务。</li>
+        </ol>
+      </div>
+    </div>
+    <details class="project-resources-panel">
+      <summary><span>模型 / benchmark / 平台</span><strong>Dental AI stack</strong></summary>
+      <div class="project-stack project-resource-stack">
+        <a class="project-stack-row" href="/projects/dental-foundation-models/"><span class="project-stack-type">Project</span><span class="project-stack-main"><strong>Dental Foundation Models</strong><span>牙科大模型、牙科 benchmark 和 OmniDentBench 总览。</span></span></a>
+        <a class="project-stack-row" href="https://freedomdle.cn/" target="_blank" rel="noopener"><span class="project-stack-type">Platform</span><span class="project-stack-main"><strong>OmniDentBench</strong><span>全球牙科基准评测平台和 ODB leaderboard。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/DentalGPT" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/DentalGPT</strong><span>牙科多模态大模型、训练 pipeline 和评测设置。</span></span></a>
+        <a class="project-stack-row" href="https://github.com/FreedomIntelligence/GlobalDentBench" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/GlobalDentBench</strong><span>专家校准的跨国牙科临床推理 benchmark。</span></span></a>
+        <a class="project-stack-row" href="https://huggingface.co/datasets/FreedomIntelligence/GlobalDentBench-OA" target="_blank" rel="noopener"><span class="project-stack-type">HF Dataset</span><span class="project-stack-main"><strong>GlobalDentBench-OA</strong><span>GlobalDentBench 开放评测子集。</span></span></a>
       </div>
     </details>
   </section>
