@@ -383,10 +383,10 @@ nav_order: 2
 
   <section class="project-program-section project-theme-economics" id="economic-world-models" data-project-tags="Economic World Models;Environment Engineering & World Models;LLM Agents, Applications & Human-Agent Interaction;LLM Reasoning & Agentic RL" data-project-url="/projects/economic-world-models/">
     <div class="project-program-heading">
-      <div class="project-eyebrow">Economic world models and agentic economies</div>
-      <h2>经济世界模型</h2>
+      <div class="project-eyebrow">Economic world models, financial LLMs, and agent applications</div>
+      <h2>经济世界模型和金融大模型及其 Agent 应用</h2>
       <p>
-        经济世界模型把市场、机构、政策和多智能体行为建成可计算、可演化、可对齐的世界。它连接 Economic World Models 的系统蓝图、TwinMarket 的金融市场沙盒、MicroVerse 的科学微世界模拟，以及 Awesome Econ World Models 的文献与资源地图。
+        这条研究主线把市场、机构、政策和多智能体行为建成可计算、可演化、可对齐的经济世界，同时覆盖金融大模型、金融能力评测、多模态金融模型、中英双语金融模型，以及面向真实市场的 Agent 应用。
       </p>
       <div class="project-actions">
         <a class="project-action primary" href="/projects/economic-world-models/">Open Economic World Models</a>
@@ -402,8 +402,10 @@ nav_order: 2
         <ol class="project-paper-list">
           <li><a href="/assets/pdf/economic-world-models.pdf" target="_blank" rel="noopener">From Economic Agents to Agentic Economies</a>：提出经济世界模型的系统蓝图，用可计算经济体支持智能体训练、政策沙盒、规划和安全分析。</li>
           <li><a href="https://arxiv.org/abs/2502.01506" target="_blank" rel="noopener">TwinMarket: A Scalable Behavioral and Social Simulation for Financial Markets</a>：用 LLM 投资者模拟金融市场中的信念、意图、信息流和交易行为。</li>
-          <li><a href="https://github.com/FreedomIntelligence/MicroVerse" target="_blank" rel="noopener">MicroVerse: A Preliminary Exploration Toward a Micro-World Simulation</a>：把 world model 思路扩展到生物与科学微世界，强调隐藏机制和状态演化。</li>
-          <li><a href="https://github.com/FreedomIntelligence/Awesome-Econ-World-Models/" target="_blank" rel="noopener">Awesome Econ World Models</a>：持续整理经济智能体、agentic economies、制度演化、sim-to-real alignment 等方向的论文和资源。</li>
+          <li><a href="https://aclanthology.org/2025.findings-naacl.300/" target="_blank" rel="noopener">UCFE: A User-Centric Financial Expertise Benchmark for Large Language Models</a>：从用户需求和动态金融任务出发评测大模型的金融专业能力。</li>
+          <li><a href="https://arxiv.org/abs/2402.12659" target="_blank" rel="noopener">FinBen: A Holistic Financial Benchmark for Large Language Models</a>：面向多类金融任务的综合大语言模型评测基准。</li>
+          <li><a href="https://arxiv.org/abs/2408.11878" target="_blank" rel="noopener">Open-FinLLMs: Open Multimodal Large Language Models for Financial Applications</a>：开放面向金融应用的多模态大模型、数据和评测体系。</li>
+          <li><a href="https://arxiv.org/abs/2403.06249" target="_blank" rel="noopener">No Language Is an Island</a>：统一中英文金融大模型、指令数据与 benchmark，推动双语金融智能。</li>
         </ol>
       </div>
     </div>
