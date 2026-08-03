@@ -218,6 +218,24 @@ github: https://github.com/FreedomIntelligence/Awesome-Econ-World-Models/
   .ewm-resource:nth-child(3) {
     border-top-color: var(--ewm-amber);
   }
+
+  .ewm-publications {
+    display: grid;
+    gap: 0.9rem;
+  }
+
+  .ewm-publication {
+    border-left: 3px solid var(--ewm-teal);
+  }
+
+  .ewm-publication p {
+    margin-bottom: 0.55rem;
+  }
+
+  .ewm-publication a {
+    font-size: 0.82rem;
+    font-weight: 700;
+  }
 </style>
 
 <div class="ewm-project">
@@ -351,20 +369,38 @@ The work brings together researchers across Shenzhen Loop Area Institute, CUHK-S
 </section>
 
 <section class="ewm-section">
-  <h2>Featured Work</h2>
-  <div class="ewm-featured">
-    <div class="ewm-card ewm-resource">
-      <strong>From Economic Agents to Agentic Economies</strong>
-      <p>A systems blueprint for implementing Economic World Models as generative AI environments for agent training, planning, policy simulation, and safety analysis.</p>
-    </div>
-    <div class="ewm-card ewm-resource">
-      <strong>Awesome Econ World Models</strong>
-      <p>A curated paper list and resource hub mapping the emerging EconWM literature across agent capability, institutional evolution, and sim-to-real alignment.</p>
-    </div>
-    <div class="ewm-card ewm-resource">
-      <strong>EWM / DDGE foundation</strong>
-      <p>The project builds on the Economic World Models and Data-Driven Generative Equilibria agenda, translating the economic framework into an AI-systems roadmap.</p>
-    </div>
+  <h2>Selected Publications</h2>
+  <div class="ewm-publications">
+    <article class="ewm-card ewm-publication">
+      <strong>From Economic Agents to Agentic Economies: A Systems Blueprint for Economic World Models</strong>
+      <p>Jiale Han, Xiang Li, Jing Qian, Wenyuan Gu, Pin Gao, Ye Luo, Hongyuan Zha, Dacheng Tao, Benyou Wang, and Lin William Cong. Working Paper.</p>
+      <a href="{{ '/assets/pdf/economic-world-models.pdf' | relative_url }}" target="_blank" rel="noopener">Paper</a>
+    </article>
+    <article class="ewm-card ewm-publication">
+      <strong>TwinMarket: A Scalable Behavioral and Social Simulation for Financial Markets</strong>
+      <p>Yuzhe Yang, Yifei Zhang, Minghao Wu, Kaidi Zhang, Yunmiao Zhang, Honghai Yu, Yan Hu, and Benyou Wang. NeurIPS 2025; Best Paper, ICLR 2025 Financial AI Workshop.</p>
+      <a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/5bf234ecf83cd77bc5b77a24ba9338b0-Abstract-Conference.html" target="_blank" rel="noopener">Paper</a>
+    </article>
+    <article class="ewm-card ewm-publication">
+      <strong>UCFE: A User-Centric Financial Expertise Benchmark for Large Language Models</strong>
+      <p>Yuzhe Yang, Yifei Zhang, Yan Hu, Yilin Guo, Ruoli Gan, Yueru He, Mingcong Lei, Xiao Zhang, Haining Wang, Qianqian Xie, Jimin Huang, Honghai Yu, and Benyou Wang. Findings of NAACL 2025.</p>
+      <a href="https://aclanthology.org/2025.findings-naacl.300/" target="_blank" rel="noopener">Paper</a>
+    </article>
+    <article class="ewm-card ewm-publication">
+      <strong>FinBen: A Holistic Financial Benchmark for Large Language Models</strong>
+      <p>Qianqian Xie, Weiguang Han, Zhengyu Chen, Ruoyu Xiang, Xiao Zhang, Yueru He, Mengxi Xiao, Dong Li, Yongfu Dai, Duanyu Feng, Yijing Xu, Haoqiang Kang, Ziyan Kuang, Chenhan Yuan, Kailai Yang, Zheheng Luo, Tianlin Zhang, Zhiwei Liu, Guojun Xiong, Zhiyang Deng, Yuechen Jiang, Zhiyuan Yao, Haohang Li, Yangyang Yu, Gang Hu, Huang Jiajia, Xiaoyang Liu, Alejandro Lopez-Lira, Benyou Wang, Yanzhao Lai, Hao Wang, Min Peng, Sophia Ananiadou, and Jimin Huang.</p>
+      <a href="https://arxiv.org/abs/2402.12659" target="_blank" rel="noopener">Paper</a>
+    </article>
+    <article class="ewm-card ewm-publication">
+      <strong>Open-FinLLMs: Open Multimodal Large Language Models for Financial Applications</strong>
+      <p>Jimin Huang, Mengxi Xiao, Dong Li, Zihao Jiang, Yuzhe Yang, Yifei Zhang, Lingfei Qian, Yan Wang, Xueqing Peng, Yang Ren, Ruoyu Xiang, Zhengyu Chen, Xiao Zhang, Yueru He, Weiguang Han, Shunian Chen, Lihang Shen, Daniel Kim, Yangyang Yu, Yupeng Cao, Zhiyang Deng, Haohang Li, Duanyu Feng, Yongfu Dai, VijayaSai Somasundaram, Peng Lu, Guojun Xiong, Zhiwei Liu, Zheheng Luo, Zhiyuan Yao, Ruey-Ling Weng, Meikang Qiu, Kaleb E Smith, Honghai Yu, Yanzhao Lai, Min Peng, Jian-Yun Nie, Jordan W Suchow, Xiao-Yang Liu, Benyou Wang, Alejandro Lopez-Lira, Qianqian Xie, Sophia Ananiadou, and Junichi Tsujii.</p>
+      <a href="https://arxiv.org/abs/2408.11878" target="_blank" rel="noopener">Paper</a>
+    </article>
+    <article class="ewm-card ewm-publication">
+      <strong>No Language Is an Island: Unifying Chinese and English in Financial Large Language Models, Instruction Data, and Benchmarks</strong>
+      <p>Gang Hu, Ke Qin, Chenhan Yuan, Min Peng, Alejandro Lopez-Lira, Benyou Wang, Sophia Ananiadou, Jimin Huang, and Qianqian Xie.</p>
+      <a href="https://arxiv.org/abs/2403.06249" target="_blank" rel="noopener">Paper</a>
+    </article>
   </div>
 </section>
 
