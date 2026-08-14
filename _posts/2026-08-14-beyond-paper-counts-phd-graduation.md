@@ -14,7 +14,7 @@ authors:
 
 toc:
   - name: "1. What a Durable Standard Requires"
-  - name: "2. The Core Standard: Impact and Independence"
+  - name: "2. The Two Graduation Tests: Impact and Independence"
   - name: "3. Impact: Recognition With Consequence"
     subsections:
       - name: "Choosing a Defensible Domain"
@@ -59,7 +59,7 @@ _styles: >
   }
 
   .principle-grid,
-  .axis-grid,
+  .metric-grid,
   .path-grid,
   .standard-grid {
     display: grid;
@@ -72,13 +72,12 @@ _styles: >
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .axis-grid,
+  .metric-grid,
   .standard-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .principle-card,
-  .axis-card,
   .path-card,
   .standard-card {
     background: color-mix(in srgb, var(--global-theme-color) 5%, var(--global-bg-color));
@@ -88,7 +87,6 @@ _styles: >
   }
 
   .principle-card strong,
-  .axis-card strong,
   .path-card strong,
   .standard-card strong {
     color: var(--global-theme-color);
@@ -98,12 +96,48 @@ _styles: >
   }
 
   .principle-card p,
-  .axis-card p,
   .path-card p,
   .standard-card p {
     font-size: 0.94rem;
     line-height: 1.58;
     margin: 0;
+  }
+
+  .metric-test {
+    background: color-mix(in srgb, var(--global-theme-color) 8%, var(--global-bg-color));
+    border: 2px solid color-mix(in srgb, var(--global-theme-color) 48%, var(--global-divider-color));
+    border-radius: 12px;
+    padding: 1.15rem 1.2rem;
+  }
+
+  .metric-test__label {
+    color: var(--global-theme-color);
+    display: block;
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.55rem;
+    text-transform: uppercase;
+  }
+
+  .metric-test strong {
+    color: var(--global-text-color);
+    display: block;
+    font-size: 1.08rem;
+    line-height: 1.55;
+    margin-bottom: 0.65rem;
+  }
+
+  .metric-test p {
+    color: var(--global-text-color-light);
+    font-size: 0.92rem;
+    line-height: 1.58;
+    margin: 0;
+  }
+
+  .standard-card--primary {
+    background: color-mix(in srgb, var(--global-theme-color) 9%, var(--global-bg-color));
+    border-width: 2px;
   }
 
   .core-statement {
@@ -208,9 +242,15 @@ _styles: >
     line-height: 1.55;
   }
 
+  .final-standard strong + strong {
+    border-top: 1px solid var(--global-divider-color);
+    margin-top: 0.9rem;
+    padding-top: 0.9rem;
+  }
+
   @media (max-width: 780px) {
     .principle-grid,
-    .axis-grid,
+    .metric-grid,
     .path-grid,
     .standard-grid {
       grid-template-columns: 1fr;
@@ -280,22 +320,24 @@ We believe a good PhD graduation standard should satisfy three requirements.
 
 This is not an argument for replacing judgment with a formula. It is an argument for making the object of judgment clearer.
 
-# 2. The Core Standard: Impact and Independence
+# 2. The Two Graduation Tests: Impact and Independence
 
-Two dimensions capture the essence of doctoral training.
+Two dimensions capture the essence of doctoral training. To make them operational, we propose two direct graduation tests.
 
-<div class="axis-grid">
-  <div class="axis-card">
-    <strong>Independence</strong>
-    <p>Can the candidate lead a complete intellectual journey—from choosing the problem to bringing the work to a credible form of completion?</p>
+<div class="metric-grid">
+  <div class="metric-test">
+    <span class="metric-test__label">Metric 01 · Domain recognition</span>
+    <strong>After defining a defensible domain, can five to ten of the most recognized active figures in that domain identify the PhD candidate and positively recognize the candidate's main contribution?</strong>
+    <p>This is the clearest operational test of impact: serious people outside the candidate's immediate group know what the candidate contributed and believe that it matters.</p>
   </div>
-  <div class="axis-card">
-    <strong>Impact</strong>
-    <p>Did that journey produce something that a real external community can identify, value, use, or build upon?</p>
+  <div class="metric-test">
+    <span class="metric-test__label">Metric 02 · Independent publication</span>
+    <strong>At a conference or journal where the candidate regularly publishes, can the candidate independently take one paper from idea to publication without substantive help from any senior researcher?</strong>
+    <p>This is the clearest operational test of independence: the candidate can originate, execute, write, submit, revise, and complete work at their established publication level.</p>
   </div>
 </div>
 
-Neither dimension is sufficient alone. Independent work that matters to no one may be an exercise rather than a contribution. Visible work without clear student ownership may show participation rather than doctoral independence.
+These are the two primary indicators. Neither is sufficient alone. Independent publication without recognition may produce an output but not meaningful impact. Recognition without an independently completed paper may show participation in visible work rather than doctoral independence.
 
 <div class="core-statement">
   <span class="core-label">The central proposition</span>
@@ -327,7 +369,9 @@ The committee should approve the domain before the final evaluation. Strong impa
 
 ## Evaluating Impact
 
-Near graduation, the student and committee could identify five to ten respected, active experts in the approved domain. Depending on the work, these evaluators may be researchers, engineers, clinicians, entrepreneurs, policymakers, educators, or open-source maintainers.
+Near graduation, the student and committee should identify **five to ten of the most recognized, active figures in the approved domain**. Depending on the work, these evaluators may be researchers, engineers, clinicians, entrepreneurs, policymakers, educators, or open-source maintainers.
+
+**The impact test is explicit: can these five to ten leading figures identify the PhD candidate, describe the candidate's main contribution, and recognize it positively?**
 
 They can be asked four simple questions:
 
@@ -397,6 +441,12 @@ Independence is not isolation. Leading junior students, engineers, or collaborat
 A useful counterfactual test is:
 
 > **Had the senior researchers stepped back after the initial discussion, would the student still have been capable of completing the project?**
+
+For graduation, this counterfactual should be demonstrated through one concrete result:
+
+> **At a conference or journal where the candidate regularly publishes, the candidate should independently take at least one paper from idea to publication without substantive help from any senior researcher.**
+
+“Without substantive help” means that no senior researcher materially defines the problem, designs the central method, rescues the execution, rewrites the paper, or drives the submission and revision process. The candidate may still lead peers or junior collaborators; independence is ownership, not isolation.
 
 ## The Full Research Cycle
 
@@ -481,16 +531,16 @@ Graduation criteria and admission criteria should be connected. The qualities we
 
 # 8. A Practical Graduation Standard
 
-Bringing the framework together, a candidate should be ready to graduate when the overall body of evidence demonstrates four things.
+Bringing the framework together, a candidate should be ready to graduate when the two primary indicators are satisfied. Growth and career readiness provide important supporting evidence, but they do not replace either primary test.
 
 <div class="standard-grid">
-  <div class="standard-card">
-    <strong>1. End-to-end independence</strong>
-    <p>The student has led at least one substantial project from problem selection through methodology, implementation, evaluation, communication, and credible completion, with limited senior dependence.</p>
+  <div class="standard-card standard-card--primary">
+    <strong>1. Domain recognition</strong>
+    <p>Five to ten leading figures in an approved and defensible domain can identify the candidate, explain the candidate's main contribution, and recognize it positively.</p>
   </div>
-  <div class="standard-card">
-    <strong>2. Externally validated impact</strong>
-    <p>Within an approved and defensible domain, credible external experts recognize the student's contribution and regard it as useful, important, or intellectually valuable.</p>
+  <div class="standard-card standard-card--primary">
+    <strong>2. Independent publication</strong>
+    <p>At a conference or journal where the candidate regularly publishes, the candidate has independently taken at least one paper from idea to publication without substantive help from any senior researcher.</p>
   </div>
   <div class="standard-card">
     <strong>3. An upward quality trajectory</strong>
@@ -520,7 +570,8 @@ At the end of a PhD, every candidate should be able to answer six questions:
 These questions are harder to game than paper counts. They are also closer to what doctoral education is meant to produce: not merely a list of publications, but an independent researcher and builder capable of creating something that matters.
 
 <div class="final-standard">
-  <strong>A PhD graduate should have completed at least one full journey from an independently developed idea to a contribution positively recognized by a real external community.</strong>
+  <strong>1. Impact: in a defensible domain, can five to ten leading figures identify the PhD candidate and positively recognize the candidate's main contribution?</strong>
+  <strong>2. Independence: at a conference or journal where the candidate regularly publishes, can the candidate independently publish one paper without substantive help from any senior researcher?</strong>
 </div>
 
 The artifact may be a paper, model, system, company, product, benchmark, open-source project, public infrastructure, or influential body of ideas. The form will change with time. The underlying standard should not.
