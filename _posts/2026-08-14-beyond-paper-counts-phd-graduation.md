@@ -25,8 +25,8 @@ toc:
       - name: "The Full Research Cycle"
   - name: "5. Growth Matters More Than Volume"
   - name: "6. One Bar, Different Career Paths"
-  - name: "7. What We Look for in PhD Students"
-  - name: "8. A Practical Graduation Standard"
+  - name: "7. A Practical Graduation Standard"
+  - name: "8. What We Look for in PhD Students"
 
 _styles: >
   d-article > p,
@@ -321,12 +321,12 @@ Two dimensions capture the essence of doctoral training. To make them operationa
   </div>
   <div class="metric-test">
     <span class="metric-test__label">Metric 02 · Independent publication</span>
-    <strong>At a conference or journal where the candidate regularly publishes, can the candidate independently take one paper from idea to publication without substantive help from any senior researcher?</strong>
-    <p>This is the clearest operational test of independence: the candidate can originate, execute, write, submit, revise, and complete work at their established publication level.</p>
+    <strong>At one of the conferences or journals the candidate reads most often, can the candidate independently take one paper from idea to publication without substantive help from any senior researcher?</strong>
+    <p>This is the clearest operational test of independence: the candidate can originate, execute, write, submit, revise, and complete work at the level of a venue central to their intellectual development.</p>
   </div>
 </div>
 
-These are the two primary indicators. Neither is sufficient alone. Independent publication without recognition may produce an output but not meaningful impact. Recognition without an independently completed paper may show participation in visible work rather than doctoral independence.
+These are the two primary indicators. **Impact and independence are necessary conditions for graduation, but they are not sufficient conditions.** A candidate who lacks either one has not met the core graduation threshold. Satisfying both establishes that threshold, but does not automatically guarantee graduation.
 
 <div class="core-statement">
   <span class="core-label">The central proposition</span>
@@ -433,7 +433,7 @@ A useful counterfactual test is:
 
 For graduation, this counterfactual should be demonstrated through one concrete result:
 
-> **At a conference or journal where the candidate regularly publishes, the candidate should independently take at least one paper from idea to publication without substantive help from any senior researcher.**
+> **At one of the conferences or journals the candidate reads most often, the candidate should independently take at least one paper from idea to publication without substantive help from any senior researcher.**
 
 “Without substantive help” means that no senior researcher materially defines the problem, designs the central method, rescues the execution, rewrites the paper, or drives the submission and revision process. The candidate may still lead peers or junior collaborators; independence is ownership, not isolation.
 
@@ -493,21 +493,9 @@ Industry, academia, and entrepreneurship produce different portfolios. They shou
 
 The portfolio should be aligned with the candidate's intended next step. The common bar remains the same: independent leadership and externally validated consequence.
 
-# 7. What We Look for in PhD Students
+# 7. A Practical Graduation Standard
 
-Graduation criteria and admission criteria should be connected. The qualities we expect at graduation should be visible, at least in an early form, when a student enters the group.
-
-**Conviction.** We value students who are willing to form independent views about artificial intelligence, question fashionable assumptions, and pursue ideas because they seem important—not only because they are easy to publish. Conviction must be paired with execution.
-
-**Self-direction.** Research contains long periods of uncertainty, failed experiments, negative reviews, and ambiguous progress. A student should be able to generate momentum, seek resources, identify the next step, and continue learning without constant external motivation.
-
-**Positive leadership.** Leadership may mean mentoring junior students, resolving collaboration problems, building shared infrastructure, organizing discussions, or raising the ambition of the group. A strong researcher improves the environment around them as well as their own work.
-
-**Responsibility and stewardship.** A research group is a community, not a collection of independent contractors. We value people who contribute to shared outcomes and take responsibility for something larger than their own publication record. Such work should never become imposed, unpaid administration; it should reflect professional maturity and institution-building capacity.
-
-# 8. A Practical Graduation Standard
-
-Bringing the framework together, a candidate should be ready to graduate when the two primary indicators are satisfied. Items 3 and 4 below are **optional supporting attributes**: they can strengthen the overall case, but they are not required and cannot replace either primary test.
+A candidate should be eligible for graduation consideration only when both primary indicators are satisfied. **Impact and independence are necessary, not sufficient:** meeting both establishes the core threshold, while the committee must still consider the quality, integrity, coherence, and overall body of work. Items 3 and 4 below are **optional supporting attributes**; they can strengthen the case, but they are not required and cannot replace either primary test.
 
 <div class="standard-grid">
   <div class="standard-card standard-card--primary">
@@ -516,7 +504,7 @@ Bringing the framework together, a candidate should be ready to graduate when th
   </div>
   <div class="standard-card standard-card--primary">
     <strong>2. Independent publication</strong>
-    <p>At a conference or journal where the candidate regularly publishes, the candidate has independently taken at least one paper from idea to publication without substantive help from any senior researcher.</p>
+    <p>At one of the conferences or journals the candidate reads most often, the candidate has independently taken at least one paper from idea to publication without substantive help from any senior researcher.</p>
   </div>
   <div class="standard-card standard-card--optional">
     <span class="optional-badge">Optional</span>
@@ -532,11 +520,23 @@ Bringing the framework together, a candidate should be ready to graduate when th
 
 No fixed number of papers is required by this framework. No single conference, journal, company, funding round, leaderboard position, or media mention guarantees graduation either. The evaluation concerns the whole body of evidence.
 
-The graduation decision can therefore be stated in two questions:
+# 8. What We Look for in PhD Students
+
+Graduation criteria and admission criteria should be connected. The qualities we expect at graduation should be visible, at least in an early form, when a student enters the group.
+
+**Conviction.** We value students who are willing to form independent views about artificial intelligence, question fashionable assumptions, and pursue ideas because they seem important—not only because they are easy to publish. Conviction must be paired with execution.
+
+**Self-direction.** Research contains long periods of uncertainty, failed experiments, negative reviews, and ambiguous progress. A student should be able to generate momentum, seek resources, identify the next step, and continue learning without constant external motivation.
+
+**Positive leadership.** Leadership may mean mentoring junior students, resolving collaboration problems, building shared infrastructure, organizing discussions, or raising the ambition of the group. A strong researcher improves the environment around them as well as their own work.
+
+**Responsibility and stewardship.** A research group is a community, not a collection of independent contractors. We value people who contribute to shared outcomes and take responsibility for something larger than their own publication record. Such work should never become imposed, unpaid administration; it should reflect professional maturity and institution-building capacity.
+
+In short, **impact and independence are necessary conditions for graduation, not sufficient conditions**. The two required threshold questions are:
 
 <div class="final-standard">
   <strong>1. Impact: in a defensible domain, can five to ten leading figures identify the PhD candidate and positively recognize the candidate's main contribution?</strong>
-  <strong>2. Independence: at a conference or journal where the candidate regularly publishes, can the candidate independently publish one paper without substantive help from any senior researcher?</strong>
+  <strong>2. Independence: at one of the conferences or journals the candidate reads most often, can the candidate independently publish one paper without substantive help from any senior researcher?</strong>
 </div>
 
 The artifact may be a paper, model, system, company, product, benchmark, open-source project, public infrastructure, or influential body of ideas. The form will change with time. The underlying standard should not.
