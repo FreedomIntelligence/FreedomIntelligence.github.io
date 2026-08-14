@@ -18,6 +18,7 @@ blog_tags:
   - Agents & Simulation
   - Models & Data
   - Evaluation & Safety
+  - Research Culture
 ---
 
 <div class="post">
@@ -305,6 +306,7 @@ blog_tags:
         {%- when "Agents & Simulation" -%}智能体与模拟
         {%- when "Models & Data" -%}模型与数据
         {%- when "Evaluation & Safety" -%}评测与安全
+        {%- when "Research Culture" -%}科研文化
         {%- else -%}{{ tag }}
         {%- endcase -%}
       {% endcapture %}
@@ -332,6 +334,7 @@ blog_tags:
       {% if post.tags contains 'TwinMarket' or post.tags contains 'MicroVerse' or post.tags contains 'PhoneHarness' or post.tags contains 'world-model' or post.tags contains 'social-simulation' or post.tags contains 'financial-ai' or post.tags contains 'mobile-agent' or post.tags contains 'GUI-agent' %}Agents & Simulation;{% endif %}
       {% if post.tags contains 'FreedomAI' or post.tags contains 'Phoenix' or post.tags contains 'Chimera' or post.tags contains 'LLMZoo' or post.tags contains 'SocraticChat' or post.tags contains 'PlatoLM' or post.tags contains 'dialogue-data' or post.tags contains 'IRGAN' or post.tags contains 'NLP' or post.tags contains 'open-source' or post.tags contains 'language-models' or post.tags contains 'diffusion-models' or post.tags contains 'reasoning-models' or post.tags contains 'attention' or post.tags contains 'transformers' or post.tags contains 'efficient-attention' %}Models & Data;{% endif %}
       {% if post.tags contains 'evaluation' or post.tags contains 'red-team' or post.tags contains 'model-comparison' or post.tags contains 'medical-benchmark' %}Evaluation & Safety;{% endif %}
+      {% if post.tags contains 'research-culture' or post.tags contains 'phd-training' or post.tags contains 'mentorship' %}Research Culture;{% endif %}
     {% endcapture %}
     {% capture post_href %}
       {% if post.redirect == blank %}
