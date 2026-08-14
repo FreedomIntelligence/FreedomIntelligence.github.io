@@ -217,26 +217,6 @@ _styles: >
     border-bottom: 0;
   }
 
-  .final-standard {
-    border: 2px solid var(--global-theme-color);
-    border-radius: 12px;
-    margin: 2rem 0 0.75rem;
-    padding: 1.25rem 1.35rem;
-  }
-
-  .final-standard strong {
-    color: var(--global-theme-color);
-    display: block;
-    font-size: 1.18rem;
-    line-height: 1.55;
-  }
-
-  .final-standard strong + strong {
-    border-top: 1px solid var(--global-divider-color);
-    margin-top: 0.9rem;
-    padding-top: 0.9rem;
-  }
-
   @media (max-width: 780px) {
     .principle-grid,
     .metric-grid,
@@ -531,12 +511,3 @@ Graduation criteria and admission criteria should be connected. The qualities we
 **Positive leadership.** Leadership may mean mentoring junior students, resolving collaboration problems, building shared infrastructure, organizing discussions, or raising the ambition of the group. A strong researcher improves the environment around them as well as their own work.
 
 **Responsibility and stewardship.** A research group is a community, not a collection of independent contractors. We value people who contribute to shared outcomes and take responsibility for something larger than their own publication record. Such work should never become imposed, unpaid administration; it should reflect professional maturity and institution-building capacity.
-
-In short, **impact and independence are necessary conditions for graduation, not sufficient conditions**. The two required threshold questions are:
-
-<div class="final-standard">
-  <strong>1. Impact: in a defensible domain, can five to ten leading figures identify the PhD candidate and positively recognize the candidate's main contribution?</strong>
-  <strong>2. Independence: at one of the conferences or journals the candidate reads most often, can the candidate independently publish one paper without substantive help from any senior researcher?</strong>
-</div>
-
-The artifact may be a paper, model, system, company, product, benchmark, open-source project, public infrastructure, or influential body of ideas. The form will change with time. The underlying standard should not.
