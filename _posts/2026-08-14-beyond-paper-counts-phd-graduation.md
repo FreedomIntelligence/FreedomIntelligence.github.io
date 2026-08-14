@@ -23,12 +23,10 @@ toc:
   - name: "4. Independence: End-to-End Ownership"
     subsections:
       - name: "The Full Research Cycle"
-      - name: "Evidence of Independence"
   - name: "5. Growth Matters More Than Volume"
   - name: "6. One Bar, Different Career Paths"
   - name: "7. What We Look for in PhD Students"
   - name: "8. A Practical Graduation Standard"
-  - name: "9. Six Questions at the Finish Line"
 
 _styles: >
   d-article > p,
@@ -140,6 +138,24 @@ _styles: >
     border-width: 2px;
   }
 
+  .standard-card--optional {
+    background: var(--global-bg-color);
+    border-style: dashed;
+  }
+
+  .optional-badge {
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    color: var(--global-text-color-light);
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.07em;
+    margin-bottom: 0.5rem;
+    padding: 0.18rem 0.48rem;
+    text-transform: uppercase;
+  }
+
   .core-statement {
     background: color-mix(in srgb, var(--global-theme-color) 9%, var(--global-bg-color));
     border: 1px solid color-mix(in srgb, var(--global-theme-color) 25%, var(--global-divider-color));
@@ -199,33 +215,6 @@ _styles: >
 
   .evidence-table tr:last-child td {
     border-bottom: 0;
-  }
-
-  .question-list {
-    counter-reset: finish-line;
-    display: grid;
-    gap: 0.7rem;
-    list-style: none;
-    margin: 1.35rem 0 1.8rem;
-    padding: 0;
-  }
-
-  .question-list li {
-    align-items: baseline;
-    border-bottom: 1px solid var(--global-divider-color);
-    display: grid;
-    gap: 0.75rem;
-    grid-template-columns: 2rem minmax(0, 1fr);
-    padding: 0.25rem 0 0.75rem;
-  }
-
-  .question-list li::before {
-    color: var(--global-theme-color);
-    content: counter(finish-line, decimal-leading-zero);
-    counter-increment: finish-line;
-    font-size: 0.8rem;
-    font-weight: 800;
-    letter-spacing: 0.04em;
   }
 
   .final-standard {
@@ -465,19 +454,6 @@ At least once during the PhD, the candidate should lead a substantial project th
 
 The advisor may challenge assumptions, offer high-level feedback, and help the student avoid strategic mistakes. The project, however, should not collapse whenever detailed instructions stop.
 
-## Evidence of Independence
-
-Because independence is partly qualitative, it should be assessed from multiple sources:
-
-- the intellectual history and decision trail of the project;
-- version-control records, prototypes, and other artifacts;
-- contribution statements and feedback from collaborators;
-- the candidate's account of failed experiments and discarded alternatives;
-- the candidate's ability to answer difficult technical and strategic questions;
-- and the advisor's account of how much direction was required.
-
-The purpose is not to police every advisor–student conversation. It is to distinguish genuine ownership from excellent execution of someone else's plan. A student who runs assigned experiments extremely well may be a strong researcher; doctoral graduation additionally requires evidence that the student can decide **which experiments should be run and why**.
-
 # 5. Growth Matters More Than Volume
 
 A PhD student does not need a very large number of papers. Early projects are part of training, and it is reasonable for one or two of them to be limited in ambition or quality. What matters is the trajectory.
@@ -531,7 +507,7 @@ Graduation criteria and admission criteria should be connected. The qualities we
 
 # 8. A Practical Graduation Standard
 
-Bringing the framework together, a candidate should be ready to graduate when the two primary indicators are satisfied. Growth and career readiness provide important supporting evidence, but they do not replace either primary test.
+Bringing the framework together, a candidate should be ready to graduate when the two primary indicators are satisfied. Items 3 and 4 below are **optional supporting attributes**: they can strengthen the overall case, but they are not required and cannot replace either primary test.
 
 <div class="standard-grid">
   <div class="standard-card standard-card--primary">
@@ -542,11 +518,13 @@ Bringing the framework together, a candidate should be ready to graduate when th
     <strong>2. Independent publication</strong>
     <p>At a conference or journal where the candidate regularly publishes, the candidate has independently taken at least one paper from idea to publication without substantive help from any senior researcher.</p>
   </div>
-  <div class="standard-card">
+  <div class="standard-card standard-card--optional">
+    <span class="optional-badge">Optional</span>
     <strong>3. An upward quality trajectory</strong>
     <p>Later work demonstrates clear growth in originality, rigor, ambition, leadership, completeness, or real-world consequence.</p>
   </div>
-  <div class="standard-card">
+  <div class="standard-card standard-card--optional">
+    <span class="optional-badge">Optional</span>
     <strong>4. Career-relevant readiness</strong>
     <p>The student's portfolio credibly prepares them for frontier industry, academia, entrepreneurship, or another path of comparable ambition.</p>
   </div>
@@ -554,20 +532,7 @@ Bringing the framework together, a candidate should be ready to graduate when th
 
 No fixed number of papers is required by this framework. No single conference, journal, company, funding round, leaderboard position, or media mention guarantees graduation either. The evaluation concerns the whole body of evidence.
 
-# 9. Six Questions at the Finish Line
-
-At the end of a PhD, every candidate should be able to answer six questions:
-
-<ol class="question-list">
-  <li><strong>What did you originate?</strong></li>
-  <li><strong>What important project could you complete without continuous senior direction?</strong></li>
-  <li><strong>Who outside your immediate group knows and values your contribution?</strong></li>
-  <li><strong>What changed because of your work?</strong></li>
-  <li><strong>What can you now do that you could not do at the beginning of the PhD?</strong></li>
-  <li><strong>Will any part of your contribution continue to exist, grow, or influence others after you graduate?</strong></li>
-</ol>
-
-These questions are harder to game than paper counts. They are also closer to what doctoral education is meant to produce: not merely a list of publications, but an independent researcher and builder capable of creating something that matters.
+The graduation decision can therefore be stated in two questions:
 
 <div class="final-standard">
   <strong>1. Impact: in a defensible domain, can five to ten leading figures identify the PhD candidate and positively recognize the candidate's main contribution?</strong>
