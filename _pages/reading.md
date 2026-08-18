@@ -5,6 +5,7 @@ title: Projects
 title_zh: 项目
 description:
 project_tags:
+  - Native AI Compute
   - Multi-modal LLMs
   - LLM efficiency and AI Infra
   - LLM Reasoning & Agentic RL
@@ -57,6 +58,31 @@ nav_order: 2
   </div>
 
   <p class="project-empty" hidden><span data-lang="en">No projects found for this tag.</span><span data-lang="zh">该标签下暂无项目。</span></p>
+
+  <section class="project-program-section project-theme-infra" id="native-ai-compute" data-project-tags="Native AI Compute;LLM efficiency and AI Infra" data-project-url="/projects/native-ai-compute-adaptation/">
+    <div class="project-program-heading">
+      <div class="project-eyebrow">Native accelerators, inference systems, and open benchmarks</div>
+      <h2>Native AI Compute Adaptation</h2>
+      <p>End-to-end engineering for model migration, Ascend and heterogeneous accelerator deployment, vLLM/SGLang and KV Cache optimization, operators and kernels, real-world delivery, and reproducible performance evaluation.</p>
+      <div class="project-actions">
+        <a class="project-action primary" href="/projects/native-ai-compute-adaptation/">Open Native Compute Project</a>
+        <a class="project-action" href="https://github.com/FreedomIntelligence/AccelMark" target="_blank" rel="noopener">Open AccelMark</a>
+        <a class="project-action" href="https://huggingface.co/FreedomIntelligence/openPangu-Embedded-7B" target="_blank" rel="noopener">openPangu on Ascend</a>
+      </div>
+    </div>
+    <div class="project-program-layout">
+      <div class="project-program-media"><img src="/assets/img/native-compute-stack.svg" alt="Native AI compute adaptation stack"></div>
+      <div>
+        <h3>From accelerator to application</h3>
+        <ol class="project-paper-list">
+          <li><strong>Production:</strong> localized medical-agent and HuatuoGPT deployment in a secure hospital environment.</li>
+          <li><strong>Systems:</strong> inference-engine, prompt, KV Cache, attention, operator, and kernel optimization.</li>
+          <li><strong>Evaluation:</strong> AccelMark provides transparent, reproducible comparisons across heterogeneous accelerators.</li>
+          <li><strong>Scale:</strong> Arabic LLM training on 2,368 Ascend 910A processors, published at ACL 2025.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
 
   <section class="project-program-section project-theme-multimodal" id="multimodal-llms" data-project-tags="Multi-modal LLMs;LLM Reasoning & Agentic RL;LLM efficiency and AI Infra;AI for Healthcare;Speech LLMs" data-project-url="/projects/multimodal-foundation-models/">
     <div class="project-program-heading">
