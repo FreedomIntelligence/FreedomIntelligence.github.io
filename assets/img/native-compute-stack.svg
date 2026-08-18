@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
-  <title id="title">Native AI compute adaptation stack</title>
+  <title id="title">China-developed AI compute adaptation stack</title>
   <desc id="desc">A layered diagram connecting production workloads, inference systems, kernel optimization, and heterogeneous AI accelerators.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#081a31"/><stop offset="1" stop-color="#103f59"/></linearGradient>
@@ -10,7 +10,7 @@
   <circle cx="1280" cy="105" r="250" fill="#24a9d8" opacity=".08"/>
   <circle cx="120" cy="760" r="300" fill="#62e7ae" opacity=".06"/>
   <text x="90" y="105" fill="#8ae8ff" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="4">AI FOR COMPUTING</text>
-  <text x="90" y="165" fill="white" font-family="Arial, sans-serif" font-size="48" font-weight="700">Native AI Compute Adaptation</text>
+  <text x="90" y="165" fill="white" font-family="Arial, sans-serif" font-size="44" font-weight="700">AI Compute Adaptation &amp; Acceleration</text>
   <text x="90" y="208" fill="#bad2df" font-family="Arial, sans-serif" font-size="23">From model migration to reproducible accelerator benchmarks</text>
   <g filter="url(#shadow)" font-family="Arial, sans-serif">
     <g transform="translate(90 270)"><rect width="1260" height="95" rx="20" fill="#153d59" stroke="#4b8098"/><text x="40" y="40" fill="#7fe7ff" font-size="18" font-weight="700">REAL-WORLD DELIVERY</text><text x="40" y="70" fill="white" font-size="25">Clinical agents · Local model services · Secure system integration</text></g>
