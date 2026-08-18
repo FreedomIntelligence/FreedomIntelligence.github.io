@@ -5,24 +5,14 @@ title: Projects
 title_zh: 项目
 description:
 project_tags:
+  - Foundation Models
+  - Reasoning & Agents
+  - AI Systems & Infrastructure
+  - World Models & Simulation
+  - Healthcare AI
   - Legal AI
-  - China-Developed AI Compute
-  - Multi-modal LLMs
-  - LLM efficiency and AI Infra
-  - LLM Reasoning & Agentic RL
-  - "LLM Agents, Applications & Human-Agent Interaction"
-  - Environment Engineering & World Models
-  - Mobile Agent
-  - Agentic Creation & Executable Artifacts
   - AI Education
-  - Economic World Models
-  - AI for Healthcare
-  - Multilingual LLMs
-  - Speech LLMs
-  - LLM Interpretability
-  - General LLM Evaluation
-  - Clinical & Hospital World Models
-  - Dental Foundation Models
+  - Evaluation & Interpretability
 nav: true
 nav_order: 2
 ---
@@ -35,6 +25,12 @@ nav_order: 2
     {% for tag in page.project_tags %}
       {% capture tag_zh %}
         {%- case tag -%}
+        {%- when "Foundation Models" -%}&#22522;&#30784;&#22823;&#27169;&#22411;
+        {%- when "Reasoning & Agents" -%}&#25512;&#29702;&#19982;&#26234;&#33021;&#20307;
+        {%- when "AI Systems & Infrastructure" -%}AI &#31995;&#32479;&#19982;&#22522;&#30784;&#35774;&#26045;
+        {%- when "World Models & Simulation" -%}&#19990;&#30028;&#27169;&#22411;&#19982;&#27169;&#25311;
+        {%- when "Healthcare AI" -%}&#21307;&#30103;&#20154;&#24037;&#26234;&#33021;
+        {%- when "Evaluation & Interpretability" -%}&#35780;&#27979;&#19982;&#21487;&#35299;&#37322;&#24615;
         {%- when "Legal AI" -%}&#27861;&#24459;&#20154;&#24037;&#26234;&#33021;
         {%- when "China-Developed AI Compute" -%}&#22269;&#20135; AI &#31639;&#21147;&#36866;&#37197;&#19982;&#21152;&#36895;
         {%- when "General LLM Evaluation" -%}通用大模型评估
@@ -62,7 +58,7 @@ nav_order: 2
 
   <p class="project-empty" hidden><span data-lang="en">No projects found for this tag.</span><span data-lang="zh">该标签下暂无项目。</span></p>
 
-  <section class="project-program-section project-theme-multimodal" id="multimodal-llms" data-project-tags="Multi-modal LLMs;LLM Reasoning & Agentic RL;LLM efficiency and AI Infra;AI for Healthcare;Speech LLMs" data-project-url="/projects/multimodal-foundation-models/">
+  <section class="project-program-section project-theme-multimodal" id="multimodal-llms" data-project-tags="Foundation Models;Reasoning & Agents;AI Systems & Infrastructure;Healthcare AI" data-project-url="/projects/multimodal-foundation-models/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Multimodal foundation models and visual reasoning</div>
       <h2>多模态大模型</h2>
@@ -104,7 +100,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-infra" id="llm-efficiency-ai-infra" data-project-tags="LLM efficiency and AI Infra;LLM Reasoning & Agentic RL;Multi-modal LLMs" data-project-url="/projects/llm-efficiency-ai-infra/">
+  <section class="project-program-section project-theme-infra" id="llm-efficiency-ai-infra" data-project-tags="AI Systems & Infrastructure;Reasoning & Agents" data-project-url="/projects/llm-efficiency-ai-infra/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Efficient training, inference, retrieval, and multimodal context</div>
       <h2>LLM efficiency and AI Infra</h2>
@@ -148,7 +144,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-infra" id="native-ai-compute" data-project-tags="China-Developed AI Compute;LLM efficiency and AI Infra" data-project-url="/projects/native-ai-compute-adaptation/">
+  <section class="project-program-section project-theme-infra" id="native-ai-compute" data-project-tags="AI Systems & Infrastructure" data-project-url="/projects/native-ai-compute-adaptation/">
     <div class="project-program-heading">
       <div class="project-eyebrow">China-developed accelerators, inference systems, and open benchmarks</div>
       <h2><span data-lang="en">China-Developed AI Computing: Adaptation and Acceleration</span><span data-lang="zh">&#22269;&#20135; AI &#31639;&#21147;&#36866;&#37197;&#19982;&#21152;&#36895;</span></h2>
@@ -174,7 +170,7 @@ nav_order: 2
     </div>
   </section>
 
-  <section class="project-program-section project-theme-optimization" id="llm-reasoning-agentic-rl" data-project-tags="LLM Reasoning & Agentic RL;LLM efficiency and AI Infra;Multi-modal LLMs" data-project-url="/projects/llm-reasoning-agentic-rl/">
+  <section class="project-program-section project-theme-optimization" id="llm-reasoning-agentic-rl" data-project-tags="Reasoning & Agents;AI Systems & Infrastructure" data-project-url="/projects/llm-reasoning-agentic-rl/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Reasoning, RL, and adaptive test-time compute</div>
       <h2>LLM Reasoning & Agentic RL</h2>
@@ -214,7 +210,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-human" id="llm-agents-applications" data-project-tags="LLM Agents, Applications & Human-Agent Interaction;Economic World Models;Speech LLMs" data-project-url="/projects/llm-agents-applications/">
+  <section class="project-program-section project-theme-human" id="llm-agents-applications" data-project-tags="Reasoning & Agents;World Models & Simulation" data-project-url="/projects/llm-agents-applications/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Agents, applications, simulators, and human-agent interaction</div>
       <h2>LLM Agents, Applications & Human-Agent Interaction</h2>
@@ -255,7 +251,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-environment" id="environment-engineering-world-models" data-project-tags="Environment Engineering & World Models;Economic World Models;LLM Agents, Applications & Human-Agent Interaction;LLM Reasoning & Agentic RL" data-project-url="/projects/environment-engineering-world-models/">
+  <section class="project-program-section project-theme-environment" id="environment-engineering-world-models" data-project-tags="World Models & Simulation;Reasoning & Agents" data-project-url="/projects/environment-engineering-world-models/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Environment engineering and world models</div>
       <h2>环境工程和世界模型</h2>
@@ -296,7 +292,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-human" id="mobile-agent" data-project-tags="Mobile Agent;LLM Agents, Applications & Human-Agent Interaction;Multi-modal LLMs;LLM efficiency and AI Infra" data-project-url="/projects/mobile-agent/">
+  <section class="project-program-section project-theme-human" id="mobile-agent" data-project-tags="Reasoning & Agents;AI Systems & Infrastructure" data-project-url="/projects/mobile-agent/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Phone-use agents and mobile workflow execution</div>
       <h2>Mobile Agent</h2>
@@ -335,7 +331,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-optimization" id="agentic-creation-executable-artifacts" data-project-tags="Agentic Creation & Executable Artifacts;LLM Agents, Applications & Human-Agent Interaction;Environment Engineering & World Models;LLM Reasoning & Agentic RL" data-project-url="/projects/agentic-creation-executable-artifacts/">
+  <section class="project-program-section project-theme-optimization" id="agentic-creation-executable-artifacts" data-project-tags="Reasoning & Agents;World Models & Simulation" data-project-url="/projects/agentic-creation-executable-artifacts/">
     <div class="project-program-heading">
       <div class="project-eyebrow">From instructions to runnable games, CAD scripts, solvers, and code</div>
       <h2>Agentic Creation & Executable Artifacts</h2>
@@ -375,7 +371,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-education" id="ai-education" data-project-tags="AI Education;LLM Agents, Applications & Human-Agent Interaction;AI for Healthcare" data-project-url="/projects/ai-education/">
+  <section class="project-program-section project-theme-education" id="ai-education" data-project-tags="AI Education;Reasoning & Agents;Healthcare AI" data-project-url="/projects/ai-education/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Education agents, tutors, and learning simulation</div>
       <h2>AI Education</h2>
@@ -414,7 +410,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-economics" id="economic-world-models" data-project-tags="Economic World Models;Environment Engineering & World Models;LLM Agents, Applications & Human-Agent Interaction;LLM Reasoning & Agentic RL" data-project-url="/projects/economic-world-models/">
+  <section class="project-program-section project-theme-economics" id="economic-world-models" data-project-tags="World Models & Simulation;Reasoning & Agents" data-project-url="/projects/economic-world-models/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Economic world models, financial LLMs, and agent applications</div>
       <h2>经济世界模型和金融大模型及其 Agent 应用</h2>
@@ -456,7 +452,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-optimization" id="optimization-llms" data-project-tags="LLM Reasoning & Agentic RL;LLM efficiency and AI Infra" data-project-url="/projects/reasoning-math-optimization/">
+  <section class="project-program-section project-theme-optimization" id="optimization-llms" data-project-tags="Reasoning & Agents;AI Systems & Infrastructure" data-project-url="/projects/reasoning-math-optimization/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Optimization modeling LLMs</div>
       <h2>运筹优化大模型系列</h2>
@@ -492,7 +488,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-optimization" id="legal-ai" data-project-tags="Legal AI;LLM Agents, Applications & Human-Agent Interaction;General LLM Evaluation;LLM Reasoning & Agentic RL" data-project-url="/projects/legal-ai-models-agents/">
+  <section class="project-program-section project-theme-optimization" id="legal-ai" data-project-tags="Legal AI;Reasoning & Agents;Evaluation & Interpretability" data-project-url="/projects/legal-ai-models-agents/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Foundation models, user-centric evaluation, evidence retrieval, and legal agents</div>
       <h2><span data-lang="en">Legal AI Models, Retrieval, and Agents</span><span data-lang="zh">&#27861;&#24459;&#22823;&#27169;&#22411;&#12289;&#26816;&#32034;&#19982;&#26234;&#33021;&#20307;</span></h2>
@@ -518,7 +514,7 @@ nav_order: 2
     </div>
   </section>
 
-  <section class="project-program-section project-theme-medical" id="huatuogpt" data-project-tags="AI for Healthcare;Multi-modal LLMs" data-project-url="/projects/medical-ai-ecosystem/">
+  <section class="project-program-section project-theme-medical" id="huatuogpt" data-project-tags="Healthcare AI;Foundation Models" data-project-url="/projects/medical-ai-ecosystem/">
     <div class="project-program-heading">
       <div class="project-eyebrow">HuatuoGPT medical model family</div>
       <h2>AI for Healthcare：华佗GPT系列大模型</h2>
@@ -558,7 +554,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-eval" id="medical-evaluation" data-project-tags="AI for Healthcare;Multi-modal LLMs" data-project-url="/projects/medical-evaluation-benchmarks/">
+  <section class="project-program-section project-theme-eval" id="medical-evaluation" data-project-tags="Healthcare AI;Evaluation & Interpretability" data-project-url="/projects/medical-evaluation-benchmarks/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Healthcare AI evaluation</div>
       <h2>医疗 AI 评测系列</h2>
@@ -596,7 +592,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-education" id="medical-education-sp" data-project-tags="AI for Healthcare;LLM Agents, Applications & Human-Agent Interaction" data-project-url="/projects/medical-education-standardized-patients/">
+  <section class="project-program-section project-theme-education" id="medical-education-sp" data-project-tags="Healthcare AI;AI Education;Reasoning & Agents" data-project-url="/projects/medical-education-standardized-patients/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Medical education and AI standardized patients</div>
       <h2>医学教育与 AI 标准化病人</h2>
@@ -631,7 +627,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-multilingual" id="multilingual-llms" data-project-tags="Multilingual LLMs;AI for Healthcare" data-project-url="/projects/multilingual-localized-llms/">
+  <section class="project-program-section project-theme-multilingual" id="multilingual-llms" data-project-tags="Foundation Models;Healthcare AI" data-project-url="/projects/multilingual-localized-llms/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Multilingual and localized LLMs</div>
       <h2>多语言大语言模型</h2>
@@ -668,7 +664,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-speech" id="speech-llms" data-project-tags="Speech LLMs;LLM Agents, Applications & Human-Agent Interaction" data-project-url="/projects/speech-audio-talking-head-ai/">
+  <section class="project-program-section project-theme-speech" id="speech-llms" data-project-tags="Foundation Models;Reasoning & Agents" data-project-url="/projects/speech-audio-talking-head-ai/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Speech LLMs and speech-to-speech agents</div>
       <h2>Speech LLMs</h2>
@@ -708,7 +704,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-explain" id="interpretable-llms" data-project-tags="LLM Interpretability;AI for Healthcare;LLM Reasoning & Agentic RL" data-project-url="/projects/llm-interpretability/">
+  <section class="project-program-section project-theme-explain" id="interpretable-llms" data-project-tags="Evaluation & Interpretability;Healthcare AI" data-project-url="/projects/llm-interpretability/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Explainable and verifiable LLMs</div>
       <h2>LLM Interpretability</h2>
@@ -753,7 +749,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-eval" id="general-llm-evaluation" data-project-tags="General LLM Evaluation;Multi-modal LLMs;AI for Healthcare;LLM Agents, Applications & Human-Agent Interaction" data-project-url="/projects/general-llm-evaluation/">
+  <section class="project-program-section project-theme-eval" id="general-llm-evaluation" data-project-tags="Evaluation & Interpretability;Foundation Models;Healthcare AI" data-project-url="/projects/general-llm-evaluation/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Rubrics, judges, freshness, bias, ethics, and rewards</div>
       <h2>通用大模型评估</h2>
@@ -794,7 +790,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-medical" id="clinical-agents-hospital-world-models" data-project-tags="Clinical & Hospital World Models;AI for Healthcare;Environment Engineering & World Models;LLM Agents, Applications & Human-Agent Interaction" data-project-url="/projects/clinical-agents-hospital-world-models/">
+  <section class="project-program-section project-theme-medical" id="clinical-agents-hospital-world-models" data-project-tags="Healthcare AI;World Models & Simulation;Reasoning & Agents" data-project-url="/projects/clinical-agents-hospital-world-models/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Clinical agents, patient dynamics, HIS environments, and hospital twins</div>
       <h2>Clinical & Hospital World Models</h2>
@@ -834,7 +830,7 @@ nav_order: 2
     </details>
   </section>
 
-  <section class="project-program-section project-theme-medical" id="dental-foundation-models" data-project-tags="Dental Foundation Models;AI for Healthcare;Multi-modal LLMs;General LLM Evaluation" data-project-url="/projects/dental-foundation-models/">
+  <section class="project-program-section project-theme-medical" id="dental-foundation-models" data-project-tags="Healthcare AI;Foundation Models;Evaluation & Interpretability" data-project-url="/projects/dental-foundation-models/">
     <div class="project-program-heading">
       <div class="project-eyebrow">Dental LLMs, multimodal diagnosis, clinical reasoning, and benchmarks</div>
       <h2>牙科大模型</h2>
