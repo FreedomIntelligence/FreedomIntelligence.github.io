@@ -5,6 +5,7 @@ title: Projects
 title_zh: 项目
 description:
 project_tags:
+  - Legal AI
   - China-Developed AI Compute
   - Multi-modal LLMs
   - LLM efficiency and AI Infra
@@ -34,6 +35,7 @@ nav_order: 2
     {% for tag in page.project_tags %}
       {% capture tag_zh %}
         {%- case tag -%}
+        {%- when "Legal AI" -%}&#27861;&#24459;&#20154;&#24037;&#26234;&#33021;
         {%- when "China-Developed AI Compute" -%}&#22269;&#20135; AI &#31639;&#21147;&#36866;&#37197;&#19982;&#21152;&#36895;
         {%- when "General LLM Evaluation" -%}通用大模型评估
         {%- when "Agentic Creation & Executable Artifacts" -%}智能体创作与可执行产物
@@ -488,6 +490,32 @@ nav_order: 2
         <a class="project-stack-row" href="https://github.com/ChengpengLi1003/CoRT" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>ChengpengLi1003/CoRT</strong><span>代码集成推理资源。</span></span></a>
       </div>
     </details>
+  </section>
+
+  <section class="project-program-section project-theme-optimization" id="legal-ai" data-project-tags="Legal AI;LLM Agents, Applications & Human-Agent Interaction;General LLM Evaluation;LLM Reasoning & Agentic RL" data-project-url="/projects/legal-ai-models-agents/">
+    <div class="project-program-heading">
+      <div class="project-eyebrow">Foundation models, user-centric evaluation, evidence retrieval, and legal agents</div>
+      <h2><span data-lang="en">Legal AI Models, Retrieval, and Agents</span><span data-lang="zh">&#27861;&#24459;&#22823;&#27169;&#22411;&#12289;&#26816;&#32034;&#19982;&#26234;&#33021;&#20307;</span></h2>
+      <p><span data-lang="en">A research path from HanFei-1.0 and UCL-Bench to GenArtID, Legal-R1, and continuously improving Legal AI systems connected to real lawyer workflows.</span><span data-lang="zh">&#20174; HanFei-1.0 &#19982; UCL-Bench&#65292;&#21040; GenArtID&#12289;Legal-R1 &#21644;&#38754;&#21521;&#30495;&#23454;&#24459;&#24072;&#24037;&#20316;&#27969;&#30340;&#27861;&#24459; AI &#38381;&#29615;&#12290;</span></p>
+      <div class="project-actions">
+        <a class="project-action primary" href="/projects/legal-ai-models-agents/">Open Legal AI Project</a>
+        <a class="project-action" href="https://aclanthology.org/2025.findings-naacl.444/" target="_blank" rel="noopener">UCL-Bench</a>
+        <a class="project-action" href="https://openreview.net/forum?id=2Oe3FRRcVQ" target="_blank" rel="noopener">Legal-R1</a>
+      </div>
+    </div>
+    <div class="project-program-layout">
+      <div class="project-program-media"><img src="/assets/img/legal-ai/joint-lab-signing.png" alt="CUHK-Shenzhen and FaDaFu Legal AI Joint Laboratory signing ceremony"></div>
+      <div>
+        <h3><span data-lang="en">One connected research program</span><span data-lang="zh">&#19968;&#26465;&#36830;&#36143;&#30340;&#25216;&#26415;&#36335;&#32447;</span></h3>
+        <ol class="project-paper-list">
+          <li><strong>HanFei-1.0:</strong> Chinese legal foundation-model training.</li>
+          <li><strong>UCL-Bench:</strong> 5 legal scenarios and 22 user-centric tasks.</li>
+          <li><strong>GenArtID:</strong> generative statutory article identifier prediction.</li>
+          <li><strong>Legal-R1:</strong> multi-step agentic retrieval for evidence-based reasoning.</li>
+          <li><strong>Legal AI within a Loop:</strong> Harness → Benchmark → Training → Data Flywheel.</li>
+        </ol>
+      </div>
+    </div>
   </section>
 
   <section class="project-program-section project-theme-medical" id="huatuogpt" data-project-tags="AI for Healthcare;Multi-modal LLMs" data-project-url="/projects/medical-ai-ecosystem/">
