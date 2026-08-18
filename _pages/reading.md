@@ -5,7 +5,7 @@ title: Projects
 title_zh: 项目
 description:
 project_tags:
-  - Native AI Compute
+  - China-Developed AI Compute
   - Multi-modal LLMs
   - LLM efficiency and AI Infra
   - LLM Reasoning & Agentic RL
@@ -34,6 +34,7 @@ nav_order: 2
     {% for tag in page.project_tags %}
       {% capture tag_zh %}
         {%- case tag -%}
+        {%- when "China-Developed AI Compute" -%}国产 AI 算力适配与加速
         {%- when "General LLM Evaluation" -%}通用大模型评估
         {%- when "Agentic Creation & Executable Artifacts" -%}智能体创作与可执行产物
         {%- when "Clinical & Hospital World Models" -%}临床与医院世界模型
@@ -58,31 +59,6 @@ nav_order: 2
   </div>
 
   <p class="project-empty" hidden><span data-lang="en">No projects found for this tag.</span><span data-lang="zh">该标签下暂无项目。</span></p>
-
-  <section class="project-program-section project-theme-infra" id="native-ai-compute" data-project-tags="Native AI Compute;LLM efficiency and AI Infra" data-project-url="/projects/native-ai-compute-adaptation/">
-    <div class="project-program-heading">
-      <div class="project-eyebrow">Native accelerators, inference systems, and open benchmarks</div>
-      <h2>Native AI Compute Adaptation</h2>
-      <p>End-to-end engineering for model migration, Ascend and heterogeneous accelerator deployment, vLLM/SGLang and KV Cache optimization, operators and kernels, real-world delivery, and reproducible performance evaluation.</p>
-      <div class="project-actions">
-        <a class="project-action primary" href="/projects/native-ai-compute-adaptation/">Open Native Compute Project</a>
-        <a class="project-action" href="https://github.com/FreedomIntelligence/AccelMark" target="_blank" rel="noopener">Open AccelMark</a>
-        <a class="project-action" href="https://huggingface.co/FreedomIntelligence/openPangu-Embedded-7B" target="_blank" rel="noopener">openPangu on Ascend</a>
-      </div>
-    </div>
-    <div class="project-program-layout">
-      <div class="project-program-media"><img src="/assets/img/native-compute-stack.svg" alt="Native AI compute adaptation stack"></div>
-      <div>
-        <h3>From accelerator to application</h3>
-        <ol class="project-paper-list">
-          <li><strong>Production:</strong> localized medical-agent and HuatuoGPT deployment in a secure hospital environment.</li>
-          <li><strong>Systems:</strong> inference-engine, prompt, KV Cache, attention, operator, and kernel optimization.</li>
-          <li><strong>Evaluation:</strong> AccelMark provides transparent, reproducible comparisons across heterogeneous accelerators.</li>
-          <li><strong>Scale:</strong> Arabic LLM training on 2,368 Ascend 910A processors, published at ACL 2025.</li>
-        </ol>
-      </div>
-    </div>
-  </section>
 
   <section class="project-program-section project-theme-multimodal" id="multimodal-llms" data-project-tags="Multi-modal LLMs;LLM Reasoning & Agentic RL;LLM efficiency and AI Infra;AI for Healthcare;Speech LLMs" data-project-url="/projects/multimodal-foundation-models/">
     <div class="project-program-heading">
@@ -165,6 +141,32 @@ nav_order: 2
         <a class="project-stack-row" href="https://github.com/FreedomIntelligence/LLMZoo" target="_blank" rel="noopener"><span class="project-stack-type">GitHub</span><span class="project-stack-main"><strong>FreedomIntelligence/LLMZoo</strong><span>开放模型和训练资源集合。</span></span></a>
       </div>
     </details>
+  </section>
+
+  <section class="project-program-section project-theme-infra" id="native-ai-compute" data-project-tags="China-Developed AI Compute;LLM efficiency and AI Infra" data-project-url="/projects/native-ai-compute-adaptation/">
+    <div class="project-program-heading">
+      <div class="project-eyebrow">China-developed accelerators, inference systems, and open benchmarks</div>
+      <h2><span data-lang="en">China-Developed AI Computing: Adaptation and Acceleration</span><span data-lang="zh">国产 AI 算力适配与加速</span></h2>
+      <p><span data-lang="en">End-to-end engineering for large-scale Ascend training, model migration, vLLM/SGLang and KV Cache optimization, operators and kernels, benchmark validation, real-world delivery, and open ecosystem building.</span><span data-lang="zh">覆盖昇腾大规模训练、模型迁移、vLLM/SGLang 与 KV Cache 优化、算子与 Kernel、Benchmark 验证、真实场景交付及开放生态建设的全栈技术链条。</span></p>
+      <div class="project-actions">
+        <a class="project-action primary" href="/projects/native-ai-compute-adaptation/">Open Compute Adaptation Project</a>
+        <a class="project-action" href="https://github.com/FreedomIntelligence/AccelMark" target="_blank" rel="noopener">Open AccelMark</a>
+        <a class="project-action" href="https://huggingface.co/FreedomIntelligence/openPangu-Embedded-7B" target="_blank" rel="noopener">openPangu on Ascend</a>
+      </div>
+    </div>
+    <div class="project-program-layout">
+      <div class="project-program-media"><img src="/assets/img/native-compute-stack.svg" alt="China-developed AI compute adaptation and acceleration stack"></div>
+      <div>
+        <h3><span data-lang="en">From accelerator to application</span><span data-lang="zh">从算力到应用</span></h3>
+        <ol class="project-paper-list">
+          <li><strong>Scale:</strong> Arabic LLM training on 2,368 Ascend 910A processors, with results at NAACL 2024, ACL 2025, and NeurIPS 2024.</li>
+          <li><strong>Systems:</strong> prompt, KV Cache, inference-engine, attention, operator, and kernel optimization.</li>
+          <li><strong>Evaluation:</strong> CANNBench results and AccelMark's transparent, reproducible heterogeneous-accelerator comparisons.</li>
+          <li><strong>Delivery:</strong> localized medical agents, HuatuoGPT, and intelligent health-management workflows in a secure hospital environment.</li>
+          <li><strong>Ecosystem:</strong> 100+ Hugging Face models, million-scale downloads, and 10,000+ GitHub Stars across representative projects.</li>
+        </ol>
+      </div>
+    </div>
   </section>
 
   <section class="project-program-section project-theme-optimization" id="llm-reasoning-agentic-rl" data-project-tags="LLM Reasoning & Agentic RL;LLM efficiency and AI Infra;Multi-modal LLMs" data-project-url="/projects/llm-reasoning-agentic-rl/">
