@@ -34,7 +34,7 @@ nav_order: 2
     {% for tag in page.project_tags %}
       {% capture tag_zh %}
         {%- case tag -%}
-        {%- when "China-Developed AI Compute" -%}国产 AI 算力适配与加速
+        {%- when "China-Developed AI Compute" -%}&#22269;&#20135; AI &#31639;&#21147;&#36866;&#37197;&#19982;&#21152;&#36895;
         {%- when "General LLM Evaluation" -%}通用大模型评估
         {%- when "Agentic Creation & Executable Artifacts" -%}智能体创作与可执行产物
         {%- when "Clinical & Hospital World Models" -%}临床与医院世界模型
@@ -146,8 +146,8 @@ nav_order: 2
   <section class="project-program-section project-theme-infra" id="native-ai-compute" data-project-tags="China-Developed AI Compute;LLM efficiency and AI Infra" data-project-url="/projects/native-ai-compute-adaptation/">
     <div class="project-program-heading">
       <div class="project-eyebrow">China-developed accelerators, inference systems, and open benchmarks</div>
-      <h2><span data-lang="en">China-Developed AI Computing: Adaptation and Acceleration</span><span data-lang="zh">国产 AI 算力适配与加速</span></h2>
-      <p><span data-lang="en">End-to-end engineering for large-scale Ascend training, model migration, vLLM/SGLang and KV Cache optimization, operators and kernels, benchmark validation, real-world delivery, and open ecosystem building.</span><span data-lang="zh">覆盖昇腾大规模训练、模型迁移、vLLM/SGLang 与 KV Cache 优化、算子与 Kernel、Benchmark 验证、真实场景交付及开放生态建设的全栈技术链条。</span></p>
+      <h2><span data-lang="en">China-Developed AI Computing: Adaptation and Acceleration</span><span data-lang="zh">&#22269;&#20135; AI &#31639;&#21147;&#36866;&#37197;&#19982;&#21152;&#36895;</span></h2>
+      <p><span data-lang="en">End-to-end engineering for large-scale Ascend training, model migration, vLLM/SGLang and KV Cache optimization, operators and kernels, benchmark validation, real-world delivery, and open ecosystem building.</span><span data-lang="zh">&#35206;&#30422;&#26119;&#33150;&#22823;&#35268;&#27169;&#35757;&#32451;&#12289;&#27169;&#22411;&#36801;&#31227;&#12289;vLLM/SGLang &#19982; KV Cache &#20248;&#21270;&#12289;&#31639;&#23376;&#19982; Kernel&#12289;Benchmark &#39564;&#35777;&#12289;&#30495;&#23454;&#22330;&#26223;&#20132;&#20184;&#21450;&#24320;&#25918;&#29983;&#24577;&#24314;&#35774;&#30340;&#20840;&#26632;&#25216;&#26415;&#38142;&#26465;&#12290;</span></p>
       <div class="project-actions">
         <a class="project-action primary" href="/projects/native-ai-compute-adaptation/">Open Compute Adaptation Project</a>
         <a class="project-action" href="https://github.com/FreedomIntelligence/AccelMark" target="_blank" rel="noopener">Open AccelMark</a>
@@ -157,7 +157,7 @@ nav_order: 2
     <div class="project-program-layout">
       <div class="project-program-media"><img src="/assets/img/native-compute-stack.svg" alt="China-developed AI compute adaptation and acceleration stack"></div>
       <div>
-        <h3><span data-lang="en">From accelerator to application</span><span data-lang="zh">从算力到应用</span></h3>
+        <h3><span data-lang="en">From accelerator to application</span><span data-lang="zh">&#20174;&#31639;&#21147;&#21040;&#24212;&#29992;</span></h3>
         <ol class="project-paper-list">
           <li><strong>Scale:</strong> Arabic LLM training on 2,368 Ascend 910A processors, with results at NAACL 2024, ACL 2025, and NeurIPS 2024.</li>
           <li><strong>Systems:</strong> prompt, KV Cache, inference-engine, attention, operator, and kernel optimization.</li>
