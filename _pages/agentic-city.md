@@ -96,3 +96,4 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
+<!-- advisory assets refreshed: 2026-08-22 -->
