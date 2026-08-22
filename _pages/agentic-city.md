@@ -5,7 +5,7 @@ title_zh: Agentic City · 智能体城市
 description: Plan a real city with AI Agents and simulate its future.
 description_zh: 用 AI Agent 规划真实城市，用经济世界模型运行未来。
 permalink: /agentic-city/
-nav: true
+nav: false
 nav_order: 6
 hide_title: true
 ---
