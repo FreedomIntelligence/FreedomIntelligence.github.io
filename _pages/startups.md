@@ -208,4 +208,18 @@ nav_order: 6
       <span class="startup-status"><span data-lang="en">Public link pending</span><span data-lang="zh">官网链接待补充</span></span>
     </div>
   </section>
+
+  <section class="startup-item">
+    <div class="startup-head">
+      <img class="startup-logo" src="/assets/img/freedomai-2026/startups/chaotic-pendulum.png" alt="Chaotic Pendulum Tech logo">
+      <div>
+        <h3 class="startup-name">混沌摆科技 Chaotic Pendulum Tech</h3>
+        <div class="startup-founder"><span data-lang="en">COO: Shijun Chu</span><span data-lang="zh">COO：褚士钧</span></div>
+      </div>
+    </div>
+    <p class="startup-desc"><span data-lang="en">Chaotic Pendulum Tech develops self-evolving AI systems that continuously accumulate organizational data, capabilities, and domain knowledge through real-world feedback loops, with applications in financial research and enterprise intelligence.</span><span data-lang="zh">混沌摆科技研发自进化 AI 系统，通过真实业务反馈闭环持续沉淀组织数据、能力与行业知识，应用于金融投研和企业智能等场景。</span></p>
+    <div class="startup-links">
+      <span class="startup-status"><span data-lang="en">Public link pending</span><span data-lang="zh">官网链接待补充</span></span>
+    </div>
+  </section>
 </div>
