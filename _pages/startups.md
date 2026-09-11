@@ -108,10 +108,10 @@ nav_order: 6
       <img class="startup-logo" src="/assets/img/freedomai-2026/startups/cognita-mark.jpg" alt="Cognita mark">
       <div>
         <h3 class="startup-name">Cognita</h3>
-        <div class="startup-founder"><span data-lang="en">Co-founder: Zhihong Chen</span><span data-lang="zh">联合创始人：陈志宏</span></div>
+        <div class="startup-founder"><span data-lang="en">Co-founder: Zhihong Chen</span><span data-lang="zh">联合创始人：陈志鸿</span></div>
       </div>
     </div>
-    <p class="startup-desc"><span data-lang="en">Cognita is a Silicon Valley medical imaging AI startup co-founded by Zhihong Chen. Mosaic Clinical Technologies announced the acquisition of Cognita Imaging in 2025.</span><span data-lang="zh">Cognita 是由陈志宏联合创办的硅谷医疗影像 AI 初创公司，2025 年被 Mosaic Clinical Technologies 收购。</span></p>
+    <p class="startup-desc"><span data-lang="en">Cognita is a Silicon Valley medical imaging AI startup co-founded by PhD graduate Zhihong Chen. Mosaic Clinical Technologies announced the acquisition of Cognita Imaging in 2025.</span><span data-lang="zh">Cognita 是由已毕业博士生陈志鸿联合创办的硅谷医疗影像 AI 初创公司，2025 年被 Mosaic Clinical Technologies 收购。</span></p>
     <div class="startup-links">
       <a href="https://www.radpartners.com/2025/11/mosaic-clinical-technologies-acquires-cognita-imaging-inc/">Acquisition News</a>
       <a href="https://radiologybusiness.com/topics/healthcare-management/mergers-and-acquisitions/radiology-partners-acquires-healthcare-ai-company-80m">Coverage</a>

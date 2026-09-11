@@ -77,36 +77,59 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
       <h2><span data-lang="en">Models, systems, and applications</span><span data-lang="zh">模型、系统与应用</span></h2>
     </header>
 
+    <p class="benyou-section-intro"><span data-lang="en">The group works on large language models, agents, and their applications in healthcare, multilingual communication, operations research, finance, education, and robotics. The links below connect representative systems with their papers, code, models, data, and application pages.</span><span data-lang="zh">团队围绕大语言模型、智能体及其在医疗、多语言交流、运筹优化、金融、教育和机器人等场景中的应用开展研究。以下条目将代表性系统与相关论文、代码、模型、数据和应用页面对应起来。</span></p>
+
     <div class="benyou-entry-list">
       <article class="benyou-entry">
         <h3>HuatuoGPT</h3>
         <div>
-          <p><span data-lang="en">In collaboration with Haizhou Li, Xiang Wan, Guangjun Yu, Ruoyu Sun, and clinical partners, he participated in the HuatuoGPT series covering medical dialogue, clinical reasoning, and multimodal medical models. Public releases have reached more than one million downloads and over 10,000 GitHub stars. Related systems have been deployed and evaluated in 11 public hospitals and 186 community health centers in Longgang, Shenzhen.</span><span data-lang="zh">与李海洲、万翔、于广军、孙若愚等学者及医疗团队合作，参与华佗GPT系列研发，覆盖医疗对话、临床推理和医学多模态模型。公开模型累计下载量超过百万，GitHub Stars 超过一万；相关系统已在深圳龙岗 11 家公立医院和 186 个社区健康中心部署和验证。</span></p>
-          <p class="benyou-entry-links"><a href="https://aclanthology.org/2023.findings-emnlp.725/" target="_blank" rel="noopener"><span data-lang="en">Paper</span><span data-lang="zh">论文</span></a> · <a href="https://github.com/FreedomIntelligence/HuatuoGPT" target="_blank" rel="noopener">GitHub</a> · <a href="{{ '/projects/medical-ai-ecosystem/' | relative_url }}"><span data-lang="en">Project page</span><span data-lang="zh">项目页面</span></a></p>
+          <p><span data-lang="en">In collaboration with Haizhou Li, Xiang Wan, Guangjun Yu, Ruoyu Sun, and clinical partners, he participated in the HuatuoGPT series. The work has expanded from medical dialogue to one-stage domain adaptation, verifiable medical reasoning, and medical vision-language understanding. As of September 2026, public releases across the series had reached more than one million downloads and over 10,000 GitHub stars; related systems had been deployed and evaluated in 11 public hospitals and 186 community health centers in Longgang, Shenzhen.</span><span data-lang="zh">与李海洲、万翔、于广军、孙若愚等学者及医疗团队合作，参与华佗GPT系列研发。相关工作已从医学对话扩展到一阶段领域适配、可验证医学推理和医学视觉语言理解。截至 2026 年 9 月，系列公开模型累计下载量超过百万，GitHub Stars 超过一万；相关系统已在深圳龙岗 11 家公立医院和 186 个社区健康中心部署和验证。</span></p>
+          <p class="benyou-entry-links"><strong><span data-lang="en">Resources:</span><span data-lang="zh">资源：</span></strong> <a href="{{ '/projects/medical-ai-ecosystem/' | relative_url }}"><span data-lang="en">overview</span><span data-lang="zh">项目总览</span></a> · <a href="https://github.com/FreedomIntelligence/HuatuoGPT" target="_blank" rel="noopener"><span data-lang="en">code</span><span data-lang="zh">代码</span></a> · <a href="https://huggingface.co/FreedomIntelligence/HuatuoGPT2-34B" target="_blank" rel="noopener"><span data-lang="en">model</span><span data-lang="zh">模型</span></a></p>
+          <ul class="benyou-paper-links">
+            <li><a href="https://aclanthology.org/2023.findings-emnlp.725/" target="_blank" rel="noopener">[1] HuatuoGPT, Towards Taming Language Model to Be a Doctor</a> <span>EMNLP 2023 Findings</span></li>
+            <li><a href="https://openreview.net/forum?id=eJ3cHNu7ss" target="_blank" rel="noopener">[2] HuatuoGPT-II, One-stage Training for Medical Adaption of LLMs</a> <span>COLM 2024</span></li>
+            <li><a href="https://aclanthology.org/2024.emnlp-main.418/" target="_blank" rel="noopener">[3] HuatuoGPT-Vision, Towards Injecting Medical Visual Knowledge into Multimodal LLMs at Scale</a> <span>EMNLP 2024</span></li>
+            <li><a href="https://aclanthology.org/2025.findings-acl.751/" target="_blank" rel="noopener">[4] Towards Medical Complex Reasoning with LLMs through Medical Verifiable Problems</a> <span>ACL 2025 Findings</span></li>
+          </ul>
         </div>
       </article>
 
       <article class="benyou-entry">
         <h3>Phoenix</h3>
         <div>
-          <p><span data-lang="en">Phoenix is an open multilingual dialogue model released in 2023. The project released its models, data, and code for Chinese, English, and several lower-resource languages, and performed well in early third-party evaluations of Chinese large language models.</span><span data-lang="zh">Phoenix 是团队于 2023 年发布的开放多语言对话模型，面向中文、英文和多种低资源语言开放模型、数据与代码，并在发布初期的第三方中文大模型评测中取得较好成绩。</span></p>
-          <p class="benyou-entry-links"><a href="https://arxiv.org/abs/2304.10453" target="_blank" rel="noopener"><span data-lang="en">Paper</span><span data-lang="zh">论文</span></a> · <a href="https://github.com/FreedomIntelligence/LLMZoo" target="_blank" rel="noopener">LLMZoo</a></p>
+          <p><span data-lang="en">Phoenix is an open multilingual dialogue model released in 2023. The project made training data, model weights, code, and evaluation resources available for Chinese, English, and several lower-resource languages.</span><span data-lang="zh">Phoenix 是团队于 2023 年发布的开放多语言对话模型，面向中文、英文和多种低资源语言开放训练数据、模型权重、代码与评测资源。</span></p>
+          <p class="benyou-entry-links"><strong><span data-lang="en">Resources:</span><span data-lang="zh">资源：</span></strong> <a href="{{ '/projects/multilingual-localized-llms/' | relative_url }}"><span data-lang="en">overview</span><span data-lang="zh">项目总览</span></a> · <a href="https://github.com/FreedomIntelligence/LLMZoo" target="_blank" rel="noopener"><span data-lang="en">code</span><span data-lang="zh">代码</span></a> · <a href="https://huggingface.co/FreedomIntelligence/phoenix-inst-chat-7b" target="_blank" rel="noopener"><span data-lang="en">model</span><span data-lang="zh">模型</span></a> · <a href="https://huggingface.co/datasets/FreedomIntelligence/phoenix-sft-data-v1" target="_blank" rel="noopener"><span data-lang="en">data</span><span data-lang="zh">数据</span></a></p>
+          <ul class="benyou-paper-links"><li><a href="https://arxiv.org/abs/2304.10453" target="_blank" rel="noopener">[5] Phoenix: Democratizing ChatGPT across Languages</a> <span>2023</span></li></ul>
         </div>
       </article>
 
       <article class="benyou-entry">
         <h3>AceGPT</h3>
         <div>
-          <p><span data-lang="en">With Professor Jinchao Xu's group and support from Peng Cheng Laboratory, the team developed Arabic language models adapted to local language, culture, and values. AceGPT was a leading open Arabic large language model at release and was accepted by NAACL 2024. Follow-up work trained 7B and 13B models on 2,368 Huawei Ascend 910A processors.</span><span data-lang="zh">在许进超教授团队带领和鹏城实验室支持下，团队开展面向阿拉伯语言、文化与价值观适配的大模型研究。AceGPT 发布时是表现领先的开源阿拉伯语大模型，相关论文被 NAACL 2024 接收；后续工作使用 2,368 张华为昇腾 910A 完成 7B 与 13B 模型训练。</span></p>
-          <p class="benyou-entry-links"><a href="https://aclanthology.org/2024.naacl-long.450/" target="_blank" rel="noopener">NAACL 2024</a> · <a href="https://github.com/FreedomIntelligence/AceGPT" target="_blank" rel="noopener">GitHub</a></p>
+          <p><span data-lang="en">With Professor Jinchao Xu's group and support from Peng Cheng Laboratory, the team developed Arabic language models adapted to local language, culture, and values. AceGPT was among the leading open Arabic large language models at release; follow-up work used a large Huawei Ascend 910A cluster to train larger models.</span><span data-lang="zh">在许进超教授团队带领和鹏城实验室支持下，团队开展面向阿拉伯语言、文化与价值观适配的大模型研究。AceGPT 发布时是表现领先的开源阿拉伯语大模型；后续工作使用大规模华为昇腾 910A 集群训练更大规模模型。</span></p>
+          <p class="benyou-entry-links"><strong><span data-lang="en">Resources:</span><span data-lang="zh">资源：</span></strong> <a href="{{ '/projects/multilingual-localized-llms/' | relative_url }}"><span data-lang="en">overview</span><span data-lang="zh">项目总览</span></a> · <a href="https://github.com/FreedomIntelligence/AceGPT" target="_blank" rel="noopener"><span data-lang="en">code</span><span data-lang="zh">代码</span></a> · <a href="https://huggingface.co/FreedomIntelligence/AceGPT-13B-chat" target="_blank" rel="noopener"><span data-lang="en">model</span><span data-lang="zh">模型</span></a></p>
+          <ul class="benyou-paper-links"><li><a href="https://aclanthology.org/2024.naacl-long.450/" target="_blank" rel="noopener">[6] AceGPT, Localizing Large Language Models in Arabic</a> <span>NAACL 2024</span></li></ul>
         </div>
       </article>
 
       <article class="benyou-entry">
         <h3>ORLM / COLORMind</h3>
         <div>
-          <p><span data-lang="en">Together with Professor Zizhuo Wang and Cardinal Operations, the team developed ORLM for translating natural-language business problems into mathematical optimization models and solver code. The paper was published in <em>Operations Research</em>, and related technology was further developed by Cardinal Operations for the COLORMind platform.</span><span data-lang="zh">与王子卓教授及杉数科技共同开发 ORLM，用于将自然语言业务问题转化为数学优化模型与求解代码。相关论文发表于《Operations Research》，杉数科技在此基础上进一步开发 COLORMind 平台并用于实际业务。</span></p>
-          <p class="benyou-entry-links"><a href="https://doi.org/10.1287/opre.2024.1233" target="_blank" rel="noopener"><span data-lang="en">Journal paper</span><span data-lang="zh">期刊论文</span></a> · <a href="https://github.com/Cardinal-Operations/ORLM" target="_blank" rel="noopener">GitHub</a></p>
+          <p><span data-lang="en">Together with Professor Zizhuo Wang and Cardinal Operations, the team developed ORLM for translating natural-language business problems into executable mathematical optimization models and solver code. The work introduced OR-Instruct and IndustryOR and connects with Cardinal Operations' COLORMind decision-intelligence product line.</span><span data-lang="zh">与王子卓教授及杉数科技共同开发 ORLM，用于将自然语言业务问题转化为可执行的数学优化模型与求解代码，并提出 OR-Instruct 和 IndustryOR。相关能力与杉数科技 COLORMind 智能决策产品线形成从研究到应用的衔接。</span></p>
+          <p class="benyou-entry-links"><strong><span data-lang="en">Resources:</span><span data-lang="zh">资源：</span></strong> <a href="{{ '/projects/reasoning-math-optimization/' | relative_url }}"><span data-lang="en">overview</span><span data-lang="zh">项目总览</span></a> · <a href="https://github.com/Cardinal-Operations/ORLM" target="_blank" rel="noopener"><span data-lang="en">code</span><span data-lang="zh">代码</span></a> · <a href="https://copt.shanshu.ai/products?tab=1" target="_blank" rel="noopener">COLORMind</a></p>
+          <ul class="benyou-paper-links"><li><a href="https://pubsonline.informs.org/doi/10.1287/opre.2024.1233" target="_blank" rel="noopener">[7] ORLM: A Customizable Framework in Training Large Models for Automated Optimization Modeling</a> <span>Operations Research, 2025</span></li></ul>
+        </div>
+      </article>
+
+      <article class="benyou-entry">
+        <h3><span data-lang="en">RSI and autonomous learning</span><span data-lang="zh">递归自提升与自主学习</span></h3>
+        <div>
+          <p><span data-lang="en">This line of work studies autonomous task generation, verifiable feedback, and self-evolving critics, so that models can improve across repeated cycles of action, evaluation, feedback, and updating. It provides method-level foundations for measurable and controllable recursive self-improvement.</span><span data-lang="zh">相关工作研究自主任务生成、可验证反馈与自演化批评机制，使模型在多轮“行动—评测—反馈—更新”中持续提升，为可评测、可控制的递归自提升提供方法基础。</span></p>
+          <p class="benyou-entry-links"><strong><span data-lang="en">Resources:</span><span data-lang="zh">资源：</span></strong> <a href="{{ '/projects/llm-agents-applications/' | relative_url }}"><span data-lang="en">agent systems</span><span data-lang="zh">智能体系统</span></a> · <a href="https://github.com/FreedomIntelligence/AL" target="_blank" rel="noopener"><span data-lang="en">autonomous-learning code</span><span data-lang="zh">自主学习代码</span></a></p>
+          <ul class="benyou-paper-links">
+            <li><a href="https://aclanthology.org/2025.findings-acl.1084/" target="_blank" rel="noopener">[8] Unlocking LLMs' Self-Improvement Capacity with Autonomous Learning for Domain Adaptation</a> <span>ACL 2025 Findings</span></li>
+            <li><a href="https://openreview.net/forum?id=TA6azZKWJq" target="_blank" rel="noopener">[9] Self-Evolving Critique Abilities in Large Language Models</a> <span>COLM 2025</span></li>
+          </ul>
         </div>
       </article>
     </div>
@@ -144,19 +167,19 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
       <h2><span data-lang="en">Student ventures and technology transfer</span><span data-lang="zh">学生创业与技术转化</span></h2>
     </header>
 
-    <p><span data-lang="en">The group encourages students and research staff to bring research into practical products and organizations. PhD graduate Zhihong Chen co-founded Cognita Imaging, a medical-imaging AI company acquired by Mosaic Clinical Technologies in 2025.</span><span data-lang="zh">团队鼓励学生和研究人员将科研成果转化为实际产品与组织。博士毕业生陈志宏参与创办医疗影像 AI 公司 Cognita Imaging；该公司于 2025 年被 Mosaic Clinical Technologies 收购。</span></p>
+    <p><span data-lang="en">The group supports students and research staff in translating research into practical products and services. PhD graduate Zhihong Chen co-founded Cognita Imaging, a medical-imaging AI company acquired by Mosaic Clinical Technologies in 2025.</span><span data-lang="zh">团队支持学生和研究人员将科研成果转化为实际产品与服务。已毕业博士生陈志鸿参与创办医疗影像 AI 公司 Cognita Imaging；该公司于 2025 年被 Mosaic Clinical Technologies 收购。</span></p>
 
     <ul class="benyou-venture-list">
-      <li><strong><span data-lang="en">Jianye Hou</span><span data-lang="zh">侯建业</span></strong><span><span data-lang="en">Metastone · high-performance computing</span><span data-lang="zh">是石科技 · 高性能计算</span></span></li>
-      <li><strong><span data-lang="en">Shunlin Lu</span><span data-lang="zh">路舜林</span></strong><span><span data-lang="en">NeoteAI · embodied intelligence</span><span data-lang="zh">新智具身 · 具身智能</span></span></li>
-      <li><strong><span data-lang="en">Zhiqi Gao</span><span data-lang="zh">高治淇</span></strong><span><span data-lang="en">Heryin · spatial intelligence</span><span data-lang="zh">和瑛元筑 · 空间智能</span></span></li>
-      <li><strong><span data-lang="en">Xiao Yang</span><span data-lang="zh">肖杨</span></strong><span><span data-lang="en">Shenzhen Sikoo Intelligence / Shuta AI · AI education</span><span data-lang="zh">深圳思酷智能 / 薯塔AI · AI 教育</span></span></li>
-      <li><strong><span data-lang="en">Shijun Chu</span><span data-lang="zh">褚士钧</span></strong><span><span data-lang="en">Chaotic Pendulum Technology · financial AI</span><span data-lang="zh">混沌摆科技 · AI 金融</span></span></li>
-      <li><strong><span data-lang="en">Yuxuan Zhu</span><span data-lang="zh">朱宇轩</span></strong><span><span data-lang="en">Wangshi Technology · AI applications</span><span data-lang="zh">网事科技 · AI 应用</span></span></li>
-      <li><strong><span data-lang="en">Jiajun You</span><span data-lang="zh">游佳君</span></strong><span><span data-lang="en">early-stage AI product venture</span><span data-lang="zh">早期 AI 产品创业</span></span></li>
-      <li><strong><span data-lang="en">Huiteng Xiao</span><span data-lang="zh">肖徽腾</span></strong><span><span data-lang="en">early-stage AI and hardware project</span><span data-lang="zh">早期 AI 与硬件项目</span></span></li>
+      <li><strong><span data-lang="en">Jianye Hou</span><span data-lang="zh">侯建业</span></strong><span><span data-lang="en"><b>PhD student · CTO.</b> Metastone, high-performance computing. The company reports an output value approaching RMB 600 million and plans to pursue an IPO in 2027.</span><span data-lang="zh"><b>博士生 · CTO。</b>是石科技，高性能计算；据团队资料，公司产值近人民币 6 亿元，计划于 2027 年推进 IPO。</span></span></li>
+      <li><strong><span data-lang="en">Shunlin Lu</span><span data-lang="zh">路舜林</span></strong><span><span data-lang="en"><b>PhD student · CTO.</b> NeoteAI, embodied intelligence; financing totals close to RMB 100 million.</span><span data-lang="zh"><b>博士生 · CTO。</b>新智具身（NeoteAI），具身智能；融资规模近人民币 1 亿元。</span></span></li>
+      <li><strong><span data-lang="en">Jiajun You</span><span data-lang="zh">游佳君</span></strong><span><span data-lang="en"><b>PhD student · CEO.</b> Yuniu Technology (驭牛科技), currently raising funds.</span><span data-lang="zh"><b>博士生 · CEO。</b>驭牛科技，目前正在融资。</span></span></li>
+      <li><strong><span data-lang="en">Zhiqi Gao</span><span data-lang="zh">高治淇</span></strong><span><span data-lang="en"><b>MPhil student · Founder.</b> Heryin Yuanzhu (Shenzhen) Intelligent Technology, working on spatial intelligence, 3D reconstruction, and digital twins.</span><span data-lang="zh"><b>MPhil 学生 · 创始人。</b>和瑛元筑（深圳）智能科技有限公司，主要开展空间智能、三维重建与数字孪生相关业务。</span></span></li>
+      <li><strong><span data-lang="en">Xiao Yang</span><span data-lang="zh">肖杨</span></strong><span><span data-lang="en"><b>PhD student · CEO.</b> Shenzhen Sikoo Intelligent Information Services, developing AI education products including Shuta AI.</span><span data-lang="zh"><b>博士生 · CEO。</b>深圳思酷智能信息服务有限公司，开展 AI 教育业务，包括薯塔 AI。</span></span></li>
+      <li><strong><span data-lang="en">Huiteng Xiao</span><span data-lang="zh">肖徽腾</span></strong><span><span data-lang="en"><b>Research assistant · Founder.</b> An early-stage venture combining AI and hardware.</span><span data-lang="zh"><b>研究助理 · 创始人。</b>开展 AI 与硬件结合的早期创业项目。</span></span></li>
+      <li><strong><span data-lang="en">Shijun Chu</span><span data-lang="zh">褚士钧</span></strong><span><span data-lang="en"><b>Research assistant · COO.</b> Chaotic Pendulum Technology (Shenzhen), working on financial AI.</span><span data-lang="zh"><b>研究助理 · COO。</b>混沌摆科技（深圳）有限公司，主要开展 AI 金融相关业务。</span></span></li>
+      <li><strong><span data-lang="en">Yuxuan Zhu</span><span data-lang="zh">朱宇轩</span></strong><span><span data-lang="en"><b>Research assistant · CEO.</b> Wangshi Technology, developing AI applications.</span><span data-lang="zh"><b>研究助理 · CEO。</b>网事科技，开展 AI 应用产品研发。</span></span></li>
     </ul>
-    <p class="benyou-note"><span data-lang="en">Other student teams are also exploring RSI and agent-related ventures. Operating, financing, and valuation figures are included only when formally disclosed.</span><span data-lang="zh">另有学生团队围绕 RSI 与智能体开展早期创业探索。经营、融资和估值信息以企业正式公开披露为准。</span></p>
+    <p class="benyou-note"><span data-lang="en">Operating and financing figures above reflect information provided by the group as of September 2026; where public disclosures are available, the latest disclosure takes precedence.</span><span data-lang="zh">以上经营与融资信息根据团队提供的截至 2026 年 9 月资料整理；如有公开披露，以最新披露为准。</span></p>
     <p><a href="{{ '/startups/' | relative_url }}"><span data-lang="en">More about the startup ecosystem</span><span data-lang="zh">了解更多创业与转化项目</span></a></p>
   </section>
 
