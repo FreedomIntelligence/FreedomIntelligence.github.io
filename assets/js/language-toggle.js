@@ -30,6 +30,17 @@
     }
   }
 
+  function getUrlLanguage() {
+    const language = new URLSearchParams(window.location.search).get("lang");
+    return language === "zh" || language === "en" ? language : null;
+  }
+
+  function syncUrlLanguage(language) {
+    const url = new URL(window.location.href);
+    url.searchParams.set("lang", language);
+    window.history.replaceState({}, "", url);
+  }
+
   function applyLanguage(language) {
     const selectedLanguage = language === "zh" ? "zh" : DEFAULT_LANGUAGE;
     const nextLanguage = selectedLanguage === "zh" ? "en" : "zh";
@@ -49,9 +60,13 @@
     });
 
     // Sync browser tab title with the visible h1 title
-    const titleEl = document.querySelector("h1.post-title, h1.blog-header-title");
+    const titleEl = document.querySelector(
+      "h1.post-title, h1.blog-header-title",
+    );
     if (titleEl) {
-      const titleSpan = titleEl.querySelector(`[data-lang="${selectedLanguage}"]`);
+      const titleSpan = titleEl.querySelector(
+        `[data-lang="${selectedLanguage}"]`,
+      );
       if (titleSpan) {
         const siteName = document.title.split(" | ").slice(1).join(" | ");
         document.title = siteName
@@ -62,15 +77,26 @@
   }
 
   document.addEventListener("DOMContentLoaded", () => {
-    const initialLanguage = getStoredLanguage() || document.documentElement.dataset.language || DEFAULT_LANGUAGE;
+    const pageDefaultLanguage =
+      document.documentElement.dataset.defaultLanguage;
+    const initialLanguage =
+      getUrlLanguage() ||
+      pageDefaultLanguage ||
+      getStoredLanguage() ||
+      document.documentElement.dataset.language ||
+      DEFAULT_LANGUAGE;
     applyLanguage(initialLanguage);
 
     document.querySelectorAll("#language-toggle").forEach((button) => {
       button.addEventListener("click", () => {
-        const currentLanguage = document.documentElement.dataset.language === "zh" ? "zh" : DEFAULT_LANGUAGE;
+        const currentLanguage =
+          document.documentElement.dataset.language === "zh"
+            ? "zh"
+            : DEFAULT_LANGUAGE;
         const nextLanguage = currentLanguage === "zh" ? "en" : "zh";
         applyLanguage(nextLanguage);
         storeLanguage(nextLanguage);
+        syncUrlLanguage(nextLanguage);
       });
     });
   });

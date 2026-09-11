@@ -32,21 +32,21 @@
     <meta name="keywords" content="{%- if page.keywords -%}{{ page.keywords }}{%- else -%}{{ site.keywords }}{%- endif -%}" />
 {%- endif %}
 
-{%- if site.serve_og_meta %}
+{%- if site.serve_og_meta or page.og_image %}
 
     <!-- OpenGraph -->
     <meta property="og:site_name" content="{{ title }}" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{%- if page.title -%}{{ title }} | {{ page.title }}{%- else -%}{{ title }}{%- endif -%}" />
-    <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url | remove_first: 'index.html' }}" />
+    <meta property="og:url" content="{% if page.canonical_url %}{{ page.canonical_url }}{% else %}{{ page.url | prepend: site.baseurl | prepend: site.url | remove_first: 'index.html' }}{% endif %}" />
     <meta property="og:description" content="{%- if page.description -%}{{ page.description }}{%- else -%}{{ site.description }}{%- endif -%}" />
     {% if page.og_image or site.og_image -%}
     <meta property="og:image" content="{%- if page.og_image -%}{{ page.og_image }}{%- else -%}{{ site.og_image }}{%- endif -%}" />
     {%- endif %}
-    <meta property="og:locale" content="{{ site.lang }}" />
+    <meta property="og:locale" content="{% if page.default_language == 'zh' %}zh_CN{% else %}{{ site.lang }}{% endif %}" />
 
     <!-- Twitter card -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="{% if page.og_image %}summary_large_image{% else %}summary{% endif %}" />
     <meta name="twitter:title" content="{%- if page.title -%}{{ page.title }}{%- else -%}{{ title }}{%- endif -%}" />
     <meta name="twitter:description" content="{%- if page.description -%}{{ page.description }}{%- else -%}{{ site.description }}{%- endif -%}" />
     {% if page.og_image or site.og_image -%}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang }}" data-language="en">
+{%- assign page_default_language = page.default_language | default: 'en' -%}
+<html lang="{% if page_default_language == 'zh' %}zh-CN{% else %}{{ site.lang }}{% endif %}" data-language="{{ page_default_language }}" data-default-language="{{ page.default_language }}">
 
   <!-- Head -->
   <head>
