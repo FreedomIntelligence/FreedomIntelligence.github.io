@@ -11,7 +11,7 @@
   font-size: 0.98rem;
   line-height: 1.75;
   margin: 0 auto;
-  max-width: 920px;
+  max-width: 960px;
 }
 
 .benyou-profile a {
@@ -26,9 +26,9 @@
 .benyou-intro {
   align-items: stretch;
   display: grid;
-  gap: 2.4rem;
+  gap: clamp(2rem, 5vw, 3.5rem);
   grid-template-columns: 260px minmax(0, 1fr);
-  padding: 2rem 0 3.25rem;
+  padding: 2.25rem 0 2.75rem;
 }
 
 .benyou-intro > div:first-child {
@@ -51,7 +51,7 @@
 }
 
 .benyou-intro-copy > p {
-  margin: 0.8rem 0 0;
+  margin: 0.95rem 0 0;
 }
 
 .benyou-role {
@@ -71,14 +71,53 @@
   font-size: 0.88rem;
 }
 
+.benyou-highlights {
+  border-bottom: 1px solid var(--benyou-line);
+  border-top: 1px solid var(--benyou-line);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  list-style: none;
+  margin: 0 0 0.5rem;
+  padding: 1.25rem 0;
+}
+
+.benyou-highlights li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+  padding: 0 1.1rem;
+}
+
+.benyou-highlights li:first-child {
+  padding-left: 0;
+}
+
+.benyou-highlights li + li {
+  border-left: 1px solid var(--benyou-line);
+}
+
+.benyou-highlights strong {
+  font-size: 1.55rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+.benyou-highlights span {
+  color: var(--benyou-muted);
+  font-size: 0.76rem;
+  line-height: 1.45;
+}
+
 .benyou-section {
   border-top: 1px solid var(--benyou-line);
-  padding: 3rem 0;
+  padding: 3.5rem 0;
   scroll-margin-top: 90px;
 }
 
 .benyou-section > header {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .benyou-section-label {
@@ -96,15 +135,19 @@
 }
 
 .benyou-section > p {
-  margin: 0.8rem 0;
+  margin: 0 0 1rem;
   max-width: 850px;
+}
+
+.benyou-section > p:last-child {
+  margin-bottom: 0;
 }
 
 .benyou-focus-list {
   display: grid;
   gap: 0.35rem 2rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin: 1.25rem 0 0;
+  margin: 1.5rem 0 0;
   padding-left: 1.25rem;
 }
 
@@ -119,7 +162,7 @@
   display: grid;
   gap: 1.5rem;
   grid-template-columns: 150px minmax(0, 1fr);
-  padding: 1.35rem 0;
+  padding: 1.6rem 0;
 }
 
 .benyou-entry h3 {
@@ -185,7 +228,7 @@
 }
 
 .benyou-prose {
-  margin-top: 1.8rem;
+  margin-top: 2.1rem;
 }
 
 .benyou-prose p {
@@ -195,7 +238,7 @@
 .benyou-venture-list {
   border-top: 1px solid var(--benyou-line);
   list-style: none;
-  margin: 1.4rem 0 0;
+  margin: 1.65rem 0 0;
   padding: 0;
 }
 
@@ -204,7 +247,7 @@
   display: grid;
   gap: 1.25rem;
   grid-template-columns: 130px minmax(0, 1fr);
-  padding: 0.7rem 0;
+  padding: 0.9rem 0;
 }
 
 .benyou-venture-list strong {
@@ -227,7 +270,7 @@
   display: grid;
   gap: 1.25rem;
   grid-template-columns: 160px minmax(0, 1fr);
-  padding: 0.8rem 0;
+  padding: 1rem 0;
 }
 
 .benyou-publications li > span {
@@ -257,6 +300,28 @@
     gap: 0.4rem;
     grid-template-columns: 1fr;
   }
+
+  .benyou-highlights {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .benyou-highlights li {
+    padding: 0.8rem 1rem;
+  }
+
+  .benyou-highlights li:first-child,
+  .benyou-highlights li:nth-child(3) {
+    padding-left: 0;
+  }
+
+  .benyou-highlights li:nth-child(3) {
+    border-left: 0;
+    border-top: 1px solid var(--benyou-line);
+  }
+
+  .benyou-highlights li:nth-child(4) {
+    border-top: 1px solid var(--benyou-line);
+  }
 }
 
 @media (max-width: 520px) {
@@ -273,6 +338,10 @@
 
   .benyou-focus-list {
     grid-template-columns: 1fr;
+  }
+
+  .benyou-section {
+    padding: 2.75rem 0;
   }
 
   .benyou-venture-list li {

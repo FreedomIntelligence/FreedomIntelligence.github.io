@@ -29,16 +29,16 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
     <div class="benyou-intro-copy">
       <h1 id="benyou-name"><span data-lang="en">Benyou Wang</span><span data-lang="zh">王本友</span></h1>
       <p class="benyou-role">
-        <span data-lang="en">Assistant Professor, PhD Supervisor and Presidential Young Professor, School of Data Science, CUHK-Shenzhen; jointly appointed Professor at the Shenzhen Loop Area Institute</span>
-        <span data-lang="zh">香港中文大学（深圳）数据科学学院助理教授、博士生导师、校长青年教授；深圳河套学院双聘教授</span>
+        <span data-lang="en">Assistant Professor, PhD Supervisor and Presidential Young Professor, School of Data Science, CUHK-Shenzhen</span>
+        <span data-lang="zh">香港中文大学（深圳）数据科学学院助理教授、博士生导师、校长青年教授</span>
       </p>
       <p>
-        <span data-lang="en">Benyou Wang leads FreedomAI and has hands-on experience in large-scale model pre-training, post-training, and deployment across multilingual, medical, multimodal, and agentic AI.</span>
-        <span data-lang="zh">王本友领导 FreedomAI 团队，在多语言、医疗、多模态与智能体方向具有大规模模型预训练、后训练和部署经验。</span>
+        <span data-lang="en">Benyou Wang leads FreedomAI and has hands-on experience in large-scale model pre-training, post-training, and deployment across multilingual, medical, multimodal, and agentic AI. His publications have received more than 12,000 Google Scholar citations and five best-paper awards or equivalent distinctions.</span>
+        <span data-lang="zh">王本友领导 FreedomAI 团队，在多语言、医疗、多模态与智能体方向具有大规模模型预训练、后训练和部署经验。论文获 Google Scholar 引用超过 1.2 万次，并五次获得最佳论文或同等级荣誉。</span>
       </p>
       <p>
-        <span data-lang="en">FreedomAI's open models and datasets have surpassed one million downloads on Hugging Face and 10,000 GitHub stars. The group connects large-scale training with open-source engineering, real-world deployment, and entrepreneurship; nearly ten team members have served as startup CTOs.</span>
-        <span data-lang="zh">FreedomAI 开放模型与数据在 Hugging Face 下载量超过百万，GitHub 收藏星标超过 10K。团队把大规模训练、开源工程、真实落地与科技创业连接起来，已有近十位成员担任创业公司 CTO。</span>
+        <span data-lang="en">FreedomAI's open models and datasets have surpassed one million downloads on Hugging Face and 10,000 GitHub stars. By connecting research strategy, large-scale training, open-source engineering, real-world deployment, and venture building, he has developed an end-to-end record of building interdisciplinary teams and turning ambitious research programs into durable laboratory capabilities. Nearly ten alumni have gone on to serve as startup CTOs or technical founders.</span>
+        <span data-lang="zh">FreedomAI 开放模型与数据在 Hugging Face 下载量超过百万，GitHub 收藏星标超过 10K。通过贯通科研战略、大规模训练、开源工程、真实部署与科技创业，他形成了组织跨学科团队、把前沿研究计划沉淀为实验室长期能力的完整实践；已有近十位校友（alumni）成为创业公司 CTO 或技术创始人。</span>
       </p>
 
       <div class="benyou-links">
@@ -50,18 +50,25 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
     </div>
   </section>
 
+  <ul class="benyou-highlights" aria-label="Selected impact metrics">
+    <li><strong>12K+</strong><span data-lang="en">Google Scholar citations</span><span data-lang="zh">Google Scholar 引用</span></li>
+    <li><strong>5</strong><span data-lang="en">best-paper awards or equivalent distinctions</span><span data-lang="zh">项最佳论文或同等级荣誉</span></li>
+    <li><strong>1M+</strong><span data-lang="en">Hugging Face downloads</span><span data-lang="zh">Hugging Face 下载</span></li>
+    <li><strong>~10</strong><span data-lang="en">alumni as startup CTOs or technical founders</span><span data-lang="zh">位校友担任创业 CTO 或技术创始人</span></li>
+  </ul>
+
   <section class="benyou-section" id="research">
     <header>
       <p class="benyou-section-label"><span data-lang="en">Research</span><span data-lang="zh">研究方向</span></p>
       <h2><span data-lang="en">Recursive self-improving agents</span><span data-lang="zh">递归自提升智能体</span></h2>
     </header>
     <p>
-      <span data-lang="en">The research goal is to build agents that can improve continuously through scenario-based testing and feedback. The group develops reproducible environments in which agents complete tasks, identify failures, receive signals from verifiers, people, and the environment, and use those signals to update data, tools, policies, and models.</span>
-      <span data-lang="zh">研究目标是让智能体能够在场景测试和反馈中持续改进。团队构建可重复的环境，让智能体完成任务、识别失败，接收来自验证器、人类和环境的反馈，并据此更新数据、工具、策略与模型。</span>
+      <span data-lang="en">The research goal is to build agents that can improve continuously through large-scale training, scenario-based testing, and feedback. The group develops reproducible environments in which agents complete tasks, identify failures, receive signals from verifiers, people, and the environment, and use those signals to update data, tools, policies, and models.</span>
+      <span data-lang="zh">研究目标是让智能体能够通过大规模训练、场景测试和反馈持续改进。团队构建可重复的环境，让智能体完成任务、识别失败，接收来自验证器、人类和环境的反馈，并据此更新数据、工具、策略与模型。</span>
     </p>
     <p>
-      <span data-lang="en">Synthetic environments provide controlled settings for iteration, while healthcare, finance, education, optimization, and robotics provide complex real-world tests. The work emphasizes measurable improvement, clear evaluation criteria, safety boundaries, and human oversight.</span>
-      <span data-lang="zh">合成环境用于提供可控的迭代条件，医疗、金融、教育、运筹优化和机器人等场景用于检验真实环境中的能力。研究强调可量化的改进、明确的评测标准、安全边界和人类监督。</span>
+      <span data-lang="en">Synthetic environments provide controlled settings for iteration, while healthcare, finance, education, optimization, and robotics place agents in complex real-world environments where they must act, learn, and improve under genuine operational constraints. The work emphasizes measurable improvement, clear evaluation criteria, safety boundaries, and human oversight.</span>
+      <span data-lang="zh">合成环境用于提供可控的迭代条件；医疗、金融、教育、运筹优化和机器人等场景则把智能体置于复杂的真实环境中，使其在实际运行约束下行动、学习与改进。研究强调可量化的进步、明确的评测标准、安全边界和人类监督。</span>
     </p>
     <ul class="benyou-focus-list">
       <li><span data-lang="en">Environment and scenario construction</span><span data-lang="zh">环境与场景构建</span></li>
@@ -156,9 +163,10 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
       <h2><span data-lang="en">Student ventures and technology transfer</span><span data-lang="zh">学生创业与技术转化</span></h2>
     </header>
 
-    <p><span data-lang="en">The group supports students and research staff in translating research into practical products and services. Nearly ten team members have served as startup CTOs. PhD graduate Zhihong Chen co-founded Cognita Imaging, a medical-imaging AI company acquired by Mosaic Clinical Technologies in 2025 for approximately US$80 million.</span><span data-lang="zh">团队支持学生和研究人员将科研成果转化为实际产品与服务，已有近十位成员担任创业公司 CTO。博士毕业生陈志宏参与创办医疗影像 AI 公司 Cognita Imaging；该公司于 2025 年以约 8,000 万美元被 Mosaic Clinical Technologies 收购。</span></p>
+    <p><span data-lang="en">The group supports students and research staff in translating research into practical products and services. Nearly ten alumni have gone on to serve as startup CTOs or technical founders.</span><span data-lang="zh">团队支持学生和研究人员将科研成果转化为实际产品与服务，已有近十位校友（alumni）成为创业公司 CTO 或技术创始人。</span></p>
 
     <ul class="benyou-venture-list">
+      <li><strong><span data-lang="en">Zhihong Chen</span><span data-lang="zh">陈志鸿</span></strong><span><span data-lang="en"><b>PhD graduate · Co-founder.</b> Cognita Imaging, medical-imaging AI; acquired by Mosaic Clinical Technologies in 2025 in a transaction valued at approximately US$80 million.</span><span data-lang="zh"><b>博士毕业生 · 联合创始人。</b>Cognita Imaging，医疗影像 AI；公司于 2025 年被 Mosaic Clinical Technologies 收购，交易规模约 8,000 万美元。</span></span></li>
       <li><strong><span data-lang="en">Jianye Hou</span><span data-lang="zh">侯建业</span></strong><span><span data-lang="en"><b>PhD student · CTO.</b> Metastone, high-performance computing. The company reports an output value approaching RMB 600 million and plans to pursue an IPO in 2027.</span><span data-lang="zh"><b>博士生 · CTO。</b>是石科技，高性能计算；据团队资料，公司产值近人民币 6 亿元，计划于 2027 年推进 IPO。</span></span></li>
       <li><strong><span data-lang="en">Shunlin Lu</span><span data-lang="zh">路舜林</span></strong><span><span data-lang="en"><b>PhD student · CTO.</b> NeoteAI, embodied intelligence; financing totals close to RMB 100 million.</span><span data-lang="zh"><b>博士生 · CTO。</b>新智具身（NeoteAI），具身智能；融资规模近人民币 1 亿元。</span></span></li>
       <li><strong><span data-lang="en">Jiajun You</span><span data-lang="zh">游佳君</span></strong><span><span data-lang="en"><b>PhD student · CEO.</b> Yuniu Technology (驭牛科技), currently raising funds.</span><span data-lang="zh"><b>博士生 · CEO。</b>驭牛科技，目前正在融资。</span></span></li>
