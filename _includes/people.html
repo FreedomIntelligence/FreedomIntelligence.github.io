@@ -13,8 +13,14 @@
           alt="people thumbnail" -%}
         {%- endif %}
         <div class="card-body">
-          <h2 class="card-title">{{ people.title }}</h2>
-          <p class="card-text">{{ people.description }}</p>
+          <h2 class="card-title">
+            <span data-lang="en">{{ people.title_en | default: people.title }}</span>
+            <span data-lang="zh">{{ people.title_zh | default: people.title }}</span>
+          </h2>
+          <p class="card-text">
+            <span data-lang="en">{{ people.description_en | default: people.description }}</span>
+            <span data-lang="zh">{{ people.description_zh | default: people.description }}</span>
+          </p>
           <div class="row ml-1 mr-1 p-0">
             {%- if people.github -%}
             <div class="github-icon">

@@ -43,10 +43,7 @@
 
   function applyLanguage(language) {
     const selectedLanguage = language === "zh" ? "zh" : DEFAULT_LANGUAGE;
-    const nextLanguage = selectedLanguage === "zh" ? "en" : "zh";
     const label = LABELS[selectedLanguage];
-    const nextLabel = LABELS[nextLanguage];
-
     document.documentElement.dataset.language = selectedLanguage;
     document.documentElement.lang = label.htmlLang;
 
@@ -55,8 +52,8 @@
       if (text) {
         text.textContent = label.button;
       }
-      button.setAttribute("title", nextLabel.title);
-      button.setAttribute("aria-label", nextLabel.title);
+      button.setAttribute("title", label.title);
+      button.setAttribute("aria-label", label.title);
     });
 
     // Sync browser tab title with the visible h1 title
