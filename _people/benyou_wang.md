@@ -33,12 +33,12 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
         <span data-lang="zh">香港中文大学（深圳）数据科学学院助理教授、博士生导师、校长青年教授；深圳河套学院双聘教授</span>
       </p>
       <p>
-        <span data-lang="en">Benyou Wang leads FreedomAI. His research focuses on large language models and agents, especially Recursive Self-Improvement (RSI): enabling models to improve through testing, feedback, and updating in synthetic environments and complex real-world settings.</span>
-        <span data-lang="zh">王本友领导 FreedomAI 团队，主要研究大语言模型与智能体，特别关注递归自提升（Recursive Self-Improvement，RSI）：让模型在合成环境和复杂真实场景中，通过测试、反馈和更新持续改进。</span>
+        <span data-lang="en">Benyou Wang leads FreedomAI and has hands-on experience in large-scale model pre-training, post-training, and deployment across multilingual, medical, multimodal, and agentic AI.</span>
+        <span data-lang="zh">王本友领导 FreedomAI 团队，在多语言、医疗、多模态与智能体方向具有大规模模型预训练、后训练和部署经验。</span>
       </p>
       <p>
-        <span data-lang="en">His work covers medical AI, multilingual language models, mathematical reasoning, operations research, and embodied intelligence. His publications have received more than 12,000 Google Scholar citations.</span>
-        <span data-lang="zh">研究方向还包括医疗智能、多语言大模型、数学推理、运筹优化与具身智能。其论文在 Google Scholar 上的引用超过 12,000 次。</span>
+        <span data-lang="en">FreedomAI's open models and datasets have surpassed one million downloads on Hugging Face and 10,000 GitHub stars. The group connects large-scale training with open-source engineering, real-world deployment, and entrepreneurship; nearly ten team members have served as startup CTOs.</span>
+        <span data-lang="zh">FreedomAI 开放模型与数据在 Hugging Face 下载量超过百万，GitHub 收藏星标超过 10K。团队把大规模训练、开源工程、真实落地与科技创业连接起来，已有近十位成员担任创业公司 CTO。</span>
       </p>
 
       <div class="benyou-links">
@@ -97,7 +97,7 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
       <article class="benyou-entry">
         <h3>Phoenix</h3>
         <div>
-          <p><span data-lang="en">Phoenix is an open multilingual dialogue model released in 2023. The project made training data, model weights, code, and evaluation resources available for Chinese, English, and several lower-resource languages.</span><span data-lang="zh">Phoenix 是团队于 2023 年发布的开放多语言对话模型，面向中文、英文和多种低资源语言开放训练数据、模型权重、代码与评测资源。</span></p>
+          <p><span data-lang="en">Phoenix is an open multilingual dialogue model released in 2023. It made training data, model weights, code, and evaluation resources available for Chinese, English, and several lower-resource languages. Its results were competitive with contemporary open chat models, and it entered the leading group in third-party Chinese LLM evaluations at release.</span><span data-lang="zh">Phoenix 是团队于 2023 年发布的开放多语言对话模型，面向中文、英文和多种低资源语言开放训练数据、模型权重、代码与评测资源。其效果在同期开放对话模型中具有竞争力，发布初期进入第三方中文大模型评测前列。</span></p>
           <p class="benyou-entry-links"><strong><span data-lang="en">Resources:</span><span data-lang="zh">资源：</span></strong> <a href="{{ '/projects/multilingual-localized-llms/' | relative_url }}"><span data-lang="en">overview</span><span data-lang="zh">项目总览</span></a> · <a href="https://github.com/FreedomIntelligence/LLMZoo" target="_blank" rel="noopener"><span data-lang="en">code</span><span data-lang="zh">代码</span></a> · <a href="https://huggingface.co/FreedomIntelligence/phoenix-inst-chat-7b" target="_blank" rel="noopener"><span data-lang="en">model</span><span data-lang="zh">模型</span></a> · <a href="https://huggingface.co/datasets/FreedomIntelligence/phoenix-sft-data-v1" target="_blank" rel="noopener"><span data-lang="en">data</span><span data-lang="zh">数据</span></a></p>
           <ul class="benyou-paper-links"><li><a href="https://arxiv.org/abs/2304.10453" target="_blank" rel="noopener">[5] Phoenix: Democratizing ChatGPT across Languages</a> <span>2023</span></li></ul>
         </div>
@@ -121,17 +121,6 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
         </div>
       </article>
 
-      <article class="benyou-entry">
-        <h3><span data-lang="en">RSI and autonomous learning</span><span data-lang="zh">递归自提升与自主学习</span></h3>
-        <div>
-          <p><span data-lang="en">This line of work studies autonomous task generation, verifiable feedback, and self-evolving critics, so that models can improve across repeated cycles of action, evaluation, feedback, and updating. It provides method-level foundations for measurable and controllable recursive self-improvement.</span><span data-lang="zh">相关工作研究自主任务生成、可验证反馈与自演化批评机制，使模型在多轮“行动—评测—反馈—更新”中持续提升，为可评测、可控制的递归自提升提供方法基础。</span></p>
-          <p class="benyou-entry-links"><strong><span data-lang="en">Resources:</span><span data-lang="zh">资源：</span></strong> <a href="{{ '/projects/llm-agents-applications/' | relative_url }}"><span data-lang="en">agent systems</span><span data-lang="zh">智能体系统</span></a> · <a href="https://github.com/FreedomIntelligence/AL" target="_blank" rel="noopener"><span data-lang="en">autonomous-learning code</span><span data-lang="zh">自主学习代码</span></a></p>
-          <ul class="benyou-paper-links">
-            <li><a href="https://aclanthology.org/2025.findings-acl.1084/" target="_blank" rel="noopener">[8] Unlocking LLMs' Self-Improvement Capacity with Autonomous Learning for Domain Adaptation</a> <span>ACL 2025 Findings</span></li>
-            <li><a href="https://openreview.net/forum?id=TA6azZKWJq" target="_blank" rel="noopener">[9] Self-Evolving Critique Abilities in Large Language Models</a> <span>COLM 2025</span></li>
-          </ul>
-        </div>
-      </article>
     </div>
   </section>
 
@@ -167,7 +156,7 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
       <h2><span data-lang="en">Student ventures and technology transfer</span><span data-lang="zh">学生创业与技术转化</span></h2>
     </header>
 
-    <p><span data-lang="en">The group supports students and research staff in translating research into practical products and services. PhD graduate Zhihong Chen co-founded Cognita Imaging, a medical-imaging AI company acquired by Mosaic Clinical Technologies in 2025.</span><span data-lang="zh">团队支持学生和研究人员将科研成果转化为实际产品与服务。已毕业博士生陈志鸿参与创办医疗影像 AI 公司 Cognita Imaging；该公司于 2025 年被 Mosaic Clinical Technologies 收购。</span></p>
+    <p><span data-lang="en">The group supports students and research staff in translating research into practical products and services. Nearly ten team members have served as startup CTOs. PhD graduate Zhihong Chen co-founded Cognita Imaging, a medical-imaging AI company acquired by Mosaic Clinical Technologies in 2025 for approximately US$80 million.</span><span data-lang="zh">团队支持学生和研究人员将科研成果转化为实际产品与服务，已有近十位成员担任创业公司 CTO。博士毕业生陈志宏参与创办医疗影像 AI 公司 Cognita Imaging；该公司于 2025 年以约 8,000 万美元被 Mosaic Clinical Technologies 收购。</span></p>
 
     <ul class="benyou-venture-list">
       <li><strong><span data-lang="en">Jianye Hou</span><span data-lang="zh">侯建业</span></strong><span><span data-lang="en"><b>PhD student · CTO.</b> Metastone, high-performance computing. The company reports an output value approaching RMB 600 million and plans to pursue an IPO in 2027.</span><span data-lang="zh"><b>博士生 · CTO。</b>是石科技，高性能计算；据团队资料，公司产值近人民币 6 亿元，计划于 2027 年推进 IPO。</span></span></li>
@@ -195,17 +184,20 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
   <section class="benyou-section" id="publications">
     <header>
       <p class="benyou-section-label"><span data-lang="en">Selected publications</span><span data-lang="zh">代表论文</span></p>
-      <h2><span data-lang="en">Selected papers and systems</span><span data-lang="zh">部分论文与系统</span></h2>
+      <h2><span data-lang="en">Selected CCF-A publications</span><span data-lang="zh">代表性 CCF A 类论文</span></h2>
     </header>
+    <p class="benyou-note"><span data-lang="en">Authors follow publication order. † marks corresponding authors where indicated.</span><span data-lang="zh">作者按论文署名顺序排列；† 表示论文标注的通讯作者。</span></p>
     <ol class="benyou-publications">
-      <li><span>2017 · SIGIR</span><a href="https://arxiv.org/abs/1705.10513" target="_blank" rel="noopener">IRGAN: A Minimax Game for Unifying Generative and Discriminative Information Retrieval Models</a></li>
-      <li><span>2019 · NAACL</span><a href="https://aclanthology.org/N19-1420/" target="_blank" rel="noopener">A Complex-valued Network for Matching</a></li>
-      <li><span>2023</span><a href="https://arxiv.org/abs/2304.10453" target="_blank" rel="noopener">Phoenix: Democratizing ChatGPT across Languages</a></li>
-      <li><span>2023 · EMNLP Findings</span><a href="https://aclanthology.org/2023.findings-emnlp.725/" target="_blank" rel="noopener">HuatuoGPT, Towards Taming Language Model to Be a Doctor</a></li>
-      <li><span>2024 · NAACL</span><a href="https://aclanthology.org/2024.naacl-long.450/" target="_blank" rel="noopener">AceGPT, Localizing Large Language Models in Arabic</a></li>
-      <li><span>2025 · Operations Research</span><a href="https://doi.org/10.1287/opre.2024.1233" target="_blank" rel="noopener">ORLM: A Customizable Framework in Training Large Models for Automated Optimization Modeling</a></li>
-      <li><span>2025 · COLM</span><a href="https://openreview.net/forum?id=TA6azZKWJq" target="_blank" rel="noopener">Self-Evolving Critique Abilities in Large Language Models</a></li>
-      <li><span>2025 · ACL Findings</span><a href="https://aclanthology.org/2025.findings-acl.1084/" target="_blank" rel="noopener">Unlocking LLMs' Self-Improvement Capacity with Autonomous Learning for Domain Adaptation</a></li>
+      <li><span>2017 · SIGIR · CCF A</span><div><a href="https://arxiv.org/abs/1705.10513" target="_blank" rel="noopener">IRGAN: A Minimax Game for Unifying Generative and Discriminative Information Retrieval Models</a><small>Jun Wang, Lantao Yu, Weinan Zhang, Yu Gong, Yinghui Xu, Benyou Wang, Peng Zhang, Dell Zhang</small></div></li>
+      <li><span>2022 · ICLR · CCF A</span><div><a href="https://openreview.net/forum?id=RftryyYyjiG" target="_blank" rel="noopener">Exploring Extreme Parameter Compression for Pre-trained Language Models</a><small>Benyou Wang, Yuxin Ren, Lifeng Shang, Xin Jiang, Qun Liu</small></div></li>
+      <li><span>2022 · NeurIPS · CCF A</span><div><a href="https://arxiv.org/abs/2210.15379" target="_blank" rel="noopener">MorphTE: Injecting Morphology in Tensorized Embeddings</a><small>Guobing Gan, Peng Zhang, Sunzhu Li, Xiuqing Lu, Benyou Wang†</small></div></li>
+      <li><span>2023 · AAAI · CCF A</span><div><a href="https://arxiv.org/abs/2304.10220" target="_blank" rel="noopener">Effective Open Intent Classification with K-center Contrastive Learning and Adjustable Decision Boundary</a><small>Xiaokang Liu, Jianquan Li, Jingjing Mu, Min Yang, Ruifeng Xu, Benyou Wang†</small></div></li>
+      <li><span>2023 · ACL · CCF A</span><div><a href="https://arxiv.org/abs/2207.00735" target="_blank" rel="noopener">Can Language Models Make Fun? A Case Study in Chinese Comical Crosstalk</a><small>Benyou Wang, Xiangbo Wu, Xiaokang Liu, Jianquan Li, Prayag Tiwari, Qianqian Xie</small></div></li>
+      <li><span>2024 · ACL · CCF A</span><div><a href="https://arxiv.org/abs/2308.11534" target="_blank" rel="noopener">Large Language Model as a User Simulator</a><small>Chuyi Kong, Yaxin Fan, Xiang Wan, Feng Jiang, Benyou Wang†</small></div></li>
+      <li><span>2024 · NeurIPS · CCF A</span><div><a href="https://openreview.net/forum?id=woRFmNJiLp" target="_blank" rel="noopener">Alignment at Pre-training! Towards Native Alignment for Arabic LLMs</a><small>Juhao Liang, Zhenyang Cai, Jianqing Zhu, et al., Benyou Wang†, Jinchao Xu†</small></div></li>
+      <li><span>2025 · NeurIPS Spotlight · CCF A</span><div><a href="https://arxiv.org/abs/2506.12860" target="_blank" rel="noopener">Question-Free Fine-Tuning: Towards Efficient and Adaptive Reasoning in LLMs</a><small>Wanlong Liu, Junxiao Xu, Fei Yu, et al., Benyou Wang†</small></div></li>
+      <li><span>2025 · ICML · CCF A</span><div><a href="https://arxiv.org/abs/2502.11812" target="_blank" rel="noopener">Towards Understanding Fine-Tuning Mechanisms of LLMs via Circuit Analysis</a><small>Xu Wang, Yan Hu, Wenyu Du, Reynold Cheng, Benyou Wang, Difan Zou†</small></div></li>
+      <li><span>2026 · ICLR · CCF A</span><div><a href="https://arxiv.org/abs/2602.16747" target="_blank" rel="noopener">LiveClin: A Live Clinical Benchmark without Leakage</a><small>Xidong Wang, Shuqi Guo, Yue Shen, et al., Benyou Wang†</small></div></li>
     </ol>
     <p><a href="{{ '/publications/' | relative_url }}"><span data-lang="en">View all publications</span><span data-lang="zh">查看完整论文列表</span></a></p>
   </section>
