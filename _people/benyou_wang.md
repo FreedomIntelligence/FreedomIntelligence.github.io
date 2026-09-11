@@ -59,7 +59,7 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
 
   <section class="benyou-section" id="research">
     <header>
-      <p class="benyou-section-label"><span data-lang="en">Research</span><span data-lang="zh">研究方向</span></p>
+      <p class="benyou-section-label">Research</p>
       <h2><span data-lang="en">Recursive self-improving agents</span><span data-lang="zh">递归自提升智能体</span></h2>
     </header>
     <p>
@@ -80,7 +80,7 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
 
   <section class="benyou-section" id="projects">
     <header>
-      <p class="benyou-section-label"><span data-lang="en">Selected projects</span><span data-lang="zh">代表项目</span></p>
+      <p class="benyou-section-label">Selected projects</p>
       <h2><span data-lang="en">Models, systems, and applications</span><span data-lang="zh">模型、系统与应用</span></h2>
     </header>
 
@@ -133,7 +133,7 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
 
   <section class="benyou-section" id="recognition">
     <header>
-      <p class="benyou-section-label"><span data-lang="en">Honors and service</span><span data-lang="zh">荣誉与学术服务</span></p>
+      <p class="benyou-section-label">Honors and service</p>
       <h2><span data-lang="en">Selected recognition</span><span data-lang="zh">代表性荣誉</span></h2>
     </header>
 
@@ -159,7 +159,7 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
 
   <section class="benyou-section" id="innovation">
     <header>
-      <p class="benyou-section-label"><span data-lang="en">Innovation and mentorship</span><span data-lang="zh">科研转化与人才培养</span></p>
+      <p class="benyou-section-label">Innovation and mentorship</p>
       <h2><span data-lang="en">Student ventures and technology transfer</span><span data-lang="zh">学生创业与技术转化</span></h2>
     </header>
 
@@ -182,7 +182,7 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
 
   <section class="benyou-section" id="teaching">
     <header>
-      <p class="benyou-section-label"><span data-lang="en">Teaching and supervision</span><span data-lang="zh">教学与联合培养</span></p>
+      <p class="benyou-section-label">Teaching and supervision</p>
       <h2><span data-lang="en">Natural language processing</span><span data-lang="zh">自然语言处理课程</span></h2>
     </header>
     <p><span data-lang="en">Benyou Wang teaches Natural Language Processing each year to approximately 500 students. The course covers NLP foundations, large language models, agents, and practical system development, with course materials available online.</span><span data-lang="zh">王本友每年讲授自然语言处理课程，约有 500 名学生修读。课程涵盖自然语言处理基础、大语言模型、智能体与系统实践，并持续开放课程资料。</span> <a href="https://nlp-course-cuhksz.github.io/" target="_blank" rel="noopener"><span data-lang="en">Course website</span><span data-lang="zh">课程网站</span></a></p>
@@ -191,21 +191,72 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
 
   <section class="benyou-section" id="publications">
     <header>
-      <p class="benyou-section-label"><span data-lang="en">Selected publications</span><span data-lang="zh">代表论文</span></p>
-      <h2><span data-lang="en">Selected CCF-A publications</span><span data-lang="zh">代表性 CCF A 类论文</span></h2>
+      <p class="benyou-section-label">Publications</p>
+      <h2><span data-lang="en">CCF-A and EMNLP main-conference papers</span><span data-lang="zh">CCF A 类与 EMNLP 主会论文</span></h2>
     </header>
-    <p class="benyou-note"><span data-lang="en">Authors follow publication order. † marks corresponding authors where indicated.</span><span data-lang="zh">作者按论文署名顺序排列；† 表示论文标注的通讯作者。</span></p>
+    <p class="benyou-note"><span data-lang="en">Shown in reverse chronological order. Findings papers and AAAI papers are excluded.</span><span data-lang="zh">按年份倒序排列；不含 Findings 与 AAAI 论文。</span></p>
     <ol class="benyou-publications">
-      <li><span>2017 · SIGIR · CCF A</span><div><a href="https://arxiv.org/abs/1705.10513" target="_blank" rel="noopener">IRGAN: A Minimax Game for Unifying Generative and Discriminative Information Retrieval Models</a><small>Jun Wang, Lantao Yu, Weinan Zhang, Yu Gong, Yinghui Xu, Benyou Wang, Peng Zhang, Dell Zhang</small></div></li>
-      <li><span>2022 · ICLR · CCF A</span><div><a href="https://openreview.net/forum?id=RftryyYyjiG" target="_blank" rel="noopener">Exploring Extreme Parameter Compression for Pre-trained Language Models</a><small>Benyou Wang, Yuxin Ren, Lifeng Shang, Xin Jiang, Qun Liu</small></div></li>
-      <li><span>2022 · NeurIPS · CCF A</span><div><a href="https://arxiv.org/abs/2210.15379" target="_blank" rel="noopener">MorphTE: Injecting Morphology in Tensorized Embeddings</a><small>Guobing Gan, Peng Zhang, Sunzhu Li, Xiuqing Lu, Benyou Wang†</small></div></li>
-      <li><span>2023 · AAAI · CCF A</span><div><a href="https://arxiv.org/abs/2304.10220" target="_blank" rel="noopener">Effective Open Intent Classification with K-center Contrastive Learning and Adjustable Decision Boundary</a><small>Xiaokang Liu, Jianquan Li, Jingjing Mu, Min Yang, Ruifeng Xu, Benyou Wang†</small></div></li>
+      <li><span>2026 · ACL · CCF A</span><div><a href="https://arxiv.org/abs/2604.16029" target="_blank" rel="noopener">Cut Your Losses! Learning to Prune Paths Early for Efficient Parallel Reasoning</a><small>Jiaxi Bi, Tongxu Luo, Wenyu Du, Zhengyang Tang, Benyou Wang</small></div></li>
+      <li><span>2026 · ACL · CCF A</span><div><a href="https://arxiv.org/abs/2511.14783" target="_blank" rel="noopener">Human or LLM as Standardized Patients? A Comparative Study in Medical Education</a><small>Bingquan Zhang, Xiaoxiao Liu, Yuchi Wang, et al., Benyou Wang</small></div></li>
+      <li><span>2026 · ACL · CCF A</span><div><a href="https://arxiv.org/abs/2503.05085" target="_blank" rel="noopener">S2S-Arena: Evaluating Paralinguistic Instruction Following in Speech-to-Speech Models</a><small>Feng Jiang, Zhiyu Lin, Yiyang Liu, et al., Benyou Wang, Haizhou Li</small></div></li>
+      <li><span>2026 · ACL · CCF A</span><div><a href="https://arxiv.org/abs/2506.01111" target="_blank" rel="noopener">Towards Fine-grained Audio Captioning with Multimodal Contextual Fusion</a><small>Shunian Chen, Xinyuan Xie, Zheshu Chen, et al., Benyou Wang</small></div></li>
+      <li><span>2026 · ACM MM · CCF A</span><div><a href="https://doi.org/10.1145/3746027.3758173" target="_blank" rel="noopener">Can Audio Language Models Listen Between the Lines? A Study on Metaphorical Reasoning</a><small>Hongru Xiao, Xiang Li, Duyi Pan, et al., Benyou Wang</small></div></li>
+      <li><span>2026 · CHI · CCF A</span><div><a href="https://doi.org/10.1145/3772363.3798336" target="_blank" rel="noopener">It Talks Like a Patient, But Feels Different: Co-Designing AI Standardized Patients</a><small>Zhiqi Gao, Guo Zhu, Huarui Luo, et al., Benyou Wang</small></div></li>
+      <li><span>2026 · EMNLP · Main</span><div><a href="https://openreview.net/forum?id=Y8F7KHDq0x" target="_blank" rel="noopener">Agentic Rubrics: Interfacing Agents with Heterogeneous Environments using Executable Rubrics</a><small>Shunian Chen, Rui Yu, Zhengyang Tang, Yuhao Du, Zejian Xie, Songxin Zhang, Benyou Wang</small></div></li>
+      <li><span>2026 · EMNLP · Main</span><div><a href="https://openreview.net/forum?id=5IVW01P2JL" target="_blank" rel="noopener">Steer on Rubrics: Auditable Steering of Schwartz Values in Language Models</a><small>Zichen Xu, Geng Zhao, Aoxiang Qin, Li Zhou, Benyou Wang</small></div></li>
+      <li><span>2026 · EMNLP · Main</span><div><a href="https://openreview.net/forum?id=0x5RjTe8ph" target="_blank" rel="noopener">TTS-Hub: Leveraging Modular LoRAs and Arithmetic Composition for Controllable Text-to-Speech</a><small>Xiang Li, Shiqi Zhang, Zichen Xu, Wenyuan Gu, et al., Benyou Wang</small></div></li>
+      <li><span>2026 · ICLR · CCF A</span><div><a href="https://arxiv.org/abs/2510.03659" target="_blank" rel="noopener">Does Higher Interpretability Imply Better Utility? A Pairwise Analysis on Sparse Autoencoders</a><small>Xu Wang, Yan Hu, Benyou Wang, Difan Zou</small></div></li>
+      <li><span>2026 · ICLR · CCF A</span><div><a href="https://arxiv.org/abs/2510.22758" target="_blank" rel="noopener">EchoMind: An Interrelated Multi-level Benchmark for Evaluating Empathetic Speech Language Models</a><small>Li Zhou, Lutong Yu, You Lyu, et al., Benyou Wang, Haizhou Li</small></div></li>
+      <li><span>2026 · ICLR · CCF A</span><div><a href="https://arxiv.org/abs/2602.24080" target="_blank" rel="noopener">Human or Machine? A Preliminary Turing Test for Speech-to-Speech Interaction</a><small>Xiang Li, Jiabao Gao, Sipei Lin, et al., Benyou Wang</small></div></li>
+      <li><span>2026 · ICLR · CCF A</span><div><a href="https://arxiv.org/abs/2602.16747" target="_blank" rel="noopener">LiveClin: A Live Clinical Benchmark without Leakage</a><small>Xidong Wang, Shuqi Guo, Yue Shen, et al., Benyou Wang</small></div></li>
+      <li><span>2026 · ICLR · CCF A</span><div><a href="https://arxiv.org/abs/2603.00585" target="_blank" rel="noopener">MicroVerse: A Preliminary Exploration Toward a Micro-World Simulation</a><small>Rongsheng Wang, Minghao Wu, Hongru Zhou, et al., Benyou Wang</small></div></li>
+      <li><span>2026 · ICML · CCF A</span><div><a href="https://arxiv.org/abs/2510.04204" target="_blank" rel="noopener">CALM Before the STORM: Unlocking Native Reasoning for Optimization Modeling</a><small>Zhengyang Tang, Zihan Ye, Chenyu Huang, et al., Benyou Wang</small></div></li>
+      <li><span>2026 · ICML · CCF A</span><div><a href="https://arxiv.org/abs/2605.25511" target="_blank" rel="noopener">CRPO: Character-centric Group Relative Policy Optimization for Role-aware Reasoning</a><small>Yihong Tang, Kehai Chen, Liang Yue, Benyou Wang, Min Zhang</small></div></li>
+      <li><span>2026 · ICML · CCF A</span><div><span class="benyou-publication-title">OnePO: Direct One-stage Policy Optimization for SFT-free Domain Adaptation</span><small>Junying Chen, Xinyuan Xie, Ziniu Li, Benyou Wang</small></div></li>
+      <li><span>2025 · ACL · CCF A</span><div><a href="https://arxiv.org/abs/2412.20070" target="_blank" rel="noopener">Exploring Compositional Generalization of Multimodal LLMs for Medical Imaging</a><small>Zhenyang Cai, Junying Chen, Rongsheng Wang, et al., Benyou Wang</small></div></li>
+      <li><span>2025 · ACL · CCF A</span><div><a href="https://arxiv.org/abs/2412.12310" target="_blank" rel="noopener">Second Language (Arabic) Acquisition of LLMs via Progressive Vocabulary Expansion</a><small>Jianqing Zhu, Huang Huang, Zhihang Lin, et al., Benyou Wang, Jinchao Xu</small></div></li>
+      <li><span>2025 · ACL · CCF A</span><div><a href="https://arxiv.org/abs/2502.12900" target="_blank" rel="noopener">Soundwave: Less is More for Speech-Text Alignment in LLMs</a><small>Yuhao Zhang, Zhiheng Liu, Fan Bu, Ruiyu Zhang, Benyou Wang, Haizhou Li</small></div></li>
+      <li><span>2025 · EMNLP · Main</span><div><a href="https://arxiv.org/abs/2505.18562" target="_blank" rel="noopener">From Word to World: Evaluate and Mitigate Culture Bias in LLMs via Word Association Test</a><small>Xunlian Dai, Li Zhou, Benyou Wang, Haizhou Li</small></div></li>
+      <li><span>2025 · EMNLP · Main</span><div><a href="https://arxiv.org/abs/2505.24428" target="_blank" rel="noopener">Model Unlearning via Sparse Autoencoder Subspace Guided Projections</a><small>Xu Wang, Zihao Li, Benyou Wang, Yan Hu, Difan Zou</small></div></li>
+      <li><span>2025 · EMNLP Oral · Main</span><div><a href="https://arxiv.org/abs/2501.00353" target="_blank" rel="noopener">RAG-Instruct: Boosting LLMs with Diverse Retrieval-Augmented Instructions</a><small>Wanlong Liu, Junying Chen, Ke Ji, Li Zhou, Wenyu Chen, Benyou Wang</small></div></li>
+      <li><span>2025 · ICLR · CCF A</span><div><a href="https://arxiv.org/abs/2410.10626" target="_blank" rel="noopener">Efficiently Democratizing Medical LLMs for 50 Languages via Mixture of Language Family Experts</a><small>Guorui Zheng, Xidong Wang, Juhao Liang, et al., Benyou Wang</small></div></li>
+      <li><span>2025 · ICLR · CCF A</span><div><a href="https://arxiv.org/abs/2410.07985" target="_blank" rel="noopener">Omni-MATH: A Universal Olympiad Level Mathematic Benchmark for Large Language Models</a><small>Bofei Gao, Feifan Song, Zhe Yang, et al., Benyou Wang</small></div></li>
+      <li><span>2025 · ICML · CCF A</span><div><a href="https://arxiv.org/abs/2502.11812" target="_blank" rel="noopener">Towards Understanding Fine-Tuning Mechanisms of LLMs via Circuit Analysis</a><small>Xu Wang, Yan Hu, Wenyu Du, Reynold Cheng, Benyou Wang, Difan Zou</small></div></li>
+      <li><span>2025 · IEEE TPAMI · CCF A</span><div><a href="https://doi.org/10.1109/TPAMI.2025.3627546" target="_blank" rel="noopener">MotionLLM: Understanding Human Behaviors from Human Motions and Videos</a><small>Ling-Hao Chen, Shunlin Lu, Ailing Zeng, et al., Benyou Wang, Ruimao Zhang, Lei Zhang</small></div></li>
+      <li><span>2025 · NeurIPS · CCF A</span><div><a href="https://arxiv.org/abs/2506.09820" target="_blank" rel="noopener">CoRT: Code-integrated Reasoning within Thinking</a><small>Chengpeng Li, Zhengyang Tang, Ziniu Li, et al., Benyou Wang, Dayiheng Liu</small></div></li>
+      <li><span>2025 · NeurIPS · CCF A</span><div><a href="https://arxiv.org/abs/2503.02875" target="_blank" rel="noopener">The First Few Tokens Are All You Need: An Efficient Unsupervised Prefix Fine-Tuning Method</a><small>Ke Ji, Jiahao Xu, Tian Liang, et al., Benyou Wang</small></div></li>
+      <li><span>2025 · NeurIPS · CCF A</span><div><a href="https://arxiv.org/abs/2502.01506" target="_blank" rel="noopener">TwinMarket: A Scalable Behavioral and Social Simulation for Financial Markets</a><small>Yuzhe Yang, Yifei Zhang, Minghao Wu, et al., Benyou Wang</small></div></li>
+      <li><span>2025 · NeurIPS · CCF A</span><div><a href="https://arxiv.org/abs/2503.21776" target="_blank" rel="noopener">Video-R1: Reinforcing Video Reasoning in MLLMs</a><small>Kaituo Feng, Kaixiong Gong, Bohao Li, et al., Benyou Wang, Xiangyu Yue</small></div></li>
+      <li><span>2025 · NeurIPS Spotlight · CCF A</span><div><a href="https://openreview.net/forum?id=CrBWOjZoKc" target="_blank" rel="noopener">Question-Free Fine-Tuning: Towards Efficient and Adaptive Reasoning in LLMs</a><small>Wanlong Liu, Junxiao Xu, Fei Yu, et al., Benyou Wang</small></div></li>
+      <li><span>2024 · ACL · CCF A</span><div><a href="https://arxiv.org/abs/2308.11534" target="_blank" rel="noopener">Large Language Model as a User Simulator</a><small>Chuyi Kong, Yaxin Fan, Xiang Wan, Feng Jiang, Benyou Wang</small></div></li>
+      <li><span>2024 · ACM TOIS · CCF A</span><div><a href="https://doi.org/10.1145/3677375" target="_blank" rel="noopener">On Elastic Language Models</a><small>Chen Zhang, Benyou Wang, Dawei Song</small></div></li>
+      <li><span>2024 · EMNLP · Main</span><div><a href="https://arxiv.org/abs/2406.19280" target="_blank" rel="noopener">HuatuoGPT-Vision, Towards Injecting Medical Visual Knowledge into Multimodal LLMs at Scale</a><small>Junying Chen, Chi Gui, Ruyi Ouyang, et al., Benyou Wang</small></div></li>
+      <li><span>2024 · EMNLP · Main</span><div><a href="https://aclanthology.org/2024.emnlp-main.474/" target="_blank" rel="noopener">Humans or LLMs as the Judge? A Study on Judgement Biases</a><small>Guiming Hardy Chen, Shunian Chen, Ziche Liu, Feng Jiang, Benyou Wang</small></div></li>
+      <li><span>2024 · EMNLP · Main</span><div><a href="https://arxiv.org/abs/2410.09421" target="_blank" rel="noopener">VLFeedback: A Large-Scale AI Feedback Dataset for Large Vision-Language Models Alignment</a><small>Lei Li, Zhihui Xie, Mukai Li, et al., Benyou Wang, Lingpeng Kong, Qi Liu</small></div></li>
+      <li><span>2024 · ICLR · CCF A</span><div><a href="https://arxiv.org/abs/2403.00642" target="_blank" rel="noopener">Rethinking the Uniformity Metric in Self-Supervised Learning</a><small>Xianghong Fang, Jian Li, Qiang Sun, Benyou Wang</small></div></li>
+      <li><span>2024 · ICML · CCF A</span><div><a href="https://arxiv.org/abs/2403.02884" target="_blank" rel="noopener">MathScale: Scaling Instruction Tuning for Mathematical Reasoning</a><small>Zhengyang Tang, Xingxing Zhang, Benyou Wang, Furu Wei</small></div></li>
+      <li><span>2024 · NeurIPS · CCF A</span><div><a href="https://openreview.net/forum?id=woRFmNJiLp" target="_blank" rel="noopener">Alignment at Pre-training! Towards Native Alignment for Arabic LLMs</a><small>Juhao Liang, Zhenyang Cai, Jianqing Zhu, et al., Benyou Wang, Jinchao Xu</small></div></li>
+      <li><span>2024 · NeurIPS D&amp;B · CCF A</span><div><a href="https://openreview.net/forum?id=loDHZstVP6" target="_blank" rel="noopener">FinBen: An Holistic Financial Benchmark for Large Language Models</a><small>Qianqian Xie, Weiguang Han, Zhengyu Chen, et al., Benyou Wang</small></div></li>
+      <li><span>2024 · NeurIPS D&amp;B · CCF A</span><div><a href="https://arxiv.org/abs/2408.03361" target="_blank" rel="noopener">GMAI-MMBench: A Comprehensive Multimodal Evaluation Benchmark Towards General Medical AI</a><small>Pengcheng Chen, Jin Ye, Guoan Wang, et al., Benyou Wang</small></div></li>
       <li><span>2023 · ACL · CCF A</span><div><a href="https://arxiv.org/abs/2207.00735" target="_blank" rel="noopener">Can Language Models Make Fun? A Case Study in Chinese Comical Crosstalk</a><small>Benyou Wang, Xiangbo Wu, Xiaokang Liu, Jianquan Li, Prayag Tiwari, Qianqian Xie</small></div></li>
-      <li><span>2024 · ACL · CCF A</span><div><a href="https://arxiv.org/abs/2308.11534" target="_blank" rel="noopener">Large Language Model as a User Simulator</a><small>Chuyi Kong, Yaxin Fan, Xiang Wan, Feng Jiang, Benyou Wang†</small></div></li>
-      <li><span>2024 · NeurIPS · CCF A</span><div><a href="https://openreview.net/forum?id=woRFmNJiLp" target="_blank" rel="noopener">Alignment at Pre-training! Towards Native Alignment for Arabic LLMs</a><small>Juhao Liang, Zhenyang Cai, Jianqing Zhu, et al., Benyou Wang†, Jinchao Xu†</small></div></li>
-      <li><span>2025 · NeurIPS Spotlight · CCF A</span><div><a href="https://arxiv.org/abs/2506.12860" target="_blank" rel="noopener">Question-Free Fine-Tuning: Towards Efficient and Adaptive Reasoning in LLMs</a><small>Wanlong Liu, Junxiao Xu, Fei Yu, et al., Benyou Wang†</small></div></li>
-      <li><span>2025 · ICML · CCF A</span><div><a href="https://arxiv.org/abs/2502.11812" target="_blank" rel="noopener">Towards Understanding Fine-Tuning Mechanisms of LLMs via Circuit Analysis</a><small>Xu Wang, Yan Hu, Wenyu Du, Reynold Cheng, Benyou Wang, Difan Zou†</small></div></li>
-      <li><span>2026 · ICLR · CCF A</span><div><a href="https://arxiv.org/abs/2602.16747" target="_blank" rel="noopener">LiveClin: A Live Clinical Benchmark without Leakage</a><small>Xidong Wang, Shuqi Guo, Yue Shen, et al., Benyou Wang†</small></div></li>
+      <li><span>2023 · ACL · CCF A</span><div><span class="benyou-publication-title">Lifting the Curse of Capacity Gap in Distilling Language Models</span><small>Chen Zhang, Yang Yang, Jiahao Liu, Jingang Wang, Yunsen Xian, Benyou Wang, Dawei Song</small></div></li>
+      <li><span>2023 · ACL · CCF A</span><div><a href="https://aclanthology.org/2023.acl-long.1/" target="_blank" rel="noopener">One Cannot Stand for Everyone! Leveraging Multiple User Simulators to Train Task-oriented Dialogue Systems</a><small>Yajiao Liu, Xin Jiang, Yichun Yin, Yasheng Wang, et al., Benyou Wang</small></div></li>
+      <li><span>2023 · ACM Computing Surveys · CCF A</span><div><a href="https://doi.org/10.1145/3611651" target="_blank" rel="noopener">Pre-trained Language Models in Biomedical Domain: A Survey from Multiscale Perspective</a><small>Benyou Wang, Qianqian Xie, Jiahuan Pei, Prayag Tiwari, Zhao Li, Fu Jie</small></div></li>
+      <li><span>2023 · ACM TOIS · CCF A</span><div><span class="benyou-publication-title">Spatio-Temporal Contrastive Learning Enhanced GNNs for Session-based Recommendation</span><small>Zhongwei Wan, Xin Liu, Benyou Wang, et al.</small></div></li>
+      <li><span>2023 · ICCV · CCF A</span><div><a href="https://arxiv.org/abs/2302.08958" target="_blank" rel="noopener">Towards Unifying Medical Vision-and-Language Pre-training via Soft Prompts</a><small>Zhihong Chen, Shizhe Diao, Benyou Wang, Guanbin Li, Xiang Wan</small></div></li>
+      <li><span>2023 · NeurIPS · CCF A</span><div><a href="https://arxiv.org/abs/2305.19894" target="_blank" rel="noopener">Med-UniC: Unifying Cross-Lingual Medical Vision-Language Pre-Training by Diminishing Bias</a><small>Zhongwei Wan, Che Liu, Mi Zhang, et al., Benyou Wang</small></div></li>
+      <li><span>2023 · NeurIPS D&amp;B · CCF A</span><div><a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/3be60b4a739b95a07a944a1a2c41e05e-Abstract-Datasets_and_Benchmarks.html" target="_blank" rel="noopener">All In One: A Chinese Multi-Modal Dataset for Multi-Affection Detection in Conversations</a><small>Yazhou Zhang, Yang Yu, Qing Guo, Benyou Wang, et al.</small></div></li>
+      <li><span>2022 · ACM TOIS · CCF A</span><div><span class="benyou-publication-title">Complex-valued Neural Network-based Quantum Language Models</span><small>Peng Zhang, Wenjie Hui, Benyou Wang, Donghao Zhao, Dawei Song, Christina Lioma, Jakob Grue Simonsen</small></div></li>
+      <li><span>2022 · EMNLP · Main</span><div><a href="https://aclanthology.org/2022.emnlp-main.475/" target="_blank" rel="noopener">Hypoformer: Hybrid Decomposition Transformer for Edge-friendly Neural Machine Translation</a><small>Sunzhu Li, Peng Zhang, Guobing Gan, Xiuqing Lv, Benyou Wang, Junqiu Wei, Xin Jiang</small></div></li>
+      <li><span>2022 · ICLR · CCF A</span><div><a href="https://openreview.net/forum?id=RftryyYyjiG" target="_blank" rel="noopener">Exploring Extreme Parameter Compression for Pre-trained Language Models</a><small>Benyou Wang, Yuxin Ren, Lifeng Shang, Xin Jiang, Qun Liu</small></div></li>
+      <li><span>2022 · NeurIPS · CCF A</span><div><a href="https://arxiv.org/abs/2210.15379" target="_blank" rel="noopener">MorphTE: Injecting Morphology in Tensorized Embeddings</a><small>Guobing Gan, Peng Zhang, Sunzhu Li, Xiuqing Lu, Benyou Wang</small></div></li>
+      <li><span>2021 · ICLR · CCF A</span><div><a href="https://openreview.net/forum?id=onxoVA9FxMw" target="_blank" rel="noopener">On Position Embeddings in BERT</a><small>Benyou Wang, Lifeng Shang, Christina Lioma, Xin Jiang, Qun Liu, Jakob Grue Simonsen</small></div></li>
+      <li><span>2021 · NeurIPS · CCF A</span><div><span class="benyou-publication-title">Word2Fun: Modeling Words as Functions for Dynamic Word Embeddings</span><small>Benyou Wang, Emanuele Di Buiccio, Massimo Melucci</small></div></li>
+      <li><span>2020 · ICLR Spotlight · CCF A</span><div><span class="benyou-publication-title">Encoding Word Order in Complex Embeddings</span><small>Benyou Wang, Donghao Zhao, Christina Lioma, Qiuchi Li, Peng Zhang, Jakob Grue Simonsen</small></div></li>
+      <li><span>2019 · WWW · CCF A</span><div><a href="https://arxiv.org/abs/1902.09802" target="_blank" rel="noopener">Semantic Hilbert Space for Text Representation Learning</a><small>Benyou Wang, Qiuchi Li, Massimo Melucci, Dawei Song</small></div></li>
+      <li><span>2018 · IJCAI · CCF A</span><div><span class="benyou-publication-title">A Multi-task Learning Approach for Image Captioning</span><small>Wei Zhao, Benyou Wang, Jianbo Ye, Min Yang, Zhou Zhao, Ruotian Luo, Yu Qiao</small></div></li>
+      <li><span>2018 · IJCAI · CCF A</span><div><a href="https://doi.org/10.24963/ijcai.2018/511" target="_blank" rel="noopener">PLASTIC: Prioritize Long and Short-term Information in Top-n Recommendation using Adversarial Training</a><small>Wei Zhao, Benyou Wang, Jianbo Ye, Yongqiang Gao, Min Yang, Xiaojun Chen</small></div></li>
+      <li><span>2017 · SIGIR · CCF A</span><div><a href="https://arxiv.org/abs/1705.10513" target="_blank" rel="noopener">IRGAN: A Minimax Game for Unifying Generative and Discriminative Information Retrieval Models</a><small>Jun Wang, Lantao Yu, Weinan Zhang, Yu Gong, et al., Benyou Wang</small></div></li>
     </ol>
     <p><a href="{{ '/publications/' | relative_url }}"><span data-lang="en">View all publications</span><span data-lang="zh">查看完整论文列表</span></a></p>
   </section>

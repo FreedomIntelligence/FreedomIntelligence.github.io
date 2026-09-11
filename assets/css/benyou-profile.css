@@ -289,6 +289,11 @@
   line-height: 1.5;
 }
 
+.benyou-publication-title {
+  color: var(--benyou-text);
+  font-weight: 500;
+}
+
 @media (max-width: 700px) {
   .benyou-intro {
     gap: 1.5rem;
