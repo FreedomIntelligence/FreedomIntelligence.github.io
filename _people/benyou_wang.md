@@ -34,8 +34,8 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
         <span data-lang="zh">香港中文大学（深圳）数据科学学院助理教授、博士生导师、校长青年教授</span>
       </p>
       <p>
-        <span data-lang="en">Benyou Wang leads FreedomAI and has hands-on experience in large-scale model pre-training, post-training, and deployment across multilingual, medical, multimodal, and agentic AI. His publications have received more than 12,000 Google Scholar citations and five best-paper awards or equivalent distinctions, including a SIGIR Best Paper Award Honorable Mention and the NAACL 2019 Best Explainable Paper award (recognized alongside the authors of four other award-winning papers, including BERT).</span>
-        <span data-lang="zh">王本友领导 FreedomAI 团队，在多语言、医疗、多模态与智能体方向具有大规模模型预训练、后训练和部署经验。论文获 Google Scholar 引用超过 1.2 万次，并五次获得最佳论文或同等级荣誉，包括 SIGIR 最佳论文荣誉提名和 NAACL 2019 Best Explainable Paper（与 BERT 等其他四篇获奖论文的作者一同领奖）。</span>
+        <span data-lang="en">Benyou Wang leads FreedomAI and has hands-on experience in large-scale model pre-training, post-training, and deployment across agents, world models, healthcare, multimodal AI, and related areas. His publications have received more than 12,000 Google Scholar citations and five best-paper awards or equivalent distinctions, including a SIGIR Best Paper Award Honorable Mention and the NAACL 2019 Best Explainable Paper award (recognized alongside the authors of four other award-winning papers, including BERT).</span>
+        <span data-lang="zh">王本友领导 FreedomAI 团队，在智能体、世界模型、医疗、多模态等方向具有大规模模型预训练、后训练和部署经验。论文获 Google Scholar 引用超过 1.2 万次，并五次获得最佳论文或同等级荣誉，包括 SIGIR 最佳论文荣誉提名和 NAACL 2019 Best Explainable Paper（与 BERT 等其他四篇获奖论文的作者一同领奖）。</span>
       </p>
       <div class="benyou-links">
         <a href="mailto:wangbenyou@cuhk.edu.cn"><span data-lang="en">Email</span><span data-lang="zh">邮箱</span></a>
