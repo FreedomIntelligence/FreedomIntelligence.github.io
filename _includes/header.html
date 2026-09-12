@@ -1,7 +1,5 @@
 
-    {% if page.nav_language == 'en' %}
-    <link rel="stylesheet" href="{{ '/assets/css/site-navigation.css' | relative_url }}">
-    {% endif %}
+    <link rel="stylesheet" href="{{ '/assets/css/site-navigation.css' | relative_url }}?v={{ site.time | date: '%s' }}">
     <header>
 
       <!-- Nav Bar -->
