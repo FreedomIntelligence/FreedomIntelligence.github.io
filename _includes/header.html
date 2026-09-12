@@ -2,7 +2,7 @@
     <header>
 
       <!-- Nav Bar -->
-      <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
+      <nav id="navbar" class="navbar navbar-light {% if page.nav_language == 'en' %}navbar-expand-lg benyou-site-nav{% else %}navbar-expand-sm{% endif %} {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
         <div class="container">
           {% if page.permalink != '/' -%}
           <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
@@ -26,6 +26,9 @@
             {% include social.html %}
           </div>
           {% endif %}
+          {% if page.nav_language == 'en' %}
+          <button id="language-toggle" class="benyou-language-toggle ml-auto" type="button" title="Switch to English" aria-label="Switch to English"><span data-language-label>EN</span></button>
+          {% endif %}
           <!-- Navbar Toggle -->
           <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -45,7 +48,7 @@
 
               <!-- About -->
               <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-                <a class="nav-link" href="{{ '/' | relative_url }}"><span data-lang="en">{{ about_title }}</span><span data-lang="zh">关于</span>
+                <a class="nav-link" href="{{ '/' | relative_url }}">{% if page.nav_language == 'en' %}{{ about_title }}{% else %}<span data-lang="en">{{ about_title }}</span><span data-lang="zh">关于</span>{% endif %}
                   {%- if page.permalink == '/' -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
@@ -90,7 +93,7 @@
               {%- endcase -%}
               <li class="nav-item {% if page.title == p.title %}active{% endif %}">
                 <a class="nav-link" href="{{ p.url | relative_url }}">
-                  {%- if nav_title_zh -%}
+                  {%- if page.nav_language == 'en' -%}{{ p.title }}{%- elsif nav_title_zh -%}
                   <span data-lang="en">{{ p.title }}</span><span data-lang="zh">{{ nav_title_zh }}</span>
                   {%- else -%}
                   {{ p.title }}
@@ -108,7 +111,7 @@
 
               <!-- Blog -->
               <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
-                <a class="nav-link" href="{{ '/blog/' | relative_url }}"><span data-lang="en">{{ site.blog_nav_title }}</span><span data-lang="zh">博客</span>
+                <a class="nav-link" href="{{ '/blog/' | relative_url }}">{% if page.nav_language == 'en' %}{{ site.blog_nav_title }}{% else %}<span data-lang="en">{{ site.blog_nav_title }}</span><span data-lang="zh">博客</span>{% endif %}
                   {%- if page.url contains 'blog' -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
@@ -117,7 +120,7 @@
               {%- endif %}
               {%- if join_us_page %}
               <li class="nav-item {% if page.url == join_us_page.url %}active{% endif %}">
-                <a class="nav-link" href="{{ join_us_page.url | relative_url }}"><span data-lang="en">Join Us</span><span data-lang="zh">加入我们</span>
+                <a class="nav-link" href="{{ join_us_page.url | relative_url }}">{% if page.nav_language == 'en' %}Join Us{% else %}<span data-lang="en">Join Us</span><span data-lang="zh">加入我们</span>{% endif %}
                   {%- if page.url == join_us_page.url -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
@@ -125,6 +128,7 @@
               </li>
               {%- endif %}
 
+              {% unless page.nav_language == 'en' %}
               <!-- Toggle language -->
               <li class="toggle-container language-toggle-container">
                 <button id="language-toggle" type="button" title="Switch language" aria-label="Switch language">
@@ -132,6 +136,7 @@
                 </button>
               </li>
 
+              {% endunless %}
               <!-- Toogle theme mode -->
               <li class="toggle-container">
                 <button id="light-toggle" title="Change theme">
@@ -145,3 +150,4 @@
         </div>
       </nav>
     </header>
+

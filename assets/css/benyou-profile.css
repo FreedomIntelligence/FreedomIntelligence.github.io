@@ -354,3 +354,60 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Compact citations retain the same reading order at every screen size. */
+.benyou-publications li {
+  display: block;
+  padding: 0.85rem 0;
+  font-size: 0.84rem;
+  line-height: 1.7;
+}
+.benyou-publications li > .benyou-citation,
+.benyou-paper-links .benyou-citation {
+  color: var(--benyou-text);
+  font-size: inherit;
+  white-space: normal;
+}
+.benyou-citation strong { font-weight: 700; }
+.benyou-citation-venue { color: var(--benyou-muted); }
+.benyou-citation-links {
+  display: block;
+  font-size: 0.78rem;
+  margin-top: 0.2rem;
+  white-space: normal !important;
+}
+.benyou-paper-links li { margin: 0.7rem 0; line-height: 1.65; }
+.benyou-project-heading h3 { margin-bottom: 0.5rem; }
+.benyou-stars { display: grid; gap: 0.3rem; font-size: 0.75rem; }
+.benyou-stars a { color: var(--benyou-muted); }
+.benyou-culture {
+  border-left: 2px solid var(--benyou-link);
+  padding: 0.3rem 0 0.3rem 1.15rem;
+  margin: 0 0 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.benyou-experience-list li { grid-template-columns: 100px minmax(0, 1fr); }
+.benyou-intro { align-items: start; }
+.benyou-portrait { height: auto; aspect-ratio: 1 / 1; }
+.benyou-section { padding: 2.75rem 0; }
+@media (max-width: 520px) {
+  .benyou-section { padding: 2rem 0; }
+  .benyou-publications li { font-size: 0.84rem; }
+  .benyou-stars { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; }
+}
+.benyou-site-nav .nav-link { font-size: 0.88rem; }
+.benyou-language-toggle {
+  background: transparent;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 3px;
+  color: var(--global-text-color);
+  font-size: 0.8rem;
+  padding: 0.3rem 0.65rem;
+  cursor: pointer;
+}
+.benyou-site-nav .navbar-toggler { margin-left: 0.75rem !important; }
+@media (min-width: 992px) {
+  .benyou-site-nav .benyou-language-toggle { order: 2; margin-left: 0.65rem !important; }
+}
