@@ -2,6 +2,7 @@
 layout: default
 title: About
 permalink: /
+nav_language: en
 description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loop Area Institute.
 ---
 

@@ -1,10 +1,13 @@
 
+    {% if page.nav_language == 'en' %}
+    <link rel="stylesheet" href="{{ '/assets/css/site-navigation.css' | relative_url }}">
+    {% endif %}
     <header>
 
       <!-- Nav Bar -->
       <nav id="navbar" class="navbar navbar-light {% if page.nav_language == 'en' %}navbar-expand-lg benyou-site-nav{% else %}navbar-expand-sm{% endif %} {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
         <div class="container">
-          {% if page.permalink != '/' -%}
+          {% if page.permalink != '/' or page.nav_language == 'en' -%}
           <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
             {%- if site.title == "blank" -%}
               {%- if site.first_name -%}

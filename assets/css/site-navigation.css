@@ -1,0 +1,15 @@
+.benyou-site-nav .nav-link { font-size: 0.88rem; }
+.benyou-language-toggle {
+  background: transparent;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 3px;
+  color: var(--global-text-color);
+  font-size: 0.8rem;
+  padding: 0.3rem 0.65rem;
+  cursor: pointer;
+}
+.benyou-site-nav .navbar-toggler { margin-left: 0.75rem !important; }
+@media (min-width: 992px) {
+  .benyou-site-nav .benyou-language-toggle { order: 2; margin-left: 0.65rem !important; }
+}
+
