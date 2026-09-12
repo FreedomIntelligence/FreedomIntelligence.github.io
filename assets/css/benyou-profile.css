@@ -372,7 +372,7 @@
 .benyou-citation strong { font-weight: 700; }
 .benyou-citation-venue { color: var(--benyou-muted); }
 .benyou-citation-links {
-  display: block;
+  display: inline;
   font-size: 0.78rem;
   margin-top: 0.2rem;
   white-space: normal !important;
@@ -389,8 +389,8 @@
   font-weight: 500;
 }
 .benyou-experience-list li { grid-template-columns: 100px minmax(0, 1fr); }
-.benyou-intro { align-items: start; }
-.benyou-portrait { height: auto; aspect-ratio: 1 / 1; }
+.benyou-intro { align-items: stretch; row-gap: 1.25rem; }
+.benyou-portrait { height: 100%; aspect-ratio: auto; object-position: center; }
 .benyou-section { padding: 2.75rem 0; }
 @media (max-width: 520px) {
   .benyou-section { padding: 2rem 0; }
@@ -419,7 +419,7 @@
 .benyou-publications li,
 .benyou-paper-links { font-size: 0.8rem; line-height: 1.65; }
 .benyou-publications li { padding: 0.85rem 0; }
-.benyou-citation-authors { display: block; margin-bottom: 0.15rem; }
+.benyou-citation-authors { display: inline; margin: 0; }
 .benyou-profile .benyou-paper-title { color: var(--benyou-text); }
 .benyou-citation-links { font-size: 0.76rem; }
 .benyou-filters { margin: 0 0 1rem; }
@@ -448,4 +448,11 @@
   .benyou-publications li { font-size: 0.8rem; }
   .benyou-filters button,
   .benyou-filters select { min-height: 36px; }
+}
+
+.benyou-intro-details { grid-column: 1 / -1; }
+.benyou-intro-details p { margin: 0 0 0.8rem; }
+.benyou-profile .benyou-course-link { display: inline-block; padding: 0.55rem 1rem; border: 1px solid var(--benyou-link); border-radius: 4px; font-weight: 600; font-size: 1rem; }
+@media (max-width: 700px) {
+  .benyou-portrait { height: auto; aspect-ratio: 1; max-width: 280px; }
 }

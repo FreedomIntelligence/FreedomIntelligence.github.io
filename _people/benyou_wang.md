@@ -34,16 +34,9 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
         <span data-lang="zh">香港中文大学（深圳）数据科学学院助理教授、博士生导师、校长青年教授</span>
       </p>
       <p>
-        <span data-lang="en">Benyou Wang leads FreedomAI and has hands-on experience in large-scale model pre-training, post-training, and deployment across multilingual, medical, multimodal, and agentic AI. His publications have received more than 12,000 Google Scholar citations and five best-paper awards or equivalent distinctions.</span>
-        <span data-lang="zh">王本友领导 FreedomAI 团队，在多语言、医疗、多模态与智能体方向具有大规模模型预训练、后训练和部署经验。论文获 Google Scholar 引用超过 1.2 万次，并五次获得最佳论文或同等级荣誉。</span>
+        <span data-lang="en">Benyou Wang leads FreedomAI and has hands-on experience in large-scale model pre-training, post-training, and deployment across multilingual, medical, multimodal, and agentic AI. His publications have received more than 12,000 Google Scholar citations and five best-paper awards or equivalent distinctions, including a SIGIR Best Paper Award Honorable Mention and the NAACL Best Explainable NLP Paper award.</span>
+        <span data-lang="zh">王本友领导 FreedomAI 团队，在多语言、医疗、多模态与智能体方向具有大规模模型预训练、后训练和部署经验。论文获 Google Scholar 引用超过 1.2 万次，并五次获得最佳论文或同等级荣誉，包括 SIGIR 最佳论文荣誉提名和 NAACL 最佳可解释自然语言处理论文。</span>
       </p>
-      <p>
-        <span data-lang="en">FreedomAI's open models and datasets have surpassed one million downloads on Hugging Face and 10,000 GitHub stars. By connecting research strategy, large-scale training, open-source engineering, real-world deployment, and venture building, he has developed an end-to-end record of building interdisciplinary teams and turning ambitious research programs into durable laboratory capabilities. Nearly ten alumni have gone on to serve as startup CTOs or technical founders.</span>
-        <span data-lang="zh">FreedomAI 开放模型与数据在 Hugging Face 下载量超过百万，GitHub 收藏星标超过 10K。通过贯通科研战略、大规模训练、开源工程、真实部署与科技创业，他形成了组织跨学科团队、把前沿研究计划沉淀为实验室长期能力的完整实践；已有近十位校友（alumni）成为创业公司 CTO 或技术创始人。</span>
-      </p>
-
-      <p class="benyou-intro-experience" id="experience" data-lang="zh"><strong>产业经历：</strong>2017 年在腾讯全职工作一年，担任自然语言处理算法工程师；2020–2022 年在华为实习两年零两个月，导师为尚利锋、蒋欣和刘群。</p>
-
       <div class="benyou-links">
         <a href="mailto:wangbenyou@cuhk.edu.cn"><span data-lang="en">Email</span><span data-lang="zh">邮箱</span></a>
         <a href="https://scholar.google.com/citations?user=Jk4vJU8AAAAJ" target="_blank" rel="noopener">Google Scholar</a>
@@ -51,6 +44,17 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
         <a href="https://github.com/FreedomIntelligence" target="_blank" rel="noopener">GitHub</a>
         <a href="https://huggingface.co/FreedomIntelligence" target="_blank" rel="noopener">Hugging Face</a>
       </div>
+    </div>
+    <div class="benyou-intro-details">
+      <p>
+        <span data-lang="en">FreedomAI's open models and datasets have surpassed one million downloads on Hugging Face and 10,000 GitHub stars. By connecting research strategy, large-scale training, open-source engineering, real-world deployment, and venture building, he has developed an end-to-end record of building interdisciplinary teams and turning ambitious research programs into durable laboratory capabilities. Nearly ten alumni have gone on to serve as startup CTOs or technical founders.</span>
+        <span data-lang="zh">FreedomAI 开放模型与数据在 Hugging Face 下载量超过百万，GitHub 收藏星标超过 10K。通过贯通科研战略、大规模训练、开源工程、真实部署与科技创业，他形成了组织跨学科团队、把前沿研究计划沉淀为实验室长期能力的完整实践；已有近十位校友（alumni）成为创业公司 CTO 或技术创始人。</span>
+      </p>
+
+      <p id="experience" data-lang="zh">他于 2017 年在腾讯全职工作一年，担任自然语言处理算法工程师；2020–2022 年在华为实习两年零两个月，导师为尚利锋、蒋欣和刘群。</p>
+
+<p><span data-lang="zh">华佗 GPT 已部署到十几家医院和数百家社康，累计访问量近 500 万次，将医疗大模型研究转化为真实场景中的服务能力。</span><span data-lang="en">HuatuoGPT has been deployed in more than a dozen hospitals and hundreds of community health centers, with nearly five million visits, translating medical AI research into services in real-world settings.</span></p>
+      <p><strong><span data-lang="en">Research support.</span><span data-lang="zh">科研支持。</span></strong> <span data-lang="en">His work has received support from the Marie Skłodowska-Curie Fellowship, Huawei Spark Award, Tencent Rhino-Bird Programme, Huawei talent programmes, and Huawei AI Hundred Schools Programme.</span><span data-lang="zh">曾获欧盟玛丽·居里奖学金，并获得华为火花奖、腾讯犀牛鸟项目、华为青年人才资助计划和华为 AI 百校计划等支持。</span></p>
     </div>
   </section>
 
@@ -73,7 +77,6 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
       <li><strong><span data-lang="zh">真实场景与技术转化。</span><span data-lang="en">Real-world applications and translation.</span></strong> <span data-lang="zh">连接医疗、运筹优化、金融、教育与机器人等场景，将应用需求转化为研究问题，并通过系统部署与产业合作检验研究价值。</span><span data-lang="en">Turn needs in healthcare, optimization, finance, education, and robotics into research questions, and assess their value through deployed systems and industry collaboration.</span></li>
     </ul>
     <p><span data-lang="zh">这一布局强调科研方向判断、跨学科团队组织和从模型到系统的执行能力：将长期研究目标分解为可验证的阶段成果，通过开放模型、数据、评测与合作网络持续积累团队能力。</span><span data-lang="en">This agenda brings together research direction, interdisciplinary team building, and execution from models to systems: translating long-term goals into verifiable milestones and building lasting capabilities through open models, data, evaluation, and collaboration.</span></p>
-    <p><span data-lang="en">He also co-supervises doctoral students with Professors Haizhou Li, Bingyi Jing, Ming Yan, Yongtao Guan, Hongyuan Zha, and Yilun Chen in areas including language intelligence, speech, multimodal learning, optimization, statistical learning, and robotics.</span><span data-lang="zh">他还与李海洲、荆炳义、严明、官永涛、查宏远、陈逸伦等教授联合指导博士生，研究方向涵盖语言智能、语音、多模态学习、运筹优化、统计学习和机器人。</span></p>
   </section>
 
   <section class="benyou-section" id="projects">
@@ -88,7 +91,7 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
       <article class="benyou-entry">
         <h3>HuatuoGPT</h3>
         <div>
-          <p><span data-lang="en">In collaboration with Haizhou Li, Xiang Wan, Guangjun Yu, Ruoyu Sun, and clinical partners, he participated in the HuatuoGPT series. The work has expanded from medical dialogue to one-stage domain adaptation, verifiable medical reasoning, and medical vision-language understanding. As of September 2026, public releases across the series had reached more than one million downloads and over 10,000 GitHub stars; related systems had been deployed and evaluated in 11 public hospitals and 186 community health centers in Longgang, Shenzhen.</span><span data-lang="zh">与李海洲、万翔、于广军、孙若愚等学者及医疗团队合作，参与华佗GPT系列研发。相关工作已从医学对话扩展到一阶段领域适配、可验证医学推理和医学视觉语言理解。截至 2026 年 9 月，系列公开模型累计下载量超过百万，GitHub Stars 超过一万；相关系统已在深圳龙岗 11 家公立医院和 186 个社区健康中心部署和验证。</span></p>
+          <p><span data-lang="en">In collaboration with Haizhou Li, Xiang Wan, Guangjun Yu, Ruoyu Sun, and clinical partners, he participated in the HuatuoGPT series. The work has expanded from medical dialogue to one-stage domain adaptation, verifiable medical reasoning, and medical vision-language understanding. As of September 2026, public releases across the series had reached more than one million downloads and over 10,000 GitHub stars; related systems have been deployed in more than a dozen hospitals and hundreds of community health centers, with nearly five million visits.</span><span data-lang="zh">与李海洲、万翔、于广军、孙若愚等学者及医疗团队合作，参与华佗GPT系列研发。相关工作已从医学对话扩展到一阶段领域适配、可验证医学推理和医学视觉语言理解。截至 2026 年 9 月，系列公开模型累计下载量超过百万，GitHub Stars 超过一万；相关系统已部署到十几家医院和数百家社康，累计访问量近 500 万次。</span></p>
           <p class="benyou-entry-links"><strong><span data-lang="en">Resources:</span><span data-lang="zh">资源：</span></strong> <a href="{{ '/projects/medical-ai-ecosystem/' | relative_url }}"><span data-lang="en">overview</span><span data-lang="zh">项目总览</span></a> · <a href="https://github.com/FreedomIntelligence/HuatuoGPT" target="_blank" rel="noopener" data-github-repo="FreedomIntelligence/HuatuoGPT" title="GitHub Stars · 2026-09-12"><span data-lang="en">code</span><span data-lang="zh">代码</span> <span class="benyou-inline-stars">★ <span data-star-count>1,326</span></span></a> · <a href="https://huggingface.co/FreedomIntelligence/HuatuoGPT2-34B" target="_blank" rel="noopener"><span data-lang="en">model</span><span data-lang="zh">模型</span></a></p>
           <ul class="benyou-paper-links">
             <li><span class="benyou-citation"><span class="benyou-citation-authors">Hongbo Zhang, Junying Chen, Feng Jiang, Fei Yu, Zhihong Chen, Jianquan Li, Guiming Chen, Xiangbo Wu, Zhiyi Zhang, Qingying Xiao, Xiang Wan, <strong>Benyou Wang</strong>, Haizhou Li.</span> <em><a class="benyou-paper-title" href="https://aclanthology.org/2023.findings-emnlp.725/" target="_blank" rel="noopener">HuatuoGPT, Towards Taming Language Model to Be a Doctor</a></em>. <span class="benyou-citation-venue">EMNLP 2023 Findings</span>.</span> <span class="benyou-citation-links"><a href="https://aclanthology.org/2023.findings-emnlp.725/" target="_blank" rel="noopener">Paper</a> · <a href="https://arxiv.org/abs/2305.15075" target="_blank" rel="noopener">arXiv</a> · <a href="https://github.com/FreedomIntelligence/HuatuoGPT" target="_blank" rel="noopener" data-github-repo="FreedomIntelligence/HuatuoGPT" title="GitHub Stars · 2026-09-12">Code <span class="benyou-inline-stars">★ <span data-star-count>1,326</span></span></a> · <a href="https://huggingface.co/FreedomIntelligence/HuatuoGPT-7B" target="_blank" rel="noopener">HF</a></span></li>
@@ -120,13 +123,22 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
       </article>
 
       <article class="benyou-entry">
-        <h3>ORLM / COLORMind / Mamo</h3>
+        <h3>ORLM</h3>
         <div>
           <p><span data-lang="en">Together with Professor Zizhuo Wang and Cardinal Operations, the team developed ORLM for translating natural-language business problems into executable mathematical optimization models and solver code. The work introduced OR-Instruct and IndustryOR and connects with Cardinal Operations' COLORMind decision-intelligence product line. Mamo extends this direction with a mathematical-modeling benchmark and solvers that connect natural-language problems to executable formal models.</span><span data-lang="zh">与王子卓教授及杉数科技共同开发 ORLM，用于将自然语言业务问题转化为可执行的数学优化模型与求解代码，并提出 OR-Instruct 和 IndustryOR。相关能力与杉数科技 COLORMind 智能决策产品线形成从研究到应用的衔接。Mamo 则通过数学建模基准与求解器，将自然语言问题进一步连接到可执行的形式化模型。</span></p>
           <p class="benyou-entry-links"><strong><span data-lang="en">Resources:</span><span data-lang="zh">资源：</span></strong> <a href="{{ '/projects/reasoning-math-optimization/' | relative_url }}"><span data-lang="en">overview</span><span data-lang="zh">项目总览</span></a> · <a href="https://github.com/Cardinal-Operations/ORLM" target="_blank" rel="noopener" data-github-repo="Cardinal-Operations/ORLM" title="GitHub Stars · 2026-09-12">ORLM Code <span class="benyou-inline-stars">★ <span data-star-count>275</span></span></a> · <a href="https://copt.shanshu.ai/products?tab=1" target="_blank" rel="noopener">COLORMind</a> · <a href="https://github.com/FreedomIntelligence/Mamo" target="_blank" rel="noopener" data-github-repo="FreedomIntelligence/Mamo" title="GitHub Stars · 2026-09-12">Mamo <span data-lang="en">code</span><span data-lang="zh">代码</span> <span class="benyou-inline-stars">★ <span data-star-count>15</span></span></a> · <a href="https://arxiv.org/abs/2405.13144" target="_blank" rel="noopener">Mamo <span data-lang="en">paper</span><span data-lang="zh">论文</span></a></p>
           <ul class="benyou-paper-links"><li><span class="benyou-citation"><span class="benyou-citation-authors">Chenyu Huang, Zhengyang Tang, Dongdong Ge, Shixi Hu, Ruoqing Jiang, <strong>Benyou Wang</strong>, Zizhuo Wang, Xin Zheng.</span> <em><a class="benyou-paper-title" href="https://pubsonline.informs.org/doi/10.1287/opre.2024.1233" target="_blank" rel="noopener">ORLM: A Customizable Framework in Training Large Models for Automated Optimization Modeling</a></em>. <span class="benyou-citation-venue">Operations Research, 2025</span>.</span> <span class="benyou-citation-links"><a href="https://pubsonline.informs.org/doi/10.1287/opre.2024.1233" target="_blank" rel="noopener">Paper</a> · <a href="https://arxiv.org/abs/2405.17743" target="_blank" rel="noopener">arXiv</a> · <a href="https://github.com/Cardinal-Operations/ORLM" target="_blank" rel="noopener" data-github-repo="Cardinal-Operations/ORLM" title="GitHub Stars · 2026-09-12">Code <span class="benyou-inline-stars">★ <span data-star-count>275</span></span></a> · <a href="https://huggingface.co/CardinalOperations/ORLM-LLaMA-3-8B" target="_blank" rel="noopener">HF</a></span></li><li><span class="benyou-citation"><span class="benyou-citation-authors">Xuhan Huang, Qingning Shen, Yan Hu, Anningzhe Gao, <strong>Benyou Wang</strong>.</span> <em><a class="benyou-paper-title" href="https://arxiv.org/abs/2405.13144" target="_blank" rel="noopener">LLMs for Mathematical Modeling: Towards Bridging the Gap between Natural and Mathematical Languages</a></em>. <span class="benyou-citation-venue">NAACL Findings, 2025</span>.</span> <span class="benyou-citation-links"><a href="https://arxiv.org/abs/2405.13144" target="_blank" rel="noopener">arXiv</a> · <a href="https://github.com/FreedomIntelligence/Mamo" target="_blank" rel="noopener" data-github-repo="FreedomIntelligence/Mamo" title="GitHub Stars · 2026-09-12">Code <span class="benyou-inline-stars">★ <span data-star-count>15</span></span></a> · <a href="https://huggingface.co/datasets/CardinalOperations/MAMO" target="_blank" rel="noopener">HF</a></span></li></ul>
         </div>
       </article>
+      <article class="benyou-entry">
+        <h3>TinyDeepSeek</h3>
+        <div>
+          <p><span data-lang="zh"><strong>从零预训练到小规模模型的高效能力构建。</strong>TinyDeepSeek 从零开始开展预训练，建设超过 3T tokens 的数据，并贯通数据处理、模型架构、预训练与后训练流程。根据团队实验结果，模型在约 3B 参数规模的对比中达到 SOTA 水平，体现了从数据到训练系统的完整研发能力。</span><span data-lang="en"><strong>Training from scratch for capable small-scale models.</strong> TinyDeepSeek builds a pre-training corpus of more than 3 trillion tokens and connects data processing, model architecture, pre-training, and post-training. In the team's evaluations, it achieved state-of-the-art performance among models at approximately the 3B-parameter scale, demonstrating end-to-end development from data to training systems.</span></p>
+          <p><span data-lang="zh">团队自 2025 年 1 月左右开始探索 Loop Transformer 的效果，研究通过循环计算与参数复用提升模型能力。项目开放了训练代码、0.5B 与 3.3B 基础模型及中间检查点，为低成本的架构实验和持续训练研究提供基础。</span><span data-lang="en">The team began exploring Loop Transformers around January 2025, studying how recurrent computation and parameter reuse can improve model capabilities. The project releases training code, 0.5B and 3.3B base models, and intermediate checkpoints to support lower-cost architecture experiments and continued training research.</span></p>
+          <p class="benyou-entry-links"><a href="https://github.com/FreedomIntelligence/TinyDeepSeek" target="_blank" rel="noopener" data-github-repo="FreedomIntelligence/TinyDeepSeek" title="GitHub Stars · 2026-09-12">Code <span class="benyou-inline-stars">★ <span data-star-count>32</span></span></a> · <a href="https://huggingface.co/FreedomIntelligence/TinyDeepSeek-3.3B-base" target="_blank" rel="noopener">HF · 3.3B</a> · <a href="https://huggingface.co/FreedomIntelligence/TinyDeepSeek-0.5B-base" target="_blank" rel="noopener">HF · 0.5B</a> · <a href="https://huggingface.co/FreedomIntelligence/TinyDeepSeek-3.3B-checkpoints" target="_blank" rel="noopener"><span data-lang="zh">训练检查点</span><span data-lang="en">Training checkpoints</span></a></p>
+        </div>
+      </article>
+
 
     </div>
   </section>
@@ -147,13 +159,13 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
 
     <h3 class="benyou-subheading"><span data-lang="en">Competition results</span><span data-lang="zh">竞赛成绩</span></h3>
     <ul class="benyou-record-list">
+      <li><time>2026</time><span data-lang="zh">与智子芯元合作，以 AI 自动编写华为 Ascend 算子的全自动方案，曾取得榜单第一名。</span><span data-lang="en">In collaboration with 智子芯元, developed a fully automated AI system for writing Huawei Ascend kernels that reached first place on the leaderboard.</span></li>
       <li><time>2025</time><span data-lang="en">Led a joint CUHK-Shenzhen and Huawei team to a Gold Medal in AIMO Progress Prize 2, placing in the top 0.4% among more than 2,000 teams.</span><span data-lang="zh">带领团队与华为联合参加第二届人工智能数学奥林匹克竞赛（AIMO2），在 2,000 余支队伍中进入前 0.4%，获得金牌。</span></li>
       <li><time>2026</time><span data-lang="en">With Professor Bingyi Jing, co-supervised master's student Shuqi Guo, a core member of team sZs, which won the IEEE ICRA LeHome Challenge real-robot final with 895 points.</span><span data-lang="zh">与荆炳义教授共同指导硕士生郭书杞；郭书杞作为 sZs 队核心成员，在 IEEE ICRA LeHome Challenge 真机赛决赛中以 895 分获得冠军。</span></li>
     </ul>
 
     <div class="benyou-prose">
       <p><strong><span data-lang="en">Academic service.</span><span data-lang="zh">学术服务。</span></strong> <span data-lang="en">Publicity Chair of NLPCC 2023, Website Chair of EMNLP 2023, and Area Chair or Senior Area Chair for ICLR, NeurIPS, COLM, ACL, and EMNLP.</span><span data-lang="zh">曾任 NLPCC 2023 宣传主席、EMNLP 2023 网站主席，并多次担任 ICLR、NeurIPS、COLM、ACL、EMNLP 等会议的领域主席或高级领域主席。</span></p>
-      <p><strong><span data-lang="en">Research support.</span><span data-lang="zh">科研支持。</span></strong> <span data-lang="en">His work has received support from the Marie Skłodowska-Curie Fellowship, Huawei Spark Award, Tencent Rhino-Bird Programme, Huawei talent programmes, and Huawei AI Hundred Schools Programme.</span><span data-lang="zh">曾获欧盟玛丽·居里奖学金，并获得华为火花奖、腾讯犀牛鸟项目、华为青年人才资助计划和华为 AI 百校计划等支持。</span></p>
     </div>
   </section>
 
@@ -174,7 +186,6 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
       <li><strong><span data-lang="en">Xiao Yang</span><span data-lang="zh">肖杨</span></strong><span><span data-lang="en"><b>PhD student · CEO.</b> Shenzhen Sikoo Intelligent Information Services, developing AI education products including Shuta AI.</span><span data-lang="zh"><b>博士生 · CEO。</b>深圳思酷智能信息服务有限公司，开展 AI 教育业务，包括薯塔 AI。</span></span></li>
       <li><strong><span data-lang="en">Huiteng Xiao</span><span data-lang="zh">肖徽腾</span></strong><span><span data-lang="en"><b>Research assistant · Founder.</b> An early-stage venture combining AI and hardware.</span><span data-lang="zh"><b>研究助理 · 创始人。</b>开展 AI 与硬件结合的早期创业项目。</span></span></li>
       <li><strong><span data-lang="en">Shijun Chu</span><span data-lang="zh">褚士钧</span></strong><span><span data-lang="en"><b>Research assistant · COO.</b> Chaotic Pendulum Technology (Shenzhen), working on financial AI.</span><span data-lang="zh"><b>研究助理 · COO。</b>混沌摆科技（深圳）有限公司，主要开展 AI 金融相关业务。</span></span></li>
-      <li><strong><span data-lang="en">Yuxuan Zhu</span><span data-lang="zh">朱宇轩</span></strong><span><span data-lang="en"><b>Research assistant · CEO.</b> Wangshi Technology, developing AI applications.</span><span data-lang="zh"><b>研究助理 · CEO。</b>网事科技，开展 AI 应用产品研发。</span></span></li>
     </ul>
     <p class="benyou-note"><span data-lang="en">Operating and financing figures above reflect information provided by the group as of September 2026; where public disclosures are available, the latest disclosure takes precedence.</span><span data-lang="zh">以上经营与融资信息根据团队提供的截至 2026 年 9 月资料整理；如有公开披露，以最新披露为准。</span></p>
     <p><a href="{{ '/startups/' | relative_url }}"><span data-lang="en">More about the startup ecosystem</span><span data-lang="zh">了解更多创业与转化项目</span></a></p>
@@ -185,7 +196,16 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
       <p class="benyou-section-label">Teaching and supervision</p>
       <h2><a href="https://nlp-course-cuhksz.github.io/" target="_blank" rel="noopener"><span data-lang="en">Natural language processing</span><span data-lang="zh">自然语言处理课程</span></a></h2>
     </header>
-    <p><span data-lang="en">Benyou Wang teaches Natural Language Processing each year to approximately 500 students. The course covers NLP foundations, large language models, agents, and practical system development, with course materials available online.</span><span data-lang="zh">王本友每年讲授自然语言处理课程，约有 500 名学生修读。课程涵盖自然语言处理基础、大语言模型、智能体与系统实践，并持续开放课程资料。</span> <a href="https://nlp-course-cuhksz.github.io/" target="_blank" rel="noopener"><span data-lang="en">Course website</span><span data-lang="zh">课程网站</span></a></p>
+    <p><span data-lang="en">Benyou Wang teaches Natural Language Processing each year to approximately 500 students. The course covers NLP foundations, large language models, agents, and practical system development, with course materials available online.</span><span data-lang="zh">王本友每年讲授自然语言处理课程，约有 500 名学生修读。课程涵盖自然语言处理基础、大语言模型、智能体与系统实践，并持续开放课程资料。</span></p>
+    <p><a class="benyou-course-link" href="https://nlp-course-cuhksz.github.io/" target="_blank" rel="noopener"><span data-lang="en">Course website ↗</span><span data-lang="zh">课程网站 ↗</span></a></p>
+  </section>
+
+  <section class="benyou-section" id="community">
+    <header><p class="benyou-section-label">Culture and mentorship</p><h2><span data-lang="zh">自由互助，以学生为中心</span><span data-lang="en">Freedom, mutual support, and student-led innovation</span></h2></header>
+    <blockquote class="benyou-culture"><span data-lang="zh">每个人追求自己的自由就是给整个世界追求自由</span><span data-lang="en">Each person's pursuit of their own freedom is a pursuit of freedom for the whole world.</span></blockquote>
+    <p><span data-lang="zh">实验室已形成自由互助的研究氛围，以及以学生为中心的创新网络。我们尊重每个人的研究兴趣与发展选择，鼓励独立探索、开放交流与相互支持。</span><span data-lang="en">The laboratory has developed a research culture of freedom and mutual support, with an innovation network centered on students. We respect individual research interests and career choices, and encourage independent exploration, open exchange, and collaboration.</span></p>
+    <p><span data-lang="zh">学生在 HY、Kimi、MiniMax、华为、大疆、阶跃、百川、蚂蚁、Qwen 等团队与企业实习，也有近十位同学投入 AI 创业的浪潮，在产学研联合中形成健康、持续的影响力。</span><span data-lang="en">Students undertake internships at HY, Kimi, MiniMax, Huawei, DJI, StepFun, Baichuan, Ant Group, Qwen, and other teams and companies. Nearly ten students have also embarked on AI ventures, contributing to sustained collaboration between research and industry.</span></p>
+    <p><span data-lang="en">He also co-supervises doctoral students with Professors Haizhou Li, Bingyi Jing, Ming Yan, Yongtao Guan, Hongyuan Zha, and Yilun Chen in areas including language intelligence, speech, multimodal learning, optimization, statistical learning, and robotics.</span><span data-lang="zh">他还与李海洲、荆炳义、严明、官永涛、查宏远、陈逸伦等教授联合指导博士生，研究方向涵盖语言智能、语音、多模态学习、运筹优化、统计学习和机器人。</span></p>
   </section>
 
   <section class="benyou-section" id="publications">
@@ -277,12 +297,7 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
     </ol>
     <p><a href="{{ '/publications/' | relative_url }}"><span data-lang="en">View all publications</span><span data-lang="zh">查看完整论文列表</span></a></p>
   </section>
-  <section class="benyou-section" id="community">
-    <header><p class="benyou-section-label">Culture and mentorship</p><h2><span data-lang="zh">自由互助，以学生为中心</span><span data-lang="en">Freedom, mutual support, and student-led innovation</span></h2></header>
-    <blockquote class="benyou-culture"><span data-lang="zh">每个人追求自己的自由就是给整个世界追求自由</span><span data-lang="en">Each person's pursuit of their own freedom is a pursuit of freedom for the whole world.</span></blockquote>
-    <p><span data-lang="zh">实验室已形成自由互助的研究氛围，以及以学生为中心的创新网络。我们尊重每个人的研究兴趣与发展选择，鼓励独立探索、开放交流与相互支持。</span><span data-lang="en">The laboratory has developed a research culture of freedom and mutual support, with an innovation network centered on students. We respect individual research interests and career choices, and encourage independent exploration, open exchange, and collaboration.</span></p>
-    <p><span data-lang="zh">学生在 HY、Kimi、MiniMax、华为、大疆、阶跃、百川、蚂蚁、Qwen 等团队与企业实习，也有近十位同学投入 AI 创业的浪潮，在产学研联合中形成健康、持续的影响力。</span><span data-lang="en">Students undertake internships at HY, Kimi, MiniMax, Huawei, DJI, StepFun, Baichuan, Ant Group, Qwen, and other teams and companies. Nearly ten students have also embarked on AI ventures, contributing to sustained collaboration between research and industry.</span></p>
-  </section>
+
 </div>
 
 <script src="{{ '/assets/js/benyou-profile.js' | relative_url }}" defer></script>

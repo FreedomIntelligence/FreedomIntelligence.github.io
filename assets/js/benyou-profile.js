@@ -55,8 +55,10 @@
     option.textContent = label(value);
     select.appendChild(option);
   }
-  const venueOrder = ['ACL', 'EMNLP', 'NAACL', 'NeurIPS', 'ICLR', 'ICML', 'COLM', 'AAAI', 'ICCV', 'ACM MM', 'CHI', 'IJCAI', 'SIGIR', 'WWW', 'Journals', 'Preprints'];
-  const availableVenues = new Set(papers.map(function (paper) { return paper.dataset.venue; }));
+  const otherVenues = new Set(['ACM MM', 'IJCAI', 'SIGIR', 'WWW', 'ICCV', 'AAAI']);
+  function venueGroup(paper) { return otherVenues.has(paper.dataset.venue) ? 'Other AI conferences' : paper.dataset.venue; }
+  const venueOrder = ['NeurIPS', 'ICLR', 'ICML', 'ACL', 'EMNLP', 'NAACL', 'COLM', 'Other AI conferences', 'CHI', 'Journals', 'Preprints'];
+  const availableVenues = new Set(papers.map(function (paper) { return venueGroup(paper); }));
   [''].concat(venueOrder.filter(function (venue) { return availableVenues.has(venue); })).forEach(function (venue) {
     const button = document.createElement('button');
     button.type = 'button';
@@ -72,7 +74,7 @@
   function update() {
     let count = 0;
     papers.forEach(function (paper) {
-      const matches = (!selectedVenue || paper.dataset.venue === selectedVenue) &&
+      const matches = (!selectedVenue || venueGroup(paper) === selectedVenue) &&
         (!year.value || paper.dataset.year === year.value) &&
         (!topic.value || paper.dataset.topics.split('|').includes(topic.value));
       paper.hidden = !matches;
