@@ -3,7 +3,7 @@
     <header>
 
       <!-- Nav Bar -->
-      <nav id="navbar" class="navbar navbar-light {% if page.nav_language == 'en' %}navbar-expand-lg benyou-site-nav{% else %}navbar-expand-sm{% endif %} {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
+      <nav id="navbar" class="navbar navbar-light navbar-expand-lg {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
         <div class="container">
           {% if page.permalink != '/' or page.nav_language == 'en' -%}
           <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
@@ -26,9 +26,6 @@
           <div class="navbar-brand social">
             {% include social.html %}
           </div>
-          {% endif %}
-          {% if page.nav_language == 'en' %}
-          <button id="language-toggle" class="benyou-language-toggle ml-auto" type="button" title="Switch to English" aria-label="Switch to English"><span data-language-label>EN</span></button>
           {% endif %}
           <!-- Navbar Toggle -->
           <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -129,24 +126,17 @@
               </li>
               {%- endif %}
 
-              {% unless page.nav_language == 'en' %}
-              <!-- Toggle language -->
-              <li class="toggle-container language-toggle-container">
-                <button id="language-toggle" type="button" title="Switch language" aria-label="Switch language">
-                  <span data-language-label>中文</span>
-                </button>
-              </li>
-
-              {% endunless %}
-              <!-- Toogle theme mode -->
-              <li class="toggle-container">
-                <button id="light-toggle" title="Change theme">
-                  <i class="fas fa-moon"></i>
-                  <i class="fas fa-sun"></i>
-                </button>
-              </li>
               {%- endif %}
             </ul>
+          </div>
+          <div class="site-nav-actions">
+            {% if site.enable_darkmode %}
+            <button id="light-toggle" type="button" title="Change theme" aria-label="Change theme">
+              <i class="fas fa-moon" aria-hidden="true"></i>
+              <i class="fas fa-sun" aria-hidden="true"></i>
+            </button>
+            {% endif %}
+            <button id="language-toggle" type="button" title="Switch language" aria-label="Switch language"><span data-language-label>中文</span></button>
           </div>
         </div>
       </nav>
