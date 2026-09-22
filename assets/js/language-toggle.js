@@ -43,7 +43,10 @@
 
   function applyLanguage(language) {
     const selectedLanguage = language === "zh" ? "zh" : DEFAULT_LANGUAGE;
-    const label = LABELS[selectedLanguage];
+    const bilingualProfile = Boolean(document.querySelector(".benyou-profile"));
+    const label = bilingualProfile && selectedLanguage === "zh"
+      ? { ...LABELS.zh, button: "中英", title: "Switch to Chinese and English" }
+      : LABELS[selectedLanguage];
     document.documentElement.dataset.language = selectedLanguage;
     document.documentElement.lang = label.htmlLang;
 

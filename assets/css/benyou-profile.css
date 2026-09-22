@@ -2,6 +2,24 @@
   display: none;
 }
 
+/* The English entry presents both languages on this profile. */
+html[data-language="en"] .benyou-profile [data-lang="zh"] {
+  display: revert !important;
+}
+
+html[data-language="en"] .benyou-profile p > span[data-lang],
+html[data-language="en"] .benyou-profile li > span[data-lang] {
+  display: block !important;
+}
+
+html[data-language="en"] .benyou-profile [data-lang] + [data-lang] {
+  margin-top: 0.4em;
+}
+
+html[data-language="en"] .benyou-profile :is(h1, h2, h3) > [data-lang] + [data-lang] {
+  margin-inline-start: 0.4em;
+}
+
 .benyou-profile {
   --benyou-text: var(--global-text-color);
   --benyou-muted: var(--global-text-color-light);
