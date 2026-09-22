@@ -42,21 +42,23 @@ html[data-language="en"] .benyou-profile :is(h1, h2, h3) > [data-lang] + [data-l
 }
 
 .benyou-intro {
-  align-items: stretch;
+  align-items: start;
   display: grid;
   gap: clamp(2rem, 5vw, 3.5rem);
-  grid-template-columns: 260px minmax(0, 1fr);
+  grid-template-columns: minmax(280px, 340px) minmax(0, 1fr);
   padding: 2.25rem 0 2.75rem;
 }
 
 .benyou-intro > div:first-child {
-  display: flex;
+  align-self: start;
+  min-width: 0;
 }
 
 .benyou-portrait {
   display: block;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
   width: 100%;
 }
 
@@ -315,7 +317,7 @@ html[data-language="en"] .benyou-profile :is(h1, h2, h3) > [data-lang] + [data-l
 @media (max-width: 700px) {
   .benyou-intro {
     gap: 1.5rem;
-    grid-template-columns: 180px minmax(0, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .benyou-entry,
@@ -356,7 +358,7 @@ html[data-language="en"] .benyou-profile :is(h1, h2, h3) > [data-lang] + [data-l
   .benyou-portrait {
     aspect-ratio: 1 / 1;
     height: auto;
-    max-width: 210px;
+    max-width: 340px;
   }
 
   .benyou-focus-list {
@@ -407,8 +409,8 @@ html[data-language="en"] .benyou-profile :is(h1, h2, h3) > [data-lang] + [data-l
   font-weight: 500;
 }
 .benyou-experience-list li { grid-template-columns: 100px minmax(0, 1fr); }
-.benyou-intro { align-items: stretch; row-gap: 1.25rem; }
-.benyou-portrait { height: 100%; aspect-ratio: auto; object-position: center; }
+.benyou-intro { align-items: start; row-gap: 1.25rem; }
+.benyou-portrait { object-position: center; }
 .benyou-section { padding: 2.75rem 0; }
 @media (max-width: 520px) {
   .benyou-section { padding: 2rem 0; }
@@ -457,5 +459,32 @@ html[data-language="en"] .benyou-profile :is(h1, h2, h3) > [data-lang] + [data-l
 .benyou-intro-details p { margin: 0 0 0.8rem; }
 .benyou-profile .benyou-course-link { display: inline-block; padding: 0.55rem 1rem; border: 1px solid var(--benyou-link); border-radius: 4px; font-weight: 600; font-size: 1rem; }
 @media (max-width: 700px) {
-  .benyou-portrait { height: auto; aspect-ratio: 1; max-width: 280px; }
+  .benyou-portrait { height: auto; aspect-ratio: 1; max-width: 340px; margin-inline: auto; }
+}
+
+/* Keep bilingual headings and dated records in a predictable reading order. */
+.benyou-intro-copy,
+.benyou-entry > div { min-width: 0; }
+.benyou-profile { overflow-wrap: anywhere; }
+html[data-language="en"] .benyou-profile :is(h1, h2, h3) > [data-lang] {
+  display: block;
+}
+html[data-language="en"] .benyou-profile :is(h1, h2, h3) > [data-lang] + [data-lang] {
+  margin: 0.35em 0 0;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+html[data-language="en"] .benyou-record-list li > [data-lang] {
+  grid-column: 2;
+  margin-top: 0;
+}
+html[data-language="en"] .benyou-record-list li { row-gap: 0.4rem; }
+html[data-language="en"] .benyou-profile p > span[data-lang] + span[data-lang] {
+  margin-top: 0.75em;
+}
+html[data-language="en"] .benyou-links [data-lang] + [data-lang]::before {
+  content: " / ";
+}
+@media (min-width: 701px) and (max-width: 900px) {
+  .benyou-intro { grid-template-columns: minmax(240px, 300px) minmax(0, 1fr); gap: 1.75rem; }
 }
