@@ -467,7 +467,7 @@ html[data-language="en"] .benyou-profile :is(h1, h2, h3) > [data-lang] + [data-l
 .benyou-entry > div { min-width: 0; }
 .benyou-profile { overflow-wrap: anywhere; }
 html[data-language="en"] .benyou-profile :is(h1, h2, h3) > [data-lang] {
-  display: block;
+  display: block !important;
 }
 html[data-language="en"] .benyou-profile :is(h1, h2, h3) > [data-lang] + [data-lang] {
   margin: 0.35em 0 0;
@@ -478,7 +478,10 @@ html[data-language="en"] .benyou-record-list li > [data-lang] {
   grid-column: 2;
   margin-top: 0;
 }
-html[data-language="en"] .benyou-record-list li { row-gap: 0.4rem; }
+html[data-language="en"] .benyou-profile .benyou-record-list li {
+  display: grid !important;
+  row-gap: 0.4rem;
+}
 html[data-language="en"] .benyou-profile p > span[data-lang] + span[data-lang] {
   margin-top: 0.75em;
 }
