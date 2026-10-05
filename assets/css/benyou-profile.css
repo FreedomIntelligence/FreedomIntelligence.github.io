@@ -491,3 +491,31 @@ html[data-language="en"] .benyou-links [data-lang] + [data-lang]::before {
 @media (min-width: 701px) and (max-width: 900px) {
   .benyou-intro { grid-template-columns: minmax(240px, 300px) minmax(0, 1fr); gap: 1.75rem; }
 }
+
+/* Desktop intro alignment: keep the portrait and copy edges visually tidy. */
+@media (min-width: 901px) {
+  .benyou-profile {
+    max-width: 980px;
+  }
+
+  .benyou-intro {
+    align-items: start;
+    column-gap: clamp(3rem, 5vw, 4rem);
+    grid-template-columns: clamp(300px, 30vw, 330px) minmax(0, 64ch);
+    justify-content: center;
+  }
+
+  .benyou-intro > div:first-child,
+  .benyou-intro-copy {
+    align-self: start;
+  }
+
+  .benyou-portrait {
+    width: 100%;
+  }
+
+  .benyou-intro-copy > p,
+  .benyou-links {
+    max-width: 64ch;
+  }
+}
