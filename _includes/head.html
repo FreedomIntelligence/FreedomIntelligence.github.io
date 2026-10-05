@@ -19,6 +19,41 @@
     {% elsif site.icon != blank %}
     <link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url}}"/>
     {% endif %}
+    <script>
+      (function () {
+        var storageKey = "freedom-language";
+        var supportedLanguages = {
+          en: "en",
+          english: "en",
+          zh: "zh",
+          cn: "zh",
+          chinese: "zh",
+          "zh-cn": "zh",
+          zh_hans: "zh",
+        };
+        var params = new URLSearchParams(window.location.search);
+        var requestedLanguage =
+          params.get("lang") ||
+          params.get("language") ||
+          params.get("locale") ||
+          params.get("hl");
+
+        if (!requestedLanguage) {
+          try {
+            requestedLanguage = localStorage.getItem(storageKey);
+          } catch (_error) {
+            requestedLanguage = null;
+          }
+        }
+
+        var normalizedLanguage = supportedLanguages[String(requestedLanguage || "").trim().toLowerCase()];
+
+        if (normalizedLanguage) {
+          document.documentElement.dataset.language = normalizedLanguage;
+          document.documentElement.lang = normalizedLanguage === "zh" ? "zh-CN" : "en";
+        }
+      })();
+    </script>
     <script src="{{ '/assets/js/block_polyfill_io.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/wechat_popover.js?v=2' | relative_url }}" defer></script>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">

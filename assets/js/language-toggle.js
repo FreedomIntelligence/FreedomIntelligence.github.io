@@ -31,8 +31,22 @@
   }
 
   function getUrlLanguage() {
-    const language = new URLSearchParams(window.location.search).get("lang");
-    return language === "zh" || language === "en" ? language : null;
+    const supportedLanguages = {
+      en: "en",
+      english: "en",
+      zh: "zh",
+      cn: "zh",
+      chinese: "zh",
+      "zh-cn": "zh",
+      zh_hans: "zh",
+    };
+    const params = new URLSearchParams(window.location.search);
+    const language =
+      params.get("lang") ||
+      params.get("language") ||
+      params.get("locale") ||
+      params.get("hl");
+    return supportedLanguages[String(language || "").trim().toLowerCase()] || null;
   }
 
   function syncUrlLanguage(language) {
@@ -79,10 +93,11 @@
   document.addEventListener("DOMContentLoaded", () => {
     const pageDefaultLanguage =
       document.documentElement.dataset.defaultLanguage;
+    const urlLanguage = getUrlLanguage();
     const initialLanguage =
-      getUrlLanguage() ||
-      pageDefaultLanguage ||
+      urlLanguage ||
       getStoredLanguage() ||
+      pageDefaultLanguage ||
       document.documentElement.dataset.language ||
       DEFAULT_LANGUAGE;
     applyLanguage(initialLanguage);
