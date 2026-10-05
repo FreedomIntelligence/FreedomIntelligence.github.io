@@ -492,25 +492,29 @@ html[data-language="en"] .benyou-links [data-lang] + [data-lang]::before {
   .benyou-intro { grid-template-columns: minmax(240px, 300px) minmax(0, 1fr); gap: 1.75rem; }
 }
 
-/* Desktop intro alignment: keep the portrait and copy edges visually tidy. */
+/* Desktop intro alignment: match the portrait height to the intro copy. */
 @media (min-width: 901px) {
   .benyou-profile {
     max-width: 980px;
   }
 
   .benyou-intro {
-    align-items: start;
+    align-items: stretch;
     column-gap: clamp(3rem, 5vw, 4rem);
     grid-template-columns: clamp(300px, 30vw, 330px) minmax(0, 64ch);
     justify-content: center;
   }
 
-  .benyou-intro > div:first-child,
-  .benyou-intro-copy {
-    align-self: start;
+  .benyou-intro > div:first-child {
+    align-self: stretch;
+    display: flex;
   }
 
   .benyou-portrait {
+    aspect-ratio: auto;
+    height: 100%;
+    min-height: 100%;
+    object-fit: cover;
     width: 100%;
   }
 
