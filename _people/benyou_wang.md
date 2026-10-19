@@ -91,6 +91,7 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
       <li><time>2022</time><span data-lang="en">NLPCC Best Paper</span><span data-lang="zh">NLPCC 最佳论文</span></li>
       <li><time>2025</time><span data-lang="en">ICLR Financial AI Workshop Best Paper</span><span data-lang="zh">ICLR 金融人工智能研讨会最佳论文</span></li>
       <li><time>2025</time><span data-lang="en">NeurIPS ResponsibleFM Workshop Outstanding Paper</span><span data-lang="zh">NeurIPS ResponsibleFM 研讨会杰出论文</span></li>
+      <li><time>2026</time><span data-lang="en">Video-R1 was recognized as a <a href="https://www.paperdigest.org/2026/03/most-influential-nips-papers-2026-03-version/" target="_blank" rel="noopener">NeurIPS 2025 Most Influential Paper Top 10</a> by Paper Digest (March 2026 edition).</span><span data-lang="zh">Video-R1 入选 Paper Digest <a href="https://www.paperdigest.org/2026/03/most-influential-nips-papers-2026-03-version/" target="_blank" rel="noopener">NeurIPS 2025 最具影响力论文 Top 10</a>（2026 年 3 月榜单）。</span></li>
     </ul>
 
     <h3 class="benyou-subheading"><span data-lang="en">Competition results</span><span data-lang="zh">竞赛成绩</span></h3>
