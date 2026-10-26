@@ -57,7 +57,7 @@
   }
   const otherVenues = new Set(['ACM MM', 'IJCAI', 'SIGIR', 'WWW', 'ICCV', 'AAAI']);
   function venueGroup(paper) { return otherVenues.has(paper.dataset.venue) ? 'Other AI conferences' : paper.dataset.venue; }
-  const venueOrder = ['NeurIPS', 'ICLR', 'ICML', 'ACL', 'EMNLP', 'FinNLP Workshop', 'NAACL', 'COLM', 'Other AI conferences', 'CHI', 'Journals', 'Preprints'];
+  const venueOrder = ['NeurIPS', 'ICLR', 'ICML', 'ACL', 'EMNLP', 'NAACL', 'COLM', 'Other AI conferences', 'CHI', 'Journals', 'Preprints'];
   const availableVenues = new Set(papers.map(function (paper) { return venueGroup(paper); }));
   [''].concat(venueOrder.filter(function (venue) { return availableVenues.has(venue); })).forEach(function (venue) {
     const button = document.createElement('button');
