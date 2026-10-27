@@ -34,8 +34,8 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
         <span data-lang="zh">香港中文大学（深圳）数据科学学院助理教授、博士生导师、校长青年教授</span>
       </p>
       <p>
-        <span data-lang="en">Benyou Wang leads FreedomAI and has hands-on experience in large-scale model pre-training, post-training, and deployment across agents, world models, healthcare, multimodal AI, and related areas. His publications have received more than 12,000 Google Scholar citations and five best-paper awards or equivalent distinctions, including a SIGIR 2017 Best Paper Award Honorable Mention and the NAACL 2019 Best Explainable Paper award (recognized alongside the authors of four other award-winning papers, including BERT).</span>
-        <span data-lang="zh">王本友带领 FreedomAI 团队，在智能体、世界模型、医疗、多模态等方向具有大规模模型预训练、后训练和部署经验。论文在 Google Scholar 上被引用超过 1.2 万次，曾五次获得最佳论文或同等级荣誉，包括 SIGIR 2017 最佳论文荣誉提名和 NAACL 2019 Best Explainable Paper（与 BERT 等其他四篇获奖论文的作者一同领奖）。</span>
+        <span data-lang="en">Benyou Wang leads FreedomAI and has hands-on experience in large-scale model pre-training, post-training, and deployment across agents, world models, healthcare, multimodal AI, and related areas. His publications have received more than 12,000 Google Scholar citations and six best-paper awards or equivalent distinctions, including a SIGIR 2017 Best Paper Award Honorable Mention and the NAACL 2019 Best Explainable Paper award (recognized alongside the authors of four other award-winning papers, including BERT).</span>
+        <span data-lang="zh">王本友带领 FreedomAI 团队，在智能体、世界模型、医疗、多模态等方向具有大规模模型预训练、后训练和部署经验。论文在 Google Scholar 上被引用超过 1.2 万次，曾六次获得最佳论文或同等级荣誉，包括 SIGIR 2017 最佳论文荣誉提名和 NAACL 2019 Best Explainable Paper（与 BERT 等其他四篇获奖论文的作者一同领奖）。</span>
       </p>
       <div class="benyou-links">
         <a href="mailto:wangbenyou@cuhk.edu.cn"><span data-lang="en">Email</span><span data-lang="zh">邮箱</span></a>
@@ -91,6 +91,7 @@ canonical_url: https://freedomintelligence.github.io/people/benyou-wang/
       <li><time>2022</time><span data-lang="en">NLPCC Best Paper</span><span data-lang="zh">NLPCC 最佳论文</span></li>
       <li><time>2025</time><span data-lang="en">ICLR Financial AI Workshop Best Paper</span><span data-lang="zh">ICLR 金融人工智能研讨会最佳论文</span></li>
       <li><time>2025</time><span data-lang="en">NeurIPS ResponsibleFM Workshop Outstanding Paper</span><span data-lang="zh">NeurIPS ResponsibleFM 研讨会杰出论文</span></li>
+      <li><time>2026</time><span data-lang="en">EMNLP 2026 Best Demonstration Award</span><span data-lang="zh">EMNLP 2026 最佳演示奖</span></li>
       <li><time>2026</time><span data-lang="en">Video-R1 was recognized as a <a href="https://www.paperdigest.org/2026/03/most-influential-nips-papers-2026-03-version/" target="_blank" rel="noopener">NeurIPS 2025 Most Influential Paper Top 10</a> by Paper Digest (March 2026 edition).</span><span data-lang="zh">Video-R1 入选 Paper Digest <a href="https://www.paperdigest.org/2026/03/most-influential-nips-papers-2026-03-version/" target="_blank" rel="noopener">NeurIPS 2025 最具影响力论文 Top 10</a>（2026 年 3 月榜单）。</span></li>
     </ul>
 
