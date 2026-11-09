@@ -51,7 +51,7 @@ nav: false
     <ul class="join-list">
       <li><span data-lang="en">Demo or reproducible repository, plus a 2–3 minute walkthrough. You may use AI to generate the walkthrough, including its script, narration, and editing; it should show your actual project and results.</span><span data-lang="zh">在线 Demo 或可复现代码仓库，加一段 2–3 分钟演示。演示也可以通过 AI 生成，包括脚本、配音和剪辑，展示实际项目与成果即可。</span></li>
       <li><span data-lang="en">One page covering results, your contribution, AI tools and costs, actual human time, the non-AI effort breakdown, and limitations.</span><span data-lang="zh">一页说明：成果、个人贡献、AI 工具与费用、实际人工时间、无 AI 所需人月的拆解，以及当前局限。</span></li>
-      <li><span data-lang="en">Your CV and the position you are applying for.</span><span data-lang="zh">简历及申请方向。</span></li>
+      <li><span data-lang="en">Please indicate the position you are applying for; ideally, attach both your CV and academic transcript.</span><span data-lang="zh">注明申请方向，最好同时附上简历和成绩单。</span></li>
     </ul>
     <a class="join-button" href="{{ '/join-us/' | relative_url }}"><span data-lang="en">View open positions</span><span data-lang="zh">查看招募信息</span></a>
   </section>
