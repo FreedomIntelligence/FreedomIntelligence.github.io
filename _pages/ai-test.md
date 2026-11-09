@@ -11,19 +11,19 @@ nav: false
 <link rel="stylesheet" href="{{ '/assets/css/join-us.css' | relative_url }}">
 
 <div class="join-page">
-  <p class="join-lede"><span data-lang="en">Before joining us, you can take an optional, roughly one-week challenge: use AI to build something interesting and genuinely useful. Choose your own problem and tools, and deliver a working project. Show what one person with AI can accomplish.</span><span data-lang="zh">加入我们之前，可以做一个约一周的小测试：用 AI 做一个好玩、真正有用的项目。题目和工具自选，交付可运行的成果，展示一个人借助 AI 能完成多大的工作量。</span></p>
+  <p class="join-lede"><span data-lang="en">Before joining us, you can take an optional, roughly one-week challenge: use AI to build something interesting and genuinely useful. Choose any direction and tools; the examples below are only inspiration. The goal is to deliver genuinely valuable work and, within one week, use AI to accomplish as many person-months of equivalent non-AI work as possible.</span><span data-lang="zh">加入我们之前，可以做一个约一周的小测试：用 AI 做一个好玩、真正有用的项目。方向和工具完全自选，下面的案例仅供参考。目标是在成果本身有实际价值的前提下，借助 AI，在一周内完成尽可能多的、原本需要较多人月才能完成的工作。</span></p>
 
   <section class="join-section">
     <h2><span data-lang="en">What to show</span><span data-lang="zh">我们想看什么</span></h2>
     <ul class="join-list">
-      <li><span data-lang="en">A useful result: a working core workflow, with a demo and evidence that it works.</span><span data-lang="zh">有用的成果：完成一个核心流程，提供演示和可核验的结果。</span></li>
+      <li><span data-lang="en">A valuable result: solve a real problem, deliver a working core workflow, and provide a demo with verifiable evidence.</span><span data-lang="zh">成果本身有价值：解决真实问题，完成一个核心流程，提供演示和可核验的结果。</span></li>
       <li><span data-lang="en">Effective use of AI: record tools, model versions, costs, and total human time, including collaborators and outsourced work.</span><span data-lang="zh">使用 AI 的能力：记录工具、模型版本、费用，以及包含合作与外包在内的总人工时间。</span></li>
       <li><span data-lang="en">A credible productivity estimate: how many person-months would the same deliverable take without generative AI? Break it into tasks and state what you reused.</span><span data-lang="zh">可信的生产力提升：不用生成式 AI，同等成果需要多少人月？按任务拆解，并说明复用了什么、你新增了什么。</span></li>
     </ul>
   </section>
 
   <section class="join-section">
-    <h2><span data-lang="en">Four directions to explore</span><span data-lang="zh">四个参考方向</span></h2>
+    <h2><span data-lang="en">Four examples for inspiration</span><span data-lang="zh">四个参考案例（方向不限）</span></h2>
     <div class="join-grid">
       <div class="join-card">
         <h3><a href="https://github.com/FareedKhan-dev/kimi-k3-in-c"><span data-lang="en">Low-memory model inference</span><span data-lang="zh">小内存运行大模型</span></a></h3>
@@ -49,7 +49,7 @@ nav: false
     <h2><span data-lang="en">How to submit</span><span data-lang="zh">如何提交</span></h2>
     <p><span data-lang="en">Email <a href="mailto:wangbenyou@cuhk.edu.cn">wangbenyou@cuhk.edu.cn</a> with the subject <strong>AI Test | Name | Position | Project</strong>. Include:</span><span data-lang="zh">发送至 <a href="mailto:wangbenyou@cuhk.edu.cn">wangbenyou@cuhk.edu.cn</a>，主题：<strong>AI Test｜姓名｜申请岗位｜项目名</strong>。附上：</span></p>
     <ul class="join-list">
-      <li><span data-lang="en">Demo or reproducible repository, plus a 2–3 minute walkthrough.</span><span data-lang="zh">在线 Demo 或可复现代码仓库，加一段 2–3 分钟演示。</span></li>
+      <li><span data-lang="en">Demo or reproducible repository, plus a 2–3 minute walkthrough. You may use AI to generate the walkthrough, including its script, narration, and editing; it should show your actual project and results.</span><span data-lang="zh">在线 Demo 或可复现代码仓库，加一段 2–3 分钟演示。演示也可以通过 AI 生成，包括脚本、配音和剪辑，展示实际项目与成果即可。</span></li>
       <li><span data-lang="en">One page covering results, your contribution, AI tools and costs, actual human time, the non-AI effort breakdown, and limitations.</span><span data-lang="zh">一页说明：成果、个人贡献、AI 工具与费用、实际人工时间、无 AI 所需人月的拆解，以及当前局限。</span></li>
       <li><span data-lang="en">Your CV and the position you are applying for.</span><span data-lang="zh">简历及申请方向。</span></li>
     </ul>
