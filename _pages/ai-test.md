@@ -28,18 +28,36 @@ nav: false
       <div class="join-card">
         <h3><a href="https://github.com/FareedKhan-dev/kimi-k3-in-c"><span data-lang="en">Low-memory model inference</span><span data-lang="zh">小内存运行大模型</span></a></h3>
         <p><span data-lang="en">Build a C inference engine with disk streaming; measure memory, speed, and output consistency. Estimated non-AI effort: <strong>3–8 person-months</strong>, excluding model training.</span><span data-lang="zh">用 C 实现推理和磁盘流式加载，验证内存、速度与输出一致性。无 AI 估算：<strong>3–8 人月</strong>，不含模型训练。</span></p>
+        <p><span data-lang="en">Watch the shared clip or inspect the engine and benchmarks.</span><span data-lang="zh">先看演示短片，再看推理引擎与性能测试。</span></p>
+        <div class="join-actions">
+          <a class="join-button" href="https://x.com/engmoelgaraihy/status/2117738848272646330/video/1" target="_blank" rel="noopener noreferrer"><span data-lang="en">Video on X</span><span data-lang="zh">视频演示（X）</span></a>
+          <a class="join-button" href="https://github.com/FareedKhan-dev/kimi-k3-in-c" target="_blank" rel="noopener noreferrer"><span data-lang="en">Code & benchmarks</span><span data-lang="zh">源码与性能测试</span></a>
+        </div>
       </div>
       <div class="join-card">
         <h3><a href="https://dentalvista.github.io/"><span data-lang="en">Interactive 3D dental teaching</span><span data-lang="zh">交互式 3D 口腔教学</span></a></h3>
         <p><span data-lang="en">Explore jaws, teeth, and tissues in a browser, with rotation, layers, and annotations. Estimated effort: <strong>2–5 person-months</strong>, assuming suitable base models already exist.</span><span data-lang="zh">在浏览器中探索颌骨、牙齿和组织，支持旋转、分层与教学标注。无 AI 估算：<strong>2–5 人月</strong>，前提是已有可用的基础模型素材。</span></p>
+        <p><span data-lang="en">Open the 3D website and explore the anatomy interactively.</span><span data-lang="zh">打开 3D 网站，亲手体验口腔解剖的交互展示。</span></p>
+        <div class="join-actions">
+          <a class="join-button" href="https://dentalvista.github.io/" target="_blank" rel="noopener noreferrer"><span data-lang="en">Try DentalVista</span><span data-lang="zh">在线体验 DentalVista</span></a>
+        </div>
       </div>
       <div class="join-card">
         <h3><a href="https://nlp-course-cuhksz.github.io/lecture10.html#p1-s1"><span data-lang="en">Slides into an interactive course</span><span data-lang="zh">课件变成交互课程</span></a></h3>
         <p><span data-lang="en">Turn existing slides into narration, synchronized playback, and exercises. Estimated effort: <strong>0.5–1.5 person-months per lecture</strong>; roughly 5–15 for 10–12 lectures sharing a player.</span><span data-lang="zh">基于已有 slides 制作讲解、同步翻页和互动练习。无 AI 估算：<strong>每讲 0.5–1.5 人月</strong>；10–12 讲共用播放器，整门约 5–15 人月。</span></p>
+        <p><span data-lang="en">Play a chapter and try the slide navigation and bilingual subtitles.</span><span data-lang="zh">播放一个章节，体验翻页导航和中英文字幕。</span></p>
+        <div class="join-actions">
+          <a class="join-button" href="https://nlp-course-cuhksz.github.io/lecture10.html#p1-s1" target="_blank" rel="noopener noreferrer"><span data-lang="en">Watch & interact</span><span data-lang="zh">观看课程并交互</span></a>
+        </div>
       </div>
       <div class="join-card">
         <h3><a href="https://arxiv.org/abs/2605.29486"><span data-lang="en">Verifiable mock apps</span><span data-lang="zh">可验证的模拟 App</span></a></h3>
         <p><span data-lang="en">Recreate task-relevant app interactions with resettable states and automated checks, as in PhoneWorld. Estimated effort: <strong>20–50 person-months for 34 apps</strong>, excluding full commercial backends and model training.</span><span data-lang="zh">参考 PhoneWorld，复现任务所需的 App 交互，支持状态重置和自动验收。无 AI 估算：<strong>34 个 App 约 20–50 人月</strong>，不含完整商业后台和模型训练。</span></p>
+        <p><span data-lang="en">Explore the mock-app examples and task verification workflow.</span><span data-lang="zh">查看模拟 App 示例，以及任务执行与验证流程。</span></p>
+        <div class="join-actions">
+          <a class="join-button" href="https://github.com/EthanLeo-LYX/PhoneWorld#overview" target="_blank" rel="noopener noreferrer"><span data-lang="en">Apps & code</span><span data-lang="zh">App 示例与源码</span></a>
+          <a class="join-button" href="https://arxiv.org/html/2605.29486v3" target="_blank" rel="noopener noreferrer"><span data-lang="en">Paper & figures</span><span data-lang="zh">论文与图示</span></a>
+        </div>
       </div>
     </div>
     <p class="join-lede"><span data-lang="en">These are rough engineering estimates, not the authors' recorded effort or claims that the projects took one week. Assume experienced developers and the same available frameworks and assets. One person-month = 20 working days. Choose a manageable scope; usefulness and reliability matter more than a large estimate.</span><span data-lang="zh">以上是工程粗估，并非作者实际工时，也不代表这些项目均在一周内完成。基线为熟练开发者使用同样可用的框架与素材，1 人月按 20 个工作日计。请选择一周内可完成的范围；实用性与可靠性比数字大更重要。</span></p>
