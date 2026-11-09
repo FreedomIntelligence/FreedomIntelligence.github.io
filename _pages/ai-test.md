@@ -11,6 +11,7 @@ nav: false
 <link rel="stylesheet" href="{{ '/assets/css/join-us.css' | relative_url }}">
 
 <div class="join-page">
+  <div class="join-actions"><a class="join-button" href="{{ '/claude-setup/' | relative_url }}"><span data-lang="en">Claude Code / Opus 5.5 setup guide</span><span data-lang="zh">Claude Code / Opus 5.5 安装使用指南</span></a></div>
   <p class="join-lede"><span data-lang="en">Before joining us, you can take an optional, roughly one-week challenge: use AI to build something interesting and genuinely useful. Choose any direction and tools; the examples below are only inspiration. The goal is to deliver genuinely valuable work and, within one week, use AI to accomplish as many person-months of equivalent non-AI work as possible.</span><span data-lang="zh">加入我们之前，可以做一个约一周的小测试：用 AI 做一个好玩、真正有用的项目。方向和工具完全自选，下面的案例仅供参考。目标是在成果本身有实际价值的前提下，借助 AI，在一周内完成尽可能多的、原本需要较多人月才能完成的工作。</span></p>
 
   <section class="join-section">
