@@ -741,6 +741,7 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
       <div class="home-actions">
         <a class="home-button home-button--primary" href="mailto:wangbenyou@cuhk.edu.cn"><span data-lang="en">Contact Us</span><span data-lang="zh">联系我们</span></a>
         <a class="home-button" href="/alumni/"><span data-lang="en">People and Alumni</span><span data-lang="zh">团队与校友</span></a>
+        <a class="home-button" href="{{ '/ai-test/' | relative_url }}"><span data-lang="en">One-week AI project test</span><span data-lang="zh">一周 AI 项目测试</span></a>
       </div>
     </div>
     <ul>

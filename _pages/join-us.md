@@ -28,6 +28,7 @@ nav_order: 99
   </div>
 
   <div class="join-actions">
+    <a class="join-button" href="{{ '/ai-test/' | relative_url }}"><span data-lang="en">One-week AI project test</span><span data-lang="zh">一周 AI 项目测试</span></a>
     <a class="join-button primary" href="mailto:wangbenyou@cuhk.edu.cn"><span data-lang="en">Contact wangbenyou@cuhk.edu.cn</span><span data-lang="zh">联系 wangbenyou@cuhk.edu.cn</span></a>
   </div>
 
