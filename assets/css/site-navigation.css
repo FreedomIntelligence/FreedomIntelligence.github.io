@@ -1,5 +1,5 @@
 #navbar .nav-link,
-#navbar .dropdown-item { font-size: 14.08px; line-height: 21.12px; }
+#navbar .dropdown-item { font-size: 14.08px; line-height: 21.12px; white-space: nowrap; }
 #navbar .navbar-brand.title { font-size: 20px; line-height: 30px; }
 #navbar .site-nav-actions {
   display: flex;
@@ -28,3 +28,10 @@
   #navbar #navbarNav { order: 4; }
 }
 #navbar #light-toggle i { padding: 0; }
+
+/* Bilingual labels must keep the active/hover color of their link. */
+#navbar .nav-link [data-lang],
+#navbar .dropdown-item [data-lang],
+#navbar #language-toggle [data-language-label] {
+  color: inherit;
+}
