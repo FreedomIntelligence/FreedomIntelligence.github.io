@@ -3,7 +3,7 @@ layout: post
 title: "从大模型到具身智能：让通用能力在物理世界中生长"
 date: 2026-11-14
 author: 王本友
-description: "通用大模型如何走向物理世界：从能力迁移、场景闭环与本地部署，到模型、控制与硬件的共同演进。"
+description: "为什么现在可能是大模型从业者进入具身智能最好的时候：让通用能力降低进入门槛，再通过真实场景的反馈持续成长。"
 permalink: /blog/2026/foundation-models-to-embodied-ai/
 tags: embodied-ai multimodal agents simulation robotics
 _styles: |
@@ -20,11 +20,15 @@ _styles: |
   .embodied-nav p { margin: 0; }
 ---
 
-最近，OpenAI 的一次组织调整，让我更加看好大模型从业者进入具身智能的机会。据[《财富》报道](https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/)，机器人研究人员被并入核心研究团队，应用机器人与硬件团队转入应用部门。
+**我越来越相信，现在可能是迄今为止大模型与 AI 从业者进入具身智能最好的时候。**通用模型开始展现将理解、推理与行动连接起来的潜力，让我们看到了直接以大模型为能力基础构建机器人的曙光。
 
-我的理解是，**具身正在成为通用大模型的重要应用域，一个新的 subdomain。**如果这条路线持续发展，机器人就有机会像编程等领域一样，持续受益于通用模型在理解、推理和学习上的进步。对于大模型从业者，这意味着已有的研究积累可以延伸到物理世界。
+最近，OpenAI 的一次组织调整，又强化了我的这个判断。据[《财富》报道](https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/)，机器人研究人员被并入核心研究团队，应用机器人与硬件团队转入应用部门。
 
-但这种延伸不会自动完成。模型的知识需要经过行动检验，行动产生的经验又需要回到模型。真正值得投入的，是把这段往返过程建立起来，让通用能力随着真实任务的反馈不断成长。
+我的理解是，**具身正在成为通用大模型的重要应用域，一个新的 subdomain。**如果这条路线持续发展，机器人就有机会像编程等领域一样，持续受益于通用模型在理解、推理和学习上的进步。模型每一次能力增长，都可能抬高机器人研发的起点。
+
+这正是窗口期的意义。过去，进入一个机器人任务，往往需要围绕感知、规划和控制积累大量专门知识，再把各个模块连接起来。通用模型让其中一部分知识与能力有机会被复用，减少为每个任务从头设计专用流程的负担。对熟悉模型训练、多模态、智能体和推理系统的团队而言，已有积累因此更容易转化为进入具身的起点。
+
+我所说的“最好的时候”，指的是通用能力的增长正在打开新的入口。机器人的接触、动力学和实时控制仍需要专业知识，但这些知识可以逐步沉淀到模型、技能与系统接口中，让更多 AI 团队能够在已有基础上开展工作。接下来真正值得投入的，就是把模型带到现场，让行动产生的经验持续回到研发过程。
 
 <h2 id="capability">通用能力怎样变成行动能力</h2>
 
@@ -43,7 +47,7 @@ _styles: |
     <source src="{{ '/assets/video/embodied-ai/fable-robot-control.mp4' | relative_url }}" type="video/mp4">
     您的浏览器不支持视频播放，请<a href="{{ '/assets/video/embodied-ai/fable-robot-control.mp4' | relative_url }}">下载视频</a>观看。
   </video>
-  <figcaption><strong>值得一看：Fable 5.2 如何把通用能力带到机械臂上</strong><br>约 23 秒的演示包含拼块解谜、拧瓶盖、装配齿轮与画画。Anthropic 表示，能力提升也覆盖未被明确针对性训练的机器人任务；值得关注的是同一模型面对不同任务的迁移能力。片段经过加速和剪辑，不代表实际执行速度。<br>作为另一类证据，官方报告 Fable 5.2 在模拟双臂基准 RoboDojo Sim 的内部运行中取得 64.9%，超过同一 harness 下比较的其他前沿模型及多数机器人专用系统。这是仿真评估，不能直接当作真实机器人的成功率。<br><a href="https://www.anthropic.com/claude-fable-and-mythos-5-2">发布说明与演示</a> · <a href="https://robodojo-benchmark.com/">RoboDojo 基准</a> · 延伸阅读：<a href="https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/">Gemini Robotics 将动作纳入模型输出</a></figcaption>
+  <figcaption><strong>值得一看：Fable 5.2 如何把通用能力带到机械臂上</strong><br>约 23 秒的演示包含拼块解谜、拧瓶盖、装配齿轮与画画。Anthropic 表示，能力提升也覆盖未被明确针对性训练的机器人任务；值得关注的是同一模型面对不同任务的迁移能力。片段经过加速和剪辑，不代表实际执行速度。<br>作为另一类证据，官方报告 Fable 5.2 在模拟双臂基准 RoboDojo Sim 的内部运行中取得 64.9%（同表 GPT-6 Astra 为 29.8%），超过同一 harness 下比较的其他前沿模型及多数机器人专用系统。这是仿真评估，不能直接当作真实机器人的成功率。<br><a href="https://www.anthropic.com/claude-fable-and-mythos-5-2">发布说明与演示</a> · <a href="https://robodojo-benchmark.com/">RoboDojo 基准</a> · 延伸阅读：<a href="https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/">Gemini Robotics 将动作纳入模型输出</a></figcaption>
 </figure>
 
 <h2 id="scene-loop">让真实场景成为持续学习的来源</h2>
@@ -134,9 +138,9 @@ _styles: |
 
 ## 把能力增长接到自己的实践中
 
-回到大模型从业者的起点，我认为最值得建立的是一套能够持续吸收新能力、产生新经验的研发方式。通用模型进步时，能够在自己的任务上验证；现场出现失败时，能够把问题带回数据、训练与系统设计；瓶颈转移时，也能够随之调整投入。
+这也是我认为现在值得进入具身的原因：通用模型正在提供越来越高的能力起点，而具体场景中的数据、评价和部署体系仍需要亲手建立。越早把模型接入真实任务，就越早有机会积累自己的经验，并在下一轮模型进步时验证、吸收和放大这些能力。
 
-从一个可以持续接触的场景开始，把这样的往返做扎实，模型、控制与硬件就有了共同改进的依据。**通用能力进入物理世界之后，能否继续生长，取决于我们能否让真实世界的反馈持续回到研发之中。**
+对于大模型与 AI 从业者，这个窗口值得认真把握。从一个可以持续接触的场景开始，把熟悉的模型能力接到行动上，再用真实反馈推动模型、控制与硬件一起改进。**通用模型打开了进入具身的大门，持续实践则让这份通用能力逐渐成为自己的机器人能力。**
 
 ## 参考资料
 
