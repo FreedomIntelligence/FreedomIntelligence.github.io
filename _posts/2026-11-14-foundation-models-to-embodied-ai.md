@@ -1,0 +1,86 @@
+---
+layout: post
+title: "从大模型到具身智能：三个值得投入的机会"
+date: 2026-11-14
+author: 王本友
+description: "通用模型的具身化、本地场景中的训练与评估闭环，以及模型、运控与硬件的共同演进。"
+permalink: /blog/2026/foundation-models-to-embodied-ai/
+tags: embodied-ai multimodal agents simulation robotics
+_styles: |
+  .embodied-video { margin: 1.8rem 0; }
+  .embodied-video video { display: block; width: 100%; height: auto; border-radius: 10px; background: #111; }
+  .embodied-video figcaption { margin-top: .6rem; font-size: .9rem; line-height: 1.65; color: var(--global-text-color-light); }
+  .post-content { line-height: 1.85; }
+---
+
+最近，OpenAI 的一次组织调整，让我更加看好大模型从业者进入具身智能的机会。
+
+据[《财富》报道](https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/)，OpenAI 将机器人研究人员并入核心研究团队，将应用机器人与硬件团队转入应用部门。我的理解是：**具身正在成为通用大模型的重要应用域，一个新的 subdomain。**
+
+如果这条路线持续发展，具身就有机会像编程等领域一样，受益于通用模型的能力增长，再围绕具体场景建立训练和应用体系。这也为原本不做机器人的大模型从业者，打开了新的入口。
+
+沿着这个判断，我把值得做的事情分成三组：**通用模型的具身化、依托本地场景建立闭环，以及软硬件的共同演进。**
+
+## 一、能力的延伸：让通用大模型走向具身
+
+第一个机会，是把通用模型对世界的理解，进一步转化为在物理世界中行动的能力。[Gemini Robotics](https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/) 已经展示了一条路径：基于 Gemini 2.0，将物理动作加入模型的输出模态，用于机器人控制。
+
+在这个方向上，我尤其期待**语音与 action 双通道的具身模型**。机器人可以直接理解人的语音，同时生成语言回应和身体动作，让交流与行动彼此协调。这是我期待进一步探索的方向，而非上述系统已经完整实现的能力。
+
+这给大模型团队提供了清晰的研究入口：如何把已有的多模态能力扩展到动作，如何让模型的理解、表达和执行形成一个整体。
+
+## 二、落地的起点：依托本地场景，建立训练与评估闭环
+
+进入具身，可以从我们能够持续接触的本地场景开始，例如厂房巡检、楼宇和室内服务。明确的场景，能够帮助我们定义任务、积累数据，并判断机器人究竟做得怎么样。
+
+围绕这些任务，可以先利用头部大模型辅助标注数据、整理任务和建立评估，再把这些能力适配到自己的垂直场景。[RoboReward](https://arxiv.org/abs/2601.00675) 等研究，已经探索了用视觉语言模型评价机器人任务完成情况、提供训练奖励的方式。其结果也提示我们，通用模型并非在所有任务上都能给出可靠的奖励，场景内的校准和验证仍然重要。
+
+### 3D 场景生成：从真实现场走向可训练的环境
+
+与此同时，**3D 生成能力正在为训练环境的构建提供新工具**。我们可以生成或重建巡检、室内等三维场景，进一步把它们建设成能够交互、执行任务和评价结果的环境，用于机器人模型的训练与评估。
+
+下面两个视频展示了这一方向的三维场景演示。
+
+<figure class="embodied-video">
+  <video controls playsinline preload="metadata" poster="{{ '/assets/video/embodied-ai/imageTo3D.jpg' | relative_url }}" aria-label="3D 场景演示一：imageTo3D">
+    <source src="{{ '/assets/video/embodied-ai/imageTo3D.mp4' | relative_url }}" type="video/mp4">
+    您的浏览器不支持视频播放，请<a href="{{ '/assets/video/embodied-ai/imageTo3D.mp4' | relative_url }}">下载视频</a>观看。
+  </video>
+  <figcaption>演示一 · imageTo3D（约 25 秒）</figcaption>
+</figure>
+
+<figure class="embodied-video">
+  <video controls playsinline preload="metadata" poster="{{ '/assets/video/embodied-ai/to3D.jpg' | relative_url }}" aria-label="3D 场景演示二：to3D">
+    <source src="{{ '/assets/video/embodied-ai/to3D.mp4' | relative_url }}" type="video/mp4">
+    您的浏览器不支持视频播放，请<a href="{{ '/assets/video/embodied-ai/to3D.mp4' | relative_url }}">下载视频</a>观看。
+  </video>
+  <figcaption>演示二 · to3D（约 10 秒）</figcaption>
+</figure>
+
+从三维展示走向机器人训练，还需要补齐碰撞几何、物理属性、可交互对象、任务接口和评估标准，并验证仿真与真实环境之间的差距。这些工作决定了生成的场景能否成为真正有用的训练环境。
+
+[World Labs 的 real-to-sim-to-real 工作](https://worldlabs.ai/blog/real-to-sim-to-real)，已经在探索把真实任务转化为可扩展的仿真世界，用于策略训练与评估。
+
+这样，本地场景、真实数据、生成环境和模型训练就能连接起来：**在现场发现问题，在数据与仿真中改进，再回到现场验证。**持续围绕这一过程打磨，才能逐步形成真正适合自己场景的机器人。
+
+## 三、长期的演进：让模型、运控与硬件共同发展
+
+模型走进物理世界之后，实时交互会成为重要要求。机器人需要及时、稳定地响应环境，这为专用硬件、端侧推理以及模型与硬件的协同优化提供了空间。[Jetson Thor](https://developer.nvidia.com/blog/introducing-nvidia-jetson-thor-the-ultimate-platform-for-physical-ai/) 等平台已经围绕这些需求展开设计。
+
+进一步，还可以探索 **AI 原生的运控开发**：让 AI 参与运控算法的编写、调参、测试和改进。[Eureka](https://eureka-research.github.io/) 通过大模型生成并迭代奖励函数，帮助强化学习获得控制技能，为 AI 参与控制研发提供了一个参考。
+
+更长期的方向，是物理世界的 RSI，也就是递归自我改进：让 AI 参与硬件本体设计，通过仿真、制造和实测获得反馈，继续改进下一版。[自动机器人设计](https://pmc.ncbi.nlm.nih.gov/articles/PMC10576117/)已有早期研究基础；模型、运控、本体与环境共同演化，仍是值得探索的长期目标。
+
+这三组机会有着连续的关系：**通用模型提供能力起点，本地场景提供训练与验证的闭环，软硬件共同演进则打开更长期的空间。**
+
+对于大模型从业者，现在值得做的，就是从一个具体场景出发，把熟悉的模型能力带进物理世界，在持续实践中建立自己的机器人能力。
+
+## 参考资料
+
+1. Fortune：[OpenAI 机器人团队调整报道](https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/)，2026。
+2. Google DeepMind：[Gemini Robotics brings AI into the physical world](https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/)，2025。
+3. Lee et al.：[RoboReward: General-Purpose Vision-Language Reward Models for Robotics](https://arxiv.org/abs/2601.00675)，2026。
+4. World Labs：[Building Worlds That Train Robots](https://worldlabs.ai/blog/real-to-sim-to-real)，2026。
+5. NVIDIA：[Introducing NVIDIA Jetson Thor, the Ultimate Platform for Physical AI](https://developer.nvidia.com/blog/introducing-nvidia-jetson-thor-the-ultimate-platform-for-physical-ai/)，2025。
+6. Ma et al.：[Eureka: Human-Level Reward Design via Coding Large Language Models](https://eureka-research.github.io/)，2023。
+7. Matthews et al.：[Efficient automatic design of robots](https://pmc.ncbi.nlm.nih.gov/articles/PMC10576117/)，PNAS，2023。
