@@ -106,7 +106,17 @@ GR00T 2 这里的板载能力有明确范围：官方演示中，动作模型与
 
 进一步，还可以探索 **AI 原生的运控开发**：让 AI 参与运控算法的编写、调参、测试和改进。[Eureka](https://eureka-research.github.io/) 通过大模型生成并迭代奖励函数，帮助强化学习获得控制技能，为 AI 参与控制研发提供了一个参考。
 
-更长期的方向，是物理世界的 RSI，也就是递归自我改进：让 AI 参与硬件本体设计，通过仿真、制造和实测获得反馈，继续改进下一版。[自动机器人设计](https://pmc.ncbi.nlm.nih.gov/articles/PMC10576117/)已有早期研究基础；模型、运控、本体与环境共同演化，仍是值得探索的长期目标。
+### 软硬件共同演进：从 co-design 走向 co-evolution
+
+**机器人一个关键的工程瓶颈，是机械硬件与控制算法的割裂。**如果先把机体定死，再让算法适应它，模型的改进空间就会受到结构、连杆和关节配置的约束。另一条路径，是围绕目标运动同时考虑“怎样的身体”和“怎样的控制”。
+
+斯坦福与哥伦比亚大学研究团队开源的 [Transformer Transformer](https://transformer-transformer.github.io/) 提供了一个具体例子：给定操作示范中的目标运动轨迹和用户定义的奖励，在设定的设计空间内生成适合该运动的机器人本体。它通过 RoboTokens 统一表示机体、状态与动作，同一模型架构支持本体生成和跨本体控制，将连杆、关节、电机与惯性属性的设计，与运动表现联系起来。[代码已开源](https://github.com/real-stanford/transformer-transformer)。
+
+**硬件也成为可以优化的变量，围绕特定运动与控制能力共同调整。**团队实际制造并验证了一个优化后的 ALOHA 设计，跟踪误差相较原设计降低超过 70%。这让软硬件协同设计（co-design）从仿真中的构想，走向了真实机体的验证。[论文](https://arxiv.org/abs/2607.25798)
+
+相关分享：[https://x.com/VedaAI00/status/2119216936483766316](https://x.com/VedaAI00/status/2119216936483766316)。
+
+沿着这个方向继续推进，我期待的是软硬件共同演进（**co-evolution**）：任务提出需求，模型生成或调整本体与控制方案，再通过仿真、制造和实测获得反馈，改进下一版。这也是物理世界 RSI（递归自我改进）的一条可能路径。[自动机器人设计](https://pmc.ncbi.nlm.nih.gov/articles/PMC10576117/)已有早期研究基础；把这样的协同设计扩展为持续迭代的自主闭环，仍是值得探索的长期目标。
 
 下面这段机器人结构与运动演示，为讨论硬件本体设计提供了一个直观例子。值得继续探索的是：如何将结构生成、运动验证和真实制造连接起来，让每一轮设计都得到可衡量的反馈。
 
@@ -133,3 +143,4 @@ GR00T 2 这里的板载能力有明确范围：官方演示中，动作模型与
 7. Matthews et al.：[Efficient automatic design of robots](https://pmc.ncbi.nlm.nih.gov/articles/PMC10576117/)，PNAS，2023。
 8. NVIDIA：[GR00T 2: Scaling Robot Foundation Models for Generalization, Dexterity, and Adaptation](https://research.nvidia.com/labs/gear/gr00t-2/)，2026。
 9. Hu et al.：[Perceptive Humanoid Motion from Simulation（HALO）](https://arxiv.org/abs/2611.06908)，Apple，2026；[项目与演示](https://apple-aiml-research.github.io/ml-halo/)。
+10. Ha, Liu & Song：[Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-design](https://arxiv.org/abs/2607.25798)，2026；[项目](https://transformer-transformer.github.io/) · [开源代码](https://github.com/real-stanford/transformer-transformer)。
