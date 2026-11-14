@@ -75,19 +75,23 @@ _styles: |
 
 模型走进物理世界之后，实时交互会成为重要要求。机器人需要及时、稳定地响应环境，这为专用硬件、端侧推理以及模型与硬件的协同优化提供了空间。[Jetson Thor](https://developer.nvidia.com/blog/introducing-nvidia-jetson-thor-the-ultimate-platform-for-physical-ai/) 等平台已经围绕这些需求展开设计。
 
-如果关键动作依赖云端 API，网络中断就可能打断执行。把动作规划和控制能力部署到机器人本地，是提高现场可用性的一个重要方向。下面两段演示放在一起，分别呈现室内机器人行动，以及 GR00T 2 的任务执行。
+如果关键动作依赖云端 API，网络中断就可能打断执行。把动作规划和控制能力部署到机器人本地，是提高现场可用性的一个重要方向。下面两段演示放在一起，分别呈现苹果研究团队的 HALO，以及 GR00T 2 的任务执行。
+
+**苹果研究团队给一台宇树 G1 后背驮了台 Mac mini。**在 [HALO 项目](https://apple-aiml-research.github.io/ml-halo/)中，机器人能够钻桌底、侧身过窄门、找到椅子并坐下。根据[论文](https://arxiv.org/html/2611.06908v1)，背载的 Mac mini M4 Pro 默认运行本地 Qwen3.6-35B-A3B（4-bit，MLX）进行任务编排，无需连接互联网；运动生成也在 Mac mini 上完成，底层动作跟踪则由 G1 自带的 Jetson Orin NX 执行。
+
+**苹果研究团队的方案，背包里用的是苹果电脑，跑的却是千问。**这个组合让端侧部署的机会变得具体：通用模型、消费级计算设备和机器人本体，可以一起构成在现场独立运行的系统。
 
 根据 [NVIDIA 官方项目页](https://research.nvidia.com/labs/gear/gr00t-2/)与[技术报告](https://research.nvidia.com/labs/gear/gr00t-2/assets/gr00t2_whitepaper.pdf)，GR00T 2 基于 Cosmos 构建世界动作模型（WAM），联合预测未来视频与机器人动作，学习动作与物理世界变化之间的关系。GR00T 2 Turbo 使用 2B 参数的联合视频—动作 Transformer，可在 Unitree G1 的 Jetson Thor 上运行，并由 SONIC 全身控制器执行动作。
 
-这里的板载能力有明确范围：官方演示中，动作模型与控制器在机器人本地运行，高层任务选择的推理模型仍在板外。因此，更准确的表述是**动作规划与控制的板载部署**，而不是整个系统已经完全离线。官方页面目前标注代码将于 2026 年 12 月发布。
+GR00T 2 这里的板载能力有明确范围：官方演示中，动作模型与控制器在机器人本地运行，高层任务选择的推理模型仍在板外。因此，更准确的表述是**动作规划与控制的板载部署**，而不是整个系统已经完全离线。官方页面目前标注代码将于 2026 年 12 月发布。
 
 <div class="embodied-video-grid">
 <figure class="embodied-video">
-  <video controls playsinline preload="metadata" poster="{{ '/assets/video/embodied-ai/on-device-hardware.jpg' | relative_url }}" aria-label="室内机器人行动演示">
+  <video controls playsinline preload="metadata" poster="{{ '/assets/video/embodied-ai/on-device-hardware.jpg' | relative_url }}" aria-label="HALO：宇树 G1 背载 Mac mini，本地千问指挥行动">
     <source src="{{ '/assets/video/embodied-ai/on-device-hardware.mp4' | relative_url }}" type="video/mp4">
     您的浏览器不支持视频播放，请<a href="{{ '/assets/video/embodied-ai/on-device-hardware.mp4' | relative_url }}">下载视频</a>观看。
   </video>
-  <figcaption><strong>室内机器人行动演示</strong><br>约 46 秒 · @QwenAIFans 分享<br>来源：<a href="https://x.com/QwenAIFans/status/2119282685898359288">https://x.com/QwenAIFans/status/2119282685898359288</a></figcaption>
+  <figcaption><strong>HALO：宇树 G1 + Mac mini + 本地千问</strong><br>钻桌底、侧身过窄门、找椅子坐下 · 约 46 秒<br>@QwenAIFans 分享 · 来源：<a href="https://x.com/QwenAIFans/status/2119282685898359288">https://x.com/QwenAIFans/status/2119282685898359288</a></figcaption>
 </figure>
 <figure class="embodied-video">
   <video controls playsinline preload="metadata" poster="{{ '/assets/video/embodied-ai/groot-onboard.jpg' | relative_url }}" aria-label="GR00T 2 机器人任务执行演示">
@@ -128,3 +132,4 @@ _styles: |
 6. Ma et al.：[Eureka: Human-Level Reward Design via Coding Large Language Models](https://eureka-research.github.io/)，2023。
 7. Matthews et al.：[Efficient automatic design of robots](https://pmc.ncbi.nlm.nih.gov/articles/PMC10576117/)，PNAS，2023。
 8. NVIDIA：[GR00T 2: Scaling Robot Foundation Models for Generalization, Dexterity, and Adaptation](https://research.nvidia.com/labs/gear/gr00t-2/)，2026。
+9. Hu et al.：[Perceptive Humanoid Motion from Simulation（HALO）](https://arxiv.org/abs/2611.06908)，Apple，2026；[项目与演示](https://apple-aiml-research.github.io/ml-halo/)。
