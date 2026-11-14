@@ -3,7 +3,7 @@ layout: post
 title: "从大模型到具身智能：三个值得投入的机会"
 date: 2026-11-14
 author: 王本友
-description: "从 Fable 5.2 操作机械臂，到场景生成、端侧部署与软硬件共同演进：大模型从业者如何建立自己的机器人能力。"
+description: "通用大模型如何走向物理世界：从能力迁移、场景闭环与本地部署，到模型、控制与硬件的共同演进。"
 permalink: /blog/2026/foundation-models-to-embodied-ai/
 tags: embodied-ai multimodal agents simulation robotics
 _styles: |
@@ -34,46 +34,41 @@ _styles: |
 
 <h2 id="capability">一、能力的延伸：让通用大模型走向行动</h2>
 
-### 从理解世界，到控制机械臂
+### 具身成为通用能力继续生长的地方
 
-先看一个具体例子：[Fable 5.2 操作真实机械臂的演示](#video-fable)。视频里，机械臂完成了拼块解谜、拧开瓶盖、装配并检查齿轮啮合，以及画出机器人等任务。根据 [Anthropic 的发布说明](https://www.anthropic.com/claude-fable-and-mythos-5-2)，Fable 5.2 的机器人控制能力较此前模型明显提升，其中包括未被明确针对性训练的机器人任务。
+我看好这条路线，首先是因为机器人需要的许多能力，已经与通用大模型的研究方向交汇：理解指令、辨认物体及其关系、拆解任务、调用工具，以及根据执行结果修正计划。模型在这些方面的进步，有机会成为不同机器人、不同任务共同受益的能力基础。
 
-这段演示让我关注的是**通用能力的迁移**：一个面向广泛任务的模型，开始把视觉理解、推理与工具使用能力带进物理操作。对大模型团队来说，这是一条可以接续已有积累的研究路径。
+**如果具身成为通用模型的重要应用域，机器人研发就有机会建立在持续增长的通用能力之上。**团队可以把更多精力投入动作接口、场景经验和执行反馈，让模型已有的知识在特定机体上发挥作用。对大模型从业者而言，熟悉的多模态训练、后训练、推理和评估方法，由此获得了新的用武之地。
+
+不过，理解物理世界与可靠地作用于物理世界之间，还有很长的距离。模型可以正确描述“拿起杯子”，却未必能处理遮挡、接触、滑动与抓取失败。语言中的合理答案，只有经过动作执行和环境反馈，才能变成可信的机器人能力。
+
+### 把行动与反馈接进模型的学习过程
+
+因此，我认为关键在于建立**观察—决策—行动—再观察**的连续过程。模型需要知道自己刚才做了什么、环境发生了什么变化，以及下一步是否需要调整。任务执行中的失败、恢复和重新规划，也应该成为训练数据与评估的一部分。
+
+这里有两类相互促进的工作：一类是把空间、时间、接触和动作纳入模型的表示与学习；另一类是设计合适的系统接口，让高层任务推理与更高频的运动控制协作。模型究竟直接输出动作，还是通过技能和控制器执行，可以由任务需要和机体条件决定。语音交流与动作协调，也可以放在这个统一的交互过程中研究。
+
+评估标准也需要随之变化。除了单次成功率，还要观察新物体、新布局和新机体上的迁移，长任务中的稳定性，以及出错后能否恢复。**通用能力能迁移多少，现场经验还要补多少，是最值得持续测量的问题。**下面的[机械臂演示](#video-fable)提供了一个直观入口，具体任务与评估背景放在视频下方。
 
 <figure class="embodied-video" id="video-fable">
   <video controls playsinline preload="metadata" poster="{{ '/assets/video/embodied-ai/fable-robot-control.jpg' | relative_url }}" aria-label="Fable 5.2 操作真实机械臂">
     <source src="{{ '/assets/video/embodied-ai/fable-robot-control.mp4' | relative_url }}" type="video/mp4">
     您的浏览器不支持视频播放，请<a href="{{ '/assets/video/embodied-ai/fable-robot-control.mp4' | relative_url }}">下载视频</a>观看。
   </video>
-  <figcaption><strong>Fable 5.2：通用模型操作真实机械臂</strong><br>解谜、拧瓶盖、装配齿轮与画画，展示同一模型参与不同物理任务。片段经过加速和剪辑，不代表实际执行速度。<br>约 23 秒 · <a href="https://www.anthropic.com/claude-fable-and-mythos-5-2">Anthropic 发布说明与机器人演示</a></figcaption>
+  <figcaption><strong>值得一看：Fable 5.2 如何把通用能力带到机械臂上</strong><br>约 23 秒的演示包含拼块解谜、拧瓶盖、装配齿轮与画画。Anthropic 表示，能力提升也覆盖未被明确针对性训练的机器人任务；值得关注的是同一模型面对不同任务的迁移能力。片段经过加速和剪辑，不代表实际执行速度。<br>作为另一类证据，官方报告 Fable 5.2 在模拟双臂基准 RoboDojo Sim 的内部运行中取得 64.9%，超过同一 harness 下比较的其他前沿模型及多数机器人专用系统。这是仿真评估，不能直接当作真实机器人的成功率。<br><a href="https://www.anthropic.com/claude-fable-and-mythos-5-2">发布说明与演示</a> · <a href="https://robodojo-benchmark.com/">RoboDojo 基准</a> · 延伸阅读：<a href="https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/">Gemini Robotics 将动作纳入模型输出</a></figcaption>
 </figure>
-
-演示之外，还需要可比较的评估。**RoboDojo Sim 测的是模型根据摄像头图像控制模拟双臂机器人的能力。**Anthropic 报告 Fable 5.2 在其内部运行中取得 64.9% 的成绩，优于同一 harness 下比较的其他前沿模型，也超过多数专门用于机器人控制的系统。这是模拟环境中的比较结果；上面的真实机械臂片段则提供了另一类直观证据。[发布说明](https://www.anthropic.com/claude-fable-and-mythos-5-2) · [RoboDojo 基准](https://robodojo-benchmark.com/)
-
-### 将动作纳入模型能力
-
-另一条路径，是直接把动作纳入模型输出。[Gemini Robotics](https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/) 基于 Gemini 2.0，将物理动作加入输出模态，用于机器人控制。两类探索共同指向一个问题：如何让模型对世界的理解，成为可执行、可反馈的行动？
-
-我尤其期待**语音与 action 双通道的具身模型**：机器人理解人的语音，在生成语言回应的同时协调身体动作，让交流与行动成为一个连续过程。这是值得继续推进的研究方向。
-
-因此，第一个机会很明确：把已有的多模态能力扩展到动作，并让理解、表达和执行形成整体。下一步的问题是，如何让这种能力在自己的场景中稳定成长。
 
 <h2 id="scene-loop">二、落地的起点：用本地场景建立训练与评估闭环</h2>
 
-### 先找到能持续接触的任务
+### 用真实任务积累自己的经验
 
-厂房巡检、楼宇服务、室内操作，都可以成为起点。一个能反复进入的现场，让我们有机会把任务定义清楚、收集失败案例，并判断改进是否有效。例如，巡检不仅要“走到设备旁边”，还要看清指定仪表、记录异常，并在路线被占用时完成恢复。
+通用模型提供能力起点，本地场景决定这些能力怎样变得有用。厂房巡检、楼宇服务、室内操作，都可以成为起点。能够持续进入同一个现场，意味着我们可以明确任务标准、记录失败、比较版本，并确认改进是否真的有效。
 
-围绕这些任务，可以先利用头部大模型辅助标注数据、整理任务和建立评估，再把这些能力适配到自己的垂直场景。[RoboReward](https://arxiv.org/abs/2601.00675) 等研究，已经探索了用视觉语言模型评价机器人任务完成情况、提供训练奖励的方式。其结果也提示我们，通用模型并非在所有任务上都能给出可靠的奖励，场景内的校准和验证仍然重要。
+对于大模型团队，最有价值的积累可能是这套持续产生反馈的机制：哪些任务值得做，怎样定义完成，哪些失败反复出现，新增数据究竟解决了什么问题。头部模型可以辅助标注、整理任务和评价结果，但评价本身也要用现场数据校准；奖励模型的研究可以参考 [RoboReward](https://arxiv.org/abs/2601.00675)。
 
-### 用 3D 生成降低环境构建成本
+### 让生成环境服务于训练
 
-与此同时，**3D 生成能力正在为训练环境的构建提供新工具**。我们可以生成或重建巡检、室内等三维场景，进一步把它们建设成能够交互、执行任务和评价结果的环境，用于机器人模型的训练与评估。
-
-有了任务，还需要让机器人经历足够多的环境变化。下面两段视频展示了不同的环境构建方式：
-
-- [从 4 张概念图构建三维世界](#video-image-to-3d)：据 [@sonic0828 的分享](https://x.com/sonic0828/status/2121114865079406608)，工作流使用 Astra + Blender 5.3，先生成概念图，再把图像排列到三维空间，通过挤压、融合构建场景，最后导出到 Blender。
-- [从 2D 平面图生成室内漫游](#video-floorplan)：[@wanerfu 分享的演示](https://x.com/wanerfu/status/2121144338017292602)呈现了从房间布局到可漫游空间的转换，为楼宇和室内场景提供了直观的环境构建思路。
+**3D 生成的价值，在于降低构建和改变训练环境的成本。**围绕真实任务，我们可以改变空间布局、物体位置与障碍条件，让机器人经历更多变化，再把值得验证的策略带回现场。[图像生成空间](#video-image-to-3d)和[平面图生成漫游](#video-floorplan)是两种直观入口。
 
 <div class="embodied-video-grid">
 <figure class="embodied-video" id="video-image-to-3d">
@@ -81,7 +76,7 @@ _styles: |
     <source src="{{ '/assets/video/embodied-ai/imageTo3D.mp4' | relative_url }}" type="video/mp4">
     您的浏览器不支持视频播放，请<a href="{{ '/assets/video/embodied-ai/imageTo3D.mp4' | relative_url }}">下载视频</a>观看。
   </video>
-  <figcaption><strong>4 张概念图 → 可漫步的 3D 世界</strong><br>从少量视觉输入构建空间，展示三维环境生成的起点。<br>imageTo3D · 约 25 秒 · Astra + Blender 5.3（据原帖介绍）<br>来源：<a href="https://x.com/sonic0828/status/2121114865079406608">https://x.com/sonic0828/status/2121114865079406608</a></figcaption>
+  <figcaption><strong>4 张概念图 → 可漫步的 3D 世界</strong><br>值得关注少量图像如何变成空间：据原帖，Astra + Blender 5.3 的工作流是生成 4 张概念图，将图像排列到三维空间，通过挤压、融合构建场景，再导出到 Blender。它展示了环境构建的便捷入口，距离物理仿真还需要进一步加工。<br>imageTo3D · 约 25 秒<br>来源：<a href="https://x.com/sonic0828/status/2121114865079406608">https://x.com/sonic0828/status/2121114865079406608</a></figcaption>
 </figure>
 
 <figure class="embodied-video" id="video-floorplan">
@@ -89,33 +84,19 @@ _styles: |
     <source src="{{ '/assets/video/embodied-ai/to3D.mp4' | relative_url }}" type="video/mp4">
     您的浏览器不支持视频播放，请<a href="{{ '/assets/video/embodied-ai/to3D.mp4' | relative_url }}">下载视频</a>观看。
   </video>
-  <figcaption><strong>2D 平面图 → 室内 3D 漫游</strong><br>从房间布局走向空间展示，为已有建筑的环境构建提供直观参考。<br>to3D · 约 10 秒<br>来源：<a href="https://x.com/wanerfu/status/2121144338017292602">https://x.com/wanerfu/status/2121144338017292602</a></figcaption>
+  <figcaption><strong>2D 平面图 → 室内 3D 漫游</strong><br>从房间布局生成可以进入的三维空间，适合思考如何复用楼宇和室内场景已有的平面资料。建议结合 <a href="https://worldlabs.ai/blog/real-to-sim-to-real">World Labs 的 real-to-sim-to-real 工作</a>一起看：空间展示之后，如何继续构建用于机器人训练和评估的环境？<br>to3D · 约 10 秒<br>来源：<a href="https://x.com/wanerfu/status/2121144338017292602">https://x.com/wanerfu/status/2121144338017292602</a></figcaption>
 </figure>
 </div>
 
-从三维展示走向机器人训练，还需要补齐碰撞几何、物理属性、可交互对象、任务接口和评估标准，并验证仿真与真实环境之间的差距。这些工作决定了生成的场景能否成为真正有用的训练环境。
+从可看的三维场景走向可用的训练环境，还需要碰撞几何、物理属性、可交互对象、任务接口和评估标准。生成环境应该围绕真实失败来补充：现场哪里容易出问题，就在仿真中构造相关变化，再通过实测检查改进能否迁移。
 
-[World Labs 的 real-to-sim-to-real 工作](https://worldlabs.ai/blog/real-to-sim-to-real)，已经在探索把真实任务转化为可扩展的仿真世界，用于策略训练与评估。
+### 国产卡、本地部署与推理加速，也是场景能力的一部分
 
-这样，本地场景、真实数据、生成环境和模型训练就能连接起来：**在现场发现问题，在数据与仿真中改进，再回到现场验证。**持续围绕这一过程打磨，才能逐步形成真正适合自己场景的机器人。
+本地化还包括计算系统。对于需要持续运行的机器人，模型在哪里推理、一次响应需要多久、断网后还能完成什么，都应该在定义任务时一起考虑。可以按任务层级分配计算：机载设备承担对响应时间敏感的动作与控制，现场服务器承接更大的感知或规划模型，训练和离线分析则使用更充足的算力。[本地编排](#video-halo)与[动作模型板载执行](#video-groot)的区别，也值得在系统设计时讲清楚。
 
-<h2 id="coevolution">三、长期的演进：让模型、运控与硬件一起改进</h2>
+**面向国内场景，国产算力卡的适配值得成为一项持续投入的工程能力。**选型和适配应从目标模型、算子支持、推理框架、显存容量和实际负载出发，在候选设备上测量整条执行链路。能否稳定运行、部署维护是否方便，以及多台机器人接入后的成本，都会影响一个方案能否长期使用。
 
-当机器人开始在现场执行任务，问题会变得更具体：计算在哪里完成？动作能否及时响应？现有机体是否适合这个任务？这些问题把模型研发进一步带向系统与硬件。
-
-### 端侧部署：让能力跟着机器人走
-
-模型走进物理世界之后，实时交互会成为重要要求。机器人需要及时、稳定地响应环境，这为专用硬件、端侧推理以及模型与硬件的协同优化提供了空间。[Jetson Thor](https://developer.nvidia.com/blog/introducing-nvidia-jetson-thor-the-ultimate-platform-for-physical-ai/) 等平台已经围绕这些需求展开设计。
-
-如果关键动作依赖云端 API，网络中断就可能打断执行。把动作规划和控制能力部署到机器人本地，是提高现场可用性的一个重要方向。下面的 [HALO 演示](#video-halo)与 [GR00T 2 演示](#video-groot)，展示了不同的部署范围。
-
-**苹果研究团队给一台宇树 G1 后背驮了台 Mac mini。**在 [HALO 项目](https://apple-aiml-research.github.io/ml-halo/)中，机器人能够钻桌底、侧身过窄门、找到椅子并坐下。根据[论文](https://arxiv.org/html/2611.06908v1)，背载的 Mac mini M4 Pro 默认运行本地 Qwen3.6-35B-A3B（4-bit，MLX）进行任务编排，无需连接互联网；运动生成也在 Mac mini 上完成，底层动作跟踪则由 G1 自带的 Jetson Orin NX 执行。
-
-**苹果研究团队的方案，背包里用的是苹果电脑，跑的却是千问。**这个组合让端侧部署的机会变得具体：通用模型、消费级计算设备和机器人本体，可以一起构成在现场独立运行的系统。
-
-根据 [NVIDIA 官方项目页](https://research.nvidia.com/labs/gear/gr00t-2/)与[技术报告](https://research.nvidia.com/labs/gear/gr00t-2/assets/gr00t2_whitepaper.pdf)，GR00T 2 基于 Cosmos 构建世界动作模型（WAM），联合预测未来视频与机器人动作，学习动作与物理世界变化之间的关系。GR00T 2 Turbo 使用 2B 参数的联合视频—动作 Transformer，可在 Unitree G1 的 Jetson Thor 上运行，并由 SONIC 全身控制器执行动作。
-
-GR00T 2 这里的板载能力有明确范围：官方演示中，动作模型与控制器在机器人本地运行，高层任务选择的推理模型仍在板外。因此，更准确的表述是**动作规划与控制的板载部署**，而不是整个系统已经完全离线。官方页面目前标注代码将于 2026 年 12 月发布。
+推理加速则要围绕任务的响应预算展开。可以评估量化、蒸馏、缓存复用和算子优化，也可以通过技能复用减少重复规划。每种优化都要回到任务上验证：从摄像头输入到动作输出的总延迟是否下降，较慢的一次响应能否接受，功耗与温度是否稳定，精度变化是否影响操作成功率。单看模型的 token 生成速度，无法回答这些问题。
 
 <div class="embodied-video-grid">
 <figure class="embodied-video" id="video-halo">
@@ -123,50 +104,49 @@ GR00T 2 这里的板载能力有明确范围：官方演示中，动作模型与
     <source src="{{ '/assets/video/embodied-ai/on-device-hardware.mp4' | relative_url }}" type="video/mp4">
     您的浏览器不支持视频播放，请<a href="{{ '/assets/video/embodied-ai/on-device-hardware.mp4' | relative_url }}">下载视频</a>观看。
   </video>
-  <figcaption><strong>HALO：宇树 G1 + Mac mini + 本地千问</strong><br>观察全身姿态如何适应桌底、窄门和座椅；本地任务编排展示离线运行的可能。<br>约 46 秒<br>@QwenAIFans 分享 · 来源：<a href="https://x.com/QwenAIFans/status/2119282685898359288">https://x.com/QwenAIFans/status/2119282685898359288</a></figcaption>
+  <figcaption><strong>HALO：宇树 G1 + Mac mini + 本地千问</strong><br>苹果研究团队让 G1 背着 Mac mini 钻桌底、侧身过窄门、找椅子坐下。根据论文，Mac mini M4 Pro 默认以 4-bit MLX 运行 Qwen3.6-35B-A3B 做本地任务编排，无需联网；运动生成也在 Mac mini 上完成，底层动作跟踪由 G1 自带的 Jetson Orin NX 执行。值得看的是不同层级的模型与控制如何分工。<br>约 46 秒 · <a href="https://apple-aiml-research.github.io/ml-halo/">项目演示</a> · <a href="https://arxiv.org/abs/2611.06908">论文</a><br>来源：<a href="https://x.com/QwenAIFans/status/2119282685898359288">https://x.com/QwenAIFans/status/2119282685898359288</a></figcaption>
 </figure>
+
 <figure class="embodied-video" id="video-groot">
   <video controls playsinline preload="metadata" poster="{{ '/assets/video/embodied-ai/groot-onboard.jpg' | relative_url }}" aria-label="GR00T 2 机器人任务执行演示">
     <source src="{{ '/assets/video/embodied-ai/groot-onboard.mp4' | relative_url }}" type="video/mp4">
     您的浏览器不支持视频播放，请<a href="{{ '/assets/video/embodied-ai/groot-onboard.mp4' | relative_url }}">下载视频</a>观看。
   </video>
-  <figcaption><strong>GR00T 2：世界动作模型与板载执行</strong><br>观察室内清理等操作中的身体与手部协调。动作模型和控制器在板载运行，高层推理仍在板外。<br>约 91 秒 · @VedaAI00 分享<br>来源：<a href="https://x.com/VedaAI00/status/2120311947858268219">https://x.com/VedaAI00/status/2120311947858268219</a></figcaption>
+  <figcaption><strong>GR00T 2：世界动作模型与板载执行</strong><br>可以留意室内操作中身体与手部的协调。官方介绍，GR00T 2 基于 Cosmos 联合预测视频与动作；Turbo 的 2B 联合视频—动作 Transformer 可在 G1 的 Jetson Thor 上运行，配合 SONIC 全身控制器执行。演示中的高层推理仍在板外，因此板载执行不等于整个系统完全离线。官方目前标注代码将于 2026 年 12 月发布。<br>约 91 秒 · <a href="https://research.nvidia.com/labs/gear/gr00t-2/">项目与技术报告</a> · <a href="https://developer.nvidia.com/blog/introducing-nvidia-jetson-thor-the-ultimate-platform-for-physical-ai/">Jetson Thor 平台介绍</a><br>来源：<a href="https://x.com/VedaAI00/status/2120311947858268219">https://x.com/VedaAI00/status/2120311947858268219</a></figcaption>
 </figure>
 </div>
 
-对大模型团队而言，这些案例把机会落到了具体工程问题上：怎样分配高层推理与低层控制，怎样降低推理延迟，以及怎样让模型、算力、传感器与执行器协同工作。
+这样，数据、仿真、模型和部署就能形成完整的场景闭环：**在现场发现问题，在训练与系统优化中改进，再回到现场验证。**本地部署和加速也由此成为机器人能力的一部分，直接影响模型能否及时、稳定地完成任务。
 
-### AI 参与运控研发：把反馈带进开发过程
+<h2 id="coevolution">三、长期的演进：让模型、运控与硬件一起改进</h2>
 
-进一步，还可以探索 **AI 原生的运控开发**：让 AI 参与运控算法的编写、调参、测试和改进。[Eureka](https://eureka-research.github.io/) 通过大模型生成并迭代奖励函数，帮助强化学习获得控制技能，为 AI 参与控制研发提供了一个参考。
+### 让 AI 参与控制研发
 
-### 软硬件共同演进：从 co-design 走向 co-evolution
+当执行反馈被系统地记录下来，AI 也可以参与运控算法的编写、奖励设计、调参和测试。已有的[自动奖励设计研究](https://eureka-research.github.io/)提供了一个入口。更值得投入的，是让开发过程持续利用失败轨迹与实测结果：提出修改、验证效果、保留有效改进，再进入下一轮。
 
-**机器人一个关键的工程瓶颈，是机械硬件与控制算法的割裂。**如果先把机体定死，再让算法适应它，模型的改进空间就会受到结构、连杆和关节配置的约束。另一条路径，是围绕目标运动同时考虑“怎样的身体”和“怎样的控制”。
+这要求把评价条件建立好。同一个控制方案要在不同负载、初始状态与环境变化下比较；仿真中的收益，也要通过真实机体检验。大模型的代码与推理能力，可以在这样的研发流程中逐步转化为控制能力的提升。
 
-斯坦福与哥伦比亚大学研究团队开源的 [Transformer Transformer](https://transformer-transformer.github.io/) 提供了一个具体例子：给定操作示范中的目标运动轨迹和用户定义的奖励，在设定的设计空间内生成适合该运动的机器人本体。它通过 RoboTokens 统一表示机体、状态与动作，同一模型架构支持本体生成和跨本体控制，将连杆、关节、电机与惯性属性的设计，与运动表现联系起来。[代码已开源](https://github.com/real-stanford/transformer-transformer)。
+### 从协同设计走向共同演进
 
-**硬件也成为可以优化的变量，围绕特定运动与控制能力共同调整。**团队实际制造并验证了一个优化后的 ALOHA 设计，跟踪误差相较原设计降低超过 70%。这让软硬件协同设计（co-design）从仿真中的构想，走向了真实机体的验证。[论文](https://arxiv.org/abs/2607.25798)
+机器人一个关键的工程瓶颈，是机械硬件与控制算法的割裂。机体一旦固定，关节配置、连杆尺寸、执行器和传感器布局就会限定动作空间。**如果把本体也纳入优化，任务就能同时影响“怎样控制”和“需要怎样的身体”。**
 
-相关分享：[https://x.com/VedaAI00/status/2119216936483766316](https://x.com/VedaAI00/status/2119216936483766316)。
+我期待的软硬件共同演进（co-evolution），是围绕任务表现反复调整模型、控制策略和本体：执行暴露瓶颈，仿真比较候选方案，制造与实测提供反馈，再决定下一轮改进。这样的过程也需要考虑成本、能耗、耐用性与维护，让优化目标逐步接近真实使用。
 
-沿着这个方向继续推进，我期待的是软硬件共同演进（**co-evolution**）：任务提出需求，模型生成或调整本体与控制方案，再通过仿真、制造和实测获得反馈，改进下一版。这也是物理世界 RSI（递归自我改进）的一条可能路径。[自动机器人设计](https://pmc.ncbi.nlm.nih.gov/articles/PMC10576117/)已有早期研究基础；把这样的协同设计扩展为持续迭代的自主闭环，仍是值得探索的长期目标。
-
-再看[下面的机器人结构与运动短片](#video-hardware-design)：它提供了一个观察本体设计的直观视角——连杆如何布置、关节如何运动、结构如何支撑动作。将这些设计变量与任务表现联系起来，正是软硬件协同设计需要回答的问题。
+这可以成为物理世界 RSI（递归自我改进）的一条长期路径。[自动机器人设计](https://pmc.ncbi.nlm.nih.gov/articles/PMC10576117/)和[软硬件协同设计](#video-hardware-design)已经提供了研究起点；要走向持续自主改进，还需要把设计、制造、测量与版本评估接成可靠的闭环。
 
 <figure class="embodied-video" id="video-hardware-design">
   <video controls playsinline preload="metadata" poster="{{ '/assets/video/embodied-ai/ai-hardware-design.jpg' | relative_url }}" aria-label="机器人本体结构与运动演示">
     <source src="{{ '/assets/video/embodied-ai/ai-hardware-design.mp4' | relative_url }}" type="video/mp4">
     您的浏览器不支持视频播放，请<a href="{{ '/assets/video/embodied-ai/ai-hardware-design.mp4' | relative_url }}">下载视频</a>观看。
   </video>
-  <figcaption><strong>硬件本体设计：机器人结构与运动演示</strong><br>观察连杆、关节与运动方式的关系。短片作为设计视角的补充，具体方法以原帖为准。<br>约 6 秒 · @VedaAI00 分享<br>来源：<a href="https://x.com/VedaAI00/status/2119251349951119857">https://x.com/VedaAI00/status/2119251349951119857</a></figcaption>
+  <figcaption><strong>硬件本体设计：从结构与运动看协同设计</strong><br>约 6 秒的短片，适合观察连杆、关节与运动方式的关系；具体方法以原帖为准。<br>视频来源：<a href="https://x.com/VedaAI00/status/2119251349951119857">https://x.com/VedaAI00/status/2119251349951119857</a><br><br><strong>延伸推荐：Transformer Transformer</strong>（独立阅读材料，并非将上述短片认定为该项目成果）。斯坦福与哥伦比亚大学团队根据目标运动轨迹和奖励，在设定的设计空间内生成本体，同一模型架构支持本体生成与跨本体控制。团队制造的优化版 ALOHA 跟踪误差较原设计降低超过 70%，是理解软硬件 co-design 的具体参考。<br><a href="https://transformer-transformer.github.io/">项目</a> · <a href="https://arxiv.org/abs/2607.25798">论文</a> · <a href="https://github.com/real-stanford/transformer-transformer">开源代码</a><br>相关分享：<a href="https://x.com/VedaAI00/status/2119216936483766316">https://x.com/VedaAI00/status/2119216936483766316</a></figcaption>
 </figure>
 
 ## 从一个具体场景开始
 
-从 Fable 5.2 的机械臂操作，到三维环境生成，再到 HALO 的本地部署与 Transformer Transformer 的协同设计，这些案例分别回答了同一条路径上的不同问题：**能力从哪里来，经验在哪里积累，系统如何持续改进。**
+这三组机会有着连续的关系：**通用模型提供能力起点，本地场景积累经验与反馈，软硬件共同演进扩大可优化的空间。**
 
-对于大模型从业者，现在值得做的是选定一个能持续接触的场景：明确任务和成功标准，接入模型，记录失败，在数据、仿真与真实硬件之间反复验证。当这条闭环真正转起来，通用模型每一次能力增长，才更有机会转化成自己的机器人能力。
+对于大模型从业者，现在值得做的是选定一个能持续接触的场景，把任务标准、数据采集、模型接口与本地部署做扎实。随着现场反馈不断进入训练和开发过程，通用模型每一次能力增长，才更有机会转化成自己的机器人能力。
 
 ## 参考资料
 
@@ -180,5 +160,4 @@ GR00T 2 这里的板载能力有明确范围：官方演示中，动作模型与
 8. NVIDIA：[GR00T 2: Scaling Robot Foundation Models for Generalization, Dexterity, and Adaptation](https://research.nvidia.com/labs/gear/gr00t-2/)，2026。
 9. Hu et al.：[Perceptive Humanoid Motion from Simulation（HALO）](https://arxiv.org/abs/2611.06908)，Apple，2026；[项目与演示](https://apple-aiml-research.github.io/ml-halo/)。
 10. Ha, Liu & Song：[Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-design](https://arxiv.org/abs/2607.25798)，2026；[项目](https://transformer-transformer.github.io/) · [开源代码](https://github.com/real-stanford/transformer-transformer)。
-
 11. Anthropic：[Introducing Claude Fable 5.2 and Claude Mythos 5.2](https://www.anthropic.com/claude-fable-and-mythos-5-2)，2026；[RoboDojo 基准](https://robodojo-benchmark.com/)。
