@@ -12,7 +12,7 @@ _styles: |
   .embodied-video figcaption { margin-top: .6rem; font-size: .9rem; line-height: 1.65; color: var(--global-text-color-light); }
   .embodied-video-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem; margin: 1.8rem 0; }
   .embodied-video-grid .embodied-video { margin: 0; min-width: 0; }
-  .embodied-video a { overflow-wrap: anywhere; }
+  .post-content a { overflow-wrap: anywhere; }
   @media (max-width: 640px) { .embodied-video-grid { grid-template-columns: 1fr; } }
   .post-content { line-height: 1.85; }
   .post-content h2, .post-content h3 { scroll-margin-top: 5rem; }
