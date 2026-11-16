@@ -16,6 +16,8 @@
   .post article.post-content h2, .post article.post-content h3 { text-wrap: balance; }
   .post article.post-content { font-size: 1.0625rem; line-height: 1.9; font-weight: 400; }
   .post article.post-content [data-lang] { color: inherit; }
+  /* MDB sets strong to 500, which Chinese system fonts (e.g. Microsoft YaHei) render as regular. */
+  .post article.post-content strong { font-weight: 600; }
   html[data-language="en"] .post article.post-content { line-height: 1.75; }
   .post article.post-content p { margin-bottom: 1.2em; }
   .post article.post-content a { overflow-wrap: anywhere; }

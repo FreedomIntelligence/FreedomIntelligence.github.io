@@ -10,6 +10,7 @@ description_en: "Why this may be the best moment yet for people who build large 
 default_language: zh
 permalink: /blog/2026/foundation-models-to-embodied-ai/
 og_image: https://freedomintelligence.github.io/assets/img/embodied-ai/cover-zh.jpg
+thumbnail_en: /assets/img/embodied-ai/cover-en.jpg
 read_time: 15
 tags: embodied-ai multimodal agents simulation robotics
 ---

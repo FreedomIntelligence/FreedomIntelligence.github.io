@@ -383,7 +383,11 @@ blog_tags:
     <li data-blog-tags="{{ blog_filter_tags | strip | strip_newlines | escape }}">
       <article class="blog-list-card">
         <a class="blog-list-thumb" href="{{ post_href }}"{{ post_target_attrs }} aria-label="Open {{ post.title | escape }}">
-          {% if post_image_url != blank %}
+          {% if post_image_url != blank and post.thumbnail_en %}
+            {% comment %} Bilingual post: the thumbnail follows the language toggle, like the title. {% endcomment %}
+            <img data-lang="zh" src="{{ post_image_url }}" alt="{{ post.title | escape }}" loading="lazy">
+            <img data-lang="en" src="{{ post.thumbnail_en | relative_url }}" alt="{{ post.title_en | default: post.title | escape }}" loading="lazy">
+          {% elsif post_image_url != blank %}
             <img src="{{ post_image_url }}" alt="{{ post.title | escape }}" loading="lazy">
           {% else %}
             <span class="blog-generated-thumb blog-generated-thumb-{{ generated_thumb_class }}" aria-hidden="true">
