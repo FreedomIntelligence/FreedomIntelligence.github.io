@@ -963,6 +963,11 @@ html.transition *:after {
     margin-bottom: 0;
   }
 
+  // Bilingual post headers (title_en / title_zh): language spans keep their line's colour.
+  .post-header [data-lang] {
+    color: inherit;
+  }
+
   .post-tags {
     color: var(--global-text-color-light);
     font-size: 0.875rem;

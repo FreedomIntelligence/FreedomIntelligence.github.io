@@ -173,6 +173,11 @@ blog_tags:
       overflow-wrap: anywhere;
     }
 
+    /* Bilingual titles/descriptions (title_en, description_en) keep the link and hover colours. */
+    .post-list [data-lang] {
+      color: inherit;
+    }
+
     .blog-generated-thumb {
       display: flex;
       position: absolute;
@@ -324,6 +329,8 @@ blog_tags:
     {% else %}
       {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
     {% endif %}
+    {% if post.read_time %}{% assign read_time = post.read_time %}{% endif %}
+    {% capture post_title_html %}{% if post.title_en %}<span data-lang="zh">{{ post.title }}</span><span data-lang="en">{{ post.title_en }}</span>{% else %}{{ post.title }}{% endif %}{% endcapture %}
     {% assign year = post.date | date: "%Y" %}
     {% assign tags = post.tags | join: "" %}
     {% assign categories = post.categories | join: "" %}
@@ -381,7 +388,7 @@ blog_tags:
           {% else %}
             <span class="blog-generated-thumb blog-generated-thumb-{{ generated_thumb_class }}" aria-hidden="true">
               <span class="blog-generated-thumb__kicker">Freedom AI Blog</span>
-              <span class="blog-generated-thumb__title">{{ post.title }}</span>
+              <span class="blog-generated-thumb__title">{{ post_title_html }}</span>
               <span class="blog-generated-thumb__meta">{{ post.date | date: '%b %-d, %Y' }}</span>
             </span>
           {% endif %}
@@ -389,7 +396,7 @@ blog_tags:
         <div class="blog-list-body">
       <h3>
         {% if post.redirect == blank %}
-          <a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post_title_html }}</a>
         {% else %}
           {% if post.redirect contains '://' %}
             <a class="post-title" href="{{ post.redirect }}" target="_blank">{{ post.title }}</a>
@@ -401,7 +408,7 @@ blog_tags:
           {% endif %}
         {% endif %}
       </h3>
-      <p>{{ post.description }}</p>
+      <p>{% if post.description_en %}<span data-lang="zh">{{ post.description }}</span><span data-lang="en">{{ post.description_en }}</span>{% else %}{{ post.description }}{% endif %}</p>
       {% if post.source_links %}
       <div class="post-source-preview" aria-label="Original sources">
         <span>原文</span>

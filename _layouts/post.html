@@ -16,8 +16,21 @@ layout: default
 <div class="post">
 
   <header class="post-header">
+    {%- if page.title_en or page.title_zh -%}
+    {%- comment -%} Bilingual post: title_en / title_zh, author_en / author_zh switch with the site language toggle. {%- endcomment -%}
+    {%- if page.title_en -%}
+      {%- assign title_zh = page.title -%}{%- assign title_en = page.title_en -%}
+      {%- assign author_zh = page.author -%}{%- assign author_en = page.author_en | default: page.author -%}
+    {%- else -%}
+      {%- assign title_en = page.title -%}{%- assign title_zh = page.title_zh -%}
+      {%- assign author_en = page.author -%}{%- assign author_zh = page.author_zh | default: page.author -%}
+    {%- endif %}
+    <h1 class="post-title"><span data-lang="zh">{{ title_zh }}</span><span data-lang="en">{{ title_en }}</span></h1>
+    <p class="post-meta"><span data-lang="zh">{{ page.date | date: "%Y 年 %-m 月 %-d 日" }}{%- if author_zh -%} • {{ author_zh }}{%- endif -%}</span><span data-lang="en">{{ page.date | date: "%B %-d, %Y" }}{%- if author_en -%} • {{ author_en }}{%- endif -%}</span>{%- if page.meta -%} • {{ page.meta }}{%- endif -%}</p>
+    {%- else %}
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}{%- if page.author -%} • {{ page.author }}{%- endif -%}{%- if page.meta -%} • {{ page.meta }}{%- endif -%}</p>
+    {%- endif %}
     <p class="post-tags">
       <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}"> <i class="fas fa-calendar fa-sm"></i> {{ year }} </a>
       {%- if tags != "" %}
