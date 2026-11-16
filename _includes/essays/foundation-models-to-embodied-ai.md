@@ -7,22 +7,22 @@
   Headings, videos and references are shared, so anchors stay unique. Edit the text here and both URLs update.
 {% endcomment %}
 <style>
-  .post { --ea-measure: 44rem; --ea-wide: 62rem; }
-  .post .post-header, .post article.post-content > * { max-width: var(--ea-measure); margin-left: auto; margin-right: auto; }
-  .post article.post-content > .ea-wide { max-width: var(--ea-wide); }
-  .post article.post-content > figure.embodied-video { max-width: 52rem; }
+  /* Every block (title, text, videos, cards, checklist, references) spans the site's full content column, so all edges line up. */
   .post .post-header .post-title { font-size: clamp(1.75rem, 4.2vw, 2.45rem); line-height: 1.3; font-weight: 600; margin-bottom: .7rem; text-wrap: balance; }
   .post .post-header .post-title [data-lang="zh"] { word-break: keep-all; overflow-wrap: anywhere; font-size: min(1em, 6.9vw); }
   .post article.post-content h2, .post article.post-content h3 { text-wrap: balance; }
-  .post article.post-content { font-size: 1.0625rem; line-height: 1.9; font-weight: 400; }
+  .post article.post-content { font-size: 1.125rem; line-height: 1.9; font-weight: 400; }
   .post article.post-content [data-lang] { color: inherit; }
   /* MDB sets strong to 500, which Chinese system fonts (e.g. Microsoft YaHei) render as regular. */
   .post article.post-content strong { font-weight: 600; }
   html[data-language="en"] .post article.post-content { line-height: 1.75; }
   .post article.post-content p { margin-bottom: 1.2em; }
+  /* Wide lines: avoid a lone character or word on a paragraph's last line, and never split "GPT-" from "6". */
+  .post article.post-content p, .post article.post-content li { text-wrap: pretty; }
+  .ea-nowrap { white-space: nowrap; }
   .post article.post-content a { overflow-wrap: anywhere; }
   .post article.post-content h2 { font-size: 1.6rem; line-height: 1.38; font-weight: 600; margin-top: .4rem; margin-bottom: 1.2rem; scroll-margin-top: 5rem; }
-  .post article.post-content h3 { font-size: 1.2rem; line-height: 1.45; font-weight: 600; margin-top: 2.5rem; margin-bottom: .8rem; scroll-margin-top: 5rem; }
+  .post article.post-content h3 { font-size: 1.25rem; line-height: 1.45; font-weight: 600; margin-top: 2.5rem; margin-bottom: .8rem; scroll-margin-top: 5rem; }
   .post article.post-content .ea-eyebrow { margin-top: 4.2rem; margin-bottom: 0; font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--global-theme-color); }
   .post article.post-content .ea-dek { margin-top: .4rem; margin-bottom: 2.4rem; font-size: 1.2rem; line-height: 1.75; color: var(--global-text-color-light); }
   .post article.post-content .ea-switch { margin-bottom: 1.6rem; font-size: .9rem; }
@@ -54,7 +54,7 @@
   .ea-start li { margin: .5rem 0; line-height: 1.7; }
   .post article.post-content .ea-coda { margin-top: 3rem; padding-top: 1.7rem; border-top: 1px solid var(--global-divider-color); text-align: center; font-size: 1.14rem; line-height: 1.85; color: var(--global-text-color-light); }
   .post article.post-content .ea-coda span { color: inherit; }
-  .ea-coda__line { display: inline-block; max-width: 100%; margin: 0 .12em; }
+  .ea-coda__line { display: block; }
   .post article.post-content h2#references { margin-top: 3.6rem; font-size: 1.25rem; }
   .post article.post-content .ea-refs { padding-left: 1.4rem; font-size: .9rem; line-height: 1.7; }
   .post article.post-content .ea-refs li { margin-bottom: .4rem; }
@@ -76,7 +76,7 @@
 
 2026 年 11 月 13 日，《财富》报道了一则乍看矛盾的消息：OpenAI 解散了独立的机器人团队。原因不是放弃机器人，而是它的通用模型已经开始直接驱动机器人。
 
-机器人研究员并入首席研究官 Mark Chen 领导的核心研究团队，硬件与应用机器人团队转入 Greg Brockman 负责的应用部门。OpenAI 表示，这样做是为了加快、而不是放弃机器人方向；据报道，研究人员把 GPT-6 Astra 接到机器人上时，看到了出人意料的表现。卡内基梅隆大学的 Guanya Shi 说得更直白：在 OpenAI 眼里，机器人已经“不再是一个特殊问题”。
+机器人研究员并入首席研究官 Mark Chen 领导的核心研究团队，硬件与应用机器人团队转入 Greg Brockman 负责的应用部门。OpenAI 表示，这样做是为了加快、而不是放弃机器人方向；据报道，研究人员把 <span class="ea-nowrap">GPT-6</span> Astra 接到机器人上时，看到了出人意料的表现。卡内基梅隆大学的 Guanya Shi 说得更直白：在 OpenAI 眼里，机器人已经“不再是一个特殊问题”。
 
 这件事让我更加确信一个判断：**现在，可能是迄今为止大模型与 AI 从业者进入具身智能最好的时候。**
 
@@ -87,7 +87,7 @@
 
 On November 13, 2026, *Fortune* reported news that sounds like a contradiction: OpenAI had disbanded its stand-alone robotics team. Not because it was giving up on robots, but because its general models had started running them.
 
-Its robotics researchers were folded into the core research team under chief research officer Mark Chen, while hardware and applied robotics moved into the Applied group under president Greg Brockman. OpenAI framed the move as a way to accelerate robotics, not retreat from it, and according to the report, its researchers had seen surprising performance when they connected GPT-6 Astra to robots. Carnegie Mellon’s Guanya Shi put it more bluntly. To OpenAI, robotics is “no longer a special problem.”
+Its robotics researchers were folded into the core research team under chief research officer Mark Chen, while hardware and applied robotics moved into the Applied group under president Greg Brockman. OpenAI framed the move as a way to accelerate robotics, not retreat from it, and according to the report, its researchers had seen surprising performance when they connected <span class="ea-nowrap">GPT-6</span> Astra to robots. Carnegie Mellon’s Guanya Shi put it more bluntly. To OpenAI, robotics is “no longer a special problem.”
 
 The news sharpened a conviction I have been forming for some time: **this may be the best moment yet for people who work on large models and AI to step into embodied intelligence.**
 
@@ -102,7 +102,7 @@ That is not because robotics has become easy. Contact, dynamics and real-time co
 
 我的理解是，**具身正在成为通用大模型的一个重要应用域，一个新的 subdomain。**编程已经走过这条路：专门的代码模型曾各领风骚，如今通用模型的每一次进步，几乎都会直接变成更强的编程能力。如果机器人沿着同样的路线发展，它也会持续受益于通用模型在理解、推理和学习上的进步。模型每进步一次，机器人研发的起点就被抬高一次。
 
-信号也不只来自一家。Google DeepMind 的 Gemini Robotics 把物理动作变成了模型的一种输出；Anthropic 报告，Fable 5.2 在仿真机器人基准 RoboDojo 上超过了同一测试框架下的其他前沿模型，也超过了多数专为机器人打造的系统；《财富》还援引了一项 NVIDIA 的研究：在一个基于仿真的操作测试中，GPT-6 Astra 驱动的智能体成功率为 74.8%，而榜单上最好的机器人专用模型是 51.0%。这些都是仿真或厂商自报的结果，不能等同于真实机器人的成功率，但方向相当一致：**在这些测试里，通用模型已经开始追上、甚至超过专用系统。**
+信号也不只来自一家。Google DeepMind 的 Gemini Robotics 把物理动作变成了模型的一种输出；Anthropic 报告，Fable 5.2 在仿真机器人基准 RoboDojo 上超过了同一测试框架下的其他前沿模型，也超过了多数专为机器人打造的系统；《财富》还援引了一项 NVIDIA 的研究：在一个基于仿真的操作测试中，<span class="ea-nowrap">GPT-6</span> Astra 驱动的智能体成功率为 74.8%，而榜单上最好的机器人专用模型是 51.0%。这些都是仿真或厂商自报的结果，不能等同于真实机器人的成功率，但方向相当一致：**在这些测试里，通用模型已经开始追上、甚至超过专用系统。**
 
 这正是窗口期的意义。过去，进入一个机器人任务，往往要先在感知、规划和控制上积累大量专门知识，再把一个个模块手工连接起来。通用模型让其中相当一部分知识与能力可以复用，不必再为每个任务从头设计一条专用流程。对熟悉模型训练、多模态、智能体和推理系统的团队来说，已有的积累因此更容易转化为进入具身的起点。
 
@@ -115,7 +115,7 @@ That is not because robotics has become easy. Contact, dynamics and real-time co
 
 My reading is that **embodiment is becoming a major application domain of general foundation models, a new subdomain.** Coding has already walked this path. Specialized code models once had their moment; today nearly every advance in general models turns directly into better coding. If robotics follows the same route, it will keep inheriting progress in understanding, reasoning and learning. Every time the base model improves, the starting line for robot development moves forward.
 
-The signal is not coming from one lab. Google DeepMind’s Gemini Robotics made physical action an output of the model. Anthropic reports that Fable 5.2 outperformed the other frontier models run on the same harness on the simulated RoboDojo benchmark, as well as most systems built specifically to control robots. *Fortune* also cites an NVIDIA study in which a GPT-6 Astra–powered agent succeeded 74.8% of the time on a simulation-based manipulation test, against 51.0% for the best specialized robot model on that leaderboard. These are simulated or self-reported results, not real-robot success rates. But they point the same way: **in these tests, general models are catching up with, and sometimes overtaking, specialized systems.**
+The signal is not coming from one lab. Google DeepMind’s Gemini Robotics made physical action an output of the model. Anthropic reports that Fable 5.2 outperformed the other frontier models run on the same harness on the simulated RoboDojo benchmark, as well as most systems built specifically to control robots. *Fortune* also cites an NVIDIA study in which a <span class="ea-nowrap">GPT-6</span> Astra–powered agent succeeded 74.8% of the time on a simulation-based manipulation test, against 51.0% for the best specialized robot model on that leaderboard. These are simulated or self-reported results, not real-robot success rates. But they point the same way: **in these tests, general models are catching up with, and sometimes overtaking, specialized systems.**
 
 That is what makes this a window. Entering a robotics task used to mean first accumulating a stack of specialized knowledge in perception, planning and control, then wiring the modules together by hand. General models let much of that knowledge be reused, so you no longer need to design a bespoke pipeline for every task. For teams fluent in model training, multimodality, agents and inference systems, what they already know becomes a far shorter path into embodiment.
 
@@ -138,7 +138,7 @@ General models will turn over generation after generation. The data, evaluation 
 
 </div>
 
-<div class="ea-loops ea-wide" role="navigation" aria-label="Three loops / 三个闭环">
+<div class="ea-loops" role="navigation" aria-label="Three loops / 三个闭环">
   <a class="ea-loop" href="#capability">
     <svg viewBox="0 0 48 48" aria-hidden="true"><circle class="is-new" cx="24" cy="24" r="7"/></svg>
     <span class="ea-loop__kicker"><span data-lang="zh">闭环一 · 模型</span><span data-lang="en">Loop 1 · The model</span></span>
@@ -213,14 +213,14 @@ The yardsticks change accordingly. How much extra experience does a model need i
       <p class="ea-cap-title">值得一看：Fable 5.2 把通用能力带到机械臂上</p>
       <p>约 23 秒的演示里，同一个模型依次解魔方、拧瓶盖、装上齿轮并测试啮合，最后画了一个机器人。Anthropic 表示，能力提升也覆盖了从未被专门训练过的机器人任务；值得关注的，是同一个模型面对不同任务时的迁移能力。</p>
       <p class="ea-cap-watch">也请留意画面角落的标注：2×–80× 加速，并剪去了停顿。模型已经“会做”，但还做不到现实节奏下的又快又稳。这段差距，正是具身经验要补上的部分。</p>
-      <p>另一类证据来自仿真：官方报告 Fable 5.2 在 RoboDojo 仿真基准的内部运行中平均成功率为 64.9%（同表 GPT-6 Astra 为 29.8%），超过同一测试框架下的其他前沿模型及多数机器人专用系统。这是仿真评估，不能直接当作真实机器人的成功率。</p>
+      <p>另一类证据来自仿真：官方报告 Fable 5.2 在 RoboDojo 仿真基准的内部运行中平均成功率为 64.9%（同表 <span class="ea-nowrap">GPT-6</span> Astra 为 29.8%），超过同一测试框架下的其他前沿模型及多数机器人专用系统。这是仿真评估，不能直接当作真实机器人的成功率。</p>
       <p class="ea-cap-meta"><a href="https://www.anthropic.com/claude-fable-and-mythos-5-2">发布说明与演示</a> · <a href="https://robodojo-benchmark.com/">RoboDojo 基准</a> · 延伸阅读：<a href="https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/">Gemini Robotics 将动作纳入模型输出</a></p>
     </div>
     <div data-lang="en">
       <p class="ea-cap-title">Worth watching: Fable 5.2 brings general capability to robot arms</p>
       <p>In about 23 seconds, a single model solves a puzzle cube, unscrews a bottle cap, fits a gear and tests the mesh, then draws a robot. Anthropic says the gains extend even to robotics tasks the model was never explicitly trained on. The thing to notice is how one model carries over to very different tasks.</p>
       <p class="ea-cap-watch">Also watch the labels in the corner: 2× to 80× speed-up, pauses cut. The model can already do these things, just not yet at real-world speed and steadiness. That gap is exactly what embodiment-specific experience has to close.</p>
-      <p>Separately, in internal runs on the simulated RoboDojo benchmark, Anthropic reports a 64.9% average success rate for Fable 5.2 (GPT-6 Astra scores 29.8% in the same table), ahead of the other frontier models on the same harness and most robot-specific systems. That is a simulated evaluation and should not be read as a real-robot success rate.</p>
+      <p>Separately, in internal runs on the simulated RoboDojo benchmark, Anthropic reports a 64.9% average success rate for Fable 5.2 (<span class="ea-nowrap">GPT-6</span> Astra scores 29.8% in the same table), ahead of the other frontier models on the same harness and most robot-specific systems. That is a simulated evaluation and should not be read as a real-robot success rate.</p>
       <p class="ea-cap-meta"><a href="https://www.anthropic.com/claude-fable-and-mythos-5-2">Release notes &amp; demo</a> · <a href="https://robodojo-benchmark.com/">RoboDojo benchmark</a> · Further reading: <a href="https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/">Gemini Robotics adds action to the model’s outputs</a></p>
     </div>
   </figcaption>
@@ -263,7 +263,7 @@ Once the task is clear, another limit appears: real-world trial and error is exp
 
 </div>
 
-<div class="embodied-video-grid ea-wide">
+<div class="embodied-video-grid">
 <figure class="embodied-video" id="video-image-to-3d">
   <video controls playsinline preload="metadata" poster="{{ '/assets/video/embodied-ai/imageTo3D.jpg' | relative_url }}" aria-label="Four concept images become a walkable 3D world / 4 张概念图生成可漫步的 3D 世界">
     <source src="{{ '/assets/video/embodied-ai/imageTo3D.mp4' | relative_url }}" type="video/mp4">
@@ -342,7 +342,7 @@ Acceleration should be judged by the task. Quantization, distillation, cache reu
 
 </div>
 
-<div class="embodied-video-grid ea-wide">
+<div class="embodied-video-grid">
 <figure class="embodied-video" id="video-halo">
   <video controls playsinline preload="metadata" poster="{{ '/assets/video/embodied-ai/on-device-hardware.jpg' | relative_url }}" aria-label="HALO: a Unitree G1 carrying a Mac mini that runs Qwen locally / HALO：宇树 G1 背载 Mac mini，本地千问指挥行动">
     <source src="{{ '/assets/video/embodied-ai/on-device-hardware.mp4' | relative_url }}" type="video/mp4">
@@ -433,7 +433,7 @@ But the space of control algorithms is bounded by the body. Joint configuration,
 
 </div>
 
-<div class="embodied-video-grid ea-wide">
+<div class="embodied-video-grid">
 <figure class="embodied-video" id="video-transformer-transformer">
   <video controls playsinline preload="metadata" poster="{{ '/assets/video/embodied-ai/transformer-transformer.jpg' | relative_url }}" aria-label="Transformer Transformer: co-designing a robot's body and control / Transformer Transformer 机器人本体与控制协同设计演示">
     <source src="{{ '/assets/video/embodied-ai/transformer-transformer.mp4' | relative_url }}" type="video/mp4">
