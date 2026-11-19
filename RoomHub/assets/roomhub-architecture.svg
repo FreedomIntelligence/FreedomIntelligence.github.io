@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="490" viewBox="0 0 1200 490" fill="none" role="img" aria-labelledby="architecture-title architecture-description">
+  <title id="architecture-title">Roomhub proposed research architecture</title>
+  <desc id="architecture-description">Video observations become a structured 3D scene. A Blender agent adds articulation and physical parameters. The resulting executable environment supports games and embodied agents. An execution, inspection and repair loop feeds validation results back to the agent.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 7 4 1 7" stroke="#663b93" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <marker id="arrow-muted" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 7 4 1 7" stroke="#aba2af" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <pattern id="dots" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#d9d2df"/></pattern>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif;fill:#26232b}
+      .mono{font-family:Consolas,'Liberation Mono',monospace;font-size:11px;letter-spacing:1.2px}
+      .title{font-size:20px;font-weight:500;letter-spacing:-.3px}
+      .label{font-size:14px}
+      .small{font-size:12px}
+      .muted{fill:#766d7b}
+      .purple{fill:#663b93}
+      .rule{stroke:#d7d3cf;stroke-width:1}
+      .line{stroke:#766d7b;stroke-width:1.35;stroke-linecap:round;stroke-linejoin:round}
+      .accent{stroke:#663b93;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+      .soft{stroke:#b7a9c4;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+  <rect width="1200" height="490" fill="#f9f8f4"/>
+  <text class="mono purple" x="24" y="28">PROPOSED PIPELINE</text>
+  <path d="M24 43H1176" class="rule"/>
+
+  <!-- 1. Video observations: successive views of the same space. -->
+  <text class="mono purple" x="24" y="77">01</text>
+  <text class="title" x="55" y="78">Observe</text>
+  <rect x="57" y="106" width="170" height="113" rx="3" fill="#f0ecf3" class="soft"/>
+  <rect x="43" y="118" width="170" height="113" rx="3" fill="#f5f2f6" class="soft"/>
+  <rect x="29" y="130" width="170" height="113" rx="3" fill="#fcfbf8" class="line"/>
+  <path d="M30 213 112 178 198 211M112 178V131" class="soft"/>
+  <path d="m52 178 33-13v38l-33 14zM59 180l19-7v26l-19 8z" class="soft"/>
+  <path d="m126 198 49 19v-30l-49-16z" fill="#e7deef" class="soft"/>
+  <path d="m150 179 0 28M130 190l14 5m13 5 13 5" class="soft"/>
+  <circle cx="43" cy="144" r="3" fill="#663b93"/>
+  <text x="53" y="148" class="mono muted" style="font-size:9px;letter-spacing:.5px">VIDEO</text>
+  <path d="M48 263c33 18 100 18 142-7" class="accent" stroke-dasharray="3 5" marker-end="url(#arrow)"/>
+  <circle cx="48" cy="263" r="4" fill="#663b93"/>
+  <circle cx="112" cy="274" r="3" fill="#f9f8f4" class="accent"/>
+  <text class="label" x="24" y="313">Video observations</text>
+  <text class="small muted" x="24" y="335">Appearance · views · object motion</text>
+
+  <!-- 2. Reconstructed geometry and explicit object structure. -->
+  <path d="M242 188H279" class="accent" marker-end="url(#arrow)"/>
+  <text class="mono purple" x="300" y="77">02</text>
+  <text class="title" x="331" y="78">Reconstruct</text>
+  <path d="m309 224 94-46 112 46-94 47z" fill="url(#dots)" class="soft"/>
+  <path d="m309 224 94-46V103l-94 46z" fill="#f2eef5" class="soft"/>
+  <path d="m403 103 112 46v75l-112-46z" fill="#f6f3f7" class="soft"/>
+  <path d="m309 149 112 46 94-46M421 195v76M337 136l112 46m-84-59 112 46M332 214l112 46m-88-58 112 46m-88-58 112 46M337 238l94-46m-65 60 94-47m-65 59 94-47" class="soft" stroke-dasharray="2 4"/>
+  <path d="m356 202 43-21 36 15-43 21z" fill="#d8c9e5" class="accent"/>
+  <path d="M356 202v29l36 15 43-21v-29M392 217v29" class="accent"/>
+  <path d="M470 110v20m0 0h-23m23 0h23M447 130v16m46-16v16" class="line"/>
+  <circle cx="470" cy="107" r="5" fill="#663b93"/>
+  <circle cx="447" cy="150" r="5" fill="#f9f8f4" class="accent"/>
+  <circle cx="493" cy="150" r="5" fill="#f9f8f4" class="accent"/>
+  <text class="label" x="300" y="313">A structured 3D scene</text>
+  <text class="small muted" x="300" y="335">Meshes · layout · scene graph</text>
+
+  <!-- 3. An agent edits explicit mechanisms, not only appearance. -->
+  <path d="M528 188H565" class="accent" marker-end="url(#arrow)"/>
+  <text class="mono purple" x="588" y="77">03</text>
+  <text class="title" x="619" y="78">Make interactive</text>
+  <path d="m611 144 85-27 104 35-86 29z" fill="#e9e1f0" class="line"/>
+  <path d="M611 144v101l103 37 86-31v-99M714 181v101" class="line"/>
+  <path d="m623 159 77 27v31l-77-27z" fill="#f1edf4" class="soft"/>
+  <path d="m623 203 40 15v50l-40-15z" fill="#f1edf4" class="soft"/>
+  <path d="m667 220 33 12v45l-33-12z" class="soft"/>
+  <path d="m626 158-22 12 77 28 22-12" fill="#ece4f2" class="accent"/>
+  <path d="M604 170v21l77 28v-21M681 219l22-12v-21" class="accent"/>
+  <path d="m646 183 16 6" class="accent"/>
+  <path d="m636 160-20 11" class="accent" marker-end="url(#arrow)"/>
+  <path d="m720 190 66-23v72l-66 23z" class="soft"/>
+  <path d="m786 167 34 40v71l-34-39z" fill="#ddd0e9" class="accent"/>
+  <path d="M786 161v84" class="accent" stroke-dasharray="3 4"/>
+  <path d="M752 206a37 37 0 0 0 61 27" class="accent" marker-end="url(#arrow)"/>
+  <circle cx="786" cy="167" r="3" fill="#663b93"/>
+  <text class="label" x="588" y="313">Blender agent</text>
+  <text class="small muted" x="588" y="335">Articulation · physical parameters</text>
+
+  <!-- 4. Executable scene, with two downstream research directions. -->
+  <path d="M832 188H869" class="accent" marker-end="url(#arrow)"/>
+  <text class="mono purple" x="894" y="77">04</text>
+  <text class="title" x="925" y="78">Use &amp; evaluate</text>
+  <path d="m910 217 110-53 143 49-111 55z" fill="#ece5f2" class="soft"/>
+  <path d="m910 217 110-53V114l-110 53z" fill="#f1edf4" class="soft"/>
+  <path d="m1020 114 143 49v50l-143-49z" fill="#f5f1f7" class="soft"/>
+  <path d="m931 228 111-55m-84 64 112-54m-84 64 112-54m-66 65 111-54M934 206l143 49m-115-63 144 49m-115-63 144 49" class="soft"/>
+  <path d="m935 181 49 17 31-15-49-17z" fill="#d8c9e5" class="accent"/>
+  <path d="M935 181v24l49 17 31-15v-24M984 198v24" class="accent"/>
+  <path d="M1073 172v25m-16 8 16-8 17 6m-33 2v9m33-11v9" class="accent"/>
+  <circle cx="1073" cy="164" r="8" fill="#e2d6ec" class="accent"/>
+  <path d="m1075 184 21-10 12 5" class="accent"/>
+  <circle cx="1111" cy="180" r="3" fill="#663b93"/>
+  <path d="m1024 235 18-9 17 6" class="accent" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+  <text class="label" x="894" y="313">Executable environments</text>
+  <text class="small muted" x="894" y="335">Games · embodied agents</text>
+
+  <!-- Validation is a feedback process, not an asserted result. -->
+  <path d="M1038 354v50H963" class="accent" marker-end="url(#arrow)"/>
+  <rect x="688" y="376" width="265" height="57" rx="3" fill="#eee7f3" stroke="#bba6ce"/>
+  <text class="label purple" x="820" y="399" text-anchor="middle">Execute / inspect / repair</text>
+  <text class="small muted" x="820" y="419" text-anchor="middle">Visual consistency · motion · contact</text>
+  <path d="M678 404H636V354" class="accent" marker-end="url(#arrow)"/>
+  <text class="mono muted" x="588" y="463" style="font-size:10px;letter-spacing:.8px">FEEDBACK TO SCENE EDITING</text>
+  <path d="M24 378H524" class="rule"/>
+  <text class="label" x="24" y="405">From a recorded view to an actionable world.</text>
+  <text class="small muted" x="24" y="427">Geometry describes what is there. Interaction describes what can happen.</text>
+</svg>
