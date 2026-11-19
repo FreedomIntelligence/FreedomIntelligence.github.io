@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f9f8f4">
+  <meta name="description" content="Roomhub 探索从视频观测到可交互 3D 世界的研究路线，连接视觉重建、智能体装配与执行验证。">
+  <title>roomhub · 从视频到可交互的世界</title>
+  <link rel="icon" type="image/svg+xml" href="assets/mark.svg">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="research.css">
+  <link rel="stylesheet" href="spatial-player.css">
+  <script defer src="video-source.js"></script>
+  <script defer src="spatial-data.js"></script>
+  <script defer src="assets/spatial-common/roomkit-three.js"></script>
+  <script defer src="spatial-view.js"></script>
+  <script defer src="spatial-cpu.js"></script>
+  <script defer src="spatial-player.js"></script>
+  <script defer src="site.js"></script>
+</head>
+<body id="top">
+  <a class="skip" href="#scenes" data-en="Skip to scenes">跳到场景展示</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="roomhub">
+        <img width="32" height="32" src="assets/mark.svg" alt="">
+        <span>roomhub</span>
+      </a>
+      <nav class="main-nav" aria-label="页面导航" data-aria-en="Page navigation">
+        <a href="#scenes" data-en="Demos">演示</a>
+        <a href="#overview" data-en="Overview" class="nav-extra">概述</a>
+        <a href="#architecture" data-en="Architecture">架构</a>
+        <a href="#vision" data-en="Vision">愿景</a>
+      </nav>
+      <button type="button" class="language" aria-label="Switch to English" id="language"><span class="lang-zh">中</span><span class="lang-slash">/</span><span class="lang-en">EN</span></button>
+    </div>
+  </header>
+  <main>
+    <section class="container project-intro" aria-labelledby="project-title">
+      <p class="eyebrow">Video · Interaction · Worlds</p>
+      <h1 id="project-title">roomhub</h1>
+      <p class="project-subtitle" data-en="From video to interactive worlds">从视频出发，构建可交互的世界</p>
+      <p class="project-summary" data-en="Reconstruct environments we can act in, experiment with, and learn from.">让重建场景成为可以行动、试验与学习的环境。</p>
+      <div class="project-links">
+        <a class="jump" href="#garden-study"><span aria-hidden="true">▷</span><span data-en="Live demo">交互演示</span></a>
+        <a class="project-link" href="#architecture"><span aria-hidden="true"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 13 13 3M4 3h9v9"/></svg></span><span data-en="Architecture">技术架构</span></a>
+        <a class="project-link" href="#vision"><span aria-hidden="true"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 13 13 3M4 3h9v9"/></svg></span><span data-en="Vision">研究愿景</span></a>
+      </div>
+    </section>
+    <section id="scenes" class="container gallery" aria-labelledby="scene-heading">
+      <aside class="scene-index">
+        <p class="eyebrow">01 / Interactive demos</p>
+        <h2 id="scene-heading" data-en="Try it yourself">亲手试一试</h2>
+        <p class="index-note" data-en="Our first examples explore doors, drawers and moving parts in everyday spaces.">从日常空间里的柜门、抽屉与活动部件开始。</p>
+        <div class="tabs" role="tablist" aria-label="选择场景" data-aria-en="Choose a scene" aria-orientation="vertical">
+          <button id="tab-1" data-address="garden-study" aria-controls="panel-1" aria-selected="true" role="tab" type="button" tabindex="0"><span class="scene-no">01</span><span data-en="Garden study">庭院书房</span><span class="tab-symbol" aria-hidden="true"></span></button>
+          <button id="tab-2" data-address="island-kitchen" aria-controls="panel-2" aria-selected="false" role="tab" type="button" tabindex="-1"><span class="scene-no">02</span><span data-en="Island kitchen">中岛厨房</span><span class="tab-symbol" aria-hidden="true"></span></button>
+        </div>
+      </aside>
+      <div class="panels">
+        <article class="panel" id="panel-1" role="tabpanel" aria-labelledby="tab-1">
+          <div class="scene-heading"><div class="scene-name"><h3 data-en="Garden study">庭院书房</h3></div></div>
+          <p class="scene-intro first-intro" data-en="The camera pans from the garden windows toward two built-in cabinets. Open a door or a drawer in the reconstruction and watch it stay open as the camera moves.">镜头从落地窗移向书柜。试着点开一扇柜门，或拉出一个抽屉，再看它怎样随着镜头移动留在原位。</p>
+          <div class="scene-viewer">
+            <div class="peel" aria-hidden="true"><span class="triangle"></span><span>PEEL SLOWLY AND SEE</span></div>
+            <spatial-player scene="sv-office"></spatial-player>
+          </div>
+          <p class="credit"><a href="https://huggingface.co/datasets/FelixYuan-YF/SpatialVID-HQ" target="_blank" rel="noopener noreferrer">SpatialVID · Wang et al.</a> · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">CC BY-NC-SA 4.0</a></p>
+        </article>
+        <article class="panel" id="panel-2" role="tabpanel" aria-labelledby="tab-2" hidden>
+          <div class="scene-heading"><div class="scene-name"><h3 data-en="Island kitchen">中岛厨房</h3></div></div>
+          <p class="scene-intro first-intro" data-en="As the camera moves, pull out an island drawer, open a cabinet, or lower the dishwasher door.">镜头还在走，你可以拉开中岛的抽屉、打开柜门，或试着放下洗碗机的门板。</p>
+          <div class="scene-viewer">
+            <div class="peel" aria-hidden="true"><span class="triangle"></span><span>PEEL SLOWLY AND SEE</span></div>
+            <spatial-player scene="sv-kitchen"></spatial-player>
+          </div>
+          <p class="credit"><a href="https://huggingface.co/datasets/FelixYuan-YF/SpatialVID-HQ" target="_blank" rel="noopener noreferrer">SpatialVID · Wang et al.</a> · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">CC BY-NC-SA 4.0</a></p>
+        </article>
+      </div>
+    </section>
+    <section class="overview-wrap" id="overview" aria-labelledby="overview-heading">
+      <div class="container overview-section">
+        <header>
+          <p class="eyebrow">02 / Overview</p>
+          <h2 class="section-title" id="overview-heading"><span data-en="A world to see.">看见一个世界，</span><em data-en="A world to act in.">也能在其中行动。</em></h2>
+        </header>
+        <div class="overview-copy">
+          <p class="lead-copy" data-en="Video captures how the world looks—and offers clues about how its objects are structured and move. Roomhub explores how to turn these observations into editable, actionable, and testable 3D environments.">视频记录了世界的外观，也留下了物体结构与运动方式的线索。Roomhub 探索如何利用这些线索，把视觉重建转化为可编辑、可操作、可验证的 3D 环境。</p>
+          <p data-en="We aim to connect visual reconstruction, agent-driven asset construction, and interaction testing. The goal is to make reconstructed worlds useful for gameplay, embodied learning, and repeatable experiments.">我们希望连接视觉重建、智能体装配与交互测试，让重建出来的世界能够承载游戏玩法、具身学习和可重复的实验。</p>
+          <div class="concept-line"><span data-en="Observe">观察</span><span aria-hidden="true">→</span><span data-en="Reconstruct">重建</span><span aria-hidden="true">→</span><span data-en="Interact">交互</span><span aria-hidden="true">→</span><span data-en="Learn">学习</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container research-section architecture-section" id="architecture" aria-labelledby="architecture-heading">
+      <header class="section-header">
+        <div><p class="eyebrow">03 / Architecture</p><h2 class="section-title" id="architecture-heading" data-en="From observations to executable environments">从视频观测，到可执行的环境</h2></div>
+        <span class="research-label" data-en="Research direction">研究路线</span>
+      </header>
+      <p class="section-deck" data-en="Recover the scene, give its parts meaningful behavior, then test those behaviors by executing them. Failed tests feed back into the construction process.">恢复场景结构，为部件赋予行为，再通过实际执行检验这些行为。测试中发现的问题，会回到装配环节继续修正。</p>
+      <figure class="architecture-figure">
+        <div class="diagram-scroll" tabindex="0" role="region" aria-label="技术架构图，可横向滚动查看" data-aria-en="Technical architecture diagram; scroll horizontally to explore">
+          <img src="assets/roomhub-architecture.svg" width="1200" height="490" alt="研究架构：视频观测经过视觉重建得到结构化场景；Blender 智能体装配活动部件和物理参数，经执行、检查、修正循环后输出可交互环境，用于游戏和具身智能。" data-alt-en="Research architecture: video observations become a structured scene through visual reconstruction. A Blender agent adds articulation and physical parameters. An execute, inspect and repair loop leads to interactive environments for games and embodied agents.">
+        </div>
+        <p class="diagram-hint" data-en="Swipe to explore the full architecture">左右滑动查看完整架构</p>
+        <figcaption><span>Fig. 01</span><span data-en="Proposed research pipeline. The demos above show the current interaction prototypes; the full pipeline is under development.">整体研究路线示意。上方 Demo 展示当前交互原型，完整流程仍在研究与开发中。</span></figcaption>
+      </figure>
+      <ol class="architecture-notes">
+        <li><span class="step-no">01</span><h3 data-en="Recover structure">恢复结构</h3><p data-en="Estimate geometry, camera poses and object structure from observations; separate appearance from editable geometry.">从观测估计几何、相机位姿与物体结构，连接视觉外观和可编辑的几何表示。</p></li>
+        <li><span class="step-no">02</span><h3 data-en="Construct behavior">构建行为</h3><p data-en="Let an agent identify movable parts and assign joints, motion limits, collision geometry and physical parameters.">让智能体识别活动部件，设置关节、运动范围、碰撞几何与物理参数。</p></li>
+        <li><span class="step-no">03</span><h3 data-en="Execute and refine">执行与修正</h3><p data-en="Run interactions in the environment, inspect their outcomes, and use failures to guide the next edit.">在环境中执行交互、观察结果，以失败案例指导下一轮修改。</p></li>
+      </ol>
+    </section>
+
+    <section class="questions-wrap" id="questions" aria-labelledby="questions-heading">
+      <div class="container research-section">
+        <header class="section-header"><div><p class="eyebrow">04 / Research questions</p><h2 class="section-title" id="questions-heading" data-en="What makes a reconstructed world usable?">怎样的重建世界，才真正可用？</h2></div></header>
+        <p class="section-deck" data-en="Our research asks how visual fidelity, executable behavior and task-level usefulness can be evaluated together.">我们关注如何共同检验视觉一致性、行为可执行性与任务层面的可用性。</p>
+        <div class="question-table-wrap">
+          <table class="question-table">
+            <thead><tr><th scope="col" data-en="Level">层次</th><th scope="col" data-en="Research question">研究问题</th><th scope="col" data-en="What to examine">观察什么</th></tr></thead>
+            <tbody>
+              <tr><th scope="row"><span class="row-no">01</span><span data-en="Structure">结构</span></th><td data-en="Can we recover the parts and relationships that make an object work?">能否恢复决定物体如何工作的部件与空间关系？</td><td data-en="Geometry, part boundaries, joint locations and scene layout.">几何形状、部件边界、关节位置与场景布局。</td></tr>
+              <tr><th scope="row"><span class="row-no">02</span><span data-en="Behavior">行为</span></th><td data-en="Do objects respond plausibly when opened, moved or brought into contact?">物体在开合、推拉和接触时，能否作出合理响应？</td><td data-en="Motion range, contact, interpenetration and physical stability.">运动范围、接触关系、穿模与物理稳定性。</td></tr>
+              <tr><th scope="row"><span class="row-no">03</span><span data-en="Tasks">任务</span></th><td data-en="Can individual interactions compose into repeatable tasks?">单个物体的交互，能否组合成可重复的任务？</td><td data-en="Action sequences, state changes and task completion conditions.">动作序列、状态变化与任务完成条件。</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="container research-section vision-section" id="vision" aria-labelledby="vision-heading">
+      <header class="section-header"><div><p class="eyebrow">05 / Vision</p><h2 class="section-title" id="vision-heading" data-en="Everyday spaces. New possibilities.">日常世界，新的可能。</h2></div></header>
+      <p class="section-deck" data-en="We start with rooms, but the research question extends to any environment where objects, actions and consequences matter.">我们从房间出发，研究的问题则面向更广泛的环境：只要其中有物体、有动作，也有动作带来的结果。</p>
+      <div class="vision-layout">
+        <figure class="vision-figure">
+          <img src="assets/roomhub-reading-room.svg" width="566" height="410" alt="Roomhub 原创阅读与聆听室示意图" data-alt-en="Roomhub's original illustration of a reading and listening room">
+          <figcaption><span class="eyebrow">A familiar place, a new world.</span><span data-en="A room is a starting point.">一个房间，是一个起点。</span></figcaption>
+        </figure>
+        <div class="vision-list">
+          <article><div class="vision-heading"><span class="row-no">01</span><h3 data-en="Worlds for games">为游戏创造世界</h3></div><p data-en="We envision turning a video of your own space into a playable setting—one you could rearrange and inhabit in a game like The Sims.">我们希望，一段自己家的视频就能成为可游玩的场景：在 The Sims 这样的游戏里，重新布置它，或者住进去。</p><span class="vision-tag" data-en="Real spaces → playable worlds">现实空间 → 可游玩的世界</span></article>
+          <article><div class="vision-heading"><span class="row-no">02</span><h3 data-en="Practice grounds for agents">为智能体提供练习场</h3></div><p data-en="Create environments grounded in real places, where agents can explore manipulation, contact and multi-step tasks before transferring skills to the physical world.">构建源自真实空间的练习环境，让智能体探索物体操作、接触和多步任务，为能力向现实世界迁移提供基础。</p><span class="vision-tag" data-en="Observe → practice → transfer">观察 → 练习 → 迁移</span></article>
+          <article><div class="vision-heading"><span class="row-no">03</span><h3 data-en="Testable interaction">让交互能力可以检验</h3></div><p data-en="Use executable tasks to study how object properties and interaction structure affect success, and make failures inspectable and reproducible.">用可执行任务研究物体属性与交互结构如何影响任务成功，让失败原因能够被检查和复现。</p><span class="vision-tag" data-en="Actions → outcomes → evidence">动作 → 结果 → 证据</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="status-wrap" id="status" aria-labelledby="status-heading">
+      <div class="container status-section">
+        <header><p class="eyebrow">06 / Project status</p><h2 class="section-title" id="status-heading" data-en="A research project in motion.">研究，正在进行。</h2></header>
+        <div class="status-copy"><p><strong data-en="Now">当前</strong><span data-en="Interactive video comparisons with doors, drawers and articulated parts you can operate in the browser.">可在浏览器中操作的交互视频对比，覆盖柜门、抽屉及关节部件。</span></p><p><strong data-en="Next">下一步</strong><span data-en="Connect reconstruction, agent-driven construction and execution-based validation; extend the diversity of objects, scenes and tasks.">连接重建、智能体装配与执行验证，扩展物体、场景和任务的多样性。</span></p><a class="text-link" href="#garden-study"><span data-en="Back to the demos">回到交互演示</span><span aria-hidden="true"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 13 13 3M4 3h9v9"/></svg></span></a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="container footer"><div class="footer-identity"><span class="footer-name">roomhub</span><span data-en="From video to interactive worlds">从视频到可交互的世界</span></div><a href="#top"><span data-en="Back to top">回到顶部</span> <span aria-hidden="true">↑</span></a></footer>
+  <noscript><p>请启用 JavaScript，以使用视频对比和家具交互。</p></noscript>
+</body>
+</html>

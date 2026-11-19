@@ -1,0 +1,1 @@
+async function roomhubVideoSource(t){if(!/^https?:$/.test(new URL(t,document.baseURI).protocol))return t;try{const e=await fetch(t,{headers:{Range:"bytes=0-0"}});if(200===e.status)return URL.createObjectURL(await e.blob());await(e.body?.cancel())}catch{}return t}

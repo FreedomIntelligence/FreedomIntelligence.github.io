@@ -1,0 +1,9 @@
+Source footage: SpatialVID: A Large-Scale Video Dataset with Spatial Annotations, Wang et al.
+Dataset: FelixYuan-YF/SpatialVID-HQ — https://huggingface.co/datasets/FelixYuan-YF/SpatialVID-HQ
+Recorded source license: CC-BY-NC-SA-4.0. Retain attribution, noncommercial and share-alike requirements for source footage and derivatives.
+Kitchen source: 116c9a67-1dad-563a-9d3e-b2df6bd348e9; office source: bbf816db-beb4-5710-a2a9-25488c269175; group_0074.
+The source videos were transformed into authored editable geometry, materials, camera animation and a browser export using the deployed AHa-3D workflow. Authorized SAM3 substitute: SegFormer B2 + Mask R-CNN masks.
+AHa-3D project-authored code/assets: Apache-2.0 per deployed DISTRIBUTION.md; bundled LICENSE-AHa-3D.txt. Kitchen faucet is the project's registered Simple Gooseneck asset (manifest included).
+Office oak_veneer_01: Poly Haven / Jenelle van Heerden, CC0, https://polyhaven.com/a/oak_veneer_01
+Office approaching_storm environment: Poly Haven / Greg Zaal, CC0, https://polyhaven.com/a/approaching_storm
+These material/environment sources provide appearance context; they are not recovered physical measurements.
