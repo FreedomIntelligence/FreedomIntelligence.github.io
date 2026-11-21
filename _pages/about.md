@@ -756,11 +756,9 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
       <div class="contact-icons">
         {% include social.html %}
       </div>
-      <div class="contact-note">
-        {{ site.contact_note }}
-      </div>
     </div>
   </div>
+  {% include home-visitors.html %}
 </div>
 
 <script>

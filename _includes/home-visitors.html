@@ -1,0 +1,25 @@
+<style>
+  .home-visitors {
+    margin: 2rem auto 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--global-divider-color);
+    text-align: center;
+  }
+  .home-visitors h2 { margin-bottom: 1rem; font-size: 1.4rem; }
+  .home-visitors__map { display: block; max-width: 620px; margin: 0 auto 0.75rem; }
+  .home-visitors__map img { display: block; width: 100%; height: auto; border: 0; }
+  .home-visitors__note { max-width: 640px; margin: 0.75rem auto 0.4rem; font-size: 0.85rem; line-height: 1.6; color: var(--global-text-color-light); }
+  .home-visitors__credit { font-size: 0.8rem; }
+  .home-visitors [hidden] { display: none !important; }
+</style>
+<section class="home-visitors" aria-labelledby="home-visitors-heading">
+  <h2 id="home-visitors-heading"><span data-lang="en">Visitors around the world</span><span data-lang="zh">来自世界各地的访客</span></h2>
+  <a class="home-visitors__map" href="https://info.flagcounter.com/ftZb" target="_blank" rel="noopener noreferrer" hidden>
+    <img id="home-visitors-map" data-src="https://s05.flagcounter.com/map/ftZb/size_l/txt_333333/border_DDDDDD/pageviews_1/viewers_0/flags_0/" alt="World visitor map and homepage page-view count — Flag Counter" decoding="async">
+  </a>
+  <a href="https://info.flagcounter.com/ftZb" target="_blank" rel="noopener noreferrer"><span data-lang="en">Visitor totals &amp; country details</span><span data-lang="zh">查看访客人数与国家／地区详情</span></a>
+  <p class="home-visitors__note"><span data-lang="en">Since November 21, 2026 · Approximate location by IP. Visitors are deduplicated within 24 hours; page views count homepage loads.</span><span data-lang="zh">自 2026 年 11 月 21 日起统计 · 按 IP 估算来源。访客在 24 小时内去重；浏览量按首页加载次数计算。</span></p>
+  <p class="home-visitors__note" id="home-visitors-unavailable" hidden><span data-lang="en">The map is currently unavailable. You can still open the visitor details above.</span><span data-lang="zh">地图暂时无法加载，仍可通过上方链接查看访问详情。</span></p>
+  <a class="home-visitors__credit" href="https://flagcounter.com/privacy.html" target="_blank" rel="noopener noreferrer"><span data-lang="en">Flag Counter · Privacy</span><span data-lang="zh">Flag Counter · 隐私说明</span></a>
+</section>
+<script src="{{ '/assets/js/home-visitors.js' | relative_url }}" defer></script>
