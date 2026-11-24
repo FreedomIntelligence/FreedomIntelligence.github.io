@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+<title id="t">语音大模型</title>
+<desc id="d">从文本走向语音输入与输出，理解语气、情绪与副语言信息</desc>
+<defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.1" fill="#dcdce0"/></pattern><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#18181b"/></marker><marker id="ahf" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8e8e99"/></marker></defs>
+<rect width="1200" height="675" fill="#fbfbfb"/>
+<rect width="1200" height="675" fill="url(#dots)"/>
+<g font-family="Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+<text x="72" y="92" fill="#52525b" font-size="16" font-weight="600" text-anchor="start" letter-spacing="2">多模态交互 · 语音</text>
+<text x="72" y="148" fill="#18181b" font-size="44" font-weight="700" text-anchor="start">语音大模型</text>
+<text x="72" y="190" fill="#52525b" font-size="21" font-weight="400" text-anchor="start">从文本走向语音输入与输出，理解语气、情绪与副语言信息</text>
+<rect x="72" y="291" width="323" height="218" rx="18" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<rect x="94" y="313" width="48" height="48" rx="13" fill="#18181b"/>
+<g transform="translate(106.0 325.0) scale(1.0000)" fill="none" stroke="#ffffff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19v3" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><rect x="9" y="2" width="6" height="13" rx="3" /></g>
+<text x="156" y="343" fill="#8e8e99" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">01</text>
+<text x="94" y="395" fill="#52525b" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">听</text>
+<text x="94" y="431" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">语音输入</text>
+<text x="94" y="469" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">用更少数据完成语音与文本对齐</text>
+<line x1="402" y1="400" x2="432" y2="400" stroke="#18181b" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="439" y="291" width="323" height="218" rx="18" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<rect x="461" y="313" width="48" height="48" rx="13" fill="#18181b"/>
+<g transform="translate(472.7 325.0) scale(1.0000)" fill="none" stroke="#ffffff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10v3" /><path d="M6 6v11" /><path d="M10 3v18" /><path d="M14 8v7" /><path d="M18 5v13" /><path d="M22 10v3" /></g>
+<text x="523" y="343" fill="#8e8e99" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">02</text>
+<text x="461" y="395" fill="#52525b" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">懂</text>
+<text x="461" y="431" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">语义与副语言</text>
+<text x="461" y="469" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">语气 · 情绪 · 共情 · 言外之意</text>
+<line x1="768" y1="400" x2="798" y2="400" stroke="#18181b" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="805" y="291" width="323" height="218" rx="18" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<rect x="827" y="313" width="48" height="48" rx="13" fill="#18181b"/>
+<g transform="translate(839.3 325.0) scale(1.0000)" fill="none" stroke="#ffffff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z" /><path d="M16 9a5 5 0 0 1 0 6" /><path d="M19.364 18.364a9 9 0 0 0 0-12.728" /></g>
+<text x="889" y="343" fill="#8e8e99" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">03</text>
+<text x="827" y="395" fill="#52525b" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">说</text>
+<text x="827" y="431" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">语音输出</text>
+<text x="827" y="469" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">在 S2S-Arena 与语音对话图灵测试中</text>
+<text x="827" y="491" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">评测</text>
+<rect x="72" y="550" width="121" height="38" rx="19" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<text x="132" y="575" fill="#18181b" font-size="16" font-weight="600" text-anchor="middle">Soundwave</text>
+<rect x="203" y="550" width="121" height="38" rx="19" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<text x="263" y="575" fill="#18181b" font-size="16" font-weight="600" text-anchor="middle">S2S-Arena</text>
+<rect x="334" y="550" width="108" height="38" rx="19" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<text x="388" y="575" fill="#18181b" font-size="16" font-weight="600" text-anchor="middle">EchoMind</text>
+<rect x="452" y="550" width="128" height="38" rx="19" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<text x="516" y="575" fill="#18181b" font-size="16" font-weight="600" text-anchor="middle">FusionAudio</text>
+<rect x="590" y="550" width="119" height="38" rx="19" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<text x="649" y="575" fill="#18181b" font-size="16" font-weight="600" text-anchor="middle">UNSPOKEN</text>
+</g></svg>

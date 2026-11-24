@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+<title id="t">大模型效率与 AI 基础设施</title>
+<desc id="d">跑得起、训得动、改得快</desc>
+<defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.1" fill="#dcdce0"/></pattern><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#18181b"/></marker><marker id="ahf" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8e8e99"/></marker></defs>
+<rect width="1200" height="675" fill="#fbfbfb"/>
+<rect width="1200" height="675" fill="url(#dots)"/>
+<g font-family="Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+<text x="72" y="92" fill="#52525b" font-size="16" font-weight="600" text-anchor="start" letter-spacing="2">AI 基础设施 · 效率</text>
+<text x="72" y="148" fill="#18181b" font-size="44" font-weight="700" text-anchor="start">大模型效率与 AI 基础设施</text>
+<text x="72" y="190" fill="#52525b" font-size="21" font-weight="400" text-anchor="start">跑得起、训得动、改得快</text>
+<rect x="72" y="337" width="246" height="196" rx="18" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<rect x="94" y="359" width="48" height="48" rx="13" fill="#18181b"/>
+<g transform="translate(106.0 371.0) scale(1.0000)" fill="none" stroke="#ffffff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3" /><path d="M8.12 8.12 12 12" /><path d="M20 4 8.12 15.88" /><circle cx="6" cy="18" r="3" /><path d="M14.8 14.8 20 20" /></g>
+<text x="156" y="389" fill="#8e8e99" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">01</text>
+<text x="94" y="441" fill="#52525b" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">少推理</text>
+<text x="94" y="477" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">剪枝推理路径</text>
+<text x="94" y="515" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">STOP / Cut Your Losses</text>
+<rect x="342" y="337" width="246" height="196" rx="18" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<rect x="364" y="359" width="48" height="48" rx="13" fill="#18181b"/>
+<g transform="translate(376.0 371.0) scale(1.0000)" fill="none" stroke="#ffffff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" /><circle cx="7.5" cy="7.5" r=".5" fill="currentColor" /></g>
+<text x="426" y="389" fill="#8e8e99" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">02</text>
+<text x="364" y="441" fill="#52525b" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">少微调</text>
+<text x="364" y="477" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">更少监督</text>
+<text x="364" y="515" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">QFFT · UPFT</text>
+<rect x="612" y="337" width="246" height="196" rx="18" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<rect x="634" y="359" width="48" height="48" rx="13" fill="#18181b"/>
+<g transform="translate(646.0 371.0) scale(1.0000)" fill="none" stroke="#ffffff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3" /><path d="M3 5V19A9 3 0 0 0 21 19V5" /><path d="M3 12A9 3 0 0 0 21 12" /></g>
+<text x="696" y="389" fill="#8e8e99" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">03</text>
+<text x="634" y="441" fill="#52525b" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">快更新</text>
+<text x="634" y="477" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">可编辑 KV 缓存</text>
+<text x="634" y="515" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">E2-RAG</text>
+<rect x="882" y="337" width="246" height="196" rx="18" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<rect x="904" y="359" width="48" height="48" rx="13" fill="#18181b"/>
+<g transform="translate(916.0 371.0) scale(1.0000)" fill="none" stroke="#ffffff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M21 9v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7" /><line x1="16" x2="22" y1="5" y2="5" /><circle cx="9" cy="9" r="2" /><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /></g>
+<text x="966" y="389" fill="#8e8e99" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">04</text>
+<text x="904" y="441" fill="#52525b" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">省视觉</text>
+<text x="904" y="477" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">更少视觉 token</text>
+<text x="904" y="515" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">TRIM · LongLLaVA</text>
+</g></svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+<title id="t">智能体创作与可执行产物</title>
+<desc id="d">不看“说得像不像”，而看能否运行、渲染与验证</desc>
+<defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.1" fill="#dcdce0"/></pattern><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#18181b"/></marker><marker id="ahf" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8e8e99"/></marker></defs>
+<rect width="1200" height="675" fill="#fbfbfb"/>
+<rect width="1200" height="675" fill="url(#dots)"/>
+<g font-family="Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+<text x="72" y="92" fill="#52525b" font-size="16" font-weight="600" text-anchor="start" letter-spacing="2">智能体 AI · 创作</text>
+<text x="72" y="148" fill="#18181b" font-size="44" font-weight="700" text-anchor="start">智能体创作与可执行产物</text>
+<text x="72" y="190" fill="#52525b" font-size="21" font-weight="400" text-anchor="start">不看“说得像不像”，而看能否运行、渲染与验证</text>
+<rect x="72" y="288" width="231" height="218" rx="18" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<rect x="94" y="310" width="48" height="48" rx="13" fill="#18181b"/>
+<g transform="translate(106.0 322.0) scale(1.0000)" fill="none" stroke="#ffffff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" /><path d="M7 11h10" /><path d="M7 15h6" /><path d="M7 7h8" /></g>
+<text x="156" y="340" fill="#8e8e99" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">01</text>
+<text x="94" y="392" fill="#52525b" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">需求</text>
+<text x="94" y="428" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">自然语言指令</text>
+<text x="94" y="466" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">游戏规格 · CAD 需求 · 运</text>
+<text x="94" y="488" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">筹问题</text>
+<line x1="310" y1="397" x2="340" y2="397" stroke="#18181b" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="347" y="288" width="231" height="218" rx="18" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<rect x="369" y="310" width="48" height="48" rx="13" fill="#18181b"/>
+<g transform="translate(381.0 322.0) scale(1.0000)" fill="none" stroke="#ffffff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8" /><rect width="16" height="12" x="4" y="8" rx="2" /><path d="M2 14h2" /><path d="M20 14h2" /><path d="M15 13v2" /><path d="M9 13v2" /></g>
+<text x="431" y="340" fill="#8e8e99" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">02</text>
+<text x="369" y="392" fill="#52525b" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">智能体</text>
+<text x="369" y="428" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">编写与调试</text>
+<text x="369" y="466" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">编程智能体与大模型</text>
+<line x1="585" y1="397" x2="615" y2="397" stroke="#18181b" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="622" y="288" width="231" height="218" rx="18" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<rect x="644" y="310" width="48" height="48" rx="13" fill="#18181b"/>
+<g transform="translate(656.0 322.0) scale(1.0000)" fill="none" stroke="#ffffff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" /><path d="M12 22V12" /><polyline points="3.29 7 12 12 20.71 7" /><path d="m7.5 4.27 9 5.15" /></g>
+<text x="706" y="340" fill="#8e8e99" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">03</text>
+<text x="644" y="392" fill="#52525b" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">产物</text>
+<text x="644" y="428" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">可运行的输出</text>
+<text x="644" y="466" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">Godot 游戏 · Blender 脚</text>
+<text x="644" y="488" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">本 · 求解器</text>
+<line x1="860" y1="397" x2="890" y2="397" stroke="#18181b" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="897" y="288" width="231" height="218" rx="18" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<rect x="919" y="310" width="48" height="48" rx="13" fill="#18181b"/>
+<g transform="translate(931.0 322.0) scale(1.0000)" fill="none" stroke="#ffffff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></g>
+<text x="981" y="340" fill="#8e8e99" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">04</text>
+<text x="919" y="392" fill="#52525b" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">验证</text>
+<text x="919" y="428" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">运行与验证</text>
+<text x="919" y="466" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">GameCraft-Bench ·</text>
+<text x="919" y="488" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">CADBench · Mamo</text>
+<path d="M1012 512 V562 H188 V520" fill="none" stroke="#8e8e99" stroke-width="2.5" stroke-dasharray="7 7" marker-end="url(#ahf)"/>
+<rect x="546" y="543" width="108" height="38" rx="19" fill="#18181b"/>
+<text x="600" y="568" fill="#ffffff" font-size="16" font-weight="600" text-anchor="middle">执行反馈</text>
+</g></svg>
