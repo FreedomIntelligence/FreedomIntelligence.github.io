@@ -5,6 +5,7 @@ date: 2026-07-05
 permalink: /blog/2026/slai-open-day-interview/
 description: "A conversation on why AI must model human beliefs, close real-world feedback loops, and use language-centered intelligence to act responsibly in messy worlds."
 tags: slai open-day world-models medical-ai language-models research
+research: [environment-engineering-world-models, economic-world-models]
 
 authors:
   - name: Benyou Wang

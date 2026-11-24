@@ -2,7 +2,7 @@
 layout: default
 title: About
 permalink: /
-description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loop Area Institute.
+description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loop Area Institute, working on agentic AI, physical AI, multimodal interaction, AI infrastructure, AI applications such as HuatuoGPT, and evaluation and safety.
 ---
 
 <style>
@@ -280,29 +280,170 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     max-width: 250px;
   }
 
-  .home-grid {
+  .home-section__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem 1.5rem;
+  }
+
+  .home-section__head h2 {
+    margin-bottom: 0.75rem;
+  }
+
+  .home-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: var(--global-theme-color);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .home-more .rx-i {
+    font-size: 0.8em;
+    transition: transform 0.18s ease;
+  }
+
+  .home-more:hover {
+    text-decoration: none;
+  }
+
+  .home-more:hover .rx-i {
+    transform: translateX(3px);
+  }
+
+  .home-more [data-lang],
+  .home-button [data-lang],
+  .home-post [data-lang] {
+    color: inherit;
+  }
+
+  .home-hero .home-button--light {
+    gap: 0.5rem;
+    border-color: #fff;
+    background: #fff;
+    color: #0b1220;
+  }
+
+  .home-hero .home-button--light:hover {
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.88);
+    color: #0b1220;
+  }
+
+  .home-hero .home-button--light .rx-i {
+    font-size: 0.8em;
+  }
+
+  .home-latest {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 14px;
-    margin-top: 1.15rem;
+    gap: 1rem;
+    margin-top: 0.4rem;
   }
 
-  .home-card {
+  .home-post {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
     border: 1px solid var(--global-divider-color);
-    border-radius: 8px;
-    padding: 17px;
+    border-radius: 14px;
     background: var(--global-bg-color);
+    color: var(--global-text-color);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
   }
 
-  .home-card h3 {
-    margin: 0 0 0.55rem;
-    font-size: 1.05rem;
+  .home-post:hover {
+    color: var(--global-text-color);
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.09);
   }
 
-  .home-card p {
-    margin: 0;
-    color: var(--global-text-color-light);
-    line-height: 1.62;
+  .home-post__thumb {
+    display: block;
+    aspect-ratio: 1200 / 630;
+    overflow: hidden;
+    background: #0b1220;
+  }
+
+  .home-post__thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .home-post__generated {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.4rem;
+    height: 100%;
+    padding: 1rem 1.15rem 1.1rem;
+    background: radial-gradient(circle at 88% 12%, rgba(255, 255, 255, 0.1), transparent 46%), #16161a;
+  }
+
+  .home-post__generated small {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .home-post__generated strong,
+  .home-post__generated strong span {
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+
+  .home-post__body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 0.95rem 1.1rem 1.15rem;
+  }
+
+  .home-post__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.3rem 0.9rem;
+    color: var(--rx-muted);
+    font-size: 0.84rem;
+  }
+
+  .home-post__meta time {
+    color: inherit;
+  }
+
+  .home-post span.home-post__dir {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--rx-ink);
+  }
+
+  .home-post__title {
+    font-size: 1.02rem;
+    font-weight: 500;
+    line-height: 1.45;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .home-post,
+    .home-more .rx-i {
+      transition: none;
+    }
+
+    .home-post:hover {
+      transform: none;
+    }
   }
 
   .home-impact {
@@ -514,7 +655,6 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
   }
 
   @media (max-width: 900px) {
-    .home-grid,
     .home-impact-summary,
     .home-impact-platforms,
     .home-impact-deployments,
@@ -543,11 +683,11 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
       font-size: 2.45rem;
     }
 
-    .home-grid,
     .home-impact-summary,
     .home-impact-platforms,
     .home-impact-deployments,
-    .home-showcase {
+    .home-showcase,
+    .home-latest {
       grid-template-columns: 1fr;
     }
 
@@ -582,30 +722,31 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
 </style>
 
 <div class="home-page">
-  <section class="home-hero">
+  <link rel="stylesheet" href="{{ '/assets/css/research.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  <section class="home-hero" aria-label="Freedom AI">
     <span class="home-hero__slide">
-      <img src="/assets/img/freedomai-2026/life/slai-ccf-campus-night.jpg" alt="CCF community event at Shenzhen Loop Area Institute">
-      <span class="home-hero__tag">CCF at SLAI</span>
+      <img src="/assets/img/freedomai-2026/life/slai-ccf-campus-night.jpg" alt="CCF community event at Shenzhen Loop Area Institute" width="1920" height="1279" fetchpriority="high">
+      <span class="home-hero__tag"><span data-lang="en">CCF at SLAI</span><span data-lang="zh">CCF 走进河套学院</span></span>
     </span>
     <span class="home-hero__slide home-hero__slide--focus-right">
-      <img src="/assets/img/freedomai-2026/life/basketball-day-layup.jpg" alt="Freedom AI daytime basketball activity">
-      <span class="home-hero__tag">Basketball together</span>
+      <img src="/assets/img/freedomai-2026/life/basketball-day-layup.jpg" alt="Freedom AI daytime basketball activity" width="1920" height="1080" fetchpriority="low" decoding="async">
+      <span class="home-hero__tag"><span data-lang="en">Basketball together</span><span data-lang="zh">一起打篮球</span></span>
     </span>
     <span class="home-hero__slide">
-      <img src="/assets/img/freedomai-2026/life/football.png" alt="Freedom AI football on a rainy court">
-      <span class="home-hero__tag">Football in the rain</span>
+      <img src="/assets/img/freedomai-2026/life/football.png" alt="Freedom AI football on a rainy court" width="881" height="496" fetchpriority="low" decoding="async">
+      <span class="home-hero__tag"><span data-lang="en">Football in the rain</span><span data-lang="zh">雨中足球</span></span>
     </span>
     <span class="home-hero__slide">
-      <img src="/assets/img/freedomai-2026/life/rooftop-night-gathering.jpg" alt="Freedom AI rooftop night gathering">
-      <span class="home-hero__tag">Rooftop talks</span>
+      <img src="/assets/img/freedomai-2026/life/rooftop-night-gathering.jpg" alt="Freedom AI rooftop night gathering" width="1706" height="1279" fetchpriority="low" decoding="async">
+      <span class="home-hero__tag"><span data-lang="en">Rooftop talks</span><span data-lang="zh">天台夜谈</span></span>
     </span>
     <span class="home-hero__slide">
-      <img src="/assets/img/freedomai-2026/life/table-games-mahjong-room.jpg" alt="Freedom AI table games gathering">
-      <span class="home-hero__tag">Table games</span>
+      <img src="/assets/img/freedomai-2026/life/table-games-mahjong-room.jpg" alt="Freedom AI table games gathering" width="1920" height="1080" fetchpriority="low" decoding="async">
+      <span class="home-hero__tag"><span data-lang="en">Table games</span><span data-lang="zh">桌游时光</span></span>
     </span>
     <span class="home-hero__slide">
-      <img src="/assets/img/freedomai-2026/life/bonfire.jpg" alt="Freedom AI bonfire gathering">
-      <span class="home-hero__tag">Bonfire night</span>
+      <img src="/assets/img/freedomai-2026/life/bonfire.jpg" alt="Freedom AI bonfire gathering" width="719" height="550" fetchpriority="low" decoding="async">
+      <span class="home-hero__tag"><span data-lang="en">Bonfire night</span><span data-lang="zh">篝火之夜</span></span>
     </span>
     <div class="home-hero__controls" aria-label="Hero carousel controls">
       <button class="home-hero__control" type="button" aria-label="Previous slide" title="Previous slide" data-home-hero-prev>
@@ -618,48 +759,69 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     <div class="home-hero__content">
       <div class="home-hero__copy">
         <h1>Freedom AI</h1>
-        <p><span data-lang="en">free humanity from the boundaries of life through AI.</span><span data-lang="zh">用 AI 让人类突破生命的边界。</span></p>
+        <p><span data-lang="en">Free humanity from the boundaries of life through AI.</span><span data-lang="zh">用 AI 让人类突破生命的边界。</span></p>
       </div>
       <div class="home-actions">
-        <a class="home-button" href="/life/"><span data-lang="en">Life</span><span data-lang="zh">生活</span></a>
-        <a class="home-button" href="/blog/"><span data-lang="en">Blog</span><span data-lang="zh">博客</span></a>
+        <a class="home-button home-button--light" href="{{ '/projects/' | relative_url }}"><span data-lang="en">Explore our research</span><span data-lang="zh">了解我们的研究</span>{% include icon.html name="arrow-right" %}</a>
+        <a class="home-button" href="{{ '/life/' | relative_url }}"><span data-lang="en">Life</span><span data-lang="zh">生活</span></a>
+        <a class="home-button" href="{{ '/blog/' | relative_url }}"><span data-lang="en">Blog</span><span data-lang="zh">博客</span></a>
       </div>
     </div>
   </section>
 
-  <section class="home-section">
-    <h2><span data-lang="en">Research Directions</span><span data-lang="zh">研究方向</span></h2>
-    <p class="home-section__intro"><span data-lang="en">Our work focuses on open, capable, and deployable AI systems, with a strong emphasis on reasoning, medicine, multimodality, agents, and evaluation.</span><span data-lang="zh">我们的工作聚焦于开放、有能力、可部署的 AI 系统，重点涵盖推理、医学、多模态、智能体与评测。</span></p>
-    <div class="home-grid">
-      <div class="home-card">
-        <h3><span data-lang="en">Large Language Models</span><span data-lang="zh">大语言模型</span></h3>
-        <p><span data-lang="en">Open-source LLM infrastructure, multilingual adaptation, reasoning, optimization, and alignment.</span><span data-lang="zh">开源大模型基础设施、多语言适配、推理、优化与对齐。</span></p>
-      </div>
-      <div class="home-card">
-        <h3><span data-lang="en">Medical AI</span><span data-lang="zh">医疗 AI</span></h3>
-        <p><span data-lang="en">HuatuoGPT, Apollo, medical benchmarks, multimodal medical models, and clinical deployment.</span><span data-lang="zh">HuatuoGPT、Apollo、医学评测基准、多模态医学模型和临床部署。</span></p>
-      </div>
-      <div class="home-card">
-        <h3><span data-lang="en">Multimodal Intelligence</span><span data-lang="zh">多模态智能</span></h3>
-        <p><span data-lang="en">Vision-language, audio-language, long-context multimodal models, and large-scale evaluation.</span><span data-lang="zh">视觉语言、音频语言、长上下文多模态模型及大规模评测。</span></p>
-      </div>
-      <div class="home-card">
-        <h3><span data-lang="en">Agents and Tools</span><span data-lang="zh">智能体与工具</span></h3>
-        <p><span data-lang="en">Tool-use systems, HCI workflows, MCP applications, RAG systems, and privacy-aware agents.</span><span data-lang="zh">工具使用系统、人机交互工作流、MCP 应用、RAG 系统和隐私感知智能体。</span></p>
-      </div>
-      <div class="home-card">
-        <h3><span data-lang="en">Evaluation and Safety</span><span data-lang="zh">评测与安全</span></h3>
-        <p><span data-lang="en">Benchmarks and analysis for LLM capabilities, robustness, responsibility, and real-world readiness.</span><span data-lang="zh">大模型能力、鲁棒性、责任性与真实场景适用性的基准与分析。</span></p>
-      </div>
-      <div class="home-card">
-        <h3><span data-lang="en">AI for Society</span><span data-lang="zh">AI 赋能社会</span></h3>
-        <p><span data-lang="en">Financial AI, socio-economic simulations, education, healthcare access, and public-good applications.</span><span data-lang="zh">金融 AI、社会经济模拟、教育、医疗普及与公益应用。</span></p>
-      </div>
+  {%- comment -%}
+    Research Directions: rendered from _data/research.yml, the same data as /projects/,
+    so the two pages always show the same six directions. Each card opens its
+    section of /projects/; each chip opens that program.
+  {%- endcomment -%}
+  {%- assign projects_url = '/projects/' | relative_url %}
+  <section class="home-section" id="research" aria-labelledby="home-research-title">
+    <div class="home-section__head">
+      <h2 id="home-research-title"><span data-lang="en">Research Directions</span><span data-lang="zh">研究方向</span></h2>
+      <a class="home-more" href="{{ projects_url }}"><span data-lang="en">All projects</span><span data-lang="zh">查看全部项目</span>{% include icon.html name="arrow-right" %}</a>
+    </div>
+    <p class="home-section__intro"><span data-lang="en">We build open, capable, and deployable AI across six connected directions: agentic AI, physical AI, multimodal interaction, AI for infrastructure, AI applications, and evaluation and safety.</span><span data-lang="zh">我们围绕六个相互连接的方向，构建开放、强大、可落地的 AI：智能体 AI、物理 AI、多模态交互、AI 基础设施、AI 应用，以及评测与安全。</span></p>
+    {% include research/direction-index.html base=projects_url %}
+  </section>
+
+  <section class="home-section" aria-labelledby="home-latest-title">
+    <div class="home-section__head">
+      <h2 id="home-latest-title"><span data-lang="en">Latest from the Lab</span><span data-lang="zh">最新动态</span></h2>
+      <a class="home-more" href="{{ '/blog/' | relative_url }}"><span data-lang="en">All posts</span><span data-lang="zh">全部文章</span>{% include icon.html name="arrow-right" %}</a>
+    </div>
+    <div class="home-latest">
+      {%- for post in site.posts limit: 3 %}
+      {%- if post.redirect == blank %}{% assign post_href = post.url | relative_url %}{% elsif post.redirect contains '://' %}{% assign post_href = post.redirect %}{% else %}{% assign post_href = post.redirect | relative_url %}{% endif %}
+      {%- assign post_image = post.og_image | default: post.image | default: post.img | default: post.thumbnail %}
+      {%- if post_image contains '://' %}{% assign post_image_url = post_image %}{% elsif post_image != blank %}{% assign post_image_url = post_image | prepend: '/' | replace: '//', '/' | relative_url %}{% else %}{% assign post_image_url = '' %}{% endif %}
+      {%- if post.title_en %}{% assign title_en = post.title_en %}{% assign title_zh = post.title %}{% elsif post.title_zh %}{% assign title_en = post.title %}{% assign title_zh = post.title_zh %}{% else %}{% assign title_en = post.title %}{% assign title_zh = post.title %}{% endif %}
+      {%- assign post_dir = nil %}{% assign post_rid = post.research | first %}
+      {%- for rd in site.data.research.directions %}{% if rd.id == post_rid %}{% assign post_dir = rd %}{% endif %}{% for rt in rd.topics %}{% if rt.id == post_rid %}{% assign post_dir = rd %}{% endif %}{% endfor %}{% endfor %}
+      <a class="home-post" href="{{ post_href }}"{% if post.redirect contains '://' %} target="_blank" rel="noopener"{% endif %}>
+        <span class="home-post__thumb">
+          {%- if post_image_url != '' and post.thumbnail_en %}
+          <img data-lang="en" src="{{ post.thumbnail_en | relative_url }}" alt="" loading="lazy" decoding="async">
+          <img data-lang="zh" src="{{ post_image_url }}" alt="" loading="lazy" decoding="async">
+          {%- elsif post_image_url != '' %}
+          <img src="{{ post_image_url }}" alt="" loading="lazy" decoding="async">
+          {%- else %}
+          <span class="home-post__generated" aria-hidden="true"><small>Freedom AI Blog</small><strong><span data-lang="en">{{ title_en }}</span><span data-lang="zh">{{ title_zh }}</span></strong></span>
+          {%- endif %}
+        </span>
+        <span class="home-post__body">
+          <span class="home-post__meta"><time datetime="{{ post.date | date_to_xmlschema }}"><span data-lang="en">{{ post.date | date: '%b %-d, %Y' }}</span><span data-lang="zh">{{ post.date | date: '%Y年%-m月%-d日' }}</span></time>{% if post_dir %}<span class="home-post__dir">{% include icon.html name=post_dir.icon %}<span data-lang="en">{{ post_dir.name }}</span><span data-lang="zh">{{ post_dir.name_zh }}</span></span>{% endif %}</span>
+          <span class="home-post__title"><span data-lang="en">{{ title_en }}</span><span data-lang="zh">{{ title_zh }}</span></span>
+        </span>
+      </a>
+      {%- endfor %}
     </div>
   </section>
 
-  <section class="home-section">
-    <h2><span data-lang="en">Impact</span><span data-lang="zh">影响力</span></h2>
+  <section class="home-section" aria-labelledby="home-impact-title">
+    <div class="home-section__head">
+      <h2 id="home-impact-title"><span data-lang="en">Impact</span><span data-lang="zh">影响力</span></h2>
+      <a class="home-more" href="{{ '/impact/' | relative_url }}"><span data-lang="en">Full impact</span><span data-lang="zh">查看完整影响力</span>{% include icon.html name="arrow-right" %}</a>
+    </div>
     <p class="home-section__intro"><span data-lang="en">Freedom AI grows inside a larger Shenzhen ecosystem for cross-modal cognitive computing. The Shenzhen Key Laboratory of Cross-Modal Cognitive Computing, built at CUHK-Shenzhen and approved by the Shenzhen Science and Technology Innovation Bureau on January 30, 2024, connects frontier research, student training, open-source systems, and deployments in healthcare, education, industry, and public-service settings.</span><span data-lang="zh">Freedom AI 成长于深圳更大的跨模态认知计算生态系统中。深圳市跨模态认知计算重点实验室依托香港中文大学（深圳）建设，于 2024 年 1 月 30 日获深圳市科技创新局批准，连接前沿研究、学生培养、开源系统以及医疗、教育、产业和公共服务领域的落地应用。</span></p>
 
     <div class="home-impact-summary" aria-label="Impact highlights">
@@ -679,7 +841,7 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
 
     <div class="home-impact">
       <div class="home-impact__visual">
-        <img src="/assets/img/freedomai-2026/impact/huatuogpt-longgang.jpg" alt="HuatuoGPT launch ceremony in Longgang">
+        <img src="/assets/img/freedomai-2026/impact/huatuogpt-longgang.jpg" alt="HuatuoGPT launch ceremony in Longgang" width="1280" height="837" loading="lazy" decoding="async">
       </div>
       <div class="home-impact__list">
         <div class="home-impact-item">
@@ -703,15 +865,15 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
 
     <div class="home-showcase">
       <figure>
-        <img src="/assets/img/freedomai-2026/impact/github-repos.png" alt="FreedomIntelligence GitHub repositories">
+        <img src="/assets/img/freedomai-2026/impact/github-repos.png" alt="FreedomIntelligence GitHub repositories" loading="lazy" decoding="async">
         <figcaption><span data-lang="en">Open-source models, datasets, and benchmarks used by the community.</span><span data-lang="zh">社区广泛使用的开源模型、数据集和基准。</span></figcaption>
       </figure>
       <figure>
-        <img src="/assets/img/freedomai-2026/impact/apollo-map.jpg" alt="Apollo multilingual medical AI map">
+        <img src="/assets/img/freedomai-2026/impact/apollo-map.jpg" alt="Apollo multilingual medical AI map" loading="lazy" decoding="async">
         <figcaption><span data-lang="en">Apollo brings multilingual medical AI to under-served languages.</span><span data-lang="zh">Apollo 将多语言医疗 AI 带到服务不足的语言。</span></figcaption>
       </figure>
       <figure>
-        <img src="/assets/img/freedomai-2026/impact/iclr-financial-ai-award.jpg" alt="ICLR Financial AI best paper award">
+        <img src="/assets/img/freedomai-2026/impact/iclr-financial-ai-award.jpg" alt="ICLR Financial AI best paper award" loading="lazy" decoding="async">
         <figcaption><span data-lang="en">Recognition for financial AI and socio-economic system research.</span><span data-lang="zh">金融 AI 与社会经济系统研究获得认可。</span></figcaption>
       </figure>
     </div>
@@ -721,14 +883,14 @@ description: Freedom AI research group at CUHK-Shenzhen, SRIBD, and Shenzhen Loo
     <h2><span data-lang="en">Where We Work</span><span data-lang="zh">我们在哪里</span></h2>
     <p class="home-section__intro"><span data-lang="en">Freedom AI is based at the School of Data Science, The Chinese University of Hong Kong, Shenzhen, SRIBD, and Shenzhen Loop Area Institute. We work with students, engineers, clinicians, and industry partners to turn frontier AI into usable systems.</span><span data-lang="zh">Freedom AI 依托香港中文大学（深圳）数据科学学院、深圳市大数据研究院和深圳河套学院。我们与学生、工程师、临床医生及产业伙伴合作，将前沿 AI 转化为可用的系统。</span></p>
     <div class="home-partners" aria-label="Partner institutions">
-      <a href="https://cuhk.edu.cn/zh-hans">
-        <img src="/assets/img/freedomai-2026/cuhksz-logo.png" alt="The Chinese University of Hong Kong, Shenzhen">
+      <a href="https://cuhk.edu.cn/zh-hans" target="_blank" rel="noopener">
+        <img src="/assets/img/freedomai-2026/cuhksz-logo.png" alt="The Chinese University of Hong Kong, Shenzhen" width="697" height="99" loading="lazy" decoding="async">
       </a>
-      <a class="home-partner--slai" href="https://www.slai.edu.cn/en">
-        <img src="/assets/img/freedomai-2026/slai-logo.png" alt="Shenzhen Loop Area Institute">
+      <a class="home-partner--slai" href="https://www.slai.edu.cn/en" target="_blank" rel="noopener">
+        <img src="/assets/img/freedomai-2026/slai-logo.png" alt="Shenzhen Loop Area Institute" width="238" height="120" loading="lazy" decoding="async">
       </a>
-      <a href="https://www.sribd.cn/">
-        <img src="/assets/img/freedomai-2026/sribd-logo.png" alt="Shenzhen Research Institute of Big Data">
+      <a href="https://www.sribd.cn/" target="_blank" rel="noopener">
+        <img src="/assets/img/freedomai-2026/sribd-logo.png" alt="Shenzhen Research Institute of Big Data" width="326" height="60" loading="lazy" decoding="async">
       </a>
     </div>
   </section>

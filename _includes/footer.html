@@ -115,119 +115,65 @@
     </script> -->
 </footer>
 {%- else -%}
-<footer class="sticky-bottom mt-5">
+{%- comment -%}
+  Site footer. Research links come from _data/research.yml, the same data as the
+  homepage cards and /projects/, so every page links to the six directions.
+{%- endcomment -%}
+{%- assign footer_projects = '/projects/' | relative_url %}
+<footer class="sticky-bottom site-footer mt-5">
   <div class="container">
-    &copy; Copyright {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}. {{
-    site.footer_text }}
-    {%- if site.impressum_path -%}
-    <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
-    {%- endif -%}
-    {%- if site.last_updated -%}
-    Last updated: {{ "now" | date: '%B %d, %Y' }}.
-    {%- endif %}
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="site-footer__logo" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <p><span data-lang="en">Free humanity from the boundaries of life through AI.</span><span data-lang="zh">用 AI 让人类突破生命的边界。</span></p>
+        <p><span data-lang="en">School of Data Science, The Chinese University of Hong Kong, Shenzhen · Shenzhen Research Institute of Big Data · Shenzhen Loop Area Institute</span><span data-lang="zh">香港中文大学（深圳）数据科学学院 · 深圳市大数据研究院 · 深圳河套学院</span></p>
+        {%- if site.lab_email %}
+        <p><a class="site-footer__mail" href="mailto:{{ site.lab_email }}">{% include icon.html name="mail" %}{{ site.lab_email }}</a></p>
+        {%- endif %}
+      </div>
+      <nav aria-labelledby="footer-research">
+        <h2 id="footer-research"><span data-lang="en">Research</span><span data-lang="zh">研究方向</span></h2>
+        <ul>
+          {%- for d in site.data.research.directions %}
+          <li><a href="{{ footer_projects }}#{{ d.id }}">{% include icon.html name=d.icon %}<span data-lang="en">{{ d.name }}</span><span data-lang="zh">{{ d.name_zh }}</span></a></li>
+          {%- endfor %}
+        </ul>
+      </nav>
+      <nav aria-labelledby="footer-lab">
+        <h2 id="footer-lab"><span data-lang="en">Lab</span><span data-lang="zh">实验室</span></h2>
+        <ul>
+          <li><a href="{{ '/people/' | relative_url }}">{% include icon.html name="users" %}<span data-lang="en">People</span><span data-lang="zh">团队</span></a></li>
+          <li><a href="{{ '/publications/' | relative_url }}">{% include icon.html name="book-open" %}<span data-lang="en">Publications</span><span data-lang="zh">论文</span></a></li>
+          <li><a href="{{ footer_projects }}">{% include icon.html name="layers" %}<span data-lang="en">Projects</span><span data-lang="zh">项目</span></a></li>
+          <li><a href="{{ '/impact/' | relative_url }}">{% include icon.html name="trending-up" %}<span data-lang="en">Impact</span><span data-lang="zh">影响力</span></a></li>
+          <li><a href="{{ '/startups/' | relative_url }}">{% include icon.html name="rocket" %}<span data-lang="en">Startups</span><span data-lang="zh">创业</span></a></li>
+          <li><a href="{{ '/life/' | relative_url }}">{% include icon.html name="camera" %}<span data-lang="en">Life</span><span data-lang="zh">生活</span></a></li>
+          <li><a href="{{ '/blog/' | relative_url }}">{% include icon.html name="pen-line" %}<span data-lang="en">Blog</span><span data-lang="zh">博客</span></a></li>
+          <li><a href="{{ '/join-us/' | relative_url }}">{% include icon.html name="user-plus" %}<span data-lang="en">Join Us</span><span data-lang="zh">加入我们</span></a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="footer-open">
+        <h2 id="footer-open"><span data-lang="en">Open source</span><span data-lang="zh">开源</span></h2>
+        <ul>
+          {%- if site.github_username %}
+          <li><a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">{% include icon.html name="github" %}GitHub</a></li>
+          {%- endif %}
+          {%- if site.hf_username %}
+          <li><a href="https://huggingface.co/{{ site.hf_username }}" target="_blank" rel="noopener">{% include icon.html name="huggingface" %}Hugging Face</a></li>
+          {%- endif %}
+          {%- if site.scholar_url %}
+          <li><a href="{{ site.scholar_url }}" target="_blank" rel="noopener">{% include icon.html name="google-scholar" %}Google Scholar</a></li>
+          {%- endif %}
+        </ul>
+      </nav>
+    </div>
+    <div class="site-footer__bottom">
+      <span>&copy; {{ site.time | date: '%Y' }} {{ site.title }}.</span>
+      <span>{{ site.footer_text | strip }}
+        {%- if site.impressum_path %} <a href="{{ site.impressum_path | relative_url }}">Impressum</a>.{% endif -%}
+        {%- if site.last_updated %} Last updated: {{ "now" | date: '%B %d, %Y' }}.{% endif -%}
+      </span>
+    </div>
   </div>
-<!--   <script>
-        !
-        function() {
-            function n(n, e, t) {
-                return n.getAttribute(e) || t
-            }
-            function e(n) {
-                return document.getElementsByTagName(n)
-            }
-            function t() {
-                var t = e("script"),
-                o = t.length,
-                i = t[o - 1];
-                return {
-                    l: o,
-                    z: n(i, "zIndex", -1),
-                    o: n(i, "opacity", .5),
-                    c: n(i, "color", "100,100,100"),
-                    n: n(i, "count", 99)
-                }
-            }
-            function o() {
-                a = m.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
-                c = m.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
-            }
-            function i() {
-                r.clearRect(0, 0, a, c);
-                var n, e, t, o, m, l;
-                var centerX = a / 2;
-                var centerY = c / 2;
-                s.forEach(function(i, x) {
-                    // 计算向中心的引力
-                    var toCenterX = centerX - i.x;
-                    var toCenterY = centerY - i.y;
-                    var distanceToCenter = Math.sqrt(toCenterX * toCenterX + toCenterY * toCenterY);
-
-                    // 添加向中心的微弱引力
-                    if (distanceToCenter > 0) {
-                        i.xa += (toCenterX / distanceToCenter) * 0.002;
-                        i.ya += (toCenterY / distanceToCenter) * 0.002;
-                    }
-
-                    // 限制速度，避免过快
-                    var maxSpeed = 1.5;
-                    var currentSpeed = Math.sqrt(i.xa * i.xa + i.ya * i.ya);
-                    if (currentSpeed > maxSpeed) {
-                        i.xa = (i.xa / currentSpeed) * maxSpeed;
-                        i.ya = (i.ya / currentSpeed) * maxSpeed;
-                    }
-
-                    for (i.x += i.xa, i.y += i.ya, i.xa *= i.x > a || i.x < 0 ? -1 : 1, i.ya *= i.y > c || i.y < 0 ? -1 : 1, r.fillRect(i.x - .5, i.y - .5, 1, 1), e = x + 1; e < u.length; e++) n = u[e],
-                    null !== n.x && null !== n.y && (o = i.x - n.x, m = i.y - n.y, l = o * o + m * m, l < n.max && (n === y && l >= n.max / 2 && (i.x -= .03 * o, i.y -= .03 * m), t = (n.max - l) / n.max, r.beginPath(), r.lineWidth = t / 2, r.strokeStyle = "rgba(" + d.c + "," + (t + .2) + ")", r.moveTo(i.x, i.y), r.lineTo(n.x, n.y), r.stroke()))
-                }),
-                x(i)
-            }
-            var a, c, u, m = document.createElement("canvas"),
-            d = t(),
-            l = "c_n" + d.l,
-            r = m.getContext("2d"),
-            x = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
-            function(n) {
-                window.setTimeout(n, 1e3 / 45)
-            },
-            w = Math.random,
-            y = {
-                x: null,
-                y: null,
-                max: 2e4
-            };
-            m.id = l,
-            m.style.cssText = "position:fixed;top:0;left:0;z-index:" + d.z + ";opacity:" + d.o,
-            e("body")[0].appendChild(m),
-            o(),
-            window.onresize = o,
-            window.onmousemove = function(n) {
-                n = n || window.event,
-                y.x = n.clientX,
-                y.y = n.clientY
-            },
-            window.onmouseout = function() {
-                y.x = null,
-                y.y = null
-            };
-            for (var s = [], f = 0; d.n > f; f++) {
-                var h = w() * a,
-                g = w() * c,
-                v = 2 * w() - 1,
-                p = 2 * w() - 1;
-                s.push({
-                    x: h,
-                    y: g,
-                    xa: v,
-                    ya: p,
-                    max: 6e3
-                })
-            }
-            u = s.concat([y]),
-            setTimeout(function() {
-                i()
-            },
-            100)
-        } ();
-    </script> -->
 </footer>
 {%- endif %}

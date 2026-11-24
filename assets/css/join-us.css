@@ -202,12 +202,6 @@
   margin: 0;
 }
 
-@media (min-width: 1200px) {
-  body > .container.mt-5 {
-    max-width: 1180px;
-  }
-}
-
 html[data-theme='dark'] .join-program img,
 html[data-theme='dark'] .join-impact img {
   background: #22262b;

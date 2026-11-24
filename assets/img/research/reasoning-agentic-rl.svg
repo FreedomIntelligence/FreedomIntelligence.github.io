@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+<title id="t">LLM Reasoning &amp; Agentic RL</title>
+<desc id="d">Reasoning with feedback that is inspectable, efficient, and useful to agents</desc>
+<defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.1" fill="#dcdce0"/></pattern><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#18181b"/></marker><marker id="ahf" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8e8e99"/></marker></defs>
+<rect width="1200" height="675" fill="#fbfbfb"/>
+<rect width="1200" height="675" fill="url(#dots)"/>
+<g font-family="Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+<text x="72" y="92" fill="#52525b" font-size="16" font-weight="600" text-anchor="start" letter-spacing="3">AGENTIC AI · REASONING</text>
+<text x="72" y="148" fill="#18181b" font-size="44" font-weight="700" text-anchor="start">LLM Reasoning &amp; Agentic RL</text>
+<text x="72" y="190" fill="#52525b" font-size="21" font-weight="400" text-anchor="start">Reasoning with feedback that is inspectable, efficient, and useful to agents</text>
+<rect x="72" y="284" width="231" height="226" rx="18" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<rect x="94" y="306" width="48" height="48" rx="13" fill="#18181b"/>
+<g transform="translate(106.0 318.0) scale(1.0000)" fill="none" stroke="#ffffff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7h6v6" /><path d="m22 7-8.5 8.5-5-5L2 17" /></g>
+<text x="156" y="336" fill="#8e8e99" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">01</text>
+<text x="94" y="388" fill="#52525b" font-size="14" font-weight="700" text-anchor="start" letter-spacing="2">OPTIMIZE</text>
+<text x="94" y="424" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">Policy</text>
+<text x="94" y="454" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">optimization</text>
+<text x="94" y="492" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">OnePO · CRPO</text>
+<line x1="310" y1="397" x2="340" y2="397" stroke="#18181b" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="347" y="284" width="231" height="226" rx="18" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<rect x="369" y="306" width="48" height="48" rx="13" fill="#18181b"/>
+<g transform="translate(381.0 318.0) scale(1.0000)" fill="none" stroke="#ffffff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4" /><path d="M3.34 19a10 10 0 1 1 17.32 0" /></g>
+<text x="431" y="336" fill="#8e8e99" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">02</text>
+<text x="369" y="388" fill="#52525b" font-size="14" font-weight="700" text-anchor="start" letter-spacing="2">ECONOMIZE</text>
+<text x="369" y="424" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">Efficient</text>
+<text x="369" y="454" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">reasoning</text>
+<text x="369" y="492" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">QFFT · UPFT · STOP</text>
+<line x1="585" y1="397" x2="615" y2="397" stroke="#18181b" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="622" y="284" width="231" height="226" rx="18" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<rect x="644" y="306" width="48" height="48" rx="13" fill="#18181b"/>
+<g transform="translate(656.0 318.0) scale(1.0000)" fill="none" stroke="#ffffff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4" /><path d="m6 8-4 4 4 4" /><path d="m14.5 4-5 16" /></g>
+<text x="706" y="336" fill="#8e8e99" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">03</text>
+<text x="644" y="388" fill="#52525b" font-size="14" font-weight="700" text-anchor="start" letter-spacing="2">EXECUTE</text>
+<text x="644" y="424" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">Thinking with</text>
+<text x="644" y="454" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">code</text>
+<text x="644" y="492" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">CoRT</text>
+<line x1="860" y1="397" x2="890" y2="397" stroke="#18181b" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="897" y="284" width="231" height="226" rx="18" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<rect x="919" y="306" width="48" height="48" rx="13" fill="#18181b"/>
+<g transform="translate(931.0 318.0) scale(1.0000)" fill="none" stroke="#ffffff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2" /><path d="M17 3h2a2 2 0 0 1 2 2v2" /><path d="M21 17v2a2 2 0 0 1-2 2h-2" /><path d="M7 21H5a2 2 0 0 1-2-2v-2" /><circle cx="12" cy="12" r="1" /><path d="M18.944 12.33a1 1 0 0 0 0-.66 7.5 7.5 0 0 0-13.888 0 1 1 0 0 0 0 .66 7.5 7.5 0 0 0 13.888 0" /></g>
+<text x="981" y="336" fill="#8e8e99" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">04</text>
+<text x="919" y="388" fill="#52525b" font-size="14" font-weight="700" text-anchor="start" letter-spacing="2">PERCEIVE</text>
+<text x="919" y="424" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">Multimodal R1</text>
+<text x="919" y="454" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">training</text>
+<text x="919" y="492" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">Video-R1</text>
+<path d="M1012 516 V566 H188 V524" fill="none" stroke="#8e8e99" stroke-width="2.5" stroke-dasharray="7 7" marker-end="url(#ahf)"/>
+<rect x="471" y="547" width="258" height="38" rx="19" fill="#18181b"/>
+<text x="600" y="572" fill="#ffffff" font-size="16" font-weight="600" text-anchor="middle">verifiable feedback signals</text>
+</g></svg>

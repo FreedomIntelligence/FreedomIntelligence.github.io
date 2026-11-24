@@ -4,6 +4,7 @@ title: "PaperWeekly｜SocraticChat / PlatoLM：用苏格拉底提问蒸馏对话
 date: 2026-06-10
 description: "基于PaperWeekly 关于 SocraticChat / PlatoLM 的报道整理的简要摘要，补充 FreedomAI Lab 参与贡献与资源链接。"
 tags: media PaperWeekly SocraticChat PlatoLM dialogue-data
+research: [ai-education, llm-agents-applications]
 og_image: "/assets/img/media-roundup-2026/socratic-pipeline.png"
 source_links:
   - label: "PaperWeekly 原文"

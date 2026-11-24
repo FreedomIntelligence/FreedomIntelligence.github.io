@@ -4,6 +4,7 @@ title: "量子位｜大模型红队攻击与模型对比界面"
 date: 2026-06-10
 description: "基于量子位关于大模型红队攻击与模型对比界面的报道整理的简要摘要，补充 FreedomAI Lab 参与贡献与资源链接。"
 tags: media QbitAI red-team evaluation model-comparison
+research: [general-llm-evaluation]
 og_image: "/assets/img/media-reposts/media-qbitai-redteam/img-001-3c5b443073.jpg"
 source_links:
   - label: "量子位网页"

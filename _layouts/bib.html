@@ -23,9 +23,35 @@
 {% assign entry_github_url = entry.html %}
 {% endif %}
 {% endunless %}
+{%- comment -%}
+  Research tags: `tags` holds ids from _data/research.yml, separated by ";".
+  A program id (e.g. huatuogpt) implies its direction; a direction id
+  (e.g. ai-applications) can also be used on its own. Anything else is shown
+  as plain text and is not filterable.
+{%- endcomment -%}
+{%- assign pub_dirs = "" | split: "" -%}
+{%- assign pub_progs = "" | split: "" -%}
+{%- assign pub_other = "" | split: "" -%}
+{%- if entry.tags -%}
+  {%- assign pub_raw = entry.tags | split: ';' -%}
+  {%- for pub_tag in pub_raw -%}
+    {%- assign pub_t = pub_tag | strip -%}
+    {%- assign pub_found = false -%}
+    {%- for rd in site.data.research.directions -%}
+      {%- if rd.id == pub_t -%}{%- assign pub_dirs = pub_dirs | push: rd.id -%}{%- assign pub_found = true -%}{%- endif -%}
+      {%- for rt in rd.topics -%}
+        {%- if rt.id == pub_t -%}{%- assign pub_progs = pub_progs | push: rt.id -%}{%- assign pub_dirs = pub_dirs | push: rd.id -%}{%- assign pub_found = true -%}{%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+    {%- if pub_found == false and pub_t != "" -%}{%- assign pub_other = pub_other | push: pub_t -%}{%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- assign pub_dirs = pub_dirs | uniq -%}
+{%- assign pub_progs = pub_progs | uniq -%}
 <div class="row publication-entry"
   data-title="{{ entry.title | escape }}"
-  {% if entry.tags %}data-tags="{{ entry.tags | escape }}"{% endif %}
+  {% if pub_dirs.size > 0 %}data-directions="{{ pub_dirs | join: ' ' }}"{% endif %}
+  {% if pub_progs.size > 0 %}data-programs="{{ pub_progs | join: ' ' }}"{% endif %}
   {% if entry.arxiv %}data-arxiv="{{ entry.arxiv | escape }}"{% endif %}
   {% if entry_doi %}data-doi="{{ entry_doi | escape }}"{% endif %}
   {% if entry.github %}data-github-url="{{ entry.github | escape }}"{% endif %}
@@ -165,14 +191,23 @@
     <div class="periodical">
       {{ periodical | strip }}
     </div>
-    {% if entry.tags %}
-    <div class="publication-tags" aria-label="Publication tags">
-      {% assign publication_tags = entry.tags | split: ';' %}
-      {% for tag in publication_tags %}
-      <span class="publication-tag">{{ tag | strip }}</span>
-      {% endfor %}
+    {%- if pub_dirs.size > 0 or pub_other.size > 0 %}
+    <div class="publication-tags" aria-label="Research directions and programs">
+      {%- for rd in site.data.research.directions -%}
+      {%- if pub_dirs contains rd.id %}
+      <a class="rx-tag" href="{{ '/publications/' | relative_url }}?direction={{ rd.id }}" data-pub-direction="{{ rd.id }}"><svg class="rx-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">{{ site.data.icons[rd.icon] }}</svg><span data-lang="en">{{ rd.name }}</span><span data-lang="zh">{{ rd.name_zh }}</span></a>
+      {%- endif -%}
+      {%- endfor -%}
+      {%- for rd in site.data.research.directions -%}{%- for rt in rd.topics -%}
+      {%- if pub_progs contains rt.id %}
+      <a class="rx-tag rx-tag--program" href="{{ '/projects/' | relative_url }}#{{ rt.id }}"><svg class="rx-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">{{ site.data.icons[rt.icon] }}</svg><span data-lang="en">{{ rt.short }}</span><span data-lang="zh">{{ rt.short_zh }}</span></a>
+      {%- endif -%}
+      {%- endfor -%}{%- endfor -%}
+      {%- for pub_o in pub_other %}
+      <span class="publication-tag">{{ pub_o }}</span>
+      {%- endfor %}
     </div>
-    {% endif %}
+    {%- endif %}
     <div class="publication-metrics" aria-label="Publication metrics">
       <a class="publication-metric publication-metric--github" href="#" target="_blank" rel="external nofollow noopener" hidden>
         <span aria-hidden="true">★</span>

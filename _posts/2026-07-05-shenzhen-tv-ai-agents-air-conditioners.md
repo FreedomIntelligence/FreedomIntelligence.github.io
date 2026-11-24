@@ -4,6 +4,7 @@ title: "When AI Agents Buy Air Conditioners: A Shenzhen TV Interview with Benyou
 date: 2026-07-05
 description: "An edited English Q&A with Shenzhen TV on what a viral Midea PortaSplit story reveals about AI agents, loop engineering, agent societies, and the human ability to organize digital labor."
 tags: ai-agents loop-engineering media-interview human-ai-collaboration
+research: [llm-agents-applications]
 
 authors:
   - name: Benyou Wang

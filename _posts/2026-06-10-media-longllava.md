@@ -4,6 +4,7 @@ title: "机器之心 / PaperWeekly｜LongLLaVA：Mamba+Transformer 混合架构�
 date: 2026-06-10
 description: "基于机器之心与 PaperWeekly 关于 LongLLaVA 的报道整理的简要摘要，补充 FreedomAI Lab 参与贡献与资源链接。"
 tags: media machine-heart PaperWeekly LongLLaVA multimodal long-context
+research: [multimodal-llms, llm-efficiency-ai-infra]
 og_image: "/assets/img/media-reposts/media-longllava/img-001-405a4b6fe6.png"
 source_links:
   - label: "机器之心原文"

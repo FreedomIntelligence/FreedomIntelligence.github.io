@@ -2,10 +2,26 @@
 layout: default
 ---
 <!-- page.html -->
+{%- comment -%}
+  Project pages (_projects/*.md) set `direction:` to an id from _data/research.yml.
+  That adds a breadcrumb back to the direction on /projects/ and, at the end,
+  links to the other programs in the same direction.
+{%- endcomment -%}
+{%- assign rx_dir = nil -%}
+{%- if page.collection == 'projects' and page.direction -%}
+  {%- assign rx_dir = site.data.research.directions | where: 'id', page.direction | first -%}
+{%- endif -%}
         <div class="post">
 
           {%- unless page.hide_title -%}
           <header class="post-header">
+            {%- if rx_dir %}
+            <nav class="rx-breadcrumb" aria-label="Breadcrumb">
+              <a href="{{ '/projects/' | relative_url }}"><span data-lang="en">Projects</span><span data-lang="zh">项目</span></a>
+              <span aria-hidden="true">/</span>
+              <a class="rx-breadcrumb__dir" href="{{ '/projects/' | relative_url }}#{{ rx_dir.id }}">{% include icon.html name=rx_dir.icon %}<span data-lang="en">{{ rx_dir.name }}</span><span data-lang="zh">{{ rx_dir.name_zh }}</span></a>
+            </nav>
+            {%- endif %}
             <h1 class="post-title">
               {%- if page.title_zh -%}
               <span data-lang="en">{{ page.title }}</span><span data-lang="zh">{{ page.title_zh }}</span>
@@ -26,5 +42,22 @@ layout: default
           <article>
             {{ content }}
           </article>
+
+          {%- if rx_dir %}
+          <aside class="rx-more" aria-labelledby="rx-more-title">
+            <div class="rx-more__head">
+              <span class="rx-more__icon">{% include icon.html name=rx_dir.icon %}</span>
+              <h2 id="rx-more-title"><span data-lang="en">More in {{ rx_dir.name }}</span><span data-lang="zh">{{ rx_dir.name_zh }}方向的更多研究</span></h2>
+            </div>
+            <div class="rx-more__links">
+              {%- for t in rx_dir.topics %}
+              {%- if t.page != page.url %}
+              <a href="{% if t.page %}{{ t.page | relative_url }}{% else %}{{ '/projects/' | relative_url }}#{{ t.id }}{% endif %}">{% include icon.html name=t.icon %}<span data-lang="en">{{ t.short }}</span><span data-lang="zh">{{ t.short_zh }}</span></a>
+              {%- endif %}
+              {%- endfor %}
+              <a class="rx-more__all" href="{{ '/projects/' | relative_url }}#{{ rx_dir.id }}"><span data-lang="en">All {{ rx_dir.name }} programs</span><span data-lang="zh">查看该方向全部研究主线</span>{% include icon.html name="arrow-right" %}</a>
+            </div>
+          </aside>
+          {%- endif %}
 
         </div>

@@ -1,0 +1,1097 @@
+/* =============================================================================
+ * Research map: /projects/ (_pages/reading.md) and the directions index shared
+ * with the homepage (_includes/research/direction-index.html).
+ *
+ * Monochrome on purpose: ink, greys, hairlines, and line icons. Tokens
+ * (--rx-ink, --rx-muted, --rx-line, ...) are defined in site.css.
+ * Plain selectors only: the deploy runs PurgeCSS, which drops :where()/:is().
+ * ========================================================================== */
+
+.rx-page {
+  --rx-nav-top: 57px;
+  color: var(--rx-ink);
+}
+
+/* The base theme colors every span/strong directly: let bilingual text inherit. */
+.rx-page span[data-lang],
+.rx-page strong[data-lang],
+.rx-index span[data-lang],
+.rx-tool span,
+.rx-empty p {
+  color: inherit;
+}
+
+span.rx-dot {
+  color: var(--rx-faint);
+}
+
+/* ---------------------------------------------------------------------------
+ * 2. Projects page — an editorial layout: large type, generous space, few
+ *    frames. One alignment axis runs down the page: a narrow title column on
+ *    the left, the reading column on the right.
+ * ------------------------------------------------------------------------ */
+.rx-page {
+  --rx-col: 17rem;
+  --rx-gap: 3.5rem;
+}
+
+/* Hero: statement on the left, introduction and search on the right */
+.rx-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  column-gap: 4rem;
+  align-items: end;
+  padding: 0 0 2rem;
+}
+
+.rx-page p.rx-hero__eyebrow {
+  margin: 0 0 0.8rem;
+  color: var(--rx-faint);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.rx-page .rx-hero__title {
+  margin: 0;
+  color: var(--rx-ink);
+  font-size: 2.15rem;
+  font-weight: 300;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+html[data-language='zh'] .rx-page .rx-hero__title {
+  font-size: 1.95rem;
+  line-height: 1.36;
+  letter-spacing: 0;
+}
+
+.rx-page p.rx-hero__lead {
+  margin: 0;
+  color: var(--rx-muted);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.rx-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.rx-search > .rx-i {
+  position: absolute;
+  left: 1.15rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  color: var(--rx-muted);
+  pointer-events: none;
+}
+
+.rx-search input {
+  width: 100%;
+  height: 2.85rem;
+  padding: 0 3.3rem 0 2.95rem;
+  border: 1px solid var(--rx-line-strong);
+  border-radius: 999px;
+  background: var(--global-bg-color);
+  color: var(--rx-ink);
+  font-size: 0.98rem;
+  -webkit-appearance: none;
+  appearance: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.rx-search input::placeholder {
+  color: var(--rx-faint);
+  opacity: 1;
+}
+
+.rx-search input:focus {
+  border-color: var(--rx-ink);
+  outline: none;
+  box-shadow: 0 0 0 4px var(--rx-ring);
+}
+
+.rx-search input::-webkit-search-cancel-button {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.rx-search kbd {
+  position: absolute;
+  right: 1.1rem;
+  padding: 0.02rem 0.45rem;
+  border: 1px solid var(--rx-line-strong);
+  border-radius: 6px;
+  background: transparent;
+  box-shadow: none;
+  color: var(--rx-muted);
+  font-family: inherit;
+  font-size: 0.74rem;
+  font-weight: 500;
+}
+
+.rx-search__clear {
+  position: absolute;
+  right: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--rx-muted);
+  cursor: pointer;
+}
+
+.rx-search__clear .rx-i {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
+.rx-search__clear:hover {
+  background: var(--rx-soft);
+  color: var(--rx-ink);
+}
+
+.rx-search__clear[hidden],
+.rx-search kbd[hidden] {
+  display: none;
+}
+
+.rx-page p.rx-search-status {
+  margin: 0.6rem 0 0 1.2rem;
+  color: var(--rx-muted);
+  font-size: 0.86rem;
+}
+
+.rx-page p.rx-search-status:empty {
+  display: none;
+}
+
+.rx-page.is-searching .rx-index {
+  display: none;
+}
+
+mark.rx-hit {
+  padding: 0 0.08em;
+  border-radius: 3px;
+  background: #fde68a;
+  color: inherit;
+}
+
+html[data-theme='dark'] mark.rx-hit {
+  background: rgba(250, 204, 21, 0.32);
+}
+
+/* Directions index (homepage and /projects/): a quiet table of contents,
+   hairlines instead of boxes. The item links to the direction; program names
+   are links of their own, stacked above the item link. */
+.rx-index {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 2.75rem;
+  border-top: 1px solid var(--rx-line);
+}
+
+.rx-index__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1.35rem 1.75rem 1.55rem 0;
+  border-bottom: 1px solid var(--rx-line);
+}
+
+.rx-index__link {
+  display: flex;
+  flex-direction: column;
+  color: var(--rx-ink);
+}
+
+.rx-index__link::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.rx-index__link:hover {
+  color: var(--rx-ink);
+  text-decoration: none;
+}
+
+.rx-index__link:focus {
+  outline: none;
+}
+
+.rx-index__link:focus-visible::after {
+  box-shadow: inset 0 0 0 2px var(--rx-ink);
+}
+
+.rx-index__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--rx-faint);
+}
+
+.rx-index span.rx-index__num {
+  color: inherit;
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.1em;
+}
+
+.rx-index__top .rx-i {
+  width: 1.55rem;
+  height: 1.55rem;
+  color: var(--rx-ink);
+  stroke-width: 1.25;
+}
+
+.rx-index__name {
+  margin-top: 0.95rem;
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.rx-index__tagline {
+  margin-top: 0.4rem;
+  color: var(--rx-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.rx-index p.rx-index__programs {
+  margin: 0.75rem 0 0;
+  color: var(--rx-faint);
+  font-size: 0.82rem;
+  line-height: 1.75;
+}
+
+.rx-index__programs a {
+  position: relative;
+  z-index: 1;
+  color: var(--rx-muted);
+  white-space: nowrap;
+}
+
+.rx-index__programs a:hover {
+  color: var(--rx-ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+/* Compact index on /projects/: no program names, tighter rows */
+.rx-index--compact .rx-index__item {
+  padding: 1.1rem 1.75rem 1.3rem 0;
+}
+
+.rx-index--compact .rx-index__name {
+  margin-top: 0.7rem;
+  font-size: 1.25rem;
+}
+
+.rx-index--compact .rx-index__tagline {
+  font-size: 0.88rem;
+}
+
+.rx-index__item:hover .rx-index__name {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em;
+}
+
+/* Chinese headings break at punctuation, not inside words; paragraphs avoid orphans. */
+html[data-language='zh'] .rx-hero__title,
+html[data-language='zh'] .rx-section h2,
+html[data-language='zh'] .rx-program__title,
+html[data-language='zh'] .rx-index__name {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.rx-page p.rx-hero__lead,
+.rx-page p.rx-section__lead,
+.rx-page p.rx-program__summary,
+.rx-index__tagline {
+  text-wrap: pretty;
+}
+
+/* ---------------------------------------------------------------------------
+ * 3. Sticky direction bar: text tabs with an underline
+ * ------------------------------------------------------------------------ */
+.rx-nav {
+  position: sticky;
+  top: var(--rx-nav-top);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  border-bottom: 1px solid var(--rx-line);
+  background: var(--rx-glass);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  backdrop-filter: saturate(180%) blur(14px);
+}
+
+.rx-nav__links {
+  display: flex;
+  flex: 1 1 auto;
+  gap: 1.6rem;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.rx-nav__links::-webkit-scrollbar {
+  display: none;
+}
+
+.rx-nav__link {
+  position: relative;
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 1rem 0 0.95rem;
+  color: var(--rx-faint);
+  font-size: 0.88rem;
+  white-space: nowrap;
+  transition: color 0.15s ease, opacity 0.15s ease;
+}
+
+.rx-nav__link .rx-i {
+  width: 1rem;
+  height: 1rem;
+}
+
+.rx-nav__link::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: var(--rx-ink);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.25s ease;
+}
+
+.rx-nav__link:hover {
+  color: var(--rx-ink);
+  text-decoration: none;
+}
+
+.rx-nav__link.is-active {
+  color: var(--rx-ink);
+}
+
+.rx-nav__link.is-active::after {
+  transform: scaleX(1);
+}
+
+.rx-nav__link.is-empty {
+  opacity: 0.35;
+}
+
+.rx-nav__tools {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rx-tool {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0;
+  border: 0;
+  background: transparent;
+  color: var(--rx-muted);
+  font-size: 0.86rem;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.rx-tool .rx-i {
+  width: 1rem;
+  height: 1rem;
+}
+
+.rx-tool:hover {
+  color: var(--rx-ink);
+}
+
+.rx-tool__icon {
+  display: inline-flex;
+}
+
+.rx-tool__icon[hidden],
+.rx-tool span[hidden] {
+  display: none;
+}
+
+/* ---------------------------------------------------------------------------
+ * 4. Direction sections and programs
+ * ------------------------------------------------------------------------ */
+.rx-section {
+  padding: 5.5rem 0 1.5rem;
+  scroll-margin-top: 3.5rem;
+}
+
+.rx-section[hidden],
+.rx-program[hidden] {
+  display: none;
+}
+
+.rx-section__head {
+  display: grid;
+  grid-template-columns: var(--rx-col) minmax(0, 1fr);
+  column-gap: var(--rx-gap);
+  margin-bottom: 3.25rem;
+}
+
+.rx-page p.rx-section__num {
+  margin: 0 0 1rem;
+  color: var(--rx-faint);
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.1em;
+}
+
+.rx-section h2 {
+  margin: 0;
+  color: var(--rx-ink);
+  font-size: 2.35rem;
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.rx-section__intro {
+  padding-top: 2.05rem;
+}
+
+.rx-section__icon {
+  display: block;
+  color: var(--rx-ink);
+}
+
+.rx-section__icon .rx-i {
+  width: 2rem;
+  height: 2rem;
+  stroke-width: 1.2;
+}
+
+.rx-page p.rx-section__lead {
+  max-width: 34rem;
+  margin: 1rem 0 0;
+  color: var(--rx-ink);
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.rx-page p.rx-section__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.8rem;
+  margin: 1.4rem 0 0;
+}
+
+/* Text links with a hairline underline */
+.rx-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding-bottom: 0.15rem;
+  border-bottom: 1px solid var(--rx-line-strong);
+  color: var(--rx-ink);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  transition: border-color 0.15s ease;
+}
+
+.rx-link .rx-i {
+  width: 0.9rem;
+  height: 0.9rem;
+  color: var(--rx-muted);
+  transition: transform 0.15s ease;
+}
+
+.rx-link:hover {
+  border-color: var(--rx-ink);
+  color: var(--rx-ink);
+  text-decoration: none;
+}
+
+.rx-link:hover .rx-i {
+  transform: translateX(2px);
+}
+
+.rx-link--strong {
+  border-bottom-color: var(--rx-ink);
+  font-weight: 500;
+}
+
+.rx-link--strong .rx-i {
+  color: var(--rx-ink);
+}
+
+/* Program: title column + reading column */
+.rx-program {
+  display: grid;
+  grid-template-columns: var(--rx-col) minmax(0, 1fr);
+  column-gap: var(--rx-gap);
+  padding: 2.4rem 0 2.6rem;
+  border-top: 1px solid var(--rx-line);
+  scroll-margin-top: 7.5rem;
+}
+
+.rx-program__icon {
+  display: block;
+  color: var(--rx-ink);
+}
+
+.rx-program__icon .rx-i {
+  width: 1.6rem;
+  height: 1.6rem;
+  stroke-width: 1.3;
+}
+
+.rx-page .rx-program__title {
+  margin: 1.05rem 0 0;
+  color: var(--rx-ink);
+  font-size: 1.28rem;
+  font-weight: 400;
+  line-height: 1.38;
+  letter-spacing: -0.005em;
+  text-wrap: balance;
+}
+
+.rx-page p.rx-program__kicker {
+  margin: 0.6rem 0 0;
+  color: var(--rx-faint);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.rx-program__body {
+  min-width: 0;
+}
+
+.rx-page p.rx-program__summary {
+  max-width: 40rem;
+  margin: 0;
+  color: var(--rx-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.rx-page p.rx-program__highlights {
+  max-width: 40rem;
+  margin: 1.1rem 0 0;
+  color: var(--rx-ink);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.rx-page span.rx-program__label {
+  margin-right: 0.75rem;
+  color: var(--rx-faint);
+}
+
+.rx-program__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1.6rem;
+  margin-top: 1.5rem;
+}
+
+/* Disclosure: papers, code and data */
+.rx-program__more {
+  max-width: 44rem;
+  margin-top: 1.9rem;
+}
+
+.rx-program__more > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0 0;
+  border-top: 1px solid var(--rx-line);
+  color: var(--rx-muted);
+  font-size: 0.88rem;
+  list-style: none;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.rx-program__more > summary::-webkit-details-marker {
+  display: none;
+}
+
+.rx-program__more > summary:hover {
+  color: var(--rx-ink);
+}
+
+.rx-program__more > summary:focus {
+  outline: none;
+}
+
+.rx-program__more > summary:focus-visible {
+  box-shadow: 0 0 0 2px var(--rx-ring);
+}
+
+.rx-program__more-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--rx-ink);
+}
+
+.rx-program__more-action .rx-i {
+  width: 1rem;
+  height: 1rem;
+  transition: transform 0.25s ease;
+}
+
+.rx-program__more[open] .rx-program__more-action .rx-i {
+  transform: rotate(180deg);
+}
+
+.rx-program__detail {
+  padding: 1.4rem 0 0.4rem;
+}
+
+.rx-figure {
+  margin: 0 0 2rem;
+  overflow: hidden;
+  border: 1px solid var(--rx-line);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.rx-figure a {
+  display: block;
+}
+
+.rx-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.rx-page h4.rx-subhead {
+  margin: 0 0 0.4rem;
+  color: var(--rx-ink);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.rx-list {
+  margin: 0 0 2rem;
+  padding: 0;
+  counter-reset: rx-item;
+  list-style: none;
+}
+
+.rx-page .rx-list li {
+  position: relative;
+  margin: 0;
+  padding: 0.85rem 0 0.85rem 2.3rem;
+  border-bottom: 1px solid var(--rx-line);
+  color: var(--rx-ink);
+  font-size: 0.93rem;
+  line-height: 1.55;
+  counter-increment: rx-item;
+}
+
+.rx-list li::before {
+  content: counter(rx-item, decimal-leading-zero);
+  position: absolute;
+  top: 0.95rem;
+  left: 0;
+  color: var(--rx-faint);
+  font-size: 0.74rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.rx-list a,
+.rx-list__title {
+  color: var(--rx-ink);
+}
+
+.rx-list a:hover {
+  color: var(--rx-ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.rx-page span.rx-venue {
+  margin-left: 0.55rem;
+  color: var(--rx-faint);
+  font-size: 0.76rem;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.rx-page span.rx-note {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--rx-muted);
+  font-size: 0.85rem;
+}
+
+.rx-resource-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 2rem;
+}
+
+.rx-resource {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.4rem minmax(0, 1fr);
+  gap: 0.85rem;
+  padding: 0.9rem 1.8rem 0.95rem 0;
+  border-bottom: 1px solid var(--rx-line);
+  color: var(--rx-ink);
+}
+
+.rx-resource:hover {
+  color: var(--rx-ink);
+  text-decoration: none;
+}
+
+.rx-resource__icon {
+  display: inline-flex;
+  padding-top: 0.15rem;
+  color: var(--rx-ink);
+}
+
+.rx-resource__icon .rx-i {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.rx-resource__text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.rx-page span.rx-resource__type {
+  color: var(--rx-faint);
+  font-size: 0.74rem;
+}
+
+.rx-page span.rx-resource__name {
+  margin-top: 0.1rem;
+  color: var(--rx-ink);
+  font-size: 0.9rem;
+  font-weight: 500;
+  overflow-wrap: break-word;
+}
+
+.rx-resource:hover .rx-resource__name {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.rx-page span.rx-resource__note {
+  margin-top: 0.15rem;
+  color: var(--rx-muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.rx-resource .rx-resource__go {
+  position: absolute;
+  top: 1.05rem;
+  right: 0;
+  width: 0.9rem;
+  height: 0.9rem;
+  color: var(--rx-faint);
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.rx-resource:hover .rx-resource__go {
+  color: var(--rx-ink);
+  transform: translate(2px, -2px);
+}
+
+/* ---------------------------------------------------------------------------
+ * 5. Empty state and closing links
+ * ------------------------------------------------------------------------ */
+.rx-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.rx-empty[hidden] {
+  display: none;
+}
+
+.rx-empty__icon {
+  color: var(--rx-faint);
+}
+
+.rx-empty__icon .rx-i {
+  width: 2rem;
+  height: 2rem;
+  stroke-width: 1.25;
+}
+
+.rx-empty p {
+  margin: 0;
+  color: var(--rx-muted);
+}
+
+.rx-more-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 2.75rem;
+  margin: 5rem 0 0;
+  border-top: 1px solid var(--rx-line);
+}
+
+.rx-more-link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem 2rem 1.7rem 0;
+  color: var(--rx-ink);
+}
+
+.rx-more-link:hover {
+  color: var(--rx-ink);
+  text-decoration: none;
+}
+
+.rx-more-link .rx-more-link__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke-width: 1.3;
+}
+
+.rx-more-link strong {
+  margin-top: 1rem;
+  color: var(--rx-ink);
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.rx-page span.rx-more-link__note {
+  margin-top: 0.3rem;
+  color: var(--rx-muted);
+  font-size: 0.85rem;
+  overflow-wrap: anywhere;
+}
+
+.rx-more-link .rx-more-link__go {
+  position: absolute;
+  top: 1.75rem;
+  right: 0;
+  width: 1rem;
+  height: 1rem;
+  color: var(--rx-faint);
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.rx-more-link:hover strong {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em;
+}
+
+.rx-more-link:hover .rx-more-link__go {
+  color: var(--rx-ink);
+  transform: translateX(3px);
+}
+
+/* ---------------------------------------------------------------------------
+ * 6. Responsive
+ * ------------------------------------------------------------------------ */
+@media (max-width: 991.98px) {
+  .rx-page {
+    --rx-col: 13rem;
+    --rx-gap: 2.25rem;
+  }
+
+  .rx-hero {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 1.3rem;
+  }
+
+  .rx-hero__side {
+    max-width: 40rem;
+  }
+
+  .rx-index {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rx-more-links {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .rx-more-link {
+    border-bottom: 1px solid var(--rx-line);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .rx-hero {
+    padding-bottom: 2rem;
+  }
+
+  .rx-page .rx-hero__title,
+  html[data-language='zh'] .rx-page .rx-hero__title {
+    font-size: 1.95rem;
+  }
+
+  .rx-nav__tools .rx-tool__text {
+    display: none;
+  }
+
+  .rx-section {
+    padding-top: 4rem;
+  }
+
+  .rx-section__head,
+  .rx-program {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .rx-section__intro {
+    padding-top: 1.4rem;
+  }
+
+  .rx-section__icon {
+    display: none;
+  }
+
+  .rx-page p.rx-section__lead {
+    margin-top: 0;
+  }
+
+  .rx-section h2 {
+    font-size: 2rem;
+  }
+
+  .rx-program__head {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    column-gap: 0.9rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .rx-page .rx-program__title {
+    margin: 0;
+  }
+
+  .rx-page p.rx-program__kicker {
+    grid-column: 1 / -1;
+  }
+
+  .rx-resource-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .rx-index {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .rx-index__item {
+    padding: 1.3rem 2rem 1.5rem 0;
+  }
+
+  .rx-index__name {
+    margin-top: 0.9rem;
+  }
+
+  /* /projects/ on phones: two columns, icon and name only */
+  .rx-index.rx-index--compact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.25rem;
+  }
+
+  .rx-index--compact .rx-index__item {
+    padding: 0.9rem 1.4rem 1rem 0;
+  }
+
+  .rx-index--compact .rx-index__name {
+    margin-top: 0.5rem;
+    font-size: 1.05rem;
+  }
+
+  .rx-index--compact .rx-index__tagline {
+    display: none;
+  }
+
+}
+
+/* ---------------------------------------------------------------------------
+ * 7. Motion and print
+ * ------------------------------------------------------------------------ */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rx-nav__link::after,
+  .rx-link .rx-i,
+  .rx-program__more-action .rx-i,
+  .rx-resource__go,
+  .rx-more-link__go {
+    transition: none;
+  }
+}
+
+@media print {
+  .rx-search,
+  .rx-search-status,
+  .rx-nav,
+  .rx-program__more-action,
+  .rx-more-links,
+  .rx-empty {
+    display: none;
+  }
+
+  .rx-program {
+    break-inside: avoid;
+  }
+}

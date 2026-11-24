@@ -31,6 +31,7 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}{%- if page.author -%} • {{ page.author }}{%- endif -%}{%- if page.meta -%} • {{ page.meta }}{%- endif -%}</p>
     {%- endif %}
+    {%- if page.research %}{% include research/post-tags.html ids=page.research %}{% endif %}
     <p class="post-tags">
       <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}"> <i class="fas fa-calendar fa-sm"></i> {{ year }} </a>
       {%- if tags != "" %}

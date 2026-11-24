@@ -13,6 +13,7 @@ og_image: https://freedomintelligence.github.io/assets/img/embodied-ai/cover-zh.
 thumbnail_en: /assets/img/embodied-ai/cover-en.jpg
 read_time: 15
 tags: embodied-ai multimodal agents simulation robotics
+research: [embodied-ai]
 ---
 
 {% comment %}

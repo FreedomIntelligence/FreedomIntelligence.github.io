@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+<title id="t">运筹优化大模型</title>
+<desc id="d">从自然语言问题到可求解的模型与可执行代码</desc>
+<defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.1" fill="#dcdce0"/></pattern><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#18181b"/></marker><marker id="ahf" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8e8e99"/></marker></defs>
+<rect width="1200" height="675" fill="#fbfbfb"/>
+<rect width="1200" height="675" fill="url(#dots)"/>
+<g font-family="Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+<text x="72" y="92" fill="#52525b" font-size="16" font-weight="600" text-anchor="start" letter-spacing="2">AI 应用 · 运筹优化</text>
+<text x="72" y="148" fill="#18181b" font-size="44" font-weight="700" text-anchor="start">运筹优化大模型</text>
+<text x="72" y="190" fill="#52525b" font-size="21" font-weight="400" text-anchor="start">从自然语言问题到可求解的模型与可执行代码</text>
+<rect x="72" y="299" width="231" height="196" rx="18" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<rect x="94" y="321" width="48" height="48" rx="13" fill="#18181b"/>
+<g transform="translate(106.0 333.0) scale(1.0000)" fill="none" stroke="#ffffff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" /><path d="M7 11h10" /><path d="M7 15h6" /><path d="M7 7h8" /></g>
+<text x="156" y="351" fill="#8e8e99" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">01</text>
+<text x="94" y="403" fill="#52525b" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">描述</text>
+<text x="94" y="439" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">自然语言问题</text>
+<text x="94" y="477" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">真实工业场景</text>
+<line x1="310" y1="397" x2="340" y2="397" stroke="#18181b" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="347" y="299" width="231" height="196" rx="18" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<rect x="369" y="321" width="48" height="48" rx="13" fill="#18181b"/>
+<g transform="translate(381.0 333.0) scale(1.0000)" fill="none" stroke="#ffffff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M18 7V5a1 1 0 0 0-1-1H6.5a.5.5 0 0 0-.4.8l4.5 6a2 2 0 0 1 0 2.4l-4.5 6a.5.5 0 0 0 .4.8H17a1 1 0 0 0 1-1v-2" /></g>
+<text x="431" y="351" fill="#8e8e99" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">02</text>
+<text x="369" y="403" fill="#52525b" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">建模</text>
+<text x="369" y="439" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">数学优化模型</text>
+<text x="369" y="477" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">变量 · 约束 · 目标函数</text>
+<line x1="585" y1="397" x2="615" y2="397" stroke="#18181b" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="622" y="299" width="231" height="196" rx="18" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<rect x="644" y="321" width="48" height="48" rx="13" fill="#18181b"/>
+<g transform="translate(656.0 333.0) scale(1.0000)" fill="none" stroke="#ffffff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4" /><path d="m6 8-4 4 4 4" /><path d="m14.5 4-5 16" /></g>
+<text x="706" y="351" fill="#8e8e99" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">03</text>
+<text x="644" y="403" fill="#52525b" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">编码</text>
+<text x="644" y="439" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">求解代码</text>
+<text x="644" y="477" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">可执行程序</text>
+<line x1="860" y1="397" x2="890" y2="397" stroke="#18181b" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="897" y="299" width="231" height="196" rx="18" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<rect x="919" y="321" width="48" height="48" rx="13" fill="#18181b"/>
+<g transform="translate(931.0 333.0) scale(1.0000)" fill="none" stroke="#ffffff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></g>
+<text x="981" y="351" fill="#8e8e99" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">04</text>
+<text x="919" y="403" fill="#52525b" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">求解</text>
+<text x="919" y="439" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">可验证的解</text>
+<text x="919" y="477" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">IndustryOR benchmark</text>
+<path d="M1012 501 V551 H188 V509" fill="none" stroke="#8e8e99" stroke-width="2.5" stroke-dasharray="7 7" marker-end="url(#ahf)"/>
+<rect x="476" y="532" width="247" height="38" rx="19" fill="#18181b"/>
+<text x="600" y="557" fill="#ffffff" font-size="16" font-weight="600" text-anchor="middle">原生推理：CALM / STORM</text>
+</g></svg>

@@ -5,6 +5,7 @@ date: 2026-07-05
 permalink: /blog/2026/why-loop-engineering-still-needs-humans/
 description: "AI executes, humans verify, and experts contextualize: a three-layer view of loop engineering in AI-assisted software development."
 tags: loop-engineering ai-agents software-engineering human-ai-collaboration
+research: [agentic-ai]
 
 authors:
   - name: Benyou Wang

@@ -1,0 +1,1197 @@
+# -----------------------------------------------------------------------------
+# Freedom AI research map: the single source of truth for the six research
+# directions and the programs inside them.
+#
+# Used by:
+#   /projects/            _pages/reading.md         (full map, papers, resources)
+#   /                     _pages/about.md           (Research Directions cards)
+#   every page            _includes/footer.html     (direction links)
+#   /projects/<name>/     _layouts/page.html        (breadcrumb, "more in")
+#
+# One taxonomy for the whole site. The direction and program ids below are the
+# tags everywhere else:
+#   _projects/*.md        direction: <direction id>
+#   papers.bib            tags={<program or direction id>; ...}  -> /publications/ filters
+#   _posts/*.md           research: [<program or direction id>, ...] -> /blog/ filters
+# A program id implies its direction, so tag with the most specific id.
+#
+# Edit here and every page stays in sync. Anchors: /projects/#<direction id>
+# opens a direction, /projects/#<topic id> scrolls to and expands a program.
+# Keep ids stable: they are linked from other pages and external sites.
+#
+# Topic fields
+#   id, title, title_zh, short, short_zh    names (short = chip label)
+#   icon                                     icon name, a key of _data/icons.yml
+#   kicker, kicker_zh, summary, summary_zh   one-line focus and description
+#   page                                     detail page (primary button)
+#   links                                    extra buttons {label, label_zh, url, url_zh}
+#   highlights, highlights_zh                project names shown on the card (zh optional)
+#   image, image_zh, image_alt, image_alt_zh figure shown when expanded
+#   papers                                   {title, url, venue, note, note_zh}
+#   steps                                    program items instead of papers
+#                                            {title, title_zh, url, note, note_zh}
+#   list_title, list_title_zh                heading above papers or steps
+#   resources                                {type, name, url, venue, note, note_zh}
+#                                            type is a key of `types` below
+# -----------------------------------------------------------------------------
+
+types:
+  GitHub: {icon: github, en: "GitHub", zh: "GitHub", open: true}
+  HF Model: {icon: huggingface, en: "Hugging Face model", zh: "Hugging Face 模型", open: true}
+  HF Dataset: {icon: huggingface, en: "Hugging Face dataset", zh: "Hugging Face 数据集", open: true}
+  Project: {icon: app-window, en: "Project", zh: "项目"}
+  Paper: {icon: file-text, en: "Paper", zh: "论文"}
+  Platform: {icon: monitor, en: "Platform", zh: "平台"}
+  Challenge: {icon: trophy, en: "Challenge", zh: "挑战赛"}
+  Essay: {icon: pen-line, en: "Essay", zh: "文章"}
+  News: {icon: newspaper, en: "News", zh: "新闻"}
+
+directions:
+
+  # ---------------------------------------------------------------------------
+  - id: agentic-ai
+    name: "Agentic AI"
+    name_zh: "智能体 AI"
+    icon: brain-circuit
+    tagline: "Reasoning, learning, tool use, and interactive environments."
+    tagline_zh: "推理、强化学习、工具使用与交互环境。"
+    topics:
+
+      - id: llm-reasoning-agentic-rl
+        title: "LLM Reasoning & Agentic RL"
+        title_zh: "大模型推理与智能体强化学习"
+        short: "Reasoning & RL"
+        short_zh: "推理与强化学习"
+        icon: route
+        kicker: "Reasoning, RL, and adaptive test-time compute"
+        kicker_zh: "推理、强化学习与自适应测试时计算"
+        summary: "This project organizes the lab's recent work on verifiable reasoning, policy optimization, path pruning, code-integrated thinking, and multimodal R1-style training. The through-line is simple: make LLMs reason with feedback signals that are inspectable, efficient, and useful for downstream agents."
+        summary_zh: "这一方向整合实验室在可验证推理、策略优化、推理路径剪枝、代码集成思考和多模态 R1 式训练上的近期工作。主线很简单：让大模型借助可检查、高效、且对下游智能体有用的反馈信号进行推理。"
+        page: "/projects/llm-reasoning-agentic-rl/"
+        links:
+          - {label: "Math & Optimization", label_zh: "数学与运筹优化", url: "/projects/reasoning-math-optimization/"}
+          - {label: "Papers by Benyou Wang", label_zh: "王本友论文列表", url: "https://wabyking.github.io/"}
+        highlights: ["OnePO", "CRPO", "STOP", "Video-R1", "CoRT"]
+        image: "/assets/img/research/reasoning-agentic-rl.svg"
+        image_zh: "/assets/img/research/reasoning-agentic-rl-zh.svg"
+        image_alt: "Diagram of the reasoning and agentic RL program: policy optimization, efficient reasoning, code-integrated thinking, and multimodal R1 training around verifiable feedback"
+        image_alt_zh: "推理与智能体强化学习路线示意：围绕可验证反馈的策略优化、高效推理、代码集成思考与多模态 R1 训练"
+        papers:
+          - title: "OnePO: Direct One-stage Policy Optimization for SFT-free Domain Adaptation"
+            url: "https://wabyking.github.io/"
+            note: "Direct policy optimization without a separate SFT stage."
+            note_zh: "无需单独 SFT 阶段的直接策略优化。"
+          - title: "CRPO: Character-centric Group Relative Policy Optimization for Role-aware Reasoning in Role-playing Agents"
+            url: "https://arxiv.org/abs/2605.25511"
+            note: "RL objectives for role-aware reasoning agents."
+            note_zh: "面向角色感知推理智能体的强化学习目标。"
+          - title: "Question-Free Fine-Tuning: Towards Efficient and Adaptive Reasoning in Large Language Models"
+            url: "https://arxiv.org/abs/2506.12860"
+            note: "Efficient and adaptive reasoning fine-tuning."
+            note_zh: "高效、自适应的推理微调。"
+          - title: "Cut Your Losses! Learning to Prune Paths Early for Efficient Parallel Reasoning"
+            url: "https://arxiv.org/abs/2604.16029"
+            note: "Learnable path pruning for large reasoning models."
+            note_zh: "面向大推理模型的可学习路径剪枝。"
+          - title: "Video-R1: Reinforcing Video Reasoning in MLLMs"
+            url: "https://arxiv.org/abs/2503.21776"
+            note: "R1-style reinforcement learning for multimodal video reasoning."
+            note_zh: "把 R1 式强化学习用于多模态视频推理。"
+          - title: "CoRT: Code-integrated Reasoning within Thinking"
+            url: "https://arxiv.org/abs/2506.09820"
+            note: "Executable computation inside the reasoning process."
+            note_zh: "在推理过程中嵌入可执行计算。"
+        resources:
+          - {type: "Project", name: "STOP / Cut Your Losses", url: "https://bijiaxihh.github.io/STOP/", note: "Early path pruning for efficient parallel reasoning.", note_zh: "提前剪枝推理路径，实现高效并行推理。"}
+          - {type: "GitHub", name: "tulerfeng/Video-R1", url: "https://github.com/tulerfeng/Video-R1", note: "Video-R1-CoT and RL training resources for video reasoning.", note_zh: "视频推理的 Video-R1-CoT 数据与强化学习训练资源。"}
+          - {type: "GitHub", name: "ChengpengLi1003/CoRT", url: "https://github.com/ChengpengLi1003/CoRT", note: "Code-integrated reasoning resources.", note_zh: "代码集成推理资源。"}
+          - {type: "GitHub", name: "1KE-JI/UPFT", url: "https://github.com/1KE-JI/UPFT", note: "Unsupervised prefix fine-tuning for efficient reasoning models.", note_zh: "面向高效推理模型的无监督前缀微调。"}
+
+      - id: llm-agents-applications
+        title: "LLM Agents, Applications & Human-Agent Interaction"
+        title_zh: "大模型智能体、应用与人机交互"
+        short: "Agent Applications"
+        short_zh: "智能体应用"
+        icon: users
+        kicker: "Agents, applications, simulators, and human-agent interaction"
+        kicker_zh: "智能体、应用、模拟器与人机交互"
+        summary: "This project groups papers where LLMs become agents and interactive systems: tool planners, user simulators, standardized patients, role-playing agents, market participants, speech-to-speech systems, and micro-world actors. Papers are organized by what the agent does, where it acts, how it interacts with humans, and how the interaction is evaluated."
+        summary_zh: "这一方向汇集让大模型成为智能体与交互系统的工作：工具规划器、用户模拟器、标准化病人、角色扮演智能体、市场参与者、语音对话系统和微观世界中的行动者。我们按照智能体做什么、在什么环境中行动、如何与人交互、以及交互如何被评测来组织这些论文。"
+        page: "/projects/llm-agents-applications/"
+        links:
+          - {label: "Human-agent interaction", label_zh: "人机交互详情", url: "/projects/human-agent-interaction/"}
+          - {label: "Papers by Benyou Wang", label_zh: "王本友论文列表", url: "https://wabyking.github.io/"}
+        highlights: ["Smurfs", "PlatoLM", "EasyMED", "TwinMarket", "MicroVerse"]
+        image: "/assets/img/media-roundup-2026/twinmarket-bdi.png"
+        image_alt: "TwinMarket belief-desire-intention framework for LLM investor agents"
+        image_alt_zh: "TwinMarket 中大模型投资者智能体的信念—愿望—意图框架"
+        papers:
+          - title: "Smurfs: Multi-Agent System using Context-Efficient DFSDT for Tool Planning"
+            url: "https://aclanthology.org/2025.naacl-long.169/"
+            venue: "NAACL 2025"
+            note: "Multi-agent tool planning with context-efficient search."
+            note_zh: "基于上下文高效搜索的多智能体工具规划。"
+          - title: "Large Language Model as a User Simulator"
+            url: "https://arxiv.org/abs/2308.11534"
+            note: "LLM users for dialogue training and evaluation."
+            note_zh: "用大模型扮演用户，支持对话训练与评测。"
+          - title: "PlatoLM: Teaching LLMs via a Socratic Questioning User Simulator"
+            url: "https://openreview.net/forum?id=9nddtu94uX"
+            note: "Socratic interaction as a training signal."
+            note_zh: "把苏格拉底式追问作为训练信号。"
+          - title: "Human or LLM as Standardized Patients? A Comparative Study in Medical Education"
+            url: "https://arxiv.org/abs/2511.14783"
+            note: "AI patients for medical education and evaluation."
+            note_zh: "用于医学教育与评测的 AI 病人。"
+          - title: "Human or Machine? A Preliminary Turing Test for Speech-to-Speech Interaction"
+            url: "https://arxiv.org/abs/2602.24080"
+            note: "Human-likeness evaluation for speech-to-speech interaction."
+            note_zh: "评测语音到语音交互的拟人程度。"
+          - title: "TwinMarket: A Scalable Behavioral and Social Simulation for Financial Markets"
+            url: "https://arxiv.org/abs/2502.01506"
+            note: "LLM investor agents in market simulation."
+            note_zh: "金融市场仿真中的大模型投资者智能体。"
+          - title: "MicroVerse: A Preliminary Exploration Toward a Micro-World Simulation"
+            url: "https://arxiv.org/abs/2603.00585"
+            note: "Agentic micro-world simulation for scientific processes."
+            note_zh: "面向科学过程的智能体微观世界仿真。"
+        resources:
+          - {type: "Paper", name: "Smurfs", url: "https://arxiv.org/abs/2405.05955", note: "Multi-agent tool planning through context-efficient DFSDT.", note_zh: "基于上下文高效 DFSDT 的多智能体工具规划。"}
+          - {type: "GitHub", name: "FreedomIntelligence/EasyMED", url: "https://github.com/FreedomIntelligence/EasyMED", note: "AI standardized patient framework and evaluation resources.", note_zh: "AI 标准化病人框架与评测资源。"}
+          - {type: "Project", name: "TwinMarket", url: "/projects/twinmarket-financial-simulation/", note: "Financial market simulation with LLM agents.", note_zh: "基于大模型智能体的金融市场仿真。"}
+          - {type: "Project", name: "MicroVerse", url: "/projects/microverse-world-simulation/", note: "Micro-world simulation with hidden mechanisms and evolving states.", note_zh: "具有隐藏机制与状态演化的微观世界仿真。"}
+
+      - id: mobile-agent
+        title: "Mobile Agent"
+        title_zh: "手机智能体"
+        short: "Mobile Agent"
+        short_zh: "手机智能体"
+        icon: smartphone
+        kicker: "Phone-use agents and mobile workflow execution"
+        kicker_zh: "手机使用智能体与移动端工作流执行"
+        summary: "This line turns the phone into a real execution ground for general-purpose agents: from privacy and safety evaluation, to controllable phone environments and a mixed GUI, CLI, and tool-action harness, to open models trained on real app workflows, so that phone-use agents complete tasks reliably, safely, and auditably."
+        summary_zh: "这条线把手机变成通用智能体的真实执行场：从隐私与安全评测，到可控手机环境、GUI / CLI / tool 混合动作的 harness，再到面向真实 App 工作流训练的开放模型，让手机智能体能可靠、安全、可审计地完成任务。"
+        page: "/projects/mobile-agent/"
+        links:
+          - {label: "PhoneHarness", label_zh: "PhoneHarness 主页", url: "https://phoneharness.github.io/"}
+          - {label: "PhoneHarness Bench", label_zh: "PhoneHarness 数据集", url: "https://huggingface.co/datasets/PhoneHarness/phoneharness-bench"}
+        highlights: ["MyPhoneBench", "PhoneWorld", "PhoneHarness", "PhoneBuddy"]
+        image: "/assets/img/media-roundup-2026/phoneharness-overview.png"
+        image_alt: "PhoneHarness overview: phone-use agents with mixed GUI, CLI, and tool actions"
+        image_alt_zh: "PhoneHarness 概览：结合 GUI、CLI 与工具动作的手机智能体"
+        papers:
+          - title: "Do Phone-Use Agents Respect Your Privacy?"
+            url: "https://arxiv.org/abs/2604.00986"
+            note: "MyPhoneBench evaluates permission, disclosure, and memory-control risks of phone-use agents."
+            note_zh: "用 MyPhoneBench 评测手机智能体的权限、披露和记忆控制风险。"
+          - title: "Safe, or Simply Incapable?"
+            url: "https://arxiv.org/abs/2605.07630"
+            note: "Separates genuine safety from dangerous actions and from agents that simply cannot do the task."
+            note_zh: "区分真正安全、危险行动和“什么也做不好”的失败。"
+          - title: "PhoneWorld"
+            url: "https://arxiv.org/abs/2605.29486"
+            note: "Turns real GUI trajectories and screenshots into reusable, executable, verifiable phone environments."
+            note_zh: "把真实 GUI 轨迹和截图转成可复用、可执行、可验证的手机环境。"
+          - title: "PhoneHarness"
+            url: "https://arxiv.org/abs/2606.14832"
+            note: "Measures real phone-workflow completion with a mixed action space of GUI, CLI, and tool actions."
+            note_zh: "用 GUI、CLI 和 tool action 的混合动作空间评测真实手机工作流完成度。"
+          - title: "PhoneBuddy"
+            url: "https://arxiv.org/abs/2606.23049"
+            note: "Trains open phone-use agent models with real app environments and a mock phone environment."
+            note_zh: "结合真实 App 环境和模拟手机环境训练开放的手机智能体模型。"
+        resources:
+          - {type: "Project", name: "Mobile Agent", url: "/projects/mobile-agent/", note: "Evaluation, safety, environments, harness, and training for phone agents.", note_zh: "手机智能体的评测、安全、环境、harness 和训练路线总览。"}
+          - {type: "Project", name: "PhoneHarness", url: "https://phoneharness.github.io/", note: "Project page for phone agents with mixed GUI, CLI, and tool actions.", note_zh: "GUI、CLI 与 tool 混合动作的手机智能体项目主页。"}
+          - {type: "GitHub", name: "PhoneHarness/PhoneHarness", url: "https://github.com/PhoneHarness/PhoneHarness", note: "Phone-use agent harness and evaluation workflow code.", note_zh: "手机智能体 harness 与评测工作流代码。"}
+          - {type: "HF Dataset", name: "PhoneHarness Bench", url: "https://huggingface.co/datasets/PhoneHarness/phoneharness-bench", note: "Mixed-action benchmark data for phone agents.", note_zh: "手机智能体混合动作 benchmark 数据。"}
+
+      - id: agentic-creation-executable-artifacts
+        title: "Agentic Creation & Executable Artifacts"
+        title_zh: "智能体创作与可执行产物"
+        short: "Agentic Creation"
+        short_zh: "智能体创作"
+        icon: code-xml
+        kicker: "From instructions to runnable games, CAD scripts, solvers, and code"
+        kicker_zh: "从指令到可运行的游戏、CAD 脚本、求解器与代码"
+        summary: "This line asks not whether a model sounds right, but whether an agent can turn a natural-language request into an artifact that actually runs, renders, and can be verified: playable Godot games, executable Blender CAD scripts, and mathematical-modeling solvers, with reasoning connected to a code-execution environment."
+        summary_zh: "这条线关注的不是“模型说得像不像”，而是智能体能不能把自然语言需求变成真正可运行、可渲染、可验证的产物。代表任务包括生成可玩的 Godot 游戏、可执行的 Blender CAD 脚本、数学建模求解器，以及把推理过程接到代码执行环境中。"
+        page: "/projects/agentic-creation-executable-artifacts/"
+        links:
+          - {label: "GameCraft-Bench", label_zh: "GameCraft-Bench", url: "https://github.com/FreedomIntelligence/gamecraft-bench"}
+          - {label: "BlenderLLM", label_zh: "BlenderLLM", url: "https://github.com/FreedomIntelligence/BlenderLLM"}
+        highlights: ["GameCraft-Bench", "BlenderLLM", "Mamo", "ORLM", "CoRT"]
+        image: "/assets/img/research/agentic-creation.svg"
+        image_zh: "/assets/img/research/agentic-creation-zh.svg"
+        image_alt: "Diagram: an instruction becomes an executable artifact that is run and verified, with games, CAD scripts, solvers, and code as examples"
+        image_alt_zh: "示意图：指令被智能体转为可执行产物并运行验证，例子包括游戏、CAD 脚本、求解器与代码"
+        papers:
+          - title: "GameCraft-Bench"
+            url: "https://arxiv.org/abs/2606.17861"
+            note: "Tests whether coding agents can turn a game spec into a complete Godot project that launches and replays."
+            note_zh: "评估 coding agents 是否能把游戏规格生成完整、可启动、可 replay 的 Godot 项目。"
+          - title: "BlenderLLM"
+            url: "https://arxiv.org/abs/2412.14203"
+            note: "Trains LLMs to write CAD scripts that execute in Blender and render 3D models."
+            note_zh: "训练大模型生成可在 Blender 中执行并渲染 3D 模型的 CAD 脚本。"
+          - title: "Mamo"
+            url: "https://arxiv.org/abs/2405.13144"
+            note: "A mathematical-modeling benchmark with solvers that turn natural-language problems into solvable models."
+            note_zh: "面向数学建模的 benchmark 和求解器，把自然语言问题转成可求解模型。"
+          - title: "ORLM"
+            url: "https://arxiv.org/abs/2405.17743"
+            note: "Trains LLMs for automated optimization modeling, linking descriptions, constraints, objectives, and code."
+            note_zh: "训练大模型做自动化优化建模，连接问题描述、约束、目标函数和代码。"
+          - title: "CoRT"
+            url: "https://arxiv.org/abs/2506.09820"
+            note: "Puts code execution inside reasoning so intermediate computation can be verified."
+            note_zh: "把代码执行放进推理，提升中间计算的可验证性。"
+        resources:
+          - {type: "Project", name: "Agentic Creation", url: "/projects/agentic-creation-executable-artifacts/", note: "Executable-artifact generation, verification, and interactive evaluation.", note_zh: "可执行产物生成、验证和交互式评测总览。"}
+          - {type: "GitHub", name: "FreedomIntelligence/gamecraft-bench", url: "https://github.com/FreedomIntelligence/gamecraft-bench", note: "Playable-game generation benchmark with tasks, replays, and hidden rubrics.", note_zh: "可玩游戏生成 benchmark、任务、replay 和 hidden rubric。"}
+          - {type: "GitHub", name: "FreedomIntelligence/BlenderLLM", url: "https://github.com/FreedomIntelligence/BlenderLLM", note: "CAD-script generation model, BlendNet data, and CADBench.", note_zh: "CAD 脚本生成模型、BlendNet 数据和 CADBench。"}
+          - {type: "GitHub", name: "FreedomIntelligence/Mamo", url: "https://github.com/FreedomIntelligence/Mamo", note: "Mathematical-modeling benchmark and solver resources.", note_zh: "数学建模 benchmark 与求解器资源。"}
+          - {type: "GitHub", name: "Cardinal-Operations/ORLM", url: "https://github.com/Cardinal-Operations/ORLM", note: "Automated optimization-modeling training framework and the IndustryOR benchmark.", note_zh: "自动化优化建模训练框架和 IndustryOR benchmark。"}
+
+      - id: environment-engineering-world-models
+        title: "Environment Engineering & World Models"
+        title_zh: "环境工程和世界模型"
+        short: "World Models"
+        short_zh: "环境与世界模型"
+        icon: earth
+        kicker: "States, actions, users, rules, and world dynamics"
+        kicker_zh: "状态、行动、用户、规则与世界动力学"
+        summary: "This line puts model capability inside runnable environments: defining states, actions, tools, users, rules, world dynamics, and evaluation alignment, so agents can be trained, evaluated, and iterated in user simulations, financial markets, scientific micro-worlds, and executable optimization environments."
+        summary_zh: "这条线把“模型能力”放进可运行环境中：定义状态、行动、工具、用户、规则、世界动力学和评测对齐，让智能体能在用户模拟、金融市场、科学微世界和可执行优化环境中训练、评测和迭代。"
+        page: "/projects/environment-engineering-world-models/"
+        links:
+          - {label: "Papers by Benyou Wang", label_zh: "王本友论文列表", url: "https://wabyking.github.io/"}
+        highlights: ["MicroVerse", "TwinMarket", "Economic World Models", "User Simulator", "CALM/STORM"]
+        highlights_zh: ["MicroVerse", "TwinMarket", "经济世界模型", "用户模拟器", "CALM/STORM"]
+        image: "/assets/img/economic-world-models/ewm-hero.png"
+        image_alt: "Environment engineering connects agents, environments, co-evolution, and real-world alignment"
+        image_alt_zh: "环境工程连接智能体、环境、共演化与真实世界对齐"
+        papers:
+          - title: "MicroVerse: A Preliminary Exploration Toward a Micro-World Simulation"
+            url: "https://arxiv.org/abs/2603.00585"
+            note: "Extends world models to organ, cell, and subcellular processes, with hidden mechanisms, state evolution, and scientific constraints."
+            note_zh: "把世界模型扩展到器官、细胞和亚细胞过程，强调隐藏机制、状态演化和科学约束。"
+          - title: "TwinMarket: A Scalable Behavioral and Social Simulation for Financial Markets"
+            url: "https://arxiv.org/abs/2502.01506"
+            note: "A financial-market environment built from LLM investors, where macro behavior emerges from beliefs and information flow."
+            note_zh: "用大模型投资者构造金融市场环境，从个体信念和信息流生成宏观行为。"
+          - title: "From Economic Agents to Agentic Economies"
+            url: "/assets/pdf/economic-world-models.pdf"
+            note: "A system blueprint for economic world models: agents, environments, co-evolution, and real-world alignment."
+            note_zh: "把智能体、环境、共演化和真实世界对齐组织成经济世界模型的系统蓝图。"
+          - title: "Large Language Model as a User Simulator"
+            url: "https://arxiv.org/abs/2308.11534"
+            note: "Controllable user environments that give multi-turn dialogue training and evaluation a repeatable counterpart."
+            note_zh: "用大模型构造可控用户环境，为多轮对话训练和评测提供可重复交互对象。"
+          - title: "ORLM: A Customizable Framework in Training Large Models for Automated Optimization Modeling"
+            url: "https://arxiv.org/abs/2405.17743"
+            note: "Turns natural-language problems into optimization models, constraints, objectives, and executable code."
+            note_zh: "把自然语言问题转成优化模型、约束、目标函数和可执行代码。"
+          - title: "CALM Before the STORM: Unlocking Native Reasoning for Optimization Modeling"
+            url: "https://arxiv.org/abs/2510.04204"
+            note: "Native reasoning for optimization modeling, framing engineering problems as verifiable modeling environments."
+            note_zh: "研究优化建模中的原生推理能力，把工程问题组织成可验证建模环境。"
+        resources:
+          - {type: "Project", name: "Environment Engineering & World Models", url: "/projects/environment-engineering-world-models/", note: "Environment definitions, agent interfaces, world dynamics, and evaluation alignment.", note_zh: "组织环境定义、智能体接口、世界动力学和评测对齐的总览页。"}
+          - {type: "Project", name: "Economic World Models", url: "/projects/economic-world-models/", note: "Architecture, capability ladder, and agentic economies.", note_zh: "经济世界模型架构、能力阶梯和 agentic economies。"}
+          - {type: "Project", name: "TwinMarket", url: "/projects/twinmarket-financial-simulation/", note: "Multi-agent social simulation of financial markets.", note_zh: "金融市场中的多智能体社会仿真环境。"}
+          - {type: "Project", name: "MicroVerse", url: "/projects/microverse-world-simulation/", note: "Micro-world simulation of biological and scientific mechanisms.", note_zh: "面向生物和科学机制的微世界模拟。"}
+          - {type: "GitHub", name: "Cardinal-Operations/ORLM", url: "https://github.com/Cardinal-Operations/ORLM", note: "Automated optimization-modeling training framework and benchmark.", note_zh: "自动化优化建模训练框架和 benchmark。"}
+          - {type: "GitHub", name: "tangzhy/STORM", url: "https://github.com/tangzhy/STORM", note: "CALM/STORM resources for optimization-modeling reasoning.", note_zh: "CALM/STORM 优化建模推理资源。"}
+
+  # ---------------------------------------------------------------------------
+  - id: physical-ai
+    name: "Physical AI"
+    name_zh: "物理 AI"
+    icon: cuboid
+    tagline: "Connecting foundation models with spatial environments, robots, and real-world interaction."
+    tagline_zh: "连接基础模型、空间环境、机器人与真实世界交互。"
+    topics:
+
+      - id: roomhub
+        title: "RoomHub: From Video to Interactive Worlds"
+        title_zh: "RoomHub：从视频到可交互的世界"
+        short: "RoomHub"
+        short_zh: "RoomHub"
+        icon: sofa
+        kicker: "Reconstructed environments to act in, test, and learn from"
+        kicker_zh: "可以行动、试验与学习的重建环境"
+        summary: "Video records how the world looks, and it also leaves clues about object structure and motion. RoomHub explores how to turn visual reconstruction into editable, operable, and verifiable 3D environments, connecting reconstruction, agent assembly, and interaction testing so reconstructed worlds can support gameplay, embodied learning, and repeatable experiments."
+        summary_zh: "视频记录了世界的外观，也留下了物体结构与运动方式的线索。RoomHub 探索如何利用这些线索，把视觉重建转化为可编辑、可操作、可验证的 3D 环境，连接视觉重建、智能体装配与交互测试，让重建出来的世界能够承载游戏玩法、具身学习和可重复的实验。"
+        links:
+          - {label: "Open RoomHub", label_zh: "打开 RoomHub", url: "/RoomHub/"}
+          - {label: "Try the interactive demos", label_zh: "体验交互演示", url: "/RoomHub/#scenes"}
+        highlights: ["Video to 3D", "Movable parts", "Agent assembly", "Execution checks"]
+        highlights_zh: ["视频转 3D", "可动部件", "智能体装配", "执行验证"]
+        image: "/RoomHub/assets/sv-office/poster.jpg"
+        image_alt: "RoomHub interactive demo: a reconstructed garden study with cabinets that can be opened"
+        image_alt_zh: "RoomHub 交互演示：可以打开柜门的重建庭院书房"
+        list_title: "Research pipeline"
+        list_title_zh: "研究路线"
+        steps:
+          - title: "Recover structure"
+            title_zh: "恢复结构"
+            note: "Estimate geometry, camera poses, and object structure from observations, separating appearance from editable geometry."
+            note_zh: "从观测估计几何、相机位姿与物体结构，连接视觉外观和可编辑的几何表示。"
+          - title: "Build behavior"
+            title_zh: "构建行为"
+            note: "Let an agent identify movable parts and assign joints, motion limits, collision geometry, and physical parameters."
+            note_zh: "让智能体识别活动部件，设置关节、运动范围、碰撞几何与物理参数。"
+          - title: "Execute and refine"
+            title_zh: "执行与修正"
+            note: "Run interactions in the environment, inspect the outcomes, and use failures to guide the next edit."
+            note_zh: "在环境中执行交互、观察结果，以失败案例指导下一轮修改。"
+          - title: "Where it stands"
+            title_zh: "当前进展"
+            note: "Browser demos compare interactive video for cabinet doors, drawers, and articulated parts; the full pipeline is under development."
+            note_zh: "可在浏览器中操作的交互视频对比，覆盖柜门、抽屉及关节部件；完整流程仍在研究与开发中。"
+        resources:
+          - {type: "Project", name: "RoomHub", url: "/RoomHub/", note: "Research site with two interactive scenes: a garden study and an island kitchen.", note_zh: "研究主页与两个交互场景：庭院书房与中岛厨房。"}
+
+      - id: embodied-ai
+        title: "From Foundation Models to Embodied AI"
+        title_zh: "从大模型到具身智能"
+        short: "Embodied AI"
+        short_zh: "具身智能"
+        icon: bot
+        kicker: "From the model, to the scene, to the robot's body"
+        kicker_zh: "从模型，到场景，再到机器人的身体"
+        summary: "Why this may be the best moment yet for people who build large models to enter embodied AI: general models are raising the starting line for robotics, and loops built in real settings let that capability keep growing, from the model to the scene to the robot's body."
+        summary_zh: "为什么现在可能是大模型从业者进入具身智能最好的时候：通用模型正在抬高机器人研发的起点，真实场景中的闭环让能力持续生长，从模型，到场景，再到机器人的身体。"
+        links:
+          - {label: "Read the essay", label_zh: "阅读全文", url: "/blog/2026/foundation-models-to-embodied-ai/en/", url_zh: "/blog/2026/foundation-models-to-embodied-ai/"}
+        highlights: ["Research overview", "Demos", "Robot control", "On-device AI"]
+        highlights_zh: ["研究综述", "演示", "机器人控制", "端侧 AI"]
+        image: "/assets/img/embodied-ai/cover-en.jpg"
+        image_zh: "/assets/img/embodied-ai/cover-zh.jpg"
+        image_alt: "From Foundation Models to Embodied AI: essay cover"
+        image_alt_zh: "《从大模型到具身智能》文章封面"
+        list_title: "Inside the essay"
+        list_title_zh: "文章脉络"
+        steps:
+          - title: "Why the window is opening"
+            title_zh: "为什么这个窗口正在打开"
+            url: "/blog/2026/foundation-models-to-embodied-ai/en/#why-now"
+            url_zh: "/blog/2026/foundation-models-to-embodied-ai/#why-now"
+          - title: "How general capability becomes the ability to act"
+            title_zh: "通用能力怎样变成行动能力"
+            url: "/blog/2026/foundation-models-to-embodied-ai/en/#capability"
+            url_zh: "/blog/2026/foundation-models-to-embodied-ai/#capability"
+          - title: "Making real settings a source of continual learning"
+            title_zh: "让真实场景成为持续学习的来源"
+            url: "/blog/2026/foundation-models-to-embodied-ai/en/#scene-loop"
+            url_zh: "/blog/2026/foundation-models-to-embodied-ai/#scene-loop"
+          - title: "From improving the model to improving the whole robot"
+            title_zh: "从改进模型，走向改进整个机器人"
+            url: "/blog/2026/foundation-models-to-embodied-ai/en/#coevolution"
+            url_zh: "/blog/2026/foundation-models-to-embodied-ai/#coevolution"
+          - title: "Plugging the growth of capability into your own practice"
+            title_zh: "把能力增长接到自己的实践中"
+            url: "/blog/2026/foundation-models-to-embodied-ai/en/#practice"
+            url_zh: "/blog/2026/foundation-models-to-embodied-ai/#practice"
+        resources:
+          - {type: "Essay", name: "From Foundation Models to Embodied AI (English)", url: "/blog/2026/foundation-models-to-embodied-ai/en/", note: "Research overview with demonstrations of spatial environments, simulation, robot control, and on-device systems.", note_zh: "英文版：空间环境、仿真、机器人控制与端侧系统的研究综述与演示。"}
+          - {type: "Essay", name: "从大模型到具身智能（中文）", url: "/blog/2026/foundation-models-to-embodied-ai/", note: "Chinese edition of the essay.", note_zh: "中文版全文。"}
+          - {type: "News", name: "ICRA 2026 LeHome Challenge", url: "/blog/2026/lehome-challenge-champion/", note: "A CUHK-Shenzhen SDS student and alumnus helped team sZs win the real-world final.", note_zh: "港中大（深圳）数据科学学院学生、校友作为核心成员，助力 sZs 队获得真实世界决赛第一名。"}
+
+  # ---------------------------------------------------------------------------
+  - id: multimodal-interaction
+    name: "Multimodal Interaction"
+    name_zh: "多模态交互"
+    icon: messages-square
+    tagline: "Understanding and communicating across vision, speech, and languages."
+    tagline_zh: "融合视觉、语音与多语言理解和交流。"
+    topics:
+
+      - id: multimodal-llms
+        title: "Multimodal LLMs"
+        title_zh: "多模态大模型"
+        short: "Multimodal LLMs"
+        short_zh: "多模态大模型"
+        icon: scan-eye
+        kicker: "Multimodal foundation models and visual reasoning"
+        kicker_zh: "多模态基础模型与视觉推理"
+        summary: "One capability map for text, images, video, audio, and medical vision: from long-context visual understanding in LongLLaVA and MileBench, to visual-token compression in TRIM and open image generation in ShareGPT-4o-Image and Janus-4o, to models and data for reasoning, medicine, and audio such as Video-R1, HuatuoGPT-Vision, and FusionAudio."
+        summary_zh: "多模态大模型方向把文字、图像、视频、音频和医学视觉放进同一个能力地图：从 LongLLaVA / MileBench 的长上下文视觉理解，到 TRIM 的视觉 token 压缩、ShareGPT-4o-Image / Janus-4o 的开放图像生成，再到 Video-R1、HuatuoGPT-Vision 和 FusionAudio 这类面向推理、医疗和音频场景的模型与数据。"
+        page: "/projects/multimodal-foundation-models/"
+        links:
+          - {label: "LongLLaVA & MileBench", label_zh: "LongLLaVA 与 MileBench", url: "/projects/long-context-multimodal/"}
+          - {label: "ShareGPT-4o-Image & Janus-4o", label_zh: "ShareGPT-4o-Image 与 Janus-4o", url: "/projects/sharegpt-4o-image-janus-4o/"}
+        highlights: ["LongLLaVA", "MileBench", "TRIM", "Janus-4o", "HuatuoGPT-Vision"]
+        image: "/assets/img/media-roundup-2026/longllava-architecture.webp"
+        image_alt: "LongLLaVA architecture for long-context multimodal LLMs"
+        image_alt_zh: "LongLLaVA 长上下文多模态大模型架构"
+        papers:
+          - title: "LongLLaVA: Scaling Multi-modal LLMs to 1000 Images Efficiently"
+            url: "https://arxiv.org/abs/2409.02889"
+            note: "Long-context multi-image understanding and reasoning."
+            note_zh: "长上下文多图像理解和推理。"
+          - title: "MileBench: Benchmarking MLLMs in Long Context"
+            url: "https://arxiv.org/abs/2404.18532"
+            note: "Evaluation on multi-image, video, and long visual contexts."
+            note_zh: "多图像、视频和长视觉上下文评测。"
+          - title: "TRIM: Less is More for Efficient Multi-modal LLMs"
+            url: "https://arxiv.org/abs/2409.10994"
+            note: "Removes redundant visual tokens to cut multimodal inference cost."
+            note_zh: "减少冗余视觉 token，降低多模态推理成本。"
+          - title: "ShareGPT-4o-Image and Janus-4o"
+            url: "https://arxiv.org/abs/2506.18095"
+            note: "Open GPT-4o-style image generation and editing data, plus a unified multimodal model."
+            note_zh: "开放 GPT-4o 风格图像生成 / 编辑数据和统一多模态模型。"
+          - title: "Video-R1: Reinforcing Video Reasoning in MLLMs"
+            url: "https://arxiv.org/abs/2503.21776"
+            note: "Extends R1-style reasoning training to video understanding."
+            note_zh: "把 R1 式推理训练扩展到视频理解。"
+          - title: "HuatuoGPT-Vision, Towards Injecting Medical Visual Knowledge into Multimodal LLMs at Scale"
+            url: "https://arxiv.org/abs/2406.19280"
+            note: "A multimodal medical LLM built by injecting medical visual knowledge."
+            note_zh: "面向医学视觉知识注入的多模态医学大模型。"
+        resources:
+          - {type: "Project", name: "Multimodal LLMs", url: "/projects/multimodal-foundation-models/", note: "Visual understanding, visual generation, video reasoning, medical vision, and audio.", note_zh: "总览视觉理解、视觉生成、视频推理、医学视觉和音频多模态。"}
+          - {type: "Project", name: "LongLLaVA & MileBench", url: "/projects/long-context-multimodal/", note: "Long-context multimodal model and benchmark.", note_zh: "长上下文多模态模型和 benchmark。"}
+          - {type: "Project", name: "ShareGPT-4o-Image & Janus-4o", url: "/projects/sharegpt-4o-image-janus-4o/", note: "Open image generation and editing data with a unified multimodal model.", note_zh: "开放图像生成 / 编辑数据和统一多模态模型。"}
+          - {type: "GitHub", name: "FreedomIntelligence/LongLLaVA", url: "https://github.com/FreedomIntelligence/LongLLaVA", note: "Long-context multimodal model resources.", note_zh: "长上下文多模态模型资源。"}
+          - {type: "GitHub", name: "FreedomIntelligence/TRIM", url: "https://github.com/FreedomIntelligence/TRIM", note: "Efficient multimodal token reduction.", note_zh: "高效多模态 token 压缩。"}
+          - {type: "GitHub", name: "FreedomIntelligence/HuatuoGPT-Vision", url: "https://github.com/FreedomIntelligence/HuatuoGPT-Vision", note: "Medical vision-language model and data.", note_zh: "医学视觉语言模型和数据资源。"}
+
+      - id: speech-llms
+        title: "Speech LLMs"
+        title_zh: "语音大模型"
+        short: "Speech LLMs"
+        short_zh: "语音大模型"
+        icon: audio-lines
+        kicker: "Speech LLMs and speech-to-speech agents"
+        kicker_zh: "语音大模型与语音对话智能体"
+        summary: "Speech LLMs extend large models from text to spoken input and output, tone, emotion, and paralinguistic cues. Related projects include Soundwave, S2S-Arena, EchoMind, FusionAudio, UNSPOKEN, and a speech-to-speech Turing test."
+        summary_zh: "语音大模型方向把大模型从文本扩展到语音输入、语音输出、语气、情绪和副语言信息。相关项目包括 Soundwave、S2S-Arena、EchoMind、FusionAudio、UNSPOKEN，以及语音对话图灵测试。"
+        page: "/projects/speech-audio-talking-head-ai/"
+        links:
+          - {label: "Soundwave", label_zh: "Soundwave", url: "https://github.com/FreedomIntelligence/Soundwave"}
+        highlights: ["Soundwave", "S2S-Arena", "EchoMind", "FusionAudio", "UNSPOKEN"]
+        image: "/assets/img/research/speech-llms.svg"
+        image_zh: "/assets/img/research/speech-llms-zh.svg"
+        image_alt: "Diagram: speech in, speech LLM, speech out, carrying tone, emotion, and paralinguistic cues"
+        image_alt_zh: "示意图：语音输入、语音大模型、语音输出，同时理解语气、情绪与副语言信息"
+        papers:
+          - title: "Soundwave: Less is More for Speech-Text Alignment in LLMs"
+            url: "https://arxiv.org/abs/2502.12900"
+            note: "Speech-text alignment with far less data."
+            note_zh: "用更少数据完成语音与文本对齐。"
+          - title: "S2S-Arena"
+            url: "https://arxiv.org/abs/2503.05085"
+            note: "Evaluates semantic understanding and paralinguistic instruction following in speech-to-speech models."
+            note_zh: "评测语音到语音模型的语义理解和副语言指令跟随。"
+          - title: "EchoMind"
+            url: "https://arxiv.org/abs/2510.22758"
+            note: "A multi-level benchmark for empathetic speech language models."
+            note_zh: "面向共情语音语言模型的多层级 benchmark。"
+          - title: "Human or Machine? A Preliminary Turing Test for Speech-to-Speech Interaction"
+            url: "https://arxiv.org/abs/2602.24080"
+            note: "Tests whether speech-to-speech systems really converse like humans."
+            note_zh: "评测语音对话系统是否真正像人类对话。"
+          - title: "FusionAudio-1.2M"
+            url: "https://arxiv.org/abs/2506.01111"
+            note: "Fine-grained audio captioning with multimodal contextual fusion."
+            note_zh: "细粒度音频描述与多模态上下文融合。"
+          - title: "UNSPOKEN"
+            url: "https://github.com/Hongru0306/UNSPOKEN"
+            note: "Evaluates metaphor reasoning in audio language models through unspoken acoustic cues."
+            note_zh: "用未说出口的声学线索评测音频语言模型的隐喻推理。"
+        resources:
+          - {type: "GitHub", name: "FreedomIntelligence/Soundwave", url: "https://github.com/FreedomIntelligence/Soundwave", note: "Speech-text alignment for LLMs.", note_zh: "大模型的语音—文本对齐。"}
+          - {type: "HF Model", name: "FreedomIntelligence/Soundwave", url: "https://huggingface.co/FreedomIntelligence/Soundwave", note: "Soundwave model card.", note_zh: "Soundwave 模型卡。"}
+          - {type: "GitHub", name: "FreedomIntelligence/S2S-Arena", url: "https://github.com/FreedomIntelligence/S2S-Arena", note: "Speech-to-speech paralinguistic benchmark.", note_zh: "语音到语音副语言能力 benchmark。"}
+          - {type: "Project", name: "EchoMind", url: "https://hlt-cuhksz.github.io/EchoMind/", note: "Empathetic speech language model benchmark.", note_zh: "共情语音语言模型 benchmark。"}
+          - {type: "GitHub", name: "FreedomIntelligence/FusionAudio", url: "https://github.com/FreedomIntelligence/FusionAudio", note: "Fine-grained audio captioning data and models.", note_zh: "细粒度音频描述数据与模型。"}
+
+      - id: multilingual-llms
+        title: "Multilingual LLMs"
+        title_zh: "多语言大语言模型"
+        short: "Multilingual LLMs"
+        short_zh: "多语言大模型"
+        icon: languages
+        kicker: "Multilingual and localized LLMs"
+        kicker_zh: "多语言与本地化大模型"
+        summary: "Our multilingual line starts with open multilingual chat in Phoenix and LLMZoo, continues with Arabic localization in AceGPT, and extends to multilingual medical models, corpora, and evaluation in Apollo and ApolloMoE. The goal: medical and general AI that serves more than a few high-resource languages."
+        summary_zh: "多语言主线从 Phoenix / LLMZoo 的开放多语言聊天开始，到 AceGPT 的阿拉伯语本地化，再到 Apollo / ApolloMoE 的多语言医学模型、语料和评测。核心目标是让医学和通用 AI 不只服务少数高资源语言。"
+        page: "/projects/multilingual-localized-llms/"
+        links:
+          - {label: "Data infrastructure", label_zh: "数据基础设施", url: "/projects/rag-instruction-data/"}
+        highlights: ["Phoenix", "AceGPT", "Apollo", "ApolloMoE"]
+        image: "/assets/img/freedomai-2026/impact/apollo-map.jpg"
+        image_alt: "Map of languages covered by Apollo multilingual medical models"
+        image_alt_zh: "Apollo 多语言医学模型覆盖语言地图"
+        papers:
+          - title: "Phoenix: Democratizing ChatGPT across Languages"
+            url: "https://arxiv.org/abs/2304.10453"
+            note: "An early open multilingual chat model."
+            note_zh: "早期开放多语言聊天模型。"
+          - title: "AceGPT, Localizing Large Language Models in Arabic"
+            url: "https://aclanthology.org/2024.naacl-long.450/"
+            venue: "NAACL 2024"
+            note: "Localization and alignment of LLMs for Arabic."
+            note_zh: "阿拉伯语大模型本地化与对齐。"
+          - title: "Apollo: Lightweight Multilingual Medical LLMs towards Democratizing Medical AI to 6B People"
+            url: "https://arxiv.org/abs/2403.03640"
+            note: "Multilingual medical models, data, and evaluation."
+            note_zh: "多语言医学模型、数据和评测。"
+          - title: "ApolloMoE"
+            url: "https://arxiv.org/abs/2409.02615"
+            note: "Medical mixture-of-experts models covering 50 languages."
+            note_zh: "面向 50 种语言的医学 MoE 模型。"
+        resources:
+          - {type: "GitHub", name: "FreedomIntelligence/LLMZoo", url: "https://github.com/FreedomIntelligence/LLMZoo", note: "Phoenix and LLMZoo multilingual model resources.", note_zh: "Phoenix / LLMZoo 多语言模型资源。"}
+          - {type: "GitHub", name: "FreedomIntelligence/AceGPT", url: "https://github.com/FreedomIntelligence/AceGPT", note: "Code and resources for Arabic LLM localization.", note_zh: "阿拉伯语大模型本地化代码和资源。"}
+          - {type: "GitHub", name: "FreedomIntelligence/Apollo", url: "https://github.com/FreedomIntelligence/Apollo", note: "Apollo multilingual medical models, data, and evaluation code.", note_zh: "Apollo 多语言医学模型、数据、评测代码。"}
+          - {type: "GitHub", name: "FreedomIntelligence/ApolloMoE", url: "https://github.com/FreedomIntelligence/ApolloMoE", note: "Code for medical MoE models covering 50 languages.", note_zh: "面向 50 种语言的医学 MoE 模型代码。"}
+
+  # ---------------------------------------------------------------------------
+  - id: ai-for-infra
+    name: "AI for Infra"
+    name_zh: "AI 基础设施"
+    icon: cpu
+    tagline: "Efficient models, scalable systems, and accelerator adaptation."
+    tagline_zh: "高效模型、可扩展系统与国产算力适配。"
+    topics:
+
+      - id: llm-efficiency-ai-infra
+        title: "LLM Efficiency & AI Infra"
+        title_zh: "大模型效率与 AI 基础设施"
+        short: "LLM Efficiency"
+        short_zh: "大模型效率"
+        icon: gauge
+        kicker: "Efficient training, inference, retrieval, and multimodal context"
+        kicker_zh: "高效训练、推理、检索与多模态上下文"
+        summary: "This line asks a practical question, can we afford to run it, train it, and update it quickly, and answers with reasoning-path pruning, question-free fine-tuning, prefix fine-tuning, editable efficient RAG, long-context multimodality, and token reduction."
+        summary_zh: "这条线把“能不能跑得起、训得动、改得快”作为项目主题，覆盖推理路径剪枝、question-free fine-tuning、前缀微调、可编辑的高效 RAG、长上下文多模态和 token 压缩。"
+        page: "/projects/llm-efficiency-ai-infra/"
+        links:
+          - {label: "LongLLaVA & MileBench", label_zh: "LongLLaVA 与 MileBench", url: "/projects/long-context-multimodal/"}
+          - {label: "Data infrastructure", label_zh: "数据基础设施", url: "/projects/rag-instruction-data/"}
+        highlights: ["STOP", "QFFT", "UPFT", "E2-RAG", "TRIM"]
+        image: "/assets/img/research/llm-efficiency.svg"
+        image_zh: "/assets/img/research/llm-efficiency-zh.svg"
+        image_alt: "Diagram of four efficiency levers: prune reasoning paths, tune with less supervision, edit compressed KV caches, and use fewer visual tokens"
+        image_alt_zh: "示意图：四种效率手段——剪枝推理路径、用更少监督微调、编辑压缩 KV cache、减少视觉 token"
+        papers:
+          - title: "Cut Your Losses! Learning to Prune Paths Early for Efficient Parallel Reasoning"
+            url: "https://arxiv.org/abs/2604.16029"
+            note: "Prunes low-value reasoning paths early."
+            note_zh: "提前剪枝低价值推理路径。"
+          - title: "Question-Free Fine-Tuning: Towards Efficient and Adaptive Reasoning in Large Language Models"
+            url: "https://arxiv.org/abs/2506.12860"
+            note: "QFFT for efficient, adaptive reasoning."
+            note_zh: "面向高效自适应推理的 QFFT。"
+          - title: "The First Few Tokens Are All You Need"
+            url: "https://arxiv.org/abs/2503.02875"
+            note: "UPFT: efficient unsupervised reasoning fine-tuning on only a few prefix tokens."
+            note_zh: "UPFT，用极少前缀 token 进行高效无监督推理微调。"
+          - title: "E2-RAG: Towards Editable Efficient RAG by Editing Compressed KV Caches"
+            url: "https://papers.cool/venue/COLM.2025"
+            venue: "COLM 2025"
+            note: "Edits compressed KV caches for knowledge that changes fast."
+            note_zh: "编辑压缩 KV cache，面向快速更新场景。"
+          - title: "LongLLaVA: Scaling Multi-modal LLMs to 1000 Images Efficiently"
+            url: "https://arxiv.org/abs/2409.02889"
+            note: "Long-context multi-image multimodal reasoning."
+            note_zh: "长上下文多图像多模态推理。"
+          - title: "TRIM: Less is More for Efficient Multi-modal LLMs"
+            url: "https://arxiv.org/abs/2409.10994"
+            note: "Fewer visual tokens, lower multimodal inference cost."
+            note_zh: "减少视觉 token，降低多模态推理成本。"
+        resources:
+          - {type: "Project", name: "China-Developed AI Computing", url: "/projects/native-ai-compute-adaptation/", note: "Ascend training, full-stack acceleration, benchmark validation, real-world delivery, and open ecosystem building.", note_zh: "昇腾大规模训练、全栈计算加速、Benchmark 验证、真实场景交付与开放生态。"}
+          - {type: "GitHub", name: "FreedomIntelligence/LongLLaVA", url: "https://github.com/FreedomIntelligence/LongLLaVA", note: "Long-context multimodal model.", note_zh: "长上下文多模态模型。"}
+          - {type: "GitHub", name: "FreedomIntelligence/TRIM", url: "https://github.com/FreedomIntelligence/TRIM", note: "Efficient multimodal token reduction.", note_zh: "高效多模态 token 压缩。"}
+          - {type: "GitHub", name: "1KE-JI/UPFT", url: "https://github.com/1KE-JI/UPFT", note: "Unsupervised prefix fine-tuning resources.", note_zh: "无监督前缀微调资源。"}
+          - {type: "GitHub", name: "FreedomIntelligence/RAG-Instruct", url: "https://github.com/FreedomIntelligence/RAG-Instruct", note: "Retrieval-augmented instruction data.", note_zh: "检索增强指令数据。"}
+          - {type: "GitHub", name: "FreedomIntelligence/LLMZoo", url: "https://github.com/FreedomIntelligence/LLMZoo", note: "Open models and training resources.", note_zh: "开放模型和训练资源集合。"}
+
+      - id: native-ai-compute
+        title: "China-Developed AI Computing: Adaptation and Acceleration"
+        title_zh: "国产 AI 算力适配与加速"
+        short: "AI Compute"
+        short_zh: "国产算力"
+        icon: circuit-board
+        kicker: "China-developed accelerators, inference systems, and open benchmarks"
+        kicker_zh: "国产加速器、推理系统与开放评测"
+        summary: "End-to-end engineering for large-scale Ascend training, model migration, vLLM/SGLang and KV Cache optimization, operators and kernels, benchmark validation, real-world delivery, and open ecosystem building."
+        summary_zh: "覆盖昇腾大规模训练、模型迁移、vLLM/SGLang 与 KV Cache 优化、算子与 Kernel、Benchmark 验证、真实场景交付及开放生态建设的全栈技术链条。"
+        page: "/projects/native-ai-compute-adaptation/"
+        links:
+          - {label: "AccelMark", label_zh: "AccelMark", url: "https://github.com/FreedomIntelligence/AccelMark"}
+          - {label: "openPangu on Ascend", label_zh: "昇腾上的 openPangu", url: "https://huggingface.co/FreedomIntelligence/openPangu-Embedded-7B"}
+        highlights: ["Ascend", "vLLM / SGLang", "CANNBench", "AccelMark", "openPangu"]
+        image: "/assets/img/native-compute-stack.svg"
+        image_alt: "China-developed AI compute adaptation and acceleration stack"
+        image_alt_zh: "国产 AI 算力适配与加速技术栈"
+        list_title: "From accelerator to application"
+        list_title_zh: "从算力到应用"
+        steps:
+          - title: "Scale"
+            title_zh: "规模"
+            note: "Arabic LLM training on 2,368 Ascend 910A processors, with results at NAACL 2024, ACL 2025, and NeurIPS 2024."
+            note_zh: "在 2,368 块昇腾 910A 处理器上训练阿拉伯语大模型，成果发表于 NAACL 2024、ACL 2025 和 NeurIPS 2024。"
+          - title: "Systems"
+            title_zh: "系统"
+            note: "Prompt, KV Cache, inference-engine, attention, operator, and kernel optimization."
+            note_zh: "Prompt、KV Cache、推理引擎、注意力、算子与 Kernel 优化。"
+          - title: "Evaluation"
+            title_zh: "评测"
+            note: "CANNBench results and AccelMark's transparent, reproducible heterogeneous-accelerator comparisons."
+            note_zh: "CANNBench 评测结果，以及 AccelMark 透明、可复现的异构加速器对比。"
+          - title: "Delivery"
+            title_zh: "交付"
+            note: "Localized medical agents, HuatuoGPT, and intelligent health-management workflows in a secure hospital environment."
+            note_zh: "在安全的医院环境中交付本地化医疗智能体、华佗GPT 与智能健康管理工作流。"
+          - title: "Ecosystem"
+            title_zh: "生态"
+            note: "100+ Hugging Face models, million-scale downloads, and 10,000+ GitHub stars across representative projects."
+            note_zh: "代表性项目累计 100+ 个 Hugging Face 模型、百万级下载量和 10,000+ GitHub Stars。"
+        resources:
+          - {type: "GitHub", name: "FreedomIntelligence/AccelMark", url: "https://github.com/FreedomIntelligence/AccelMark", note: "Transparent, reproducible heterogeneous-accelerator benchmarks.", note_zh: "透明、可复现的异构加速器评测。"}
+          - {type: "HF Model", name: "FreedomIntelligence/openPangu-Embedded-7B", url: "https://huggingface.co/FreedomIntelligence/openPangu-Embedded-7B", note: "openPangu adapted for Ascend.", note_zh: "适配昇腾的 openPangu 模型。"}
+
+  # ---------------------------------------------------------------------------
+  - id: ai-applications
+    name: "AI Applications"
+    name_zh: "AI 应用"
+    icon: blocks
+    tagline: "Medical, dental, legal, educational, financial, and optimization systems."
+    tagline_zh: "医疗、牙科、法律、教育、金融与运筹优化。"
+    topics:
+
+      - id: huatuogpt
+        title: "AI for Healthcare: the HuatuoGPT Family"
+        title_zh: "AI for Healthcare：华佗GPT 系列大模型"
+        short: "HuatuoGPT"
+        short_zh: "华佗GPT"
+        icon: stethoscope
+        kicker: "HuatuoGPT medical model family"
+        kicker_zh: "华佗GPT 医疗大模型家族"
+        summary: "HuatuoGPT is our main line in AI for healthcare: from the Huatuo-26M Chinese medical QA dataset, to medical adaptation in HuatuoGPT and HuatuoGPT-II, to complex medical reasoning in HuatuoGPT-o1 and medical vision-language understanding in HuatuoGPT-Vision."
+        summary_zh: "华佗GPT 是 AI for Healthcare 主线：从 Huatuo-26M 中文医学问答数据，到 HuatuoGPT / HuatuoGPT-II 医学适配，再到 HuatuoGPT-o1 的复杂医学推理和 HuatuoGPT-Vision 的医学视觉语言理解。"
+        page: "/projects/medical-ai-ecosystem/"
+        links:
+          - {label: "HuatuoGPT-II", label_zh: "HuatuoGPT-II", url: "/projects/huatuogpt-ii/"}
+        highlights: ["Huatuo-26M", "HuatuoGPT-II", "HuatuoGPT-o1", "HuatuoGPT-Vision", "PubMedVision"]
+        image: "/assets/img/media-roundup-2026/huatuogpt-overview.png"
+        image_alt: "HuatuoGPT medical model ecosystem"
+        image_alt_zh: "华佗GPT 医疗大模型生态"
+        papers:
+          - title: "Huatuo-26M, a Large-scale Chinese Medical QA Dataset"
+            url: "https://arxiv.org/abs/2305.01526"
+            note: "The data foundation for Chinese medical QA."
+            note_zh: "中文医学问答数据基础。"
+          - title: "HuatuoGPT, towards Taming Language Model to Be a Doctor"
+            url: "https://arxiv.org/abs/2305.15075"
+            note: "An early open medical dialogue model."
+            note_zh: "早期开放医学对话模型。"
+          - title: "HuatuoGPT-II, One-stage Training for Medical Adaption of LLMs"
+            url: "https://arxiv.org/abs/2311.09774"
+            note: "Unified one-stage training for medical adaptation."
+            note_zh: "统一一阶段医学适配训练。"
+          - title: "Towards Medical Complex Reasoning with LLMs through Medical Verifiable Problems"
+            url: "https://arxiv.org/abs/2412.18925"
+            note: "HuatuoGPT-o1 for complex medical reasoning."
+            note_zh: "HuatuoGPT-o1 复杂医学推理。"
+          - title: "HuatuoGPT-Vision, Towards Injecting Medical Visual Knowledge into Multimodal LLMs at Scale"
+            url: "https://arxiv.org/abs/2406.19280"
+            note: "Injecting medical visual knowledge into multimodal LLMs."
+            note_zh: "医学多模态视觉知识注入。"
+        resources:
+          - {type: "GitHub", name: "FreedomIntelligence/Huatuo-26M", url: "https://github.com/FreedomIntelligence/Huatuo-26M", note: "Chinese medical QA dataset and construction resources.", note_zh: "中文医学问答数据集与构建资源。"}
+          - {type: "GitHub", name: "FreedomIntelligence/HuatuoGPT", url: "https://github.com/FreedomIntelligence/HuatuoGPT", note: "Code for the original HuatuoGPT medical dialogue model.", note_zh: "华佗GPT 基础医学对话模型代码。"}
+          - {type: "GitHub", name: "FreedomIntelligence/HuatuoGPT-II", url: "https://github.com/FreedomIntelligence/HuatuoGPT-II", note: "HuatuoGPT-II training and evaluation materials.", note_zh: "HuatuoGPT-II 训练和评测材料。"}
+          - {type: "GitHub", name: "FreedomIntelligence/HuatuoGPT-o1", url: "https://github.com/FreedomIntelligence/HuatuoGPT-o1", note: "Medical complex-reasoning models and data.", note_zh: "医学复杂推理模型和数据。"}
+          - {type: "GitHub", name: "FreedomIntelligence/HuatuoGPT-Vision", url: "https://github.com/FreedomIntelligence/HuatuoGPT-Vision", note: "Training code for the medical vision-language model.", note_zh: "医学视觉语言模型训练代码。"}
+          - {type: "HF Dataset", name: "FreedomIntelligence/PubMedVision", url: "https://huggingface.co/datasets/FreedomIntelligence/PubMedVision", note: "Medical image-text visual instruction data.", note_zh: "医学图文视觉指令数据。"}
+
+      - id: dental-foundation-models
+        title: "Dental Foundation Models"
+        title_zh: "牙科大模型"
+        short: "Dental AI"
+        short_zh: "牙科大模型"
+        icon: tooth
+        kicker: "Dental LLMs, multimodal diagnosis, clinical reasoning, and benchmarks"
+        kicker_zh: "牙科大模型、多模态诊断、临床推理与评测"
+        summary: "Dentistry is a vertical of medical AI that stands as its own direction: multimodal dental models such as DentalGPT, and benchmarks such as GlobalDentBench and OmniDentBench for clinical reasoning, safety risk, and expert calibration, centered on oral imaging, case reasoning, specialty taxonomies, real clinical risk, and expert scoring."
+        summary_zh: "牙科是可以独立成方向的垂直医疗 AI：既有 DentalGPT 这样的多模态牙科大模型，也有 GlobalDentBench、OmniDentBench 等面向临床推理、安全风险和专家校准的 benchmark。它强调口腔影像、病例推理、专科 taxonomy、真实临床风险和专家评分。"
+        page: "/projects/dental-foundation-models/"
+        links:
+          - {label: "OmniDentBench", label_zh: "OmniDentBench", url: "https://freedomdle.cn/"}
+          - {label: "DentalGPT", label_zh: "DentalGPT", url: "https://github.com/FreedomIntelligence/DentalGPT"}
+        highlights: ["DentalGPT", "GlobalDentBench", "OmniDentBench", "DentalBench", "OralGPT-Omni"]
+        image: "/assets/img/research/dental-ai.svg"
+        image_zh: "/assets/img/research/dental-ai-zh.svg"
+        image_alt: "Dental AI at a glance: 120K+ dental images, 8,978 expert-calibrated questions, 88 countries and regions, 14 specialties"
+        image_alt_zh: "牙科 AI 一览：120K+ 牙科图像、8,978 道专家校准题、88 个国家和地区、14 个专科"
+        list_title: "Papers and benchmarks"
+        list_title_zh: "相关论文与 benchmark"
+        papers:
+          - title: "DentalGPT"
+            url: "https://arxiv.org/abs/2512.11558"
+            note: "Strengthens multimodal complex reasoning with 120K+ dental images, domain-knowledge injection, and GRPO."
+            note_zh: "用 120K+ 牙科图像、领域知识注入和 GRPO 强化多模态复杂推理。"
+          - title: "GlobalDentBench"
+            url: "https://arxiv.org/abs/2605.24636"
+            note: "A multinational dental benchmark: 8,978 expert-calibrated questions across 88 countries and regions and 14 specialties."
+            note_zh: "覆盖 88 个国家 / 地区、14 个牙科专科、8,978 道专家校准题的跨国牙科 benchmark。"
+          - title: "OmniDentBench"
+            url: "https://freedomdle.cn/"
+            note: "A global dental benchmarking platform for complex clinical decisions and biomedical research."
+            note_zh: "面向复杂临床决策和生物医学研究的全球牙科基准评测平台。"
+          - title: "DentalBench"
+            url: "https://arxiv.org/abs/2508.20416"
+            note: "A bilingual dental QA benchmark and the large-scale DentalCorpus for evaluating and improving dental understanding."
+            note_zh: "双语牙科问答 benchmark 和大规模 DentalCorpus，用于评估和增强牙科理解。"
+          - title: "OralGPT-Omni"
+            url: "https://arxiv.org/abs/2511.22055"
+            note: "A multimodal dental model with the MMOral-Uni benchmark across many oral-imaging tasks."
+            note_zh: "牙科多模态大模型与 MMOral-Uni benchmark，覆盖多种口腔影像任务。"
+        resources:
+          - {type: "Project", name: "Dental Foundation Models", url: "/projects/dental-foundation-models/", note: "Dental models, dental benchmarks, and OmniDentBench.", note_zh: "牙科大模型、牙科 benchmark 和 OmniDentBench 总览。"}
+          - {type: "Platform", name: "OmniDentBench", url: "https://freedomdle.cn/", note: "Global dental benchmarking platform and the ODB leaderboard.", note_zh: "全球牙科基准评测平台和 ODB 排行榜。"}
+          - {type: "GitHub", name: "FreedomIntelligence/DentalGPT", url: "https://github.com/FreedomIntelligence/DentalGPT", note: "Multimodal dental model, training pipeline, and evaluation setup.", note_zh: "牙科多模态大模型、训练流程和评测设置。"}
+          - {type: "GitHub", name: "FreedomIntelligence/GlobalDentBench", url: "https://github.com/FreedomIntelligence/GlobalDentBench", note: "Expert-calibrated multinational dental clinical-reasoning benchmark.", note_zh: "专家校准的跨国牙科临床推理 benchmark。"}
+          - {type: "HF Dataset", name: "FreedomIntelligence/GlobalDentBench-OA", url: "https://huggingface.co/datasets/FreedomIntelligence/GlobalDentBench-OA", note: "Open evaluation subset of GlobalDentBench.", note_zh: "GlobalDentBench 开放评测子集。"}
+
+      - id: clinical-agents-hospital-world-models
+        title: "Clinical & Hospital World Models"
+        title_zh: "临床与医院世界模型"
+        short: "Hospital World Models"
+        short_zh: "医院世界模型"
+        icon: hospital
+        kicker: "Clinical agents, patient dynamics, HIS environments, and hospital twins"
+        kicker_zh: "临床智能体、患者动态、HIS 环境与数字孪生医院"
+        summary: "This direction moves medical AI from static question answering to agents acting in clinical environments: ICU patient dynamics, hospital information systems, physician workflows, multi-role hospital simulation, tool use, and safety governance."
+        summary_zh: "这个方向把医疗 AI 从静态问答推进到临床环境中的智能体：它关心 ICU 患者动态、医院信息系统、医生工作流、多角色医院仿真、工具调用和安全治理。"
+        page: "/projects/clinical-agents-hospital-world-models/"
+        links:
+          - {label: "SepsisAgent", label_zh: "SepsisAgent", url: "https://github.com/FreedomIntelligence/SepsisAgent"}
+          - {label: "TwinHospital", label_zh: "TwinHospital", url: "https://github.com/FreedomIntelligence/TwinHospital"}
+        highlights: ["SepsisAgent", "Agentic-Hospital", "TwinHospital", "OpenClaw-Medical-Skills"]
+        image: "/assets/img/research/hospital-world-models.svg"
+        image_zh: "/assets/img/research/hospital-world-models-zh.svg"
+        image_alt: "Diagram: a clinical agent proposes, simulates in a clinical world model, and refines, inside ICU, HIS/EMR, and hospital-twin environments"
+        image_alt_zh: "示意图：临床智能体在临床世界模型中提出、仿真、修正，环境包括 ICU、HIS/EMR 与数字孪生医院"
+        papers:
+          - title: "SepsisAgent"
+            url: "https://arxiv.org/abs/2605.14723"
+            note: "Learns ICU treatment policies with agentic RL through propose-simulate-refine loops in a clinical world model."
+            note_zh: "通过临床世界模型进行 propose-simulate-refine，并用智能体强化学习学习 ICU 治疗策略。"
+          - title: "Agentic-Hospital"
+            url: "https://github.com/FreedomIntelligence/Agentic-Hospital"
+            note: "HIS/EMR, role simulation, tool interfaces, governance, and rubric evaluation in one hospital-scale agent environment."
+            note_zh: "把 HIS/EMR、角色仿真、工具接口、治理和 rubric 评测组织成医院级智能体环境。"
+          - title: "TwinHospital"
+            url: "https://github.com/FreedomIntelligence/TwinHospital"
+            note: "Combines real HIS data flows with multi-role simulation to reproduce registration, consultation, treatment, and management."
+            note_zh: "结合真实 HIS 数据流与多角色仿真，复现挂号、问诊、治疗和管理流程。"
+          - title: "Doctor-Centric Medical AI"
+            url: "https://arxiv.org/abs/2510.11040"
+            note: "Aligns tasks and benchmarks with physicians' real workflows."
+            note_zh: "把任务和 benchmark 对齐到医生真实工作流。"
+          - title: "OpenClaw-Medical-Skills"
+            url: "https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills"
+            note: "An open medical-AI skills library that gives clinical agents callable skills."
+            note_zh: "开放医疗 AI 技能库，为临床智能体提供可调用技能入口。"
+        resources:
+          - {type: "Project", name: "Clinical & Hospital World Models", url: "/projects/clinical-agents-hospital-world-models/", note: "Clinical and hospital digital environments and patient-dynamics world models.", note_zh: "临床与医院数字环境、患者动态世界模型总览。"}
+          - {type: "GitHub", name: "FreedomIntelligence/SepsisAgent", url: "https://github.com/FreedomIntelligence/SepsisAgent", note: "ICU sepsis treatment recommendation with a clinical world model.", note_zh: "基于临床世界模型的 ICU 脓毒症治疗推荐。"}
+          - {type: "GitHub", name: "FreedomIntelligence/Agentic-Hospital", url: "https://github.com/FreedomIntelligence/Agentic-Hospital", note: "Hospital-scale actionable environment for autonomous agents.", note_zh: "面向自主智能体的医院级可执行环境。"}
+          - {type: "GitHub", name: "FreedomIntelligence/TwinHospital", url: "https://github.com/FreedomIntelligence/TwinHospital", note: "HIS data-flow-driven hospital process simulation.", note_zh: "由 HIS 数据流驱动的医院流程仿真。"}
+          - {type: "GitHub", name: "FreedomIntelligence/OpenClaw-Medical-Skills", url: "https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills", note: "Open skills library for medical agents.", note_zh: "面向医疗智能体的开放技能库。"}
+
+      - id: medical-education-sp
+        title: "Medical Education & AI Standardized Patients"
+        title_zh: "医学教育与 AI 标准化病人"
+        short: "AI Standardized Patients"
+        short_zh: "AI 标准化病人"
+        icon: drama
+        kicker: "Controllable, reusable, and evaluable AI patients"
+        kicker_zh: "可控、可复用、可评测的 AI 病人"
+        summary: "This line targets standardized-patient (SP) training in medical education, building AI patients that are controllable, reusable, and evaluable. It connects medical-education evaluation with co-design questions from human-computer interaction: an AI patient should not only talk like a patient, but genuinely help students practice history taking, communication, and clinical reasoning."
+        summary_zh: "这条线面向医学教育中的标准化病人（SP）训练，把 AI 病人做成可控、可复用、可评测的练习对象。它同时连接 ACL 医学教育评测与 CHI / 人机交互里的共创设计问题：AI 病人不只要“像病人说话”，还要真正帮助学生练习病史采集、沟通和临床推理。"
+        page: "/projects/medical-education-standardized-patients/"
+        links:
+          - {label: "EasyMED", label_zh: "EasyMED", url: "https://github.com/FreedomIntelligence/EasyMED"}
+        highlights: ["EasyMED", "SPBench", "Co-design (CHI)", "DoctorFLAN"]
+        highlights_zh: ["EasyMED", "SPBench", "共创设计（CHI）", "DoctorFLAN"]
+        image: "/assets/img/research/ai-standardized-patients.svg"
+        image_zh: "/assets/img/research/ai-standardized-patients-zh.svg"
+        image_alt: "Diagram: a medical student practices with an AI standardized patient, evaluated with SPBench and improved through co-design"
+        image_alt_zh: "示意图：医学生与 AI 标准化病人练习，用 SPBench 评测，并通过共创设计持续改进"
+        papers:
+          - title: "Human or LLM as Standardized Patients? A Comparative Study in Medical Education"
+            url: "https://arxiv.org/abs/2511.14783"
+            note: "Introduces EasyMED and SPBench and compares the teaching effect of AI and human SPs."
+            note_zh: "提出 EasyMED 与 SPBench，对比 AI SP 与人类 SP 的教学效果。"
+          - title: "“It Talks Like a Patient, But Feels Different”: Co-Designing AI Standardized Patients with Medical Learners"
+            url: "https://arxiv.org/abs/2602.05856"
+            note: "A CHI perspective on medical learners' experience with AI SPs and their design needs."
+            note_zh: "从 CHI 视角总结医学学习者对 AI SP 的体验和设计需求。"
+          - title: "Enabling Doctor-Centric Medical AI with LLMs through Workflow-Aligned Tasks and Benchmarks"
+            url: "https://arxiv.org/abs/2510.11040"
+            note: "Places medical-AI evaluation inside physicians' real workflows."
+            note_zh: "把医学 AI 评测放进医生真实工作流。"
+        resources:
+          - {type: "GitHub", name: "FreedomIntelligence/EasyMED", url: "https://github.com/FreedomIntelligence/EasyMED", note: "AI standardized-patient framework and medical-education evaluation.", note_zh: "AI 标准化病人框架和医学教育评测入口。"}
+          - {type: "Paper", name: "Human or LLM as Standardized Patients?", url: "https://arxiv.org/abs/2511.14783", note: "EasyMED, SPBench, and comparative experiments in medical education.", note_zh: "EasyMED、SPBench 和医学教育对比实验。"}
+          - {type: "Paper", venue: "CHI", name: "Co-designing AI standardized patients", url: "https://dl.acm.org/doi/10.1145/3772363.3798336", note: "Co-design with medical learners and their interaction needs.", note_zh: "医学学习者共创设计与交互需求。"}
+
+      - id: legal-ai
+        title: "Legal AI Models, Retrieval, and Agents"
+        title_zh: "法律大模型、检索与智能体"
+        short: "Legal AI"
+        short_zh: "法律 AI"
+        icon: scale
+        kicker: "Foundation models, user-centric evaluation, evidence retrieval, and legal agents"
+        kicker_zh: "基础模型、以用户为中心的评测、证据检索与法律智能体"
+        summary: "A research path from HanFei-1.0 and UCL-Bench to GenArtID, Legal-R1, and continuously improving Legal AI systems connected to real lawyer workflows."
+        summary_zh: "从 HanFei-1.0 与 UCL-Bench，到 GenArtID、Legal-R1 和面向真实律师工作流的法律 AI 闭环。"
+        page: "/projects/legal-ai-models-agents/"
+        links:
+          - {label: "UCL-Bench", label_zh: "UCL-Bench", url: "https://aclanthology.org/2025.findings-naacl.444/"}
+          - {label: "Legal-R1", label_zh: "Legal-R1", url: "https://openreview.net/forum?id=2Oe3FRRcVQ"}
+        highlights: ["HanFei-1.0", "UCL-Bench", "GenArtID", "Legal-R1"]
+        image: "/assets/img/legal-ai/research-roadmap.webp"
+        image_alt: "Presenting the Legal AI research roadmap"
+        image_alt_zh: "法律 AI 研究路线图分享现场"
+        list_title: "One connected research program"
+        list_title_zh: "一条连贯的技术路线"
+        steps:
+          - title: "HanFei-1.0"
+            title_zh: "HanFei-1.0"
+            url: "https://github.com/siat-nlp/HanFei"
+            note: "Chinese legal foundation-model training."
+            note_zh: "中文法律基础模型训练。"
+          - title: "UCL-Bench"
+            title_zh: "UCL-Bench"
+            url: "https://aclanthology.org/2025.findings-naacl.444/"
+            venue: "NAACL 2025 Findings"
+            note: "5 legal scenarios and 22 user-centric tasks."
+            note_zh: "5 类法律场景、22 项以用户为中心的任务。"
+          - title: "GenArtID"
+            title_zh: "GenArtID"
+            url: "https://openreview.net/forum?id=SJcpGTx0Ag"
+            note: "Generative statutory article identifier prediction."
+            note_zh: "生成式法条编号预测。"
+          - title: "Legal-R1"
+            title_zh: "Legal-R1"
+            url: "https://openreview.net/forum?id=2Oe3FRRcVQ"
+            note: "Multi-step agentic retrieval for evidence-based reasoning."
+            note_zh: "面向循证推理的多步智能体检索。"
+          - title: "Legal AI within a loop"
+            title_zh: "法律 AI 闭环"
+            note: "Harness, benchmark, training, data flywheel."
+            note_zh: "Harness → Benchmark → 训练 → 数据飞轮。"
+        resources:
+          - {type: "Project", name: "Legal AI Models, Retrieval, and Agents", url: "/projects/legal-ai-models-agents/", note: "Research roadmap and the CUHK-Shenzhen and FaDaFu Legal AI Joint Laboratory.", note_zh: "研究路线与港中大（深圳）—法大大法律 AI 联合实验室。"}
+          - {type: "GitHub", name: "siat-nlp/HanFei", url: "https://github.com/siat-nlp/HanFei", note: "HanFei-1.0 Chinese legal LLM.", note_zh: "HanFei-1.0 中文法律大模型。"}
+          - {type: "Paper", venue: "NAACL 2025", name: "UCL-Bench", url: "https://aclanthology.org/2025.findings-naacl.444/", note: "A Chinese user-centric legal benchmark.", note_zh: "以用户为中心的中文法律 benchmark。"}
+
+      - id: ai-education
+        title: "AI Education"
+        title_zh: "AI 教育"
+        short: "AI Education"
+        short_zh: "AI 教育"
+        icon: graduation-cap
+        kicker: "Education agents, tutors, and learning simulation"
+        kicker_zh: "教育智能体、AI 导师与学习模拟"
+        summary: "This line moves LLM agents from answer tools to education agents that can teach, coach, and be evaluated: self-regulated learning assistants, LLM user simulators, Socratic multi-turn dialogue training in PlatoLM and SocraticChat, and AI standardized patients in EasyMED and SPBench."
+        summary_zh: "这条线把大模型智能体从“答题工具”推进到可教学、可陪练、可评测的教育智能体：包括自我调节学习助手、LLM 用户模拟器、PlatoLM / SocraticChat 的苏格拉底式多轮对话训练，以及 EasyMED / SPBench 中的 AI 标准化病人。"
+        page: "/projects/ai-education/"
+        links:
+          - {label: "PlatoLM", label_zh: "PlatoLM", url: "https://github.com/FreedomIntelligence/PlatoLM"}
+          - {label: "EasyMED", label_zh: "EasyMED", url: "https://github.com/FreedomIntelligence/EasyMED"}
+        highlights: ["SRLAgent", "PlatoLM", "SocraticChat", "EasyMED"]
+        image: "/assets/img/media-roundup-2026/socratic-pipeline.png"
+        image_alt: "Socratic dialogue pipeline behind PlatoLM and SocraticChat"
+        image_alt_zh: "PlatoLM 与 SocraticChat 的苏格拉底式对话流程"
+        papers:
+          - title: "SRLAgent"
+            url: "https://arxiv.org/abs/2506.09968"
+            note: "Strengthens self-regulated learning with gamification and LLM assistance."
+            note_zh: "用游戏化机制和大模型辅助增强自我调节学习。"
+          - title: "Large Language Model as a User Simulator"
+            url: "https://arxiv.org/abs/2308.11534"
+            note: "An LLM as a controllable user simulator for multi-turn dialogue training and evaluation."
+            note_zh: "把大模型作为可控用户模拟器，用于多轮对话训练和评测。"
+          - title: "PlatoLM: Teaching LLMs via a Socratic Questioning User Simulator"
+            url: "https://openreview.net/forum?id=9nddtu94uX"
+            note: "Distills multi-turn teaching dialogue into LLMs through Socratic questioning."
+            note_zh: "通过苏格拉底式追问，把多轮教学对话能力蒸馏进大模型。"
+          - title: "Human or LLM as Standardized Patients? A Comparative Study in Medical Education"
+            url: "https://arxiv.org/abs/2511.14783"
+            note: "Evaluates the educational value of AI standardized patients with EasyMED and SPBench."
+            note_zh: "用 EasyMED 和 SPBench 评测 AI 标准化病人的医学教育效果。"
+          - title: "“It Talks Like a Patient, But Feels Different”: Co-Designing AI Standardized Patients with Medical Learners"
+            url: "https://arxiv.org/abs/2602.05856"
+            note: "Learning experience and design needs for AI standardized patients, from a CHI and co-design perspective."
+            note_zh: "从 CHI / 共创设计视角研究 AI 标准化病人的学习体验和设计需求。"
+        resources:
+          - {type: "Project", name: "AI Education", url: "/projects/ai-education/", note: "Education agents, learning simulation, Socratic dialogue, and AI standardized patients.", note_zh: "教育智能体、学习模拟、苏格拉底式对话和 AI 标准化病人总览。"}
+          - {type: "GitHub", name: "FreedomIntelligence/PlatoLM", url: "https://github.com/FreedomIntelligence/PlatoLM", note: "PlatoLM models, Socratic-style dialogue training, and open resources.", note_zh: "PlatoLM 模型、苏格拉底式对话训练和开源资源。"}
+          - {type: "HF Dataset", name: "FreedomIntelligence/SocraticChat", url: "https://huggingface.co/datasets/FreedomIntelligence/SocraticChat", note: "Socratic dialogue data.", note_zh: "苏格拉底式对话数据资源。"}
+          - {type: "GitHub", name: "FreedomIntelligence/EasyMED", url: "https://github.com/FreedomIntelligence/EasyMED", note: "AI standardized patients and medical-education evaluation.", note_zh: "AI 标准化病人和医学教育评测资源。"}
+
+      - id: economic-world-models
+        title: "Economic World Models, Financial LLMs & Agents"
+        title_zh: "经济世界模型和金融大模型及其 Agent 应用"
+        short: "Economic World Models"
+        short_zh: "经济世界模型"
+        icon: chart-candlestick
+        kicker: "Economic world models, financial LLMs, and agent applications"
+        kicker_zh: "经济世界模型、金融大模型与智能体应用"
+        summary: "This line builds markets, institutions, policies, and multi-agent behavior into economic worlds that are computable, evolvable, and alignable, and also covers financial LLMs, financial-capability evaluation, multimodal financial models, bilingual Chinese-English financial models, and agent applications for real markets."
+        summary_zh: "这条研究主线把市场、机构、政策和多智能体行为建成可计算、可演化、可对齐的经济世界，同时覆盖金融大模型、金融能力评测、多模态金融模型、中英双语金融模型，以及面向真实市场的 Agent 应用。"
+        page: "/projects/economic-world-models/"
+        links:
+          - {label: "Awesome EconWM", label_zh: "Awesome EconWM", url: "https://github.com/FreedomIntelligence/Awesome-Econ-World-Models/"}
+          - {label: "Agentic City challenge", label_zh: "Agentic City 挑战赛", url: "/agentic-city/"}
+        highlights: ["EconWM", "TwinMarket", "UCFE", "FinBen", "Open-FinLLMs"]
+        image: "/assets/img/economic-world-models/econwm-architecture.png"
+        image_alt: "Economic world model architecture"
+        image_alt_zh: "经济世界模型架构"
+        papers:
+          - title: "From Economic Agents to Agentic Economies"
+            url: "/assets/pdf/economic-world-models.pdf"
+            note: "A system blueprint for economic world models: computable economies for agent training, policy sandboxes, planning, and safety analysis."
+            note_zh: "提出经济世界模型的系统蓝图，用可计算经济体支持智能体训练、政策沙盒、规划和安全分析。"
+          - title: "TwinMarket: A Scalable Behavioral and Social Simulation for Financial Markets"
+            url: "https://arxiv.org/abs/2502.01506"
+            note: "Simulates beliefs, intentions, information flow, and trading with LLM investors."
+            note_zh: "用大模型投资者模拟金融市场中的信念、意图、信息流和交易行为。"
+          - title: "UCFE: A User-Centric Financial Expertise Benchmark for Large Language Models"
+            url: "https://aclanthology.org/2025.findings-naacl.300/"
+            venue: "NAACL 2025 Findings"
+            note: "Evaluates LLM financial expertise from user needs and dynamic financial tasks."
+            note_zh: "从用户需求和动态金融任务出发评测大模型的金融专业能力。"
+          - title: "FinBen: A Holistic Financial Benchmark for Large Language Models"
+            url: "https://arxiv.org/abs/2402.12659"
+            note: "A holistic benchmark across many financial tasks."
+            note_zh: "面向多类金融任务的综合大语言模型评测基准。"
+          - title: "Open-FinLLMs: Open Multimodal Large Language Models for Financial Applications"
+            url: "https://arxiv.org/abs/2408.11878"
+            note: "Open multimodal financial LLMs with data and evaluation."
+            note_zh: "开放面向金融应用的多模态大模型、数据和评测体系。"
+          - title: "No Language Is an Island"
+            url: "https://arxiv.org/abs/2403.06249"
+            note: "Unifies Chinese-English financial LLMs, instruction data, and benchmarks for bilingual financial intelligence."
+            note_zh: "统一中英文金融大模型、指令数据与 benchmark，推动双语金融智能。"
+        resources:
+          - {type: "Project", name: "Economic World Models", url: "/projects/economic-world-models/", note: "Architecture, capability ladder, representative teams, and system roadmap.", note_zh: "总览经济世界模型架构、能力阶梯、代表团队和系统路线图。"}
+          - {type: "Paper", name: "From Economic Agents to Agentic Economies (PDF)", url: "/assets/pdf/economic-world-models.pdf", note: "The economic world models paper.", note_zh: "经济世界模型论文 PDF。"}
+          - {type: "GitHub", name: "FreedomIntelligence/Awesome-Econ-World-Models", url: "https://github.com/FreedomIntelligence/Awesome-Econ-World-Models/", note: "Curated papers, systems, and resources on economic world models.", note_zh: "经济世界模型论文、系统和资源集合。"}
+          - {type: "Project", name: "TwinMarket Financial AI Simulation", url: "/projects/twinmarket-financial-simulation/", note: "A financial-market prototype sandbox for economic world models.", note_zh: "经济世界模型中的金融市场原型沙盒。"}
+          - {type: "GitHub", name: "FreedomIntelligence/TwinMarket", url: "https://github.com/FreedomIntelligence/TwinMarket", note: "Code for financial behavior and social simulation.", note_zh: "金融行为与社会模拟代码资源。"}
+          - {type: "Project", name: "MicroVerse Micro-World Simulation", url: "/projects/microverse-world-simulation/", note: "Extends world models to scientific micro-worlds and biological processes.", note_zh: "把世界模型扩展到科学微世界与生物过程。"}
+          - {type: "GitHub", name: "FreedomIntelligence/MicroVerse", url: "https://github.com/FreedomIntelligence/MicroVerse", note: "MicroVerse project resources.", note_zh: "MicroVerse 项目资源。"}
+          - {type: "Challenge", name: "Agentic City", url: "/agentic-city/", note: "Plan a real city with AI agents and simulate its future in an economic world model.", note_zh: "用 AI Agent 规划真实城市，用经济世界模型运行未来。"}
+
+      - id: optimization-llms
+        title: "Optimization Modeling LLMs"
+        title_zh: "运筹优化大模型系列"
+        short: "Optimization"
+        short_zh: "运筹优化"
+        icon: sigma
+        kicker: "From natural-language problems to solvable models"
+        kicker_zh: "从自然语言问题到可求解模型"
+        summary: "Our operations-research line turns natural-language problems into mathematical optimization models, constraints, objectives, and executable code. ORLM provides open models and the IndustryOR benchmark; CALM and STORM go further into native reasoning for optimization modeling."
+        summary_zh: "运筹优化主线把自然语言问题转成数学优化模型、约束、目标函数和可执行代码。ORLM 提供开放模型与 IndustryOR benchmark，CALM / STORM 进一步研究优化建模中的原生推理能力。"
+        page: "/projects/reasoning-math-optimization/"
+        highlights: ["ORLM", "IndustryOR", "CALM / STORM", "MathScale"]
+        image: "/assets/img/research/optimization-modeling.svg"
+        image_zh: "/assets/img/research/optimization-modeling-zh.svg"
+        image_alt: "Diagram: a natural-language problem becomes variables, constraints, and an objective, then solver code and a verified solution"
+        image_alt_zh: "示意图：自然语言问题转为变量、约束与目标函数，再生成求解代码并得到可验证的解"
+        papers:
+          - title: "ORLM: A Customizable Framework in Training Large Models for Automated Optimization Modeling"
+            url: "https://arxiv.org/abs/2405.17743"
+            note: "OR-Instruct, ORLM, and IndustryOR."
+            note_zh: "OR-Instruct、ORLM 和 IndustryOR。"
+          - title: "CALM Before the STORM: Unlocking Native Reasoning for Optimization Modeling"
+            url: "https://arxiv.org/abs/2510.04204"
+            note: "Native reasoning for optimization modeling."
+            note_zh: "优化建模中的原生推理。"
+          - title: "MathScale: Scaling Instruction Tuning for Mathematical Reasoning"
+            url: "https://arxiv.org/abs/2403.02884"
+            note: "Foundations for scaling math reasoning and verifiers."
+            note_zh: "数学推理 scaling 与 verifier 相关基础。"
+          - title: "CoRT: Code-integrated Reasoning within Thinking"
+            url: "https://arxiv.org/abs/2506.09820"
+            note: "Brings code execution into the chain of thought, which also serves formal modeling and computation."
+            note_zh: "将代码执行接入思维链，也服务于形式化建模和计算。"
+        resources:
+          - {type: "GitHub", name: "Cardinal-Operations/ORLM", url: "https://github.com/Cardinal-Operations/ORLM", note: "Training framework, data synthesis, and benchmarks for automated optimization modeling.", note_zh: "自动化优化建模训练框架、数据合成和 benchmark 入口。"}
+          - {type: "HF Dataset", name: "CardinalOperations/IndustryOR", url: "https://huggingface.co/datasets/CardinalOperations/IndustryOR", note: "Benchmark of 100 real industrial operations-research problems.", note_zh: "100 个真实工业运筹问题 benchmark。"}
+          - {type: "GitHub", name: "tangzhy/STORM", url: "https://github.com/tangzhy/STORM", note: "CALM/STORM resources for optimization-modeling reasoning.", note_zh: "CALM/STORM 优化建模推理资源。"}
+          - {type: "GitHub", name: "ChengpengLi1003/CoRT", url: "https://github.com/ChengpengLi1003/CoRT", note: "Code-integrated reasoning resources.", note_zh: "代码集成推理资源。"}
+
+  # ---------------------------------------------------------------------------
+  - id: evaluation-safety
+    name: "Evaluation and Safety"
+    name_zh: "评测与安全"
+    icon: shield-check
+    tagline: "Benchmarks, responsible evaluation, and interpretable models."
+    tagline_zh: "评测基准、负责任评估与模型可解释性。"
+    topics:
+
+      - id: general-llm-evaluation
+        title: "General LLM Evaluation"
+        title_zh: "通用大模型评估"
+        short: "General Evaluation"
+        short_zh: "通用评估"
+        icon: list-checks
+        kicker: "Rubrics, judges, freshness, bias, ethics, and rewards"
+        kicker_zh: "Rubric、评审模型、时效性、偏差、伦理与奖励"
+        summary: "Rubric-based evaluation and reward design meet trustworthy, responsible AI evaluation in one line of general evaluation: from per-sample criteria, LLM-as-a-judge bias, temporal generalization, and cultural bias, to medical ethics and rubric-to-reward, turning open-ended evaluation into feedback that is auditable, reproducible, and trainable."
+        summary_zh: "这个方向把 Rubric-based Evaluation & Reward Design 和 Trustworthy / Responsible AI Evaluation 合并成一条更大的“通用评估”主线：从 per-sample criteria、LLM-as-a-judge 偏差、时间泛化、文化偏差，到医疗伦理和 rubric-to-reward，把开放式能力评测变成可审计、可复现、可训练的反馈系统。"
+        page: "/projects/general-llm-evaluation/"
+        links:
+          - {label: "Awesome-Rubrics", label_zh: "Awesome-Rubrics", url: "https://github.com/FreedomIntelligence/Awesome-Rubrics"}
+          - {label: "MLLM-Bench", label_zh: "MLLM-Bench", url: "https://github.com/FreedomIntelligence/MLLM-Bench"}
+        highlights: ["MLLM-Bench", "FreshBench", "PrinciplismQA", "Awesome-Rubrics"]
+        image: "/assets/img/research/general-evaluation.svg"
+        image_zh: "/assets/img/research/general-evaluation-zh.svg"
+        image_alt: "Diagram: per-sample rubrics, human and LLM judges, calibrated scores, and rewards for training"
+        image_alt_zh: "示意图：样本级 rubric、人类与大模型评审、校准后的分数，以及用于训练的奖励"
+        papers:
+          - title: "MLLM-Bench"
+            url: "https://aclanthology.org/2025.naacl-long.256/"
+            venue: "NAACL 2025"
+            note: "Evaluates multimodal LLMs with per-sample criteria that become the judge's core input."
+            note_zh: "用 per-sample criteria 评估多模态大模型，让样本级标准成为评审的核心输入。"
+          - title: "Humans or LLMs as the Judge?"
+            url: "https://arxiv.org/abs/2402.10669"
+            note: "Analyzes the biases of human and LLM judges to ground calibration of automatic evaluation."
+            note_zh: "系统分析人类和大模型评审的判断偏差，为自动评测校准提供依据。"
+          - title: "FreshBench"
+            url: "https://github.com/FreedomIntelligence/FreshBench"
+            note: "Temporal generalization: is a model out of date?"
+            note_zh: "评估大模型的时间泛化，判断模型是否“过时”。"
+          - title: "From Word to World"
+            url: "https://arxiv.org/abs/2505.18562"
+            note: "Word-association tests to measure and mitigate cultural bias in LLMs."
+            note_zh: "用词语联想测试评估和缓解大模型的文化偏差。"
+          - title: "PrinciplismQA"
+            url: "https://github.com/FreedomIntelligence/PrinciplismQA"
+            note: "Turns the four principles of medical ethics into multiple-choice QA, clinical cases, and rubric keypoints."
+            note_zh: "把四原则医学伦理转成选择题、临床病例和 rubric 要点。"
+          - title: "Awesome-Rubrics"
+            url: "https://github.com/FreedomIntelligence/Awesome-Rubrics"
+            note: "Curates resources on rubric-based evaluation, reward modeling, and post-training."
+            note_zh: "整理 rubric-based evaluation、reward modeling 和 post-training 资源。"
+        resources:
+          - {type: "Project", name: "General LLM Evaluation", url: "/projects/general-llm-evaluation/", note: "General LLM evaluation, rubric judges, reliability, and reward design.", note_zh: "通用大模型评估、rubric 评审、可靠性和 reward design 总览。"}
+          - {type: "GitHub", name: "FreedomIntelligence/Awesome-Rubrics", url: "https://github.com/FreedomIntelligence/Awesome-Rubrics", note: "Literature map for rubric-based evaluation, alignment, and agentic AI.", note_zh: "Rubric-based evaluation、对齐和智能体 AI 文献地图。"}
+          - {type: "GitHub", name: "FreedomIntelligence/MLLM-Bench", url: "https://github.com/FreedomIntelligence/MLLM-Bench", note: "Code and data for per-sample-criteria multimodal evaluation.", note_zh: "Per-sample criteria 多模态评测代码与数据。"}
+          - {type: "GitHub", name: "FreedomIntelligence/FreshBench", url: "https://github.com/FreedomIntelligence/FreshBench", note: "Temporal generalization and model freshness evaluation.", note_zh: "时间泛化和模型新鲜度评测资源。"}
+          - {type: "GitHub", name: "FreedomIntelligence/PrinciplismQA", url: "https://github.com/FreedomIntelligence/PrinciplismQA", note: "Medical-ethics knowledge, cases, and rubric scoring.", note_zh: "医学伦理知识、病例和 rubric 评分资源。"}
+
+      - id: medical-evaluation
+        title: "Medical AI Evaluation"
+        title_zh: "医疗 AI 评测系列"
+        short: "Medical Evaluation"
+        short_zh: "医疗评测"
+        icon: clipboard-plus
+        kicker: "From medical knowledge to live clinical tasks"
+        kicker_zh: "从医学知识到真实临床任务"
+        summary: "Medical AI cannot be judged by fluent chat alone. This line breaks evaluation into layers, from Chinese medical knowledge and multimodal medical understanding to interpretable diagnosis, live clinical cases, physician workflows, and medical education, so models reveal their weaknesses on tasks closer to the clinic."
+        summary_zh: "医疗 AI 不能只看聊天流畅度。这条线把评测拆成中文医学知识、多模态医学理解、可解释诊断、实时临床、医生工作流和医学教育几层，让模型在更接近临床的任务上暴露短板。"
+        page: "/projects/medical-evaluation-benchmarks/"
+        highlights: ["CMB", "GMAI-MMBench", "DxBench", "LiveClin", "DotaBench"]
+        image: "/assets/img/media-roundup-2026/cmb-overview.png"
+        image_alt: "CMB comprehensive Chinese medical benchmark overview"
+        image_alt_zh: "CMB 中文医学综合评测概览"
+        papers:
+          - title: "CMB: A Comprehensive Medical Benchmark in Chinese"
+            url: "https://arxiv.org/abs/2308.08833"
+            note: "A comprehensive Chinese medical benchmark."
+            note_zh: "中文医学综合 benchmark。"
+          - title: "GMAI-MMBench"
+            url: "https://arxiv.org/abs/2408.03361"
+            note: "Multimodal evaluation for general medical AI."
+            note_zh: "面向通用医疗 AI 的多模态评测。"
+          - title: "Chain-of-Diagnosis / DxBench"
+            url: "https://arxiv.org/abs/2407.13301"
+            note: "An interpretable diagnosis model and a diagnosis benchmark built from real doctor-patient dialogues."
+            note_zh: "可解释诊断模型和真实医患对话诊断评测。"
+          - title: "LiveClin: A Live Clinical Benchmark without Leakage"
+            url: "https://arxiv.org/abs/2602.16747"
+            note: "A continuously updated, leakage-resistant clinical benchmark."
+            note_zh: "持续更新、抗泄漏的真实临床 benchmark。"
+          - title: "Enabling Doctor-Centric Medical AI with LLMs through Workflow-Aligned Tasks and Benchmarks"
+            url: "https://arxiv.org/abs/2510.11040"
+            note: "DoctorFLAN and DotaBench, built around physician workflows."
+            note_zh: "DoctorFLAN / DotaBench，面向医生工作流。"
+        resources:
+          - {type: "GitHub", name: "FreedomIntelligence/CMB", url: "https://github.com/FreedomIntelligence/CMB", note: "Chinese medical benchmark code.", note_zh: "中文医学 benchmark 代码。"}
+          - {type: "GitHub", name: "uni-medical/GMAI-MMBench", url: "https://github.com/uni-medical/GMAI-MMBench", note: "GMAI-MMBench multimodal evaluation code.", note_zh: "GMAI-MMBench 多模态评测代码。"}
+          - {type: "GitHub", name: "FreedomIntelligence/Chain-of-Diagnosis", url: "https://github.com/FreedomIntelligence/Chain-of-Diagnosis", note: "One entry point for CoD, DxBench, and DiagnosisGPT.", note_zh: "CoD、DxBench、DiagnosisGPT 统一入口。"}
+          - {type: "GitHub", name: "AQ-MedAI/LiveClin", url: "https://github.com/AQ-MedAI/LiveClin", note: "LiveClin code and data.", note_zh: "LiveClin 代码和数据入口。"}
+          - {type: "GitHub", name: "FreedomIntelligence/DotaGPT", url: "https://github.com/FreedomIntelligence/DotaGPT", note: "Training and evaluation code for DoctorFLAN and DotaBench.", note_zh: "DoctorFLAN / DotaBench 训练与评测代码。"}
+
+      - id: interpretable-llms
+        title: "LLM Interpretability"
+        title_zh: "大模型可解释性"
+        short: "Interpretability"
+        short_zh: "可解释性"
+        icon: microscope
+        kicker: "Explainable and verifiable LLMs"
+        kicker_zh: "可解释、可验证的大模型"
+        summary: "Interpretability is a cross-cutting capability: why a model answers the way it does, which internal features actually matter, and how mechanistic understanding becomes controllable editing. The line centers on sparse autoencoders, model unlearning, and circuit analysis, and connects to diagnostic chains in medicine, verifiers, and code-integrated reasoning."
+        summary_zh: "可解释性是横向能力：它关心模型为什么这样回答、哪些内部特征真正有用、以及如何把机制理解转成可控编辑。这个方向现在以稀疏自编码器（SAE）、模型遗忘和电路分析为主线，同时连接医学诊断链、verifier 和代码集成推理。"
+        page: "/projects/llm-interpretability/"
+        links:
+          - {label: "ICLR 2026 paper", label_zh: "ICLR 2026 论文", url: "https://arxiv.org/abs/2510.03659"}
+        highlights: ["Sparse autoencoders", "SAE unlearning", "Circuit analysis", "Chain of Diagnosis"]
+        highlights_zh: ["稀疏自编码器", "SAE 遗忘", "电路分析", "Chain of Diagnosis"]
+        image: "/assets/img/freedomai-2026/impact/llm-interpretability.svg"
+        image_alt: "LLM interpretability and sparse autoencoder analysis"
+        image_alt_zh: "大模型可解释性与稀疏自编码器分析"
+        papers:
+          - title: "Does Higher Interpretability Imply Better Utility? A Pairwise Analysis on Sparse Autoencoders"
+            url: "https://arxiv.org/abs/2510.03659"
+            venue: "ICLR 2026"
+            note: "Compares SAE interpretability metrics with actual steering utility; Outstanding Paper Award at the NeurIPS 2025 ResponsibleFM Workshop."
+            note_zh: "系统比较 SAE 的可解释性指标和实际 steering utility；获 NeurIPS 2025 ResponsibleFM Workshop Outstanding Paper Award。"
+          - title: "Model Unlearning via Sparse Autoencoder Subspace Guided Projections"
+            url: "https://arxiv.org/abs/2505.24428"
+            venue: "EMNLP 2025"
+            note: "More controllable unlearning through SAE subspace-guided projections."
+            note_zh: "用 SAE 子空间引导投影做更可控的模型遗忘。"
+          - title: "Towards Understanding Fine-Tuning Mechanisms of LLMs via Circuit Analysis"
+            url: "https://arxiv.org/abs/2502.11812"
+            venue: "ICML 2025"
+            note: "Uses circuit analysis to understand how fine-tuning changes a model's internal computation."
+            note_zh: "用电路分析理解微调如何改变模型内部计算。"
+          - title: "CoD, Towards an Interpretable Medical Agent using Chain of Diagnosis"
+            url: "https://arxiv.org/abs/2407.13301"
+            note: "A five-step diagnostic chain with confidence distributions makes medical diagnosis interpretable."
+            note_zh: "用五步诊断链和置信度分布提升医学诊断可解释性。"
+          - title: "Outcome-supervised Verifiers for Planning in Mathematical Reasoning"
+            url: "https://arxiv.org/abs/2311.09724"
+            note: "Outcome-supervised verifiers that guide planning in math reasoning."
+            note_zh: "用结果监督 verifier 辅助数学规划推理。"
+          - title: "CoRT: Code-integrated Reasoning within Thinking"
+            url: "https://arxiv.org/abs/2506.09820"
+            note: "Code execution inside the thinking process makes intermediate computation transparent."
+            note_zh: "把代码执行放入思维过程，让中间计算更透明。"
+        resources:
+          - {type: "Project", name: "LLM Interpretability and Sparse Autoencoders", url: "/projects/llm-interpretability/", note: "SAE utility, SAE-guided unlearning, and circuit analysis.", note_zh: "SAE utility、SAE 引导的模型遗忘和电路分析详情页。"}
+          - {type: "Paper", venue: "ICLR 2026", name: "Does Higher Interpretability Imply Better Utility?", url: "https://arxiv.org/abs/2510.03659", note: "Pairwise analysis on sparse autoencoders.", note_zh: "稀疏自编码器的成对分析。"}
+          - {type: "Paper", venue: "EMNLP 2025", name: "Model Unlearning via SAE Subspace Guided Projections", url: "https://arxiv.org/abs/2505.24428", note: "Unlearning guided by interpretable subspaces.", note_zh: "可解释子空间引导的模型遗忘。"}
+          - {type: "Paper", venue: "ICML 2025", name: "Fine-Tuning Mechanisms via Circuit Analysis", url: "https://arxiv.org/abs/2502.11812", note: "Understanding LLM fine-tuning through circuit analysis.", note_zh: "用电路分析理解大模型微调机制。"}
+          - {type: "GitHub", name: "FreedomIntelligence/Chain-of-Diagnosis", url: "https://github.com/FreedomIntelligence/Chain-of-Diagnosis", note: "CoD code, diagnostic-chain data, disease database, DxBench, and DiagnosisGPT.", note_zh: "CoD 代码、诊断链数据、疾病库、DxBench 和 DiagnosisGPT 入口。"}
+          - {type: "HF Model", name: "FreedomIntelligence/DiagnosisGPT-6B", url: "https://huggingface.co/FreedomIntelligence/DiagnosisGPT-6B", note: "Interpretable diagnosis model built on CoD.", note_zh: "基于 CoD 的可解释诊断模型。"}
+          - {type: "HF Dataset", name: "FreedomIntelligence/DxBench", url: "https://huggingface.co/datasets/FreedomIntelligence/DxBench", note: "Diagnosis benchmark built from real doctor-patient dialogues.", note_zh: "真实医患对话构建的疾病诊断 benchmark。"}
+          - {type: "GitHub", name: "FreedomIntelligence/OVM", url: "https://github.com/FreedomIntelligence/OVM", note: "Code for outcome-supervised verifiers.", note_zh: "结果监督 verifier 相关代码。"}
+          - {type: "GitHub", name: "ChengpengLi1003/CoRT", url: "https://github.com/ChengpengLi1003/CoRT", note: "Code-integrated reasoning.", note_zh: "代码集成推理项目。"}
+          - {type: "GitHub", name: "tulerfeng/Video-R1", url: "https://github.com/tulerfeng/Video-R1", note: "Reinforcement learning code for video reasoning.", note_zh: "视频推理强化学习代码。"}

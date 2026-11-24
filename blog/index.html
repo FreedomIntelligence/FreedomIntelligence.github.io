@@ -11,14 +11,6 @@ pagination:
   trail:
     before: 1 # The number of links before the current page
     after: 3  # The number of links after the current page
-blog_tags:
-  - Media Coverage
-  - Medical AI
-  - Multimodal AI
-  - Agents & Simulation
-  - Models & Data
-  - Evaluation & Safety
-  - Research Culture
 ---
 
 <div class="post">
@@ -66,29 +58,27 @@ blog_tags:
     .blog-filter {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.5rem;
+      gap: 0.4rem;
       justify-content: center;
       margin: 1rem auto 1.4rem;
-      max-width: 880px;
+      max-width: 1000px;
     }
 
-    .blog-filter button {
-      border: 1px solid var(--global-divider-color);
-      border-radius: 999px;
-      background: var(--global-bg-color);
-      color: var(--global-text-color);
-      cursor: pointer;
-      font-size: 0.88rem;
-      line-height: 1.2;
-      padding: 0.38rem 0.72rem;
-      transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    .post-list .post-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      align-items: center;
     }
 
-    .blog-filter button:hover,
-    .blog-filter button.is-active {
-      border-color: var(--global-theme-color);
-      background: var(--global-theme-color);
-      color: #fff;
+    .post-list .post-tags a.rx-tag {
+      display: inline-flex;
+      margin: 0;
+      color: var(--rx-muted);
+    }
+
+    .post-list .post-tags a.rx-tag:hover {
+      color: var(--rx-ink);
     }
 
     .blog-empty {
@@ -186,38 +176,12 @@ blog_tags:
       justify-content: space-between;
       padding: 0.9rem;
       background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.16) 0 1px, transparent 1px 18px),
-        #244443;
+        linear-gradient(135deg, rgba(255, 255, 255, 0.07) 0 1px, transparent 1px 18px),
+        #16161a;
     }
 
-    .blog-generated-thumb-1 {
-      background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.14) 0 1px, transparent 1px 18px),
-        #5a2d2a;
-    }
-
-    .blog-generated-thumb-2 {
-      background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.14) 0 1px, transparent 1px 18px),
-        #404b2f;
-    }
-
-    .blog-generated-thumb-3 {
-      background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.14) 0 1px, transparent 1px 18px),
-        #27384f;
-    }
-
-    .blog-generated-thumb-4 {
-      background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.14) 0 1px, transparent 1px 18px),
-        #5a3f28;
-    }
-
-    .blog-generated-thumb-5 {
-      background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.14) 0 1px, transparent 1px 18px),
-        #31445a;
+    .blog-generated-thumb span {
+      color: #fff;
     }
 
     .blog-generated-thumb__kicker,
@@ -293,30 +257,23 @@ blog_tags:
         justify-content: flex-start;
       }
 
-      .blog-filter button {
-        font-size: 0.82rem;
-        padding: 0.34rem 0.64rem;
-      }
     }
   </style>
 
-  <div class="blog-filter" aria-label="Blog filters">
-    <button type="button" class="is-active" data-blog-filter="all"><span data-lang="en">All</span><span data-lang="zh">全部</span></button>
-    {% for tag in page.blog_tags %}
-      {% capture tag_zh %}
-        {%- case tag -%}
-        {%- when "Media Coverage" -%}媒体报道
-        {%- when "Medical AI" -%}医疗 AI
-        {%- when "Multimodal AI" -%}多模态 AI
-        {%- when "Agents & Simulation" -%}智能体与模拟
-        {%- when "Models & Data" -%}模型与数据
-        {%- when "Evaluation & Safety" -%}评测与安全
-        {%- when "Research Culture" -%}科研文化
-        {%- else -%}{{ tag }}
-        {%- endcase -%}
-      {% endcapture %}
-      <button type="button" data-blog-filter="{{ tag | escape }}"><span data-lang="en">{{ tag }}</span><span data-lang="zh">{{ tag_zh | strip }}</span></button>
-    {% endfor %}
+  {%- comment -%}
+    Filters: the six research directions of _data/research.yml (same as
+    /projects/ and /publications/), plus two kinds of non-research posts.
+    A post joins a direction through `research:` in its front matter, a list
+    of program or direction ids, e.g. `research: [huatuogpt, medical-evaluation]`.
+  {%- endcomment -%}
+  <div class="blog-filter" role="group" aria-label="Filter posts">
+    <button type="button" class="rx-filter-chip is-active" data-blog-filter="all" aria-pressed="true">{% include icon.html name="layers" %}<span data-lang="en">All</span><span data-lang="zh">全部</span></button>
+    {%- for d in site.data.research.directions %}
+    <button type="button" class="rx-filter-chip" data-blog-filter="{{ d.id }}" aria-pressed="false">{% include icon.html name=d.icon %}<span data-lang="en">{{ d.name }}</span><span data-lang="zh">{{ d.name_zh }}</span></button>
+    {%- endfor %}
+    <span class="rx-filter-sep" aria-hidden="true"></span>
+    <button type="button" class="rx-filter-chip" data-blog-filter="media" aria-pressed="false">{% include icon.html name="newspaper" %}<span data-lang="en">Media coverage</span><span data-lang="zh">媒体报道</span></button>
+    <button type="button" class="rx-filter-chip" data-blog-filter="culture" aria-pressed="false">{% include icon.html name="users" %}<span data-lang="en">Lab &amp; culture</span><span data-lang="zh">实验室与科研文化</span></button>
   </div>
 
   <p class="blog-empty" hidden><span data-lang="en">No blog posts found for this tag.</span><span data-lang="zh">该标签下暂无文章。</span></p>
@@ -334,15 +291,21 @@ blog_tags:
     {% assign year = post.date | date: "%Y" %}
     {% assign tags = post.tags | join: "" %}
     {% assign categories = post.categories | join: "" %}
-    {% capture blog_filter_tags %}
-      {% if post.tags contains 'media' or post.tags contains 'media-coverage' %}Media Coverage;{% endif %}
-      {% if post.tags contains 'medical-llm' or post.tags contains 'medical-benchmark' or post.tags contains 'biomedical-ai' or post.tags contains 'CMB' or post.tags contains 'HuatuoGPT' %}Medical AI;{% endif %}
-      {% if post.tags contains 'multimodal' or post.tags contains 'multimodal-agents' or post.tags contains 'LongLLaVA' or post.tags contains 'long-context' or post.tags contains 'PhoneHarness' or post.tags contains 'mobile-agent' or post.tags contains 'GUI-agent' %}Multimodal AI;{% endif %}
-      {% if post.tags contains 'TwinMarket' or post.tags contains 'MicroVerse' or post.tags contains 'PhoneHarness' or post.tags contains 'world-model' or post.tags contains 'social-simulation' or post.tags contains 'financial-ai' or post.tags contains 'mobile-agent' or post.tags contains 'GUI-agent' %}Agents & Simulation;{% endif %}
-      {% if post.tags contains 'FreedomAI' or post.tags contains 'Phoenix' or post.tags contains 'Chimera' or post.tags contains 'LLMZoo' or post.tags contains 'SocraticChat' or post.tags contains 'PlatoLM' or post.tags contains 'dialogue-data' or post.tags contains 'IRGAN' or post.tags contains 'NLP' or post.tags contains 'open-source' or post.tags contains 'language-models' or post.tags contains 'diffusion-models' or post.tags contains 'reasoning-models' or post.tags contains 'attention' or post.tags contains 'transformers' or post.tags contains 'efficient-attention' %}Models & Data;{% endif %}
-      {% if post.tags contains 'evaluation' or post.tags contains 'red-team' or post.tags contains 'model-comparison' or post.tags contains 'medical-benchmark' %}Evaluation & Safety;{% endif %}
-      {% if post.tags contains 'research-culture' or post.tags contains 'phd-training' or post.tags contains 'mentorship' %}Research Culture;{% endif %}
-    {% endcapture %}
+    {%- assign post_dirs = "" | split: "" -%}
+    {%- assign post_progs = "" | split: "" -%}
+    {%- for rid in post.research -%}
+      {%- for rd in site.data.research.directions -%}
+        {%- if rd.id == rid -%}{%- assign post_dirs = post_dirs | push: rd.id -%}{%- endif -%}
+        {%- for rt in rd.topics -%}
+          {%- if rt.id == rid -%}{%- assign post_progs = post_progs | push: rt.id -%}{%- assign post_dirs = post_dirs | push: rd.id -%}{%- endif -%}
+        {%- endfor -%}
+      {%- endfor -%}
+    {%- endfor -%}
+    {%- assign post_dirs = post_dirs | uniq -%}
+    {%- assign post_kinds = "" | split: "" -%}
+    {%- if post.tags contains 'media' or post.tags contains 'media-coverage' or post.tags contains 'media-interview' -%}{%- assign post_kinds = post_kinds | push: 'media' -%}{%- endif -%}
+    {%- if post.tags contains 'research-culture' or post.tags contains 'phd-training' or post.tags contains 'mentorship' -%}{%- assign post_kinds = post_kinds | push: 'culture' -%}{%- endif -%}
+    {%- assign blog_filter_tags = post_dirs | concat: post_kinds | join: ';' %}
     {% capture post_href %}
       {% if post.redirect == blank %}
         {{ post.url | prepend: site.baseurl }}
@@ -433,25 +396,18 @@ blog_tags:
         {%- endif %}
       </p>
       <p class="post-tags">
-        <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}">
-          <i class="fas fa-calendar fa-sm"></i> {{ year }} </a>
-
-          {% if tags != "" %}
-          &nbsp; &middot; &nbsp;
-            {% for tag in post.tags %}
-            <a href="{{ tag | prepend: '/blog/tag/' | prepend: site.baseurl}}">
-              <i class="fas fa-hashtag fa-sm"></i> {{ tag }}</a> &nbsp;
-              {% endfor %}
-          {% endif %}
-
-          {% if categories != "" %}
-          &nbsp; &middot; &nbsp;
-            {% for category in post.categories %}
-            <a href="{{ category | prepend: '/blog/category/' | prepend: site.baseurl}}">
-              <i class="fas fa-tag fa-sm"></i> {{ category }}</a> &nbsp;
-              {% endfor %}
-          {% endif %}
-    </p>
+        <a class="rx-tag" href="{{ year | prepend: '/blog/' | prepend: site.baseurl }}">{% include icon.html name="calendar" %}{{ year }}</a>
+        {%- for rd in site.data.research.directions -%}
+        {%- if post_dirs contains rd.id %}
+        <a class="rx-tag" href="{{ '/blog/' | relative_url }}?direction={{ rd.id }}" data-blog-direction="{{ rd.id }}">{% include icon.html name=rd.icon %}<span data-lang="en">{{ rd.name }}</span><span data-lang="zh">{{ rd.name_zh }}</span></a>
+        {%- endif -%}
+        {%- endfor -%}
+        {%- for rd in site.data.research.directions -%}{%- for rt in rd.topics -%}
+        {%- if post_progs contains rt.id %}
+        <a class="rx-tag rx-tag--program" href="{{ '/projects/' | relative_url }}#{{ rt.id }}">{% include icon.html name=rt.icon %}<span data-lang="en">{{ rt.short }}</span><span data-lang="zh">{{ rt.short_zh }}</span></a>
+        {%- endif -%}
+        {%- endfor -%}{%- endfor %}
+      </p>
         </div>
       </article>
     </li>
@@ -464,44 +420,56 @@ blog_tags:
 </div>
 
 <script>
+  // Filter posts by research direction (ids from _data/research.yml) or kind.
+  // URLs: ?direction=<id> or ?type=media|culture; old ?tag=<name> links still work.
   document.addEventListener('DOMContentLoaded', function () {
     const buttons = Array.from(document.querySelectorAll('[data-blog-filter]'));
     const posts = Array.from(document.querySelectorAll('.post-list > li'));
     const empty = document.querySelector('.blog-empty');
     const pagination = document.querySelector('.pagination');
+    const bar = document.querySelector('.blog-filter');
+    const KINDS = ['media', 'culture'];
+    const LEGACY = {
+      'Media Coverage': 'media',
+      'Medical AI': 'ai-applications',
+      'Multimodal AI': 'multimodal-interaction',
+      'Agents & Simulation': 'agentic-ai',
+      'Evaluation & Safety': 'evaluation-safety',
+      'Research Culture': 'culture'
+    };
 
     function tagsFor(post) {
-      return (post.dataset.blogTags || '')
-        .split(';')
-        .map(function (tag) { return tag.trim(); })
-        .filter(Boolean);
+      return (post.dataset.blogTags || '').split(';').map(function (tag) { return tag.trim(); }).filter(Boolean);
     }
 
-    function setFilter(activeTag, updateUrl) {
-      let visibleCount = 0;
+    const counts = {};
+    posts.forEach(function (post) {
+      tagsFor(post).forEach(function (tag) { counts[tag] = (counts[tag] || 0) + 1; });
+    });
+    // Hide filters that no post uses yet.
+    buttons.forEach(function (button) {
+      const id = button.dataset.blogFilter;
+      if (id !== 'all' && !counts[id]) button.hidden = true;
+    });
 
+    function setFilter(active, updateUrl) {
+      let visible = 0;
       posts.forEach(function (post) {
-        const shouldShow = activeTag === 'all' || tagsFor(post).includes(activeTag);
-        post.classList.toggle('is-hidden', !shouldShow);
-        if (shouldShow) visibleCount += 1;
+        const show = active === 'all' || tagsFor(post).includes(active);
+        post.classList.toggle('is-hidden', !show);
+        if (show) visible += 1;
       });
-
       buttons.forEach(function (button) {
-        const isActive = button.dataset.blogFilter === activeTag;
-        button.classList.toggle('is-active', isActive);
-        button.setAttribute('aria-pressed', String(isActive));
+        const on = button.dataset.blogFilter === active;
+        button.classList.toggle('is-active', on);
+        button.setAttribute('aria-pressed', String(on));
       });
-
-      if (empty) empty.hidden = visibleCount > 0;
-      if (pagination) pagination.hidden = activeTag !== 'all';
-
+      if (empty) empty.hidden = visible > 0;
+      if (pagination) pagination.hidden = active !== 'all';
       if (updateUrl) {
         const url = new URL(window.location.href);
-        if (activeTag === 'all') {
-          url.searchParams.delete('tag');
-        } else {
-          url.searchParams.set('tag', activeTag);
-        }
+        ['tag', 'direction', 'type'].forEach(function (key) { url.searchParams.delete(key); });
+        if (active !== 'all') url.searchParams.set(KINDS.includes(active) ? 'type' : 'direction', active);
         window.history.replaceState({}, '', url);
       }
     }
@@ -512,10 +480,19 @@ blog_tags:
       });
     });
 
-    const initialTag = new URLSearchParams(window.location.search).get('tag');
-    const hasInitialTag = buttons.some(function (button) {
-      return button.dataset.blogFilter === initialTag;
+    // A direction tag on a post filters the list in place.
+    document.addEventListener('click', function (event) {
+      const tag = event.target.closest('[data-blog-direction]');
+      if (!tag || event.metaKey || event.ctrlKey || event.shiftKey || event.button !== 0) return;
+      event.preventDefault();
+      setFilter(tag.dataset.blogDirection, true);
+      if (bar) bar.scrollIntoView({ block: 'center' });
     });
-    setFilter(hasInitialTag ? initialTag : 'all', false);
+
+    const params = new URLSearchParams(window.location.search);
+    const legacy = LEGACY[params.get('tag')];
+    let initial = params.get('direction') || params.get('type') || legacy || 'all';
+    if (!buttons.some(function (button) { return button.dataset.blogFilter === initial && !button.hidden; })) initial = 'all';
+    setFilter(initial, !!legacy);
   });
 </script>

@@ -4,6 +4,7 @@ title: "机器之心｜Phoenix / Chimera：GPT-4 评测与开放多语言模型"
 date: 2026-06-10
 description: "基于机器之心关于 Phoenix、Chimera 与 GPT-4 评测的报道整理的简要摘要，补充 FreedomAI Lab 参与贡献与资源链接。"
 tags: media machine-heart Phoenix Chimera LLMZoo open-source
+research: [multilingual-llms, general-llm-evaluation]
 og_image: "/assets/img/media-roundup-2026/phoenix-llmzoo.png"
 source_links:
   - label: "机器之心原文"

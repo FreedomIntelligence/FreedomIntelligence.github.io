@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+<title id="t">Speech LLMs</title>
+<desc id="d">From text to spoken input and output, tone, emotion, and paralinguistic cues</desc>
+<defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.1" fill="#dcdce0"/></pattern><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#18181b"/></marker><marker id="ahf" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8e8e99"/></marker></defs>
+<rect width="1200" height="675" fill="#fbfbfb"/>
+<rect width="1200" height="675" fill="url(#dots)"/>
+<g font-family="Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+<text x="72" y="92" fill="#52525b" font-size="16" font-weight="600" text-anchor="start" letter-spacing="3">MULTIMODAL INTERACTION · SPEECH</text>
+<text x="72" y="148" fill="#18181b" font-size="44" font-weight="700" text-anchor="start">Speech LLMs</text>
+<text x="72" y="190" fill="#52525b" font-size="21" font-weight="400" text-anchor="start">From text to spoken input and output, tone, emotion, and paralinguistic cues</text>
+<rect x="72" y="276" width="323" height="248" rx="18" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<rect x="94" y="298" width="48" height="48" rx="13" fill="#18181b"/>
+<g transform="translate(106.0 310.0) scale(1.0000)" fill="none" stroke="#ffffff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19v3" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><rect x="9" y="2" width="6" height="13" rx="3" /></g>
+<text x="156" y="328" fill="#8e8e99" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">01</text>
+<text x="94" y="380" fill="#52525b" font-size="14" font-weight="700" text-anchor="start" letter-spacing="2">LISTEN</text>
+<text x="94" y="416" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">Speech in</text>
+<text x="94" y="454" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">speech-text alignment with far</text>
+<text x="94" y="476" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">less data</text>
+<line x1="402" y1="400" x2="432" y2="400" stroke="#18181b" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="439" y="276" width="323" height="248" rx="18" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<rect x="461" y="298" width="48" height="48" rx="13" fill="#18181b"/>
+<g transform="translate(472.7 310.0) scale(1.0000)" fill="none" stroke="#ffffff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10v3" /><path d="M6 6v11" /><path d="M10 3v18" /><path d="M14 8v7" /><path d="M18 5v13" /><path d="M22 10v3" /></g>
+<text x="523" y="328" fill="#8e8e99" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">02</text>
+<text x="461" y="380" fill="#52525b" font-size="14" font-weight="700" text-anchor="start" letter-spacing="2">UNDERSTAND</text>
+<text x="461" y="416" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">Meaning and</text>
+<text x="461" y="446" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">paralinguistics</text>
+<text x="461" y="484" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">tone · emotion · empathy · unspoken</text>
+<text x="461" y="506" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">cues</text>
+<line x1="768" y1="400" x2="798" y2="400" stroke="#18181b" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="805" y="276" width="323" height="248" rx="18" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<rect x="827" y="298" width="48" height="48" rx="13" fill="#18181b"/>
+<g transform="translate(839.3 310.0) scale(1.0000)" fill="none" stroke="#ffffff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z" /><path d="M16 9a5 5 0 0 1 0 6" /><path d="M19.364 18.364a9 9 0 0 0 0-12.728" /></g>
+<text x="889" y="328" fill="#8e8e99" font-size="14" font-weight="700" text-anchor="start" letter-spacing="1">03</text>
+<text x="827" y="380" fill="#52525b" font-size="14" font-weight="700" text-anchor="start" letter-spacing="2">RESPOND</text>
+<text x="827" y="416" fill="#18181b" font-size="24" font-weight="700" text-anchor="start">Speech out</text>
+<text x="827" y="454" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">judged in S2S-Arena and a speech-</text>
+<text x="827" y="476" fill="#52525b" font-size="16" font-weight="400" text-anchor="start">to-speech Turing test</text>
+<rect x="72" y="565" width="121" height="38" rx="19" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<text x="132" y="590" fill="#18181b" font-size="16" font-weight="600" text-anchor="middle">Soundwave</text>
+<rect x="203" y="565" width="121" height="38" rx="19" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<text x="263" y="590" fill="#18181b" font-size="16" font-weight="600" text-anchor="middle">S2S-Arena</text>
+<rect x="334" y="565" width="108" height="38" rx="19" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<text x="388" y="590" fill="#18181b" font-size="16" font-weight="600" text-anchor="middle">EchoMind</text>
+<rect x="452" y="565" width="128" height="38" rx="19" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<text x="516" y="590" fill="#18181b" font-size="16" font-weight="600" text-anchor="middle">FusionAudio</text>
+<rect x="590" y="565" width="119" height="38" rx="19" fill="#ffffff" stroke="#dcdce0" stroke-width="2"/>
+<text x="649" y="590" fill="#18181b" font-size="16" font-weight="600" text-anchor="middle">UNSPOKEN</text>
+</g></svg>

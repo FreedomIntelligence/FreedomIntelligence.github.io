@@ -1,0 +1,26 @@
+{%- comment -%}
+  The six research directions as a quiet index (homepage and /projects/):
+  number, icon, name, one-line focus, and the programs inside each direction.
+    base   URL of the projects page ("" on /projects/ itself)
+    compact  set to "1" to leave out the program names (used on /projects/,
+             where every program follows right below)
+  The item links to the direction; each program name links to that program.
+{%- endcomment -%}
+<nav class="rx-index{% if include.compact %} rx-index--compact{% endif %}" aria-label="Research directions">
+  {%- for d in site.data.research.directions %}
+  <div class="rx-index__item">
+    <a class="rx-index__link" href="{{ include.base }}#{{ d.id }}">
+      <span class="rx-index__top"><span class="rx-index__num">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>{% include icon.html name=d.icon %}</span>
+      <span class="rx-index__name"><span data-lang="en">{{ d.name }}</span><span data-lang="zh">{{ d.name_zh }}</span></span>
+      <span class="rx-index__tagline"><span data-lang="en">{{ d.tagline }}</span><span data-lang="zh">{{ d.tagline_zh }}</span></span>
+    </a>
+    {%- unless include.compact %}
+    <p class="rx-index__programs">
+      {%- for t in d.topics -%}
+      <a href="{{ include.base }}#{{ t.id }}"><span data-lang="en">{{ t.short }}</span><span data-lang="zh">{{ t.short_zh }}</span></a>{% unless forloop.last %}<span class="rx-dot" aria-hidden="true"> · </span>{% endunless %}
+      {%- endfor -%}
+    </p>
+    {%- endunless %}
+  </div>
+  {%- endfor %}
+</nav>

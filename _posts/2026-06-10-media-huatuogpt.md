@@ -4,6 +4,7 @@ title: "机器之心｜开源中文医疗大模型华佗GPT来了，真人医生
 date: 2026-06-10
 description: "基于机器之心关于 HuatuoGPT 的报道整理的简要摘要，补充 FreedomAI Lab 参与贡献与资源链接。"
 tags: media machine-heart PaperWeekly HuatuoGPT medical-llm
+research: [huatuogpt]
 og_image: "/assets/img/media-roundup-2026/huatuogpt-overview.png"
 source_links:
   - label: "机器之心原文"

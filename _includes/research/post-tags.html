@@ -1,0 +1,30 @@
+{%- comment -%}
+  Research tags for a blog post: `research:` in the post's front matter lists
+  program or direction ids from _data/research.yml (a program implies its
+  direction). Directions link to the filtered blog, programs to /projects/.
+    ids   the list, e.g. page.research
+{%- endcomment -%}
+{%- assign post_dirs = "" | split: "" -%}
+{%- assign post_progs = "" | split: "" -%}
+{%- for rid in include.ids -%}
+  {%- for rd in site.data.research.directions -%}
+    {%- if rd.id == rid -%}{%- assign post_dirs = post_dirs | push: rd.id -%}{%- endif -%}
+    {%- for rt in rd.topics -%}
+      {%- if rt.id == rid -%}{%- assign post_progs = post_progs | push: rt.id -%}{%- assign post_dirs = post_dirs | push: rd.id -%}{%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+{%- endfor -%}
+{%- if post_dirs.size > 0 %}
+<div class="post-research">
+  {%- for rd in site.data.research.directions -%}
+  {%- if post_dirs contains rd.id %}
+  <a class="rx-tag" href="{{ '/blog/' | relative_url }}?direction={{ rd.id }}">{% include icon.html name=rd.icon %}<span data-lang="en">{{ rd.name }}</span><span data-lang="zh">{{ rd.name_zh }}</span></a>
+  {%- endif -%}
+  {%- endfor -%}
+  {%- for rd in site.data.research.directions -%}{%- for rt in rd.topics -%}
+  {%- if post_progs contains rt.id %}
+  <a class="rx-tag rx-tag--program" href="{{ '/projects/' | relative_url }}#{{ rt.id }}">{% include icon.html name=rt.icon %}<span data-lang="en">{{ rt.short }}</span><span data-lang="zh">{{ rt.short_zh }}</span></a>
+  {%- endif -%}
+  {%- endfor -%}{%- endfor %}
+</div>
+{%- endif -%}

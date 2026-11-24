@@ -4,6 +4,7 @@ title: "CUHK-Shenzhen Student Helps sZs Win the ICRA 2026 LeHome Challenge Real-
 date: 2026-07-10
 description: "A CUHK-Shenzhen SDS master's student and 2024 alumnus, Guo Shuqi, was a core member of team sZs, which ranked first in the ICRA 2026 LeHome Challenge real-world final."
 tags: robotics embodied-ai lehome-challenge icra-2026 robot-learning
+research: [embodied-ai]
 og_image: "/assets/img/media-roundup-2026/lehome-challenge-team.jpg"
 source_links:
   - label: "CUHK-Shenzhen SDS WeChat announcement"
