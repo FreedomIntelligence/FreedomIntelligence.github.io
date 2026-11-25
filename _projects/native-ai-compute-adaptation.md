@@ -22,6 +22,10 @@ github: https://github.com/FreedomIntelligence/AccelMark
 .native-compute-story .paper-reference { margin: 0 0 1.5rem; font-size: 1rem; line-height: 1.65; scroll-margin-top: 5rem; }
 .native-compute-story .paper-reference p { margin: 0 0 .3rem; }
 .native-compute-story .paper-reference strong { font-weight: 600; }
+.native-compute-story .document-download { font-size: 1rem; margin: -.25rem 0 1.6rem; }
+.native-compute-story figure { margin: 1.5rem 0 2rem; width: 100%; max-width: 100%; }
+.native-compute-story figure img { display: block; width: 100%; max-width: 100%; height: auto; }
+.native-compute-story figcaption { margin-top: .6rem; font-size: .9375rem; line-height: 1.65; }
 @media (max-width: 600px) { .native-compute-story { font-size: 1rem; line-height: 1.85; } }
 </style>
 
@@ -30,6 +34,8 @@ github: https://github.com/FreedomIntelligence/AccelMark
 <div data-lang="en">
 
 <p>We study how to train and deploy large language models on China-developed AI hardware. Our collaboration with Huawei includes model research, mobile agents, and teaching. This work draws on our experience training Arabic language models.</p>
+
+<p class="document-download"><a href="/assets/documents/native-compute-huawei-overview.docx" download>Download the project overview (Word, 3 pages, Chinese)</a></p>
 
 <p>In AceGPT, we used continued pre-training, instruction tuning, and reinforcement learning from AI feedback to adapt models to Arabic and local cultural values. <a href="#paper-1-en" aria-label="Reference 1">[1]</a> Native Alignment brought alignment into pre-training through data cleaning and rewriting. <a href="#paper-2-en" aria-label="Reference 2">[2]</a> In AraLLaMA / AceGPT-v1.5, we studied progressive vocabulary expansion and worked with partner institutions to train 7B and 13B models on 2,368 Huawei Ascend 910A processors. The two training runs took 7 and 11 days, respectively. <a href="#paper-3-en" aria-label="Reference 3">[3]</a></p>
 
@@ -46,6 +52,8 @@ github: https://github.com/FreedomIntelligence/AccelMark
 <p>Mobile devices introduce a changing operating-system environment. We collaborate with Huawei on mobile agents and their compatibility with HarmonyOS. OS-Native Agents combines task state, system events, native interfaces, and permission checks so that an agent can manage tasks as its environment changes. <a href="#paper-6-en" aria-label="Reference 6">[6]</a> The paper evaluates an Android implementation on DynamicWorld, with 88 tasks across 16 scenarios. With GPT-5.4, average task success over three runs was 78.4%, compared with 47.0% for MobileClaw. These are Android results; HarmonyOS compatibility is a separate part of the collaboration.</p>
 
 <p>This research also informs our teaching. Through <a href="https://nlp-course-cuhksz.github.io/?lang=en" target="_blank" rel="noopener">Natural Language Processing</a> (CSC5051 / CSC6052 / MDS5110), we collaborate with Huawei on Ascend and large-model teaching and have received support for related projects. The openPangu university outreach event on October 23 is part of this collaboration. The course and activities introduce students to model training and work on China-developed AI hardware, with public code they can use to explore software repair, accelerator evaluation, and kernel optimization.</p>
+
+<figure><img src="/assets/img/openpangu-campus-cuhksz-1023.jpg" width="1706" height="1279" loading="lazy" decoding="async" alt="Participants in a lecture hall holding the banner for the openPangu university outreach event"><figcaption>The openPangu university outreach event at The Chinese University of Hong Kong, Shenzhen, on October 23.</figcaption></figure>
 
 <h2>Papers</h2>
 
@@ -127,6 +135,8 @@ github: https://github.com/FreedomIntelligence/AccelMark
 
 <p>我们围绕大模型在国产算力上的训练和应用开展研究，并与华为在模型研发、移动智能体和课程教学方面合作。这些工作的基础，是我们在阿拉伯语大模型训练中积累的经验。</p>
 
+<p class="document-download"><a href="/assets/documents/native-compute-huawei-overview.docx" download>项目介绍下载（Word，3 页）</a></p>
+
 <p>在 AceGPT 中，我们通过持续预训练、指令微调和基于 AI 反馈的强化学习，让模型适应阿拉伯语及当地文化。<a href="#paper-1-zh" aria-label="论文 1">[1]</a> Native Alignment 则把对齐工作提前到预训练阶段，研究如何通过数据清洗和改写改善模型的价值观对齐。<a href="#paper-2-zh" aria-label="论文 2">[2]</a> 在 AraLLaMA／AceGPT-v1.5 中，我们进一步研究渐进式词表扩展，并与合作机构使用 2,368 块华为昇腾 910A 处理器训练了 7B 和 13B 模型，训练时长分别为 7 天和 11 天。<a href="#paper-3-zh" aria-label="论文 3">[3]</a></p>
 
 <p>训练和部署大模型，需要处理模型之外的软件问题。我们通过 <a href="https://github.com/FreedomIntelligence/NumericBridge" target="_blank" rel="noopener">NumericBridge</a> 大规模排查和修复现有 AI 软件库中的数值精度与兼容性问题，涉及推理、监督微调和强化学习。一次修复需要记录模型、硬件和框架版本，定位差异来源，再回到原始任务中检查修复后的精度和性能。项目公开了相关<a href="https://freedomintelligence.github.io/NumericBridge/" target="_blank" rel="noopener">案例与验证记录</a>，便于其他开发者查找和复用。</p>
@@ -142,6 +152,8 @@ github: https://github.com/FreedomIntelligence/AccelMark
 <p>移动端则把问题带到了不断变化的操作系统环境中。我们与华为在 Mobile Agent 方向合作，推进移动智能体与鸿蒙 OS 的兼容和适配。相关论文 OS-Native Agents 将任务状态、系统事件、原生接口和权限检查结合起来，使智能体能够根据环境变化持续管理任务。<a href="#paper-6-zh" aria-label="论文 6">[6]</a> 论文在 Android 上构建了包含 16 个场景、88 项任务的 DynamicWorld；采用 GPT-5.4 时，三次运行的平均任务成功率为 78.4%，MobileClaw 为 47.0%。这些结果来自 Android 实验，鸿蒙兼容适配是另行推进的合作工作。</p>
 
 <p>这些研究也进入了教学。我们依托 <a href="https://nlp-course-cuhksz.github.io/?lang=en" target="_blank" rel="noopener">Natural Language Processing 课程</a>（CSC5051／CSC6052／MDS5110），与华为联合开展昇腾和大模型相关教学，并获得相关项目支持。10 月 23 日的 openPangu 高校行活动也是合作的一部分。课程和活动把模型训练与国产算力实践带给学生，学生可以结合公开代码，进一步了解软件修复、跨卡评测和算子优化中的实际问题。</p>
+
+<figure><img src="/assets/img/openpangu-campus-cuhksz-1023.jpg" width="1706" height="1279" loading="lazy" decoding="async" alt="openPangu 高校行活动合影，师生在礼堂内手持活动横幅"><figcaption>10 月 23 日，openPangu 高校行走进香港中文大学（深圳）。</figcaption></figure>
 
 <h2>相关论文</h2>
 
